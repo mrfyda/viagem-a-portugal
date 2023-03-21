@@ -1,0 +1,43 @@
+title: Viagem a Portugal
+author: José Saramago
+description: Minimal, responsive Jekyll theme for hackers.
+# baseurl: "/blog"
+url: "https://portugal.travel"
+lang: en
+timezone: UTC
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+
+# Social media
+twitter_username:
+twitter_image:
+facebook_app_id:
+facebook_image:
+google_analytics:
+comments: false
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Build settings
+theme: jekyll-whiteglass
+markdown: kramdown
+excerpt_separator: "<!-- more -->"
+
+# Outputting
+permalink: /:year/:month/:day/:title/
+paginate_path: /posts/:num/
+paginate: 5
+
+# Markdown settings
+kramdown:
+  auto_ids: false
+  enable_coderay: false
+  entity_output: as_char
+  footnote_nr: 1
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
