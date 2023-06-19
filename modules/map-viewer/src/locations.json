@@ -1,0 +1,2897 @@
+[
+  {
+    "name": "Abade de Neiva",
+    "latitude": 41.56277778,
+    "longitude": -8.65111111
+  },
+  {
+    "name": "Abadim",
+    "latitude": 41.53916667,
+    "longitude": -7.98805556
+  },
+  {
+    "name": "Abrantes",
+    "latitude": 39.46138889,
+    "longitude": -8.19888889
+  },
+  {
+    "name": "A\u00e7ores (freg. de Celorico da Beira)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Adeganha",
+    "latitude": 41.27444444,
+    "longitude": -7.05111111
+  },
+  {
+    "name": "A dos Ruivos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "\u00c1guas de Moura",
+    "latitude": 38.5833,
+    "longitude": -8.7
+  },
+  {
+    "name": "Agu\u00e7adoura",
+    "latitude": 41.43055556,
+    "longitude": -8.77694444
+  },
+  {
+    "name": "\u00c1gueda",
+    "latitude": 40.56666667,
+    "longitude": -8.45
+  },
+  {
+    "name": "Alandroal",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Albergaria-a-Velha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Albernoa",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Albuquerque",
+    "latitude": 35.11083333,
+    "longitude": -106.61
+  },
+  {
+    "name": "Alc\u00e1cer do Sal",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alc\u00e1\u00e7ovas",
+    "latitude": 38.3925,
+    "longitude": -8.1575
+  },
+  {
+    "name": "Alcafozes",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alcoba\u00e7a",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alcochete",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alcorochel",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alcoutim",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Aldeia do Cou\u00e7o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Aldeia Galega",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Aldeia Gavinha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Aldeia da T\u00f4r",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Aldeia Vi\u00e7osa",
+    "latitude": 40.57888889,
+    "longitude": 0.0
+  },
+  {
+    "name": "Alenquer",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alfeite",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Algeruz",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alhancira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alh\u00f5es",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Aljezur",
+    "latitude": 37.31666667,
+    "longitude": -8.8
+  },
+  {
+    "name": "Aljubarrota",
+    "latitude": 39.56388889,
+    "longitude": -8.93555556
+  },
+  {
+    "name": "Almada",
+    "latitude": 38.68027778,
+    "longitude": -9.15833333
+  },
+  {
+    "name": "Almadena",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Almeida",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Almeirim",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Almofala",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Almourol",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alpalh\u00e3o",
+    "latitude": 39.41666667,
+    "longitude": -7.61888889
+  },
+  {
+    "name": "Alpedrinha",
+    "latitude": 40.09944444,
+    "longitude": -7.45
+  },
+  {
+    "name": "Alpiar\u00e7a",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alte",
+    "latitude": 37.23666667,
+    "longitude": -8.175
+  },
+  {
+    "name": "Alter do Ch\u00e3o",
+    "latitude": 39.2,
+    "longitude": -7.66666667
+  },
+  {
+    "name": "Alter Pedroso",
+    "latitude": 39.20027778,
+    "longitude": -7.65916667
+  },
+  {
+    "name": "\u00c1lvaro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alvite",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Alvito",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Amarante",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Amor",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Anadia",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "An\u00e7\u00e3",
+    "latitude": 40.27361111,
+    "longitude": -8.51972222
+  },
+  {
+    "name": "Angeja",
+    "latitude": 40.68333333,
+    "longitude": -8.55
+  },
+  {
+    "name": "Antas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ap\u00falia",
+    "latitude": 41.08333333,
+    "longitude": 16.5
+  },
+  {
+    "name": "Aranhas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Arcos de Valdevez",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Arez",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Arma\u00e7\u00e3o de P\u00eara",
+    "latitude": 37.10416667,
+    "longitude": -8.36277778
+  },
+  {
+    "name": "Arneiro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ar\u00f5es",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Arouca",
+    "latitude": 40.93333333,
+    "longitude": -8.25
+  },
+  {
+    "name": "Arraiolos",
+    "latitude": 38.71666667,
+    "longitude": -7.98333333
+  },
+  {
+    "name": "Arronches",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Arruda dos Vinhos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Atalaia",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Atouguia da Baleia",
+    "latitude": 39.33555556,
+    "longitude": -9.32583333
+  },
+  {
+    "name": "Aveiro",
+    "latitude": 40.63333333,
+    "longitude": -8.65
+  },
+  {
+    "name": "Aveleda (aldeia de Rio de Onor)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "A-Ver-o-Mar",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Avis",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Azambuja",
+    "latitude": 39.06777778,
+    "longitude": -8.86916667
+  },
+  {
+    "name": "Azenhas do Mar",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Azevo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Azinhaga",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Azinhoso",
+    "latitude": 41.38444444,
+    "longitude": -6.685
+  },
+  {
+    "name": "Azurara",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ba\u00e7al",
+    "latitude": 41.85055556,
+    "longitude": -6.72583333
+  },
+  {
+    "name": "Bai\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Bairrada",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Baleai",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Baleiz\u00e3o",
+    "latitude": 38.02555556,
+    "longitude": -7.71444444
+  },
+  {
+    "name": "Balug\u00e3es",
+    "latitude": 41.64,
+    "longitude": -8.64111111
+  },
+  {
+    "name": "Barca de Alva",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Barcelos",
+    "latitude": 41.53333333,
+    "longitude": -8.61666667
+  },
+  {
+    "name": "Barreiro",
+    "latitude": 38.66666667,
+    "longitude": -9.06666667
+  },
+  {
+    "name": "Barrinha de Mira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Batalha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Beberriqueira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Beja",
+    "latitude": 38.03333333,
+    "longitude": -7.88333333
+  },
+  {
+    "name": "Belmonte",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Benafrim",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Benavente",
+    "latitude": 38.98333333,
+    "longitude": -8.81666667
+  },
+  {
+    "name": "Benavila",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Benqueren\u00e7a",
+    "latitude": 40.22611111,
+    "longitude": -7.23555556
+  },
+  {
+    "name": "Bensafrim",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Berlengas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Bertiandos",
+    "latitude": 41.76416667,
+    "longitude": -8.62444444
+  },
+  {
+    "name": "Bigorne",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Boialvo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Boliqueime",
+    "latitude": 37.11666667,
+    "longitude": -8.15
+  },
+  {
+    "name": "Bombarral",
+    "latitude": 39.26777778,
+    "longitude": -9.15805556
+  },
+  {
+    "name": "Bom Jesus (Braga)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Borba",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Braga",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Bragan\u00e7a",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Brav\u00e3es",
+    "latitude": 41.79361111,
+    "longitude": -8.45
+  },
+  {
+    "name": "Briteiros (cit\u00e2nia)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Brito",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Brogueira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Brotas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Bu\u00e7aco",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Budens",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Bustelo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cabeceiras de Basto",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cabe\u00e7o de Vide",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ca\u00e7ardhos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cachopo",
+    "latitude": 37.33361111,
+    "longitude": -7.81777778
+  },
+  {
+    "name": "Caldas da Rainha",
+    "latitude": 39.40611111,
+    "longitude": -9.13972222
+  },
+  {
+    "name": "Caminha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Campanas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Campo Maior",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Canedo de Basto",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cantanhede",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Capinha",
+    "latitude": 40.20111111,
+    "longitude": -7.37416667
+  },
+  {
+    "name": "Carcavelos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cardanha",
+    "latitude": 41.25666667,
+    "longitude": -7.03138889
+  },
+  {
+    "name": "Carrazedo de Montenegro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Carvalhal",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Carvalhal de \u00d3bidos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Carvas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Casais do Livramento",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cascais",
+    "latitude": 38.7,
+    "longitude": -9.41666667
+  },
+  {
+    "name": "Castelo do Bode",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Castelo Bom",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Castelo Branco (cidade)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Castelo Branco (freg. do concelho de Mogadouro)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Castelo de Vide",
+    "latitude": 39.41666667,
+    "longitude": -7.45
+  },
+  {
+    "name": "Castel\u00f5es",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Castelo Mendo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Castelo Novo",
+    "latitude": 40.07666667,
+    "longitude": -7.495
+  },
+  {
+    "name": "Castelo Rodrigo",
+    "latitude": 40.87555556,
+    "longitude": -6.96388889
+  },
+  {
+    "name": "Castro Daire",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Castro Laboreiro",
+    "latitude": 42.03,
+    "longitude": -8.15861111
+  },
+  {
+    "name": "Castro Marim",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Castro Verde",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Celorico de Basto",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Celorico da Beira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cercal (do concelho de Cadaval)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cerrada Grande",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cete",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Chamoim",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Chaves",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cholda",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ciborro",
+    "latitude": 38.80083333,
+    "longitude": -8.22805556
+  },
+  {
+    "name": "Cidadelhe",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ciladas de S. Rom\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Clarines",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Coentral",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Coimbra",
+    "latitude": 40.21111111,
+    "longitude": -8.42916667
+  },
+  {
+    "name": "Con\u00edmbriga",
+    "latitude": 40.09944444,
+    "longitude": -8.49333333
+  },
+  {
+    "name": "Const\u00e2ncia",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Corujos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "C\u00f3s",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cova da Beira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Covide",
+    "latitude": 41.73861111,
+    "longitude": -8.21388889
+  },
+  {
+    "name": "Covilh\u00e3",
+    "latitude": 40.28333333,
+    "longitude": -7.5
+  },
+  {
+    "name": "Crato",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cucuj\u00e3es",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Cumeeira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Del\u00e3es",
+    "latitude": 41.38527778,
+    "longitude": -8.41194444
+  },
+  {
+    "name": "Divis\u00f5es",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Dogueno",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Dois Portos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Donas",
+    "latitude": 40.13138889,
+    "longitude": -7.47472222
+  },
+  {
+    "name": "Duas Igrejas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Eiras",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Elvas",
+    "latitude": 38.86666667,
+    "longitude": -7.16666667
+  },
+  {
+    "name": "Entradas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ereira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ericeira",
+    "latitude": 38.96666667,
+    "longitude": -9.41666667
+  },
+  {
+    "name": "Ermelo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ermida",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Escalh\u00e3o",
+    "latitude": 40.94944444,
+    "longitude": -6.92611111
+  },
+  {
+    "name": "Escarigo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Esmoriz",
+    "latitude": 40.95,
+    "longitude": -8.61666667
+  },
+  {
+    "name": "Espi\u00e7andeira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Espiche",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Espinho",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Esposende",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Estarreja",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Estevais",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Est\u00f3i",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Est\u00f4mbar",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Estoril",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Estorninhos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Estremoz",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "\u00c9vora",
+    "latitude": 38.57083333,
+    "longitude": -7.90944444
+  },
+  {
+    "name": "\u00c9vora Monte",
+    "latitude": 38.76527778,
+    "longitude": -7.71638889
+  },
+  {
+    "name": "Fafe",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "F\u00e3o",
+    "latitude": 41.51666667,
+    "longitude": -8.78333333
+  },
+  {
+    "name": "Faro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "F\u00e1tima",
+    "latitude": 39.62555556,
+    "longitude": -8.66583333
+  },
+  {
+    "name": "Feira (Vila da)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Feiteira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Felgueiras",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ferreira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ferreirim",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ferrel",
+    "latitude": 39.36472222,
+    "longitude": -9.31583333
+  },
+  {
+    "name": "Figueira da Foz",
+    "latitude": 40.15,
+    "longitude": -8.85
+  },
+  {
+    "name": "Figueira de Castelo Rodrigo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Finisterra do Sul",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Flor da Rosa",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Fonte Arcada",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Fontelas",
+    "latitude": 41.16388889,
+    "longitude": -7.81916667
+  },
+  {
+    "name": "Fornos de Algodres",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Foz de Arouce",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Foz do Caneiro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Foz Giraldo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Fund\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Furadouro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Gafanhoeira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "G\u00e1fete",
+    "latitude": 39.41166667,
+    "longitude": -7.68277778
+  },
+  {
+    "name": "Gaia - ver Vila Nova de Gaia",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "G\u00e2ndara dos Olivais",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Giela",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Gilmonde",
+    "latitude": 41.51027778,
+    "longitude": -8.65666667
+  },
+  {
+    "name": "Gilvrazino",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Gi\u00f5es",
+    "latitude": 37.47388889,
+    "longitude": -7.69388889
+  },
+  {
+    "name": "Godim",
+    "latitude": 41.16861111,
+    "longitude": -7.80361111
+  },
+  {
+    "name": "Gois",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Goleg\u00e3",
+    "latitude": 39.40194444,
+    "longitude": -8.4825
+  },
+  {
+    "name": "Gondoriz",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Gralheira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Granjinha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Guadramil",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Guarda",
+    "latitude": 40.53333333,
+    "longitude": -7.33333333
+  },
+  {
+    "name": "Guarita de Godeal",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Guimar\u00e3es",
+    "latitude": 41.44138889,
+    "longitude": -8.29527778
+  },
+  {
+    "name": "Idanha-a-Nova",
+    "latitude": 39.92277778,
+    "longitude": -7.2425
+  },
+  {
+    "name": "Idanha-a-Velha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Janas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Jou",
+    "latitude": 41.48666667,
+    "longitude": -7.4325
+  },
+  {
+    "name": "Junqueira (povoa\u00e7\u00e3o perto de Moncorvo)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Junqueira (povoa\u00e7\u00e3o do concelho de Vila do Conde)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Juromenha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Laborato",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Lagareira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Lagoa",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Lagoa Comprida",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Lagos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Lama",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Lamego",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Lanhoso",
+    "latitude": 41.57777778,
+    "longitude": -8.28888889
+  },
+  {
+    "name": "Lavre",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Le\u00e7a do Bailio",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Leiria",
+    "latitude": 39.74305556,
+    "longitude": -8.80694444
+  },
+  {
+    "name": "Lindoso",
+    "latitude": 41.865,
+    "longitude": -8.19916667
+  },
+  {
+    "name": "Linhares",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Lisboa",
+    "latitude": 38.72527778,
+    "longitude": -9.15
+  },
+  {
+    "name": "Lobrigos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Longos Vales",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Longroiva",
+    "latitude": 40.96388889,
+    "longitude": -7.21222222
+  },
+  {
+    "name": "Lorv\u00e3o",
+    "latitude": 40.26666667,
+    "longitude": -8.31666667
+  },
+  {
+    "name": "Lot\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Loul\u00e9",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Lourinh\u00e3",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Lousa",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Luz (de Tavira)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ma\u00e7\u00e3s de D. Maria",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Mafra",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Magueija",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Maiorca",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Maiorga",
+    "latitude": 39.58055556,
+    "longitude": -8.97916667
+  },
+  {
+    "name": "Malhadas",
+    "latitude": 41.54194444,
+    "longitude": -6.32444444
+  },
+  {
+    "name": "Mamarrosa",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Mangualde",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Manhente",
+    "latitude": 41.54833333,
+    "longitude": -8.57111111
+  },
+  {
+    "name": "Manhufe",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Manteigas",
+    "latitude": 40.4,
+    "longitude": -7.53333333
+  },
+  {
+    "name": "Marco de Canaveses",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Marialva",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Marinha Grande",
+    "latitude": 39.74916667,
+    "longitude": -8.93305556
+  },
+  {
+    "name": "Marv\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Mateus",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Matosinhos",
+    "latitude": 41.18333333,
+    "longitude": -8.7
+  },
+  {
+    "name": "Meadas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Meca",
+    "latitude": 21.41666667,
+    "longitude": 39.81666667
+  },
+  {
+    "name": "Meda",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Medelim",
+    "latitude": 40.04916667,
+    "longitude": -7.18305556
+  },
+  {
+    "name": "Melga\u00e7o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Merceana",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "M\u00e9rtola",
+    "latitude": 37.63333333,
+    "longitude": -7.66666667
+  },
+  {
+    "name": "Merufe",
+    "latitude": 42.01805556,
+    "longitude": -8.38888889
+  },
+  {
+    "name": "Mes\u00e3o Frio",
+    "latitude": 41.16666667,
+    "longitude": -7.88333333
+  },
+  {
+    "name": "Mezio",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Milreu",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Mira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Miranda do Douro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Mirandela",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Mire de Tib\u00e3es",
+    "latitude": 41.56694444,
+    "longitude": -8.47944444
+  },
+  {
+    "name": "Mogadouro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Moimenta da Beira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Moita",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Moitas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Mon\u00e7\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Mondim de Basto",
+    "latitude": 41.42,
+    "longitude": -7.95833333
+  },
+  {
+    "name": "Monforte",
+    "latitude": 39.05222222,
+    "longitude": -7.43805556
+  },
+  {
+    "name": "Monfortinho",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Monsanto",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Monsaraz",
+    "latitude": 38.43333333,
+    "longitude": -7.38333333
+  },
+  {
+    "name": "Monserrate (Sintra)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Montalvo",
+    "latitude": 39.48472222,
+    "longitude": -8.3
+  },
+  {
+    "name": "Montargil",
+    "latitude": 39.08333333,
+    "longitude": -8.16666667
+  },
+  {
+    "name": "Monte Gordo",
+    "latitude": 37.18222222,
+    "longitude": -7.44916667
+  },
+  {
+    "name": "Montemor-o-Novo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Montemor-o-Velho",
+    "latitude": 40.16666667,
+    "longitude": -8.68333333
+  },
+  {
+    "name": "Montijo",
+    "latitude": 38.7,
+    "longitude": -8.96666667
+  },
+  {
+    "name": "Mora",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Moreira de Rei",
+    "latitude": 40.82972222,
+    "longitude": -7.32083333
+  },
+  {
+    "name": "Moura",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Moura Morta",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Mour\u00e3o. 350-351.",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Mourisca",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Mur\u00e7a",
+    "latitude": 41.40833333,
+    "longitude": -7.45361111
+  },
+  {
+    "name": "Murtosa",
+    "latitude": 40.7375,
+    "longitude": -8.63805556
+  },
+  {
+    "name": "Nave de Santo Ant\u00f3nio",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Nazar\u00e9",
+    "latitude": 32.7,
+    "longitude": 35.3
+  },
+  {
+    "name": "Nexe",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Nisa",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Nossa Senhora da Orada",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Nossa Senhora dos Degolados",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "\u00d3bidos",
+    "latitude": 39.36,
+    "longitude": -9.1575
+  },
+  {
+    "name": "Odeleite",
+    "latitude": 37.33444444,
+    "longitude": -7.48777778
+  },
+  {
+    "name": "Odemira",
+    "latitude": 37.598,
+    "longitude": -8.642
+  },
+  {
+    "name": "Odi\u00e1xere",
+    "latitude": 37.14888889,
+    "longitude": -8.65972222
+  },
+  {
+    "name": "Ofir",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Oi\u00e3",
+    "latitude": 40.54111111,
+    "longitude": -8.53972222
+  },
+  {
+    "name": "Oleiros",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Olh\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Olhos de \u00c1gua",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Olival Basto",
+    "latitude": 38.79083333,
+    "longitude": -9.16722222
+  },
+  {
+    "name": "Olival d'El-Rei",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Olival da Palha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Oliveira de Azem\u00e9is",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Oliveira do Bairro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Oriola",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ota",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ouguela",
+    "latitude": 39.07888889,
+    "longitude": -7.03111111
+  },
+  {
+    "name": "Our\u00e9m",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ourondo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Outeiro Seco",
+    "latitude": 41.77527778,
+    "longitude": -7.44833333
+  },
+  {
+    "name": "Ovar",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pa\u00e7o de Sousa",
+    "latitude": 41.1775,
+    "longitude": -8.32388889
+  },
+  {
+    "name": "Pa\u00e7os de Ferreira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pa\u00e7os de Lalim",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pademe",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Padim da Gra\u00e7a",
+    "latitude": 41.56722222,
+    "longitude": -8.48944444
+  },
+  {
+    "name": "Pai Penda",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Palheiros de Mira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Palmela",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Panasqueira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Panchorra",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Parada de Cunhos",
+    "latitude": 41.27388889,
+    "longitude": -7.76388889
+  },
+  {
+    "name": "Paredes",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Paredes de Coura",
+    "latitude": 41.88166667,
+    "longitude": -8.66638889
+  },
+  {
+    "name": "Pavia",
+    "latitude": 45.18333333,
+    "longitude": 9.15
+  },
+  {
+    "name": "Paul",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pedome",
+    "latitude": 41.41361111,
+    "longitude": -8.39333333
+  },
+  {
+    "name": "Pedralva",
+    "latitude": -22.24277778,
+    "longitude": -45.46583333
+  },
+  {
+    "name": "Pena (Sintra)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Penacova",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Penamacor",
+    "latitude": 40.16833333,
+    "longitude": -7.16722222
+  },
+  {
+    "name": "Penha Garcia",
+    "latitude": 40.04,
+    "longitude": -7.01916667
+  },
+  {
+    "name": "Penhas da Sa\u00fade",
+    "latitude": 40.3,
+    "longitude": -7.55
+  },
+  {
+    "name": "Peniche",
+    "latitude": 39.36,
+    "longitude": -9.38833333
+  },
+  {
+    "name": "Penude",
+    "latitude": 41.07777778,
+    "longitude": -7.84861111
+  },
+  {
+    "name": "P\u00eara do Mo\u00e7o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Peso da R\u00e9gua",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "P\u00earo de Lagarelhos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pias",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pic\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pinheiro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pinheiros",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pinhel",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pis\u00f5es",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pocari\u00e7a",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Pombeiro de Ribavizela",
+    "latitude": 41.38388889,
+    "longitude": -8.23305556
+  },
+  {
+    "name": "Ponta do Altar",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ponta Jo\u00e3o de Ar\u00e3es",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ponte da Barca",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ponte de Lima",
+    "latitude": 41.76666667,
+    "longitude": -8.58333333
+  },
+  {
+    "name": "Ponte do Rol",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ponte de Sor",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Porches",
+    "latitude": 37.12666667,
+    "longitude": -8.40166667
+  },
+  {
+    "name": "Portalegre",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Portel",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Portela do Homem",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Portim\u00e3o",
+    "latitude": 37.13694444,
+    "longitude": -8.53833333
+  },
+  {
+    "name": "Portinho da Arr\u00e1bida",
+    "latitude": 38.47611111,
+    "longitude": -8.985
+  },
+  {
+    "name": "Porto",
+    "latitude": 41.14944444,
+    "longitude": -8.61083333
+  },
+  {
+    "name": "Porto de M\u00f3s",
+    "latitude": 39.60222222,
+    "longitude": -8.81777778
+  },
+  {
+    "name": "Pousafoles do Bispo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "P\u00f3voa (povoa\u00e7\u00e3o do Alto Alentejo)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "P\u00f3voa (povoa\u00e7\u00e3o do Baixo Alentejo)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "P\u00f3voa do Concelho",
+    "latitude": 40.75972222,
+    "longitude": -7.26638889
+  },
+  {
+    "name": "P\u00f3voa de Lanhoso",
+    "latitude": 41.57805556,
+    "longitude": -8.27722222
+  },
+  {
+    "name": "P\u00f3voa de Varzim",
+    "latitude": 41.38,
+    "longitude": -8.76083333
+  },
+  {
+    "name": "Praia das Ma\u00e7\u00e3s",
+    "latitude": 38.825,
+    "longitude": -9.47
+  },
+  {
+    "name": "Praia da Rocha",
+    "latitude": 37.11666667,
+    "longitude": -8.53333333
+  },
+  {
+    "name": "Praias do Sado",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Proen\u00e7a-a-Velha",
+    "latitude": 40.02555556,
+    "longitude": -7.24111111
+  },
+  {
+    "name": "Punhete",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Queimada",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Quelfes",
+    "latitude": 37.05888889,
+    "longitude": -7.82083333
+  },
+  {
+    "name": "Queluz",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Quinti\u00e3es",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ranhados",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Raposeira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Rates",
+    "latitude": 41.42333333,
+    "longitude": -8.67277778
+  },
+  {
+    "name": "Real",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Rebordelo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Rebord\u00f5es",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Rebordosa",
+    "latitude": 41.21666667,
+    "longitude": -8.41666667
+  },
+  {
+    "name": "Redondo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Refojos de Basto",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Reguengos de Monsaraz",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Rendufe (Ponte de Lima)",
+    "latitude": 41.86,
+    "longitude": -8.56194444
+  },
+  {
+    "name": "Rendufe (Amares)",
+    "latitude": 41.62888889,
+    "longitude": -8.40916667
+  },
+  {
+    "name": "Renfe",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Riachos",
+    "latitude": 39.44527778,
+    "longitude": -8.51416667
+  },
+  {
+    "name": "Rio de Onor",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Rio Mau",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Romarig\u00e3es",
+    "latitude": 41.86916667,
+    "longitude": -8.63472222
+  },
+  {
+    "name": "Romeu",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Roriz",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Rubi\u00e3es",
+    "latitude": 41.89638889,
+    "longitude": -8.62527778
+  },
+  {
+    "name": "Sabroso (castro)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sabugal",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sabugueiro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sacav\u00e9m",
+    "latitude": 38.79277778,
+    "longitude": -9.10388889
+  },
+  {
+    "name": "Sacoias",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Salir (Algarve)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Salreu",
+    "latitude": 40.73722222,
+    "longitude": -8.56083333
+  },
+  {
+    "name": "Salvador",
+    "latitude": -13.0,
+    "longitude": -38.51666667
+  },
+  {
+    "name": "Salvaterra de Magos",
+    "latitude": 39.02583333,
+    "longitude": -8.79277778
+  },
+  {
+    "name": "Salzedas",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Samard\u00e3",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sameiro (Braga)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Samel",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sancheira Grande",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sande",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sanlucar",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Santa Cruz do Bispo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Santa Eul\u00e1lia",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Santa Marta de Penagui\u00e3o",
+    "latitude": 41.21083333,
+    "longitude": -7.78444444
+  },
+  {
+    "name": "Santana",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Santar\u00e9m",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Santa Rita (praia de)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Santiago do Cac\u00e9m",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Santiago do Escoural",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Santo Ant\u00f3nio de Avenilha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Santo Ant\u00f3nio da Neve",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Santo Tirso",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Bartolomeu de Messines",
+    "latitude": 37.25777778,
+    "longitude": -8.29055556
+  },
+  {
+    "name": "S\u00e3o Bento da Porta Aberta",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Br\u00e1s",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Cucufate",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Gens",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Jo\u00e3o de Gat\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Jo\u00e3o de Tarouca",
+    "latitude": 40.99444444,
+    "longitude": -7.74861111
+  },
+  {
+    "name": "S\u00e3o Jorge",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Jorge da Beira",
+    "latitude": 40.16777778,
+    "longitude": -7.78166667
+  },
+  {
+    "name": "S\u00e3o Louren\u00e7o de Almansil",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Marcos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Marcos da Ataboeira",
+    "latitude": 37.7075,
+    "longitude": -7.94027778
+  },
+  {
+    "name": "S\u00e3o Martinho de Mouros",
+    "latitude": 41.10527778,
+    "longitude": -7.89638889
+  },
+  {
+    "name": "S\u00e3o Miguel de Ceide",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Pedro das \u00c1guias",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Pedro da Cadeira",
+    "latitude": 39.06944444,
+    "longitude": -9.37222222
+  },
+  {
+    "name": "S\u00e3o Pedro de Muel",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Quintino",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Rom\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Silvestre",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00e3o Vicente",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sardoal",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Seia",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Seixal",
+    "latitude": 38.65,
+    "longitude": -9.1
+  },
+  {
+    "name": "Sendim",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Senhora da Rocha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Serpa",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Serra",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Serra d'El-Rei",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sert\u00e3",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sesimbra",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Seteais",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Set\u00fabal",
+    "latitude": 38.52430556,
+    "longitude": -8.8925
+  },
+  {
+    "name": "Silves",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sines",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sintra",
+    "latitude": 38.79916667,
+    "longitude": -9.38833333
+  },
+  {
+    "name": "Sistelo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "S\u00edtio",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Soajo",
+    "latitude": 41.87472222,
+    "longitude": -8.26416667
+  },
+  {
+    "name": "Sobral de Monte Agra\u00e7o",
+    "latitude": 39.01972222,
+    "longitude": -9.14888889
+  },
+  {
+    "name": "Sortelha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Soure",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Sousel",
+    "latitude": 38.9525,
+    "longitude": -7.67638889
+  },
+  {
+    "name": "Tabuado",
+    "latitude": 41.18472222,
+    "longitude": -8.12583333
+  },
+  {
+    "name": "Tancos",
+    "latitude": 39.46055556,
+    "longitude": -8.39916667
+  },
+  {
+    "name": "Tareja",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Tarouca",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Tavira",
+    "latitude": 37.11666667,
+    "longitude": -7.65
+  },
+  {
+    "name": "Tel\u00f5es",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Tendais",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Ten\u00f5es",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Tent\u00fagal",
+    "latitude": 40.22361111,
+    "longitude": -8.58527778
+  },
+  {
+    "name": "Terena",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Terras de Bouro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Tocha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Tomar",
+    "latitude": 39.6,
+    "longitude": -8.41666667
+  },
+  {
+    "name": "Torr\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Torre (serra da Estrela)",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Torre das \u00c1guias",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Torre de Moncorvo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Torre de Palma",
+    "latitude": 39.06222222,
+    "longitude": -7.48861111
+  },
+  {
+    "name": "Torres Novas",
+    "latitude": 39.4775,
+    "longitude": -8.54083333
+  },
+  {
+    "name": "Torres Vedras",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Toubres",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Trancoso",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Trindade",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Trofa",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Turcifal",
+    "latitude": 39.04194444,
+    "longitude": -9.26611111
+  },
+  {
+    "name": "Ucanha",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vagos",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vagueira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vale de Cambra",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vale de Estrela",
+    "latitude": 40.49944444,
+    "longitude": -7.30777778
+  },
+  {
+    "name": "Vale de Prazeres",
+    "latitude": 40.10972222,
+    "longitude": -7.43166667
+  },
+  {
+    "name": "Valen\u00e7a",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Val\u00eancia de Alc\u00e2ntara",
+    "latitude": 39.40833333,
+    "longitude": -7.24444444
+  },
+  {
+    "name": "Valhelhas",
+    "latitude": 40.40722222,
+    "longitude": -7.40305556
+  },
+  {
+    "name": "Valongo de Milhais",
+    "latitude": 41.44583333,
+    "longitude": -7.44361111
+  },
+  {
+    "name": "Varatojo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Varge",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Velosa",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vermiosa",
+    "latitude": 40.82722222,
+    "longitude": -6.8775
+  },
+  {
+    "name": "Viana do Aientejo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Viana do Castelo",
+    "latitude": 41.7,
+    "longitude": -8.83333333
+  },
+  {
+    "name": "Vidigueira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vieira de Leiria",
+    "latitude": 39.86916667,
+    "longitude": -8.93694444
+  },
+  {
+    "name": "Vieira do Minho",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vila Alva",
+    "latitude": 38.25,
+    "longitude": -7.9
+  },
+  {
+    "name": "Vila do Bispo",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vila do Conde",
+    "latitude": 41.35,
+    "longitude": -8.75
+  },
+  {
+    "name": "Vila Flor",
+    "latitude": 41.30777778,
+    "longitude": -7.15305556
+  },
+  {
+    "name": "Vila de Frades",
+    "latitude": 38.21434444,
+    "longitude": -7.82295
+  },
+  {
+    "name": "Vila Franca de Xira",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vila Fresca de Azeit\u00e3o",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vila Nova",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vila Nova de Cerveira",
+    "latitude": 41.94,
+    "longitude": -8.74444444
+  },
+  {
+    "name": "Vila Nova de Famalic\u00e3o",
+    "latitude": 41.41666667,
+    "longitude": -8.51666667
+  },
+  {
+    "name": "Vila Nova de Foz C\u00f4a",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vila Nova de Gaia",
+    "latitude": 41.13333333,
+    "longitude": -8.61666667
+  },
+  {
+    "name": "Vila Nova de Milfontes",
+    "latitude": 37.72777778,
+    "longitude": -8.78527778
+  },
+  {
+    "name": "Vila Nova de Our\u00e9m - ver Our\u00e9m.",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vila Pouca de Aguiar",
+    "latitude": 41.50166667,
+    "longitude": -7.64777778
+  },
+  {
+    "name": "Vila Real",
+    "latitude": 41.29583333,
+    "longitude": -7.74611111
+  },
+  {
+    "name": "Vila Real de Santo Ant\u00f3nio",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vilar Formoso",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vilarinho de Samard\u00e3",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vilar Turpim",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vila Ruiva",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vila Seca",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vilaverdinho",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vila Vi\u00e7osa",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vimeiro",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vimioso",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Vinhais",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "name": "Viseu",
+    "latitude": 40.66083333,
+    "longitude": -7.90944444
+  },
+  {
+    "name": "Vista Alegre",
+    "latitude": -27.36694444,
+    "longitude": -53.49
+  }
+]
