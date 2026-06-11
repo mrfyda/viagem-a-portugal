@@ -1,0 +1,4048 @@
+[
+  {
+    "name": "A dos Ruivos",
+    "latitude": 39.280512,
+    "longitude": -9.117186,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "A-Ver-o-Mar",
+    "latitude": 41.403753,
+    "longitude": -8.769528,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Abade de Neiva",
+    "latitude": 41.56277778,
+    "longitude": -8.65111111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Abadim",
+    "latitude": 41.53916667,
+    "longitude": -7.98805556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Abrantes",
+    "latitude": 39.46138889,
+    "longitude": -8.19888889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Adeganha",
+    "latitude": 41.27444444,
+    "longitude": -7.05111111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Aguçadoura",
+    "latitude": 41.43055556,
+    "longitude": -8.77694444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Alandroal",
+    "latitude": 38.702006,
+    "longitude": -7.403831,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Albergaria-a-Velha",
+    "latitude": 40.690689,
+    "longitude": -8.479221,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Albernoa",
+    "latitude": 37.861184,
+    "longitude": -7.958723,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Albuquerque",
+    "latitude": 38.727,
+    "longitude": -7.229,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Alcafozes",
+    "latitude": 39.948809,
+    "longitude": -7.119603,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Alcaide",
+    "latitude": 40.132414,
+    "longitude": -7.440082,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Alcobaça",
+    "latitude": 39.55192,
+    "longitude": -8.97634,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Alcochete",
+    "latitude": 38.75605,
+    "longitude": -8.960844,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Alcorochel",
+    "latitude": 39.415406,
+    "longitude": -8.580138,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Alcoutim",
+    "latitude": 37.402329,
+    "longitude": -7.66905,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Alcácer do Sal",
+    "latitude": 38.372974,
+    "longitude": -8.51227,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Alcáçovas",
+    "latitude": 38.3925,
+    "longitude": -8.1575,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Aldeia Galega",
+    "latitude": 39.082222,
+    "longitude": -9.111944,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Aldeia Gavinha",
+    "latitude": 39.089449,
+    "longitude": -9.088703,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Aldeia Viçosa",
+    "latitude": 40.578085,
+    "longitude": -7.318862,
+    "source": "nominatim-refix",
+    "confidence": "low"
+  },
+  {
+    "name": "Aldeia da Tôr",
+    "latitude": 37.1992,
+    "longitude": -8.0358,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Aldeia do Couço",
+    "latitude": 39.677931,
+    "longitude": -8.084334,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Alenquer",
+    "latitude": 39.061631,
+    "longitude": -8.996659,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Alfeite",
+    "latitude": 38.664957,
+    "longitude": -9.143773,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Algeruz",
+    "latitude": 38.582448,
+    "longitude": -8.824519,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Alhandra",
+    "latitude": 38.928707,
+    "longitude": -9.007793,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Alhões",
+    "latitude": 40.980597,
+    "longitude": -8.009271,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Aljezur",
+    "latitude": 37.31666667,
+    "longitude": -8.8,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Aljubarrota",
+    "latitude": 39.56388889,
+    "longitude": -8.93555556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Almada",
+    "latitude": 38.68027778,
+    "longitude": -9.15833333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Almadena",
+    "latitude": 37.135506,
+    "longitude": -8.76652,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Almeida",
+    "latitude": 40.726077,
+    "longitude": -6.906574,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Almeirim",
+    "latitude": 39.209193,
+    "longitude": -8.629103,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Almofala",
+    "latitude": 40.861245,
+    "longitude": -6.847592,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Almourol",
+    "latitude": 39.46232,
+    "longitude": -8.374042,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Alpalhão",
+    "latitude": 39.41666667,
+    "longitude": -7.61888889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Alpedrinha",
+    "latitude": 40.09944444,
+    "longitude": -7.45,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Alpiarça",
+    "latitude": 39.259935,
+    "longitude": -8.584514,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Alte",
+    "latitude": 37.23666667,
+    "longitude": -8.175,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Alter Pedroso",
+    "latitude": 39.20027778,
+    "longitude": -7.65916667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Alter do Chão",
+    "latitude": 39.2,
+    "longitude": -7.66666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Alvite",
+    "latitude": 41.4991,
+    "longitude": -8.0011,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Alvito",
+    "latitude": 38.255967,
+    "longitude": -7.991803,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Amarante",
+    "latitude": 41.269932,
+    "longitude": -8.080456,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Amor",
+    "latitude": 39.803293,
+    "longitude": -8.860219,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Anadia",
+    "latitude": 40.442683,
+    "longitude": -8.435958,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Angeja",
+    "latitude": 40.68333333,
+    "longitude": -8.55,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Antas",
+    "latitude": 41.40247,
+    "longitude": -8.50968,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Ançã",
+    "latitude": 40.27361111,
+    "longitude": -8.51972222,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Apúlia",
+    "latitude": 41.482443,
+    "longitude": -8.765188,
+    "source": "nominatim-refix",
+    "confidence": "low"
+  },
+  {
+    "name": "Aranhas",
+    "latitude": 40.111629,
+    "longitude": -7.119497,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Arcos de Valdevez",
+    "latitude": 41.844571,
+    "longitude": -8.417808,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Arez",
+    "latitude": 39.485413,
+    "longitude": -7.724779,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Armação de Pêra",
+    "latitude": 37.10416667,
+    "longitude": -8.36277778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Arneiro",
+    "latitude": 39.35036,
+    "longitude": -8.528168,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Arouca",
+    "latitude": 40.93333333,
+    "longitude": -8.25,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Arraiolos",
+    "latitude": 38.71666667,
+    "longitude": -7.98333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Arronches",
+    "latitude": 39.122106,
+    "longitude": -7.285336,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Arruda dos Vinhos",
+    "latitude": 38.991199,
+    "longitude": -9.062929,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Arões",
+    "latitude": 41.4562,
+    "longitude": -8.2175,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Atalaia",
+    "latitude": 39.480429,
+    "longitude": -8.452074,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Atouguia da Baleia",
+    "latitude": 39.33555556,
+    "longitude": -9.32583333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Aveiro",
+    "latitude": 40.63333333,
+    "longitude": -8.65,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Aveleda (aldeia de Rio de Onor)",
+    "latitude": 41.889722,
+    "longitude": -6.698333,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Avis",
+    "latitude": 39.086714,
+    "longitude": -7.908976,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Azambuja",
+    "latitude": 39.06777778,
+    "longitude": -8.86916667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Azenhas do Mar",
+    "latitude": 38.840956,
+    "longitude": -9.461906,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Azevo",
+    "latitude": 40.8458,
+    "longitude": -7.1286,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Azinhaga",
+    "latitude": 39.35036,
+    "longitude": -8.528168,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Azinhoso",
+    "latitude": 41.38444444,
+    "longitude": -6.685,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Azurara",
+    "latitude": 41.345933,
+    "longitude": -8.728074,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Açores (freg. de Celorico da Beira)",
+    "latitude": 40.644383,
+    "longitude": -7.315213,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Bairrada",
+    "latitude": 40.4367,
+    "longitude": -8.4359,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Baião",
+    "latitude": 41.161631,
+    "longitude": -8.035544,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Baleal",
+    "latitude": 39.375166,
+    "longitude": -9.340722,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Baleizão",
+    "latitude": 38.02555556,
+    "longitude": -7.71444444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Balugães",
+    "latitude": 41.64,
+    "longitude": -8.64111111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Barca de Alva",
+    "latitude": 41.026811,
+    "longitude": -6.940998,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Barcelos",
+    "latitude": 41.53333333,
+    "longitude": -8.61666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Barreiro",
+    "latitude": 38.66666667,
+    "longitude": -9.06666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Barrinha de Mira",
+    "latitude": 40.450368,
+    "longitude": -8.796954,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Batalha",
+    "latitude": 39.6579,
+    "longitude": -8.824371,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Baçal",
+    "latitude": 41.85055556,
+    "longitude": -6.72583333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Beberriqueira",
+    "latitude": 39.569482,
+    "longitude": -8.353402,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Beja",
+    "latitude": 38.03333333,
+    "longitude": -7.88333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Belmonte",
+    "latitude": 40.359424,
+    "longitude": -7.348024,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Benafrim",
+    "latitude": 37.156132,
+    "longitude": -8.734495,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Benavente",
+    "latitude": 38.98333333,
+    "longitude": -8.81666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Benavila",
+    "latitude": 39.111615,
+    "longitude": -7.870765,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Benquerença",
+    "latitude": 40.22611111,
+    "longitude": -7.23555556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Bensafrim",
+    "latitude": 37.155867,
+    "longitude": -8.735561,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Berlengas",
+    "latitude": 39.414331,
+    "longitude": -9.511033,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Bertiandos",
+    "latitude": 41.76416667,
+    "longitude": -8.62444444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Bigorne",
+    "latitude": 41.00568,
+    "longitude": -7.887201,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Boialvo",
+    "latitude": 40.500911,
+    "longitude": -8.37522,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Boliqueime",
+    "latitude": 37.11666667,
+    "longitude": -8.15,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Bom Jesus (Braga)",
+    "latitude": 41.554839,
+    "longitude": -8.377011,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Bombarral",
+    "latitude": 39.26777778,
+    "longitude": -9.15805556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Borba",
+    "latitude": 38.806846,
+    "longitude": -7.458696,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Braga",
+    "latitude": 41.5454185,
+    "longitude": -8.426472,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Bragança",
+    "latitude": 41.806667,
+    "longitude": -6.758889,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Bravães",
+    "latitude": 41.79361111,
+    "longitude": -8.45,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Briteiros (citânia)",
+    "latitude": 41.526772,
+    "longitude": -8.315009,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Brito",
+    "latitude": 41.454755,
+    "longitude": -8.365525,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Brogueira",
+    "latitude": 39.428959,
+    "longitude": -8.548749,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Brotas",
+    "latitude": 38.871598,
+    "longitude": -8.153326,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Budens",
+    "latitude": 37.086539,
+    "longitude": -8.830249,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Bustelo",
+    "latitude": 41.002778,
+    "longitude": -8.015556,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Buçaco",
+    "latitude": 40.377667,
+    "longitude": -8.3636,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Cabeceiras de Basto",
+    "latitude": 41.513639,
+    "longitude": -7.987813,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Cabeço de Vide",
+    "latitude": 39.1341,
+    "longitude": -7.588554,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Cachopo",
+    "latitude": 37.33361111,
+    "longitude": -7.81777778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Caldas da Rainha",
+    "latitude": 39.40611111,
+    "longitude": -9.13972222,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Caminha",
+    "latitude": 41.873167,
+    "longitude": -8.837819,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Campanas",
+    "latitude": 40.424065,
+    "longitude": -8.58447,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Campo Maior",
+    "latitude": 39.012506,
+    "longitude": -7.069282,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Canedo de Basto",
+    "latitude": 41.438162,
+    "longitude": -7.956427,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Cantanhede",
+    "latitude": 40.345561,
+    "longitude": -8.60447,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Capinha",
+    "latitude": 40.20111111,
+    "longitude": -7.37416667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Carcavelos",
+    "latitude": 38.690091,
+    "longitude": -9.334683,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Cardanha",
+    "latitude": 41.25666667,
+    "longitude": -7.03138889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Carrazedo de Montenegro",
+    "latitude": 41.566667,
+    "longitude": -7.433333,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Carvalhal",
+    "latitude": 39.29,
+    "longitude": -9.13056,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Carvalhal de Óbidos",
+    "latitude": 39.29,
+    "longitude": -9.13056,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Carvas",
+    "latitude": 41.305235,
+    "longitude": -7.668127,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Casais do Livramento",
+    "latitude": 39.5879,
+    "longitude": -8.811,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Cascais",
+    "latitude": 38.7,
+    "longitude": -9.41666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Castelo Bom",
+    "latitude": 40.621436,
+    "longitude": -6.901541,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Castelo Branco (cidade)",
+    "latitude": 39.976758,
+    "longitude": -7.44606,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Castelo Branco (freg. do concelho de Mogadouro)",
+    "latitude": 39.976758,
+    "longitude": -7.44606,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Castelo Mendo",
+    "latitude": 40.583229,
+    "longitude": -6.943803,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Castelo Novo",
+    "latitude": 40.07666667,
+    "longitude": -7.495,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Castelo Rodrigo",
+    "latitude": 40.87555556,
+    "longitude": -6.96388889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Castelo de Vide",
+    "latitude": 39.41666667,
+    "longitude": -7.45,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Castelo do Bode",
+    "latitude": 39.545271,
+    "longitude": -8.32198,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Castelões",
+    "latitude": 40.8175,
+    "longitude": -8.38639,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Castro Daire",
+    "latitude": 40.901409,
+    "longitude": -7.931176,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Castro Laboreiro",
+    "latitude": 42.03,
+    "longitude": -8.15861111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Castro Marim",
+    "latitude": 37.225549,
+    "longitude": -7.474716,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Castro Verde",
+    "latitude": 37.697995,
+    "longitude": -8.082275,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Caçarelhos",
+    "latitude": 41.565206,
+    "longitude": -6.438732,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Celorico da Beira",
+    "latitude": 40.635884,
+    "longitude": -7.392845,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Celorico de Basto",
+    "latitude": 41.387936,
+    "longitude": -8.000209,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Cercal (do concelho de Cadaval)",
+    "latitude": 39.234839,
+    "longitude": -9.000269,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Cerrada Grande",
+    "latitude": 39.472258,
+    "longitude": -8.547326,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Cete",
+    "latitude": 41.178287,
+    "longitude": -8.364939,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Chamoim",
+    "latitude": 41.734706,
+    "longitude": -8.270501,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Chaves",
+    "latitude": 41.738108,
+    "longitude": -7.475002,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Cholda",
+    "latitude": 39.363267,
+    "longitude": -8.540703,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Ciborro",
+    "latitude": 38.80083333,
+    "longitude": -8.22805556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Cidadelhe",
+    "latitude": 40.915743,
+    "longitude": -7.116115,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Ciladas de S. Romão",
+    "latitude": 38.775647,
+    "longitude": -7.318233,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Clarines",
+    "latitude": 37.481651,
+    "longitude": -7.654965,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Coentral",
+    "latitude": 40.060505,
+    "longitude": -8.192337,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Coimbra",
+    "latitude": 40.21111111,
+    "longitude": -8.42916667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Constância",
+    "latitude": 39.482611,
+    "longitude": -8.326648,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Conímbriga",
+    "latitude": 40.09944444,
+    "longitude": -8.49333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Corujos",
+    "latitude": 37.3119,
+    "longitude": -7.557637,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Cova da Beira",
+    "latitude": 40.22,
+    "longitude": -7.5,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Covide",
+    "latitude": 41.73861111,
+    "longitude": -8.21388889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Covilhã",
+    "latitude": 40.28333333,
+    "longitude": -7.5,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Crato",
+    "latitude": 39.285122,
+    "longitude": -7.645427,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Cucujães",
+    "latitude": 40.870463,
+    "longitude": -8.497711,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Cumeeira",
+    "latitude": 41.257,
+    "longitude": -7.773,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Cós",
+    "latitude": 39.60168,
+    "longitude": -8.956196,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Delães",
+    "latitude": 41.38527778,
+    "longitude": -8.41194444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Divisões",
+    "latitude": 39.347565,
+    "longitude": -8.529224,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Dogueno",
+    "latitude": 37.433036,
+    "longitude": -7.983497,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Dois Portos",
+    "latitude": 39.038953,
+    "longitude": -9.184031,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Donas",
+    "latitude": 40.13138889,
+    "longitude": -7.47472222,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Duas Igrejas",
+    "latitude": 41.473056,
+    "longitude": -6.358056,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Eiras",
+    "latitude": 40.91639,
+    "longitude": -7.11639,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Elvas",
+    "latitude": 38.86666667,
+    "longitude": -7.16666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Entradas",
+    "latitude": 37.776621,
+    "longitude": -8.013357,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Ereira",
+    "latitude": 40.150647,
+    "longitude": -8.713145,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Ericeira",
+    "latitude": 38.96666667,
+    "longitude": -9.41666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Ermelo",
+    "latitude": 41.85452,
+    "longitude": -8.290233,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Ermida",
+    "latitude": 40.9572,
+    "longitude": -7.9603,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Escalhão",
+    "latitude": 40.94944444,
+    "longitude": -6.92611111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Escarigo",
+    "latitude": 40.8427,
+    "longitude": -6.8321,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Esmoriz",
+    "latitude": 40.95,
+    "longitude": -8.61666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Espiche",
+    "latitude": 37.101862,
+    "longitude": -8.737004,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Espinho",
+    "latitude": 41.008364,
+    "longitude": -8.639411,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Espiçandeira",
+    "latitude": 39.074436,
+    "longitude": -9.046885,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Esposende",
+    "latitude": 41.531525,
+    "longitude": -8.779254,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Estarreja",
+    "latitude": 40.752349,
+    "longitude": -8.570346,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Estevais",
+    "latitude": 41.210333,
+    "longitude": -6.822767,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Estoril",
+    "latitude": 38.709571,
+    "longitude": -9.390137,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Estorninhos",
+    "latitude": 37.220272,
+    "longitude": -7.619444,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Estremoz",
+    "latitude": 38.841833,
+    "longitude": -7.592258,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Estói",
+    "latitude": 37.094624,
+    "longitude": -7.894959,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Estômbar",
+    "latitude": 37.14586,
+    "longitude": -8.484596,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Fafe",
+    "latitude": 41.451406,
+    "longitude": -8.17085,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Faro",
+    "latitude": 37.244809,
+    "longitude": -8.150756,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Feira (Vila da)",
+    "latitude": 40.93168,
+    "longitude": -8.552306,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Feiteira",
+    "latitude": 37.278185,
+    "longitude": -7.862789,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Felgueiras",
+    "latitude": 41.075801,
+    "longitude": -7.939951,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Ferreira",
+    "latitude": 41.266371,
+    "longitude": -8.344563,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Ferreirim",
+    "latitude": 40.945374,
+    "longitude": -7.496215,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Ferrel",
+    "latitude": 39.36472222,
+    "longitude": -9.31583333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Figueira da Foz",
+    "latitude": 40.15,
+    "longitude": -8.85,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Figueira de Castelo Rodrigo",
+    "latitude": 40.89751,
+    "longitude": -6.96279,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Finisterra do Sul",
+    "latitude": 37.0233,
+    "longitude": -8.995,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Flor da Rosa",
+    "latitude": 39.305842,
+    "longitude": -7.646363,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Fonte Arcada",
+    "latitude": 41.5794,
+    "longitude": -8.2456,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Fontelas",
+    "latitude": 41.16388889,
+    "longitude": -7.81916667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Fornos de Algodres",
+    "latitude": 40.657968,
+    "longitude": -7.488089,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Foz Giraldo",
+    "latitude": 40.001904,
+    "longitude": -7.716741,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Foz de Arouce",
+    "latitude": 40.158653,
+    "longitude": -8.278448,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Foz do Caneiro",
+    "latitude": 40.22774,
+    "longitude": -8.35722,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Fundão",
+    "latitude": 40.140806,
+    "longitude": -7.501752,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Furadouro",
+    "latitude": 40.87365,
+    "longitude": -8.677635,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Fátima",
+    "latitude": 39.62555556,
+    "longitude": -8.66583333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Fão",
+    "latitude": 41.51666667,
+    "longitude": -8.78333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Gafanhoeira",
+    "latitude": 38.743326,
+    "longitude": -8.074173,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Giela",
+    "latitude": 41.858757,
+    "longitude": -8.407566,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Gilmonde",
+    "latitude": 41.51027778,
+    "longitude": -8.65666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Gilvrazino",
+    "latitude": 37.1585,
+    "longitude": -8.093,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Giões",
+    "latitude": 37.47388889,
+    "longitude": -7.69388889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Godim",
+    "latitude": 41.16861111,
+    "longitude": -7.80361111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Golegã",
+    "latitude": 39.40194444,
+    "longitude": -8.4825,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Gondoriz",
+    "latitude": 41.892139,
+    "longitude": -8.420066,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Gralheira",
+    "latitude": 41.00282,
+    "longitude": -7.969455,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Granjinha",
+    "latitude": 41.066361,
+    "longitude": -7.51951,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Guadramil",
+    "latitude": 41.915265,
+    "longitude": -6.569693,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Guarda",
+    "latitude": 40.53333333,
+    "longitude": -7.33333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Guarita de Godeal",
+    "latitude": 38.810868,
+    "longitude": -8.277351,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Guimarães",
+    "latitude": 41.44138889,
+    "longitude": -8.29527778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Gáfete",
+    "latitude": 39.41166667,
+    "longitude": -7.68277778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Gândara dos Olivais",
+    "latitude": 39.764481,
+    "longitude": -8.823408,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Góis",
+    "latitude": 40.140189,
+    "longitude": -8.124442,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Idanha-a-Nova",
+    "latitude": 39.92277778,
+    "longitude": -7.2425,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Idanha-a-Velha",
+    "latitude": 39.99825,
+    "longitude": -7.154842,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Janas",
+    "latitude": 38.827833,
+    "longitude": -9.421722,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Jou",
+    "latitude": 41.48666667,
+    "longitude": -7.4325,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Junqueira (povoação do concelho de Vila do Conde)",
+    "latitude": 41.378737,
+    "longitude": -8.680973,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Junqueira (povoação perto de Moncorvo)",
+    "latitude": 41.269488,
+    "longitude": -7.081987,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Juromenha",
+    "latitude": 38.740282,
+    "longitude": -7.255799,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Laborato",
+    "latitude": 37.454934,
+    "longitude": -7.763899,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Lagareira",
+    "latitude": 39.001069,
+    "longitude": -7.653285,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Lagoa",
+    "latitude": 37.136291,
+    "longitude": -8.454084,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Lagoa Comprida",
+    "latitude": 40.361482,
+    "longitude": -7.645424,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Lagos",
+    "latitude": 37.102796,
+    "longitude": -8.672869,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Lama",
+    "latitude": 41.388063,
+    "longitude": -8.020287,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Lamego",
+    "latitude": 41.097309,
+    "longitude": -7.811407,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Lanhoso",
+    "latitude": 41.57777778,
+    "longitude": -8.28888889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Lavre",
+    "latitude": 38.775239,
+    "longitude": -8.368877,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Leiria",
+    "latitude": 39.74305556,
+    "longitude": -8.80694444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Leça do Bailio",
+    "latitude": 41.212924,
+    "longitude": -8.628658,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Lindoso",
+    "latitude": 41.865,
+    "longitude": -8.19916667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Linhares",
+    "latitude": 40.543118,
+    "longitude": -7.456811,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Lisboa",
+    "latitude": 38.72527778,
+    "longitude": -9.15,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Lobrigos",
+    "latitude": 41.198722,
+    "longitude": -7.776465,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Longos Vales",
+    "latitude": 42.051414,
+    "longitude": -8.447682,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Longroiva",
+    "latitude": 40.96388889,
+    "longitude": -7.21222222,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Lorvão",
+    "latitude": 40.26666667,
+    "longitude": -8.31666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Lotão",
+    "latitude": 37.457585,
+    "longitude": -7.72488,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Loulé",
+    "latitude": 37.145504,
+    "longitude": -8.068336,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Lourinhã",
+    "latitude": 39.253484,
+    "longitude": -9.290494,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Lousã",
+    "latitude": 40.111052,
+    "longitude": -8.246067,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Luz (de Tavira)",
+    "latitude": 37.088894,
+    "longitude": -7.699996,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Mafra",
+    "latitude": 38.936978,
+    "longitude": -9.328237,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Magueija",
+    "latitude": 39.894492,
+    "longitude": -7.723105,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Maiorca",
+    "latitude": 40.166192,
+    "longitude": -8.755212,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Maiorga",
+    "latitude": 39.58055556,
+    "longitude": -8.97916667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Malhadas",
+    "latitude": 41.54194444,
+    "longitude": -6.32444444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Mamarrosa",
+    "latitude": 40.482229,
+    "longitude": -8.577644,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Mangualde",
+    "latitude": 40.60354,
+    "longitude": -7.7656,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Manhente",
+    "latitude": 41.54833333,
+    "longitude": -8.57111111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Manhufe",
+    "latitude": 41.264457,
+    "longitude": -8.155524,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Manteigas",
+    "latitude": 40.4,
+    "longitude": -7.53333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Marco de Canaveses",
+    "latitude": 41.161655,
+    "longitude": -8.127792,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Marialva",
+    "latitude": 40.909642,
+    "longitude": -7.231027,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Marinha Grande",
+    "latitude": 39.74916667,
+    "longitude": -8.93305556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Marvão",
+    "latitude": 39.394765,
+    "longitude": -7.377549,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Mateus",
+    "latitude": 41.300643,
+    "longitude": -7.712338,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Matosinhos",
+    "latitude": 41.18333333,
+    "longitude": -8.7,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Maçãs de D. Maria",
+    "latitude": 39.874946,
+    "longitude": -8.333609,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Meadas",
+    "latitude": 39.512488,
+    "longitude": -7.521779,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Meca",
+    "latitude": 39.088411,
+    "longitude": -9.034965,
+    "source": "nominatim-refix",
+    "confidence": "low"
+  },
+  {
+    "name": "Meda",
+    "latitude": 40.930394,
+    "longitude": -7.251758,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Medelim",
+    "latitude": 40.04916667,
+    "longitude": -7.18305556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Melgaço",
+    "latitude": 42.115032,
+    "longitude": -8.259563,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Merceana",
+    "latitude": 39.093436,
+    "longitude": -9.112672,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Merufe",
+    "latitude": 42.01805556,
+    "longitude": -8.38888889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Mesão Frio",
+    "latitude": 41.16666667,
+    "longitude": -7.88333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Mezio",
+    "latitude": 40.979181,
+    "longitude": -7.886452,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Milreu",
+    "latitude": 37.095167,
+    "longitude": -7.904026,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Mira",
+    "latitude": 40.428462,
+    "longitude": -8.737214,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Miranda do Douro",
+    "latitude": 41.5,
+    "longitude": -6.266667,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Mirandela",
+    "latitude": 41.483333,
+    "longitude": -7.183333,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Mire de Tibães",
+    "latitude": 41.56694444,
+    "longitude": -8.47944444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Mogadouro",
+    "latitude": 41.333333,
+    "longitude": -6.716667,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Moimenta da Beira",
+    "latitude": 40.989863,
+    "longitude": -7.600615,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Moita",
+    "latitude": 38.640264,
+    "longitude": -8.972056,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Moitas",
+    "latitude": 39.35036,
+    "longitude": -8.528168,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Mondim de Basto",
+    "latitude": 41.42,
+    "longitude": -7.95833333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Monforte",
+    "latitude": 39.05222222,
+    "longitude": -7.43805556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Monfortinho",
+    "latitude": 40.003329,
+    "longitude": -6.916466,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Monsanto",
+    "latitude": 40.038751,
+    "longitude": -7.115113,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Monsaraz",
+    "latitude": 38.43333333,
+    "longitude": -7.38333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Monserrate (Sintra)",
+    "latitude": 38.794225,
+    "longitude": -9.420648,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Montalvo",
+    "latitude": 39.48472222,
+    "longitude": -8.3,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Montargil",
+    "latitude": 39.08333333,
+    "longitude": -8.16666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Monte Gordo",
+    "latitude": 37.18222222,
+    "longitude": -7.44916667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Montemor-o-Novo",
+    "latitude": 38.648178,
+    "longitude": -8.211586,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Montemor-o-Velho",
+    "latitude": 40.16666667,
+    "longitude": -8.68333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Montijo",
+    "latitude": 38.7,
+    "longitude": -8.96666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Monção",
+    "latitude": 42.077111,
+    "longitude": -8.481812,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Mora",
+    "latitude": 38.950655,
+    "longitude": -8.185014,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Moreira de Rei",
+    "latitude": 40.82972222,
+    "longitude": -7.32083333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Moura",
+    "latitude": 38.140979,
+    "longitude": -7.45007,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Moura Morta",
+    "latitude": 40.951628,
+    "longitude": -7.912104,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Mourisca",
+    "latitude": 38.532557,
+    "longitude": -8.811403,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Mourão",
+    "latitude": 38.384897,
+    "longitude": -7.346723,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Murtosa",
+    "latitude": 40.7375,
+    "longitude": -8.63805556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Murça",
+    "latitude": 41.40833333,
+    "longitude": -7.45361111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Mértola",
+    "latitude": 37.63333333,
+    "longitude": -7.66666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Nave de Santo António",
+    "latitude": 40.315697,
+    "longitude": -7.578595,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Nazaré",
+    "latitude": 39.602911,
+    "longitude": -9.070157,
+    "source": "nominatim-refix",
+    "confidence": "low"
+  },
+  {
+    "name": "Nexe",
+    "latitude": 37.114272,
+    "longitude": -7.978187,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Nisa",
+    "latitude": 39.514998,
+    "longitude": -7.649226,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Nossa Senhora da Orada",
+    "latitude": 42.12018,
+    "longitude": -8.252602,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Nossa Senhora dos Degolados",
+    "latitude": 39.060803,
+    "longitude": -7.121433,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Odeleite",
+    "latitude": 37.33444444,
+    "longitude": -7.48777778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Odemira",
+    "latitude": 37.598,
+    "longitude": -8.642,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Odiáxere",
+    "latitude": 37.14888889,
+    "longitude": -8.65972222,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Ofir",
+    "latitude": 41.516546,
+    "longitude": -8.783445,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Oiã",
+    "latitude": 40.54111111,
+    "longitude": -8.53972222,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Oleiros",
+    "latitude": 39.918888,
+    "longitude": -7.914006,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Olhos de Água",
+    "latitude": 37.095297,
+    "longitude": -8.186724,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Olhão",
+    "latitude": 37.027037,
+    "longitude": -7.841129,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Olival Basto",
+    "latitude": 38.79083333,
+    "longitude": -9.16722222,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Olival d'El-Rei",
+    "latitude": 39.35036,
+    "longitude": -8.528168,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Olival da Palha",
+    "latitude": 38.634318,
+    "longitude": -8.871451,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Oliveira de Azeméis",
+    "latitude": 40.839012,
+    "longitude": -8.477781,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Oliveira do Bairro",
+    "latitude": 40.51344,
+    "longitude": -8.502342,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Oriola",
+    "latitude": 38.299861,
+    "longitude": -7.863565,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Ota",
+    "latitude": 39.110761,
+    "longitude": -8.990888,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Ouguela",
+    "latitude": 39.07888889,
+    "longitude": -7.03111111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Ourondo",
+    "latitude": 40.147299,
+    "longitude": -7.681867,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Ourém",
+    "latitude": 39.65679,
+    "longitude": -8.57963,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Outeiro Seco",
+    "latitude": 41.77527778,
+    "longitude": -7.44833333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Ovar",
+    "latitude": 40.845668,
+    "longitude": -8.648478,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Paderne",
+    "latitude": 37.175754,
+    "longitude": -8.203639,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Padim da Graça",
+    "latitude": 41.56722222,
+    "longitude": -8.48944444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Pai Penela",
+    "latitude": 40.900695,
+    "longitude": -7.304183,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Palheiros de Mira",
+    "latitude": 40.451633,
+    "longitude": -8.801577,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Palmela",
+    "latitude": 38.576045,
+    "longitude": -8.865312,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Panasqueira",
+    "latitude": 40.169067,
+    "longitude": -7.759336,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Panchorra",
+    "latitude": 41.015427,
+    "longitude": -7.96718,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Parada de Cunhos",
+    "latitude": 41.27388889,
+    "longitude": -7.76388889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Paredes",
+    "latitude": 41.2052,
+    "longitude": -8.3303,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Paredes de Coura",
+    "latitude": 41.88166667,
+    "longitude": -8.66638889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Paul",
+    "latitude": 40.200926,
+    "longitude": -7.638012,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Pavia",
+    "latitude": 38.894945,
+    "longitude": -8.017447,
+    "source": "nominatim-refix",
+    "confidence": "low"
+  },
+  {
+    "name": "Paço de Sousa",
+    "latitude": 41.1775,
+    "longitude": -8.32388889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Paços de Ferreira",
+    "latitude": 41.276098,
+    "longitude": -8.376891,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Paços de Lalim",
+    "latitude": 41.039456,
+    "longitude": -7.815571,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Pedome",
+    "latitude": 41.41361111,
+    "longitude": -8.39333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Pedralva",
+    "latitude": 41.55991,
+    "longitude": -8.320893,
+    "source": "nominatim-refix",
+    "confidence": "low"
+  },
+  {
+    "name": "Pena (Sintra)",
+    "latitude": 38.78755,
+    "longitude": -9.39034,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Penacova",
+    "latitude": 40.270209,
+    "longitude": -8.281074,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Penamacor",
+    "latitude": 40.16833333,
+    "longitude": -7.16722222,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Penha Garcia",
+    "latitude": 40.04,
+    "longitude": -7.01916667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Penhas da Saúde",
+    "latitude": 40.3,
+    "longitude": -7.55,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Peniche",
+    "latitude": 39.36,
+    "longitude": -9.38833333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Penude",
+    "latitude": 41.07777778,
+    "longitude": -7.84861111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Pero de Lagarelhos",
+    "latitude": 41.672943,
+    "longitude": -7.476491,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Peso da Régua",
+    "latitude": 41.163704,
+    "longitude": -7.787582,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Pias",
+    "latitude": 38.020912,
+    "longitude": -7.474651,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Picão",
+    "latitude": 40.946651,
+    "longitude": -7.947995,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Pinheiro",
+    "latitude": 40.803878,
+    "longitude": -7.601738,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Pinheiros",
+    "latitude": 42.0427,
+    "longitude": -8.4956,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Pinhel",
+    "latitude": 40.779428,
+    "longitude": -7.103199,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Pisões",
+    "latitude": 37.997501,
+    "longitude": -7.948941,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Pocariça",
+    "latitude": 40.378618,
+    "longitude": -8.579325,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Pombeiro de Ribavizela",
+    "latitude": 41.38388889,
+    "longitude": -8.23305556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Ponta João de Arães",
+    "latitude": 37.12035,
+    "longitude": -8.557781,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Ponta do Altar",
+    "latitude": 37.105833,
+    "longitude": -8.519444,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Ponte da Barca",
+    "latitude": 41.808321,
+    "longitude": -8.420333,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Ponte de Lima",
+    "latitude": 41.76666667,
+    "longitude": -8.58333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Ponte de Sor",
+    "latitude": 39.25193,
+    "longitude": -8.008997,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Ponte do Rol",
+    "latitude": 39.098671,
+    "longitude": -9.315546,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Porches",
+    "latitude": 37.12666667,
+    "longitude": -8.40166667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Portalegre",
+    "latitude": 39.291135,
+    "longitude": -7.433389,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Portel",
+    "latitude": 38.297084,
+    "longitude": -7.702656,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Portela do Homem",
+    "latitude": 41.808788,
+    "longitude": -8.131129,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Portimão",
+    "latitude": 37.13694444,
+    "longitude": -8.53833333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Portinho da Arrábida",
+    "latitude": 38.47611111,
+    "longitude": -8.985,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Porto",
+    "latitude": 41.14944444,
+    "longitude": -8.61083333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Porto de Mós",
+    "latitude": 39.60222222,
+    "longitude": -8.81777778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Pousafoles do Bispo",
+    "latitude": 40.408863,
+    "longitude": -7.198555,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Praia da Rocha",
+    "latitude": 37.11666667,
+    "longitude": -8.53333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Praia das Maçãs",
+    "latitude": 38.825,
+    "longitude": -9.47,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Praias do Sado",
+    "latitude": 38.513885,
+    "longitude": -8.842128,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Proença-a-Velha",
+    "latitude": 40.02555556,
+    "longitude": -7.24111111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Punhete",
+    "latitude": 39.482611,
+    "longitude": -8.326648,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Pêra do Moço",
+    "latitude": 40.61309,
+    "longitude": -7.211563,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Póvoa (povoação do Alto Alentejo)",
+    "latitude": 39.512488,
+    "longitude": -7.521779,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Póvoa (povoação do Baixo Alentejo)",
+    "latitude": 38.225992,
+    "longitude": -7.333134,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Póvoa de Lanhoso",
+    "latitude": 41.57805556,
+    "longitude": -8.27722222,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Póvoa de Varzim",
+    "latitude": 41.38,
+    "longitude": -8.76083333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Póvoa do Concelho",
+    "latitude": 40.75972222,
+    "longitude": -7.26638889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Queimada",
+    "latitude": 41.099162,
+    "longitude": -7.739554,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Quelfes",
+    "latitude": 37.05888889,
+    "longitude": -7.82083333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Queluz",
+    "latitude": 38.756584,
+    "longitude": -9.254523,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Quintiães",
+    "latitude": 41.615597,
+    "longitude": -8.650641,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Ranhados",
+    "latitude": 40.641996,
+    "longitude": -7.899213,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Raposeira",
+    "latitude": 37.083286,
+    "longitude": -8.889599,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Rates",
+    "latitude": 41.42333333,
+    "longitude": -8.67277778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Real",
+    "latitude": 41.56917,
+    "longitude": -8.647499,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Rebordelo",
+    "latitude": 41.739444,
+    "longitude": -7.163889,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Rebordosa",
+    "latitude": 40.2431,
+    "longitude": -8.2819,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Rebordões",
+    "latitude": 41.352439,
+    "longitude": -8.429507,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Redondo",
+    "latitude": 38.646062,
+    "longitude": -7.601076,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Refojos de Basto",
+    "latitude": 41.508895,
+    "longitude": -7.982517,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Reguengos de Monsaraz",
+    "latitude": 38.428248,
+    "longitude": -7.538998,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Rendufe (Amares)",
+    "latitude": 41.62888889,
+    "longitude": -8.40916667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Rendufe (Ponte de Lima)",
+    "latitude": 41.86,
+    "longitude": -8.56194444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Renfe",
+    "latitude": 41.4358,
+    "longitude": -8.3919,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Riachos",
+    "latitude": 39.44527778,
+    "longitude": -8.51416667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Rio Mau",
+    "latitude": 41.399467,
+    "longitude": -8.685463,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Rio de Onor",
+    "latitude": 41.940278,
+    "longitude": -6.616389,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Romarigães",
+    "latitude": 41.86916667,
+    "longitude": -8.63472222,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Romeu",
+    "latitude": 41.529786,
+    "longitude": -7.059406,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Roriz",
+    "latitude": 41.3444,
+    "longitude": -8.381,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Rubiães",
+    "latitude": 41.89638889,
+    "longitude": -8.62527778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Sabroso (castro)",
+    "latitude": 41.256996,
+    "longitude": -7.734733,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Sabugal",
+    "latitude": 40.351832,
+    "longitude": -7.089648,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Sabugueiro",
+    "latitude": 40.402337,
+    "longitude": -7.640905,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Sacavém",
+    "latitude": 38.79277778,
+    "longitude": -9.10388889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Sacoias",
+    "latitude": 41.859935,
+    "longitude": -6.697449,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Salir (Algarve)",
+    "latitude": 37.240203,
+    "longitude": -8.045106,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Salreu",
+    "latitude": 40.73722222,
+    "longitude": -8.56083333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Salvador",
+    "latitude": 40.0606,
+    "longitude": -7.1761,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Salvaterra de Magos",
+    "latitude": 39.02583333,
+    "longitude": -8.79277778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Salzedas",
+    "latitude": 41.054554,
+    "longitude": -7.725289,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Samardã",
+    "latitude": 41.371023,
+    "longitude": -7.732751,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Sameiro (Braga)",
+    "latitude": 41.542136,
+    "longitude": -8.369678,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Samel",
+    "latitude": 40.45514,
+    "longitude": -8.568873,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Sancheira Grande",
+    "latitude": 39.345302,
+    "longitude": -9.083173,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Sande",
+    "latitude": 41.487,
+    "longitude": -8.35,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Sanlucar",
+    "latitude": 37.47194,
+    "longitude": -7.46583,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Santa Cruz do Bispo",
+    "latitude": 41.215849,
+    "longitude": -8.675506,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Santa Eulália",
+    "latitude": 40.927449,
+    "longitude": -8.2777,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Santa Marta de Penaguião",
+    "latitude": 41.21083333,
+    "longitude": -7.78444444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Santa Rita (praia de)",
+    "latitude": 39.17294,
+    "longitude": -9.35816,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Santana",
+    "latitude": 38.4926,
+    "longitude": -9.1037,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Santarém",
+    "latitude": 39.236364,
+    "longitude": -8.686708,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Santiago do Cacém",
+    "latitude": 38.018461,
+    "longitude": -8.693788,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Santiago do Escoural",
+    "latitude": 38.53202,
+    "longitude": -8.156155,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Santo António da Neve",
+    "latitude": 40.079133,
+    "longitude": -8.161277,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Santo António de Avenilha",
+    "latitude": 37.1936,
+    "longitude": -7.4174,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Santo Tirso",
+    "latitude": 41.344006,
+    "longitude": -8.477202,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Sardoal",
+    "latitude": 39.53347,
+    "longitude": -8.16034,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Seia",
+    "latitude": 40.424717,
+    "longitude": -7.692449,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Seixal",
+    "latitude": 38.65,
+    "longitude": -9.1,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Sendim",
+    "latitude": 41.389444,
+    "longitude": -6.425833,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Senhora da Rocha",
+    "latitude": 37.09611,
+    "longitude": -8.38833,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Serpa",
+    "latitude": 37.943652,
+    "longitude": -7.59669,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Serra",
+    "latitude": 39.6,
+    "longitude": -8.3,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Serra d'El-Rei",
+    "latitude": 39.332526,
+    "longitude": -9.269777,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Sertã",
+    "latitude": 39.824359,
+    "longitude": -8.082821,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Sesimbra",
+    "latitude": 38.443693,
+    "longitude": -9.099627,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Seteais",
+    "latitude": 38.796708,
+    "longitude": -9.399868,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Setúbal",
+    "latitude": 38.52430556,
+    "longitude": -8.8925,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Silves",
+    "latitude": 37.263983,
+    "longitude": -8.348731,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Sines",
+    "latitude": 37.956549,
+    "longitude": -8.868964,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Sintra",
+    "latitude": 38.79916667,
+    "longitude": -9.38833333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Sistelo",
+    "latitude": 41.972987,
+    "longitude": -8.374347,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Soajo",
+    "latitude": 41.87472222,
+    "longitude": -8.26416667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Sobral de Monte Agraço",
+    "latitude": 39.01972222,
+    "longitude": -9.14888889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Sortelha",
+    "latitude": 40.33152,
+    "longitude": -7.211882,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Soure",
+    "latitude": 40.059503,
+    "longitude": -8.62639,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Sousel",
+    "latitude": 38.9525,
+    "longitude": -7.67638889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "São Bartolomeu de Messines",
+    "latitude": 37.25777778,
+    "longitude": -8.29055556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "São Bento da Porta Aberta",
+    "latitude": 41.690259,
+    "longitude": -8.203455,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "São Brás",
+    "latitude": 37.902539,
+    "longitude": -7.613998,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "São Cucufate",
+    "latitude": 38.223331,
+    "longitude": -7.845042,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "São Gens",
+    "latitude": 37.92985,
+    "longitude": -7.59398,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "São Jorge",
+    "latitude": 39.63956,
+    "longitude": -8.84518,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "São Jorge da Beira",
+    "latitude": 40.16777778,
+    "longitude": -7.78166667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "São João de Gatão",
+    "latitude": 41.296971,
+    "longitude": -8.063037,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "São João de Tarouca",
+    "latitude": 40.99444444,
+    "longitude": -7.74861111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "São Lourenço de Almansil",
+    "latitude": 37.085922,
+    "longitude": -8.010079,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "São Marcos",
+    "latitude": 40.243747,
+    "longitude": -8.549594,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "São Marcos da Ataboeira",
+    "latitude": 37.7075,
+    "longitude": -7.94027778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "São Martinho de Mouros",
+    "latitude": 41.10527778,
+    "longitude": -7.89638889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "São Miguel de Ceide",
+    "latitude": 41.39556,
+    "longitude": -8.46444,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "São Pedro da Cadeira",
+    "latitude": 39.06944444,
+    "longitude": -9.37222222,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "São Pedro das Águias",
+    "latitude": 41.075817,
+    "longitude": -7.513808,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "São Pedro de Muel",
+    "latitude": 39.75528,
+    "longitude": -9.03228,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "São Quintino",
+    "latitude": 39.005943,
+    "longitude": -9.144086,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "São Romão",
+    "latitude": 40.400208,
+    "longitude": -7.713416,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "São Silvestre",
+    "latitude": 40.230081,
+    "longitude": -8.526409,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "São Vicente",
+    "latitude": 39.3608,
+    "longitude": -7.1364,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Sítio",
+    "latitude": 39.6053,
+    "longitude": -9.0765,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Tabuado",
+    "latitude": 41.18472222,
+    "longitude": -8.12583333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Tancos",
+    "latitude": 39.46055556,
+    "longitude": -8.39916667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Tareja",
+    "latitude": 37.172673,
+    "longitude": -7.878464,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Tarouca",
+    "latitude": 41.006715,
+    "longitude": -7.784047,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Tavira",
+    "latitude": 37.11666667,
+    "longitude": -7.65,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Telões",
+    "latitude": 41.212198,
+    "longitude": -7.983992,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Tendais",
+    "latitude": 41.012578,
+    "longitude": -8.051263,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Tentúgal",
+    "latitude": 40.22361111,
+    "longitude": -8.58527778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Tenões",
+    "latitude": 41.548812,
+    "longitude": -8.386589,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Terena",
+    "latitude": 38.618891,
+    "longitude": -7.411767,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Terras de Bouro",
+    "latitude": 41.719026,
+    "longitude": -8.308163,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Tocha",
+    "latitude": 40.313199,
+    "longitude": -8.753506,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Tomar",
+    "latitude": 39.6,
+    "longitude": -8.41666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Torre (serra da Estrela)",
+    "latitude": 40.321883,
+    "longitude": -7.612926,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Torre das Águias",
+    "latitude": 38.875022,
+    "longitude": -8.126502,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Torre de Moncorvo",
+    "latitude": 41.173889,
+    "longitude": -7.05,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Torre de Palma",
+    "latitude": 39.06222222,
+    "longitude": -7.48861111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Torres Novas",
+    "latitude": 39.4775,
+    "longitude": -8.54083333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Torres Vedras",
+    "latitude": 39.093086,
+    "longitude": -9.260741,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Torrão",
+    "latitude": 38.294777,
+    "longitude": -8.222145,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Toubres",
+    "latitude": 41.462217,
+    "longitude": -7.423813,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Trancoso",
+    "latitude": 40.77847,
+    "longitude": -7.34908,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Trindade",
+    "latitude": 37.884722,
+    "longitude": -7.894444,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Trofa",
+    "latitude": 40.611672,
+    "longitude": -8.476655,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Turcifal",
+    "latitude": 39.04194444,
+    "longitude": -9.26611111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Ucanha",
+    "latitude": 41.045766,
+    "longitude": -7.744453,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vagos",
+    "latitude": 40.5535,
+    "longitude": -8.698917,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vagueira",
+    "latitude": 40.562027,
+    "longitude": -8.7654,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vale de Cambra",
+    "latitude": 40.849812,
+    "longitude": -8.393914,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vale de Estrela",
+    "latitude": 40.49944444,
+    "longitude": -7.30777778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vale de Prazeres",
+    "latitude": 40.10972222,
+    "longitude": -7.43166667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Valença",
+    "latitude": 42.026888,
+    "longitude": -8.64214,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Valhelhas",
+    "latitude": 40.40722222,
+    "longitude": -7.40305556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Valongo de Milhais",
+    "latitude": 41.44583333,
+    "longitude": -7.44361111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Valência de Alcântara",
+    "latitude": 39.40833333,
+    "longitude": -7.24444444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Varatojo",
+    "latitude": 39.090767,
+    "longitude": -9.277268,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Varge",
+    "latitude": 41.8715,
+    "longitude": -6.68037,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Velosa",
+    "latitude": 40.649331,
+    "longitude": -7.303961,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vermiosa",
+    "latitude": 40.82722222,
+    "longitude": -6.8775,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Viana do Alentejo",
+    "latitude": 38.334768,
+    "longitude": -8.004397,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Viana do Castelo",
+    "latitude": 41.7,
+    "longitude": -8.83333333,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vidigueira",
+    "latitude": 38.21016,
+    "longitude": -7.801452,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vieira de Leiria",
+    "latitude": 39.86916667,
+    "longitude": -8.93694444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vieira do Minho",
+    "latitude": 41.620847,
+    "longitude": -8.153529,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Alva",
+    "latitude": 38.25,
+    "longitude": -7.9,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Flor",
+    "latitude": 41.30777778,
+    "longitude": -7.15305556,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Franca de Xira",
+    "latitude": 38.954278,
+    "longitude": -8.989704,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Fresca de Azeitão",
+    "latitude": 38.524923,
+    "longitude": -8.99656,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Nova",
+    "latitude": 40.18173,
+    "longitude": -8.15163,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Nova de Cerveira",
+    "latitude": 41.94,
+    "longitude": -8.74444444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Nova de Famalicão",
+    "latitude": 41.41666667,
+    "longitude": -8.51666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Nova de Foz Côa",
+    "latitude": 41.08184,
+    "longitude": -7.142414,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Nova de Gaia",
+    "latitude": 41.13333333,
+    "longitude": -8.61666667,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Nova de Milfontes",
+    "latitude": 37.72777778,
+    "longitude": -8.78527778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Pouca de Aguiar",
+    "latitude": 41.50166667,
+    "longitude": -7.64777778,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Real",
+    "latitude": 41.29583333,
+    "longitude": -7.74611111,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Real de Santo António",
+    "latitude": 37.188427,
+    "longitude": -7.424216,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Ruiva",
+    "latitude": 38.246558,
+    "longitude": -7.935612,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Seca",
+    "latitude": 41.513,
+    "longitude": -8.684,
+    "source": "review:continuity",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila Viçosa",
+    "latitude": 38.777406,
+    "longitude": -7.416691,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila de Frades",
+    "latitude": 38.21434444,
+    "longitude": -7.82295,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila do Bispo",
+    "latitude": 37.08298,
+    "longitude": -8.909612,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vila do Conde",
+    "latitude": 41.35,
+    "longitude": -8.75,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vilar Formoso",
+    "latitude": 40.608367,
+    "longitude": -6.833443,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vilar Turpim",
+    "latitude": 40.825463,
+    "longitude": -6.951948,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Vilarinho de Samardã",
+    "latitude": 41.38218,
+    "longitude": -7.704166,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Vilaverdinho",
+    "latitude": 41.506915,
+    "longitude": -7.081214,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Vimeiro",
+    "latitude": 39.176985,
+    "longitude": -9.316852,
+    "source": "review:alternative",
+    "confidence": "high"
+  },
+  {
+    "name": "Vimioso",
+    "latitude": 41.582419,
+    "longitude": -6.5329175,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Vinhais",
+    "latitude": 41.832639,
+    "longitude": -7.008054,
+    "source": "manual",
+    "confidence": "high"
+  },
+  {
+    "name": "Viseu",
+    "latitude": 40.66083333,
+    "longitude": -7.90944444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Vista Alegre",
+    "latitude": 40.5897,
+    "longitude": -8.6837,
+    "source": "review:research",
+    "confidence": "high"
+  },
+  {
+    "name": "Águas de Moura",
+    "latitude": 38.5833,
+    "longitude": -8.7,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Águeda",
+    "latitude": 40.56666667,
+    "longitude": -8.45,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Álvaro",
+    "latitude": 39.975537,
+    "longitude": -7.965349,
+    "source": "nominatim",
+    "confidence": "high"
+  },
+  {
+    "name": "Évora",
+    "latitude": 38.57083333,
+    "longitude": -7.90944444,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Évora Monte",
+    "latitude": 38.76527778,
+    "longitude": -7.71638889,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  },
+  {
+    "name": "Óbidos",
+    "latitude": 39.36,
+    "longitude": -9.1575,
+    "source": "wikipedia-v1",
+    "confidence": "high"
+  }
+]

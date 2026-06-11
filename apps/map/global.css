@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* shadcn-style tokens: stone neutrals, amber-700 primary (the journey color) */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 24 10% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 24 10% 10%;
+  --primary: 27 91% 37%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 60 5% 96%;
+  --secondary-foreground: 24 10% 10%;
+  --muted: 60 5% 96%;
+  --muted-foreground: 25 6% 38%;
+  --accent: 48 96% 89%;
+  --accent-foreground: 24 10% 10%;
+  --border: 20 6% 90%;
+  --input: 20 6% 83%;
+  --ring: 27 91% 37%;
+}
+
+/* WCAG 2.5.8 / HIG: comfortable targets on touch devices */
+@media (pointer: coarse) {
+  button,
+  input,
+  [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

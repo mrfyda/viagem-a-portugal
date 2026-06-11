@@ -1,0 +1,6909 @@
+{
+ "A dos Ruivos": [
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "referenced-only"
+  }
+ ],
+ "A-Ver-o-Mar": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "referenced-only"
+  }
+ ],
+ "Abade de Neiva": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  }
+ ],
+ "Abadim": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "stop"
+  }
+ ],
+ "Abrantes": [
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "referenced-only"
+  }
+ ],
+ "Adeganha": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "stop"
+  }
+ ],
+ "Aguçadoura": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "stop"
+  }
+ ],
+ "Alandroal": [
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "stop"
+  }
+ ],
+ "Albergaria-a-Velha": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "referenced-only"
+  }
+ ],
+ "Albernoa": [
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "referenced-only"
+  }
+ ],
+ "Albuquerque": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alcafozes": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "passed-through"
+  }
+ ],
+ "Alcaide": [
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "stop"
+  }
+ ],
+ "Alcobaça": [
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alcochete": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alcorochel": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alcoutim": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "stop"
+  }
+ ],
+ "Alcácer do Sal": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "stop"
+  }
+ ],
+ "Alcáçovas": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "stop"
+  }
+ ],
+ "Aldeia Galega": [
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "passed-through"
+  }
+ ],
+ "Aldeia Gavinha": [
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "stop"
+  }
+ ],
+ "Aldeia Viçosa": [
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "stop"
+  }
+ ],
+ "Aldeia da Tôr": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  }
+ ],
+ "Aldeia do Couço": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alenquer": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "stop"
+  }
+ ],
+ "Alfeite": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "passed-through"
+  }
+ ],
+ "Algeruz": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alhandra": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alhões": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  }
+ ],
+ "Aljezur": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  }
+ ],
+ "Aljubarrota": [
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  }
+ ],
+ "Almada": [
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  }
+ ],
+ "Almadena": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  }
+ ],
+ "Almeida": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  }
+ ],
+ "Almeirim": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "stop"
+  }
+ ],
+ "Almofala": [
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  }
+ ],
+ "Almourol": [
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alpalhão": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "passed-through"
+  }
+ ],
+ "Alpedrinha": [
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alpiarça": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alte": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Alter Pedroso": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alter do Chão": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "referenced-only"
+  }
+ ],
+ "Alvite": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "stop"
+  }
+ ],
+ "Alvito": [
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "stop"
+  }
+ ],
+ "Amarante": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 7,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 7,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  }
+ ],
+ "Amor": [
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "passed-through"
+  }
+ ],
+ "Anadia": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "passed-through"
+  }
+ ],
+ "Angeja": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "passed-through"
+  }
+ ],
+ "Antas": [
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "stop"
+  }
+ ],
+ "Ançã": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 17,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  }
+ ],
+ "Apúlia": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "stop"
+  }
+ ],
+ "Aranhas": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "passed-through"
+  }
+ ],
+ "Arcos de Valdevez": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "passed-through"
+  }
+ ],
+ "Arez": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Armação de Pêra": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Arneiro": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Arouca": [
+  {
+   "chapter": 2,
+   "section": 23,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  }
+ ],
+ "Arraiolos": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  }
+ ],
+ "Arronches": [
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "stop"
+  }
+ ],
+ "Arruda dos Vinhos": [
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  }
+ ],
+ "Arões": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  }
+ ],
+ "Atalaia": [
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  }
+ ],
+ "Atouguia da Baleia": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  }
+ ],
+ "Aveiro": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 21,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Aveleda (aldeia de Rio de Onor)": [
+  {
+   "chapter": 1,
+   "section": 3,
+   "kind": "passed-through"
+  }
+ ],
+ "Avis": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Azambuja": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "stop"
+  }
+ ],
+ "Azenhas do Mar": [
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "passed-through"
+  }
+ ],
+ "Azevo": [
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "passed-through"
+  }
+ ],
+ "Azinhaga": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "stop"
+  }
+ ],
+ "Azinhoso": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "stop"
+  }
+ ],
+ "Azurara": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "stop"
+  }
+ ],
+ "Açores (freg. de Celorico da Beira)": [
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "stop"
+  }
+ ],
+ "Bairrada": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "referenced-only"
+  }
+ ],
+ "Baião": [
+  {
+   "chapter": 1,
+   "section": 7,
+   "kind": "passed-through"
+  }
+ ],
+ "Baleal": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  }
+ ],
+ "Baleizão": [
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "passed-through"
+  }
+ ],
+ "Balugães": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "referenced-only"
+  }
+ ],
+ "Barca de Alva": [
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  }
+ ],
+ "Barcelos": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  }
+ ],
+ "Barreiro": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "passed-through"
+  }
+ ],
+ "Barrinha de Mira": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "referenced-only"
+  }
+ ],
+ "Batalha": [
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  }
+ ],
+ "Baçal": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 3,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 1,
+   "section": 4,
+   "kind": "referenced-only"
+  }
+ ],
+ "Beberriqueira": [
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "passed-through"
+  }
+ ],
+ "Beja": [
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "stop"
+  }
+ ],
+ "Belmonte": [
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "referenced-only"
+  }
+ ],
+ "Benafrim": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Benavente": [
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "referenced-only"
+  }
+ ],
+ "Benavila": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Benquerença": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "referenced-only"
+  }
+ ],
+ "Bensafrim": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Berlengas": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  }
+ ],
+ "Bertiandos": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "stop"
+  }
+ ],
+ "Bigorne": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  }
+ ],
+ "Boialvo": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "passed-through"
+  }
+ ],
+ "Boliqueime": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Bom Jesus (Braga)": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  }
+ ],
+ "Bombarral": [
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "passed-through"
+  }
+ ],
+ "Borba": [
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "stop"
+  }
+ ],
+ "Braga": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 14,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 14,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Bragança": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 3,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 4,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 43,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Bravães": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "stop"
+  }
+ ],
+ "Briteiros (citânia)": [
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "referenced-only"
+  }
+ ],
+ "Brito": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "passed-through"
+  }
+ ],
+ "Brogueira": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Brotas": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "stop"
+  }
+ ],
+ "Budens": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  }
+ ],
+ "Bustelo": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  }
+ ],
+ "Buçaco": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "stop"
+  }
+ ],
+ "Cabeceiras de Basto": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "stop"
+  }
+ ],
+ "Cabeço de Vide": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Cachopo": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Caldas da Rainha": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "passed-through"
+  }
+ ],
+ "Caminha": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "stop"
+  }
+ ],
+ "Campanas": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "passed-through"
+  }
+ ],
+ "Campo Maior": [
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "referenced-only"
+  }
+ ],
+ "Canedo de Basto": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  }
+ ],
+ "Cantanhede": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "referenced-only"
+  }
+ ],
+ "Capinha": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "referenced-only"
+  }
+ ],
+ "Carcavelos": [
+  {
+   "chapter": 4,
+   "section": 43,
+   "kind": "stop"
+  }
+ ],
+ "Cardanha": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "passed-through"
+  }
+ ],
+ "Carrazedo de Montenegro": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "stop"
+  }
+ ],
+ "Carvalhal": [
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Carvalhal de Óbidos": [
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  }
+ ],
+ "Carvas": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "referenced-only"
+  }
+ ],
+ "Casais do Livramento": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "passed-through"
+  }
+ ],
+ "Cascais": [
+  {
+   "chapter": 4,
+   "section": 43,
+   "kind": "stop"
+  }
+ ],
+ "Castelo Bom": [
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "passed-through"
+  }
+ ],
+ "Castelo Branco (cidade)": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Castelo Branco (freg. do concelho de Mogadouro)": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Castelo Mendo": [
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "stop"
+  }
+ ],
+ "Castelo Novo": [
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "stop"
+  }
+ ],
+ "Castelo Rodrigo": [
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "stop"
+  }
+ ],
+ "Castelo de Vide": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "stop"
+  }
+ ],
+ "Castelo do Bode": [
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "stop"
+  }
+ ],
+ "Castelões": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "referenced-only"
+  }
+ ],
+ "Castro Daire": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "stop"
+  }
+ ],
+ "Castro Laboreiro": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "stop"
+  }
+ ],
+ "Castro Marim": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "stop"
+  }
+ ],
+ "Castro Verde": [
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "referenced-only"
+  }
+ ],
+ "Caçarelhos": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "stop"
+  }
+ ],
+ "Celorico da Beira": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "passed-through"
+  }
+ ],
+ "Celorico de Basto": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "passed-through"
+  }
+ ],
+ "Cercal (do concelho de Cadaval)": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "passed-through"
+  }
+ ],
+ "Cerrada Grande": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Cete": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "stop"
+  }
+ ],
+ "Chamoim": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "passed-through"
+  }
+ ],
+ "Chaves": [
+  {
+   "chapter": 1,
+   "section": 4,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "stop"
+  }
+ ],
+ "Cholda": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ciborro": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "passed-through"
+  }
+ ],
+ "Cidadelhe": [
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ciladas de S. Romão": [
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "passed-through"
+  }
+ ],
+ "Clarines": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Coentral": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  }
+ ],
+ "Coimbra": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 21,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 21,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 23,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  }
+ ],
+ "Constância": [
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "stop"
+  }
+ ],
+ "Conímbriga": [
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "referenced-only"
+  }
+ ],
+ "Corujos": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Cova da Beira": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "referenced-only"
+  }
+ ],
+ "Covide": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "passed-through"
+  }
+ ],
+ "Covilhã": [
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "stop"
+  }
+ ],
+ "Crato": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Cucujães": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "referenced-only"
+  }
+ ],
+ "Cumeeira": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "passed-through"
+  }
+ ],
+ "Cós": [
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "stop"
+  }
+ ],
+ "Delães": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "passed-through"
+  }
+ ],
+ "Divisões": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Dogueno": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Dois Portos": [
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "stop"
+  }
+ ],
+ "Donas": [
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "stop"
+  }
+ ],
+ "Duas Igrejas": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "passed-through"
+  }
+ ],
+ "Eiras": [
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "referenced-only"
+  }
+ ],
+ "Elvas": [
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  }
+ ],
+ "Entradas": [
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ereira": [
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "stop"
+  }
+ ],
+ "Ericeira": [
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ermelo": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ermida": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Escalhão": [
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "stop"
+  }
+ ],
+ "Escarigo": [
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  }
+ ],
+ "Esmoriz": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "passed-through"
+  }
+ ],
+ "Espiche": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  }
+ ],
+ "Espinho": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "passed-through"
+  }
+ ],
+ "Espiçandeira": [
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "stop"
+  }
+ ],
+ "Esposende": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "passed-through"
+  }
+ ],
+ "Estarreja": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "stop"
+  }
+ ],
+ "Estevais": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "passed-through"
+  }
+ ],
+ "Estoril": [
+  {
+   "chapter": 4,
+   "section": 43,
+   "kind": "passed-through"
+  }
+ ],
+ "Estorninhos": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Estremoz": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  }
+ ],
+ "Estói": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "stop"
+  }
+ ],
+ "Estômbar": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Fafe": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "passed-through"
+  }
+ ],
+ "Faro": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Feira (Vila da)": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Feiteira": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Felgueiras": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "passed-through"
+  }
+ ],
+ "Ferreira": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ferreirim": [
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ferrel": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "stop"
+  }
+ ],
+ "Figueira da Foz": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "stop"
+  }
+ ],
+ "Figueira de Castelo Rodrigo": [
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "stop"
+  }
+ ],
+ "Finisterra do Sul": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Flor da Rosa": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "passed-through"
+  }
+ ],
+ "Fonte Arcada": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "referenced-only"
+  }
+ ],
+ "Fontelas": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  }
+ ],
+ "Fornos de Algodres": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "passed-through"
+  }
+ ],
+ "Foz Giraldo": [
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "passed-through"
+  }
+ ],
+ "Foz de Arouce": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "passed-through"
+  }
+ ],
+ "Foz do Caneiro": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  }
+ ],
+ "Fundão": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "referenced-only"
+  }
+ ],
+ "Furadouro": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "stop"
+  }
+ ],
+ "Fátima": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "stop"
+  }
+ ],
+ "Fão": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "passed-through"
+  }
+ ],
+ "Gafanhoeira": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  }
+ ],
+ "Giela": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  }
+ ],
+ "Gilmonde": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "passed-through"
+  }
+ ],
+ "Gilvrazino": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Giões": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Godim": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  }
+ ],
+ "Golegã": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Gondoriz": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "passed-through"
+  }
+ ],
+ "Gralheira": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  }
+ ],
+ "Granjinha": [
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "passed-through"
+  }
+ ],
+ "Guadramil": [
+  {
+   "chapter": 1,
+   "section": 3,
+   "kind": "referenced-only"
+  }
+ ],
+ "Guarda": [
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  }
+ ],
+ "Guarita de Godeal": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  }
+ ],
+ "Guimarães": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 21,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 43,
+   "kind": "referenced-only"
+  }
+ ],
+ "Gáfete": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Gândara dos Olivais": [
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "passed-through"
+  }
+ ],
+ "Góis": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  }
+ ],
+ "Idanha-a-Nova": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "stop"
+  }
+ ],
+ "Idanha-a-Velha": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  }
+ ],
+ "Janas": [
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "stop"
+  }
+ ],
+ "Jou": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "passed-through"
+  }
+ ],
+ "Junqueira (povoação do concelho de Vila do Conde)": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Junqueira (povoação perto de Moncorvo)": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Juromenha": [
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lagareira": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lagoa": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lagoa Comprida": [
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lagos": [
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Lama": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lamego": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 43,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lanhoso": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lavre": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "stop"
+  }
+ ],
+ "Leiria": [
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Leça do Bailio": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lindoso": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "referenced-only"
+  }
+ ],
+ "Linhares": [
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "stop"
+  }
+ ],
+ "Lisboa": [
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 21,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 43,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lobrigos": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "passed-through"
+  }
+ ],
+ "Longos Vales": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Longroiva": [
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "passed-through"
+  }
+ ],
+ "Lorvão": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 23,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lotão": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Loulé": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lourinhã": [
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "referenced-only"
+  }
+ ],
+ "Lousã": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "stop"
+  }
+ ],
+ "Luz (de Tavira)": [
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Mafra": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  }
+ ],
+ "Magueija": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  }
+ ],
+ "Maiorca": [
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "referenced-only"
+  }
+ ],
+ "Maiorga": [
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "passed-through"
+  }
+ ],
+ "Malhadas": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "passed-through"
+  }
+ ],
+ "Mamarrosa": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "stop"
+  }
+ ],
+ "Mangualde": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "passed-through"
+  }
+ ],
+ "Manhente": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "stop"
+  }
+ ],
+ "Manhufe": [
+  {
+   "chapter": 1,
+   "section": 7,
+   "kind": "referenced-only"
+  }
+ ],
+ "Manteigas": [
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "stop"
+  }
+ ],
+ "Marco de Canaveses": [
+  {
+   "chapter": 1,
+   "section": 7,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 7,
+   "kind": "passed-through"
+  }
+ ],
+ "Marialva": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "stop"
+  }
+ ],
+ "Marinha Grande": [
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "stop"
+  }
+ ],
+ "Marvão": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "stop"
+  }
+ ],
+ "Mateus": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "stop"
+  }
+ ],
+ "Matosinhos": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  }
+ ],
+ "Maçãs de D. Maria": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "referenced-only"
+  }
+ ],
+ "Meadas": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Meca": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "stop"
+  }
+ ],
+ "Meda": [
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "passed-through"
+  }
+ ],
+ "Medelim": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "passed-through"
+  }
+ ],
+ "Melgaço": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "referenced-only"
+  }
+ ],
+ "Merceana": [
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "passed-through"
+  }
+ ],
+ "Merufe": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "passed-through"
+  }
+ ],
+ "Mesão Frio": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  }
+ ],
+ "Mezio": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  }
+ ],
+ "Milreu": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Mira": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  }
+ ],
+ "Miranda do Douro": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  }
+ ],
+ "Mirandela": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "passed-through"
+  }
+ ],
+ "Mire de Tibães": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "stop"
+  }
+ ],
+ "Mogadouro": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "referenced-only"
+  }
+ ],
+ "Moimenta da Beira": [
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "stop"
+  }
+ ],
+ "Moita": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "passed-through"
+  }
+ ],
+ "Moitas": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Mondim de Basto": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "passed-through"
+  }
+ ],
+ "Monforte": [
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "passed-through"
+  }
+ ],
+ "Monfortinho": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "referenced-only"
+  }
+ ],
+ "Monsanto": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Monsaraz": [
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "referenced-only"
+  }
+ ],
+ "Monserrate (Sintra)": [
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "referenced-only"
+  }
+ ],
+ "Montalvo": [
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "passed-through"
+  }
+ ],
+ "Montargil": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "passed-through"
+  }
+ ],
+ "Monte Gordo": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Montemor-o-Novo": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "stop"
+  }
+ ],
+ "Montemor-o-Velho": [
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "stop"
+  }
+ ],
+ "Montijo": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "passed-through"
+  }
+ ],
+ "Monção": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "stop"
+  }
+ ],
+ "Mora": [
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "passed-through"
+  }
+ ],
+ "Moreira de Rei": [
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  }
+ ],
+ "Moura": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "passed-through"
+  }
+ ],
+ "Moura Morta": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  }
+ ],
+ "Mourisca": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  }
+ ],
+ "Mourão": [
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "passed-through"
+  }
+ ],
+ "Murtosa": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "passed-through"
+  }
+ ],
+ "Murça": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  }
+ ],
+ "Mértola": [
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Nave de Santo António": [
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "stop"
+  }
+ ],
+ "Nazaré": [
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "stop"
+  }
+ ],
+ "Nexe": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Nisa": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Nossa Senhora da Orada": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "referenced-only"
+  }
+ ],
+ "Nossa Senhora dos Degolados": [
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "passed-through"
+  }
+ ],
+ "Odeleite": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Odemira": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  }
+ ],
+ "Odiáxere": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ofir": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "passed-through"
+  }
+ ],
+ "Oiã": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "stop"
+  }
+ ],
+ "Oleiros": [
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "stop"
+  }
+ ],
+ "Olhos de Água": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Olhão": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "stop"
+  }
+ ],
+ "Olival Basto": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Olival d'El-Rei": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Olival da Palha": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Oliveira de Azeméis": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 23,
+   "kind": "stop"
+  }
+ ],
+ "Oliveira do Bairro": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "passed-through"
+  }
+ ],
+ "Oriola": [
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "passed-through"
+  }
+ ],
+ "Ota": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "passed-through"
+  }
+ ],
+ "Ouguela": [
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ourondo": [
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "stop"
+  }
+ ],
+ "Ourém": [
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  }
+ ],
+ "Outeiro Seco": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "stop"
+  }
+ ],
+ "Ovar": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Paderne": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Padim da Graça": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "passed-through"
+  }
+ ],
+ "Pai Penela": [
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "passed-through"
+  }
+ ],
+ "Palheiros de Mira": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "stop"
+  }
+ ],
+ "Palmela": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  }
+ ],
+ "Panasqueira": [
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "stop"
+  }
+ ],
+ "Panchorra": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  }
+ ],
+ "Parada de Cunhos": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "stop"
+  }
+ ],
+ "Paredes": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "passed-through"
+  }
+ ],
+ "Paredes de Coura": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "referenced-only"
+  }
+ ],
+ "Paul": [
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  }
+ ],
+ "Pavia": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Paço de Sousa": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 17,
+   "kind": "referenced-only"
+  }
+ ],
+ "Paços de Ferreira": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "referenced-only"
+  }
+ ],
+ "Paços de Lalim": [
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  }
+ ],
+ "Pedome": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "passed-through"
+  }
+ ],
+ "Pedralva": [
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  }
+ ],
+ "Pena (Sintra)": [
+  {
+   "chapter": 1,
+   "section": 7,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Penacova": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "stop"
+  }
+ ],
+ "Penamacor": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  }
+ ],
+ "Penha Garcia": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "referenced-only"
+  }
+ ],
+ "Penhas da Saúde": [
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "stop"
+  }
+ ],
+ "Peniche": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "stop"
+  }
+ ],
+ "Penude": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  }
+ ],
+ "Pero de Lagarelhos": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "passed-through"
+  }
+ ],
+ "Peso da Régua": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "referenced-only"
+  }
+ ],
+ "Pias": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "stop"
+  }
+ ],
+ "Picão": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  }
+ ],
+ "Pinheiro": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  }
+ ],
+ "Pinheiros": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "stop"
+  }
+ ],
+ "Pinhel": [
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "passed-through"
+  }
+ ],
+ "Pisões": [
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "stop"
+  }
+ ],
+ "Pocariça": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "passed-through"
+  }
+ ],
+ "Pombeiro de Ribavizela": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "stop"
+  }
+ ],
+ "Ponta João de Arães": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Ponta do Altar": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ponte da Barca": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ponte de Lima": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ponte de Sor": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ponte do Rol": [
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "passed-through"
+  }
+ ],
+ "Porches": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Portalegre": [
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "referenced-only"
+  }
+ ],
+ "Portel": [
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "stop"
+  }
+ ],
+ "Portela do Homem": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "passed-through"
+  }
+ ],
+ "Portimão": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Portinho da Arrábida": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "stop"
+  }
+ ],
+ "Porto": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 17,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 17,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 21,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Porto de Mós": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "stop"
+  }
+ ],
+ "Pousafoles do Bispo": [
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "referenced-only"
+  }
+ ],
+ "Praia da Rocha": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Praia das Maçãs": [
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "passed-through"
+  }
+ ],
+ "Proença-a-Velha": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "stop"
+  }
+ ],
+ "Punhete": [
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "referenced-only"
+  }
+ ],
+ "Pêra do Moço": [
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "passed-through"
+  }
+ ],
+ "Póvoa (povoação do Alto Alentejo)": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "passed-through"
+  }
+ ],
+ "Póvoa (povoação do Baixo Alentejo)": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "passed-through"
+  }
+ ],
+ "Póvoa de Lanhoso": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "referenced-only"
+  }
+ ],
+ "Póvoa de Varzim": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "stop"
+  }
+ ],
+ "Póvoa do Concelho": [
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "passed-through"
+  }
+ ],
+ "Queimada": [
+  {
+   "chapter": 1,
+   "section": 7,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "referenced-only"
+  }
+ ],
+ "Quelfes": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "Queluz": [
+  {
+   "chapter": 4,
+   "section": 43,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  }
+ ],
+ "Quintiães": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ranhados": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "referenced-only"
+  }
+ ],
+ "Raposeira": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Rates": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  }
+ ],
+ "Real": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "referenced-only"
+  }
+ ],
+ "Rebordelo": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "passed-through"
+  }
+ ],
+ "Rebordosa": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  }
+ ],
+ "Rebordões": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "passed-through"
+  }
+ ],
+ "Redondo": [
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "stop"
+  }
+ ],
+ "Refojos de Basto": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  }
+ ],
+ "Reguengos de Monsaraz": [
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "passed-through"
+  }
+ ],
+ "Rendufe (Amares)": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "stop"
+  }
+ ],
+ "Rendufe (Ponte de Lima)": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "stop"
+  }
+ ],
+ "Renfe": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "passed-through"
+  }
+ ],
+ "Riachos": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "passed-through"
+  }
+ ],
+ "Rio Mau": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  }
+ ],
+ "Rio de Onor": [
+  {
+   "chapter": 1,
+   "section": 3,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 3,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 4,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  }
+ ],
+ "Romarigães": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "referenced-only"
+  }
+ ],
+ "Romeu": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "stop"
+  }
+ ],
+ "Roriz": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "stop"
+  }
+ ],
+ "Rubiães": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "stop"
+  }
+ ],
+ "Sabroso (castro)": [
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  }
+ ],
+ "Sabugal": [
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "stop"
+  }
+ ],
+ "Sabugueiro": [
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "referenced-only"
+  }
+ ],
+ "Sacavém": [
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  }
+ ],
+ "Sacoias": [
+  {
+   "chapter": 1,
+   "section": 3,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 4,
+   "kind": "referenced-only"
+  }
+ ],
+ "Salir (Algarve)": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  }
+ ],
+ "Salreu": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "passed-through"
+  }
+ ],
+ "Salvador": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "stop"
+  }
+ ],
+ "Salvaterra de Magos": [
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "stop"
+  }
+ ],
+ "Salzedas": [
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  }
+ ],
+ "Samardã": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  }
+ ],
+ "Sameiro (Braga)": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  }
+ ],
+ "Samel": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "passed-through"
+  }
+ ],
+ "Sancheira Grande": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "passed-through"
+  }
+ ],
+ "Sande": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "passed-through"
+  }
+ ],
+ "Sanlucar": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Santa Cruz do Bispo": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "stop"
+  }
+ ],
+ "Santa Eulália": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "stop"
+  }
+ ],
+ "Santa Marta de Penaguião": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "passed-through"
+  }
+ ],
+ "Santa Rita (praia de)": [
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "stop"
+  }
+ ],
+ "Santana": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "passed-through"
+  }
+ ],
+ "Santarém": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  }
+ ],
+ "Santiago do Cacém": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Santiago do Escoural": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "stop"
+  }
+ ],
+ "Santo António da Neve": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  }
+ ],
+ "Santo António de Avenilha": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Santo Tirso": [
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "passed-through"
+  }
+ ],
+ "Sardoal": [
+  {
+   "chapter": 2,
+   "section": 21,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  }
+ ],
+ "Seia": [
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "referenced-only"
+  }
+ ],
+ "Seixal": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "passed-through"
+  }
+ ],
+ "Sendim": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "stop"
+  }
+ ],
+ "Senhora da Rocha": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Serpa": [
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  }
+ ],
+ "Serra": [
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "stop"
+  }
+ ],
+ "Serra d'El-Rei": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "stop"
+  }
+ ],
+ "Sertã": [
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "passed-through"
+  }
+ ],
+ "Sesimbra": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "stop"
+  }
+ ],
+ "Seteais": [
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "stop"
+  }
+ ],
+ "Setúbal": [
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "stop"
+  }
+ ],
+ "Silves": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Sines": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  }
+ ],
+ "Sintra": [
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 42,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 43,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "referenced-only"
+  }
+ ],
+ "Sistelo": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "stop"
+  }
+ ],
+ "Soajo": [
+  {
+   "chapter": 1,
+   "section": 13,
+   "kind": "referenced-only"
+  }
+ ],
+ "Sobral de Monte Agraço": [
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "stop"
+  }
+ ],
+ "Sortelha": [
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "stop"
+  }
+ ],
+ "Soure": [
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "passed-through"
+  }
+ ],
+ "Sousel": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "São Bartolomeu de Messines": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "São Bento da Porta Aberta": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "passed-through"
+  }
+ ],
+ "São Brás": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "passed-through"
+  }
+ ],
+ "São Cucufate": [
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  }
+ ],
+ "São Gens": [
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "stop"
+  }
+ ],
+ "São Jorge": [
+  {
+   "chapter": 1,
+   "section": 14,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 14,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  }
+ ],
+ "São Jorge da Beira": [
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "stop"
+  }
+ ],
+ "São João de Gatão": [
+  {
+   "chapter": 1,
+   "section": 7,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  }
+ ],
+ "São João de Tarouca": [
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  }
+ ],
+ "São Lourenço de Almansil": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "referenced-only"
+  }
+ ],
+ "São Marcos": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "stop"
+  }
+ ],
+ "São Marcos da Ataboeira": [
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "passed-through"
+  }
+ ],
+ "São Martinho de Mouros": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "stop"
+  }
+ ],
+ "São Miguel de Ceide": [
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "stop"
+  }
+ ],
+ "São Pedro da Cadeira": [
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "stop"
+  }
+ ],
+ "São Pedro das Águias": [
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "stop"
+  }
+ ],
+ "São Pedro de Muel": [
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "referenced-only"
+  }
+ ],
+ "São Quintino": [
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "referenced-only"
+  }
+ ],
+ "São Romão": [
+  {
+   "chapter": 1,
+   "section": 3,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "referenced-only"
+  }
+ ],
+ "São Silvestre": [
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "stop"
+  }
+ ],
+ "São Vicente": [
+  {
+   "chapter": 1,
+   "section": 4,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Sítio": [
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "stop"
+  }
+ ],
+ "Tabuado": [
+  {
+   "chapter": 1,
+   "section": 7,
+   "kind": "stop"
+  }
+ ],
+ "Tancos": [
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "stop"
+  }
+ ],
+ "Tareja": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Tarouca": [
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "stop"
+  }
+ ],
+ "Tavira": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "stop"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  }
+ ],
+ "Telões": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  }
+ ],
+ "Tendais": [
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "referenced-only"
+  }
+ ],
+ "Tentúgal": [
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  }
+ ],
+ "Tenões": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "referenced-only"
+  }
+ ],
+ "Terena": [
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "stop"
+  }
+ ],
+ "Terras de Bouro": [
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "passed-through"
+  }
+ ],
+ "Tocha": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 21,
+   "kind": "referenced-only"
+  }
+ ],
+ "Tomar": [
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "referenced-only"
+  }
+ ],
+ "Torre (serra da Estrela)": [
+  {
+   "chapter": 1,
+   "section": 8,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 15,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 20,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 21,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 24,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  }
+ ],
+ "Torre das Águias": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Torre de Moncorvo": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "referenced-only"
+  }
+ ],
+ "Torre de Palma": [
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 48,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "referenced-only"
+  }
+ ],
+ "Torres Novas": [
+  {
+   "chapter": 4,
+   "section": 34,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 37,
+   "kind": "referenced-only"
+  }
+ ],
+ "Torres Vedras": [
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  }
+ ],
+ "Torrão": [
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "stop"
+  }
+ ],
+ "Toubres": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "referenced-only"
+  }
+ ],
+ "Trancoso": [
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  }
+ ],
+ "Trindade": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 52,
+   "kind": "passed-through"
+  }
+ ],
+ "Trofa": [
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "referenced-only"
+  }
+ ],
+ "Turcifal": [
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  }
+ ],
+ "Ucanha": [
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 29,
+   "kind": "passed-through"
+  }
+ ],
+ "Vagos": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "passed-through"
+  }
+ ],
+ "Vagueira": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "stop"
+  }
+ ],
+ "Vale de Cambra": [
+  {
+   "chapter": 2,
+   "section": 23,
+   "kind": "passed-through"
+  }
+ ],
+ "Vale de Estrela": [
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "passed-through"
+  }
+ ],
+ "Vale de Prazeres": [
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "passed-through"
+  }
+ ],
+ "Valença": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "passed-through"
+  }
+ ],
+ "Valhelhas": [
+  {
+   "chapter": 3,
+   "section": 30,
+   "kind": "stop"
+  }
+ ],
+ "Valongo de Milhais": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "referenced-only"
+  }
+ ],
+ "Valência de Alcântara": [
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  }
+ ],
+ "Varatojo": [
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  }
+ ],
+ "Varge": [
+  {
+   "chapter": 1,
+   "section": 3,
+   "kind": "passed-through"
+  }
+ ],
+ "Velosa": [
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  }
+ ],
+ "Vermiosa": [
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 31,
+   "kind": "referenced-only"
+  }
+ ],
+ "Viana do Alentejo": [
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  }
+ ],
+ "Viana do Castelo": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 17,
+   "kind": "referenced-only"
+  }
+ ],
+ "Vidigueira": [
+  {
+   "chapter": 4,
+   "section": 39,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  }
+ ],
+ "Vieira de Leiria": [
+  {
+   "chapter": 4,
+   "section": 35,
+   "kind": "stop"
+  }
+ ],
+ "Vieira do Minho": [
+  {
+   "chapter": 1,
+   "section": 16,
+   "kind": "passed-through"
+  }
+ ],
+ "Vila Alva": [
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "passed-through"
+  }
+ ],
+ "Vila Flor": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "stop"
+  }
+ ],
+ "Vila Franca de Xira": [
+  {
+   "chapter": 4,
+   "section": 38,
+   "kind": "passed-through"
+  }
+ ],
+ "Vila Fresca de Azeitão": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "stop"
+  }
+ ],
+ "Vila Nova": [
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "passed-through"
+  }
+ ],
+ "Vila Nova de Cerveira": [
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "passed-through"
+  }
+ ],
+ "Vila Nova de Famalicão": [
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  }
+ ],
+ "Vila Nova de Foz Côa": [
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  }
+ ],
+ "Vila Nova de Gaia": [
+  {
+   "chapter": 1,
+   "section": 17,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 25,
+   "kind": "referenced-only"
+  }
+ ],
+ "Vila Nova de Milfontes": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  }
+ ],
+ "Vila Pouca de Aguiar": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "passed-through"
+  }
+ ],
+ "Vila Real": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 7,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 12,
+   "kind": "referenced-only"
+  }
+ ],
+ "Vila Real de Santo António": [
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 6,
+   "section": 53,
+   "kind": "stop"
+  }
+ ],
+ "Vila Ruiva": [
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "passed-through"
+  }
+ ],
+ "Vila Seca": [
+  {
+   "chapter": 1,
+   "section": 11,
+   "kind": "passed-through"
+  }
+ ],
+ "Vila Viçosa": [
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "stop"
+  }
+ ],
+ "Vila de Frades": [
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "stop"
+  }
+ ],
+ "Vila do Bispo": [
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 6,
+   "section": 54,
+   "kind": "stop"
+  }
+ ],
+ "Vila do Conde": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 21,
+   "kind": "referenced-only"
+  }
+ ],
+ "Vilar Formoso": [
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "stop"
+  },
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "referenced-only"
+  }
+ ],
+ "Vilar Turpim": [
+  {
+   "chapter": 3,
+   "section": 27,
+   "kind": "stop"
+  }
+ ],
+ "Vilarinho de Samardã": [
+  {
+   "chapter": 1,
+   "section": 6,
+   "kind": "stop"
+  }
+ ],
+ "Vilaverdinho": [
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 2,
+   "kind": "stop"
+  }
+ ],
+ "Vimeiro": [
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "referenced-only"
+  }
+ ],
+ "Vimioso": [
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 1,
+   "kind": "stop"
+  }
+ ],
+ "Vinhais": [
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 1,
+   "section": 5,
+   "kind": "passed-through"
+  }
+ ],
+ "Viseu": [
+  {
+   "chapter": 3,
+   "section": 26,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 28,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  }
+ ],
+ "Vista Alegre": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "stop"
+  }
+ ],
+ "Águas de Moura": [
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "passed-through"
+  },
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  }
+ ],
+ "Águeda": [
+  {
+   "chapter": 2,
+   "section": 18,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "stop"
+  },
+  {
+   "chapter": 2,
+   "section": 19,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 2,
+   "section": 22,
+   "kind": "passed-through"
+  }
+ ],
+ "Álvaro": [
+  {
+   "chapter": 1,
+   "section": 9,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 3,
+   "section": 33,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 47,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  }
+ ],
+ "Évora": [
+  {
+   "chapter": 3,
+   "section": 32,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 36,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 45,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 46,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "stop"
+  },
+  {
+   "chapter": 5,
+   "section": 50,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 5,
+   "section": 51,
+   "kind": "referenced-only"
+  }
+ ],
+ "Évora Monte": [
+  {
+   "chapter": 5,
+   "section": 49,
+   "kind": "stop"
+  }
+ ],
+ "Óbidos": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "stop"
+  },
+  {
+   "chapter": 4,
+   "section": 41,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "referenced-only"
+  },
+  {
+   "chapter": 4,
+   "section": 44,
+   "kind": "stop"
+  }
+ ]
+}

@@ -1,0 +1,4117 @@
+{
+ "stops": [
+  {
+   "ordinal": 1,
+   "place": "Miranda do Douro",
+   "chapter": 1,
+   "section": 1,
+   "role": "stop",
+   "latitude": 41.5,
+   "longitude": -6.266667
+  },
+  {
+   "ordinal": 2,
+   "place": "Malhadas",
+   "chapter": 1,
+   "section": 1,
+   "role": "stop",
+   "latitude": 41.541944,
+   "longitude": -6.324444
+  },
+  {
+   "ordinal": 3,
+   "place": "Caçarelhos",
+   "chapter": 1,
+   "section": 1,
+   "role": "stop",
+   "latitude": 41.565206,
+   "longitude": -6.438732
+  },
+  {
+   "ordinal": 4,
+   "place": "Vimioso",
+   "chapter": 1,
+   "section": 1,
+   "role": "stop",
+   "latitude": 41.582419,
+   "longitude": -6.532917
+  },
+  {
+   "ordinal": 5,
+   "place": "Duas Igrejas",
+   "chapter": 1,
+   "section": 1,
+   "role": "passed-through",
+   "latitude": 41.473056,
+   "longitude": -6.358056
+  },
+  {
+   "ordinal": 6,
+   "place": "Sendim",
+   "chapter": 1,
+   "section": 1,
+   "role": "stop",
+   "latitude": 41.389444,
+   "longitude": -6.425833
+  },
+  {
+   "ordinal": 7,
+   "place": "Azinhoso",
+   "chapter": 1,
+   "section": 2,
+   "role": "stop",
+   "latitude": 41.384444,
+   "longitude": -6.685
+  },
+  {
+   "ordinal": 8,
+   "place": "Mogadouro",
+   "chapter": 1,
+   "section": 2,
+   "role": "stop",
+   "latitude": 41.333333,
+   "longitude": -6.716667
+  },
+  {
+   "ordinal": 9,
+   "place": "Estevais",
+   "chapter": 1,
+   "section": 2,
+   "role": "passed-through",
+   "latitude": 41.210333,
+   "longitude": -6.822767
+  },
+  {
+   "ordinal": 10,
+   "place": "Torre de Moncorvo",
+   "chapter": 1,
+   "section": 2,
+   "role": "stop",
+   "latitude": 41.173889,
+   "longitude": -7.05
+  },
+  {
+   "ordinal": 11,
+   "place": "Cardanha",
+   "chapter": 1,
+   "section": 2,
+   "role": "passed-through",
+   "latitude": 41.256667,
+   "longitude": -7.031389
+  },
+  {
+   "ordinal": 12,
+   "place": "Adeganha",
+   "chapter": 1,
+   "section": 2,
+   "role": "stop",
+   "latitude": 41.274444,
+   "longitude": -7.051111
+  },
+  {
+   "ordinal": 13,
+   "place": "Junqueira (povoação perto de Moncorvo)",
+   "chapter": 1,
+   "section": 2,
+   "role": "stop",
+   "latitude": 41.269488,
+   "longitude": -7.081987
+  },
+  {
+   "ordinal": 14,
+   "place": "Vila Flor",
+   "chapter": 1,
+   "section": 2,
+   "role": "stop",
+   "latitude": 41.307778,
+   "longitude": -7.153056
+  },
+  {
+   "ordinal": 15,
+   "place": "Mirandela",
+   "chapter": 1,
+   "section": 2,
+   "role": "passed-through",
+   "latitude": 41.483333,
+   "longitude": -7.183333
+  },
+  {
+   "ordinal": 16,
+   "place": "Vilaverdinho",
+   "chapter": 1,
+   "section": 2,
+   "role": "stop",
+   "latitude": 41.506915,
+   "longitude": -7.081214
+  },
+  {
+   "ordinal": 17,
+   "place": "Romeu",
+   "chapter": 1,
+   "section": 2,
+   "role": "stop",
+   "latitude": 41.529786,
+   "longitude": -7.059406
+  },
+  {
+   "ordinal": 18,
+   "place": "Bragança",
+   "chapter": 1,
+   "section": 2,
+   "role": "stop",
+   "latitude": 41.806667,
+   "longitude": -6.758889
+  },
+  {
+   "ordinal": 19,
+   "place": "Baçal",
+   "chapter": 1,
+   "section": 3,
+   "role": "passed-through",
+   "latitude": 41.850556,
+   "longitude": -6.725833
+  },
+  {
+   "ordinal": 20,
+   "place": "Sacoias",
+   "chapter": 1,
+   "section": 3,
+   "role": "stop",
+   "latitude": 41.859935,
+   "longitude": -6.697449
+  },
+  {
+   "ordinal": 21,
+   "place": "Varge",
+   "chapter": 1,
+   "section": 3,
+   "role": "passed-through",
+   "latitude": 41.8715,
+   "longitude": -6.68037
+  },
+  {
+   "ordinal": 22,
+   "place": "Rio de Onor",
+   "chapter": 1,
+   "section": 3,
+   "role": "stop",
+   "latitude": 41.940278,
+   "longitude": -6.616389
+  },
+  {
+   "ordinal": 23,
+   "place": "Aveleda (aldeia de Rio de Onor)",
+   "chapter": 1,
+   "section": 3,
+   "role": "passed-through",
+   "latitude": 41.889722,
+   "longitude": -6.698333
+  },
+  {
+   "ordinal": 24,
+   "place": "Vinhais",
+   "chapter": 1,
+   "section": 5,
+   "role": "passed-through",
+   "latitude": 41.832639,
+   "longitude": -7.008054
+  },
+  {
+   "ordinal": 25,
+   "place": "Rebordelo",
+   "chapter": 1,
+   "section": 5,
+   "role": "passed-through",
+   "latitude": 41.739444,
+   "longitude": -7.163889
+  },
+  {
+   "ordinal": 26,
+   "place": "Outeiro Seco",
+   "chapter": 1,
+   "section": 5,
+   "role": "stop",
+   "latitude": 41.775278,
+   "longitude": -7.448333
+  },
+  {
+   "ordinal": 27,
+   "place": "Chaves",
+   "chapter": 1,
+   "section": 5,
+   "role": "stop",
+   "latitude": 41.738108,
+   "longitude": -7.475002
+  },
+  {
+   "ordinal": 28,
+   "place": "Pero de Lagarelhos",
+   "chapter": 1,
+   "section": 5,
+   "role": "passed-through",
+   "latitude": 41.672943,
+   "longitude": -7.476491
+  },
+  {
+   "ordinal": 29,
+   "place": "Carrazedo de Montenegro",
+   "chapter": 1,
+   "section": 5,
+   "role": "stop",
+   "latitude": 41.566667,
+   "longitude": -7.433333
+  },
+  {
+   "ordinal": 30,
+   "place": "Jou",
+   "chapter": 1,
+   "section": 5,
+   "role": "passed-through",
+   "latitude": 41.486667,
+   "longitude": -7.4325
+  },
+  {
+   "ordinal": 31,
+   "place": "Murça",
+   "chapter": 1,
+   "section": 5,
+   "role": "stop",
+   "latitude": 41.408333,
+   "longitude": -7.453611
+  },
+  {
+   "ordinal": 32,
+   "place": "Vila Pouca de Aguiar",
+   "chapter": 1,
+   "section": 5,
+   "role": "passed-through",
+   "latitude": 41.501667,
+   "longitude": -7.647778
+  },
+  {
+   "ordinal": 33,
+   "place": "Vila Real",
+   "chapter": 1,
+   "section": 5,
+   "role": "stop",
+   "latitude": 41.295833,
+   "longitude": -7.746111
+  },
+  {
+   "ordinal": 34,
+   "place": "Parada de Cunhos",
+   "chapter": 1,
+   "section": 6,
+   "role": "stop",
+   "latitude": 41.273889,
+   "longitude": -7.763889
+  },
+  {
+   "ordinal": 35,
+   "place": "Cumeeira",
+   "chapter": 1,
+   "section": 6,
+   "role": "passed-through",
+   "latitude": 41.257,
+   "longitude": -7.773
+  },
+  {
+   "ordinal": 36,
+   "place": "Santa Marta de Penaguião",
+   "chapter": 1,
+   "section": 6,
+   "role": "passed-through",
+   "latitude": 41.210833,
+   "longitude": -7.784444
+  },
+  {
+   "ordinal": 37,
+   "place": "Fontelas",
+   "chapter": 1,
+   "section": 6,
+   "role": "stop",
+   "latitude": 41.163889,
+   "longitude": -7.819167
+  },
+  {
+   "ordinal": 38,
+   "place": "Peso da Régua",
+   "chapter": 1,
+   "section": 6,
+   "role": "stop",
+   "latitude": 41.163704,
+   "longitude": -7.787582
+  },
+  {
+   "ordinal": 39,
+   "place": "Lobrigos",
+   "chapter": 1,
+   "section": 6,
+   "role": "passed-through",
+   "latitude": 41.198722,
+   "longitude": -7.776465
+  },
+  {
+   "ordinal": 40,
+   "place": "Mateus",
+   "chapter": 1,
+   "section": 6,
+   "role": "stop",
+   "latitude": 41.300643,
+   "longitude": -7.712338
+  },
+  {
+   "ordinal": 41,
+   "place": "Vilarinho de Samardã",
+   "chapter": 1,
+   "section": 6,
+   "role": "stop",
+   "latitude": 41.38218,
+   "longitude": -7.704166
+  },
+  {
+   "ordinal": 42,
+   "place": "Samardã",
+   "chapter": 1,
+   "section": 6,
+   "role": "stop",
+   "latitude": 41.371023,
+   "longitude": -7.732751
+  },
+  {
+   "ordinal": 43,
+   "place": "Amarante",
+   "chapter": 1,
+   "section": 6,
+   "role": "stop",
+   "latitude": 41.269932,
+   "longitude": -8.080456
+  },
+  {
+   "ordinal": 44,
+   "place": "São João de Gatão",
+   "chapter": 1,
+   "section": 7,
+   "role": "stop",
+   "latitude": 41.296971,
+   "longitude": -8.063037
+  },
+  {
+   "ordinal": 45,
+   "place": "Tabuado",
+   "chapter": 1,
+   "section": 7,
+   "role": "stop",
+   "latitude": 41.184722,
+   "longitude": -8.125833
+  },
+  {
+   "ordinal": 46,
+   "place": "Marco de Canaveses",
+   "chapter": 1,
+   "section": 7,
+   "role": "passed-through",
+   "latitude": 41.161655,
+   "longitude": -8.127792
+  },
+  {
+   "ordinal": 47,
+   "place": "Baião",
+   "chapter": 1,
+   "section": 7,
+   "role": "passed-through",
+   "latitude": 41.161631,
+   "longitude": -8.035544
+  },
+  {
+   "ordinal": 48,
+   "place": "Queimada",
+   "chapter": 1,
+   "section": 7,
+   "role": "stop",
+   "latitude": 41.099162,
+   "longitude": -7.739554
+  },
+  {
+   "ordinal": 49,
+   "place": "Felgueiras",
+   "chapter": 1,
+   "section": 8,
+   "role": "passed-through",
+   "latitude": 41.075801,
+   "longitude": -7.939951
+  },
+  {
+   "ordinal": 50,
+   "place": "Telões",
+   "chapter": 1,
+   "section": 8,
+   "role": "stop",
+   "latitude": 41.212198,
+   "longitude": -7.983992
+  },
+  {
+   "ordinal": 51,
+   "place": "Celorico de Basto",
+   "chapter": 1,
+   "section": 8,
+   "role": "passed-through",
+   "latitude": 41.387936,
+   "longitude": -8.000209
+  },
+  {
+   "ordinal": 52,
+   "place": "Mondim de Basto",
+   "chapter": 1,
+   "section": 8,
+   "role": "passed-through",
+   "latitude": 41.42,
+   "longitude": -7.958333
+  },
+  {
+   "ordinal": 53,
+   "place": "Cabeceiras de Basto",
+   "chapter": 1,
+   "section": 8,
+   "role": "stop",
+   "latitude": 41.513639,
+   "longitude": -7.987813
+  },
+  {
+   "ordinal": 54,
+   "place": "Abadim",
+   "chapter": 1,
+   "section": 8,
+   "role": "stop",
+   "latitude": 41.539167,
+   "longitude": -7.988056
+  },
+  {
+   "ordinal": 55,
+   "place": "Alvite",
+   "chapter": 1,
+   "section": 8,
+   "role": "stop",
+   "latitude": 41.4991,
+   "longitude": -8.0011
+  },
+  {
+   "ordinal": 56,
+   "place": "Fafe",
+   "chapter": 1,
+   "section": 8,
+   "role": "passed-through",
+   "latitude": 41.451406,
+   "longitude": -8.17085
+  },
+  {
+   "ordinal": 57,
+   "place": "Arões",
+   "chapter": 1,
+   "section": 8,
+   "role": "stop",
+   "latitude": 41.4562,
+   "longitude": -8.2175
+  },
+  {
+   "ordinal": 58,
+   "place": "Pombeiro de Ribavizela",
+   "chapter": 1,
+   "section": 8,
+   "role": "stop",
+   "latitude": 41.383889,
+   "longitude": -8.233056
+  },
+  {
+   "ordinal": 59,
+   "place": "Guimarães",
+   "chapter": 1,
+   "section": 8,
+   "role": "stop",
+   "latitude": 41.441389,
+   "longitude": -8.295278
+  },
+  {
+   "ordinal": 60,
+   "place": "São Miguel de Ceide",
+   "chapter": 1,
+   "section": 9,
+   "role": "stop",
+   "latitude": 41.39556,
+   "longitude": -8.46444
+  },
+  {
+   "ordinal": 61,
+   "place": "Antas",
+   "chapter": 1,
+   "section": 9,
+   "role": "stop",
+   "latitude": 41.40247,
+   "longitude": -8.50968
+  },
+  {
+   "ordinal": 62,
+   "place": "Santo Tirso",
+   "chapter": 1,
+   "section": 9,
+   "role": "passed-through",
+   "latitude": 41.344006,
+   "longitude": -8.477202
+  },
+  {
+   "ordinal": 63,
+   "place": "São Brás",
+   "chapter": 1,
+   "section": 10,
+   "role": "stop",
+   "latitude": 41.2196,
+   "longitude": -8.66182
+  },
+  {
+   "ordinal": 64,
+   "place": "Santa Cruz do Bispo",
+   "chapter": 1,
+   "section": 10,
+   "role": "stop",
+   "latitude": 41.215849,
+   "longitude": -8.675506
+  },
+  {
+   "ordinal": 65,
+   "place": "Matosinhos",
+   "chapter": 1,
+   "section": 10,
+   "role": "stop",
+   "latitude": 41.183333,
+   "longitude": -8.7
+  },
+  {
+   "ordinal": 66,
+   "place": "Azurara",
+   "chapter": 1,
+   "section": 10,
+   "role": "stop",
+   "latitude": 41.345933,
+   "longitude": -8.728074
+  },
+  {
+   "ordinal": 67,
+   "place": "Vila do Conde",
+   "chapter": 1,
+   "section": 10,
+   "role": "stop",
+   "latitude": 41.35,
+   "longitude": -8.75
+  },
+  {
+   "ordinal": 68,
+   "place": "Ermida",
+   "chapter": 1,
+   "section": 10,
+   "role": "stop",
+   "latitude": 41.3527,
+   "longitude": -8.7426
+  },
+  {
+   "ordinal": 69,
+   "place": "Rio Mau",
+   "chapter": 1,
+   "section": 10,
+   "role": "stop",
+   "latitude": 41.399467,
+   "longitude": -8.685463
+  },
+  {
+   "ordinal": 70,
+   "place": "Póvoa de Varzim",
+   "chapter": 1,
+   "section": 10,
+   "role": "stop",
+   "latitude": 41.38,
+   "longitude": -8.760833
+  },
+  {
+   "ordinal": 71,
+   "place": "A-Ver-o-Mar",
+   "chapter": 1,
+   "section": 11,
+   "role": "stop",
+   "latitude": 41.403753,
+   "longitude": -8.769528
+  },
+  {
+   "ordinal": 72,
+   "place": "Aguçadoura",
+   "chapter": 1,
+   "section": 11,
+   "role": "stop",
+   "latitude": 41.430556,
+   "longitude": -8.776944
+  },
+  {
+   "ordinal": 73,
+   "place": "Rates",
+   "chapter": 1,
+   "section": 11,
+   "role": "stop",
+   "latitude": 41.423333,
+   "longitude": -8.672778
+  },
+  {
+   "ordinal": 74,
+   "place": "Apúlia",
+   "chapter": 1,
+   "section": 11,
+   "role": "stop",
+   "latitude": 41.482443,
+   "longitude": -8.765188
+  },
+  {
+   "ordinal": 75,
+   "place": "Ofir",
+   "chapter": 1,
+   "section": 11,
+   "role": "passed-through",
+   "latitude": 41.516546,
+   "longitude": -8.783445
+  },
+  {
+   "ordinal": 76,
+   "place": "Fão",
+   "chapter": 1,
+   "section": 11,
+   "role": "passed-through",
+   "latitude": 41.516667,
+   "longitude": -8.783333
+  },
+  {
+   "ordinal": 77,
+   "place": "Esposende",
+   "chapter": 1,
+   "section": 11,
+   "role": "passed-through",
+   "latitude": 41.531525,
+   "longitude": -8.779254
+  },
+  {
+   "ordinal": 78,
+   "place": "Vila Seca",
+   "chapter": 1,
+   "section": 11,
+   "role": "passed-through",
+   "latitude": 41.513,
+   "longitude": -8.684
+  },
+  {
+   "ordinal": 79,
+   "place": "Gilmonde",
+   "chapter": 1,
+   "section": 11,
+   "role": "passed-through",
+   "latitude": 41.510278,
+   "longitude": -8.656667
+  },
+  {
+   "ordinal": 80,
+   "place": "Abade de Neiva",
+   "chapter": 1,
+   "section": 11,
+   "role": "stop",
+   "latitude": 41.562778,
+   "longitude": -8.651111
+  },
+  {
+   "ordinal": 81,
+   "place": "Balugães",
+   "chapter": 1,
+   "section": 11,
+   "role": "stop",
+   "latitude": 41.64,
+   "longitude": -8.641111
+  },
+  {
+   "ordinal": 82,
+   "place": "Viana do Castelo",
+   "chapter": 1,
+   "section": 11,
+   "role": "stop",
+   "latitude": 41.7,
+   "longitude": -8.833333
+  },
+  {
+   "ordinal": 83,
+   "place": "Bertiandos",
+   "chapter": 1,
+   "section": 12,
+   "role": "stop",
+   "latitude": 41.764167,
+   "longitude": -8.624444
+  },
+  {
+   "ordinal": 84,
+   "place": "Romarigães",
+   "chapter": 1,
+   "section": 12,
+   "role": "stop",
+   "latitude": 41.869167,
+   "longitude": -8.634722
+  },
+  {
+   "ordinal": 85,
+   "place": "Rubiães",
+   "chapter": 1,
+   "section": 12,
+   "role": "stop",
+   "latitude": 41.896389,
+   "longitude": -8.625278
+  },
+  {
+   "ordinal": 86,
+   "place": "Paredes de Coura",
+   "chapter": 1,
+   "section": 12,
+   "role": "passed-through",
+   "latitude": 41.881667,
+   "longitude": -8.666389
+  },
+  {
+   "ordinal": 87,
+   "place": "Caminha",
+   "chapter": 1,
+   "section": 12,
+   "role": "stop",
+   "latitude": 41.873167,
+   "longitude": -8.837819
+  },
+  {
+   "ordinal": 88,
+   "place": "Vila Nova de Cerveira",
+   "chapter": 1,
+   "section": 12,
+   "role": "passed-through",
+   "latitude": 41.94,
+   "longitude": -8.744444
+  },
+  {
+   "ordinal": 89,
+   "place": "Valença",
+   "chapter": 1,
+   "section": 12,
+   "role": "passed-through",
+   "latitude": 42.026888,
+   "longitude": -8.64214
+  },
+  {
+   "ordinal": 90,
+   "place": "Pias",
+   "chapter": 1,
+   "section": 12,
+   "role": "stop",
+   "latitude": 42.0211,
+   "longitude": -8.5079
+  },
+  {
+   "ordinal": 91,
+   "place": "Pinheiros",
+   "chapter": 1,
+   "section": 12,
+   "role": "stop",
+   "latitude": 42.0427,
+   "longitude": -8.4956
+  },
+  {
+   "ordinal": 92,
+   "place": "Monção",
+   "chapter": 1,
+   "section": 12,
+   "role": "stop",
+   "latitude": 42.077111,
+   "longitude": -8.481812
+  },
+  {
+   "ordinal": 93,
+   "place": "Longos Vales",
+   "chapter": 1,
+   "section": 13,
+   "role": "stop",
+   "latitude": 42.051414,
+   "longitude": -8.447682
+  },
+  {
+   "ordinal": 94,
+   "place": "Melgaço",
+   "chapter": 1,
+   "section": 13,
+   "role": "stop",
+   "latitude": 42.115032,
+   "longitude": -8.259563
+  },
+  {
+   "ordinal": 95,
+   "place": "Nossa Senhora da Orada",
+   "chapter": 1,
+   "section": 13,
+   "role": "stop",
+   "latitude": 42.12018,
+   "longitude": -8.252602
+  },
+  {
+   "ordinal": 96,
+   "place": "Castro Laboreiro",
+   "chapter": 1,
+   "section": 13,
+   "role": "stop",
+   "latitude": 42.03,
+   "longitude": -8.158611
+  },
+  {
+   "ordinal": 97,
+   "place": "Lindoso",
+   "chapter": 1,
+   "section": 13,
+   "role": "stop",
+   "latitude": 41.865,
+   "longitude": -8.199167
+  },
+  {
+   "ordinal": 98,
+   "place": "Merufe",
+   "chapter": 1,
+   "section": 13,
+   "role": "passed-through",
+   "latitude": 42.018056,
+   "longitude": -8.388889
+  },
+  {
+   "ordinal": 99,
+   "place": "Sistelo",
+   "chapter": 1,
+   "section": 13,
+   "role": "stop",
+   "latitude": 41.972987,
+   "longitude": -8.374347
+  },
+  {
+   "ordinal": 100,
+   "place": "Gondoriz",
+   "chapter": 1,
+   "section": 13,
+   "role": "passed-through",
+   "latitude": 41.892139,
+   "longitude": -8.420066
+  },
+  {
+   "ordinal": 101,
+   "place": "Giela",
+   "chapter": 1,
+   "section": 13,
+   "role": "stop",
+   "latitude": 41.858757,
+   "longitude": -8.407566
+  },
+  {
+   "ordinal": 102,
+   "place": "Arcos de Valdevez",
+   "chapter": 1,
+   "section": 13,
+   "role": "passed-through",
+   "latitude": 41.844571,
+   "longitude": -8.417808
+  },
+  {
+   "ordinal": 103,
+   "place": "Ponte da Barca",
+   "chapter": 1,
+   "section": 13,
+   "role": "stop",
+   "latitude": 41.808321,
+   "longitude": -8.420333
+  },
+  {
+   "ordinal": 104,
+   "place": "Bravães",
+   "chapter": 1,
+   "section": 13,
+   "role": "stop",
+   "latitude": 41.793611,
+   "longitude": -8.45
+  },
+  {
+   "ordinal": 105,
+   "place": "Braga",
+   "chapter": 1,
+   "section": 13,
+   "role": "stop",
+   "latitude": 41.545418,
+   "longitude": -8.426472
+  },
+  {
+   "ordinal": 106,
+   "place": "Lama",
+   "chapter": 1,
+   "section": 15,
+   "role": "stop",
+   "latitude": 41.388063,
+   "longitude": -8.020287
+  },
+  {
+   "ordinal": 107,
+   "place": "Sameiro (Braga)",
+   "chapter": 1,
+   "section": 15,
+   "role": "stop",
+   "latitude": 41.542136,
+   "longitude": -8.369678
+  },
+  {
+   "ordinal": 108,
+   "place": "Bom Jesus (Braga)",
+   "chapter": 1,
+   "section": 15,
+   "role": "stop",
+   "latitude": 41.554839,
+   "longitude": -8.377011
+  },
+  {
+   "ordinal": 109,
+   "place": "Mire de Tibães",
+   "chapter": 1,
+   "section": 15,
+   "role": "stop",
+   "latitude": 41.566944,
+   "longitude": -8.479444
+  },
+  {
+   "ordinal": 110,
+   "place": "Padim da Graça",
+   "chapter": 1,
+   "section": 15,
+   "role": "passed-through",
+   "latitude": 41.567222,
+   "longitude": -8.489444
+  },
+  {
+   "ordinal": 111,
+   "place": "Manhente",
+   "chapter": 1,
+   "section": 15,
+   "role": "stop",
+   "latitude": 41.548333,
+   "longitude": -8.571111
+  },
+  {
+   "ordinal": 112,
+   "place": "Barcelos",
+   "chapter": 1,
+   "section": 15,
+   "role": "stop",
+   "latitude": 41.533333,
+   "longitude": -8.616667
+  },
+  {
+   "ordinal": 113,
+   "place": "Real",
+   "chapter": 1,
+   "section": 15,
+   "role": "stop",
+   "latitude": 41.56917,
+   "longitude": -8.647499
+  },
+  {
+   "ordinal": 114,
+   "place": "Rendufe (Ponte de Lima)",
+   "chapter": 1,
+   "section": 15,
+   "role": "stop",
+   "latitude": 41.86,
+   "longitude": -8.561944
+  },
+  {
+   "ordinal": 115,
+   "place": "Terras de Bouro",
+   "chapter": 1,
+   "section": 15,
+   "role": "passed-through",
+   "latitude": 41.719026,
+   "longitude": -8.308163
+  },
+  {
+   "ordinal": 116,
+   "place": "Chamoim",
+   "chapter": 1,
+   "section": 15,
+   "role": "passed-through",
+   "latitude": 41.734706,
+   "longitude": -8.270501
+  },
+  {
+   "ordinal": 117,
+   "place": "São Bento da Porta Aberta",
+   "chapter": 1,
+   "section": 15,
+   "role": "passed-through",
+   "latitude": 41.690259,
+   "longitude": -8.203455
+  },
+  {
+   "ordinal": 118,
+   "place": "Covide",
+   "chapter": 1,
+   "section": 15,
+   "role": "passed-through",
+   "latitude": 41.738611,
+   "longitude": -8.213889
+  },
+  {
+   "ordinal": 119,
+   "place": "Portela do Homem",
+   "chapter": 1,
+   "section": 16,
+   "role": "passed-through",
+   "latitude": 41.808788,
+   "longitude": -8.131129
+  },
+  {
+   "ordinal": 120,
+   "place": "Vieira do Minho",
+   "chapter": 1,
+   "section": 16,
+   "role": "passed-through",
+   "latitude": 41.620847,
+   "longitude": -8.153529
+  },
+  {
+   "ordinal": 121,
+   "place": "Fonte Arcada",
+   "chapter": 1,
+   "section": 16,
+   "role": "stop",
+   "latitude": 41.5794,
+   "longitude": -8.2456
+  },
+  {
+   "ordinal": 122,
+   "place": "Póvoa de Lanhoso",
+   "chapter": 1,
+   "section": 16,
+   "role": "stop",
+   "latitude": 41.578056,
+   "longitude": -8.277222
+  },
+  {
+   "ordinal": 123,
+   "place": "Briteiros (citânia)",
+   "chapter": 1,
+   "section": 16,
+   "role": "stop",
+   "latitude": 41.526772,
+   "longitude": -8.315009
+  },
+  {
+   "ordinal": 124,
+   "place": "Sande",
+   "chapter": 1,
+   "section": 16,
+   "role": "passed-through",
+   "latitude": 41.487,
+   "longitude": -8.35
+  },
+  {
+   "ordinal": 125,
+   "place": "Brito",
+   "chapter": 1,
+   "section": 16,
+   "role": "passed-through",
+   "latitude": 41.454755,
+   "longitude": -8.365525
+  },
+  {
+   "ordinal": 126,
+   "place": "Renfe",
+   "chapter": 1,
+   "section": 16,
+   "role": "passed-through",
+   "latitude": 41.4358,
+   "longitude": -8.3919
+  },
+  {
+   "ordinal": 127,
+   "place": "Pedome",
+   "chapter": 1,
+   "section": 16,
+   "role": "passed-through",
+   "latitude": 41.413611,
+   "longitude": -8.393333
+  },
+  {
+   "ordinal": 128,
+   "place": "Delães",
+   "chapter": 1,
+   "section": 16,
+   "role": "passed-through",
+   "latitude": 41.385278,
+   "longitude": -8.411944
+  },
+  {
+   "ordinal": 129,
+   "place": "Rebordões",
+   "chapter": 1,
+   "section": 16,
+   "role": "passed-through",
+   "latitude": 41.352439,
+   "longitude": -8.429507
+  },
+  {
+   "ordinal": 130,
+   "place": "Roriz",
+   "chapter": 1,
+   "section": 16,
+   "role": "stop",
+   "latitude": 41.3444,
+   "longitude": -8.381
+  },
+  {
+   "ordinal": 131,
+   "place": "Paços de Ferreira",
+   "chapter": 1,
+   "section": 16,
+   "role": "stop",
+   "latitude": 41.276098,
+   "longitude": -8.376891
+  },
+  {
+   "ordinal": 132,
+   "place": "Ferreira",
+   "chapter": 1,
+   "section": 16,
+   "role": "stop",
+   "latitude": 41.266371,
+   "longitude": -8.344563
+  },
+  {
+   "ordinal": 133,
+   "place": "Paredes",
+   "chapter": 1,
+   "section": 16,
+   "role": "passed-through",
+   "latitude": 41.2052,
+   "longitude": -8.3303
+  },
+  {
+   "ordinal": 134,
+   "place": "Paço de Sousa",
+   "chapter": 1,
+   "section": 16,
+   "role": "stop",
+   "latitude": 41.1775,
+   "longitude": -8.323889
+  },
+  {
+   "ordinal": 135,
+   "place": "Cete",
+   "chapter": 1,
+   "section": 16,
+   "role": "stop",
+   "latitude": 41.178287,
+   "longitude": -8.364939
+  },
+  {
+   "ordinal": 136,
+   "place": "Porto",
+   "chapter": 1,
+   "section": 16,
+   "role": "stop",
+   "latitude": 41.149444,
+   "longitude": -8.610833
+  },
+  {
+   "ordinal": 137,
+   "place": "Vila Nova de Gaia",
+   "chapter": 2,
+   "section": 18,
+   "role": "passed-through",
+   "latitude": 41.133333,
+   "longitude": -8.616667
+  },
+  {
+   "ordinal": 138,
+   "place": "Espinho",
+   "chapter": 2,
+   "section": 18,
+   "role": "passed-through",
+   "latitude": 41.008364,
+   "longitude": -8.639411
+  },
+  {
+   "ordinal": 139,
+   "place": "Esmoriz",
+   "chapter": 2,
+   "section": 18,
+   "role": "passed-through",
+   "latitude": 40.95,
+   "longitude": -8.616667
+  },
+  {
+   "ordinal": 140,
+   "place": "Feira (Vila da)",
+   "chapter": 2,
+   "section": 18,
+   "role": "stop",
+   "latitude": 40.93168,
+   "longitude": -8.552306
+  },
+  {
+   "ordinal": 141,
+   "place": "Furadouro",
+   "chapter": 2,
+   "section": 18,
+   "role": "stop",
+   "latitude": 40.87365,
+   "longitude": -8.677635
+  },
+  {
+   "ordinal": 142,
+   "place": "Ovar",
+   "chapter": 2,
+   "section": 18,
+   "role": "stop",
+   "latitude": 40.845668,
+   "longitude": -8.648478
+  },
+  {
+   "ordinal": 143,
+   "place": "Murtosa",
+   "chapter": 2,
+   "section": 18,
+   "role": "passed-through",
+   "latitude": 40.7375,
+   "longitude": -8.638056
+  },
+  {
+   "ordinal": 144,
+   "place": "Estarreja",
+   "chapter": 2,
+   "section": 18,
+   "role": "stop",
+   "latitude": 40.752349,
+   "longitude": -8.570346
+  },
+  {
+   "ordinal": 145,
+   "place": "Salreu",
+   "chapter": 2,
+   "section": 18,
+   "role": "passed-through",
+   "latitude": 40.737222,
+   "longitude": -8.560833
+  },
+  {
+   "ordinal": 146,
+   "place": "Angeja",
+   "chapter": 2,
+   "section": 18,
+   "role": "passed-through",
+   "latitude": 40.683333,
+   "longitude": -8.55
+  },
+  {
+   "ordinal": 147,
+   "place": "Aveiro",
+   "chapter": 2,
+   "section": 18,
+   "role": "stop",
+   "latitude": 40.633333,
+   "longitude": -8.65
+  },
+  {
+   "ordinal": 148,
+   "place": "Vista Alegre",
+   "chapter": 2,
+   "section": 18,
+   "role": "stop",
+   "latitude": 40.5897,
+   "longitude": -8.6837
+  },
+  {
+   "ordinal": 149,
+   "place": "Vagueira",
+   "chapter": 2,
+   "section": 18,
+   "role": "stop",
+   "latitude": 40.562027,
+   "longitude": -8.7654
+  },
+  {
+   "ordinal": 150,
+   "place": "Vagos",
+   "chapter": 2,
+   "section": 18,
+   "role": "passed-through",
+   "latitude": 40.5535,
+   "longitude": -8.698917
+  },
+  {
+   "ordinal": 151,
+   "place": "Santa Eulália",
+   "chapter": 2,
+   "section": 19,
+   "role": "stop",
+   "latitude": 40.927449,
+   "longitude": -8.2777
+  },
+  {
+   "ordinal": 152,
+   "place": "Trofa",
+   "chapter": 2,
+   "section": 19,
+   "role": "stop",
+   "latitude": 40.611672,
+   "longitude": -8.476655
+  },
+  {
+   "ordinal": 153,
+   "place": "Águeda",
+   "chapter": 2,
+   "section": 19,
+   "role": "stop",
+   "latitude": 40.566667,
+   "longitude": -8.45
+  },
+  {
+   "ordinal": 154,
+   "place": "Oliveira do Bairro",
+   "chapter": 2,
+   "section": 19,
+   "role": "passed-through",
+   "latitude": 40.51344,
+   "longitude": -8.502342
+  },
+  {
+   "ordinal": 155,
+   "place": "Oiã",
+   "chapter": 2,
+   "section": 19,
+   "role": "stop",
+   "latitude": 40.541111,
+   "longitude": -8.539722
+  },
+  {
+   "ordinal": 156,
+   "place": "Mamarrosa",
+   "chapter": 2,
+   "section": 19,
+   "role": "stop",
+   "latitude": 40.482229,
+   "longitude": -8.577644
+  },
+  {
+   "ordinal": 157,
+   "place": "Samel",
+   "chapter": 2,
+   "section": 19,
+   "role": "passed-through",
+   "latitude": 40.45514,
+   "longitude": -8.568873
+  },
+  {
+   "ordinal": 158,
+   "place": "Campanas",
+   "chapter": 2,
+   "section": 19,
+   "role": "passed-through",
+   "latitude": 40.424065,
+   "longitude": -8.58447
+  },
+  {
+   "ordinal": 159,
+   "place": "Pocariça",
+   "chapter": 2,
+   "section": 19,
+   "role": "passed-through",
+   "latitude": 40.378618,
+   "longitude": -8.579325
+  },
+  {
+   "ordinal": 160,
+   "place": "Cantanhede",
+   "chapter": 2,
+   "section": 19,
+   "role": "stop",
+   "latitude": 40.345561,
+   "longitude": -8.60447
+  },
+  {
+   "ordinal": 161,
+   "place": "Mira",
+   "chapter": 2,
+   "section": 19,
+   "role": "stop",
+   "latitude": 40.428462,
+   "longitude": -8.737214
+  },
+  {
+   "ordinal": 162,
+   "place": "Palheiros de Mira",
+   "chapter": 2,
+   "section": 19,
+   "role": "stop",
+   "latitude": 40.451633,
+   "longitude": -8.801577
+  },
+  {
+   "ordinal": 163,
+   "place": "Tocha",
+   "chapter": 2,
+   "section": 19,
+   "role": "stop",
+   "latitude": 40.313199,
+   "longitude": -8.753506
+  },
+  {
+   "ordinal": 164,
+   "place": "Figueira da Foz",
+   "chapter": 2,
+   "section": 19,
+   "role": "stop",
+   "latitude": 40.15,
+   "longitude": -8.85
+  },
+  {
+   "ordinal": 165,
+   "place": "Maiorca",
+   "chapter": 2,
+   "section": 20,
+   "role": "stop",
+   "latitude": 40.166192,
+   "longitude": -8.755212
+  },
+  {
+   "ordinal": 166,
+   "place": "Ereira",
+   "chapter": 2,
+   "section": 20,
+   "role": "stop",
+   "latitude": 40.150647,
+   "longitude": -8.713145
+  },
+  {
+   "ordinal": 167,
+   "place": "Montemor-o-Velho",
+   "chapter": 2,
+   "section": 20,
+   "role": "stop",
+   "latitude": 40.166667,
+   "longitude": -8.683333
+  },
+  {
+   "ordinal": 168,
+   "place": "Soure",
+   "chapter": 2,
+   "section": 20,
+   "role": "passed-through",
+   "latitude": 40.059503,
+   "longitude": -8.62639
+  },
+  {
+   "ordinal": 169,
+   "place": "Conímbriga",
+   "chapter": 2,
+   "section": 20,
+   "role": "stop",
+   "latitude": 40.099444,
+   "longitude": -8.493333
+  },
+  {
+   "ordinal": 170,
+   "place": "Tentúgal",
+   "chapter": 2,
+   "section": 20,
+   "role": "stop",
+   "latitude": 40.223611,
+   "longitude": -8.585278
+  },
+  {
+   "ordinal": 171,
+   "place": "São Marcos",
+   "chapter": 2,
+   "section": 20,
+   "role": "stop",
+   "latitude": 40.243747,
+   "longitude": -8.549594
+  },
+  {
+   "ordinal": 172,
+   "place": "Ançã",
+   "chapter": 2,
+   "section": 20,
+   "role": "stop",
+   "latitude": 40.273611,
+   "longitude": -8.519722
+  },
+  {
+   "ordinal": 173,
+   "place": "São Silvestre",
+   "chapter": 2,
+   "section": 20,
+   "role": "stop",
+   "latitude": 40.230081,
+   "longitude": -8.526409
+  },
+  {
+   "ordinal": 174,
+   "place": "Coimbra",
+   "chapter": 2,
+   "section": 20,
+   "role": "stop",
+   "latitude": 40.211111,
+   "longitude": -8.429167
+  },
+  {
+   "ordinal": 175,
+   "place": "Foz de Arouce",
+   "chapter": 2,
+   "section": 22,
+   "role": "passed-through",
+   "latitude": 40.158653,
+   "longitude": -8.278448
+  },
+  {
+   "ordinal": 176,
+   "place": "Lousã",
+   "chapter": 2,
+   "section": 22,
+   "role": "stop",
+   "latitude": 40.111052,
+   "longitude": -8.246067
+  },
+  {
+   "ordinal": 177,
+   "place": "Góis",
+   "chapter": 2,
+   "section": 22,
+   "role": "stop",
+   "latitude": 40.140189,
+   "longitude": -8.124442
+  },
+  {
+   "ordinal": 178,
+   "place": "Vila Nova",
+   "chapter": 2,
+   "section": 22,
+   "role": "passed-through",
+   "latitude": 40.18173,
+   "longitude": -8.15163
+  },
+  {
+   "ordinal": 179,
+   "place": "Rebordosa",
+   "chapter": 2,
+   "section": 22,
+   "role": "passed-through",
+   "latitude": 40.2431,
+   "longitude": -8.2819
+  },
+  {
+   "ordinal": 180,
+   "place": "Penacova",
+   "chapter": 2,
+   "section": 22,
+   "role": "stop",
+   "latitude": 40.270209,
+   "longitude": -8.281074
+  },
+  {
+   "ordinal": 181,
+   "place": "Lorvão",
+   "chapter": 2,
+   "section": 22,
+   "role": "stop",
+   "latitude": 40.266667,
+   "longitude": -8.316667
+  },
+  {
+   "ordinal": 182,
+   "place": "Buçaco",
+   "chapter": 2,
+   "section": 22,
+   "role": "stop",
+   "latitude": 40.377667,
+   "longitude": -8.3636
+  },
+  {
+   "ordinal": 183,
+   "place": "Anadia",
+   "chapter": 2,
+   "section": 22,
+   "role": "passed-through",
+   "latitude": 40.442683,
+   "longitude": -8.435958
+  },
+  {
+   "ordinal": 184,
+   "place": "Boialvo",
+   "chapter": 2,
+   "section": 22,
+   "role": "passed-through",
+   "latitude": 40.500911,
+   "longitude": -8.37522
+  },
+  {
+   "ordinal": 185,
+   "place": "Oliveira de Azeméis",
+   "chapter": 2,
+   "section": 22,
+   "role": "stop",
+   "latitude": 40.839012,
+   "longitude": -8.477781
+  },
+  {
+   "ordinal": 186,
+   "place": "Vale de Cambra",
+   "chapter": 2,
+   "section": 23,
+   "role": "passed-through",
+   "latitude": 40.849812,
+   "longitude": -8.393914
+  },
+  {
+   "ordinal": 187,
+   "place": "Arouca",
+   "chapter": 2,
+   "section": 23,
+   "role": "stop",
+   "latitude": 40.933333,
+   "longitude": -8.25
+  },
+  {
+   "ordinal": 188,
+   "place": "Guarda",
+   "chapter": 3,
+   "section": 24,
+   "role": "stop",
+   "latitude": 40.533333,
+   "longitude": -7.333333
+  },
+  {
+   "ordinal": 189,
+   "place": "Belmonte",
+   "chapter": 3,
+   "section": 25,
+   "role": "stop",
+   "latitude": 40.359424,
+   "longitude": -7.348024
+  },
+  {
+   "ordinal": 190,
+   "place": "Sortelha",
+   "chapter": 3,
+   "section": 25,
+   "role": "stop",
+   "latitude": 40.33152,
+   "longitude": -7.211882
+  },
+  {
+   "ordinal": 191,
+   "place": "Sabugal",
+   "chapter": 3,
+   "section": 25,
+   "role": "stop",
+   "latitude": 40.351832,
+   "longitude": -7.089648
+  },
+  {
+   "ordinal": 192,
+   "place": "Pêra do Moço",
+   "chapter": 3,
+   "section": 25,
+   "role": "passed-through",
+   "latitude": 40.61309,
+   "longitude": -7.211563
+  },
+  {
+   "ordinal": 193,
+   "place": "Pinhel",
+   "chapter": 3,
+   "section": 25,
+   "role": "passed-through",
+   "latitude": 40.779428,
+   "longitude": -7.103199
+  },
+  {
+   "ordinal": 194,
+   "place": "Azevo",
+   "chapter": 3,
+   "section": 25,
+   "role": "passed-through",
+   "latitude": 40.8458,
+   "longitude": -7.1286
+  },
+  {
+   "ordinal": 195,
+   "place": "Cidadelhe",
+   "chapter": 3,
+   "section": 25,
+   "role": "stop",
+   "latitude": 40.915743,
+   "longitude": -7.116115
+  },
+  {
+   "ordinal": 196,
+   "place": "Eiras",
+   "chapter": 3,
+   "section": 25,
+   "role": "stop",
+   "latitude": 40.91639,
+   "longitude": -7.11639
+  },
+  {
+   "ordinal": 197,
+   "place": "Longroiva",
+   "chapter": 3,
+   "section": 26,
+   "role": "passed-through",
+   "latitude": 40.963889,
+   "longitude": -7.212222
+  },
+  {
+   "ordinal": 198,
+   "place": "Meda",
+   "chapter": 3,
+   "section": 26,
+   "role": "passed-through",
+   "latitude": 40.930394,
+   "longitude": -7.251758
+  },
+  {
+   "ordinal": 199,
+   "place": "Marialva",
+   "chapter": 3,
+   "section": 26,
+   "role": "stop",
+   "latitude": 40.909642,
+   "longitude": -7.231027
+  },
+  {
+   "ordinal": 200,
+   "place": "Pai Penela",
+   "chapter": 3,
+   "section": 26,
+   "role": "passed-through",
+   "latitude": 40.900695,
+   "longitude": -7.304183
+  },
+  {
+   "ordinal": 201,
+   "place": "Moreira de Rei",
+   "chapter": 3,
+   "section": 26,
+   "role": "stop",
+   "latitude": 40.829722,
+   "longitude": -7.320833
+  },
+  {
+   "ordinal": 202,
+   "place": "Trancoso",
+   "chapter": 3,
+   "section": 26,
+   "role": "stop",
+   "latitude": 40.77847,
+   "longitude": -7.34908
+  },
+  {
+   "ordinal": 203,
+   "place": "Póvoa do Concelho",
+   "chapter": 3,
+   "section": 26,
+   "role": "passed-through",
+   "latitude": 40.759722,
+   "longitude": -7.266389
+  },
+  {
+   "ordinal": 204,
+   "place": "Celorico da Beira",
+   "chapter": 3,
+   "section": 26,
+   "role": "stop",
+   "latitude": 40.635884,
+   "longitude": -7.392845
+  },
+  {
+   "ordinal": 205,
+   "place": "Linhares",
+   "chapter": 3,
+   "section": 26,
+   "role": "stop",
+   "latitude": 40.543118,
+   "longitude": -7.456811
+  },
+  {
+   "ordinal": 206,
+   "place": "Aldeia Viçosa",
+   "chapter": 3,
+   "section": 26,
+   "role": "stop",
+   "latitude": 40.578085,
+   "longitude": -7.318862
+  },
+  {
+   "ordinal": 207,
+   "place": "Açores (freg. de Celorico da Beira)",
+   "chapter": 3,
+   "section": 26,
+   "role": "stop",
+   "latitude": 40.644383,
+   "longitude": -7.315213
+  },
+  {
+   "ordinal": 208,
+   "place": "Castelo Mendo",
+   "chapter": 3,
+   "section": 27,
+   "role": "stop",
+   "latitude": 40.583229,
+   "longitude": -6.943803
+  },
+  {
+   "ordinal": 209,
+   "place": "Castelo Bom",
+   "chapter": 3,
+   "section": 27,
+   "role": "passed-through",
+   "latitude": 40.621436,
+   "longitude": -6.901541
+  },
+  {
+   "ordinal": 210,
+   "place": "Vilar Formoso",
+   "chapter": 3,
+   "section": 27,
+   "role": "stop",
+   "latitude": 40.608367,
+   "longitude": -6.833443
+  },
+  {
+   "ordinal": 211,
+   "place": "Almeida",
+   "chapter": 3,
+   "section": 27,
+   "role": "stop",
+   "latitude": 40.726077,
+   "longitude": -6.906574
+  },
+  {
+   "ordinal": 212,
+   "place": "Vermiosa",
+   "chapter": 3,
+   "section": 27,
+   "role": "stop",
+   "latitude": 40.827222,
+   "longitude": -6.8775
+  },
+  {
+   "ordinal": 213,
+   "place": "Escarigo",
+   "chapter": 3,
+   "section": 27,
+   "role": "stop",
+   "latitude": 40.8427,
+   "longitude": -6.8321
+  },
+  {
+   "ordinal": 214,
+   "place": "Almofala",
+   "chapter": 3,
+   "section": 27,
+   "role": "passed-through",
+   "latitude": 40.861245,
+   "longitude": -6.847592
+  },
+  {
+   "ordinal": 215,
+   "place": "Escalhão",
+   "chapter": 3,
+   "section": 27,
+   "role": "stop",
+   "latitude": 40.949444,
+   "longitude": -6.926111
+  },
+  {
+   "ordinal": 216,
+   "place": "Figueira de Castelo Rodrigo",
+   "chapter": 3,
+   "section": 27,
+   "role": "stop",
+   "latitude": 40.89751,
+   "longitude": -6.96279
+  },
+  {
+   "ordinal": 217,
+   "place": "Castelo Rodrigo",
+   "chapter": 3,
+   "section": 27,
+   "role": "stop",
+   "latitude": 40.875556,
+   "longitude": -6.963889
+  },
+  {
+   "ordinal": 218,
+   "place": "Vilar Turpim",
+   "chapter": 3,
+   "section": 27,
+   "role": "stop",
+   "latitude": 40.825463,
+   "longitude": -6.951948
+  },
+  {
+   "ordinal": 219,
+   "place": "Fornos de Algodres",
+   "chapter": 3,
+   "section": 28,
+   "role": "passed-through",
+   "latitude": 40.657968,
+   "longitude": -7.488089
+  },
+  {
+   "ordinal": 220,
+   "place": "Pinheiro",
+   "chapter": 3,
+   "section": 28,
+   "role": "stop",
+   "latitude": 40.803878,
+   "longitude": -7.601738
+  },
+  {
+   "ordinal": 221,
+   "place": "Mangualde",
+   "chapter": 3,
+   "section": 28,
+   "role": "passed-through",
+   "latitude": 40.60354,
+   "longitude": -7.7656
+  },
+  {
+   "ordinal": 222,
+   "place": "Viseu",
+   "chapter": 3,
+   "section": 28,
+   "role": "stop",
+   "latitude": 40.660833,
+   "longitude": -7.909444
+  },
+  {
+   "ordinal": 223,
+   "place": "Castro Daire",
+   "chapter": 3,
+   "section": 28,
+   "role": "stop",
+   "latitude": 40.901409,
+   "longitude": -7.931176
+  },
+  {
+   "ordinal": 224,
+   "place": "São Martinho de Mouros",
+   "chapter": 3,
+   "section": 28,
+   "role": "stop",
+   "latitude": 41.105278,
+   "longitude": -7.896389
+  },
+  {
+   "ordinal": 225,
+   "place": "Lamego",
+   "chapter": 3,
+   "section": 28,
+   "role": "stop",
+   "latitude": 41.097309,
+   "longitude": -7.811407
+  },
+  {
+   "ordinal": 226,
+   "place": "Salzedas",
+   "chapter": 3,
+   "section": 29,
+   "role": "stop",
+   "latitude": 41.054554,
+   "longitude": -7.725289
+  },
+  {
+   "ordinal": 227,
+   "place": "Ucanha",
+   "chapter": 3,
+   "section": 29,
+   "role": "stop",
+   "latitude": 41.045766,
+   "longitude": -7.744453
+  },
+  {
+   "ordinal": 228,
+   "place": "Tarouca",
+   "chapter": 3,
+   "section": 29,
+   "role": "stop",
+   "latitude": 41.006715,
+   "longitude": -7.784047
+  },
+  {
+   "ordinal": 229,
+   "place": "São João de Tarouca",
+   "chapter": 3,
+   "section": 29,
+   "role": "stop",
+   "latitude": 40.994444,
+   "longitude": -7.748611
+  },
+  {
+   "ordinal": 230,
+   "place": "Moimenta da Beira",
+   "chapter": 3,
+   "section": 29,
+   "role": "stop",
+   "latitude": 40.989863,
+   "longitude": -7.600615
+  },
+  {
+   "ordinal": 231,
+   "place": "Granjinha",
+   "chapter": 3,
+   "section": 29,
+   "role": "passed-through",
+   "latitude": 41.066361,
+   "longitude": -7.51951
+  },
+  {
+   "ordinal": 232,
+   "place": "São Pedro das Águias",
+   "chapter": 3,
+   "section": 29,
+   "role": "stop",
+   "latitude": 41.075817,
+   "longitude": -7.513808
+  },
+  {
+   "ordinal": 233,
+   "place": "Ferreirim",
+   "chapter": 3,
+   "section": 29,
+   "role": "stop",
+   "latitude": 40.945374,
+   "longitude": -7.496215
+  },
+  {
+   "ordinal": 234,
+   "place": "Vale de Estrela",
+   "chapter": 3,
+   "section": 30,
+   "role": "passed-through",
+   "latitude": 40.499444,
+   "longitude": -7.307778
+  },
+  {
+   "ordinal": 235,
+   "place": "Valhelhas",
+   "chapter": 3,
+   "section": 30,
+   "role": "stop",
+   "latitude": 40.407222,
+   "longitude": -7.403056
+  },
+  {
+   "ordinal": 236,
+   "place": "Manteigas",
+   "chapter": 3,
+   "section": 30,
+   "role": "stop",
+   "latitude": 40.4,
+   "longitude": -7.533333
+  },
+  {
+   "ordinal": 237,
+   "place": "Nave de Santo António",
+   "chapter": 3,
+   "section": 30,
+   "role": "stop",
+   "latitude": 40.315697,
+   "longitude": -7.578595
+  },
+  {
+   "ordinal": 238,
+   "place": "Penhas da Saúde",
+   "chapter": 3,
+   "section": 30,
+   "role": "stop",
+   "latitude": 40.3,
+   "longitude": -7.55
+  },
+  {
+   "ordinal": 239,
+   "place": "Covilhã",
+   "chapter": 3,
+   "section": 30,
+   "role": "stop",
+   "latitude": 40.283333,
+   "longitude": -7.5
+  },
+  {
+   "ordinal": 240,
+   "place": "Cova da Beira",
+   "chapter": 3,
+   "section": 31,
+   "role": "passed-through",
+   "latitude": 40.22,
+   "longitude": -7.5
+  },
+  {
+   "ordinal": 241,
+   "place": "Capinha",
+   "chapter": 3,
+   "section": 31,
+   "role": "stop",
+   "latitude": 40.201111,
+   "longitude": -7.374167
+  },
+  {
+   "ordinal": 242,
+   "place": "Penamacor",
+   "chapter": 3,
+   "section": 31,
+   "role": "stop",
+   "latitude": 40.168333,
+   "longitude": -7.167222
+  },
+  {
+   "ordinal": 243,
+   "place": "Aranhas",
+   "chapter": 3,
+   "section": 31,
+   "role": "passed-through",
+   "latitude": 40.111629,
+   "longitude": -7.119497
+  },
+  {
+   "ordinal": 244,
+   "place": "Monsanto",
+   "chapter": 3,
+   "section": 31,
+   "role": "stop",
+   "latitude": 40.038751,
+   "longitude": -7.115113
+  },
+  {
+   "ordinal": 245,
+   "place": "Salvador",
+   "chapter": 3,
+   "section": 31,
+   "role": "passed-through",
+   "latitude": 40.0606,
+   "longitude": -7.1761
+  },
+  {
+   "ordinal": 246,
+   "place": "Medelim",
+   "chapter": 3,
+   "section": 31,
+   "role": "passed-through",
+   "latitude": 40.049167,
+   "longitude": -7.183056
+  },
+  {
+   "ordinal": 247,
+   "place": "Idanha-a-Velha",
+   "chapter": 3,
+   "section": 31,
+   "role": "stop",
+   "latitude": 39.99825,
+   "longitude": -7.154842
+  },
+  {
+   "ordinal": 248,
+   "place": "Alcafozes",
+   "chapter": 3,
+   "section": 31,
+   "role": "passed-through",
+   "latitude": 39.948809,
+   "longitude": -7.119603
+  },
+  {
+   "ordinal": 249,
+   "place": "Idanha-a-Nova",
+   "chapter": 3,
+   "section": 31,
+   "role": "stop",
+   "latitude": 39.922778,
+   "longitude": -7.2425
+  },
+  {
+   "ordinal": 250,
+   "place": "Proença-a-Velha",
+   "chapter": 3,
+   "section": 31,
+   "role": "stop",
+   "latitude": 40.025556,
+   "longitude": -7.241111
+  },
+  {
+   "ordinal": 251,
+   "place": "Vale de Prazeres",
+   "chapter": 3,
+   "section": 31,
+   "role": "passed-through",
+   "latitude": 40.109722,
+   "longitude": -7.431667
+  },
+  {
+   "ordinal": 252,
+   "place": "Alpedrinha",
+   "chapter": 3,
+   "section": 32,
+   "role": "stop",
+   "latitude": 40.099444,
+   "longitude": -7.45
+  },
+  {
+   "ordinal": 253,
+   "place": "Alcaide",
+   "chapter": 3,
+   "section": 32,
+   "role": "stop",
+   "latitude": 40.132414,
+   "longitude": -7.440082
+  },
+  {
+   "ordinal": 254,
+   "place": "Donas",
+   "chapter": 3,
+   "section": 32,
+   "role": "stop",
+   "latitude": 40.131389,
+   "longitude": -7.474722
+  },
+  {
+   "ordinal": 255,
+   "place": "Fundão",
+   "chapter": 3,
+   "section": 32,
+   "role": "stop",
+   "latitude": 40.140806,
+   "longitude": -7.501752
+  },
+  {
+   "ordinal": 256,
+   "place": "Paul",
+   "chapter": 3,
+   "section": 32,
+   "role": "stop",
+   "latitude": 40.200926,
+   "longitude": -7.638012
+  },
+  {
+   "ordinal": 257,
+   "place": "Panasqueira",
+   "chapter": 3,
+   "section": 32,
+   "role": "stop",
+   "latitude": 40.169067,
+   "longitude": -7.759336
+  },
+  {
+   "ordinal": 258,
+   "place": "São Jorge da Beira",
+   "chapter": 3,
+   "section": 32,
+   "role": "stop",
+   "latitude": 40.167778,
+   "longitude": -7.781667
+  },
+  {
+   "ordinal": 259,
+   "place": "Ourondo",
+   "chapter": 3,
+   "section": 32,
+   "role": "stop",
+   "latitude": 40.147299,
+   "longitude": -7.681867
+  },
+  {
+   "ordinal": 260,
+   "place": "Castelo Novo",
+   "chapter": 3,
+   "section": 32,
+   "role": "stop",
+   "latitude": 40.076667,
+   "longitude": -7.495
+  },
+  {
+   "ordinal": 261,
+   "place": "Castelo Branco (cidade)",
+   "chapter": 3,
+   "section": 33,
+   "role": "stop",
+   "latitude": 39.976758,
+   "longitude": -7.44606
+  },
+  {
+   "ordinal": 262,
+   "place": "Foz Giraldo",
+   "chapter": 3,
+   "section": 33,
+   "role": "passed-through",
+   "latitude": 40.001904,
+   "longitude": -7.716741
+  },
+  {
+   "ordinal": 263,
+   "place": "Oleiros",
+   "chapter": 3,
+   "section": 33,
+   "role": "stop",
+   "latitude": 39.918888,
+   "longitude": -7.914006
+  },
+  {
+   "ordinal": 264,
+   "place": "Sertã",
+   "chapter": 3,
+   "section": 33,
+   "role": "passed-through",
+   "latitude": 39.824359,
+   "longitude": -8.082821
+  },
+  {
+   "ordinal": 265,
+   "place": "Sardoal",
+   "chapter": 3,
+   "section": 33,
+   "role": "passed-through",
+   "latitude": 39.53347,
+   "longitude": -8.16034
+  },
+  {
+   "ordinal": 266,
+   "place": "Abrantes",
+   "chapter": 3,
+   "section": 33,
+   "role": "stop",
+   "latitude": 39.461389,
+   "longitude": -8.198889
+  },
+  {
+   "ordinal": 267,
+   "place": "Montalvo",
+   "chapter": 4,
+   "section": 34,
+   "role": "passed-through",
+   "latitude": 39.484722,
+   "longitude": -8.3
+  },
+  {
+   "ordinal": 268,
+   "place": "Constância",
+   "chapter": 4,
+   "section": 34,
+   "role": "stop",
+   "latitude": 39.482611,
+   "longitude": -8.326648
+  },
+  {
+   "ordinal": 269,
+   "place": "Almourol",
+   "chapter": 4,
+   "section": 34,
+   "role": "stop",
+   "latitude": 39.46232,
+   "longitude": -8.374042
+  },
+  {
+   "ordinal": 270,
+   "place": "Tancos",
+   "chapter": 4,
+   "section": 34,
+   "role": "stop",
+   "latitude": 39.460556,
+   "longitude": -8.399167
+  },
+  {
+   "ordinal": 271,
+   "place": "Atalaia",
+   "chapter": 4,
+   "section": 34,
+   "role": "stop",
+   "latitude": 39.480429,
+   "longitude": -8.452074
+  },
+  {
+   "ordinal": 272,
+   "place": "Castelo do Bode",
+   "chapter": 4,
+   "section": 34,
+   "role": "stop",
+   "latitude": 39.545271,
+   "longitude": -8.32198
+  },
+  {
+   "ordinal": 273,
+   "place": "Serra",
+   "chapter": 4,
+   "section": 34,
+   "role": "stop",
+   "latitude": 39.6,
+   "longitude": -8.3
+  },
+  {
+   "ordinal": 274,
+   "place": "Beberriqueira",
+   "chapter": 4,
+   "section": 34,
+   "role": "passed-through",
+   "latitude": 39.569482,
+   "longitude": -8.353402
+  },
+  {
+   "ordinal": 275,
+   "place": "Tomar",
+   "chapter": 4,
+   "section": 34,
+   "role": "stop",
+   "latitude": 39.6,
+   "longitude": -8.416667
+  },
+  {
+   "ordinal": 276,
+   "place": "Ourém",
+   "chapter": 4,
+   "section": 35,
+   "role": "stop",
+   "latitude": 39.65679,
+   "longitude": -8.57963
+  },
+  {
+   "ordinal": 277,
+   "place": "Fátima",
+   "chapter": 4,
+   "section": 35,
+   "role": "stop",
+   "latitude": 39.625556,
+   "longitude": -8.665833
+  },
+  {
+   "ordinal": 278,
+   "place": "Marinha Grande",
+   "chapter": 4,
+   "section": 35,
+   "role": "stop",
+   "latitude": 39.749167,
+   "longitude": -8.933056
+  },
+  {
+   "ordinal": 279,
+   "place": "São Pedro de Muel",
+   "chapter": 4,
+   "section": 35,
+   "role": "stop",
+   "latitude": 39.75528,
+   "longitude": -9.03228
+  },
+  {
+   "ordinal": 280,
+   "place": "Vieira de Leiria",
+   "chapter": 4,
+   "section": 35,
+   "role": "stop",
+   "latitude": 39.869167,
+   "longitude": -8.936944
+  },
+  {
+   "ordinal": 281,
+   "place": "Amor",
+   "chapter": 4,
+   "section": 35,
+   "role": "passed-through",
+   "latitude": 39.803293,
+   "longitude": -8.860219
+  },
+  {
+   "ordinal": 282,
+   "place": "Gândara dos Olivais",
+   "chapter": 4,
+   "section": 35,
+   "role": "passed-through",
+   "latitude": 39.764481,
+   "longitude": -8.823408
+  },
+  {
+   "ordinal": 283,
+   "place": "Leiria",
+   "chapter": 4,
+   "section": 36,
+   "role": "stop",
+   "latitude": 39.743056,
+   "longitude": -8.806944
+  },
+  {
+   "ordinal": 284,
+   "place": "Batalha",
+   "chapter": 4,
+   "section": 36,
+   "role": "stop",
+   "latitude": 39.6579,
+   "longitude": -8.824371
+  },
+  {
+   "ordinal": 285,
+   "place": "São Jorge",
+   "chapter": 4,
+   "section": 36,
+   "role": "stop",
+   "latitude": 39.63956,
+   "longitude": -8.84518
+  },
+  {
+   "ordinal": 286,
+   "place": "Cós",
+   "chapter": 4,
+   "section": 36,
+   "role": "stop",
+   "latitude": 39.60168,
+   "longitude": -8.956196
+  },
+  {
+   "ordinal": 287,
+   "place": "Maiorga",
+   "chapter": 4,
+   "section": 36,
+   "role": "passed-through",
+   "latitude": 39.580556,
+   "longitude": -8.979167
+  },
+  {
+   "ordinal": 288,
+   "place": "Nazaré",
+   "chapter": 4,
+   "section": 36,
+   "role": "stop",
+   "latitude": 39.602911,
+   "longitude": -9.070157
+  },
+  {
+   "ordinal": 289,
+   "place": "Sítio",
+   "chapter": 4,
+   "section": 36,
+   "role": "stop",
+   "latitude": 39.6053,
+   "longitude": -9.0765
+  },
+  {
+   "ordinal": 290,
+   "place": "Alcobaça",
+   "chapter": 4,
+   "section": 36,
+   "role": "stop",
+   "latitude": 39.55192,
+   "longitude": -8.97634
+  },
+  {
+   "ordinal": 291,
+   "place": "Porto de Mós",
+   "chapter": 4,
+   "section": 37,
+   "role": "stop",
+   "latitude": 39.602222,
+   "longitude": -8.817778
+  },
+  {
+   "ordinal": 292,
+   "place": "Casais do Livramento",
+   "chapter": 4,
+   "section": 37,
+   "role": "passed-through",
+   "latitude": 39.5879,
+   "longitude": -8.811
+  },
+  {
+   "ordinal": 293,
+   "place": "Torres Novas",
+   "chapter": 4,
+   "section": 37,
+   "role": "stop",
+   "latitude": 39.4775,
+   "longitude": -8.540833
+  },
+  {
+   "ordinal": 294,
+   "place": "Riachos",
+   "chapter": 4,
+   "section": 37,
+   "role": "passed-through",
+   "latitude": 39.445278,
+   "longitude": -8.514167
+  },
+  {
+   "ordinal": 295,
+   "place": "Golegã",
+   "chapter": 4,
+   "section": 37,
+   "role": "stop",
+   "latitude": 39.401944,
+   "longitude": -8.4825
+  },
+  {
+   "ordinal": 296,
+   "place": "Azinhaga",
+   "chapter": 4,
+   "section": 37,
+   "role": "stop",
+   "latitude": 39.35036,
+   "longitude": -8.528168
+  },
+  {
+   "ordinal": 297,
+   "place": "Santarém",
+   "chapter": 4,
+   "section": 37,
+   "role": "stop",
+   "latitude": 39.236364,
+   "longitude": -8.686708
+  },
+  {
+   "ordinal": 298,
+   "place": "Almeirim",
+   "chapter": 4,
+   "section": 38,
+   "role": "stop",
+   "latitude": 39.209193,
+   "longitude": -8.629103
+  },
+  {
+   "ordinal": 299,
+   "place": "Salvaterra de Magos",
+   "chapter": 4,
+   "section": 38,
+   "role": "stop",
+   "latitude": 39.025833,
+   "longitude": -8.792778
+  },
+  {
+   "ordinal": 300,
+   "place": "Vila Franca de Xira",
+   "chapter": 4,
+   "section": 38,
+   "role": "passed-through",
+   "latitude": 38.954278,
+   "longitude": -8.989704
+  },
+  {
+   "ordinal": 301,
+   "place": "Arruda dos Vinhos",
+   "chapter": 4,
+   "section": 38,
+   "role": "stop",
+   "latitude": 38.991199,
+   "longitude": -9.062929
+  },
+  {
+   "ordinal": 302,
+   "place": "São Quintino",
+   "chapter": 4,
+   "section": 38,
+   "role": "stop",
+   "latitude": 39.005943,
+   "longitude": -9.144086
+  },
+  {
+   "ordinal": 303,
+   "place": "Sobral de Monte Agraço",
+   "chapter": 4,
+   "section": 38,
+   "role": "stop",
+   "latitude": 39.019722,
+   "longitude": -9.148889
+  },
+  {
+   "ordinal": 304,
+   "place": "Dois Portos",
+   "chapter": 4,
+   "section": 38,
+   "role": "stop",
+   "latitude": 39.038953,
+   "longitude": -9.184031
+  },
+  {
+   "ordinal": 305,
+   "place": "Torres Vedras",
+   "chapter": 4,
+   "section": 38,
+   "role": "stop",
+   "latitude": 39.093086,
+   "longitude": -9.260741
+  },
+  {
+   "ordinal": 306,
+   "place": "Varatojo",
+   "chapter": 4,
+   "section": 39,
+   "role": "stop",
+   "latitude": 39.090767,
+   "longitude": -9.277268
+  },
+  {
+   "ordinal": 307,
+   "place": "Ponte do Rol",
+   "chapter": 4,
+   "section": 39,
+   "role": "passed-through",
+   "latitude": 39.098671,
+   "longitude": -9.315546
+  },
+  {
+   "ordinal": 308,
+   "place": "São Pedro da Cadeira",
+   "chapter": 4,
+   "section": 39,
+   "role": "stop",
+   "latitude": 39.069444,
+   "longitude": -9.372222
+  },
+  {
+   "ordinal": 309,
+   "place": "Turcifal",
+   "chapter": 4,
+   "section": 39,
+   "role": "stop",
+   "latitude": 39.041944,
+   "longitude": -9.266111
+  },
+  {
+   "ordinal": 310,
+   "place": "Aldeia Galega",
+   "chapter": 4,
+   "section": 39,
+   "role": "passed-through",
+   "latitude": 39.082222,
+   "longitude": -9.111944
+  },
+  {
+   "ordinal": 311,
+   "place": "Merceana",
+   "chapter": 4,
+   "section": 39,
+   "role": "passed-through",
+   "latitude": 39.093436,
+   "longitude": -9.112672
+  },
+  {
+   "ordinal": 312,
+   "place": "Aldeia Gavinha",
+   "chapter": 4,
+   "section": 39,
+   "role": "stop",
+   "latitude": 39.089449,
+   "longitude": -9.088703
+  },
+  {
+   "ordinal": 313,
+   "place": "Espiçandeira",
+   "chapter": 4,
+   "section": 39,
+   "role": "stop",
+   "latitude": 39.074436,
+   "longitude": -9.046885
+  },
+  {
+   "ordinal": 314,
+   "place": "Alenquer",
+   "chapter": 4,
+   "section": 39,
+   "role": "stop",
+   "latitude": 39.061631,
+   "longitude": -8.996659
+  },
+  {
+   "ordinal": 315,
+   "place": "Meca",
+   "chapter": 4,
+   "section": 39,
+   "role": "stop",
+   "latitude": 39.088411,
+   "longitude": -9.034965
+  },
+  {
+   "ordinal": 316,
+   "place": "Ota",
+   "chapter": 4,
+   "section": 40,
+   "role": "passed-through",
+   "latitude": 39.110761,
+   "longitude": -8.990888
+  },
+  {
+   "ordinal": 317,
+   "place": "Cercal (do concelho de Cadaval)",
+   "chapter": 4,
+   "section": 40,
+   "role": "passed-through",
+   "latitude": 39.234839,
+   "longitude": -9.000269
+  },
+  {
+   "ordinal": 318,
+   "place": "Sancheira Grande",
+   "chapter": 4,
+   "section": 40,
+   "role": "passed-through",
+   "latitude": 39.345302,
+   "longitude": -9.083173
+  },
+  {
+   "ordinal": 319,
+   "place": "Caldas da Rainha",
+   "chapter": 4,
+   "section": 40,
+   "role": "stop",
+   "latitude": 39.406111,
+   "longitude": -9.139722
+  },
+  {
+   "ordinal": 320,
+   "place": "Lagoa",
+   "chapter": 4,
+   "section": 40,
+   "role": "stop",
+   "latitude": 39.405,
+   "longitude": -9.22
+  },
+  {
+   "ordinal": 321,
+   "place": "Ferrel",
+   "chapter": 4,
+   "section": 40,
+   "role": "stop",
+   "latitude": 39.364722,
+   "longitude": -9.315833
+  },
+  {
+   "ordinal": 322,
+   "place": "Peniche",
+   "chapter": 4,
+   "section": 40,
+   "role": "stop",
+   "latitude": 39.36,
+   "longitude": -9.388333
+  },
+  {
+   "ordinal": 323,
+   "place": "Atouguia da Baleia",
+   "chapter": 4,
+   "section": 40,
+   "role": "stop",
+   "latitude": 39.335556,
+   "longitude": -9.325833
+  },
+  {
+   "ordinal": 324,
+   "place": "Serra d'El-Rei",
+   "chapter": 4,
+   "section": 40,
+   "role": "stop",
+   "latitude": 39.332526,
+   "longitude": -9.269777
+  },
+  {
+   "ordinal": 325,
+   "place": "Óbidos",
+   "chapter": 4,
+   "section": 40,
+   "role": "stop",
+   "latitude": 39.36,
+   "longitude": -9.1575
+  },
+  {
+   "ordinal": 326,
+   "place": "Carvalhal de Óbidos",
+   "chapter": 4,
+   "section": 41,
+   "role": "stop",
+   "latitude": 39.29,
+   "longitude": -9.13056
+  },
+  {
+   "ordinal": 327,
+   "place": "Carvalhal",
+   "chapter": 4,
+   "section": 41,
+   "role": "stop",
+   "latitude": 39.29,
+   "longitude": -9.13056
+  },
+  {
+   "ordinal": 328,
+   "place": "Bombarral",
+   "chapter": 4,
+   "section": 41,
+   "role": "passed-through",
+   "latitude": 39.267778,
+   "longitude": -9.158056
+  },
+  {
+   "ordinal": 329,
+   "place": "Lourinhã",
+   "chapter": 4,
+   "section": 41,
+   "role": "stop",
+   "latitude": 39.253484,
+   "longitude": -9.290494
+  },
+  {
+   "ordinal": 330,
+   "place": "Ericeira",
+   "chapter": 4,
+   "section": 41,
+   "role": "passed-through",
+   "latitude": 38.966667,
+   "longitude": -9.416667
+  },
+  {
+   "ordinal": 331,
+   "place": "Mafra",
+   "chapter": 4,
+   "section": 41,
+   "role": "stop",
+   "latitude": 38.936978,
+   "longitude": -9.328237
+  },
+  {
+   "ordinal": 332,
+   "place": "Azenhas do Mar",
+   "chapter": 4,
+   "section": 42,
+   "role": "passed-through",
+   "latitude": 38.840956,
+   "longitude": -9.461906
+  },
+  {
+   "ordinal": 333,
+   "place": "Praia das Maçãs",
+   "chapter": 4,
+   "section": 42,
+   "role": "passed-through",
+   "latitude": 38.825,
+   "longitude": -9.47
+  },
+  {
+   "ordinal": 334,
+   "place": "Janas",
+   "chapter": 4,
+   "section": 42,
+   "role": "stop",
+   "latitude": 38.827833,
+   "longitude": -9.421722
+  },
+  {
+   "ordinal": 335,
+   "place": "Monserrate (Sintra)",
+   "chapter": 4,
+   "section": 42,
+   "role": "stop",
+   "latitude": 38.794225,
+   "longitude": -9.420648
+  },
+  {
+   "ordinal": 336,
+   "place": "Seteais",
+   "chapter": 4,
+   "section": 42,
+   "role": "stop",
+   "latitude": 38.796708,
+   "longitude": -9.399868
+  },
+  {
+   "ordinal": 337,
+   "place": "Sintra",
+   "chapter": 4,
+   "section": 42,
+   "role": "stop",
+   "latitude": 38.799167,
+   "longitude": -9.388333
+  },
+  {
+   "ordinal": 338,
+   "place": "Pena (Sintra)",
+   "chapter": 4,
+   "section": 42,
+   "role": "stop",
+   "latitude": 38.78755,
+   "longitude": -9.39034
+  },
+  {
+   "ordinal": 339,
+   "place": "Cascais",
+   "chapter": 4,
+   "section": 43,
+   "role": "stop",
+   "latitude": 38.7,
+   "longitude": -9.416667
+  },
+  {
+   "ordinal": 340,
+   "place": "Estoril",
+   "chapter": 4,
+   "section": 43,
+   "role": "passed-through",
+   "latitude": 38.709571,
+   "longitude": -9.390137
+  },
+  {
+   "ordinal": 341,
+   "place": "Carcavelos",
+   "chapter": 4,
+   "section": 43,
+   "role": "stop",
+   "latitude": 38.690091,
+   "longitude": -9.334683
+  },
+  {
+   "ordinal": 342,
+   "place": "Queluz",
+   "chapter": 4,
+   "section": 43,
+   "role": "stop",
+   "latitude": 38.756584,
+   "longitude": -9.254523
+  },
+  {
+   "ordinal": 343,
+   "place": "Lisboa",
+   "chapter": 4,
+   "section": 44,
+   "role": "stop",
+   "latitude": 38.725278,
+   "longitude": -9.15
+  },
+  {
+   "ordinal": 344,
+   "place": "Torre (serra da Estrela)",
+   "chapter": 4,
+   "section": 44,
+   "role": "stop",
+   "latitude": 38.6916,
+   "longitude": -9.216
+  },
+  {
+   "ordinal": 345,
+   "place": "Alfeite",
+   "chapter": 4,
+   "section": 45,
+   "role": "passed-through",
+   "latitude": 38.664957,
+   "longitude": -9.143773
+  },
+  {
+   "ordinal": 346,
+   "place": "Seixal",
+   "chapter": 4,
+   "section": 45,
+   "role": "passed-through",
+   "latitude": 38.65,
+   "longitude": -9.1
+  },
+  {
+   "ordinal": 347,
+   "place": "Barreiro",
+   "chapter": 4,
+   "section": 45,
+   "role": "passed-through",
+   "latitude": 38.666667,
+   "longitude": -9.066667
+  },
+  {
+   "ordinal": 348,
+   "place": "Montijo",
+   "chapter": 4,
+   "section": 45,
+   "role": "passed-through",
+   "latitude": 38.7,
+   "longitude": -8.966667
+  },
+  {
+   "ordinal": 349,
+   "place": "Moita",
+   "chapter": 4,
+   "section": 45,
+   "role": "passed-through",
+   "latitude": 38.640264,
+   "longitude": -8.972056
+  },
+  {
+   "ordinal": 350,
+   "place": "Vila Fresca de Azeitão",
+   "chapter": 4,
+   "section": 45,
+   "role": "stop",
+   "latitude": 38.524923,
+   "longitude": -8.99656
+  },
+  {
+   "ordinal": 351,
+   "place": "Santana",
+   "chapter": 4,
+   "section": 45,
+   "role": "passed-through",
+   "latitude": 38.4926,
+   "longitude": -9.1037
+  },
+  {
+   "ordinal": 352,
+   "place": "Sesimbra",
+   "chapter": 4,
+   "section": 45,
+   "role": "stop",
+   "latitude": 38.443693,
+   "longitude": -9.099627
+  },
+  {
+   "ordinal": 353,
+   "place": "Portinho da Arrábida",
+   "chapter": 4,
+   "section": 45,
+   "role": "stop",
+   "latitude": 38.476111,
+   "longitude": -8.985
+  },
+  {
+   "ordinal": 354,
+   "place": "Setúbal",
+   "chapter": 4,
+   "section": 45,
+   "role": "stop",
+   "latitude": 38.524306,
+   "longitude": -8.8925
+  },
+  {
+   "ordinal": 355,
+   "place": "Palmela",
+   "chapter": 4,
+   "section": 45,
+   "role": "stop",
+   "latitude": 38.576045,
+   "longitude": -8.865312
+  },
+  {
+   "ordinal": 356,
+   "place": "Águas de Moura",
+   "chapter": 4,
+   "section": 45,
+   "role": "passed-through",
+   "latitude": 38.5833,
+   "longitude": -8.7
+  },
+  {
+   "ordinal": 357,
+   "place": "Alcácer do Sal",
+   "chapter": 4,
+   "section": 45,
+   "role": "stop",
+   "latitude": 38.372974,
+   "longitude": -8.51227
+  },
+  {
+   "ordinal": 358,
+   "place": "Montemor-o-Novo",
+   "chapter": 5,
+   "section": 46,
+   "role": "stop",
+   "latitude": 38.648178,
+   "longitude": -8.211586
+  },
+  {
+   "ordinal": 359,
+   "place": "Alcácer do Sal",
+   "chapter": 5,
+   "section": 46,
+   "role": "stop",
+   "latitude": 38.372974,
+   "longitude": -8.51227
+  },
+  {
+   "ordinal": 360,
+   "place": "Torrão",
+   "chapter": 5,
+   "section": 46,
+   "role": "stop",
+   "latitude": 38.294777,
+   "longitude": -8.222145
+  },
+  {
+   "ordinal": 361,
+   "place": "Alcáçovas",
+   "chapter": 5,
+   "section": 46,
+   "role": "stop",
+   "latitude": 38.3925,
+   "longitude": -8.1575
+  },
+  {
+   "ordinal": 362,
+   "place": "Santiago do Escoural",
+   "chapter": 5,
+   "section": 46,
+   "role": "stop",
+   "latitude": 38.53202,
+   "longitude": -8.156155
+  },
+  {
+   "ordinal": 363,
+   "place": "Arraiolos",
+   "chapter": 5,
+   "section": 46,
+   "role": "stop",
+   "latitude": 38.716667,
+   "longitude": -7.983333
+  },
+  {
+   "ordinal": 364,
+   "place": "Pavia",
+   "chapter": 5,
+   "section": 46,
+   "role": "stop",
+   "latitude": 38.894945,
+   "longitude": -8.017447
+  },
+  {
+   "ordinal": 365,
+   "place": "Torre das Águias",
+   "chapter": 5,
+   "section": 46,
+   "role": "stop",
+   "latitude": 38.875022,
+   "longitude": -8.126502
+  },
+  {
+   "ordinal": 366,
+   "place": "Brotas",
+   "chapter": 5,
+   "section": 46,
+   "role": "stop",
+   "latitude": 38.871598,
+   "longitude": -8.153326
+  },
+  {
+   "ordinal": 367,
+   "place": "Ciborro",
+   "chapter": 5,
+   "section": 46,
+   "role": "passed-through",
+   "latitude": 38.800833,
+   "longitude": -8.228056
+  },
+  {
+   "ordinal": 368,
+   "place": "Lavre",
+   "chapter": 5,
+   "section": 46,
+   "role": "stop",
+   "latitude": 38.775239,
+   "longitude": -8.368877
+  },
+  {
+   "ordinal": 369,
+   "place": "Mora",
+   "chapter": 5,
+   "section": 46,
+   "role": "passed-through",
+   "latitude": 38.950655,
+   "longitude": -8.185014
+  },
+  {
+   "ordinal": 370,
+   "place": "Montargil",
+   "chapter": 5,
+   "section": 47,
+   "role": "passed-through",
+   "latitude": 39.083333,
+   "longitude": -8.166667
+  },
+  {
+   "ordinal": 371,
+   "place": "Ponte de Sor",
+   "chapter": 5,
+   "section": 47,
+   "role": "stop",
+   "latitude": 39.25193,
+   "longitude": -8.008997
+  },
+  {
+   "ordinal": 372,
+   "place": "Alter do Chão",
+   "chapter": 5,
+   "section": 47,
+   "role": "stop",
+   "latitude": 39.2,
+   "longitude": -7.666667
+  },
+  {
+   "ordinal": 373,
+   "place": "Crato",
+   "chapter": 5,
+   "section": 47,
+   "role": "stop",
+   "latitude": 39.285122,
+   "longitude": -7.645427
+  },
+  {
+   "ordinal": 374,
+   "place": "Flor da Rosa",
+   "chapter": 5,
+   "section": 47,
+   "role": "stop",
+   "latitude": 39.305842,
+   "longitude": -7.646363
+  },
+  {
+   "ordinal": 375,
+   "place": "Alpalhão",
+   "chapter": 5,
+   "section": 47,
+   "role": "passed-through",
+   "latitude": 39.416667,
+   "longitude": -7.618889
+  },
+  {
+   "ordinal": 376,
+   "place": "Castelo de Vide",
+   "chapter": 5,
+   "section": 47,
+   "role": "stop",
+   "latitude": 39.416667,
+   "longitude": -7.45
+  },
+  {
+   "ordinal": 377,
+   "place": "Marvão",
+   "chapter": 5,
+   "section": 47,
+   "role": "stop",
+   "latitude": 39.394765,
+   "longitude": -7.377549
+  },
+  {
+   "ordinal": 378,
+   "place": "Portalegre",
+   "chapter": 5,
+   "section": 48,
+   "role": "stop",
+   "latitude": 39.291135,
+   "longitude": -7.433389
+  },
+  {
+   "ordinal": 379,
+   "place": "Torre de Palma",
+   "chapter": 5,
+   "section": 48,
+   "role": "stop",
+   "latitude": 39.062222,
+   "longitude": -7.488611
+  },
+  {
+   "ordinal": 380,
+   "place": "Monforte",
+   "chapter": 5,
+   "section": 48,
+   "role": "stop",
+   "latitude": 39.052222,
+   "longitude": -7.438056
+  },
+  {
+   "ordinal": 381,
+   "place": "Luz (de Tavira)",
+   "chapter": 5,
+   "section": 48,
+   "role": "stop",
+   "latitude": 39.122,
+   "longitude": -7.286
+  },
+  {
+   "ordinal": 382,
+   "place": "Arronches",
+   "chapter": 5,
+   "section": 48,
+   "role": "stop",
+   "latitude": 39.122106,
+   "longitude": -7.285336
+  },
+  {
+   "ordinal": 383,
+   "place": "Nossa Senhora dos Degolados",
+   "chapter": 5,
+   "section": 48,
+   "role": "passed-through",
+   "latitude": 39.060803,
+   "longitude": -7.121433
+  },
+  {
+   "ordinal": 384,
+   "place": "Campo Maior",
+   "chapter": 5,
+   "section": 48,
+   "role": "stop",
+   "latitude": 39.012506,
+   "longitude": -7.069282
+  },
+  {
+   "ordinal": 385,
+   "place": "Elvas",
+   "chapter": 5,
+   "section": 48,
+   "role": "stop",
+   "latitude": 38.866667,
+   "longitude": -7.166667
+  },
+  {
+   "ordinal": 386,
+   "place": "Juromenha",
+   "chapter": 5,
+   "section": 49,
+   "role": "stop",
+   "latitude": 38.740282,
+   "longitude": -7.255799
+  },
+  {
+   "ordinal": 387,
+   "place": "Ciladas de S. Romão",
+   "chapter": 5,
+   "section": 49,
+   "role": "passed-through",
+   "latitude": 38.775647,
+   "longitude": -7.318233
+  },
+  {
+   "ordinal": 388,
+   "place": "Terena",
+   "chapter": 5,
+   "section": 49,
+   "role": "stop",
+   "latitude": 38.618891,
+   "longitude": -7.411767
+  },
+  {
+   "ordinal": 389,
+   "place": "Alandroal",
+   "chapter": 5,
+   "section": 49,
+   "role": "stop",
+   "latitude": 38.702006,
+   "longitude": -7.403831
+  },
+  {
+   "ordinal": 390,
+   "place": "Vila Viçosa",
+   "chapter": 5,
+   "section": 49,
+   "role": "stop",
+   "latitude": 38.777406,
+   "longitude": -7.416691
+  },
+  {
+   "ordinal": 391,
+   "place": "Borba",
+   "chapter": 5,
+   "section": 49,
+   "role": "stop",
+   "latitude": 38.806846,
+   "longitude": -7.458696
+  },
+  {
+   "ordinal": 392,
+   "place": "Estremoz",
+   "chapter": 5,
+   "section": 49,
+   "role": "stop",
+   "latitude": 38.841833,
+   "longitude": -7.592258
+  },
+  {
+   "ordinal": 393,
+   "place": "Évora Monte",
+   "chapter": 5,
+   "section": 49,
+   "role": "stop",
+   "latitude": 38.765278,
+   "longitude": -7.716389
+  },
+  {
+   "ordinal": 394,
+   "place": "Redondo",
+   "chapter": 5,
+   "section": 49,
+   "role": "stop",
+   "latitude": 38.646062,
+   "longitude": -7.601076
+  },
+  {
+   "ordinal": 395,
+   "place": "Évora",
+   "chapter": 5,
+   "section": 50,
+   "role": "stop",
+   "latitude": 38.570833,
+   "longitude": -7.909444
+  },
+  {
+   "ordinal": 396,
+   "place": "Reguengos de Monsaraz",
+   "chapter": 5,
+   "section": 50,
+   "role": "passed-through",
+   "latitude": 38.428248,
+   "longitude": -7.538998
+  },
+  {
+   "ordinal": 397,
+   "place": "Monsaraz",
+   "chapter": 5,
+   "section": 50,
+   "role": "stop",
+   "latitude": 38.433333,
+   "longitude": -7.383333
+  },
+  {
+   "ordinal": 398,
+   "place": "Mourão",
+   "chapter": 5,
+   "section": 50,
+   "role": "stop",
+   "latitude": 38.384897,
+   "longitude": -7.346723
+  },
+  {
+   "ordinal": 399,
+   "place": "Póvoa (povoação do Baixo Alentejo)",
+   "chapter": 5,
+   "section": 50,
+   "role": "passed-through",
+   "latitude": 38.225992,
+   "longitude": -7.333134
+  },
+  {
+   "ordinal": 400,
+   "place": "Moura",
+   "chapter": 5,
+   "section": 50,
+   "role": "stop",
+   "latitude": 38.140979,
+   "longitude": -7.45007
+  },
+  {
+   "ordinal": 401,
+   "place": "Pias",
+   "chapter": 5,
+   "section": 50,
+   "role": "stop",
+   "latitude": 38.020912,
+   "longitude": -7.474651
+  },
+  {
+   "ordinal": 402,
+   "place": "São Gens",
+   "chapter": 5,
+   "section": 50,
+   "role": "stop",
+   "latitude": 37.92985,
+   "longitude": -7.59398
+  },
+  {
+   "ordinal": 403,
+   "place": "Serpa",
+   "chapter": 5,
+   "section": 51,
+   "role": "stop",
+   "latitude": 37.943652,
+   "longitude": -7.59669
+  },
+  {
+   "ordinal": 404,
+   "place": "Baleizão",
+   "chapter": 5,
+   "section": 51,
+   "role": "passed-through",
+   "latitude": 38.025556,
+   "longitude": -7.714444
+  },
+  {
+   "ordinal": 405,
+   "place": "Portel",
+   "chapter": 5,
+   "section": 51,
+   "role": "stop",
+   "latitude": 38.297084,
+   "longitude": -7.702656
+  },
+  {
+   "ordinal": 406,
+   "place": "Oriola",
+   "chapter": 5,
+   "section": 51,
+   "role": "passed-through",
+   "latitude": 38.299861,
+   "longitude": -7.863565
+  },
+  {
+   "ordinal": 407,
+   "place": "Viana do Alentejo",
+   "chapter": 5,
+   "section": 51,
+   "role": "passed-through",
+   "latitude": 38.334768,
+   "longitude": -8.004397
+  },
+  {
+   "ordinal": 408,
+   "place": "Alvito",
+   "chapter": 5,
+   "section": 51,
+   "role": "stop",
+   "latitude": 38.255967,
+   "longitude": -7.991803
+  },
+  {
+   "ordinal": 409,
+   "place": "Vila Ruiva",
+   "chapter": 5,
+   "section": 51,
+   "role": "passed-through",
+   "latitude": 38.246558,
+   "longitude": -7.935612
+  },
+  {
+   "ordinal": 410,
+   "place": "Vila Alva",
+   "chapter": 5,
+   "section": 51,
+   "role": "passed-through",
+   "latitude": 38.25,
+   "longitude": -7.9
+  },
+  {
+   "ordinal": 411,
+   "place": "São Cucufate",
+   "chapter": 5,
+   "section": 51,
+   "role": "stop",
+   "latitude": 38.223331,
+   "longitude": -7.845042
+  },
+  {
+   "ordinal": 412,
+   "place": "Vila de Frades",
+   "chapter": 5,
+   "section": 51,
+   "role": "stop",
+   "latitude": 38.214344,
+   "longitude": -7.82295
+  },
+  {
+   "ordinal": 413,
+   "place": "Vidigueira",
+   "chapter": 5,
+   "section": 51,
+   "role": "stop",
+   "latitude": 38.21016,
+   "longitude": -7.801452
+  },
+  {
+   "ordinal": 414,
+   "place": "Beja",
+   "chapter": 5,
+   "section": 51,
+   "role": "stop",
+   "latitude": 38.033333,
+   "longitude": -7.883333
+  },
+  {
+   "ordinal": 415,
+   "place": "São Brás",
+   "chapter": 5,
+   "section": 51,
+   "role": "passed-through",
+   "latitude": 37.902539,
+   "longitude": -7.613998
+  },
+  {
+   "ordinal": 416,
+   "place": "Mértola",
+   "chapter": 5,
+   "section": 52,
+   "role": "stop",
+   "latitude": 37.633333,
+   "longitude": -7.666667
+  },
+  {
+   "ordinal": 417,
+   "place": "São Marcos da Ataboeira",
+   "chapter": 5,
+   "section": 52,
+   "role": "passed-through",
+   "latitude": 37.7075,
+   "longitude": -7.940278
+  },
+  {
+   "ordinal": 418,
+   "place": "Castro Verde",
+   "chapter": 5,
+   "section": 52,
+   "role": "stop",
+   "latitude": 37.697995,
+   "longitude": -8.082275
+  },
+  {
+   "ordinal": 419,
+   "place": "Albernoa",
+   "chapter": 5,
+   "section": 52,
+   "role": "passed-through",
+   "latitude": 37.861184,
+   "longitude": -7.958723
+  },
+  {
+   "ordinal": 420,
+   "place": "Trindade",
+   "chapter": 5,
+   "section": 52,
+   "role": "passed-through",
+   "latitude": 37.884722,
+   "longitude": -7.894444
+  },
+  {
+   "ordinal": 421,
+   "place": "Pisões",
+   "chapter": 5,
+   "section": 52,
+   "role": "stop",
+   "latitude": 37.997501,
+   "longitude": -7.948941
+  },
+  {
+   "ordinal": 422,
+   "place": "Alcoutim",
+   "chapter": 6,
+   "section": 53,
+   "role": "stop",
+   "latitude": 37.402329,
+   "longitude": -7.66905
+  },
+  {
+   "ordinal": 423,
+   "place": "Faro",
+   "chapter": 6,
+   "section": 53,
+   "role": "stop",
+   "latitude": 37.244809,
+   "longitude": -8.150756
+  },
+  {
+   "ordinal": 424,
+   "place": "Milreu",
+   "chapter": 6,
+   "section": 53,
+   "role": "stop",
+   "latitude": 37.095167,
+   "longitude": -7.904026
+  },
+  {
+   "ordinal": 425,
+   "place": "Estói",
+   "chapter": 6,
+   "section": 53,
+   "role": "stop",
+   "latitude": 37.094624,
+   "longitude": -7.894959
+  },
+  {
+   "ordinal": 426,
+   "place": "Olhão",
+   "chapter": 6,
+   "section": 53,
+   "role": "stop",
+   "latitude": 37.027037,
+   "longitude": -7.841129
+  },
+  {
+   "ordinal": 427,
+   "place": "Luz (de Tavira)",
+   "chapter": 6,
+   "section": 53,
+   "role": "stop",
+   "latitude": 37.088894,
+   "longitude": -7.699996
+  },
+  {
+   "ordinal": 428,
+   "place": "Tavira",
+   "chapter": 6,
+   "section": 53,
+   "role": "stop",
+   "latitude": 37.116667,
+   "longitude": -7.65
+  },
+  {
+   "ordinal": 429,
+   "place": "Castro Marim",
+   "chapter": 6,
+   "section": 53,
+   "role": "stop",
+   "latitude": 37.225549,
+   "longitude": -7.474716
+  },
+  {
+   "ordinal": 430,
+   "place": "Vila Real de Santo António",
+   "chapter": 6,
+   "section": 53,
+   "role": "stop",
+   "latitude": 37.188427,
+   "longitude": -7.424216
+  },
+  {
+   "ordinal": 431,
+   "place": "Monte Gordo",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.182222,
+   "longitude": -7.449167
+  },
+  {
+   "ordinal": 432,
+   "place": "São Lourenço de Almansil",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.085922,
+   "longitude": -8.010079
+  },
+  {
+   "ordinal": 433,
+   "place": "Loulé",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.145504,
+   "longitude": -8.068336
+  },
+  {
+   "ordinal": 434,
+   "place": "Aldeia da Tôr",
+   "chapter": 6,
+   "section": 54,
+   "role": "passed-through",
+   "latitude": 37.1992,
+   "longitude": -8.0358
+  },
+  {
+   "ordinal": 435,
+   "place": "Salir (Algarve)",
+   "chapter": 6,
+   "section": 54,
+   "role": "passed-through",
+   "latitude": 37.240203,
+   "longitude": -8.045106
+  },
+  {
+   "ordinal": 436,
+   "place": "Alte",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.236667,
+   "longitude": -8.175
+  },
+  {
+   "ordinal": 437,
+   "place": "São Bartolomeu de Messines",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.257778,
+   "longitude": -8.290556
+  },
+  {
+   "ordinal": 438,
+   "place": "Silves",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.263983,
+   "longitude": -8.348731
+  },
+  {
+   "ordinal": 439,
+   "place": "Olhos de Água",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.095297,
+   "longitude": -8.186724
+  },
+  {
+   "ordinal": 440,
+   "place": "Armação de Pêra",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.104167,
+   "longitude": -8.362778
+  },
+  {
+   "ordinal": 441,
+   "place": "Senhora da Rocha",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.09611,
+   "longitude": -8.38833
+  },
+  {
+   "ordinal": 442,
+   "place": "Lagoa",
+   "chapter": 6,
+   "section": 54,
+   "role": "passed-through",
+   "latitude": 37.136291,
+   "longitude": -8.454084
+  },
+  {
+   "ordinal": 443,
+   "place": "Estômbar",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.14586,
+   "longitude": -8.484596
+  },
+  {
+   "ordinal": 444,
+   "place": "Portimão",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.136944,
+   "longitude": -8.538333
+  },
+  {
+   "ordinal": 445,
+   "place": "Ponta João de Arães",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.12035,
+   "longitude": -8.557781
+  },
+  {
+   "ordinal": 446,
+   "place": "Lagos",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.102796,
+   "longitude": -8.672869
+  },
+  {
+   "ordinal": 447,
+   "place": "Espiche",
+   "chapter": 6,
+   "section": 54,
+   "role": "passed-through",
+   "latitude": 37.101862,
+   "longitude": -8.737004
+  },
+  {
+   "ordinal": 448,
+   "place": "Almadena",
+   "chapter": 6,
+   "section": 54,
+   "role": "passed-through",
+   "latitude": 37.135506,
+   "longitude": -8.76652
+  },
+  {
+   "ordinal": 449,
+   "place": "Budens",
+   "chapter": 6,
+   "section": 54,
+   "role": "passed-through",
+   "latitude": 37.086539,
+   "longitude": -8.830249
+  },
+  {
+   "ordinal": 450,
+   "place": "Ermida",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.0836,
+   "longitude": -8.865
+  },
+  {
+   "ordinal": 451,
+   "place": "Raposeira",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.083286,
+   "longitude": -8.889599
+  },
+  {
+   "ordinal": 452,
+   "place": "Vila do Bispo",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.08298,
+   "longitude": -8.909612
+  },
+  {
+   "ordinal": 453,
+   "place": "Aljezur",
+   "chapter": 6,
+   "section": 54,
+   "role": "passed-through",
+   "latitude": 37.316667,
+   "longitude": -8.8
+  },
+  {
+   "ordinal": 454,
+   "place": "Odemira",
+   "chapter": 6,
+   "section": 54,
+   "role": "passed-through",
+   "latitude": 37.598,
+   "longitude": -8.642
+  },
+  {
+   "ordinal": 455,
+   "place": "Vila Nova de Milfontes",
+   "chapter": 6,
+   "section": 54,
+   "role": "passed-through",
+   "latitude": 37.727778,
+   "longitude": -8.785278
+  },
+  {
+   "ordinal": 456,
+   "place": "Sines",
+   "chapter": 6,
+   "section": 54,
+   "role": "passed-through",
+   "latitude": 37.956549,
+   "longitude": -8.868964
+  },
+  {
+   "ordinal": 457,
+   "place": "Santiago do Cacém",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 38.018461,
+   "longitude": -8.693788
+  }
+ ]
+}

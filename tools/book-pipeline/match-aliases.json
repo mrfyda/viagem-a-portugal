@@ -1,0 +1,9 @@
+{
+  "_comment": "WP2: short forms the book uses for index Places. Key = text form, value = candidate indexNames (multiple = ambiguous, WP3/geo-gate resolves).",
+  "Barrinha": ["Barrinha de Mira"],
+  "Portinho": ["Portinho da Arrábida"],
+  "Canedo": ["Canedo de Basto"],
+  "Refojos": ["Refojos de Basto"],
+  "Celorico": ["Celorico de Basto", "Celorico da Beira"],
+  "Leça": ["Leça do Bailio"]
+}

@@ -1,96 +1,103 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
+  pull_request:
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment, but let in-progress production
+# deployments finish.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  build-blog:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@ee2113536afb7f793eed4ce60e8d3b26db912da4 # v1.127.0
-        with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
-          working-directory: modules/blog
+        uses: actions/checkout@v4
+
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v3
-      - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
+        uses: actions/configure-pages@v5
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+          working-directory: apps/blog
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install JS dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck map app
+        run: pnpm --filter map typecheck
+
+      - name: Test map app
+        run: pnpm --filter map test
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Test pipeline data invariants
+        run: uv run --with pytest -m pytest tools/book-pipeline/test_data.py -q
+
+      - name: Test blog-sync
+        run: uv run --with pytest --with pyyaml -m pytest tools/blog-sync/test_sync.py -q
+
+      - name: Sync blog featured journey
+        run: uv run tools/blog-sync/sync.py
+
+      - name: Check featured journey is committed
+        run: git diff --exit-code apps/map/src/data/featured-journey.json
+
+      - name: Build blog
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-        working-directory: modules/blog
+        working-directory: apps/blog
         env:
           JEKYLL_ENV: production
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          path: modules/blog/_site
 
-  build-map-viewer:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [20.x]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Install dependencies
-        run: npm install
-        working-directory: modules/map-viewer
-      - name: Build
-        run: yarn build
-        working-directory: modules/map-viewer
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          path: modules/map-viewer/build
+      - name: Build map app
+        run: pnpm --filter map export:web
+        env:
+          EXPO_BASE_URL: ${{ steps.pages.outputs.base_path }}/map
 
-  upload-pages-artifact:
-    runs-on: ubuntu-latest
-    needs:
-      - build-blog
-      - build-map-viewer
-    steps:
-      - name: Download artifacts
-        uses: actions/download-artifact@v3
-        id: download
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Assemble site (blog at /, map at /map)
+        run: |
+          mkdir -p site/map
+          cp -R apps/blog/_site/. site/
+          cp -R apps/map/dist/. site/map/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{steps.download.outputs.download-path}}
+          path: site
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: upload-pages-artifact
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,5133 @@
+{
+  "places": [
+    {
+      "indexName": "A dos Ruivos",
+      "name": "A dos Ruivos",
+      "qualifier": null,
+      "pages": [
+        276
+      ]
+    },
+    {
+      "indexName": "A-Ver-o-Mar",
+      "name": "A-Ver-o-Mar",
+      "qualifier": null,
+      "pages": [
+        71
+      ]
+    },
+    {
+      "indexName": "Abade de Neiva",
+      "name": "Abade de Neiva",
+      "qualifier": null,
+      "pages": [
+        72,
+        100
+      ]
+    },
+    {
+      "indexName": "Abadim",
+      "name": "Abadim",
+      "qualifier": null,
+      "pages": [
+        58
+      ]
+    },
+    {
+      "indexName": "Abrantes",
+      "name": "Abrantes",
+      "qualifier": null,
+      "pages": [
+        219,
+        225
+      ]
+    },
+    {
+      "indexName": "Adeganha",
+      "name": "Adeganha",
+      "qualifier": null,
+      "pages": [
+        26,
+        27
+      ]
+    },
+    {
+      "indexName": "Aguçadoura",
+      "name": "Aguçadoura",
+      "qualifier": null,
+      "pages": [
+        71
+      ]
+    },
+    {
+      "indexName": "Alandroal",
+      "name": "Alandroal",
+      "qualifier": null,
+      "pages": [
+        339,
+        341
+      ]
+    },
+    {
+      "indexName": "Albergaria-a-Velha",
+      "name": "Albergaria-a-Velha",
+      "qualifier": null,
+      "pages": [
+        121
+      ]
+    },
+    {
+      "indexName": "Albernoa",
+      "name": "Albernoa",
+      "qualifier": null,
+      "pages": [
+        363
+      ]
+    },
+    {
+      "indexName": "Albuquerque",
+      "name": "Albuquerque",
+      "qualifier": null,
+      "pages": [
+        325
+      ]
+    },
+    {
+      "indexName": "Alcafozes",
+      "name": "Alcafozes",
+      "qualifier": null,
+      "pages": [
+        205
+      ]
+    },
+    {
+      "indexName": "Alcaide",
+      "name": "Alcaide",
+      "qualifier": null,
+      "pages": [
+        211
+      ]
+    },
+    {
+      "indexName": "Alcobaça",
+      "name": "Alcobaça",
+      "qualifier": null,
+      "pages": [
+        237,
+        242,
+        323,
+        334
+      ]
+    },
+    {
+      "indexName": "Alcochete",
+      "name": "Alcochete",
+      "qualifier": null,
+      "pages": [
+        305
+      ]
+    },
+    {
+      "indexName": "Alcorochel",
+      "name": "Alcorochel",
+      "qualifier": null,
+      "pages": [
+        247
+      ]
+    },
+    {
+      "indexName": "Alcoutim",
+      "name": "Alcoutim",
+      "qualifier": null,
+      "pages": [
+        369
+      ]
+    },
+    {
+      "indexName": "Alcácer do Sal",
+      "name": "Alcácer do Sal",
+      "qualifier": null,
+      "pages": [
+        310,
+        311,
+        313
+      ]
+    },
+    {
+      "indexName": "Alcáçovas",
+      "name": "Alcáçovas",
+      "qualifier": null,
+      "pages": [
+        314
+      ]
+    },
+    {
+      "indexName": "Aldeia Galega",
+      "name": "Aldeia Galega",
+      "qualifier": null,
+      "pages": [
+        264
+      ]
+    },
+    {
+      "indexName": "Aldeia Gavinha",
+      "name": "Aldeia Gavinha",
+      "qualifier": null,
+      "pages": [
+        264
+      ]
+    },
+    {
+      "indexName": "Aldeia Viçosa",
+      "name": "Aldeia Viçosa",
+      "qualifier": null,
+      "pages": [
+        167
+      ]
+    },
+    {
+      "indexName": "Aldeia da Tôr",
+      "name": "Aldeia da Tôr",
+      "qualifier": null,
+      "pages": [
+        378
+      ]
+    },
+    {
+      "indexName": "Aldeia do Couço",
+      "name": "Aldeia do Couço",
+      "qualifier": null,
+      "pages": [
+        28
+      ]
+    },
+    {
+      "indexName": "Alenquer",
+      "name": "Alenquer",
+      "qualifier": null,
+      "pages": [
+        66,
+        265,
+        266
+      ]
+    },
+    {
+      "indexName": "Alfeite",
+      "name": "Alfeite",
+      "qualifier": null,
+      "pages": [
+        306
+      ]
+    },
+    {
+      "indexName": "Algeruz",
+      "name": "Algeruz",
+      "qualifier": null,
+      "pages": [
+        311
+      ]
+    },
+    {
+      "indexName": "Alhandra",
+      "name": "Alhandra",
+      "qualifier": null,
+      "pages": [
+        311
+      ]
+    },
+    {
+      "indexName": "Alhões",
+      "name": "Alhões",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Aljezur",
+      "name": "Aljezur",
+      "qualifier": null,
+      "pages": [
+        387
+      ]
+    },
+    {
+      "indexName": "Aljubarrota",
+      "name": "Aljubarrota",
+      "qualifier": null,
+      "pages": [
+        222,
+        240
+      ]
+    },
+    {
+      "indexName": "Almada",
+      "name": "Almada",
+      "qualifier": null,
+      "pages": [
+        305
+      ]
+    },
+    {
+      "indexName": "Almadena",
+      "name": "Almadena",
+      "qualifier": null,
+      "pages": [
+        386
+      ]
+    },
+    {
+      "indexName": "Almeida",
+      "name": "Almeida",
+      "qualifier": null,
+      "pages": [
+        174
+      ]
+    },
+    {
+      "indexName": "Almeirim",
+      "name": "Almeirim",
+      "qualifier": null,
+      "pages": [
+        249,
+        251
+      ]
+    },
+    {
+      "indexName": "Almofala",
+      "name": "Almofala",
+      "qualifier": null,
+      "pages": [
+        175,
+        177
+      ]
+    },
+    {
+      "indexName": "Almourol",
+      "name": "Almourol",
+      "qualifier": null,
+      "pages": [
+        226,
+        294
+      ]
+    },
+    {
+      "indexName": "Alpalhão",
+      "name": "Alpalhão",
+      "qualifier": null,
+      "pages": [
+        323
+      ]
+    },
+    {
+      "indexName": "Alpedrinha",
+      "name": "Alpedrinha",
+      "qualifier": null,
+      "pages": [
+        212,
+        325
+      ]
+    },
+    {
+      "indexName": "Alpiarça",
+      "name": "Alpiarça",
+      "qualifier": null,
+      "pages": [
+        249,
+        252
+      ]
+    },
+    {
+      "indexName": "Alte",
+      "name": "Alte",
+      "qualifier": null,
+      "pages": [
+        378
+      ]
+    },
+    {
+      "indexName": "Alter Pedroso",
+      "name": "Alter Pedroso",
+      "qualifier": null,
+      "pages": [
+        325
+      ]
+    },
+    {
+      "indexName": "Alter do Chão",
+      "name": "Alter do Chão",
+      "qualifier": null,
+      "pages": [
+        321,
+        328
+      ]
+    },
+    {
+      "indexName": "Alvite",
+      "name": "Alvite",
+      "qualifier": null,
+      "pages": [
+        57
+      ]
+    },
+    {
+      "indexName": "Alvito",
+      "name": "Alvito",
+      "qualifier": null,
+      "pages": [
+        360
+      ]
+    },
+    {
+      "indexName": "Amarante",
+      "name": "Amarante",
+      "qualifier": null,
+      "pages": [
+        48,
+        49,
+        50,
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "indexName": "Amor",
+      "name": "Amor",
+      "qualifier": null,
+      "pages": [
+        234
+      ]
+    },
+    {
+      "indexName": "Anadia",
+      "name": "Anadia",
+      "qualifier": null,
+      "pages": [
+        150
+      ]
+    },
+    {
+      "indexName": "Angeja",
+      "name": "Angeja",
+      "qualifier": null,
+      "pages": [
+        120
+      ]
+    },
+    {
+      "indexName": "Antas",
+      "name": "Antas",
+      "qualifier": null,
+      "pages": [
+        63
+      ]
+    },
+    {
+      "indexName": "Ançã",
+      "name": "Ançã",
+      "qualifier": null,
+      "pages": [
+        136
+      ]
+    },
+    {
+      "indexName": "Apúlia",
+      "name": "Apúlia",
+      "qualifier": null,
+      "pages": [
+        72
+      ]
+    },
+    {
+      "indexName": "Aranhas",
+      "name": "Aranhas",
+      "qualifier": null,
+      "pages": [
+        201
+      ]
+    },
+    {
+      "indexName": "Arcos de Valdevez",
+      "name": "Arcos de Valdevez",
+      "qualifier": null,
+      "pages": [
+        87,
+        88
+      ]
+    },
+    {
+      "indexName": "Arez",
+      "name": "Arez",
+      "qualifier": null,
+      "pages": [
+        325
+      ]
+    },
+    {
+      "indexName": "Armação de Pêra",
+      "name": "Armação de Pêra",
+      "qualifier": null,
+      "pages": [
+        377
+      ]
+    },
+    {
+      "indexName": "Arneiro",
+      "name": "Arneiro",
+      "qualifier": null,
+      "pages": [
+        249
+      ]
+    },
+    {
+      "indexName": "Arouca",
+      "name": "Arouca",
+      "qualifier": null,
+      "pages": [
+        150,
+        151,
+        152,
+        154
+      ]
+    },
+    {
+      "indexName": "Arraiolos",
+      "name": "Arraiolos",
+      "qualifier": null,
+      "pages": [
+        315,
+        316,
+        317
+      ]
+    },
+    {
+      "indexName": "Arronches",
+      "name": "Arronches",
+      "qualifier": null,
+      "pages": [
+        331
+      ]
+    },
+    {
+      "indexName": "Arruda dos Vinhos",
+      "name": "Arruda dos Vinhos",
+      "qualifier": null,
+      "pages": [
+        253,
+        255,
+        265
+      ]
+    },
+    {
+      "indexName": "Arões",
+      "name": "Arões",
+      "qualifier": null,
+      "pages": [
+        56
+      ]
+    },
+    {
+      "indexName": "Atalaia",
+      "name": "Atalaia",
+      "qualifier": null,
+      "pages": [
+        225
+      ]
+    },
+    {
+      "indexName": "Atouguia da Baleia",
+      "name": "Atouguia da Baleia",
+      "qualifier": null,
+      "pages": [
+        270,
+        271
+      ]
+    },
+    {
+      "indexName": "Aveiro",
+      "name": "Aveiro",
+      "qualifier": null,
+      "pages": [
+        121,
+        124,
+        323,
+        376
+      ]
+    },
+    {
+      "indexName": "Aveleda (aldeia de Rio de Onor)",
+      "name": "Aveleda",
+      "qualifier": "aldeia de Rio de Onor",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "indexName": "Avis",
+      "name": "Avis",
+      "qualifier": null,
+      "pages": [
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325
+      ]
+    },
+    {
+      "indexName": "Azambuja",
+      "name": "Azambuja",
+      "qualifier": null,
+      "pages": [
+        29
+      ]
+    },
+    {
+      "indexName": "Azenhas do Mar",
+      "name": "Azenhas do Mar",
+      "qualifier": null,
+      "pages": [
+        281
+      ]
+    },
+    {
+      "indexName": "Azevo",
+      "name": "Azevo",
+      "qualifier": null,
+      "pages": [
+        161
+      ]
+    },
+    {
+      "indexName": "Azinhaga",
+      "name": "Azinhaga",
+      "qualifier": null,
+      "pages": [
+        248
+      ]
+    },
+    {
+      "indexName": "Azinhoso",
+      "name": "Azinhoso",
+      "qualifier": null,
+      "pages": [
+        23,
+        24
+      ]
+    },
+    {
+      "indexName": "Azurara",
+      "name": "Azurara",
+      "qualifier": null,
+      "pages": [
+        66
+      ]
+    },
+    {
+      "indexName": "Açores (freg. de Celorico da Beira)",
+      "name": "Açores",
+      "qualifier": "freg. de Celorico da Beira",
+      "pages": [
+        154,
+        166,
+        167,
+        168
+      ]
+    },
+    {
+      "indexName": "Bairrada",
+      "name": "Bairrada",
+      "qualifier": null,
+      "pages": [
+        127
+      ]
+    },
+    {
+      "indexName": "Baião",
+      "name": "Baião",
+      "qualifier": null,
+      "pages": [
+        52,
+        53
+      ]
+    },
+    {
+      "indexName": "Baleal",
+      "name": "Baleal",
+      "qualifier": null,
+      "pages": [
+        271
+      ]
+    },
+    {
+      "indexName": "Baleizão",
+      "name": "Baleizão",
+      "qualifier": null,
+      "pages": [
+        355,
+        356
+      ]
+    },
+    {
+      "indexName": "Balugães",
+      "name": "Balugães",
+      "qualifier": null,
+      "pages": [
+        73,
+        74
+      ]
+    },
+    {
+      "indexName": "Barca de Alva",
+      "name": "Barca de Alva",
+      "qualifier": null,
+      "pages": [
+        178
+      ]
+    },
+    {
+      "indexName": "Barcelos",
+      "name": "Barcelos",
+      "qualifier": null,
+      "pages": [
+        72,
+        98,
+        100
+      ]
+    },
+    {
+      "indexName": "Barreiro",
+      "name": "Barreiro",
+      "qualifier": null,
+      "pages": [
+        306
+      ]
+    },
+    {
+      "indexName": "Barrinha de Mira",
+      "name": "Barrinha de Mira",
+      "qualifier": null,
+      "pages": [
+        129
+      ]
+    },
+    {
+      "indexName": "Batalha",
+      "name": "Batalha",
+      "qualifier": null,
+      "pages": [
+        237,
+        240,
+        243,
+        250,
+        314
+      ]
+    },
+    {
+      "indexName": "Baçal",
+      "name": "Baçal",
+      "qualifier": null,
+      "pages": [
+        30,
+        33
+      ]
+    },
+    {
+      "indexName": "Beberriqueira",
+      "name": "Beberriqueira",
+      "qualifier": null,
+      "pages": [
+        226
+      ]
+    },
+    {
+      "indexName": "Beja",
+      "name": "Beja",
+      "qualifier": null,
+      "pages": [
+        355,
+        356,
+        357
+      ]
+    },
+    {
+      "indexName": "Belmonte",
+      "name": "Belmonte",
+      "qualifier": null,
+      "pages": [
+        158,
+        159,
+        160,
+        180,
+        197,
+        252
+      ]
+    },
+    {
+      "indexName": "Benafrim",
+      "name": "Benafrim",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Benavente",
+      "name": "Benavente",
+      "qualifier": null,
+      "pages": [
+        252
+      ]
+    },
+    {
+      "indexName": "Benavila",
+      "name": "Benavila",
+      "qualifier": null,
+      "pages": [
+        325
+      ]
+    },
+    {
+      "indexName": "Benquerença",
+      "name": "Benquerença",
+      "qualifier": null,
+      "pages": [
+        200
+      ]
+    },
+    {
+      "indexName": "Bensafrim",
+      "name": "Bensafrim",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Berlengas",
+      "name": "Berlengas",
+      "qualifier": null,
+      "pages": [
+        271,
+        272
+      ]
+    },
+    {
+      "indexName": "Bertiandos",
+      "name": "Bertiandos",
+      "qualifier": null,
+      "pages": [
+        79
+      ]
+    },
+    {
+      "indexName": "Bigorne",
+      "name": "Bigorne",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Boialvo",
+      "name": "Boialvo",
+      "qualifier": null,
+      "pages": [
+        150
+      ]
+    },
+    {
+      "indexName": "Boliqueime",
+      "name": "Boliqueime",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Bom Jesus (Braga)",
+      "name": "Bom Jesus",
+      "qualifier": "Braga",
+      "pages": [
+        95,
+        188
+      ]
+    },
+    {
+      "indexName": "Bombarral",
+      "name": "Bombarral",
+      "qualifier": null,
+      "pages": [
+        277
+      ]
+    },
+    {
+      "indexName": "Borba",
+      "name": "Borba",
+      "qualifier": null,
+      "pages": [
+        336,
+        337
+      ]
+    },
+    {
+      "indexName": "Braga",
+      "name": "Braga",
+      "qualifier": null,
+      "pages": [
+        89,
+        90,
+        91,
+        93,
+        100,
+        154,
+        323
+      ]
+    },
+    {
+      "indexName": "Bragança",
+      "name": "Bragança",
+      "qualifier": null,
+      "pages": [
+        16,
+        28,
+        29,
+        33,
+        35,
+        37,
+        376
+      ]
+    },
+    {
+      "indexName": "Bravães",
+      "name": "Bravães",
+      "qualifier": null,
+      "pages": [
+        88
+      ]
+    },
+    {
+      "indexName": "Briteiros (citânia)",
+      "name": "Briteiros",
+      "qualifier": "citânia",
+      "pages": [
+        61,
+        97,
+        105
+      ]
+    },
+    {
+      "indexName": "Brito",
+      "name": "Brito",
+      "qualifier": null,
+      "pages": [
+        106
+      ]
+    },
+    {
+      "indexName": "Brogueira",
+      "name": "Brogueira",
+      "qualifier": null,
+      "pages": [
+        247
+      ]
+    },
+    {
+      "indexName": "Brotas",
+      "name": "Brotas",
+      "qualifier": null,
+      "pages": [
+        319
+      ]
+    },
+    {
+      "indexName": "Budens",
+      "name": "Budens",
+      "qualifier": null,
+      "pages": [
+        382,
+        386
+      ]
+    },
+    {
+      "indexName": "Bustelo",
+      "name": "Bustelo",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Buçaco",
+      "name": "Buçaco",
+      "qualifier": null,
+      "pages": [
+        149,
+        150
+      ]
+    },
+    {
+      "indexName": "Cabeceiras de Basto",
+      "name": "Cabeceiras de Basto",
+      "qualifier": null,
+      "pages": [
+        56,
+        57,
+        58
+      ]
+    },
+    {
+      "indexName": "Cabeço de Vide",
+      "name": "Cabeço de Vide",
+      "qualifier": null,
+      "pages": [
+        325
+      ]
+    },
+    {
+      "indexName": "Cachopo",
+      "name": "Cachopo",
+      "qualifier": null,
+      "pages": [
+        370
+      ]
+    },
+    {
+      "indexName": "Caldas da Rainha",
+      "name": "Caldas da Rainha",
+      "qualifier": null,
+      "pages": [
+        266,
+        267
+      ]
+    },
+    {
+      "indexName": "Caminha",
+      "name": "Caminha",
+      "qualifier": null,
+      "pages": [
+        81,
+        82
+      ]
+    },
+    {
+      "indexName": "Campanas",
+      "name": "Campanas",
+      "qualifier": null,
+      "pages": [
+        127
+      ]
+    },
+    {
+      "indexName": "Campo Maior",
+      "name": "Campo Maior",
+      "qualifier": null,
+      "pages": [
+        331
+      ]
+    },
+    {
+      "indexName": "Canedo de Basto",
+      "name": "Canedo de Basto",
+      "qualifier": null,
+      "pages": [
+        56
+      ]
+    },
+    {
+      "indexName": "Cantanhede",
+      "name": "Cantanhede",
+      "qualifier": null,
+      "pages": [
+        127,
+        128
+      ]
+    },
+    {
+      "indexName": "Capinha",
+      "name": "Capinha",
+      "qualifier": null,
+      "pages": [
+        200
+      ]
+    },
+    {
+      "indexName": "Carcavelos",
+      "name": "Carcavelos",
+      "qualifier": null,
+      "pages": [
+        285
+      ]
+    },
+    {
+      "indexName": "Cardanha",
+      "name": "Cardanha",
+      "qualifier": null,
+      "pages": [
+        26
+      ]
+    },
+    {
+      "indexName": "Carrazedo de Montenegro",
+      "name": "Carrazedo de Montenegro",
+      "qualifier": null,
+      "pages": [
+        40,
+        41
+      ]
+    },
+    {
+      "indexName": "Carvalhal",
+      "name": "Carvalhal",
+      "qualifier": null,
+      "pages": [
+        319
+      ]
+    },
+    {
+      "indexName": "Carvalhal de Óbidos",
+      "name": "Carvalhal de Óbidos",
+      "qualifier": null,
+      "pages": [
+        275,
+        290
+      ]
+    },
+    {
+      "indexName": "Carvas",
+      "name": "Carvas",
+      "qualifier": null,
+      "pages": [
+        42
+      ]
+    },
+    {
+      "indexName": "Casais do Livramento",
+      "name": "Casais do Livramento",
+      "qualifier": null,
+      "pages": [
+        245
+      ]
+    },
+    {
+      "indexName": "Cascais",
+      "name": "Cascais",
+      "qualifier": null,
+      "pages": [
+        287
+      ]
+    },
+    {
+      "indexName": "Castelo Bom",
+      "name": "Castelo Bom",
+      "qualifier": null,
+      "pages": [
+        174
+      ]
+    },
+    {
+      "indexName": "Castelo Branco (cidade)",
+      "name": "Castelo Branco",
+      "qualifier": "cidade",
+      "pages": [
+        213,
+        215,
+        216,
+        218,
+        325
+      ]
+    },
+    {
+      "indexName": "Castelo Branco (freg. do concelho de Mogadouro)",
+      "name": "Castelo Branco",
+      "qualifier": "freg. do concelho de Mogadouro",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "indexName": "Castelo Mendo",
+      "name": "Castelo Mendo",
+      "qualifier": null,
+      "pages": [
+        174
+      ]
+    },
+    {
+      "indexName": "Castelo Novo",
+      "name": "Castelo Novo",
+      "qualifier": null,
+      "pages": [
+        213,
+        214,
+        215
+      ]
+    },
+    {
+      "indexName": "Castelo Rodrigo",
+      "name": "Castelo Rodrigo",
+      "qualifier": null,
+      "pages": [
+        178,
+        179,
+        180
+      ]
+    },
+    {
+      "indexName": "Castelo de Vide",
+      "name": "Castelo de Vide",
+      "qualifier": null,
+      "pages": [
+        323,
+        324,
+        325
+      ]
+    },
+    {
+      "indexName": "Castelo do Bode",
+      "name": "Castelo do Bode",
+      "qualifier": null,
+      "pages": [
+        225
+      ]
+    },
+    {
+      "indexName": "Castelões",
+      "name": "Castelões",
+      "qualifier": null,
+      "pages": [
+        118
+      ]
+    },
+    {
+      "indexName": "Castro Daire",
+      "name": "Castro Daire",
+      "qualifier": null,
+      "pages": [
+        183,
+        184,
+        185
+      ]
+    },
+    {
+      "indexName": "Castro Laboreiro",
+      "name": "Castro Laboreiro",
+      "qualifier": null,
+      "pages": [
+        48,
+        84,
+        85,
+        86
+      ]
+    },
+    {
+      "indexName": "Castro Marim",
+      "name": "Castro Marim",
+      "qualifier": null,
+      "pages": [
+        371
+      ]
+    },
+    {
+      "indexName": "Castro Verde",
+      "name": "Castro Verde",
+      "qualifier": null,
+      "pages": [
+        363,
+        364,
+        365
+      ]
+    },
+    {
+      "indexName": "Caçarelhos",
+      "name": "Caçarelhos",
+      "qualifier": null,
+      "pages": [
+        20
+      ]
+    },
+    {
+      "indexName": "Celorico da Beira",
+      "name": "Celorico da Beira",
+      "qualifier": null,
+      "pages": [
+        166,
+        168
+      ]
+    },
+    {
+      "indexName": "Celorico de Basto",
+      "name": "Celorico de Basto",
+      "qualifier": null,
+      "pages": [
+        56,
+        59
+      ]
+    },
+    {
+      "indexName": "Cercal (do concelho de Cadaval)",
+      "name": "Cercal",
+      "qualifier": "do concelho de Cadaval",
+      "pages": [
+        266
+      ]
+    },
+    {
+      "indexName": "Cerrada Grande",
+      "name": "Cerrada Grande",
+      "qualifier": null,
+      "pages": [
+        249
+      ]
+    },
+    {
+      "indexName": "Cete",
+      "name": "Cete",
+      "qualifier": null,
+      "pages": [
+        107
+      ]
+    },
+    {
+      "indexName": "Chamoim",
+      "name": "Chamoim",
+      "qualifier": null,
+      "pages": [
+        102
+      ]
+    },
+    {
+      "indexName": "Chaves",
+      "name": "Chaves",
+      "qualifier": null,
+      "pages": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "indexName": "Cholda",
+      "name": "Cholda",
+      "qualifier": null,
+      "pages": [
+        249
+      ]
+    },
+    {
+      "indexName": "Ciborro",
+      "name": "Ciborro",
+      "qualifier": null,
+      "pages": [
+        320
+      ]
+    },
+    {
+      "indexName": "Cidadelhe",
+      "name": "Cidadelhe",
+      "qualifier": null,
+      "pages": [
+        157,
+        158,
+        160,
+        161,
+        162,
+        164,
+        165,
+        166
+      ]
+    },
+    {
+      "indexName": "Ciladas de S. Romão",
+      "name": "Ciladas de S. Romão",
+      "qualifier": null,
+      "pages": [
+        339
+      ]
+    },
+    {
+      "indexName": "Clarines",
+      "name": "Clarines",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Coentral",
+      "name": "Coentral",
+      "qualifier": null,
+      "pages": [
+        145
+      ]
+    },
+    {
+      "indexName": "Coimbra",
+      "name": "Coimbra",
+      "qualifier": null,
+      "pages": [
+        135,
+        136,
+        137,
+        141,
+        143,
+        144,
+        168,
+        184,
+        201
+      ]
+    },
+    {
+      "indexName": "Constância",
+      "name": "Constância",
+      "qualifier": null,
+      "pages": [
+        223
+      ]
+    },
+    {
+      "indexName": "Conímbriga",
+      "name": "Conímbriga",
+      "qualifier": null,
+      "pages": [
+        131,
+        135
+      ]
+    },
+    {
+      "indexName": "Corujos",
+      "name": "Corujos",
+      "qualifier": null,
+      "pages": [
+        370
+      ]
+    },
+    {
+      "indexName": "Cova da Beira",
+      "name": "Cova da Beira",
+      "qualifier": null,
+      "pages": [
+        206,
+        211
+      ]
+    },
+    {
+      "indexName": "Covide",
+      "name": "Covide",
+      "qualifier": null,
+      "pages": [
+        102
+      ]
+    },
+    {
+      "indexName": "Covilhã",
+      "name": "Covilhã",
+      "qualifier": null,
+      "pages": [
+        197,
+        198,
+        199
+      ]
+    },
+    {
+      "indexName": "Crato",
+      "name": "Crato",
+      "qualifier": null,
+      "pages": [
+        321,
+        322,
+        325
+      ]
+    },
+    {
+      "indexName": "Cucujães",
+      "name": "Cucujães",
+      "qualifier": null,
+      "pages": [
+        20
+      ]
+    },
+    {
+      "indexName": "Cumeeira",
+      "name": "Cumeeira",
+      "qualifier": null,
+      "pages": [
+        47
+      ]
+    },
+    {
+      "indexName": "Cós",
+      "name": "Cós",
+      "qualifier": null,
+      "pages": [
+        237,
+        241
+      ]
+    },
+    {
+      "indexName": "Delães",
+      "name": "Delães",
+      "qualifier": null,
+      "pages": [
+        106
+      ]
+    },
+    {
+      "indexName": "Divisões",
+      "name": "Divisões",
+      "qualifier": null,
+      "pages": [
+        249
+      ]
+    },
+    {
+      "indexName": "Dogueno",
+      "name": "Dogueno",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Dois Portos",
+      "name": "Dois Portos",
+      "qualifier": null,
+      "pages": [
+        253,
+        256
+      ]
+    },
+    {
+      "indexName": "Donas",
+      "name": "Donas",
+      "qualifier": null,
+      "pages": [
+        211
+      ]
+    },
+    {
+      "indexName": "Duas Igrejas",
+      "name": "Duas Igrejas",
+      "qualifier": null,
+      "pages": [
+        22
+      ]
+    },
+    {
+      "indexName": "Eiras",
+      "name": "Eiras",
+      "qualifier": null,
+      "pages": [
+        164,
+        165
+      ]
+    },
+    {
+      "indexName": "Elvas",
+      "name": "Elvas",
+      "qualifier": null,
+      "pages": [
+        332,
+        333,
+        339
+      ]
+    },
+    {
+      "indexName": "Entradas",
+      "name": "Entradas",
+      "qualifier": null,
+      "pages": [
+        364
+      ]
+    },
+    {
+      "indexName": "Ereira",
+      "name": "Ereira",
+      "qualifier": null,
+      "pages": [
+        130,
+        131
+      ]
+    },
+    {
+      "indexName": "Ericeira",
+      "name": "Ericeira",
+      "qualifier": null,
+      "pages": [
+        278,
+        280
+      ]
+    },
+    {
+      "indexName": "Ermelo",
+      "name": "Ermelo",
+      "qualifier": null,
+      "pages": [
+        88
+      ]
+    },
+    {
+      "indexName": "Ermida",
+      "name": "Ermida",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Escalhão",
+      "name": "Escalhão",
+      "qualifier": null,
+      "pages": [
+        178
+      ]
+    },
+    {
+      "indexName": "Escarigo",
+      "name": "Escarigo",
+      "qualifier": null,
+      "pages": [
+        175,
+        177
+      ]
+    },
+    {
+      "indexName": "Esmoriz",
+      "name": "Esmoriz",
+      "qualifier": null,
+      "pages": [
+        117
+      ]
+    },
+    {
+      "indexName": "Espiche",
+      "name": "Espiche",
+      "qualifier": null,
+      "pages": [
+        386
+      ]
+    },
+    {
+      "indexName": "Espinho",
+      "name": "Espinho",
+      "qualifier": null,
+      "pages": [
+        117
+      ]
+    },
+    {
+      "indexName": "Espiçandeira",
+      "name": "Espiçandeira",
+      "qualifier": null,
+      "pages": [
+        265
+      ]
+    },
+    {
+      "indexName": "Esposende",
+      "name": "Esposende",
+      "qualifier": null,
+      "pages": [
+        72
+      ]
+    },
+    {
+      "indexName": "Estarreja",
+      "name": "Estarreja",
+      "qualifier": null,
+      "pages": [
+        120
+      ]
+    },
+    {
+      "indexName": "Estevais",
+      "name": "Estevais",
+      "qualifier": null,
+      "pages": [
+        26
+      ]
+    },
+    {
+      "indexName": "Estoril",
+      "name": "Estoril",
+      "qualifier": null,
+      "pages": [
+        287
+      ]
+    },
+    {
+      "indexName": "Estorninhos",
+      "name": "Estorninhos",
+      "qualifier": null,
+      "pages": [
+        370
+      ]
+    },
+    {
+      "indexName": "Estremoz",
+      "name": "Estremoz",
+      "qualifier": null,
+      "pages": [
+        325,
+        326,
+        333,
+        334
+      ]
+    },
+    {
+      "indexName": "Estói",
+      "name": "Estói",
+      "qualifier": null,
+      "pages": [
+        373
+      ]
+    },
+    {
+      "indexName": "Estômbar",
+      "name": "Estômbar",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Fafe",
+      "name": "Fafe",
+      "qualifier": null,
+      "pages": [
+        56
+      ]
+    },
+    {
+      "indexName": "Faro",
+      "name": "Faro",
+      "qualifier": null,
+      "pages": [
+        374,
+        375,
+        376,
+        377
+      ]
+    },
+    {
+      "indexName": "Feira (Vila da)",
+      "name": "Feira",
+      "qualifier": "Vila da",
+      "pages": [
+        117,
+        245
+      ]
+    },
+    {
+      "indexName": "Feiteira",
+      "name": "Feiteira",
+      "qualifier": null,
+      "pages": [
+        370
+      ]
+    },
+    {
+      "indexName": "Felgueiras",
+      "name": "Felgueiras",
+      "qualifier": null,
+      "pages": [
+        54
+      ]
+    },
+    {
+      "indexName": "Ferreira",
+      "name": "Ferreira",
+      "qualifier": null,
+      "pages": [
+        107
+      ]
+    },
+    {
+      "indexName": "Ferreirim",
+      "name": "Ferreirim",
+      "qualifier": null,
+      "pages": [
+        189,
+        190,
+        191,
+        261
+      ]
+    },
+    {
+      "indexName": "Ferrel",
+      "name": "Ferrel",
+      "qualifier": null,
+      "pages": [
+        270,
+        271
+      ]
+    },
+    {
+      "indexName": "Figueira da Foz",
+      "name": "Figueira da Foz",
+      "qualifier": null,
+      "pages": [
+        130
+      ]
+    },
+    {
+      "indexName": "Figueira de Castelo Rodrigo",
+      "name": "Figueira de Castelo Rodrigo",
+      "qualifier": null,
+      "pages": [
+        177,
+        178
+      ]
+    },
+    {
+      "indexName": "Finisterra do Sul",
+      "name": "Finisterra do Sul",
+      "qualifier": null,
+      "pages": [
+        386
+      ]
+    },
+    {
+      "indexName": "Flor da Rosa",
+      "name": "Flor da Rosa",
+      "qualifier": null,
+      "pages": [
+        322,
+        323
+      ]
+    },
+    {
+      "indexName": "Fonte Arcada",
+      "name": "Fonte Arcada",
+      "qualifier": null,
+      "pages": [
+        104,
+        105
+      ]
+    },
+    {
+      "indexName": "Fontelas",
+      "name": "Fontelas",
+      "qualifier": null,
+      "pages": [
+        47
+      ]
+    },
+    {
+      "indexName": "Fornos de Algodres",
+      "name": "Fornos de Algodres",
+      "qualifier": null,
+      "pages": [
+        180
+      ]
+    },
+    {
+      "indexName": "Foz Giraldo",
+      "name": "Foz Giraldo",
+      "qualifier": null,
+      "pages": [
+        219
+      ]
+    },
+    {
+      "indexName": "Foz de Arouce",
+      "name": "Foz de Arouce",
+      "qualifier": null,
+      "pages": [
+        145
+      ]
+    },
+    {
+      "indexName": "Foz do Caneiro",
+      "name": "Foz do Caneiro",
+      "qualifier": null,
+      "pages": [
+        145,
+        147
+      ]
+    },
+    {
+      "indexName": "Fundão",
+      "name": "Fundão",
+      "qualifier": null,
+      "pages": [
+        206,
+        207,
+        208,
+        210
+      ]
+    },
+    {
+      "indexName": "Furadouro",
+      "name": "Furadouro",
+      "qualifier": null,
+      "pages": [
+        119
+      ]
+    },
+    {
+      "indexName": "Fátima",
+      "name": "Fátima",
+      "qualifier": null,
+      "pages": [
+        44,
+        233
+      ]
+    },
+    {
+      "indexName": "Fão",
+      "name": "Fão",
+      "qualifier": null,
+      "pages": [
+        72
+      ]
+    },
+    {
+      "indexName": "Gafanhoeira",
+      "name": "Gafanhoeira",
+      "qualifier": null,
+      "pages": [
+        315,
+        317
+      ]
+    },
+    {
+      "indexName": "Giela",
+      "name": "Giela",
+      "qualifier": null,
+      "pages": [
+        87,
+        319
+      ]
+    },
+    {
+      "indexName": "Gilmonde",
+      "name": "Gilmonde",
+      "qualifier": null,
+      "pages": [
+        72
+      ]
+    },
+    {
+      "indexName": "Gilvrazino",
+      "name": "Gilvrazino",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Giões",
+      "name": "Giões",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Godim",
+      "name": "Godim",
+      "qualifier": null,
+      "pages": [
+        47
+      ]
+    },
+    {
+      "indexName": "Golegã",
+      "name": "Golegã",
+      "qualifier": null,
+      "pages": [
+        247,
+        248
+      ]
+    },
+    {
+      "indexName": "Gondoriz",
+      "name": "Gondoriz",
+      "qualifier": null,
+      "pages": [
+        87
+      ]
+    },
+    {
+      "indexName": "Gralheira",
+      "name": "Gralheira",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Granjinha",
+      "name": "Granjinha",
+      "qualifier": null,
+      "pages": [
+        196
+      ]
+    },
+    {
+      "indexName": "Guadramil",
+      "name": "Guadramil",
+      "qualifier": null,
+      "pages": [
+        39
+      ]
+    },
+    {
+      "indexName": "Guarda",
+      "name": "Guarda",
+      "qualifier": null,
+      "pages": [
+        153,
+        154,
+        155,
+        158,
+        161,
+        166,
+        173,
+        197
+      ]
+    },
+    {
+      "indexName": "Guarita de Godeal",
+      "name": "Guarita de Godeal",
+      "qualifier": null,
+      "pages": [
+        320
+      ]
+    },
+    {
+      "indexName": "Guimarães",
+      "name": "Guimarães",
+      "qualifier": null,
+      "pages": [
+        38,
+        55,
+        56,
+        59,
+        60,
+        62,
+        63
+      ]
+    },
+    {
+      "indexName": "Gáfete",
+      "name": "Gáfete",
+      "qualifier": null,
+      "pages": [
+        325
+      ]
+    },
+    {
+      "indexName": "Gândara dos Olivais",
+      "name": "Gândara dos Olivais",
+      "qualifier": null,
+      "pages": [
+        234
+      ]
+    },
+    {
+      "indexName": "Góis",
+      "name": "Góis",
+      "qualifier": null,
+      "pages": [
+        146,
+        147
+      ]
+    },
+    {
+      "indexName": "Idanha-a-Nova",
+      "name": "Idanha-a-Nova",
+      "qualifier": null,
+      "pages": [
+        205
+      ]
+    },
+    {
+      "indexName": "Idanha-a-Velha",
+      "name": "Idanha-a-Velha",
+      "qualifier": null,
+      "pages": [
+        204,
+        215
+      ]
+    },
+    {
+      "indexName": "Janas",
+      "name": "Janas",
+      "qualifier": null,
+      "pages": [
+        280
+      ]
+    },
+    {
+      "indexName": "Jou",
+      "name": "Jou",
+      "qualifier": null,
+      "pages": [
+        42
+      ]
+    },
+    {
+      "indexName": "Junqueira (povoação do concelho de Vila do Conde)",
+      "name": "Junqueira",
+      "qualifier": "povoação do concelho de Vila do Conde",
+      "pages": [
+        69,
+        71,
+        373
+      ]
+    },
+    {
+      "indexName": "Junqueira (povoação perto de Moncorvo)",
+      "name": "Junqueira",
+      "qualifier": "povoação perto de Moncorvo",
+      "pages": [
+        27,
+        69
+      ]
+    },
+    {
+      "indexName": "Juromenha",
+      "name": "Juromenha",
+      "qualifier": null,
+      "pages": [
+        339,
+        340,
+        341,
+        355
+      ]
+    },
+    {
+      "indexName": "Laborato",
+      "name": "Laborato",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Lagareira",
+      "name": "Lagareira",
+      "qualifier": null,
+      "pages": [
+        249
+      ]
+    },
+    {
+      "indexName": "Lagoa",
+      "name": "Lagoa",
+      "qualifier": null,
+      "pages": [
+        381
+      ]
+    },
+    {
+      "indexName": "Lagoa Comprida",
+      "name": "Lagoa Comprida",
+      "qualifier": null,
+      "pages": [
+        197
+      ]
+    },
+    {
+      "indexName": "Lagos",
+      "name": "Lagos",
+      "qualifier": null,
+      "pages": [
+        383,
+        384,
+        385,
+        386
+      ]
+    },
+    {
+      "indexName": "Lama",
+      "name": "Lama",
+      "qualifier": null,
+      "pages": [
+        100,
+        319
+      ]
+    },
+    {
+      "indexName": "Lamego",
+      "name": "Lamego",
+      "qualifier": null,
+      "pages": [
+        187,
+        188,
+        189,
+        288
+      ]
+    },
+    {
+      "indexName": "Lanhoso",
+      "name": "Lanhoso",
+      "qualifier": null,
+      "pages": [
+        102
+      ]
+    },
+    {
+      "indexName": "Lavre",
+      "name": "Lavre",
+      "qualifier": null,
+      "pages": [
+        320
+      ]
+    },
+    {
+      "indexName": "Leiria",
+      "name": "Leiria",
+      "qualifier": null,
+      "pages": [
+        234,
+        236,
+        237,
+        245,
+        374
+      ]
+    },
+    {
+      "indexName": "Leça do Bailio",
+      "name": "Leça do Bailio",
+      "qualifier": null,
+      "pages": [
+        64
+      ]
+    },
+    {
+      "indexName": "Lindoso",
+      "name": "Lindoso",
+      "qualifier": null,
+      "pages": [
+        48,
+        88,
+        126
+      ]
+    },
+    {
+      "indexName": "Linhares",
+      "name": "Linhares",
+      "qualifier": null,
+      "pages": [
+        168,
+        169,
+        170
+      ]
+    },
+    {
+      "indexName": "Lisboa",
+      "name": "Lisboa",
+      "qualifier": null,
+      "pages": [
+        64,
+        149,
+        200,
+        224,
+        264,
+        276,
+        287,
+        288,
+        290,
+        296,
+        298,
+        302,
+        303,
+        304,
+        305,
+        317,
+        333,
+        335
+      ]
+    },
+    {
+      "indexName": "Lobrigos",
+      "name": "Lobrigos",
+      "qualifier": null,
+      "pages": [
+        47
+      ]
+    },
+    {
+      "indexName": "Longos Vales",
+      "name": "Longos Vales",
+      "qualifier": null,
+      "pages": [
+        86,
+        320
+      ]
+    },
+    {
+      "indexName": "Longroiva",
+      "name": "Longroiva",
+      "qualifier": null,
+      "pages": [
+        171
+      ]
+    },
+    {
+      "indexName": "Lorvão",
+      "name": "Lorvão",
+      "qualifier": null,
+      "pages": [
+        147,
+        148,
+        151
+      ]
+    },
+    {
+      "indexName": "Lotão",
+      "name": "Lotão",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Loulé",
+      "name": "Loulé",
+      "qualifier": null,
+      "pages": [
+        378,
+        385
+      ]
+    },
+    {
+      "indexName": "Lourinhã",
+      "name": "Lourinhã",
+      "qualifier": null,
+      "pages": [
+        277
+      ]
+    },
+    {
+      "indexName": "Lousã",
+      "name": "Lousã",
+      "qualifier": null,
+      "pages": [
+        145
+      ]
+    },
+    {
+      "indexName": "Luz (de Tavira)",
+      "name": "Luz",
+      "qualifier": "de Tavira",
+      "pages": [
+        371,
+        372
+      ]
+    },
+    {
+      "indexName": "Mafra",
+      "name": "Mafra",
+      "qualifier": null,
+      "pages": [
+        278,
+        279,
+        280,
+        297,
+        303
+      ]
+    },
+    {
+      "indexName": "Magueija",
+      "name": "Magueija",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Maiorca",
+      "name": "Maiorca",
+      "qualifier": null,
+      "pages": [
+        130
+      ]
+    },
+    {
+      "indexName": "Maiorga",
+      "name": "Maiorga",
+      "qualifier": null,
+      "pages": [
+        237,
+        241
+      ]
+    },
+    {
+      "indexName": "Malhadas",
+      "name": "Malhadas",
+      "qualifier": null,
+      "pages": [
+        19,
+        22
+      ]
+    },
+    {
+      "indexName": "Mamarrosa",
+      "name": "Mamarrosa",
+      "qualifier": null,
+      "pages": [
+        127
+      ]
+    },
+    {
+      "indexName": "Mangualde",
+      "name": "Mangualde",
+      "qualifier": null,
+      "pages": [
+        180
+      ]
+    },
+    {
+      "indexName": "Manhente",
+      "name": "Manhente",
+      "qualifier": null,
+      "pages": [
+        100
+      ]
+    },
+    {
+      "indexName": "Manhufe",
+      "name": "Manhufe",
+      "qualifier": null,
+      "pages": [
+        49
+      ]
+    },
+    {
+      "indexName": "Manteigas",
+      "name": "Manteigas",
+      "qualifier": null,
+      "pages": [
+        197
+      ]
+    },
+    {
+      "indexName": "Marco de Canaveses",
+      "name": "Marco de Canaveses",
+      "qualifier": null,
+      "pages": [
+        52
+      ]
+    },
+    {
+      "indexName": "Marialva",
+      "name": "Marialva",
+      "qualifier": null,
+      "pages": [
+        171,
+        173,
+        180,
+        297
+      ]
+    },
+    {
+      "indexName": "Marinha Grande",
+      "name": "Marinha Grande",
+      "qualifier": null,
+      "pages": [
+        234,
+        235
+      ]
+    },
+    {
+      "indexName": "Marvão",
+      "name": "Marvão",
+      "qualifier": null,
+      "pages": [
+        324,
+        325
+      ]
+    },
+    {
+      "indexName": "Mateus",
+      "name": "Mateus",
+      "qualifier": null,
+      "pages": [
+        43
+      ]
+    },
+    {
+      "indexName": "Matosinhos",
+      "name": "Matosinhos",
+      "qualifier": null,
+      "pages": [
+        64,
+        65
+      ]
+    },
+    {
+      "indexName": "Maçãs de D. Maria",
+      "name": "Maçãs de D. Maria",
+      "qualifier": null,
+      "pages": [
+        20
+      ]
+    },
+    {
+      "indexName": "Meadas",
+      "name": "Meadas",
+      "qualifier": null,
+      "pages": [
+        325
+      ]
+    },
+    {
+      "indexName": "Meca",
+      "name": "Meca",
+      "qualifier": null,
+      "pages": [
+        264
+      ]
+    },
+    {
+      "indexName": "Meda",
+      "name": "Meda",
+      "qualifier": null,
+      "pages": [
+        171
+      ]
+    },
+    {
+      "indexName": "Medelim",
+      "name": "Medelim",
+      "qualifier": null,
+      "pages": [
+        204
+      ]
+    },
+    {
+      "indexName": "Melgaço",
+      "name": "Melgaço",
+      "qualifier": null,
+      "pages": [
+        83,
+        84,
+        86
+      ]
+    },
+    {
+      "indexName": "Merceana",
+      "name": "Merceana",
+      "qualifier": null,
+      "pages": [
+        264
+      ]
+    },
+    {
+      "indexName": "Merufe",
+      "name": "Merufe",
+      "qualifier": null,
+      "pages": [
+        86
+      ]
+    },
+    {
+      "indexName": "Mesão Frio",
+      "name": "Mesão Frio",
+      "qualifier": null,
+      "pages": [
+        47
+      ]
+    },
+    {
+      "indexName": "Mezio",
+      "name": "Mezio",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Milreu",
+      "name": "Milreu",
+      "qualifier": null,
+      "pages": [
+        373,
+        376
+      ]
+    },
+    {
+      "indexName": "Mira",
+      "name": "Mira",
+      "qualifier": null,
+      "pages": [
+        128,
+        129
+      ]
+    },
+    {
+      "indexName": "Miranda do Douro",
+      "name": "Miranda do Douro",
+      "qualifier": null,
+      "pages": [
+        16,
+        17,
+        18,
+        27,
+        34,
+        189
+      ]
+    },
+    {
+      "indexName": "Mirandela",
+      "name": "Mirandela",
+      "qualifier": null,
+      "pages": [
+        28
+      ]
+    },
+    {
+      "indexName": "Mire de Tibães",
+      "name": "Mire de Tibães",
+      "qualifier": null,
+      "pages": [
+        96
+      ]
+    },
+    {
+      "indexName": "Mogadouro",
+      "name": "Mogadouro",
+      "qualifier": null,
+      "pages": [
+        23,
+        27
+      ]
+    },
+    {
+      "indexName": "Moimenta da Beira",
+      "name": "Moimenta da Beira",
+      "qualifier": null,
+      "pages": [
+        195
+      ]
+    },
+    {
+      "indexName": "Moita",
+      "name": "Moita",
+      "qualifier": null,
+      "pages": [
+        306
+      ]
+    },
+    {
+      "indexName": "Moitas",
+      "name": "Moitas",
+      "qualifier": null,
+      "pages": [
+        249
+      ]
+    },
+    {
+      "indexName": "Mondim de Basto",
+      "name": "Mondim de Basto",
+      "qualifier": null,
+      "pages": [
+        56,
+        59
+      ]
+    },
+    {
+      "indexName": "Monforte",
+      "name": "Monforte",
+      "qualifier": null,
+      "pages": [
+        328,
+        331
+      ]
+    },
+    {
+      "indexName": "Monfortinho",
+      "name": "Monfortinho",
+      "qualifier": null,
+      "pages": [
+        201,
+        203
+      ]
+    },
+    {
+      "indexName": "Monsanto",
+      "name": "Monsanto",
+      "qualifier": null,
+      "pages": [
+        201,
+        202,
+        204,
+        205,
+        206,
+        217,
+        297,
+        325
+      ]
+    },
+    {
+      "indexName": "Monsaraz",
+      "name": "Monsaraz",
+      "qualifier": null,
+      "pages": [
+        348,
+        349,
+        350,
+        368
+      ]
+    },
+    {
+      "indexName": "Monserrate (Sintra)",
+      "name": "Monserrate",
+      "qualifier": "Sintra",
+      "pages": [
+        281,
+        286
+      ]
+    },
+    {
+      "indexName": "Montalvo",
+      "name": "Montalvo",
+      "qualifier": null,
+      "pages": [
+        223
+      ]
+    },
+    {
+      "indexName": "Montargil",
+      "name": "Montargil",
+      "qualifier": null,
+      "pages": [
+        320
+      ]
+    },
+    {
+      "indexName": "Monte Gordo",
+      "name": "Monte Gordo",
+      "qualifier": null,
+      "pages": [
+        377
+      ]
+    },
+    {
+      "indexName": "Montemor-o-Novo",
+      "name": "Montemor-o-Novo",
+      "qualifier": null,
+      "pages": [
+        313,
+        315
+      ]
+    },
+    {
+      "indexName": "Montemor-o-Velho",
+      "name": "Montemor-o-Velho",
+      "qualifier": null,
+      "pages": [
+        130,
+        132,
+        133,
+        134,
+        136
+      ]
+    },
+    {
+      "indexName": "Montijo",
+      "name": "Montijo",
+      "qualifier": null,
+      "pages": [
+        306
+      ]
+    },
+    {
+      "indexName": "Monção",
+      "name": "Monção",
+      "qualifier": null,
+      "pages": [
+        82,
+        83,
+        86
+      ]
+    },
+    {
+      "indexName": "Mora",
+      "name": "Mora",
+      "qualifier": null,
+      "pages": [
+        319,
+        320
+      ]
+    },
+    {
+      "indexName": "Moreira de Rei",
+      "name": "Moreira de Rei",
+      "qualifier": null,
+      "pages": [
+        171,
+        173
+      ]
+    },
+    {
+      "indexName": "Moura",
+      "name": "Moura",
+      "qualifier": null,
+      "pages": [
+        351
+      ]
+    },
+    {
+      "indexName": "Moura Morta",
+      "name": "Moura Morta",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Mourisca",
+      "name": "Mourisca",
+      "qualifier": null,
+      "pages": [
+        311
+      ]
+    },
+    {
+      "indexName": "Mourão",
+      "name": "Mourão",
+      "qualifier": null,
+      "pages": [
+        350,
+        351
+      ]
+    },
+    {
+      "indexName": "Murtosa",
+      "name": "Murtosa",
+      "qualifier": null,
+      "pages": [
+        120
+      ]
+    },
+    {
+      "indexName": "Murça",
+      "name": "Murça",
+      "qualifier": null,
+      "pages": [
+        40,
+        42
+      ]
+    },
+    {
+      "indexName": "Mértola",
+      "name": "Mértola",
+      "qualifier": null,
+      "pages": [
+        362,
+        366,
+        368
+      ]
+    },
+    {
+      "indexName": "Nave de Santo António",
+      "name": "Nave de Santo António",
+      "qualifier": null,
+      "pages": [
+        198
+      ]
+    },
+    {
+      "indexName": "Nazaré",
+      "name": "Nazaré",
+      "qualifier": null,
+      "pages": [
+        237,
+        241
+      ]
+    },
+    {
+      "indexName": "Nexe",
+      "name": "Nexe",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Nisa",
+      "name": "Nisa",
+      "qualifier": null,
+      "pages": [
+        325
+      ]
+    },
+    {
+      "indexName": "Nossa Senhora da Orada",
+      "name": "Nossa Senhora da Orada",
+      "qualifier": null,
+      "pages": [
+        83,
+        84
+      ]
+    },
+    {
+      "indexName": "Nossa Senhora dos Degolados",
+      "name": "Nossa Senhora dos Degolados",
+      "qualifier": null,
+      "pages": [
+        331
+      ]
+    },
+    {
+      "indexName": "Odeleite",
+      "name": "Odeleite",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Odemira",
+      "name": "Odemira",
+      "qualifier": null,
+      "pages": [
+        387
+      ]
+    },
+    {
+      "indexName": "Odiáxere",
+      "name": "Odiáxere",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Ofir",
+      "name": "Ofir",
+      "qualifier": null,
+      "pages": [
+        72
+      ]
+    },
+    {
+      "indexName": "Oiã",
+      "name": "Oiã",
+      "qualifier": null,
+      "pages": [
+        126
+      ]
+    },
+    {
+      "indexName": "Oleiros",
+      "name": "Oleiros",
+      "qualifier": null,
+      "pages": [
+        219
+      ]
+    },
+    {
+      "indexName": "Olhos de Água",
+      "name": "Olhos de Água",
+      "qualifier": null,
+      "pages": [
+        377
+      ]
+    },
+    {
+      "indexName": "Olhão",
+      "name": "Olhão",
+      "qualifier": null,
+      "pages": [
+        372
+      ]
+    },
+    {
+      "indexName": "Olival Basto",
+      "name": "Olival Basto",
+      "qualifier": null,
+      "pages": [
+        249
+      ]
+    },
+    {
+      "indexName": "Olival d'El-Rei",
+      "name": "Olival d'El-Rei",
+      "qualifier": null,
+      "pages": [
+        249
+      ]
+    },
+    {
+      "indexName": "Olival da Palha",
+      "name": "Olival da Palha",
+      "qualifier": null,
+      "pages": [
+        249
+      ]
+    },
+    {
+      "indexName": "Oliveira de Azeméis",
+      "name": "Oliveira de Azeméis",
+      "qualifier": null,
+      "pages": [
+        150
+      ]
+    },
+    {
+      "indexName": "Oliveira do Bairro",
+      "name": "Oliveira do Bairro",
+      "qualifier": null,
+      "pages": [
+        126
+      ]
+    },
+    {
+      "indexName": "Oriola",
+      "name": "Oriola",
+      "qualifier": null,
+      "pages": [
+        359
+      ]
+    },
+    {
+      "indexName": "Ota",
+      "name": "Ota",
+      "qualifier": null,
+      "pages": [
+        266
+      ]
+    },
+    {
+      "indexName": "Ouguela",
+      "name": "Ouguela",
+      "qualifier": null,
+      "pages": [
+        331
+      ]
+    },
+    {
+      "indexName": "Ourondo",
+      "name": "Ourondo",
+      "qualifier": null,
+      "pages": [
+        208
+      ]
+    },
+    {
+      "indexName": "Ourém",
+      "name": "Ourém",
+      "qualifier": null,
+      "pages": [
+        231,
+        232,
+        245
+      ]
+    },
+    {
+      "indexName": "Outeiro Seco",
+      "name": "Outeiro Seco",
+      "qualifier": null,
+      "pages": [
+        38
+      ]
+    },
+    {
+      "indexName": "Ovar",
+      "name": "Ovar",
+      "qualifier": null,
+      "pages": [
+        119
+      ]
+    },
+    {
+      "indexName": "Paderne",
+      "name": "Paderne",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Padim da Graça",
+      "name": "Padim da Graça",
+      "qualifier": null,
+      "pages": [
+        97
+      ]
+    },
+    {
+      "indexName": "Pai Penela",
+      "name": "Pai Penela",
+      "qualifier": null,
+      "pages": [
+        171
+      ]
+    },
+    {
+      "indexName": "Palheiros de Mira",
+      "name": "Palheiros de Mira",
+      "qualifier": null,
+      "pages": [
+        128
+      ]
+    },
+    {
+      "indexName": "Palmela",
+      "name": "Palmela",
+      "qualifier": null,
+      "pages": [
+        306,
+        308
+      ]
+    },
+    {
+      "indexName": "Panasqueira",
+      "name": "Panasqueira",
+      "qualifier": null,
+      "pages": [
+        209
+      ]
+    },
+    {
+      "indexName": "Panchorra",
+      "name": "Panchorra",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Parada de Cunhos",
+      "name": "Parada de Cunhos",
+      "qualifier": null,
+      "pages": [
+        47
+      ]
+    },
+    {
+      "indexName": "Paredes",
+      "name": "Paredes",
+      "qualifier": null,
+      "pages": [
+        107
+      ]
+    },
+    {
+      "indexName": "Paredes de Coura",
+      "name": "Paredes de Coura",
+      "qualifier": null,
+      "pages": [
+        79
+      ]
+    },
+    {
+      "indexName": "Paul",
+      "name": "Paul",
+      "qualifier": null,
+      "pages": [
+        208
+      ]
+    },
+    {
+      "indexName": "Pavia",
+      "name": "Pavia",
+      "qualifier": null,
+      "pages": [
+        317,
+        318
+      ]
+    },
+    {
+      "indexName": "Paço de Sousa",
+      "name": "Paço de Sousa",
+      "qualifier": null,
+      "pages": [
+        107,
+        108,
+        109
+      ]
+    },
+    {
+      "indexName": "Paços de Ferreira",
+      "name": "Paços de Ferreira",
+      "qualifier": null,
+      "pages": [
+        106,
+        107
+      ]
+    },
+    {
+      "indexName": "Paços de Lalim",
+      "name": "Paços de Lalim",
+      "qualifier": null,
+      "pages": [
+        195
+      ]
+    },
+    {
+      "indexName": "Pedome",
+      "name": "Pedome",
+      "qualifier": null,
+      "pages": [
+        106
+      ]
+    },
+    {
+      "indexName": "Pedralva",
+      "name": "Pedralva",
+      "qualifier": null,
+      "pages": [
+        61
+      ]
+    },
+    {
+      "indexName": "Pena (Sintra)",
+      "name": "Pena",
+      "qualifier": "Sintra",
+      "pages": [
+        283,
+        286
+      ]
+    },
+    {
+      "indexName": "Penacova",
+      "name": "Penacova",
+      "qualifier": null,
+      "pages": [
+        144,
+        147
+      ]
+    },
+    {
+      "indexName": "Penamacor",
+      "name": "Penamacor",
+      "qualifier": null,
+      "pages": [
+        200,
+        351
+      ]
+    },
+    {
+      "indexName": "Penha Garcia",
+      "name": "Penha Garcia",
+      "qualifier": null,
+      "pages": [
+        201
+      ]
+    },
+    {
+      "indexName": "Penhas da Saúde",
+      "name": "Penhas da Saúde",
+      "qualifier": null,
+      "pages": [
+        197,
+        198
+      ]
+    },
+    {
+      "indexName": "Peniche",
+      "name": "Peniche",
+      "qualifier": null,
+      "pages": [
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272
+      ]
+    },
+    {
+      "indexName": "Penude",
+      "name": "Penude",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Pero de Lagarelhos",
+      "name": "Pero de Lagarelhos",
+      "qualifier": null,
+      "pages": [
+        40
+      ]
+    },
+    {
+      "indexName": "Peso da Régua",
+      "name": "Peso da Régua",
+      "qualifier": null,
+      "pages": [
+        46,
+        47,
+        79
+      ]
+    },
+    {
+      "indexName": "Pias",
+      "name": "Pias",
+      "qualifier": null,
+      "pages": [
+        352
+      ]
+    },
+    {
+      "indexName": "Picão",
+      "name": "Picão",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Pinheiro",
+      "name": "Pinheiro",
+      "qualifier": null,
+      "pages": [
+        184
+      ]
+    },
+    {
+      "indexName": "Pinheiros",
+      "name": "Pinheiros",
+      "qualifier": null,
+      "pages": [
+        82
+      ]
+    },
+    {
+      "indexName": "Pinhel",
+      "name": "Pinhel",
+      "qualifier": null,
+      "pages": [
+        157,
+        158,
+        161
+      ]
+    },
+    {
+      "indexName": "Pisões",
+      "name": "Pisões",
+      "qualifier": null,
+      "pages": [
+        362
+      ]
+    },
+    {
+      "indexName": "Pocariça",
+      "name": "Pocariça",
+      "qualifier": null,
+      "pages": [
+        127
+      ]
+    },
+    {
+      "indexName": "Pombeiro de Ribavizela",
+      "name": "Pombeiro de Ribavizela",
+      "qualifier": null,
+      "pages": [
+        54
+      ]
+    },
+    {
+      "indexName": "Ponta João de Arães",
+      "name": "Ponta João de Arães",
+      "qualifier": null,
+      "pages": [
+        377
+      ]
+    },
+    {
+      "indexName": "Ponta do Altar",
+      "name": "Ponta do Altar",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Ponte da Barca",
+      "name": "Ponte da Barca",
+      "qualifier": null,
+      "pages": [
+        88
+      ]
+    },
+    {
+      "indexName": "Ponte de Lima",
+      "name": "Ponte de Lima",
+      "qualifier": null,
+      "pages": [
+        79,
+        80
+      ]
+    },
+    {
+      "indexName": "Ponte de Sor",
+      "name": "Ponte de Sor",
+      "qualifier": null,
+      "pages": [
+        320
+      ]
+    },
+    {
+      "indexName": "Ponte do Rol",
+      "name": "Ponte do Rol",
+      "qualifier": null,
+      "pages": [
+        261
+      ]
+    },
+    {
+      "indexName": "Porches",
+      "name": "Porches",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Portalegre",
+      "name": "Portalegre",
+      "qualifier": null,
+      "pages": [
+        325,
+        326,
+        328
+      ]
+    },
+    {
+      "indexName": "Portel",
+      "name": "Portel",
+      "qualifier": null,
+      "pages": [
+        359
+      ]
+    },
+    {
+      "indexName": "Portela do Homem",
+      "name": "Portela do Homem",
+      "qualifier": null,
+      "pages": [
+        103
+      ]
+    },
+    {
+      "indexName": "Portimão",
+      "name": "Portimão",
+      "qualifier": null,
+      "pages": [
+        382,
+        383
+      ]
+    },
+    {
+      "indexName": "Portinho da Arrábida",
+      "name": "Portinho da Arrábida",
+      "qualifier": null,
+      "pages": [
+        308,
+        309
+      ]
+    },
+    {
+      "indexName": "Porto",
+      "name": "Porto",
+      "qualifier": null,
+      "pages": [
+        38,
+        64,
+        106,
+        108,
+        109,
+        111,
+        114,
+        115
+      ]
+    },
+    {
+      "indexName": "Porto de Mós",
+      "name": "Porto de Mós",
+      "qualifier": null,
+      "pages": [
+        245
+      ]
+    },
+    {
+      "indexName": "Pousafoles do Bispo",
+      "name": "Pousafoles do Bispo",
+      "qualifier": null,
+      "pages": [
+        161
+      ]
+    },
+    {
+      "indexName": "Praia da Rocha",
+      "name": "Praia da Rocha",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Praia das Maçãs",
+      "name": "Praia das Maçãs",
+      "qualifier": null,
+      "pages": [
+        281
+      ]
+    },
+    {
+      "indexName": "Praias do Sado",
+      "name": "Praias do Sado",
+      "qualifier": null,
+      "pages": [
+        311
+      ]
+    },
+    {
+      "indexName": "Proença-a-Velha",
+      "name": "Proença-a-Velha",
+      "qualifier": null,
+      "pages": [
+        206
+      ]
+    },
+    {
+      "indexName": "Punhete",
+      "name": "Punhete",
+      "qualifier": null,
+      "pages": [
+        224
+      ]
+    },
+    {
+      "indexName": "Pêra do Moço",
+      "name": "Pêra do Moço",
+      "qualifier": null,
+      "pages": [
+        161
+      ]
+    },
+    {
+      "indexName": "Póvoa (povoação do Alto Alentejo)",
+      "name": "Póvoa",
+      "qualifier": "povoação do Alto Alentejo",
+      "pages": [
+        325,
+        351
+      ]
+    },
+    {
+      "indexName": "Póvoa (povoação do Baixo Alentejo)",
+      "name": "Póvoa",
+      "qualifier": "povoação do Baixo Alentejo",
+      "pages": [
+        351
+      ]
+    },
+    {
+      "indexName": "Póvoa de Lanhoso",
+      "name": "Póvoa de Lanhoso",
+      "qualifier": null,
+      "pages": [
+        104
+      ]
+    },
+    {
+      "indexName": "Póvoa de Varzim",
+      "name": "Póvoa de Varzim",
+      "qualifier": null,
+      "pages": [
+        69,
+        71
+      ]
+    },
+    {
+      "indexName": "Póvoa do Concelho",
+      "name": "Póvoa do Concelho",
+      "qualifier": null,
+      "pages": [
+        173
+      ]
+    },
+    {
+      "indexName": "Queimada",
+      "name": "Queimada",
+      "qualifier": null,
+      "pages": [
+        53,
+        126,
+        161
+      ]
+    },
+    {
+      "indexName": "Quelfes",
+      "name": "Quelfes",
+      "qualifier": null,
+      "pages": [
+        382
+      ]
+    },
+    {
+      "indexName": "Queluz",
+      "name": "Queluz",
+      "qualifier": null,
+      "pages": [
+        288,
+        338
+      ]
+    },
+    {
+      "indexName": "Quintiães",
+      "name": "Quintiães",
+      "qualifier": null,
+      "pages": [
+        73
+      ]
+    },
+    {
+      "indexName": "Ranhados",
+      "name": "Ranhados",
+      "qualifier": null,
+      "pages": [
+        20
+      ]
+    },
+    {
+      "indexName": "Raposeira",
+      "name": "Raposeira",
+      "qualifier": null,
+      "pages": [
+        386
+      ]
+    },
+    {
+      "indexName": "Rates",
+      "name": "Rates",
+      "qualifier": null,
+      "pages": [
+        71,
+        72,
+        196
+      ]
+    },
+    {
+      "indexName": "Real",
+      "name": "Real",
+      "qualifier": null,
+      "pages": [
+        96,
+        97,
+        196
+      ]
+    },
+    {
+      "indexName": "Rebordelo",
+      "name": "Rebordelo",
+      "qualifier": null,
+      "pages": [
+        38
+      ]
+    },
+    {
+      "indexName": "Rebordosa",
+      "name": "Rebordosa",
+      "qualifier": null,
+      "pages": [
+        147
+      ]
+    },
+    {
+      "indexName": "Rebordões",
+      "name": "Rebordões",
+      "qualifier": null,
+      "pages": [
+        106
+      ]
+    },
+    {
+      "indexName": "Redondo",
+      "name": "Redondo",
+      "qualifier": null,
+      "pages": [
+        342
+      ]
+    },
+    {
+      "indexName": "Refojos de Basto",
+      "name": "Refojos de Basto",
+      "qualifier": null,
+      "pages": [
+        56
+      ]
+    },
+    {
+      "indexName": "Reguengos de Monsaraz",
+      "name": "Reguengos de Monsaraz",
+      "qualifier": null,
+      "pages": [
+        348,
+        349
+      ]
+    },
+    {
+      "indexName": "Rendufe (Amares)",
+      "name": "Rendufe",
+      "qualifier": "Amares",
+      "pages": [
+        101
+      ]
+    },
+    {
+      "indexName": "Rendufe (Ponte de Lima)",
+      "name": "Rendufe",
+      "qualifier": "Ponte de Lima",
+      "pages": [
+        79
+      ]
+    },
+    {
+      "indexName": "Renfe",
+      "name": "Renfe",
+      "qualifier": null,
+      "pages": [
+        106
+      ]
+    },
+    {
+      "indexName": "Riachos",
+      "name": "Riachos",
+      "qualifier": null,
+      "pages": [
+        247
+      ]
+    },
+    {
+      "indexName": "Rio Mau",
+      "name": "Rio Mau",
+      "qualifier": null,
+      "pages": [
+        68,
+        69,
+        72,
+        196
+      ]
+    },
+    {
+      "indexName": "Rio de Onor",
+      "name": "Rio de Onor",
+      "qualifier": null,
+      "pages": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        36,
+        58,
+        67
+      ]
+    },
+    {
+      "indexName": "Romarigães",
+      "name": "Romarigães",
+      "qualifier": null,
+      "pages": [
+        79,
+        81
+      ]
+    },
+    {
+      "indexName": "Romeu",
+      "name": "Romeu",
+      "qualifier": null,
+      "pages": [
+        28
+      ]
+    },
+    {
+      "indexName": "Roriz",
+      "name": "Roriz",
+      "qualifier": null,
+      "pages": [
+        106
+      ]
+    },
+    {
+      "indexName": "Rubiães",
+      "name": "Rubiães",
+      "qualifier": null,
+      "pages": [
+        79,
+        80
+      ]
+    },
+    {
+      "indexName": "Sabroso (castro)",
+      "name": "Sabroso",
+      "qualifier": "castro",
+      "pages": [
+        61
+      ]
+    },
+    {
+      "indexName": "Sabugal",
+      "name": "Sabugal",
+      "qualifier": null,
+      "pages": [
+        160
+      ]
+    },
+    {
+      "indexName": "Sabugueiro",
+      "name": "Sabugueiro",
+      "qualifier": null,
+      "pages": [
+        197
+      ]
+    },
+    {
+      "indexName": "Sacavém",
+      "name": "Sacavém",
+      "qualifier": null,
+      "pages": [
+        294
+      ]
+    },
+    {
+      "indexName": "Sacoias",
+      "name": "Sacoias",
+      "qualifier": null,
+      "pages": [
+        30,
+        36
+      ]
+    },
+    {
+      "indexName": "Salir (Algarve)",
+      "name": "Salir",
+      "qualifier": "Algarve",
+      "pages": [
+        378
+      ]
+    },
+    {
+      "indexName": "Salreu",
+      "name": "Salreu",
+      "qualifier": null,
+      "pages": [
+        120
+      ]
+    },
+    {
+      "indexName": "Salvador",
+      "name": "Salvador",
+      "qualifier": null,
+      "pages": [
+        201,
+        249
+      ]
+    },
+    {
+      "indexName": "Salvaterra de Magos",
+      "name": "Salvaterra de Magos",
+      "qualifier": null,
+      "pages": [
+        252
+      ]
+    },
+    {
+      "indexName": "Salzedas",
+      "name": "Salzedas",
+      "qualifier": null,
+      "pages": [
+        189,
+        191,
+        218
+      ]
+    },
+    {
+      "indexName": "Samardã",
+      "name": "Samardã",
+      "qualifier": null,
+      "pages": [
+        20,
+        44
+      ]
+    },
+    {
+      "indexName": "Sameiro (Braga)",
+      "name": "Sameiro",
+      "qualifier": "Braga",
+      "pages": [
+        95,
+        97
+      ]
+    },
+    {
+      "indexName": "Samel",
+      "name": "Samel",
+      "qualifier": null,
+      "pages": [
+        127
+      ]
+    },
+    {
+      "indexName": "Sancheira Grande",
+      "name": "Sancheira Grande",
+      "qualifier": null,
+      "pages": [
+        266
+      ]
+    },
+    {
+      "indexName": "Sande",
+      "name": "Sande",
+      "qualifier": null,
+      "pages": [
+        106
+      ]
+    },
+    {
+      "indexName": "Sanlucar",
+      "name": "Sanlucar",
+      "qualifier": null,
+      "pages": [
+        369
+      ]
+    },
+    {
+      "indexName": "Santa Cruz do Bispo",
+      "name": "Santa Cruz do Bispo",
+      "qualifier": null,
+      "pages": [
+        65
+      ]
+    },
+    {
+      "indexName": "Santa Eulália",
+      "name": "Santa Eulália",
+      "qualifier": null,
+      "pages": [
+        125
+      ]
+    },
+    {
+      "indexName": "Santa Marta de Penaguião",
+      "name": "Santa Marta de Penaguião",
+      "qualifier": null,
+      "pages": [
+        47
+      ]
+    },
+    {
+      "indexName": "Santa Rita (praia de)",
+      "name": "Santa Rita",
+      "qualifier": "praia de",
+      "pages": [
+        278
+      ]
+    },
+    {
+      "indexName": "Santana",
+      "name": "Santana",
+      "qualifier": null,
+      "pages": [
+        308
+      ]
+    },
+    {
+      "indexName": "Santarém",
+      "name": "Santarém",
+      "qualifier": null,
+      "pages": [
+        249,
+        250,
+        251
+      ]
+    },
+    {
+      "indexName": "Santiago do Cacém",
+      "name": "Santiago do Cacém",
+      "qualifier": null,
+      "pages": [
+        387
+      ]
+    },
+    {
+      "indexName": "Santiago do Escoural",
+      "name": "Santiago do Escoural",
+      "qualifier": null,
+      "pages": [
+        314
+      ]
+    },
+    {
+      "indexName": "Santo António da Neve",
+      "name": "Santo António da Neve",
+      "qualifier": null,
+      "pages": [
+        145
+      ]
+    },
+    {
+      "indexName": "Santo António de Avenilha",
+      "name": "Santo António de Avenilha",
+      "qualifier": null,
+      "pages": [
+        371
+      ]
+    },
+    {
+      "indexName": "Santo Tirso",
+      "name": "Santo Tirso",
+      "qualifier": null,
+      "pages": [
+        63
+      ]
+    },
+    {
+      "indexName": "Sardoal",
+      "name": "Sardoal",
+      "qualifier": null,
+      "pages": [
+        220
+      ]
+    },
+    {
+      "indexName": "Seia",
+      "name": "Seia",
+      "qualifier": null,
+      "pages": [
+        197
+      ]
+    },
+    {
+      "indexName": "Seixal",
+      "name": "Seixal",
+      "qualifier": null,
+      "pages": [
+        306
+      ]
+    },
+    {
+      "indexName": "Sendim",
+      "name": "Sendim",
+      "qualifier": null,
+      "pages": [
+        22
+      ]
+    },
+    {
+      "indexName": "Senhora da Rocha",
+      "name": "Senhora da Rocha",
+      "qualifier": null,
+      "pages": [
+        377
+      ]
+    },
+    {
+      "indexName": "Serpa",
+      "name": "Serpa",
+      "qualifier": null,
+      "pages": [
+        352,
+        354,
+        355
+      ]
+    },
+    {
+      "indexName": "Serra",
+      "name": "Serra",
+      "qualifier": null,
+      "pages": [
+        226
+      ]
+    },
+    {
+      "indexName": "Serra d'El-Rei",
+      "name": "Serra d'El-Rei",
+      "qualifier": null,
+      "pages": [
+        269
+      ]
+    },
+    {
+      "indexName": "Sertã",
+      "name": "Sertã",
+      "qualifier": null,
+      "pages": [
+        219,
+        220
+      ]
+    },
+    {
+      "indexName": "Sesimbra",
+      "name": "Sesimbra",
+      "qualifier": null,
+      "pages": [
+        308
+      ]
+    },
+    {
+      "indexName": "Seteais",
+      "name": "Seteais",
+      "qualifier": null,
+      "pages": [
+        282
+      ]
+    },
+    {
+      "indexName": "Setúbal",
+      "name": "Setúbal",
+      "qualifier": null,
+      "pages": [
+        307,
+        309
+      ]
+    },
+    {
+      "indexName": "Silves",
+      "name": "Silves",
+      "qualifier": null,
+      "pages": [
+        379,
+        380
+      ]
+    },
+    {
+      "indexName": "Sines",
+      "name": "Sines",
+      "qualifier": null,
+      "pages": [
+        380,
+        387
+      ]
+    },
+    {
+      "indexName": "Sintra",
+      "name": "Sintra",
+      "qualifier": null,
+      "pages": [
+        281,
+        323,
+        326,
+        338,
+        358,
+        367
+      ]
+    },
+    {
+      "indexName": "Sistelo",
+      "name": "Sistelo",
+      "qualifier": null,
+      "pages": [
+        86
+      ]
+    },
+    {
+      "indexName": "Soajo",
+      "name": "Soajo",
+      "qualifier": null,
+      "pages": [
+        88
+      ]
+    },
+    {
+      "indexName": "Sobral de Monte Agraço",
+      "name": "Sobral de Monte Agraço",
+      "qualifier": null,
+      "pages": [
+        253
+      ]
+    },
+    {
+      "indexName": "Sortelha",
+      "name": "Sortelha",
+      "qualifier": null,
+      "pages": [
+        158,
+        160
+      ]
+    },
+    {
+      "indexName": "Soure",
+      "name": "Soure",
+      "qualifier": null,
+      "pages": [
+        131
+      ]
+    },
+    {
+      "indexName": "Sousel",
+      "name": "Sousel",
+      "qualifier": null,
+      "pages": [
+        325
+      ]
+    },
+    {
+      "indexName": "São Bartolomeu de Messines",
+      "name": "São Bartolomeu de Messines",
+      "qualifier": null,
+      "pages": [
+        379,
+        380
+      ]
+    },
+    {
+      "indexName": "São Bento da Porta Aberta",
+      "name": "São Bento da Porta Aberta",
+      "qualifier": null,
+      "pages": [
+        102
+      ]
+    },
+    {
+      "indexName": "São Brás",
+      "name": "São Brás",
+      "qualifier": null,
+      "pages": [
+        353
+      ]
+    },
+    {
+      "indexName": "São Cucufate",
+      "name": "São Cucufate",
+      "qualifier": null,
+      "pages": [
+        361,
+        362
+      ]
+    },
+    {
+      "indexName": "São Gens",
+      "name": "São Gens",
+      "qualifier": null,
+      "pages": [
+        352
+      ]
+    },
+    {
+      "indexName": "São Jorge",
+      "name": "São Jorge",
+      "qualifier": null,
+      "pages": [
+        237,
+        241
+      ]
+    },
+    {
+      "indexName": "São Jorge da Beira",
+      "name": "São Jorge da Beira",
+      "qualifier": null,
+      "pages": [
+        206,
+        207,
+        208,
+        209,
+        210
+      ]
+    },
+    {
+      "indexName": "São João de Gatão",
+      "name": "São João de Gatão",
+      "qualifier": null,
+      "pages": [
+        50,
+        64
+      ]
+    },
+    {
+      "indexName": "São João de Tarouca",
+      "name": "São João de Tarouca",
+      "qualifier": null,
+      "pages": [
+        189,
+        192,
+        193,
+        194,
+        195,
+        265,
+        335
+      ]
+    },
+    {
+      "indexName": "São Lourenço de Almansil",
+      "name": "São Lourenço de Almansil",
+      "qualifier": null,
+      "pages": [
+        377,
+        378
+      ]
+    },
+    {
+      "indexName": "São Marcos",
+      "name": "São Marcos",
+      "qualifier": null,
+      "pages": [
+        135,
+        136
+      ]
+    },
+    {
+      "indexName": "São Marcos da Ataboeira",
+      "name": "São Marcos da Ataboeira",
+      "qualifier": null,
+      "pages": [
+        365
+      ]
+    },
+    {
+      "indexName": "São Martinho de Mouros",
+      "name": "São Martinho de Mouros",
+      "qualifier": null,
+      "pages": [
+        185,
+        186
+      ]
+    },
+    {
+      "indexName": "São Miguel de Ceide",
+      "name": "São Miguel de Ceide",
+      "qualifier": null,
+      "pages": [
+        63,
+        64
+      ]
+    },
+    {
+      "indexName": "São Pedro da Cadeira",
+      "name": "São Pedro da Cadeira",
+      "qualifier": null,
+      "pages": [
+        260
+      ]
+    },
+    {
+      "indexName": "São Pedro das Águias",
+      "name": "São Pedro das Águias",
+      "qualifier": null,
+      "pages": [
+        195,
+        196,
+        197
+      ]
+    },
+    {
+      "indexName": "São Pedro de Muel",
+      "name": "São Pedro de Muel",
+      "qualifier": null,
+      "pages": [
+        234
+      ]
+    },
+    {
+      "indexName": "São Quintino",
+      "name": "São Quintino",
+      "qualifier": null,
+      "pages": [
+        253,
+        254,
+        255,
+        257
+      ]
+    },
+    {
+      "indexName": "São Romão",
+      "name": "São Romão",
+      "qualifier": null,
+      "pages": [
+        197
+      ]
+    },
+    {
+      "indexName": "São Silvestre",
+      "name": "São Silvestre",
+      "qualifier": null,
+      "pages": [
+        135
+      ]
+    },
+    {
+      "indexName": "São Vicente",
+      "name": "São Vicente",
+      "qualifier": null,
+      "pages": [
+        325
+      ]
+    },
+    {
+      "indexName": "Sítio",
+      "name": "Sítio",
+      "qualifier": null,
+      "pages": [
+        242
+      ]
+    },
+    {
+      "indexName": "Tabuado",
+      "name": "Tabuado",
+      "qualifier": null,
+      "pages": [
+        52
+      ]
+    },
+    {
+      "indexName": "Tancos",
+      "name": "Tancos",
+      "qualifier": null,
+      "pages": [
+        225
+      ]
+    },
+    {
+      "indexName": "Tareja",
+      "name": "Tareja",
+      "qualifier": null,
+      "pages": [
+        370
+      ]
+    },
+    {
+      "indexName": "Tarouca",
+      "name": "Tarouca",
+      "qualifier": null,
+      "pages": [
+        189,
+        192
+      ]
+    },
+    {
+      "indexName": "Tavira",
+      "name": "Tavira",
+      "qualifier": null,
+      "pages": [
+        371,
+        372
+      ]
+    },
+    {
+      "indexName": "Telões",
+      "name": "Telões",
+      "qualifier": null,
+      "pages": [
+        54,
+        55
+      ]
+    },
+    {
+      "indexName": "Tendais",
+      "name": "Tendais",
+      "qualifier": null,
+      "pages": [
+        185
+      ]
+    },
+    {
+      "indexName": "Tentúgal",
+      "name": "Tentúgal",
+      "qualifier": null,
+      "pages": [
+        135,
+        167
+      ]
+    },
+    {
+      "indexName": "Tenões",
+      "name": "Tenões",
+      "qualifier": null,
+      "pages": [
+        95
+      ]
+    },
+    {
+      "indexName": "Terena",
+      "name": "Terena",
+      "qualifier": null,
+      "pages": [
+        341
+      ]
+    },
+    {
+      "indexName": "Terras de Bouro",
+      "name": "Terras de Bouro",
+      "qualifier": null,
+      "pages": [
+        102
+      ]
+    },
+    {
+      "indexName": "Tocha",
+      "name": "Tocha",
+      "qualifier": null,
+      "pages": [
+        129
+      ]
+    },
+    {
+      "indexName": "Tomar",
+      "name": "Tomar",
+      "qualifier": null,
+      "pages": [
+        226,
+        227,
+        228,
+        231,
+        232
+      ]
+    },
+    {
+      "indexName": "Torre (serra da Estrela)",
+      "name": "Torre",
+      "qualifier": "serra da Estrela",
+      "pages": [
+        197
+      ]
+    },
+    {
+      "indexName": "Torre das Águias",
+      "name": "Torre das Águias",
+      "qualifier": null,
+      "pages": [
+        319,
+        323
+      ]
+    },
+    {
+      "indexName": "Torre de Moncorvo",
+      "name": "Torre de Moncorvo",
+      "qualifier": null,
+      "pages": [
+        24,
+        25,
+        27
+      ]
+    },
+    {
+      "indexName": "Torre de Palma",
+      "name": "Torre de Palma",
+      "qualifier": null,
+      "pages": [
+        330,
+        331,
+        335
+      ]
+    },
+    {
+      "indexName": "Torres Novas",
+      "name": "Torres Novas",
+      "qualifier": null,
+      "pages": [
+        225,
+        246,
+        247,
+        248
+      ]
+    },
+    {
+      "indexName": "Torres Vedras",
+      "name": "Torres Vedras",
+      "qualifier": null,
+      "pages": [
+        253,
+        256,
+        258,
+        259,
+        261,
+        265
+      ]
+    },
+    {
+      "indexName": "Torrão",
+      "name": "Torrão",
+      "qualifier": null,
+      "pages": [
+        314
+      ]
+    },
+    {
+      "indexName": "Toubres",
+      "name": "Toubres",
+      "qualifier": null,
+      "pages": [
+        42
+      ]
+    },
+    {
+      "indexName": "Trancoso",
+      "name": "Trancoso",
+      "qualifier": null,
+      "pages": [
+        170,
+        171
+      ]
+    },
+    {
+      "indexName": "Trindade",
+      "name": "Trindade",
+      "qualifier": null,
+      "pages": [
+        363
+      ]
+    },
+    {
+      "indexName": "Trofa",
+      "name": "Trofa",
+      "qualifier": null,
+      "pages": [
+        125,
+        150
+      ]
+    },
+    {
+      "indexName": "Turcifal",
+      "name": "Turcifal",
+      "qualifier": null,
+      "pages": [
+        259,
+        260,
+        261
+      ]
+    },
+    {
+      "indexName": "Ucanha",
+      "name": "Ucanha",
+      "qualifier": null,
+      "pages": [
+        189,
+        190,
+        191,
+        192
+      ]
+    },
+    {
+      "indexName": "Vagos",
+      "name": "Vagos",
+      "qualifier": null,
+      "pages": [
+        124
+      ]
+    },
+    {
+      "indexName": "Vagueira",
+      "name": "Vagueira",
+      "qualifier": null,
+      "pages": [
+        124
+      ]
+    },
+    {
+      "indexName": "Vale de Cambra",
+      "name": "Vale de Cambra",
+      "qualifier": null,
+      "pages": [
+        150
+      ]
+    },
+    {
+      "indexName": "Vale de Estrela",
+      "name": "Vale de Estrela",
+      "qualifier": null,
+      "pages": [
+        197
+      ]
+    },
+    {
+      "indexName": "Vale de Prazeres",
+      "name": "Vale de Prazeres",
+      "qualifier": null,
+      "pages": [
+        206
+      ]
+    },
+    {
+      "indexName": "Valença",
+      "name": "Valença",
+      "qualifier": null,
+      "pages": [
+        82
+      ]
+    },
+    {
+      "indexName": "Valhelhas",
+      "name": "Valhelhas",
+      "qualifier": null,
+      "pages": [
+        197
+      ]
+    },
+    {
+      "indexName": "Valongo de Milhais",
+      "name": "Valongo de Milhais",
+      "qualifier": null,
+      "pages": [
+        42
+      ]
+    },
+    {
+      "indexName": "Valência de Alcântara",
+      "name": "Valência de Alcântara",
+      "qualifier": null,
+      "pages": [
+        325
+      ]
+    },
+    {
+      "indexName": "Varatojo",
+      "name": "Varatojo",
+      "qualifier": null,
+      "pages": [
+        261,
+        262,
+        263
+      ]
+    },
+    {
+      "indexName": "Varge",
+      "name": "Varge",
+      "qualifier": null,
+      "pages": [
+        30
+      ]
+    },
+    {
+      "indexName": "Velosa",
+      "name": "Velosa",
+      "qualifier": null,
+      "pages": [
+        166,
+        168
+      ]
+    },
+    {
+      "indexName": "Vermiosa",
+      "name": "Vermiosa",
+      "qualifier": null,
+      "pages": [
+        174,
+        175,
+        206
+      ]
+    },
+    {
+      "indexName": "Viana do Alentejo",
+      "name": "Viana do Alentejo",
+      "qualifier": null,
+      "pages": [
+        359,
+        360,
+        361
+      ]
+    },
+    {
+      "indexName": "Viana do Castelo",
+      "name": "Viana do Castelo",
+      "qualifier": null,
+      "pages": [
+        73,
+        75,
+        77,
+        78,
+        82,
+        99,
+        114
+      ]
+    },
+    {
+      "indexName": "Vidigueira",
+      "name": "Vidigueira",
+      "qualifier": null,
+      "pages": [
+        263,
+        359
+      ]
+    },
+    {
+      "indexName": "Vieira de Leiria",
+      "name": "Vieira de Leiria",
+      "qualifier": null,
+      "pages": [
+        234
+      ]
+    },
+    {
+      "indexName": "Vieira do Minho",
+      "name": "Vieira do Minho",
+      "qualifier": null,
+      "pages": [
+        103
+      ]
+    },
+    {
+      "indexName": "Vila Alva",
+      "name": "Vila Alva",
+      "qualifier": null,
+      "pages": [
+        361
+      ]
+    },
+    {
+      "indexName": "Vila Flor",
+      "name": "Vila Flor",
+      "qualifier": null,
+      "pages": [
+        27,
+        28
+      ]
+    },
+    {
+      "indexName": "Vila Franca de Xira",
+      "name": "Vila Franca de Xira",
+      "qualifier": null,
+      "pages": [
+        252
+      ]
+    },
+    {
+      "indexName": "Vila Fresca de Azeitão",
+      "name": "Vila Fresca de Azeitão",
+      "qualifier": null,
+      "pages": [
+        306
+      ]
+    },
+    {
+      "indexName": "Vila Nova",
+      "name": "Vila Nova",
+      "qualifier": null,
+      "pages": [
+        147
+      ]
+    },
+    {
+      "indexName": "Vila Nova de Cerveira",
+      "name": "Vila Nova de Cerveira",
+      "qualifier": null,
+      "pages": [
+        82
+      ]
+    },
+    {
+      "indexName": "Vila Nova de Famalicão",
+      "name": "Vila Nova de Famalicão",
+      "qualifier": null,
+      "pages": [
+        63
+      ]
+    },
+    {
+      "indexName": "Vila Nova de Foz Côa",
+      "name": "Vila Nova de Foz Côa",
+      "qualifier": null,
+      "pages": [
+        171
+      ]
+    },
+    {
+      "indexName": "Vila Nova de Gaia",
+      "name": "Vila Nova de Gaia",
+      "qualifier": null,
+      "pages": [
+        109,
+        117
+      ]
+    },
+    {
+      "indexName": "Vila Nova de Milfontes",
+      "name": "Vila Nova de Milfontes",
+      "qualifier": null,
+      "pages": [
+        387
+      ]
+    },
+    {
+      "indexName": "Vila Pouca de Aguiar",
+      "name": "Vila Pouca de Aguiar",
+      "qualifier": null,
+      "pages": [
+        40
+      ]
+    },
+    {
+      "indexName": "Vila Real",
+      "name": "Vila Real",
+      "qualifier": null,
+      "pages": [
+        38,
+        40,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        53,
+        79
+      ]
+    },
+    {
+      "indexName": "Vila Real de Santo António",
+      "name": "Vila Real de Santo António",
+      "qualifier": null,
+      "pages": [
+        371
+      ]
+    },
+    {
+      "indexName": "Vila Ruiva",
+      "name": "Vila Ruiva",
+      "qualifier": null,
+      "pages": [
+        361
+      ]
+    },
+    {
+      "indexName": "Vila Seca",
+      "name": "Vila Seca",
+      "qualifier": null,
+      "pages": [
+        72
+      ]
+    },
+    {
+      "indexName": "Vila Viçosa",
+      "name": "Vila Viçosa",
+      "qualifier": null,
+      "pages": [
+        337,
+        339
+      ]
+    },
+    {
+      "indexName": "Vila de Frades",
+      "name": "Vila de Frades",
+      "qualifier": null,
+      "pages": [
+        361
+      ]
+    },
+    {
+      "indexName": "Vila do Bispo",
+      "name": "Vila do Bispo",
+      "qualifier": null,
+      "pages": [
+        386,
+        387
+      ]
+    },
+    {
+      "indexName": "Vila do Conde",
+      "name": "Vila do Conde",
+      "qualifier": null,
+      "pages": [
+        66,
+        67,
+        68,
+        139
+      ]
+    },
+    {
+      "indexName": "Vilar Formoso",
+      "name": "Vilar Formoso",
+      "qualifier": null,
+      "pages": [
+        173,
+        174
+      ]
+    },
+    {
+      "indexName": "Vilar Turpim",
+      "name": "Vilar Turpim",
+      "qualifier": null,
+      "pages": [
+        180
+      ]
+    },
+    {
+      "indexName": "Vilarinho de Samardã",
+      "name": "Vilarinho de Samardã",
+      "qualifier": null,
+      "pages": [
+        44
+      ]
+    },
+    {
+      "indexName": "Vilaverdinho",
+      "name": "Vilaverdinho",
+      "qualifier": null,
+      "pages": [
+        28
+      ]
+    },
+    {
+      "indexName": "Vimeiro",
+      "name": "Vimeiro",
+      "qualifier": null,
+      "pages": [
+        278
+      ]
+    },
+    {
+      "indexName": "Vimioso",
+      "name": "Vimioso",
+      "qualifier": null,
+      "pages": [
+        19,
+        21
+      ]
+    },
+    {
+      "indexName": "Vinhais",
+      "name": "Vinhais",
+      "qualifier": null,
+      "pages": [
+        37,
+        38
+      ]
+    },
+    {
+      "indexName": "Viseu",
+      "name": "Viseu",
+      "qualifier": null,
+      "pages": [
+        180,
+        182,
+        183
+      ]
+    },
+    {
+      "indexName": "Vista Alegre",
+      "name": "Vista Alegre",
+      "qualifier": null,
+      "pages": [
+        124
+      ]
+    },
+    {
+      "indexName": "Águas de Moura",
+      "name": "Águas de Moura",
+      "qualifier": null,
+      "pages": [
+        311
+      ]
+    },
+    {
+      "indexName": "Águeda",
+      "name": "Águeda",
+      "qualifier": null,
+      "pages": [
+        125,
+        150
+      ]
+    },
+    {
+      "indexName": "Álvaro",
+      "name": "Álvaro",
+      "qualifier": null,
+      "pages": [
+        219
+      ]
+    },
+    {
+      "indexName": "Évora",
+      "name": "Évora",
+      "qualifier": null,
+      "pages": [
+        210,
+        316,
+        342,
+        343,
+        347,
+        348,
+        359,
+        360
+      ]
+    },
+    {
+      "indexName": "Évora Monte",
+      "name": "Évora Monte",
+      "qualifier": null,
+      "pages": [
+        335,
+        336
+      ]
+    },
+    {
+      "indexName": "Óbidos",
+      "name": "Óbidos",
+      "qualifier": null,
+      "pages": [
+        268,
+        269,
+        274,
+        291
+      ]
+    }
+  ],
+  "aliases": [
+    {
+      "from": "Gaia",
+      "to": "Vila Nova de Gaia"
+    },
+    {
+      "from": "Vila Nova de Ourém",
+      "to": "Ourém"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "viagem-a-portugal",
+  "private": true,
+  "packageManager": "pnpm@11.5.3",
+  "scripts": {
+    "map:start": "pnpm --filter map start",
+    "map:web": "pnpm --filter map web",
+    "map:export": "pnpm --filter map export:web"
+  }
+}
