@@ -19,6 +19,11 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
 end
 
+# `logger` is no longer a default gem from Ruby 3.5 onward, and the version
+# bundled with Ruby 3.3/3.4 (1.6.0) has a regression that breaks Jekyll 4.3's
+# log adapter. Pin to a fixed release.
+gem "logger", "~> 1.7"
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
