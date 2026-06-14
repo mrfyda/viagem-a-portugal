@@ -1,0 +1,29 @@
+[
+ {
+  "name": "Atenor",
+  "lat": 41.4166,
+  "lon": -6.4856,
+  "note": "Centro de Valorização do Burro de Miranda (AEPGA), em Atenor — fora da viagem de Saramago.",
+  "image": "/assets/viagem-1/atenor.avif",
+  "postUrl": "/2023/02/25/viagem-a-portugal-i/",
+  "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩"
+ },
+ {
+  "name": "Mazouco",
+  "lat": 41.1402,
+  "lon": -6.763,
+  "note": "Arte rupestre paleolítica descoberta em 1981, depois da viagem de Saramago.",
+  "image": "/assets/viagem-1/mazouco-2.avif",
+  "postUrl": "/2023/02/25/viagem-a-portugal-i/",
+  "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩"
+ },
+ {
+  "name": "Pedras Salgadas",
+  "lat": 41.5467,
+  "lon": -7.6062,
+  "note": "Estância termal de Pedras Salgadas — fora do percurso de Saramago.",
+  "image": "/assets/viagem-1/pedras-salgadas-1.avif",
+  "postUrl": "/2023/02/25/viagem-a-portugal-i/",
+  "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩"
+ }
+]

@@ -3,7 +3,7 @@ author: José Saramago
 description: Minimal, responsive Jekyll theme for hackers.
 # baseurl: "/blog"
 url: "https://portugal.travel"
-lang: en
+lang: pt
 timezone: UTC
 exclude:
   - Gemfile

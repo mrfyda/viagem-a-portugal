@@ -1,3 +1,19 @@
+pt:
+  date:
+    format: "%-d de %B de %Y" # See http://ruby-doc.org/core/Time.html#method-i-strftime for possible date formatting strings
+    abbr_day_names: ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"]
+    abbr_month_names: ["jan", "fev", "mar", "abr", "mai", "jun",
+      "jul", "ago", "set", "out", "nov", "dez"]
+    day_names: ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"]
+    month_names: ["janeiro", "fevereiro", "março", "abril", "maio", "junho",
+      "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+  morelink: "Continuar a ler"
+  page-older: "Mais antigas"
+  page-newer: "Mais recentes"
+  archive: "Arquivo do blogue"
+  archive-category: "Arquivo da categoria '%1'"
+  archive-tag: "Arquivo da etiqueta '%1'"
+  comments: "Comentários"
 en:
   date:
     format: "%b %-d, %Y" # See http://ruby-doc.org/core/Time.html#method-i-strftime for possible date formatting strings
