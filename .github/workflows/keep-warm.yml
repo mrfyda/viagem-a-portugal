@@ -21,10 +21,11 @@ jobs:
             echo "SUPABASE_URL secret not set — skipping"
             exit 0
           fi
-          # Ping the PostgREST root — 200 with just the anon apikey, and it
-          # still exercises the DB (schema introspection) so the free-tier
-          # project stays awake. The visits table is intentionally anon-revoked
-          # (docs/adr/0007), so querying it here would 401.
-          curl -sf "$SUPABASE_URL/rest/v1/" \
+          url="${SUPABASE_URL%/}"  # tolerate a trailing slash in the secret
+          # Ping the Auth health endpoint — 200 with the anon/publishable key,
+          # enough activity to keep the free-tier project from pausing. We can't
+          # query a table here: visits is intentionally anon-revoked
+          # (docs/adr/0007) and PostgREST's root requires a secret key.
+          curl -sf "$url/auth/v1/health" \
             -H "apikey: $SUPABASE_ANON_KEY" > /dev/null
           echo "pinged"
