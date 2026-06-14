@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__ — selection</title>
+<style>
+  :root{--bg:#15171c;--panel:#1d2027;--panel2:#252934;--line:#323844;--fg:#e8eaed;
+    --muted:#9aa3b2;--accent:#4ade80;--gold:#fbbf24;--amber:#f59e0b;--red:#f87171}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+  header{position:sticky;top:0;z-index:30;background:rgba(21,23,28,.92);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);padding:10px 16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  header h1{font-size:15px;margin:0;font-weight:600}
+  .spacer{flex:1}
+  .chip{background:var(--panel2);border:1px solid var(--line);color:var(--fg);border-radius:999px;
+    padding:6px 12px;font-size:12px;cursor:pointer;user-select:none}
+  .chip.on{background:var(--accent);color:#06240f;border-color:var(--accent);font-weight:600}
+  select.chip{appearance:none}
+  .btn{background:var(--panel2);border:1px solid var(--line);color:var(--fg);border-radius:8px;padding:6px 12px;font-size:12px;cursor:pointer}
+  .btn:hover{background:var(--panel)}
+  .btn.primary{background:var(--accent);color:#06240f;border-color:var(--accent);font-weight:600}
+  main{padding:8px 16px 80px}
+  .town{margin-top:26px}
+  .town h2{font-size:14px;font-weight:600;margin:0 0 2px;position:sticky;top:53px;background:rgba(21,23,28,.92);
+    backdrop-filter:blur(6px);padding:8px 0 6px;z-index:10;display:flex;gap:10px;align-items:baseline;border-bottom:1px solid var(--line)}
+  .town h2 .meta{color:var(--muted);font-weight:400;font-size:12px}
+  .town h2 .sel{color:var(--accent);font-weight:600;font-size:12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:10px}
+  .card{position:relative;border-radius:10px;overflow:hidden;background:#000;cursor:pointer;border:2px solid transparent;aspect-ratio:4/3}
+  .card img{width:100%;height:100%;object-fit:cover;display:block;opacity:.95}
+  .card:hover img{opacity:1}
+  .card.sel{border-color:var(--accent)}
+  .card.sel::after{content:"✓";position:absolute;top:6px;left:6px;width:22px;height:22px;background:var(--accent);
+    color:#06240f;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}
+  .badges{position:absolute;top:6px;right:6px;display:flex;gap:4px;flex-direction:column;align-items:flex-end}
+  .b{font-size:10px;padding:2px 6px;border-radius:6px;background:rgba(0,0,0,.6);color:#fff;font-weight:600}
+  .b.pick{background:var(--gold);color:#3a2c00}.b.person{background:var(--red);color:#3a0000}.b.inf{background:var(--amber);color:#3a2600}
+  .foot{position:absolute;left:0;right:0;bottom:0;padding:14px 8px 5px;background:linear-gradient(transparent,rgba(0,0,0,.8));
+    display:flex;justify-content:space-between;font-size:10.5px;color:#dfe3ea}
+  .foot .sharp{color:var(--muted)}
+  .mag{position:absolute;bottom:5px;right:5px;background:rgba(0,0,0,.55);border:none;color:#fff;border-radius:6px;
+    padding:3px 7px;font-size:12px;cursor:pointer;opacity:0}
+  .card:hover .mag{opacity:1}
+  #lb{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.94);display:none;flex-direction:column;align-items:center;justify-content:center}
+  #lb.open{display:flex}
+  #lb img{max-width:94vw;max-height:82vh;object-fit:contain;border-radius:4px}
+  #lb .cap{margin-top:12px;font-size:13px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:center}
+  #lb .cap .muted{color:var(--muted)}
+  #lb .nav{position:absolute;top:0;bottom:0;width:18vw;display:flex;align-items:center;cursor:pointer;color:rgba(255,255,255,.5);font-size:40px;user-select:none}
+  #lb .nav:hover{color:#fff}#lb .nav.prev{left:0;padding-left:20px}#lb .nav.next{right:0;justify-content:flex-end;padding-right:20px}
+  #lb .close{position:absolute;top:16px;right:20px;font-size:26px;color:#fff;cursor:pointer;opacity:.7}
+  kbd{background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:11px}
+  .empty{color:var(--muted);padding:40px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <h1>__TITLE__</h1>
+  <span class="chip" id="f-place">Place-only</span>
+  <span class="chip" id="f-pick">★ Picks only</span>
+  <span class="chip" id="f-sel">Selected only</span>
+  <select class="chip" id="sort"><option value="trip">Sort: trip order</option><option value="sharp">Sort: sharpest first</option></select>
+  <span class="spacer"></span>
+  <span style="font-size:12px;color:var(--muted)">selected <b id="selcount">0</b></span>
+  <button class="btn" id="copy">Copy filenames</button>
+  <button class="btn primary" id="export">Export selection</button>
+  <button class="btn" id="clear">Clear</button>
+</header>
+<main id="main"></main>
+<div id="lb"><span class="close" id="lb-close">✕</span><div class="nav prev" id="lb-prev">‹</div>
+  <div class="nav next" id="lb-next">›</div><img id="lb-img" alt=""><div class="cap" id="lb-cap"></div></div>
+<script src="viewer_data.js"></script>
+<script>
+const PHOTOS=window.PHOTOS, ORDER=window.TOWN_ORDER, LS="__LSKEY__";
+let selected=new Set(JSON.parse(localStorage.getItem(LS)||"[]"));
+const state={place:true,pick:false,sel:false,sort:"trip"}; let flat=[];
+function save(){localStorage.setItem(LS,JSON.stringify([...selected]))}
+function fmtDate(iso){if(!iso)return"";const d=new Date(iso);return d.toLocaleString("en-GB",{day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit",timeZone:"UTC"})}
+function visible(p){if(state.place&&!p.place_only)return false;if(state.pick&&!p.pick)return false;if(state.sel&&!selected.has(p.file))return false;return true}
+function render(){const main=document.getElementById("main");main.innerHTML="";flat=[];let shown=0;
+  for(const town of ORDER){let ps=PHOTOS.filter(p=>p.town===town&&visible(p));if(!ps.length)continue;
+    if(state.sort==="sharp")ps.sort((a,b)=>b.sharp-a.sharp);else ps.sort((a,b)=>(a.dt||"").localeCompare(b.dt||""));
+    const selN=ps.filter(p=>selected.has(p.file)).length;const sec=document.createElement("section");sec.className="town";
+    sec.innerHTML=`<h2>${town}<span class="meta">${fmtDate(ps[0].dt).split(",")[0]} · ${ps.length} shown</span><span class="sel">${selN?selN+" selected":""}</span></h2>`;
+    const grid=document.createElement("div");grid.className="grid";
+    for(const p of ps){const idx=flat.length;flat.push(p);const card=document.createElement("div");
+      card.className="card"+(selected.has(p.file)?" sel":"");card.dataset.file=p.file;const bd=[];
+      if(p.pick)bd.push('<span class="b pick">★ PICK</span>');if(!p.place_only)bd.push(`<span class="b person">${p.persons||p.faces}× person</span>`);
+      if(p.loc==="inferred")bd.push('<span class="b inf">loc≈</span>');
+      card.innerHTML=`<img loading="lazy" src="${p.thumb}" alt="${p.file}"><div class="badges">${bd.join("")}</div>
+        <div class="foot"><span>${p.file.replace(/\.[^.]+$/,"")}</span><span class="sharp">${p.device} · ${Math.round(p.sharp)}</span></div><button class="mag" data-idx="${idx}">⤢</button>`;
+      card.addEventListener("click",e=>{if(e.target.classList.contains("mag"))return;toggle(p.file)});
+      card.querySelector(".mag").addEventListener("click",e=>{e.stopPropagation();openLB(idx)});grid.appendChild(card)}
+    sec.appendChild(grid);main.appendChild(sec);shown+=ps.length}
+  if(!shown)main.innerHTML='<div class="empty">No photos match the current filters.</div>';
+  document.getElementById("selcount").textContent=selected.size}
+function toggle(f){selected.has(f)?selected.delete(f):selected.add(f);save();if(state.sel){render();return}
+  document.querySelectorAll(`.card[data-file="${CSS.escape(f)}"]`).forEach(c=>c.classList.toggle("sel"));
+  document.getElementById("selcount").textContent=selected.size;refreshCounts();if(lbOpen)syncLBSel()}
+function refreshCounts(){document.querySelectorAll(".town").forEach(sec=>{const n=[...sec.querySelectorAll(".card")].filter(c=>selected.has(c.dataset.file)).length;sec.querySelector(".sel").textContent=n?n+" selected":""})}
+let lbIdx=0,lbOpen=false;const lb=document.getElementById("lb"),lbImg=document.getElementById("lb-img"),lbCap=document.getElementById("lb-cap");
+function openLB(i){lbIdx=i;lbOpen=true;lb.classList.add("open");showLB()}
+function closeLB(){lbOpen=false;lb.classList.remove("open")}
+function showLB(){const p=flat[lbIdx];if(!p)return;lbImg.src=p.thumb;const tags=[];if(p.pick)tags.push("★ pick");if(!p.place_only)tags.push(`⚠ ${p.persons||p.faces} person`);if(p.loc==="inferred")tags.push("loc inferred");
+  lbCap.innerHTML=`<b>${p.file.replace(/\.[^.]+$/,"")}</b><span class="muted">${p.town} · ${fmtDate(p.dt)} · sharp ${Math.round(p.sharp)} · ${p.device}</span><span class="muted">${tags.join(" · ")}</span><button class="btn" id="lb-toggle"></button><span class="muted">${lbIdx+1}/${flat.length} · <kbd>←</kbd><kbd>→</kbd> · <kbd>S</kbd> select · <kbd>esc</kbd></span>`;
+  document.getElementById("lb-toggle").onclick=()=>toggle(p.file);syncLBSel()}
+function syncLBSel(){const p=flat[lbIdx],b=document.getElementById("lb-toggle");if(!b)return;const on=selected.has(p.file);b.textContent=on?"✓ Selected":"Select";b.classList.toggle("primary",on)}
+function lbStep(d){lbIdx=(lbIdx+d+flat.length)%flat.length;showLB()}
+document.getElementById("lb-prev").onclick=()=>lbStep(-1);document.getElementById("lb-next").onclick=()=>lbStep(1);document.getElementById("lb-close").onclick=closeLB;
+lb.addEventListener("click",e=>{if(e.target===lb)closeLB()});
+document.addEventListener("keydown",e=>{if(!lbOpen)return;if(e.key==="ArrowLeft")lbStep(-1);else if(e.key==="ArrowRight")lbStep(1);else if(e.key==="Escape")closeLB();else if(e.key.toLowerCase()==="s")toggle(flat[lbIdx].file)});
+function bindChip(id,k){const el=document.getElementById(id);el.classList.toggle("on",state[k]);el.onclick=()=>{state[k]=!state[k];el.classList.toggle("on",state[k]);render()}}
+bindChip("f-place","place");bindChip("f-pick","pick");bindChip("f-sel","sel");
+document.getElementById("sort").onchange=e=>{state.sort=e.target.value;render()};
+document.getElementById("clear").onclick=()=>{if(confirm("Clear "+selected.size+" selections?")){selected.clear();save();render()}};
+document.getElementById("copy").onclick=()=>{navigator.clipboard.writeText(PHOTOS.filter(p=>selected.has(p.file)).map(p=>p.file).join("\n")).then(()=>alert(selected.size+" filenames copied"))};
+document.getElementById("export").onclick=()=>{const rows=PHOTOS.filter(p=>selected.has(p.file)).map(p=>p.file).join("\n");
+  const blob=new Blob([rows],{type:"text/plain"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="selection.txt";a.click()};
+render();
+</script>
+</body>
+</html>
