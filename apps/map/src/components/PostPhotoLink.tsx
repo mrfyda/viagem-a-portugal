@@ -1,3 +1,4 @@
+import { withSiteBase } from "../lib/assets";
 import { t } from "../lib/i18n";
 
 /**
@@ -21,7 +22,7 @@ export default function PostPhotoLink({
     <div className="overflow-hidden rounded-md bg-accent text-[13px] text-accent-foreground">
       {image && (
         <img
-          src={image}
+          src={withSiteBase(image)}
           alt={alt}
           loading="lazy"
           className="block h-36 w-full object-cover"
@@ -29,7 +30,7 @@ export default function PostPhotoLink({
       )}
       <div className="p-2">
         {t("fromTheBlog")}{" "}
-        <a className="font-medium underline" href={postUrl}>
+        <a className="font-medium underline" href={withSiteBase(postUrl)}>
           {postTitle}
         </a>
         {date && <span className="text-muted-foreground"> · {date}</span>}
