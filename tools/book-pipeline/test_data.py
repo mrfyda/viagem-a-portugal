@@ -53,10 +53,13 @@ def test_classifications():
 def test_stops():
     stops = load("stops.json")["stops"]
     index_names = {p["indexName"] for p in load("book-index.json")["places"]}
+    # split homonym referents (e.g. "Lagoa de Óbidos") are real stops that are
+    # NOT toponymic-index entries; their coordinate lives in corrections.json
+    corrected = {c["name"] for c in load("corrections.json")}
     assert [s["ordinal"] for s in stops] == list(range(1, len(stops) + 1))
     chapters_seen = []
     for s in stops:
-        assert s["place"] in index_names
+        assert s["place"] in index_names or s["place"] in corrected
         assert s["role"] in ("stop", "passed-through")
         assert 36.5 <= s["latitude"] <= 42.3
         assert -9.7 <= s["longitude"] <= -5.5
