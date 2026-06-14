@@ -947,15 +947,6 @@
   },
   {
    "ordinal": 106,
-   "place": "Lama",
-   "chapter": 1,
-   "section": 15,
-   "role": "stop",
-   "latitude": 41.388063,
-   "longitude": -8.020287
-  },
-  {
-   "ordinal": 107,
    "place": "Sameiro (Braga)",
    "chapter": 1,
    "section": 15,
@@ -964,7 +955,7 @@
    "longitude": -8.369678
   },
   {
-   "ordinal": 108,
+   "ordinal": 107,
    "place": "Bom Jesus (Braga)",
    "chapter": 1,
    "section": 15,
@@ -973,7 +964,7 @@
    "longitude": -8.377011
   },
   {
-   "ordinal": 109,
+   "ordinal": 108,
    "place": "Mire de Tibães",
    "chapter": 1,
    "section": 15,
@@ -982,7 +973,7 @@
    "longitude": -8.479444
   },
   {
-   "ordinal": 110,
+   "ordinal": 109,
    "place": "Padim da Graça",
    "chapter": 1,
    "section": 15,
@@ -991,7 +982,7 @@
    "longitude": -8.489444
   },
   {
-   "ordinal": 111,
+   "ordinal": 110,
    "place": "Manhente",
    "chapter": 1,
    "section": 15,
@@ -1000,7 +991,7 @@
    "longitude": -8.571111
   },
   {
-   "ordinal": 112,
+   "ordinal": 111,
    "place": "Barcelos",
    "chapter": 1,
    "section": 15,
@@ -1009,7 +1000,7 @@
    "longitude": -8.616667
   },
   {
-   "ordinal": 113,
+   "ordinal": 112,
    "place": "Real",
    "chapter": 1,
    "section": 15,
@@ -1018,13 +1009,22 @@
    "longitude": -8.647499
   },
   {
-   "ordinal": 114,
-   "place": "Rendufe (Ponte de Lima)",
+   "ordinal": 113,
+   "place": "Lama",
    "chapter": 1,
    "section": 15,
    "role": "stop",
-   "latitude": 41.86,
-   "longitude": -8.561944
+   "latitude": 41.569,
+   "longitude": -8.537
+  },
+  {
+   "ordinal": 114,
+   "place": "Rendufe (Amares)",
+   "chapter": 1,
+   "section": 15,
+   "role": "stop",
+   "latitude": 41.628889,
+   "longitude": -8.409167
   },
   {
    "ordinal": 115,
@@ -1352,21 +1352,21 @@
   },
   {
    "ordinal": 151,
-   "place": "Santa Eulália",
-   "chapter": 2,
-   "section": 19,
-   "role": "stop",
-   "latitude": 40.927449,
-   "longitude": -8.2777
-  },
-  {
-   "ordinal": 152,
    "place": "Trofa",
    "chapter": 2,
    "section": 19,
    "role": "stop",
    "latitude": 40.611672,
    "longitude": -8.476655
+  },
+  {
+   "ordinal": 152,
+   "place": "Santa Eulália",
+   "chapter": 2,
+   "section": 19,
+   "role": "stop",
+   "latitude": 40.576,
+   "longitude": -8.448
   },
   {
    "ordinal": 153,

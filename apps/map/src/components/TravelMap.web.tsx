@@ -4,11 +4,15 @@ import type { Point } from "geojson";
 import maplibregl from "maplibre-gl";
 import { useEffect, useRef, useState } from "react";
 
+import { useCountUp } from "../hooks/useCountUp";
 import { useProgress } from "../hooks/useProgress";
+import { useSelectedPlace } from "../hooks/useSelectedPlace";
+import { useSession } from "../hooks/useSession";
 import {
   buildTownsGeoJson,
   INITIAL_ZOOM,
   MAP_CENTER,
+  placeCenter,
   routesGeoJson,
   stops,
 } from "../lib/geo";
@@ -22,6 +26,7 @@ import {
 } from "../lib/mapStyle";
 import { t } from "../lib/i18n";
 import { useIsDesktop } from "../hooks/useIsDesktop";
+import AuthPanel from "./AuthPanel";
 import ChapterSidebar from "./ChapterSidebar";
 import TownDetailPanel from "./TownDetailPanel";
 import TownSearch from "./TownSearch";
@@ -32,15 +37,38 @@ export default function TravelMap() {
   const [mapReady, setMapReady] = useState(false);
   const [loadFailed, setLoadFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
-  const [selectedPlace, setSelectedPlace] = useState<string | null>(null);
+  const [selectedPlace, setSelectedPlace] = useSelectedPlace();
   const [hiddenChapters, setHiddenChapters] = useState<ReadonlySet<number>>(
     new Set(),
   );
 
   const isDesktop = useIsDesktop();
-  const { visits, toggle, setVisitDate, metrics } = useProgress();
+  const { session, loading: authLoading, configured, signIn, signUp, signOut } =
+    useSession();
+  const { visits, toggle, setVisitDate, metrics } = useProgress(
+    session?.user.id ?? null,
+  );
   const visitsRef = useRef(visits);
   visitsRef.current = visits;
+  // Quiet count-up when a Visit lands — the "pages travelled" tally ticks up.
+  const townsCount = useCountUp(metrics.townsVisited);
+  const pagesCount = useCountUp(metrics.pagesVisited);
+
+  const [authOpen, setAuthOpen] = useState(false);
+  // a gated action: the place whose visited-toggle opened sign-in, applied
+  // once the Traveler is in
+  const [pendingPlace, setPendingPlace] = useState<string | null>(null);
+  const toggleRef = useRef(toggle);
+  toggleRef.current = toggle;
+
+  useEffect(() => {
+    if (!session) return;
+    if (pendingPlace) {
+      toggleRef.current(pendingPlace);
+      setPendingPlace(null);
+    }
+    setAuthOpen(false);
+  }, [session, pendingPlace]);
 
   useEffect(() => {
     setLoadFailed(false);
@@ -58,10 +86,10 @@ export default function TravelMap() {
           style,
           center: MAP_CENTER,
           zoom: INITIAL_ZOOM,
+          attributionControl: { compact: true },
         });
         mapRef.current = map;
         if (__DEV__) (globalThis as Record<string, unknown>).__travelMap = map;
-        map.addControl(new maplibregl.NavigationControl());
         wireMap(map);
       })
       .catch((error) => {
@@ -124,6 +152,34 @@ export default function TravelMap() {
     };
   }, [attempt]);
 
+  // Place the zoom + geolocate controls opposite the open chrome so they never
+  // sit under a panel: on desktop the journey sidebar owns the whole right edge
+  // (controls go bottom-left); on mobile the detail panel is a bottom sheet
+  // (controls stay top-right / bottom-right). Re-runs when the breakpoint flips.
+  // The geolocate button drops the standard blue location dot + accuracy ring
+  // and recentres on the visitor — pure browser geolocation, no Visit data.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady) return;
+    const nav = new maplibregl.NavigationControl();
+    const geolocate = new maplibregl.GeolocateControl({
+      positionOptions: { enableHighAccuracy: true },
+      trackUserLocation: true,
+      showUserLocation: true,
+    });
+    map.addControl(nav, isDesktop ? "bottom-left" : "top-right");
+    map.addControl(geolocate, isDesktop ? "bottom-left" : "bottom-right");
+    return () => {
+      // No-op if the map was already torn down (attempt change / unmount).
+      try {
+        map.removeControl(nav);
+        map.removeControl(geolocate);
+      } catch {
+        // map removed
+      }
+    };
+  }, [mapReady, isDesktop]);
+
   useEffect(() => {
     if (!mapReady) return;
     const source = mapRef.current?.getSource<maplibregl.GeoJSONSource>("towns");
@@ -141,6 +197,21 @@ export default function TravelMap() {
       ["literal", visible],
     ]);
   }, [hiddenChapters, mapReady]);
+
+  // Bring the selected Place into view — whether it came from a map click, the
+  // search box, a shared deep link, or a back/forward navigation.
+  useEffect(() => {
+    if (!mapReady || !selectedPlace) return;
+    const center = placeCenter(selectedPlace);
+    if (center) {
+      // CSS prefers-reduced-motion can't reach maplibre's JS pan, so honour it
+      // here: jump instantly instead of a 600ms ease.
+      const reduce = window.matchMedia?.(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+      mapRef.current?.easeTo({ center, duration: reduce ? 0 : 600 });
+    }
+  }, [selectedPlace, mapReady]);
 
   const focusChapter = (n: number) => {
     const chapterStops = stops.filter((s) => s.chapter === n);
@@ -171,6 +242,13 @@ export default function TravelMap() {
     ? {
         isVisited: visits.has(selectedPlace),
         visitDate: visits.get(selectedPlace) ?? null,
+        canAct: session != null,
+        onRequestSignIn: configured
+          ? () => {
+              setPendingPlace(selectedPlace);
+              setAuthOpen(true);
+            }
+          : null,
         onToggleVisited: () => toggle(selectedPlace),
         onVisitDateChange: (date: string | null) =>
           setVisitDate(selectedPlace, date),
@@ -184,24 +262,59 @@ export default function TravelMap() {
     <div style={{ width: "100%", height: "100%", position: "relative" }}>
       <div ref={containerRef} style={{ width: "100%", height: "100%" }} />
 
-      <div className="absolute left-3 top-3 flex max-w-[280px] flex-col gap-1.5 rounded-lg border border-border bg-card/95 p-4 text-sm text-foreground shadow-sm">
-        <strong className="text-base">Viagem a Portugal</strong>
-        <span>
-          {t("progress", {
-            towns: metrics.townsVisited,
-            townsTotal: metrics.townsTotal,
-            pages: metrics.pagesVisited,
-            pagesTotal: metrics.pagesTotal,
-          })}
-        </span>
-        <span className="text-xs text-muted-foreground">{t("clickHint")}</span>
+      <div className="absolute left-3 top-3 flex max-w-[280px] flex-col gap-1.5 rounded-lg border border-border bg-card/95 p-4 text-sm text-foreground shadow-sm max-[359px]:max-w-[240px]">
+        <h1 className="text-base font-bold">Viagem a Portugal</h1>
+        {session ? (
+          <>
+            <span>
+              {t("progress", {
+                towns: townsCount,
+                townsTotal: metrics.townsTotal,
+                pages: pagesCount,
+                pagesTotal: metrics.pagesTotal,
+              })}
+            </span>
+            <span className="text-xs text-muted-foreground">{t("clickHint")}</span>
+            <span className="flex items-center gap-2 text-xs text-muted-foreground">
+              <span className="truncate">{session.user.email}</span>
+              <button
+                onClick={() => void signOut()}
+                className="shrink-0 underline hover:text-foreground"
+              >
+                {t("signOut")}
+              </button>
+            </span>
+          </>
+        ) : authOpen ? (
+          <AuthPanel
+            onSignIn={signIn}
+            onSignUp={signUp}
+            onCancel={() => {
+              setAuthOpen(false);
+              setPendingPlace(null);
+            }}
+          />
+        ) : (
+          configured &&
+          !authLoading && (
+            <>
+              <span className="text-xs text-muted-foreground">{t("trackPitch")}</span>
+              <button
+                onClick={() => setAuthOpen(true)}
+                className="h-8 self-start rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+              >
+                {t("signIn")}
+              </button>
+            </>
+          )
+        )}
         {!isDesktop && <TownSearch onSelect={setSelectedPlace} />}
         {!isDesktop && (
         <span style={{ display: "flex", gap: 4, flexWrap: "wrap" }}>
           {chapters.map((c) => (
             <button
               key={c.number}
-              className="min-h-[22px] min-w-[28px] cursor-pointer rounded-full px-2 text-xs font-medium"
+              className="min-h-[22px] min-w-[28px] cursor-pointer rounded-full px-2 text-xs font-medium pointer-coarse:min-h-[44px] pointer-coarse:min-w-[44px]"
               onClick={() => toggleChapter(c.number)}
               aria-pressed={!hiddenChapters.has(c.number)}
               aria-label={`${c.number}. ${c.title}`}
@@ -227,8 +340,6 @@ export default function TravelMap() {
         <ChapterSidebar
           selectedPlace={selectedPlace}
           detailProps={detailProps}
-          hiddenChapters={hiddenChapters}
-          onToggleChapter={toggleChapter}
           onFocusChapter={focusChapter}
           onSelectPlace={setSelectedPlace}
         />

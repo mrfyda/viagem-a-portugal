@@ -22,6 +22,12 @@ export interface TownDetailPanelProps {
   embedded?: boolean;
   visitDate: string | null;
   isVisited: boolean;
+  /** Actions require a signed-in Traveler; when false the visited button
+   * stays visible as the discovery point but opens sign-in instead. */
+  canAct: boolean;
+  /** Null when sign-in is unavailable (unconfigured build) — the action row
+   * is hidden entirely then. */
+  onRequestSignIn: (() => void) | null;
   onToggleVisited: () => void;
   onVisitDateChange: (date: string | null) => void;
   onClose: () => void;
@@ -32,6 +38,8 @@ export default function TownDetailPanel({
   embedded = false,
   visitDate,
   isVisited,
+  canAct,
+  onRequestSignIn,
   onToggleVisited,
   onVisitDateChange,
   onClose,
@@ -45,14 +53,17 @@ export default function TownDetailPanel({
   const quote = quoteFor(place);
   const featured = featuredVisitFor(place);
 
+  // The floating variant is only used on mobile web (desktop embeds the panel
+  // in the sidebar). Anchor it as a bottom sheet so it never overlaps the
+  // top-left progress card or the top-right map controls.
   const floating = embedded
     ? ""
-    : "absolute right-3 top-3 max-h-[calc(100%-24px)] w-[300px] overflow-y-auto rounded-lg border border-border bg-card/95 p-4 shadow-sm";
+    : "absolute inset-x-3 bottom-3 max-h-[60vh] overflow-y-auto rounded-lg border border-border bg-card/95 p-4 shadow-sm";
 
   return (
     <div className={`flex flex-col gap-2 text-sm text-foreground ${floating}`}>
       <div className="flex items-start justify-between">
-        <strong className="text-base">{book?.name ?? place}</strong>
+        <h2 className="text-base font-bold">{book?.name ?? place}</h2>
         <button
           onClick={onClose}
           aria-label={t("close")}
@@ -125,29 +136,31 @@ export default function TownDetailPanel({
         {t("wikipedia")}
       </a>
 
-      <div className="flex flex-wrap items-center gap-2 border-t border-border pt-2">
-        <button
-          onClick={onToggleVisited}
-          className={`h-8 rounded-md px-3 text-sm font-medium ${
-            isVisited
-              ? "border border-input bg-card text-foreground hover:bg-secondary"
-              : "bg-primary text-primary-foreground hover:bg-primary/90"
-          }`}
-        >
-          {isVisited ? t("unmarkVisited") : t("markVisited")}
-        </button>
-        {isVisited && (
-          <label className="flex items-center gap-1.5 text-xs text-muted-foreground">
-            {t("visitDate")}
-            <input
-              type="date"
-              value={visitDate ?? ""}
-              onChange={(e) => onVisitDateChange(e.target.value || null)}
-              className="h-8 rounded-md border border-input bg-card px-2 text-sm text-foreground"
-            />
-          </label>
-        )}
-      </div>
+      {(canAct || onRequestSignIn != null) && (
+        <div className="flex flex-wrap items-center gap-2 border-t border-border pt-2">
+          <button
+            onClick={canAct ? onToggleVisited : onRequestSignIn ?? undefined}
+            className={`h-8 rounded-md px-3 text-sm font-medium ${
+              isVisited
+                ? "border border-input bg-card text-foreground hover:bg-secondary"
+                : "bg-primary text-primary-foreground hover:bg-primary/90"
+            }`}
+          >
+            {isVisited ? t("unmarkVisited") : t("markVisited")}
+          </button>
+          {isVisited && (
+            <label className="flex items-center gap-1.5 text-xs text-muted-foreground">
+              {t("visitDate")}
+              <input
+                type="date"
+                value={visitDate ?? ""}
+                onChange={(e) => onVisitDateChange(e.target.value || null)}
+                className="h-8 rounded-md border border-input bg-card px-2 text-sm text-foreground"
+              />
+            </label>
+          )}
+        </div>
+      )}
     </div>
   );
 }

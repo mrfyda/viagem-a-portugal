@@ -39,7 +39,12 @@ _Avoid_: leg, journey (the journey is the whole book)
 
 ### The traveler (app user)
 
+**Traveler**:
+A signed-in account that owns a journey of Visits. Anyone may browse the map
+anonymously; only a Traveler can act (mark Visits, set dates).
+_Avoid_: user, account, member
+
 **Visit**:
-The app user marking a Place as traveled, with an optional user-entered date.
-Belongs to the reader's journey, never Saramago's.
+A Traveler marking a Place as traveled, with an optional user-entered date.
+Belongs to the Traveler's journey, never Saramago's.
 _Avoid_: check-in, visited flag

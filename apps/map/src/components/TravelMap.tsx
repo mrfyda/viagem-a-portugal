@@ -7,13 +7,12 @@ import {
 import { useEffect, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-import { useProgress } from "../hooks/useProgress";
 import {
-  buildTownsGeoJson,
   INITIAL_ZOOM,
   MAP_CENTER,
   MAP_STYLE_URL,
   routesGeoJson,
+  townsGeoJson,
 } from "../lib/geo";
 import {
   fetchMapStyle,
@@ -24,10 +23,12 @@ import {
 
 type MapStyleProp = React.ComponentProps<typeof MapLibreMap>["mapStyle"];
 
+// Native is read-only browsing until Traveler auth UI lands here: actions
+// require a signed-in account (docs/adr/0007), and this component has never
+// been verified on a device.
 export default function TravelMap() {
   const [selectedTown, setSelectedTown] = useState<string | null>(null);
   const [mapStyle, setMapStyle] = useState<MapStyleProp | null>(null);
-  const { visits, toggle, metrics } = useProgress();
 
   useEffect(() => {
     fetchMapStyle()
@@ -55,12 +56,9 @@ export default function TravelMap() {
         </GeoJSONSource>
         <GeoJSONSource
           id="towns"
-          data={buildTownsGeoJson(visits)}
+          data={townsGeoJson}
           onPress={(event) => {
             const props = event.nativeEvent.features[0]?.properties;
-            const indexName = props?.indexName;
-            if (typeof indexName !== "string") return;
-            toggle(indexName);
             setSelectedTown(typeof props?.name === "string" ? props.name : null);
           }}
         >
@@ -79,10 +77,6 @@ export default function TravelMap() {
 
       <View style={styles.progressCard}>
         <Text style={styles.progressTitle}>Viagem a Portugal</Text>
-        <Text>
-          {metrics.townsVisited} / {metrics.townsTotal} towns ·{" "}
-          {metrics.pagesVisited} / {metrics.pagesTotal} pages
-        </Text>
         {selectedTown != null && <Text style={styles.selected}>{selectedTown}</Text>}
       </View>
     </View>

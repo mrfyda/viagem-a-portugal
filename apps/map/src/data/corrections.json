@@ -173,5 +173,15 @@
     "name": "Real",
     "latitude": 41.56917,
     "longitude": -8.647499
+  },
+  {
+    "name": "Santa Eulália",
+    "latitude": 40.576,
+    "longitude": -8.448
+  },
+  {
+    "name": "Lama",
+    "latitude": 41.569,
+    "longitude": -8.537
   }
 ]

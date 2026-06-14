@@ -1,6 +1,8 @@
 const { getDefaultConfig } = require("expo/metro-config");
-const { withNativeWind } = require("nativewind/metro");
+const { withNativewind } = require("nativewind/metro");
 
 const config = getDefaultConfig(__dirname);
 
-module.exports = withNativeWind(config, { input: "./global.css" });
+// NativeWind v5: the CSS entry is the `import "./global.css"` in App.tsx,
+// processed by Tailwind v4 via postcss.config.mjs — no `input` option here.
+module.exports = withNativewind(config);

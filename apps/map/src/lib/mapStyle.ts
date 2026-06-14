@@ -5,17 +5,24 @@ import type {
 
 import { MAP_STYLE_URL } from "./geo";
 
-export const VISITED_COLOR = "#15803d";
+// Mirrors --color-primary (hsl(156 80% 20%)) so the map's "visited" green is
+// the same green as the UI — maplibre paint needs a hex literal, hence the
+// duplication. UNVISITED matches the amber town-dot default.
+export const VISITED_COLOR = "#0a5c3b";
 export const UNVISITED_COLOR = "#b45309";
 
-/** One color per chapter Route, north to south. */
+/**
+ * One color per chapter Route, north to south. Picked for mutual distinctness
+ * (esp. adjacent chapters 4 vs 5 — red vs blue) and to stay clear of the
+ * amber town dots (UNVISITED_COLOR) and green visited dots.
+ */
 export const CHAPTER_COLORS: Record<number, string> = {
-  1: "#9a3412",
-  2: "#0f766e",
-  3: "#6d28d9",
-  4: "#be123c",
-  5: "#b45309",
-  6: "#1d4ed8",
+  1: "#ea580c", // orange
+  2: "#0d9488", // teal
+  3: "#7c3aed", // violet
+  4: "#dc2626", // red
+  5: "#2563eb", // blue
+  6: "#db2777", // pink
 };
 
 export const ROUTE_COLOR: ExpressionSpecification = [

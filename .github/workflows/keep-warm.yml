@@ -1,0 +1,28 @@
+# Supabase free tier pauses projects after ~a week without API activity,
+# which would silently break Traveler sign-in and sync (docs/adr/0007).
+# Two pings a week keep it awake. Skips quietly when secrets are unset.
+name: Keep Supabase warm
+
+on:
+  schedule:
+    - cron: "17 6 * * 1,4"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase REST API
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          if [ -z "$SUPABASE_URL" ]; then
+            echo "SUPABASE_URL secret not set — skipping"
+            exit 0
+          fi
+          # anonymous select; RLS returns an empty list, but it counts as activity
+          curl -sf "$SUPABASE_URL/rest/v1/visits?select=index_name&limit=1" \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY" > /dev/null
+          echo "pinged"

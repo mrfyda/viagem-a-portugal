@@ -1,39 +1,73 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Cardo serif — the blog's typeface, shared so the map reads as the same site.
+   @import rules must precede all other CSS, so this stays at the very top. */
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 
-/* shadcn-style tokens: stone neutrals, amber-700 primary (the journey color) */
-:root {
-  --background: 0 0% 100%;
-  --foreground: 24 10% 10%;
-  --card: 0 0% 100%;
-  --card-foreground: 24 10% 10%;
-  --primary: 27 91% 37%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 60 5% 96%;
-  --secondary-foreground: 24 10% 10%;
-  --muted: 60 5% 96%;
-  --muted-foreground: 25 6% 38%;
-  --accent: 48 96% 89%;
-  --accent-foreground: 24 10% 10%;
-  --border: 20 6% 90%;
-  --input: 20 6% 83%;
-  --ring: 27 91% 37%;
+/* Tailwind CSS v4 (NativeWind v5): CSS-first config replaces the old
+   `@tailwind base/components/utilities` directives. `nativewind/theme` adds the
+   React Native-specific variants (web:/ios:/android:) and theme values. */
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+@import "nativewind/theme";
+
+/* shadcn-style design tokens: stone neutrals, blog green (#0a5a3a) primary.
+   Ported from the old tailwind.config.js `theme.extend`. Each --color-* token
+   generates the bg-/text-/border-/ring- utilities the components use; opacity
+   modifiers (bg-card/95, bg-primary/90) work because these are full colors.
+   Cardo is set as the default font family for the web chrome + RN-web text. */
+@theme {
+    --color-background: hsl(0 0% 100%);
+    --color-foreground: hsl(24 10% 10%);
+    --color-card: hsl(0 0% 100%);
+    --color-card-foreground: hsl(24 10% 10%);
+    --color-primary: hsl(156 80% 20%);
+    --color-primary-foreground: hsl(0 0% 100%);
+    --color-secondary: hsl(60 5% 96%);
+    --color-secondary-foreground: hsl(24 10% 10%);
+    --color-muted: hsl(60 5% 96%);
+    --color-muted-foreground: hsl(25 6% 38%);
+    --color-accent: hsl(48 96% 89%);
+    --color-accent-foreground: hsl(24 10% 10%);
+    --color-border: hsl(20 6% 90%);
+    --color-input: hsl(20 6% 83%);
+    --color-ring: hsl(156 80% 20%);
+
+    /* Semantic state. `destructive` is the one with a consumer today (auth
+       errors); add success/warning/info here when a surface needs them rather
+       than shipping unused tokens. ~5:1 on white for legible error text. */
+    --color-destructive: hsl(0 74% 42%);
+    --color-destructive-foreground: hsl(0 0% 100%);
+
+    /* shadcn radius scale (overrides Tailwind's defaults) */
+    --radius-sm: calc(0.5rem - 4px);
+    --radius-md: calc(0.5rem - 2px);
+    --radius-lg: 0.5rem;
+
+    --font-sans: "Cardo", serif;
+    --font-serif: "Cardo", serif;
+}
+
+/* The plain-DOM web chrome and RN-web <Text> inherit the document font. */
+@layer base {
+    html,
+    body {
+        font-family: "Cardo", serif;
+    }
 }
 
 /* WCAG 2.5.8 / HIG: comfortable targets on touch devices */
 @media (pointer: coarse) {
-  button,
-  input,
-  [role="button"] {
-    min-height: 44px;
-    min-width: 44px;
-  }
+    button,
+    input,
+    [role="button"] {
+        min-height: 44px;
+        min-width: 44px;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-  }
+    * {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }

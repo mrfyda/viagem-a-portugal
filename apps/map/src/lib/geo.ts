@@ -118,6 +118,23 @@ export function buildTownsGeoJson(
 export const townsGeoJson = buildTownsGeoJson();
 
 /**
+ * Where to recentre the map when a Place is selected (map click, search, a
+ * shared deep link, or browser back/forward). It must match the Place's
+ * *rendered* marker: a fully-moved place renders at its route's moved-stop
+ * coordinates, not at the Place's stale home coordinate — e.g. "Torre (serra
+ * da Estrela)", whose only dot is the Torre de Belém stop in Lisbon. Centring
+ * on the home coordinate would fly to the Serra da Estrela summit instead.
+ */
+export function placeCenter(indexName: string): [number, number] | undefined {
+  const moved = fullyMovedPlaces.has(indexName)
+    ? movedStopsByPlace.get(indexName)?.[0]
+    : undefined;
+  if (moved) return [moved.longitude, moved.latitude];
+  const home = byName.get(indexName);
+  return home ? [home.longitude, home.latitude] : undefined;
+}
+
+/**
  * The six chapter Routes (ADR 0003), as one segment per consecutive Stop
  * pair. Per-segment features let the timeline draw the journey
  * progressively with a GPU filter on `ordinal` (the segment's later Stop).

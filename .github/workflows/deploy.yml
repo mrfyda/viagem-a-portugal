@@ -78,6 +78,10 @@ jobs:
         run: pnpm --filter map export:web
         env:
           EXPO_BASE_URL: ${{ steps.pages.outputs.base_path }}/map
+          # absent secrets (e.g. fork PRs) produce a read-only build with
+          # sign-in hidden — see supabase/README.md
+          EXPO_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          EXPO_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
 
       - name: Assemble site (blog at /, map at /map)
         run: |

@@ -29,6 +29,13 @@ const en = {
   mapFailed: "The map could not load.",
   mapFailedHint: "Check your connection — or an ad blocker may be blocking",
   tryAgain: "Try again",
+  trackPitch: "Track the towns you visit — sign in to start.",
+  signIn: "Sign in",
+  signUp: "Create account",
+  signOut: "Sign out",
+  email: "Email",
+  password: "Password",
+  cancel: "Cancel",
 };
 
 const pt: typeof en = {
@@ -57,6 +64,13 @@ const pt: typeof en = {
   mapFailed: "Não foi possível carregar o mapa.",
   mapFailedHint: "Verifique a ligação — ou um bloqueador de anúncios pode estar a bloquear",
   tryAgain: "Tentar novamente",
+  trackPitch: "Registe as terras que visita — inicie sessão para começar.",
+  signIn: "Iniciar sessão",
+  signUp: "Criar conta",
+  signOut: "Terminar sessão",
+  email: "Email",
+  password: "Palavra-passe",
+  cancel: "Cancelar",
 };
 
 export type MessageKey = keyof typeof en;

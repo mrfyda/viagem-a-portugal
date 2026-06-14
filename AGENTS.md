@@ -39,18 +39,28 @@ cd apps/blog && bundle exec jekyll serve   # blog dev server
 
 There is no JS test suite yet; `typecheck` + `export:web` are the CI gates.
 
+To drive the running web app in a browser (verification, screenshots, clicking
+through the map), use the **`agent-browser`** CLI — not Playwright/Puppeteer.
+Start the dev server (`pnpm --filter map web`, served at `http://localhost:8081`),
+then `agent-browser open <url>` / `snapshot -i` / `screenshot`. The map renders
+to a `canvas.maplibregl-canvas`, so wait for that selector before screenshotting.
+
 ## Map app conventions
 
 - Keep platform-agnostic logic (data, GeoJSON building) in `apps/map/src/lib`
   and `src/data` — never inside components. The map component is split:
   `TravelMap.web.tsx` (maplibre-gl) and `TravelMap.tsx`
   (@maplibre/maplibre-react-native, v11 API: `Map`/`GeoJSONSource`/`Layer`).
-- Styling: NativeWind v4 (Tailwind) with shadcn-style tokens in
-  `global.css` + `tailwind.config.js`. Universal primitives live in
-  `src/components/ui/` (RN-based, cva variants, `cn()` from `src/lib/cn.ts`).
-  The floating chrome is web-only DOM styled with Tailwind classes. Note:
-  pnpm needs `react-native-css-interop` as a direct dependency (NativeWind's
-  babel transform imports it).
+- Styling: NativeWind v5 + Tailwind v4 (CSS-first). shadcn-style tokens live
+  in `global.css` via `@theme` (no `tailwind.config.js` — colors, radius and
+  the Cardo font are all defined there). `className` works directly on RN
+  components — NativeWind's Metro transform (`withNativewind` in
+  `metro.config.js`, `react-native-css` dependency) handles it, so there is
+  **no** `nativewind/babel` preset / `jsxImportSource` in `babel.config.js`,
+  and Tailwind runs via `@tailwindcss/postcss` (`postcss.config.mjs`).
+  Universal primitives live in `src/components/ui/` (RN-based, cva variants,
+  `cn()` from `src/lib/cn.ts`). The floating chrome is web-only DOM styled with
+  Tailwind classes.
 - `src/data/locations.json` is generated — don't hand-edit it. Manual
   coordinate fixes go in `src/data/corrections.json`, which takes precedence.
   Towns with `(0, 0)` coordinates are "not geocoded" and are filtered out.
@@ -63,13 +73,21 @@ There is no JS test suite yet; `typecheck` + `export:web` are the CI gates.
   (`BOOK_EPUB_PATH`): the 6 Chapters and 55 Sections with global narrative
   ordinals. Section *text* never enters the repo — it lives in the
   gitignored `tools/book-pipeline/output/`.
-- Visitor progress lives in `src/lib/progress.ts`: a visit log of
-  indexName -> ISO date (or null when unknown), stored as versioned JSON in
-  localStorage/AsyncStorage. Visit dates are user-entered, never defaulted.
-  The base64url bitmask codec (`encodeJourney`/`decodeJourney`) is retained
-  for the legacy storage migration and a future share-link feature (UI
-  removed for now). Changing place count or order breaks existing codes;
-  bump the code version if that ever happens.
+- Visits belong to a signed-in Traveler (CONTEXT.md) and sync via Supabase
+  (`supabase/README.md` for setup; docs/adr/0007–0009 for the decisions).
+  Anonymous visitors browse read-only. `useProgress(userId)` overlays the
+  server's visit log with a local offline outbox (`src/lib/sync.ts`):
+  actions queue per Place and replay when the network allows — whichever
+  device syncs last wins. The log and outbox are cached per account in
+  localStorage/AsyncStorage so an offline cold start still shows the
+  journey. Visit dates are user-entered, never defaulted. Builds without
+  `EXPO_PUBLIC_SUPABASE_URL`/`EXPO_PUBLIC_SUPABASE_ANON_KEY` are read-only
+  with sign-in hidden (CI fork PRs build fine). Native is read-only until
+  its auth UI lands — gated on a device-verified dev build.
+- Navigation is URL-driven on web: the selected Place is a `?place=`
+  query param (`src/lib/location.web.ts` + `useSelectedPlace`), so views are
+  deep-linkable, survive a refresh, and ride browser back/forward — copying
+  the URL is how you share a view. `location.ts` is a native no-op stub.
 - The native module means Expo Go won't run iOS/Android; use a dev build.
   The native map component has not yet been verified on a device.
 - Web hosting under a subpath is handled by the `EXPO_BASE_URL` env var read
