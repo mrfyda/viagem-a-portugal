@@ -8,6 +8,8 @@ export interface FeaturedVisit {
   postUrl: string;
   postTitle: string;
   date: string | null;
+  /** Blog-relative path to one hero image for this place, if the post set one. */
+  image?: string | null;
 }
 
 const featured: Record<string, FeaturedVisit> = featuredData;

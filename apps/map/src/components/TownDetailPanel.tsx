@@ -9,6 +9,8 @@ import { stops } from "../lib/geo";
 import { CHAPTER_COLORS } from "../lib/mapStyle";
 import { t } from "../lib/i18n";
 import { quoteFor } from "../lib/quotes";
+import PanelShell from "./PanelShell";
+import PostPhotoLink from "./PostPhotoLink";
 
 const KIND_LABEL: Record<string, string> = {
   stop: t("kindStop"),
@@ -53,25 +55,8 @@ export default function TownDetailPanel({
   const quote = quoteFor(place);
   const featured = featuredVisitFor(place);
 
-  // The floating variant is only used on mobile web (desktop embeds the panel
-  // in the sidebar). Anchor it as a bottom sheet so it never overlaps the
-  // top-left progress card or the top-right map controls.
-  const floating = embedded
-    ? ""
-    : "absolute inset-x-3 bottom-3 max-h-[60vh] overflow-y-auto rounded-lg border border-border bg-card/95 p-4 shadow-sm";
-
   return (
-    <div className={`flex flex-col gap-2 text-sm text-foreground ${floating}`}>
-      <div className="flex items-start justify-between">
-        <h2 className="text-base font-bold">{book?.name ?? place}</h2>
-        <button
-          onClick={onClose}
-          aria-label={t("close")}
-          className="rounded px-1 text-muted-foreground hover:text-foreground"
-        >
-          ✕
-        </button>
-      </div>
+    <PanelShell title={book?.name ?? place} embedded={embedded} onClose={onClose}>
       {book?.qualifier && <span className="text-muted-foreground">{book.qualifier}</span>}
       {alsoIndexedAs.length > 0 && (
         <span className="text-xs text-muted-foreground">
@@ -118,13 +103,13 @@ export default function TownDetailPanel({
       )}
 
       {featured && (
-        <div className="rounded-md bg-accent p-2 text-[13px] text-accent-foreground">
-          {t("fromTheBlog")}{" "}
-          <a className="font-medium underline" href={featured.postUrl}>{featured.postTitle}</a>
-          {featured.date && (
-            <span className="text-muted-foreground"> · {featured.date}</span>
-          )}
-        </div>
+        <PostPhotoLink
+          image={featured.image}
+          postUrl={featured.postUrl}
+          postTitle={featured.postTitle}
+          date={featured.date}
+          alt={book?.name ?? place}
+        />
       )}
 
       <a
@@ -161,6 +146,6 @@ export default function TownDetailPanel({
           )}
         </div>
       )}
-    </div>
+    </PanelShell>
   );
 }

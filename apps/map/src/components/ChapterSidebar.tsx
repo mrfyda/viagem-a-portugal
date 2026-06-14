@@ -2,12 +2,16 @@ import { chapters } from "../lib/book";
 import { stops } from "../lib/geo";
 import { t } from "../lib/i18n";
 import { CHAPTER_COLORS } from "../lib/mapStyle";
+import type { Detour } from "../lib/detours";
+import DetourDetailPanel from "./DetourDetailPanel";
 import TownDetailPanel, { type TownDetailPanelProps } from "./TownDetailPanel";
 import TownSearch from "./TownSearch";
 
 export interface ChapterSidebarProps {
   selectedPlace: string | null;
   detailProps: Omit<TownDetailPanelProps, "place" | "embedded"> | null;
+  selectedDetour: Detour | null;
+  onCloseDetour: () => void;
   onFocusChapter: (chapter: number) => void;
   onSelectPlace: (indexName: string) => void;
 }
@@ -22,6 +26,8 @@ for (const s of stops) {
 export default function ChapterSidebar({
   selectedPlace,
   detailProps,
+  selectedDetour,
+  onCloseDetour,
   onFocusChapter,
   onSelectPlace,
 }: ChapterSidebarProps) {
@@ -37,6 +43,16 @@ export default function ChapterSidebar({
             {t("backToChapters")}
           </button>
           <TownDetailPanel place={selectedPlace} embedded {...detailProps} />
+        </>
+      ) : selectedDetour ? (
+        <>
+          <button
+            onClick={onCloseDetour}
+            className="self-start text-[13px] text-muted-foreground hover:text-foreground"
+          >
+            {t("backToChapters")}
+          </button>
+          <DetourDetailPanel detour={selectedDetour} embedded onClose={onCloseDetour} />
         </>
       ) : (
         <>

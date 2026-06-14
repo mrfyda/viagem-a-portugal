@@ -25,6 +25,11 @@ export const CHAPTER_COLORS: Record<number, string> = {
   6: "#db2777", // pink
 };
 
+// Detour markers (ADR 0010): a solid slate dot with a white ring — the same dot
+// family as the book places, but a neutral colour outside the amber/green and
+// chapter palette, so an off-book place reads as a place apart.
+export const DETOUR_COLOR = "#64748b"; // slate-500
+
 export const ROUTE_COLOR: ExpressionSpecification = [
   "match",
   ["get", "chapter"],
@@ -38,9 +43,16 @@ export const ROUTE_COLOR: ExpressionSpecification = [
 ];
 
 /**
+ * Smallest marker radius — bumped up from 4 so 1-page villages stay tappable on
+ * mobile. Also the fixed size of Detour markers, so an off-book point matches
+ * the smallest book dot.
+ */
+export const MARKER_MIN_RADIUS = 7;
+
+/**
  * Pin radius scaled by how often the place appears in the book: 1-page
- * villages stay small, Lisboa/Peniche-grade stops stand out. Visited towns
- * get a small extra bump.
+ * villages stay at the minimum, Lisboa/Peniche-grade stops stand out. Visited
+ * towns get a small extra bump.
  */
 export const TOWN_RADIUS: ExpressionSpecification = [
   "+",
@@ -48,10 +60,10 @@ export const TOWN_RADIUS: ExpressionSpecification = [
     "interpolate",
     ["linear"],
     ["get", "mentions"],
-    1, 4,
-    4, 6,
-    10, 8,
-    56, 13,
+    1, MARKER_MIN_RADIUS,
+    4, MARKER_MIN_RADIUS + 2,
+    10, MARKER_MIN_RADIUS + 4,
+    56, MARKER_MIN_RADIUS + 8,
   ],
   ["case", ["get", "visited"], 1, 0],
 ];

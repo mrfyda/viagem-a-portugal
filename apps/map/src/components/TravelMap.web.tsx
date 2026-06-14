@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { useCountUp } from "../hooks/useCountUp";
 import { useProgress } from "../hooks/useProgress";
-import { useSelectedPlace } from "../hooks/useSelectedPlace";
+import { useSelection } from "../hooks/useSelection";
 import { useSession } from "../hooks/useSession";
 import {
   buildTownsGeoJson,
@@ -16,10 +16,13 @@ import {
   routesGeoJson,
   stops,
 } from "../lib/geo";
+import { detourBySlug, detourCenter, detoursGeoJson } from "../lib/detours";
 import { chapters } from "../lib/book";
 import {
   CHAPTER_COLORS,
+  DETOUR_COLOR,
   fetchMapStyle,
+  MARKER_MIN_RADIUS,
   ROUTE_COLOR,
   TOWN_COLOR,
   TOWN_RADIUS,
@@ -28,6 +31,7 @@ import { t } from "../lib/i18n";
 import { useIsDesktop } from "../hooks/useIsDesktop";
 import AuthPanel from "./AuthPanel";
 import ChapterSidebar from "./ChapterSidebar";
+import DetourDetailPanel from "./DetourDetailPanel";
 import TownDetailPanel from "./TownDetailPanel";
 import TownSearch from "./TownSearch";
 
@@ -37,7 +41,10 @@ export default function TravelMap() {
   const [mapReady, setMapReady] = useState(false);
   const [loadFailed, setLoadFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
-  const [selectedPlace, setSelectedPlace] = useSelectedPlace();
+  const { selection, selectPlace, selectDetour, clear } = useSelection();
+  const selectedPlace = selection?.kind === "place" ? selection.id : null;
+  const selectedDetour =
+    selection?.kind === "detour" ? detourBySlug(selection.slug) ?? null : null;
   const [hiddenChapters, setHiddenChapters] = useState<ReadonlySet<number>>(
     new Set(),
   );
@@ -122,6 +129,21 @@ export default function TravelMap() {
         },
       });
 
+      // Detours (ADR 0010): hollow grey rings, above the town dots and clear of
+      // the routes — they read as "not part of the journey".
+      map.addSource("detours", { type: "geojson", data: detoursGeoJson });
+      map.addLayer({
+        id: "detours",
+        type: "circle",
+        source: "detours",
+        paint: {
+          "circle-radius": MARKER_MIN_RADIUS,
+          "circle-color": DETOUR_COLOR,
+          "circle-stroke-color": "#ffffff",
+          "circle-stroke-width": 2,
+        },
+      });
+
       const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
       map.on("mouseenter", "towns", (event) => {
         const feature = event.features?.[0];
@@ -139,7 +161,26 @@ export default function TravelMap() {
       });
       map.on("click", "towns", (event) => {
         const feature = event.features?.[0];
-        if (feature) setSelectedPlace(feature.properties.indexName);
+        if (feature) selectPlace(feature.properties.indexName);
+      });
+
+      map.on("click", "detours", (event) => {
+        const feature = event.features?.[0];
+        if (feature) selectDetour(feature.properties.slug as string);
+      });
+      map.on("mouseenter", "detours", (event) => {
+        const feature = event.features?.[0];
+        if (!feature) return;
+        map.getCanvas().style.cursor = "pointer";
+        const [lon, lat] = (feature.geometry as Point).coordinates;
+        popup
+          .setLngLat([lon, lat])
+          .setText(feature.properties.name as string)
+          .addTo(map);
+      });
+      map.on("mouseleave", "detours", () => {
+        map.getCanvas().style.cursor = "";
+        popup.remove();
       });
 
       setMapReady(true);
@@ -198,11 +239,14 @@ export default function TravelMap() {
     ]);
   }, [hiddenChapters, mapReady]);
 
-  // Bring the selected Place into view — whether it came from a map click, the
-  // search box, a shared deep link, or a back/forward navigation.
+  // Bring the current selection into view — a Place or a Detour — whether it
+  // came from a map click, the search box, a shared deep link, or back/forward.
   useEffect(() => {
-    if (!mapReady || !selectedPlace) return;
-    const center = placeCenter(selectedPlace);
+    if (!mapReady || !selection) return;
+    const center =
+      selection.kind === "place"
+        ? placeCenter(selection.id)
+        : detourCenter(selection.slug);
     if (center) {
       // CSS prefers-reduced-motion can't reach maplibre's JS pan, so honour it
       // here: jump instantly instead of a 600ms ease.
@@ -211,7 +255,7 @@ export default function TravelMap() {
       ).matches;
       mapRef.current?.easeTo({ center, duration: reduce ? 0 : 600 });
     }
-  }, [selectedPlace, mapReady]);
+  }, [selection, mapReady]);
 
   const focusChapter = (n: number) => {
     const chapterStops = stops.filter((s) => s.chapter === n);
@@ -252,7 +296,7 @@ export default function TravelMap() {
         onToggleVisited: () => toggle(selectedPlace),
         onVisitDateChange: (date: string | null) =>
           setVisitDate(selectedPlace, date),
-        onClose: () => setSelectedPlace(null),
+        onClose: clear,
       }
     : null;
 
@@ -308,7 +352,7 @@ export default function TravelMap() {
             </>
           )
         )}
-        {!isDesktop && <TownSearch onSelect={setSelectedPlace} />}
+        {!isDesktop && <TownSearch onSelect={selectPlace} />}
         {!isDesktop && (
         <span style={{ display: "flex", gap: 4, flexWrap: "wrap" }}>
           {chapters.map((c) => (
@@ -340,12 +384,20 @@ export default function TravelMap() {
         <ChapterSidebar
           selectedPlace={selectedPlace}
           detailProps={detailProps}
+          selectedDetour={selectedDetour}
+          onCloseDetour={clear}
           onFocusChapter={focusChapter}
-          onSelectPlace={setSelectedPlace}
+          onSelectPlace={selectPlace}
         />
       ) : (
-        selectedPlace != null &&
-        detailProps && <TownDetailPanel place={selectedPlace} {...detailProps} />
+        <>
+          {selectedPlace != null && detailProps && (
+            <TownDetailPanel place={selectedPlace} {...detailProps} />
+          )}
+          {selectedDetour && (
+            <DetourDetailPanel detour={selectedDetour} onClose={clear} />
+          )}
+        </>
       )}
 
       {loadFailed && (

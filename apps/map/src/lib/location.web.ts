@@ -1,25 +1,32 @@
 /**
- * URL-driven navigation for the web build: the selected Place lives in a
- * `?place=<indexName>` query param so it is deep-linkable, survives a
- * refresh, and rides the browser's back/forward history. Copying the URL is
- * the way to share a journey view.
+ * URL-driven navigation for the web build: the current selection lives in a
+ * query param so it is deep-linkable, survives a refresh, and rides the
+ * browser's back/forward history. A book Place uses `?place=<indexName>`; a
+ * Detour (ADR 0010) uses `?detour=<slug>`. The two are mutually exclusive —
+ * writing one clears the other, so there is always a single selection.
  */
 
-const PARAM = "place";
+const PLACE = "place";
+const DETOUR = "detour";
 
-export function readPlaceParam(): string | null {
+function read(param: string): string | null {
   try {
-    return new URLSearchParams(window.location.search).get(PARAM);
+    return new URLSearchParams(window.location.search).get(param);
   } catch {
     return null;
   }
 }
 
-export function writePlaceParam(place: string | null): void {
+export const readPlaceParam = (): string | null => read(PLACE);
+export const readDetourParam = (): string | null => read(DETOUR);
+
+// Single selection: clear both params, then set the one being written.
+function writeSelection(param: string | null, value: string | null): void {
   try {
     const url = new URL(window.location.href);
-    if (place) url.searchParams.set(PARAM, place);
-    else url.searchParams.delete(PARAM);
+    url.searchParams.delete(PLACE);
+    url.searchParams.delete(DETOUR);
+    if (param && value) url.searchParams.set(param, value);
     if (url.href !== window.location.href) {
       window.history.pushState(null, "", url);
     }
@@ -28,11 +35,13 @@ export function writePlaceParam(place: string | null): void {
   }
 }
 
-/** Fires on back/forward (popstate) with the param's new value. */
-export function subscribePlaceParam(
-  onChange: (place: string | null) => void,
-): () => void {
-  const handler = () => onChange(readPlaceParam());
-  window.addEventListener("popstate", handler);
-  return () => window.removeEventListener("popstate", handler);
+export const writePlaceParam = (place: string | null): void =>
+  writeSelection(place ? PLACE : null, place);
+export const writeDetourParam = (detour: string | null): void =>
+  writeSelection(detour ? DETOUR : null, detour);
+
+/** Fires on back/forward (popstate); the caller re-reads both params. */
+export function subscribeSelectionParams(onChange: () => void): () => void {
+  window.addEventListener("popstate", onChange);
+  return () => window.removeEventListener("popstate", onChange);
 }

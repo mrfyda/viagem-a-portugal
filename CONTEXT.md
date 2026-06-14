@@ -48,3 +48,10 @@ _Avoid_: user, account, member
 A Traveler marking a Place as traveled, with an optional user-entered date.
 Belongs to the Traveler's journey, never Saramago's.
 _Avoid_: check-in, visited flag
+
+**Detour**:
+A real-world place visited on the retracing that has no entry in the book's
+index: off Saramago's route and not part of his 1979 journey, often postdating
+it (e.g. the Mazouco rock engravings, discovered 1981).
+_Avoid_: side trip (reserved for Saramago's own out-and-backs within a Route),
+waypoint, off-book place
