@@ -21,8 +21,10 @@ jobs:
             echo "SUPABASE_URL secret not set — skipping"
             exit 0
           fi
-          # anonymous select; RLS returns an empty list, but it counts as activity
-          curl -sf "$SUPABASE_URL/rest/v1/visits?select=index_name&limit=1" \
-            -H "apikey: $SUPABASE_ANON_KEY" \
-            -H "Authorization: Bearer $SUPABASE_ANON_KEY" > /dev/null
+          # Ping the PostgREST root — 200 with just the anon apikey, and it
+          # still exercises the DB (schema introspection) so the free-tier
+          # project stays awake. The visits table is intentionally anon-revoked
+          # (docs/adr/0007), so querying it here would 401.
+          curl -sf "$SUPABASE_URL/rest/v1/" \
+            -H "apikey: $SUPABASE_ANON_KEY" > /dev/null
           echo "pinged"
