@@ -68,6 +68,11 @@ def main() -> None:
         (c["chapter"], c["place"]): (c["latitude"], c["longitude"])
         for c in ov["coords"]
     }
+    # reviewed splits: an index entry the book reuses for two different
+    # physical places (e.g. "Lagoa" is both the Óbidos lagoon in ch4 and the
+    # Algarve town in ch6). The homonym referent is emitted under its own
+    # name so each renders one marker with its own panel/quote.
+    renames = {(s["chapter"], s["place"]): s["name"] for s in ov.get("splits", [])}
 
     def coord_of(chapter: int, place: str) -> tuple[float, float]:
         return chapter_coords_override.get((chapter, place)) or coords[place]
@@ -222,7 +227,7 @@ def main() -> None:
             out.append(
                 {
                     "ordinal": ordinal,
-                    "place": s["place"],
+                    "place": renames.get((chapter, s["place"]), s["place"]),
                     "chapter": chapter,
                     "section": s["pos"][0],
                     "role": s["kind"],  # "stop" | "passed-through"

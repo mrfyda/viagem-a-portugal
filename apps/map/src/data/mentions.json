@@ -2963,11 +2963,6 @@
  ],
  "Lagoa": [
   {
-   "chapter": 4,
-   "section": 40,
-   "kind": "stop"
-  },
-  {
    "chapter": 6,
    "section": 54,
    "kind": "passed-through"
@@ -2983,6 +2978,13 @@
    "chapter": 3,
    "section": 30,
    "kind": "referenced-only"
+  }
+ ],
+ "Lagoa de Óbidos": [
+  {
+   "chapter": 4,
+   "section": 40,
+   "kind": "stop"
   }
  ],
  "Lagos": [
@@ -3791,6 +3793,18 @@
    "kind": "stop"
   }
  ],
+ "Monte de São Brás": [
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "stop"
+  },
+  {
+   "chapter": 1,
+   "section": 10,
+   "kind": "referenced-only"
+  }
+ ],
  "Montemor-o-Novo": [
   {
    "chapter": 5,
@@ -4488,11 +4502,6 @@
  ],
  "Pias": [
   {
-   "chapter": 1,
-   "section": 12,
-   "kind": "stop"
-  },
-  {
    "chapter": 5,
    "section": 50,
    "kind": "referenced-only"
@@ -4500,6 +4509,13 @@
   {
    "chapter": 5,
    "section": 50,
+   "kind": "stop"
+  }
+ ],
+ "Pias (Monção)": [
+  {
+   "chapter": 1,
+   "section": 12,
    "kind": "stop"
   }
  ],
@@ -5646,16 +5662,6 @@
   }
  ],
  "São Brás": [
-  {
-   "chapter": 1,
-   "section": 10,
-   "kind": "stop"
-  },
-  {
-   "chapter": 1,
-   "section": 10,
-   "kind": "referenced-only"
-  },
   {
    "chapter": 4,
    "section": 41,

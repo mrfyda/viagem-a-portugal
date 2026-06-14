@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 
-import { bookPlaceByName } from "../lib/book";
 import { detourBySlug } from "../lib/detours";
+import { towns } from "../lib/geo";
 import {
   readDetourParam,
   readPlaceParam,
@@ -15,10 +15,16 @@ export type Selection =
   | { kind: "detour"; slug: string }
   | null;
 
+// A Place is selectable iff it has a rendered marker — every dot the user can
+// click. This is the towns set (toponymic-index Places plus split homonym
+// referents like "Lagoa de Óbidos" that live in corrections.json, not the
+// index), and it excludes un-geocoded (0,0) Places that have no dot.
+const selectablePlaces = new Set(towns.map((t) => t.name));
+
 /** Read the current selection from the URL, ignoring stale/invalid links. */
 function fromUrl(): Selection {
   const place = readPlaceParam();
-  if (place && bookPlaceByName.has(place)) return { kind: "place", id: place };
+  if (place && selectablePlaces.has(place)) return { kind: "place", id: place };
   const detour = readDetourParam();
   if (detour && detourBySlug(detour)) return { kind: "detour", slug: detour };
   return null;
@@ -36,7 +42,7 @@ export function useSelection() {
   useEffect(() => subscribeSelectionParams(() => setSelection(fromUrl())), []);
 
   const selectPlace = useCallback((id: string | null) => {
-    const valid = id && bookPlaceByName.has(id) ? id : null;
+    const valid = id && selectablePlaces.has(id) ? id : null;
     setSelection(valid ? { kind: "place", id: valid } : null);
     writePlaceParam(valid);
   }, []);

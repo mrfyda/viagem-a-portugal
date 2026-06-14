@@ -19,20 +19,26 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 CLASSIFICATIONS = REPO / "tools/book-pipeline/classifications.json"
+OVERRIDES = REPO / "tools/book-pipeline/journey-overrides.json"
 OUTPUT = REPO / "apps/map/src/data/mentions.json"
 
 
 def main() -> None:
     mentions = json.loads(CLASSIFICATIONS.read_text(encoding="utf-8"))["mentions"]
+    # reviewed splits re-label a homonym referent's mentions to its own name,
+    # matching derive_stops.py (e.g. ch4 "Lagoa" -> "Lagoa de Óbidos").
+    ov = json.loads(OVERRIDES.read_text(encoding="utf-8"))
+    renames = {(s["chapter"], s["place"]): s["name"] for s in ov.get("splits", [])}
     per_place: dict[str, list] = defaultdict(list)
     seen = set()
     for m in sorted(mentions, key=lambda m: (m["section"], m["offset"])):
         for cand in m["candidates"]:
-            key = (cand, m["section"], m["kind"])
+            name = renames.get((m["chapter"], cand), cand)
+            key = (name, m["section"], m["kind"])
             if key in seen:
                 continue  # one entry per (place, section, kind)
             seen.add(key)
-            per_place[cand].append(
+            per_place[name].append(
                 {"chapter": m["chapter"], "section": m["section"], "kind": m["kind"]}
             )
 

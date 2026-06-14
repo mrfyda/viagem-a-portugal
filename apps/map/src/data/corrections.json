@@ -183,5 +183,20 @@
     "name": "Lama",
     "latitude": 41.569,
     "longitude": -8.537
+  },
+  {
+    "name": "Lagoa de Óbidos",
+    "latitude": 39.405,
+    "longitude": -9.22
+  },
+  {
+    "name": "Pias (Monção)",
+    "latitude": 42.0211,
+    "longitude": -8.5079
+  },
+  {
+    "name": "Monte de São Brás",
+    "latitude": 41.2196,
+    "longitude": -8.66182
   }
 ]

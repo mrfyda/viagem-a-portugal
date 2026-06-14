@@ -293,5 +293,25 @@
    "chapter": 6,
    "note": "beach-bathing recap spans the Algarve; he did stop there"
   }
+ ],
+ "splits": [
+  {
+   "place": "Lagoa",
+   "chapter": 4,
+   "name": "Lagoa de Óbidos",
+   "note": "ch4 Lagoa de Óbidos lagoon (the quote), a distinct place from the Algarve town indexed as 'Lagoa' (p381)"
+  },
+  {
+   "place": "Pias",
+   "chapter": 1,
+   "name": "Pias (Monção)",
+   "note": "ch1 Pias by the Minho near Monção, distinct from Pias de Serpa indexed as 'Pias' (p352)"
+  },
+  {
+   "place": "São Brás",
+   "chapter": 1,
+   "name": "Monte de São Brás",
+   "note": "ch1 Monte de São Brás, Matosinhos, distinct from São Brás do Alentejo indexed as 'São Brás' (p353)"
+  }
  ]
 }

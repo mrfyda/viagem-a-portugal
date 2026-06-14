@@ -1,7 +1,14 @@
 import { describe, expect, it } from "vitest";
 
 import { aliases, bookPlaceByName, bookPlaces, chapters } from "../book";
+import corrections from "../../data/corrections.json";
 import { routesGeoJson, stops, towns } from "../geo";
+
+// Split homonym referents (e.g. "Lagoa de Óbidos") are real journey stops that
+// are NOT toponymic-index entries; they carry their coordinate in corrections.
+const correctedNames = new Set(
+  (corrections as { name: string }[]).map((c) => c.name),
+);
 
 // generous Iberia-west box: continental Portugal + Spanish border places
 const inRange = (lat: number, lon: number) =>
@@ -45,9 +52,12 @@ describe("journey stops", () => {
     );
   });
 
-  it("every stop references an index place and has coordinates in range", () => {
+  it("every stop references a known place and has coordinates in range", () => {
     for (const s of stops) {
-      expect(bookPlaceByName.has(s.place), s.place).toBe(true);
+      expect(
+        bookPlaceByName.has(s.place) || correctedNames.has(s.place),
+        s.place,
+      ).toBe(true);
       expect(inRange(s.latitude, s.longitude), `${s.place} coords`).toBe(true);
       expect([1, 2, 3, 4, 5, 6]).toContain(s.chapter);
       expect(["stop", "passed-through"]).toContain(s.role);
