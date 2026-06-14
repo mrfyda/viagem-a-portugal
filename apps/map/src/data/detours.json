@@ -1,5 +1,14 @@
 [
  {
+  "name": "Anta do Mezio",
+  "lat": 41.8854,
+  "lon": -8.314,
+  "note": "Anta do Mezio, monumento megalítico (c. 3000 a.C.) junto à Porta do Mezio, entrada do Parque Nacional da Peneda-Gerês em Arcos de Valdevez — fora do percurso de Saramago.",
+  "image": "/assets/viagem-2/anta-do-mezio.avif",
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+ },
+ {
   "name": "Atenor",
   "lat": 41.4166,
   "lon": -6.4856,
@@ -7,6 +16,24 @@
   "image": "/assets/viagem-1/atenor.avif",
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩"
+ },
+ {
+  "name": "Boticas",
+  "lat": 41.68827,
+  "lon": -7.66498,
+  "note": "Vila de Boticas, nas Terras de Barroso — fora da viagem de Saramago.",
+  "image": "/assets/viagem-2/boticas.avif",
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+ },
+ {
+  "name": "Capela da Senhora da Lage",
+  "lat": 40.87827,
+  "lon": -8.30282,
+  "note": "Capela de Nossa Senhora da Lage, na Serra da Freita (Arouca) — fora do percurso de Saramago.",
+  "image": "/assets/viagem-2/capela-da-senhora-da-lage.avif",
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
  },
  {
   "name": "Mazouco",
@@ -18,6 +45,33 @@
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩"
  },
  {
+  "name": "Montalegre",
+  "lat": 41.82503,
+  "lon": -7.7913,
+  "note": "Vila de Montalegre, dominada pelo castelo medieval, no planalto do Barroso — fora do percurso de Saramago.",
+  "image": "/assets/viagem-2/montalegre-1.avif",
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+ },
+ {
+  "name": "Outeiro",
+  "lat": 41.78972,
+  "lon": -7.94581,
+  "note": "Aldeia de Outeiro, no planalto da Mourela (Montalegre), dentro do Parque Nacional da Peneda-Gerês — fora da viagem de Saramago.",
+  "image": "/assets/viagem-2/outeiro-1.avif",
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+ },
+ {
+  "name": "Pedras Parideiras",
+  "lat": 40.85058,
+  "lon": -8.28304,
+  "note": "Centro de Interpretação das Pedras Parideiras, na Castanheira (Serra da Freita, Arouca Geopark) — fora do percurso de Saramago.",
+  "image": "/assets/viagem-2/pedras-parideiras-1.avif",
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+ },
+ {
   "name": "Pedras Salgadas",
   "lat": 41.5467,
   "lon": -7.6062,
@@ -25,5 +79,14 @@
   "image": "/assets/viagem-1/pedras-salgadas-1.avif",
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩"
+ },
+ {
+  "name": "Pitões das Júnias",
+  "lat": 41.83106,
+  "lon": -7.94266,
+  "note": "Aldeia de Pitões das Júnias, no Parque Nacional da Peneda-Gerês, junto ao Mosteiro de Santa Maria das Júnias — fora do percurso de Saramago.",
+  "image": "/assets/viagem-2/pitoes-das-junias.avif",
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
  }
 ]

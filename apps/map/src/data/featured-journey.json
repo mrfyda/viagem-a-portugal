@@ -1,4 +1,34 @@
 {
+ "Abade de Neiva": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/abade-de-neiva.avif"
+ },
+ "Amarante": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/amarante-1.avif"
+ },
+ "Arcos de Valdevez": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/arcos-de-valdevez.avif"
+ },
+ "Arouca": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/arouca.avif"
+ },
+ "Barcelos": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/barcelos-1.avif"
+ },
  "Bragança": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
@@ -17,11 +47,23 @@
   "date": "2023-02-18",
   "image": "/assets/viagem-1/carrazedo-de-montenegro-4.avif"
  },
+ "Castro Laboreiro": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/castro-laboreiro.avif"
+ },
  "Chaves": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
   "date": "2023-02-18",
   "image": "/assets/viagem-1/chaves-4.avif"
+ },
+ "Covide": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/covide.avif"
  },
  "Figueira de Castelo Rodrigo": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
@@ -29,11 +71,23 @@
   "date": "2023-02-18",
   "image": "/assets/viagem-1/figueira-de-castelo-rodrigo.avif"
  },
+ "Fátima": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/fatima.avif"
+ },
  "Guadramil": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
   "date": "2023-02-18",
   "image": "/assets/viagem-1/guadramil-2.avif"
+ },
+ "Melgaço": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/melgaco.avif"
  },
  "Miranda do Douro": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
@@ -53,11 +107,41 @@
   "date": "2023-02-18",
   "image": "/assets/viagem-1/mogadouro-2.avif"
  },
+ "Monção": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/moncao.avif"
+ },
  "Murça": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
   "date": "2023-02-18",
   "image": "/assets/viagem-1/murca.avif"
+ },
+ "Nossa Senhora da Orada": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/nossa-senhora-da-orada.avif"
+ },
+ "Parada de Cunhos": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/parada-de-cunhos.avif"
+ },
+ "Ponte da Barca": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/ponte-da-barca-1.avif"
+ },
+ "Ponte de Lima": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/ponte-de-lima.avif"
  },
  "Rio de Onor": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
@@ -65,11 +149,53 @@
   "date": "2023-02-18",
   "image": "/assets/viagem-1/rio-de-onor-1.avif"
  },
+ "Rubiães": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/rubiaes-1.avif"
+ },
+ "Santa Eulália": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/santa-eulalia-1.avif"
+ },
  "Sendim": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
   "date": "2023-02-18",
   "image": "/assets/viagem-1/sendim-1.avif"
+ },
+ "Soajo": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/soajo.avif"
+ },
+ "São Bento da Porta Aberta": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/sao-bento-da-porta-aberta.avif"
+ },
+ "São João de Gatão": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/sao-joao-de-gatao.avif"
+ },
+ "São Miguel de Ceide": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/sao-miguel-de-ceide.avif"
+ },
+ "Tabuado": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/tabuado.avif"
  },
  "Torre de Moncorvo": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
@@ -77,17 +203,47 @@
   "date": "2023-02-18",
   "image": "/assets/viagem-1/torre-de-moncorvo.avif"
  },
+ "Valença": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/valenca.avif"
+ },
  "Vila Flor": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
   "date": "2023-02-18",
   "image": "/assets/viagem-1/vila-flor-1.avif"
  },
+ "Vila Nova de Famalicão": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/vila-nova-de-famalicao.avif"
+ },
  "Vila Nova de Foz Côa": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
   "date": "2023-02-18",
   "image": "/assets/viagem-1/vila-nova-de-foz-coa.avif"
+ },
+ "Vila Pouca de Aguiar": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/vila-pouca-de-aguiar-1.avif"
+ },
+ "Vila Real": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/vila-real-1.avif"
+ },
+ "Vilarinho de Samardã": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/vilarinho-de-samarda-1.avif"
  },
  "Vilaverdinho": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
@@ -100,5 +256,11 @@
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
   "date": "2023-02-18",
   "image": "/assets/viagem-1/vimioso.avif"
+ },
+ "Águeda": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/agueda.avif"
  }
 }
