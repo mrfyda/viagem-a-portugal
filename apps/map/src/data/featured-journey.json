@@ -5,6 +5,12 @@
   "date": "2023-06-03",
   "image": "/assets/viagem-2/abade-de-neiva.avif"
  },
+ "Abrantes": {
+  "postUrl": "/2023/11/05/viagem-a-portugal-iii/",
+  "postTitle": "Viagem a Portugal III — ⟨título a confirmar⟩",
+  "date": "2023-10-31",
+  "image": "/assets/viagem-3/abrantes-1.avif"
+ },
  "Amarante": {
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
   "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
@@ -41,11 +47,29 @@
   "date": "2023-02-18",
   "image": "/assets/viagem-1/bucaco-2.avif"
  },
+ "Caminha": {
+  "postUrl": "/2026/04/06/viagem-a-portugal-iv/",
+  "postTitle": "Viagem a Portugal IV — ⟨título a confirmar⟩",
+  "date": "2026-04-03",
+  "image": "/assets/viagem-4/caminha.avif"
+ },
+ "Campo Maior": {
+  "postUrl": "/2023/11/05/viagem-a-portugal-iii/",
+  "postTitle": "Viagem a Portugal III — ⟨título a confirmar⟩",
+  "date": "2023-10-31",
+  "image": "/assets/viagem-3/campo-maior.avif"
+ },
  "Carrazedo de Montenegro": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
   "date": "2023-02-18",
   "image": "/assets/viagem-1/carrazedo-de-montenegro-4.avif"
+ },
+ "Castelo de Vide": {
+  "postUrl": "/2023/11/05/viagem-a-portugal-iii/",
+  "postTitle": "Viagem a Portugal III — ⟨título a confirmar⟩",
+  "date": "2023-10-31",
+  "image": "/assets/viagem-3/castelo-de-vide.avif"
  },
  "Castro Laboreiro": {
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
@@ -143,6 +167,12 @@
   "date": "2023-06-03",
   "image": "/assets/viagem-2/ponte-de-lima.avif"
  },
+ "Portalegre": {
+  "postUrl": "/2023/11/05/viagem-a-portugal-iii/",
+  "postTitle": "Viagem a Portugal III — ⟨título a confirmar⟩",
+  "date": "2023-10-31",
+  "image": "/assets/viagem-3/portalegre.avif"
+ },
  "Rio de Onor": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
@@ -209,11 +239,23 @@
   "date": "2023-06-03",
   "image": "/assets/viagem-2/valenca.avif"
  },
+ "Viana do Castelo": {
+  "postUrl": "/2026/04/06/viagem-a-portugal-iv/",
+  "postTitle": "Viagem a Portugal IV — ⟨título a confirmar⟩",
+  "date": "2026-04-03",
+  "image": "/assets/viagem-4/viana-do-castelo.avif"
+ },
  "Vila Flor": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
   "date": "2023-02-18",
   "image": "/assets/viagem-1/vila-flor-1.avif"
+ },
+ "Vila Nova de Cerveira": {
+  "postUrl": "/2026/04/06/viagem-a-portugal-iv/",
+  "postTitle": "Viagem a Portugal IV — ⟨título a confirmar⟩",
+  "date": "2026-04-03",
+  "image": "/assets/viagem-4/vila-nova-de-cerveira.avif"
  },
  "Vila Nova de Famalicão": {
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
