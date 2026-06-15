@@ -17,9 +17,7 @@ import {
   stops,
 } from "../lib/geo";
 import { detourBySlug, detourCenter, detoursGeoJson } from "../lib/detours";
-import { chapters } from "../lib/book";
 import {
-  CHAPTER_COLORS,
   DETOUR_COLOR,
   fetchMapStyle,
   MARKER_MIN_RADIUS,
@@ -30,10 +28,9 @@ import {
 import { t } from "../lib/i18n";
 import { useIsDesktop } from "../hooks/useIsDesktop";
 import AuthPanel from "./AuthPanel";
-import ChapterSidebar from "./ChapterSidebar";
 import DetourDetailPanel from "./DetourDetailPanel";
+import MapSidebar from "./MapSidebar";
 import TownDetailPanel from "./TownDetailPanel";
-import TownSearch from "./TownSearch";
 
 export default function TravelMap() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -45,9 +42,6 @@ export default function TravelMap() {
   const selectedPlace = selection?.kind === "place" ? selection.id : null;
   const selectedDetour =
     selection?.kind === "detour" ? detourBySlug(selection.slug) ?? null : null;
-  const [hiddenChapters, setHiddenChapters] = useState<ReadonlySet<number>>(
-    new Set(),
-  );
 
   const isDesktop = useIsDesktop();
   const { session, loading: authLoading, configured, signIn, signUp, signOut } =
@@ -193,9 +187,9 @@ export default function TravelMap() {
     };
   }, [attempt]);
 
-  // Place the zoom + geolocate controls opposite the open chrome so they never
-  // sit under a panel: on desktop the journey sidebar owns the whole right edge
-  // (controls go bottom-left); on mobile the detail panel is a bottom sheet
+  // Place the zoom + geolocate controls clear of the open chrome so they never
+  // sit under a panel: the single sidebar now owns the left edge, so on desktop
+  // the controls go bottom-right; on mobile the detail panel is a bottom sheet
   // (controls stay top-right / bottom-right). Re-runs when the breakpoint flips.
   // The geolocate button drops the standard blue location dot + accuracy ring
   // and recentres on the visitor — pure browser geolocation, no Visit data.
@@ -208,8 +202,8 @@ export default function TravelMap() {
       trackUserLocation: true,
       showUserLocation: true,
     });
-    map.addControl(nav, isDesktop ? "bottom-left" : "top-right");
-    map.addControl(geolocate, isDesktop ? "bottom-left" : "bottom-right");
+    map.addControl(nav, isDesktop ? "bottom-right" : "top-right");
+    map.addControl(geolocate, "bottom-right");
     return () => {
       // No-op if the map was already torn down (attempt change / unmount).
       try {
@@ -226,18 +220,6 @@ export default function TravelMap() {
     const source = mapRef.current?.getSource<maplibregl.GeoJSONSource>("towns");
     source?.setData(buildTownsGeoJson(visits));
   }, [visits, mapReady]);
-
-  useEffect(() => {
-    if (!mapReady) return;
-    const visible = chapters
-      .map((c) => c.number)
-      .filter((n) => !hiddenChapters.has(n));
-    mapRef.current?.setFilter("routes", [
-      "in",
-      ["get", "chapter"],
-      ["literal", visible],
-    ]);
-  }, [hiddenChapters, mapReady]);
 
   // Bring the current selection into view — a Place or a Detour — whether it
   // came from a map click, the search box, a shared deep link, or back/forward.
@@ -270,18 +252,6 @@ export default function TravelMap() {
     );
   };
 
-  const toggleChapter = (n: number) =>
-    setHiddenChapters((current) => {
-      const next = new Set(current);
-      if (next.has(n)) {
-        next.delete(n);
-        focusChapter(n);
-      } else {
-        next.add(n);
-      }
-      return next;
-    });
-
   const detailProps = selectedPlace
     ? {
         isVisited: visits.has(selectedPlace),
@@ -306,9 +276,8 @@ export default function TravelMap() {
     <div style={{ width: "100%", height: "100%", position: "relative" }}>
       <div ref={containerRef} style={{ width: "100%", height: "100%" }} />
 
-      <div className="absolute left-3 top-3 flex max-w-[280px] flex-col gap-1.5 rounded-lg border border-border bg-card/95 p-4 text-sm text-foreground shadow-sm max-[359px]:max-w-[240px]">
-        <h1 className="text-base font-bold">Viagem a Portugal</h1>
-        {session ? (
+      {(() => {
+        const header = session ? (
           <>
             <span>
               {t("progress", {
@@ -351,53 +320,26 @@ export default function TravelMap() {
               </button>
             </>
           )
-        )}
-        {!isDesktop && <TownSearch onSelect={selectPlace} />}
-        {!isDesktop && (
-        <span style={{ display: "flex", gap: 4, flexWrap: "wrap" }}>
-          {chapters.map((c) => (
-            <button
-              key={c.number}
-              className="min-h-[22px] min-w-[28px] cursor-pointer rounded-full px-2 text-xs font-medium pointer-coarse:min-h-[44px] pointer-coarse:min-w-[44px]"
-              onClick={() => toggleChapter(c.number)}
-              aria-pressed={!hiddenChapters.has(c.number)}
-              aria-label={`${c.number}. ${c.title}`}
-              title={c.title}
-              style={{
-                border: `2px solid ${CHAPTER_COLORS[c.number]}`,
-                background: hiddenChapters.has(c.number)
-                  ? "transparent"
-                  : CHAPTER_COLORS[c.number],
-                color: hiddenChapters.has(c.number)
-                  ? CHAPTER_COLORS[c.number]
-                  : "#fff",
-              }}
-            >
-              {c.number}
-            </button>
-          ))}
-        </span>
-        )}
-      </div>
+        );
+        return (
+          <MapSidebar
+            isDesktop={isDesktop}
+            header={header}
+            onFocusChapter={focusChapter}
+            onSelectPlace={selectPlace}
+            selectedPlace={selectedPlace}
+            detailProps={detailProps}
+            selectedDetour={selectedDetour}
+            onCloseDetour={clear}
+          />
+        );
+      })()}
 
-      {isDesktop ? (
-        <ChapterSidebar
-          selectedPlace={selectedPlace}
-          detailProps={detailProps}
-          selectedDetour={selectedDetour}
-          onCloseDetour={clear}
-          onFocusChapter={focusChapter}
-          onSelectPlace={selectPlace}
-        />
-      ) : (
-        <>
-          {selectedPlace != null && detailProps && (
-            <TownDetailPanel place={selectedPlace} {...detailProps} />
-          )}
-          {selectedDetour && (
-            <DetourDetailPanel detour={selectedDetour} onClose={clear} />
-          )}
-        </>
+      {!isDesktop && selectedPlace != null && detailProps && (
+        <TownDetailPanel place={selectedPlace} {...detailProps} />
+      )}
+      {!isDesktop && selectedDetour && (
+        <DetourDetailPanel detour={selectedDetour} onClose={clear} />
       )}
 
       {loadFailed && (

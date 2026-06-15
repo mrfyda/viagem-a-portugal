@@ -37,6 +37,8 @@ const en = {
   email: "Email",
   password: "Password",
   cancel: "Cancel",
+  navMap: "Map",
+  navAbout: "About",
 };
 
 const pt: typeof en = {
@@ -73,6 +75,8 @@ const pt: typeof en = {
   email: "Email",
   password: "Palavra-passe",
   cancel: "Cancelar",
+  navMap: "Mapa",
+  navAbout: "Sobre",
 };
 
 export type MessageKey = keyof typeof en;

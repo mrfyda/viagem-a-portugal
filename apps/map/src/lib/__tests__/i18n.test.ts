@@ -17,4 +17,11 @@ describe("i18n dictionaries", () => {
   it("t interpolates variables", () => {
     expect(t("stopOnRoute", { ordinal: 3, chapter: 1 })).toMatch(/3.+1/);
   });
+
+  it("has the blog-mirroring nav labels in both languages", () => {
+    expect(dictionaries.en.navMap).toBe("Map");
+    expect(dictionaries.en.navAbout).toBe("About");
+    expect(dictionaries.pt.navMap).toBe("Mapa");
+    expect(dictionaries.pt.navAbout).toBe("Sobre");
+  });
 });
