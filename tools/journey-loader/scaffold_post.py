@@ -70,6 +70,7 @@ def main():
     fm = ["---", "layout: post",
           f'title: "Viagem a Portugal {roman.upper()} — ⟨título a confirmar⟩"',
           f"date: {date} 18:00:00 +0000", f"visit_date: {all_days[0]}", "lang: pt",
+          "transport: car  # car | train — how this journey was travelled",
           'description: "⟨descrição curta para SEO — a escrever⟩"', "places:"]
     fm += [f"  - {t}" for t in places]
     fm.append("featured_photos:")

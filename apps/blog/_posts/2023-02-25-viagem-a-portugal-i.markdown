@@ -4,6 +4,7 @@ title: "Viagem a Portugal I — ⟨título a confirmar⟩"
 date: 2023-02-25 18:00:00 +0000
 visit_date: 2023-02-18
 lang: pt
+transport: car
 description: "⟨descrição curta para SEO — a escrever⟩"
 places:
   - Figueira de Castelo Rodrigo

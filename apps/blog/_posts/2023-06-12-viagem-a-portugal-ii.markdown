@@ -4,6 +4,7 @@ title: "Viagem a Portugal II — ⟨título a confirmar⟩"
 date: 2023-06-12 18:00:00 +0000
 visit_date: 2023-06-03
 lang: pt
+transport: car
 description: "⟨descrição curta para SEO — a escrever⟩"
 places:
   - Fátima

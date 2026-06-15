@@ -20,3 +20,17 @@ $brand-color: #0a5a3a;
     color: $brand-color;
   }
 }
+
+// Journey transport mode (car | train) shown in the post meta line.
+.post-transport {
+  color: $brand-color;
+  white-space: nowrap;
+
+  &[data-mode="car"]::before {
+    content: "🚗\00a0";
+  }
+
+  &[data-mode="train"]::before {
+    content: "🚂\00a0";
+  }
+}
