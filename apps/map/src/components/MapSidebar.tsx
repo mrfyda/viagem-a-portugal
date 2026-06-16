@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 
 import { chapters } from "../lib/book";
 import type { Detour } from "../lib/detours";
@@ -29,32 +29,87 @@ for (const s of stops) {
   }
 }
 
-/** The journey: one row per Chapter, tap to fit the map to that Chapter's Stops. */
-function ChapterList({ onFocusChapter }: { onFocusChapter: (chapter: number) => void }) {
+/**
+ * The journey: one row per Chapter, tap to fit the map to that Chapter's Stops.
+ * `compact` (mobile bottom sheet) collapses each row to a single line and drops
+ * the heading — its sheet owns the title — so six chapters cover less map.
+ */
+function ChapterList({
+  onFocusChapter,
+  compact = false,
+}: {
+  onFocusChapter: (chapter: number) => void;
+  compact?: boolean;
+}) {
   return (
     <>
-      <h2 className="text-base font-bold">{t("theJourney")}</h2>
+      {!compact && <h2 className="text-base font-bold">{t("theJourney")}</h2>}
       {chapters.map((c) => (
         <button
           key={c.number}
           onClick={() => onFocusChapter(c.number)}
-          className="flex items-center gap-2.5 rounded-md p-2 text-left transition-colors hover:bg-secondary focus-visible:bg-secondary focus-visible:outline-none"
+          className={`flex items-center gap-2.5 rounded-md text-left transition-colors hover:bg-secondary focus-visible:bg-secondary focus-visible:outline-none ${
+            compact ? "px-2 py-1.5" : "p-2"
+          }`}
         >
           <span
-            className="mt-0.5 h-3 w-3 shrink-0 rounded-full"
+            className={`shrink-0 rounded-full ${compact ? "h-2.5 w-2.5" : "mt-0.5 h-3 w-3"}`}
             style={{ background: CHAPTER_COLORS[c.number] }}
           />
-          <span className="flex-1">
-            <span className="block text-[13px] font-semibold leading-snug">
-              {c.number}. {c.title}
+          {compact ? (
+            <>
+              <span className="flex-1 truncate text-[13px] font-medium leading-snug">
+                {c.number}. {c.title}
+              </span>
+              <span className="shrink-0 text-xs text-muted-foreground">
+                {t("stopsCount", { count: stopCounts.get(c.number) ?? 0 })}
+              </span>
+            </>
+          ) : (
+            <span className="flex-1">
+              <span className="block text-[13px] font-semibold leading-snug">
+                {c.number}. {c.title}
+              </span>
+              <span className="block text-xs text-muted-foreground">
+                {t("stopsCount", { count: stopCounts.get(c.number) ?? 0 })}
+              </span>
             </span>
-            <span className="block text-xs text-muted-foreground">
-              {t("stopsCount", { count: stopCounts.get(c.number) ?? 0 })}
-            </span>
-          </span>
+          )}
         </button>
       ))}
     </>
+  );
+}
+
+/**
+ * Mobile-only journey bottom sheet: a slim tappable header that expands to the
+ * compact chapter list, so it stays out of the map's way and can collapse to a
+ * single bar.
+ */
+function MobileJourneySheet({
+  onFocusChapter,
+}: {
+  onFocusChapter: (chapter: number) => void;
+}) {
+  const [open, setOpen] = useState(true);
+  return (
+    <aside className="absolute inset-x-3 bottom-3 flex flex-col rounded-lg border border-border bg-card/95 text-sm text-foreground shadow-sm">
+      <button
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        className="flex items-center justify-between gap-2 rounded-lg px-4 py-2.5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      >
+        <span className="text-base font-bold">{t("theJourney")}</span>
+        <span className="text-xs text-muted-foreground" aria-hidden>
+          {open ? "▾" : "▸"}
+        </span>
+      </button>
+      {open && (
+        <div className="flex max-h-[40vh] flex-col gap-0.5 overflow-y-auto border-t border-border px-2 py-2">
+          <ChapterList compact onFocusChapter={onFocusChapter} />
+        </div>
+      )}
+    </aside>
   );
 }
 
@@ -81,11 +136,7 @@ export default function MapSidebar({
           {header}
           <TownSearch onSelect={onSelectPlace} />
         </aside>
-        {showJourney && (
-          <aside className="absolute inset-x-3 bottom-3 flex max-h-[45vh] flex-col gap-1.5 overflow-y-auto rounded-lg border border-border bg-card/95 p-4 text-sm text-foreground shadow-sm">
-            <ChapterList onFocusChapter={onFocusChapter} />
-          </aside>
-        )}
+        {showJourney && <MobileJourneySheet onFocusChapter={onFocusChapter} />}
       </>
     );
   }
