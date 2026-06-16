@@ -57,6 +57,41 @@ export const stops: Stop[] = stopsData.stops as Stop[];
 export const TOTAL_STOPS = stops.length;
 
 /**
+ * Selectable Places in journey order, powering the detail panel's prev/next
+ * stepper: the Stops in narrative order first (deduped — a Place can be hit by
+ * several Stops), then any remaining clickable Place ordered by its first page
+ * of appearance. Built from the same `towns` set useSelection treats as
+ * selectable, so every entry has a marker to fly to.
+ */
+export const orderedPlaces: string[] = (() => {
+  const selectable = new Set(towns.map((town) => town.name));
+  const seen = new Set<string>();
+  const order: string[] = [];
+  for (const stop of stops) {
+    if (selectable.has(stop.place) && !seen.has(stop.place)) {
+      seen.add(stop.place);
+      order.push(stop.place);
+    }
+  }
+  const firstPage = (name: string) =>
+    bookPlaceByName.get(name)?.pages[0] ?? Number.POSITIVE_INFINITY;
+  const rest = towns
+    .map((town) => town.name)
+    .filter((name) => !seen.has(name))
+    .sort((a, b) => firstPage(a) - firstPage(b));
+  return [...order, ...rest];
+})();
+
+const placeOrderIndex = new Map(orderedPlaces.map((name, i) => [name, i]));
+
+/** The adjacent selectable Place in journey order, or null at the ends. */
+export function adjacentPlace(indexName: string, delta: 1 | -1): string | null {
+  const index = placeOrderIndex.get(indexName);
+  if (index === undefined) return null;
+  return orderedPlaces[index + delta] ?? null;
+}
+
+/**
  * Multi-referent index entries ("Ermida" is a chapel noun, "São Vicente"
  * names four different churches/capes) carry per-chapter coordinates in
  * stops.json that differ from the Place's single global coordinate. Those

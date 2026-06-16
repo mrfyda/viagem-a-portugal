@@ -188,22 +188,25 @@ export default function TravelMap() {
   }, [attempt]);
 
   // Place the zoom + geolocate controls clear of the open chrome so they never
-  // sit under a panel: the single sidebar now owns the left edge, so on desktop
-  // the controls go bottom-right; on mobile the detail panel is a bottom sheet
-  // (controls stay top-right / bottom-right). Re-runs when the breakpoint flips.
-  // The geolocate button drops the standard blue location dot + accuracy ring
-  // and recentres on the visitor — pure browser geolocation, no Visit data.
+  // sit under a panel. On desktop the tall left sidebar owns the left edge, so
+  // both controls go bottom-right. On mobile the chrome is a narrow top-left
+  // card plus a bottom-sheet panel, leaving the top-right corner free — both
+  // controls live there so the bottom sheet never buries them. Re-runs when the
+  // breakpoint flips. The geolocate button drops the standard blue location dot
+  // + accuracy ring and recentres on the visitor — pure browser geolocation, no
+  // Visit data.
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !mapReady) return;
+    const corner = isDesktop ? "bottom-right" : "top-right";
     const nav = new maplibregl.NavigationControl();
     const geolocate = new maplibregl.GeolocateControl({
       positionOptions: { enableHighAccuracy: true },
       trackUserLocation: true,
       showUserLocation: true,
     });
-    map.addControl(nav, isDesktop ? "bottom-right" : "top-right");
-    map.addControl(geolocate, "bottom-right");
+    map.addControl(nav, corner);
+    map.addControl(geolocate, corner);
     return () => {
       // No-op if the map was already torn down (attempt change / unmount).
       try {
@@ -267,6 +270,7 @@ export default function TravelMap() {
         onVisitDateChange: (date: string | null) =>
           setVisitDate(selectedPlace, date),
         onClose: clear,
+        onNavigate: selectPlace,
       }
     : null;
 

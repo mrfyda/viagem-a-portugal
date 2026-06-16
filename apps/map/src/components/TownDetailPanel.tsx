@@ -5,7 +5,7 @@ import {
   sectionTitle,
 } from "../lib/book";
 import { featuredVisitFor } from "../lib/featured";
-import { stops } from "../lib/geo";
+import { adjacentPlace, stops } from "../lib/geo";
 import { CHAPTER_COLORS } from "../lib/mapStyle";
 import { t } from "../lib/i18n";
 import { quoteFor } from "../lib/quotes";
@@ -33,6 +33,8 @@ export interface TownDetailPanelProps {
   onToggleVisited: () => void;
   onVisitDateChange: (date: string | null) => void;
   onClose: () => void;
+  /** Step to another Place — wires the panel's prev/next stepper. */
+  onNavigate: (indexName: string) => void;
 }
 
 export default function TownDetailPanel({
@@ -45,6 +47,7 @@ export default function TownDetailPanel({
   onToggleVisited,
   onVisitDateChange,
   onClose,
+  onNavigate,
 }: TownDetailPanelProps) {
   const book = bookPlaceByName.get(place);
   const placeMentions = mentionsByPlace[place] ?? [];
@@ -54,9 +57,17 @@ export default function TownDetailPanel({
     .map(([from]) => from);
   const quote = quoteFor(place);
   const featured = featuredVisitFor(place);
+  const prev = adjacentPlace(place, -1);
+  const next = adjacentPlace(place, 1);
 
   return (
-    <PanelShell title={book?.name ?? place} embedded={embedded} onClose={onClose}>
+    <PanelShell
+      title={book?.name ?? place}
+      embedded={embedded}
+      onClose={onClose}
+      onPrev={prev ? () => onNavigate(prev) : null}
+      onNext={next ? () => onNavigate(next) : null}
+    >
       {book?.qualifier && <span className="text-muted-foreground">{book.qualifier}</span>}
       {alsoIndexedAs.length > 0 && (
         <span className="text-xs text-muted-foreground">

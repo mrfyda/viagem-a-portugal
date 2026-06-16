@@ -68,15 +68,33 @@ export default function MapSidebar({
   selectedDetour,
   onCloseDetour,
 }: MapSidebarProps) {
-  const shell = isDesktop
-    ? "absolute left-3 top-3 bottom-3 w-[360px] gap-2 overflow-y-auto"
-    : "absolute left-3 top-3 max-h-[88vh] max-w-[280px] gap-1.5 overflow-y-auto max-[359px]:max-w-[240px]";
+  // Mobile: a narrow top-left card carries only the brand, progress and search
+  // so the map and its top-right controls stay visible; the journey rides in a
+  // bottom sheet. A selected Place/Detour renders its own bottom sheet (via
+  // TravelMap), so the journey sheet steps aside to avoid stacking two sheets.
+  if (!isDesktop) {
+    const showJourney = selectedPlace == null && selectedDetour == null;
+    return (
+      <>
+        <aside className="absolute left-3 top-3 flex w-60 max-w-[70%] flex-col gap-1.5 rounded-lg border border-border bg-card/95 p-3 text-sm text-foreground shadow-sm max-[359px]:w-52">
+          <MapNav />
+          {header}
+          <TownSearch onSelect={onSelectPlace} />
+        </aside>
+        {showJourney && (
+          <aside className="absolute inset-x-3 bottom-3 flex max-h-[45vh] flex-col gap-1.5 overflow-y-auto rounded-lg border border-border bg-card/95 p-4 text-sm text-foreground shadow-sm">
+            <ChapterList onFocusChapter={onFocusChapter} />
+          </aside>
+        )}
+      </>
+    );
+  }
 
-  // On desktop the detail panel embeds in place of the chapter list; on mobile
-  // the detail rides in a separate bottom sheet (rendered by TravelMap), so the
-  // sidebar keeps showing the journey.
+  const shell = "absolute left-3 top-3 bottom-3 w-[360px] gap-2 overflow-y-auto";
+
+  // On desktop the detail panel embeds in place of the chapter list.
   const body =
-    isDesktop && selectedPlace != null && detailProps ? (
+    selectedPlace != null && detailProps ? (
       <>
         <button
           onClick={detailProps.onClose}
@@ -86,7 +104,7 @@ export default function MapSidebar({
         </button>
         <TownDetailPanel place={selectedPlace} embedded {...detailProps} />
       </>
-    ) : isDesktop && selectedDetour ? (
+    ) : selectedDetour ? (
       <>
         <button
           onClick={onCloseDetour}
