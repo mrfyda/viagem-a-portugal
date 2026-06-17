@@ -72,7 +72,7 @@ _⟨notas do dia — a escrever⟩_
 
 ## Dia 2 — 19 de fevereiro, domingo
 
-_Percurso do dia: Póvoa do Concelho, Figueira de Castelo Rodrigo, Vila Nova de Foz Côa._
+_Percurso do dia: Figueira de Castelo Rodrigo, Vila Nova de Foz Côa._
 
 _⟨notas do dia — a escrever⟩_
 

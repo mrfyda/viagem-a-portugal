@@ -21,7 +21,7 @@
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
   "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
   "date": "2023-06-03",
-  "image": "/assets/viagem-2/arcos-de-valdevez.avif"
+  "image": null
  },
  "Arouca": {
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
@@ -101,11 +101,23 @@
   "date": "2023-06-03",
   "image": "/assets/viagem-2/fatima.avif"
  },
+ "Giela": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/giela.avif"
+ },
  "Guadramil": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",
   "postTitle": "Viagem a Portugal I — ⟨título a confirmar⟩",
   "date": "2023-02-18",
   "image": "/assets/viagem-1/guadramil-2.avif"
+ },
+ "Marco de Canaveses": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/marco-de-canaveses.avif"
  },
  "Melgaço": {
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
@@ -179,11 +191,17 @@
   "date": "2023-02-18",
   "image": "/assets/viagem-1/rio-de-onor-1.avif"
  },
+ "Romarigães": {
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
+  "date": "2023-06-03",
+  "image": "/assets/viagem-2/romarigaes.avif"
+ },
  "Rubiães": {
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
   "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
   "date": "2023-06-03",
-  "image": "/assets/viagem-2/rubiaes-1.avif"
+  "image": "/assets/viagem-2/rubiaes.avif"
  },
  "Santa Eulália": {
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
@@ -220,12 +238,6 @@
   "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
   "date": "2023-06-03",
   "image": "/assets/viagem-2/sao-miguel-de-ceide.avif"
- },
- "Tabuado": {
-  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
-  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩",
-  "date": "2023-06-03",
-  "image": "/assets/viagem-2/tabuado.avif"
  },
  "Torre de Moncorvo": {
   "postUrl": "/2023/02/25/viagem-a-portugal-i/",

@@ -9,7 +9,7 @@ description: "⟨descrição curta para SEO — a escrever⟩"
 places:
   - Fátima
   - Arouca
-  - Tabuado
+  - Marco de Canaveses
   - Amarante
   - São João de Gatão
   - Parada de Cunhos
@@ -19,6 +19,7 @@ places:
   - São Bento da Porta Aberta
   - Covide
   - Ponte da Barca
+  - Giela
   - Arcos de Valdevez
   - Soajo
   - Castro Laboreiro
@@ -27,6 +28,7 @@ places:
   - Monção
   - Valença
   - Rubiães
+  - Romarigães
   - Ponte de Lima
   - Abade de Neiva
   - Barcelos
@@ -37,7 +39,7 @@ places:
 featured_photos:
   Fátima: /assets/viagem-2/fatima.avif
   Arouca: /assets/viagem-2/arouca.avif
-  Tabuado: /assets/viagem-2/tabuado.avif
+  Marco de Canaveses: /assets/viagem-2/marco-de-canaveses.avif
   Amarante: /assets/viagem-2/amarante-1.avif
   São João de Gatão: /assets/viagem-2/sao-joao-de-gatao.avif
   Parada de Cunhos: /assets/viagem-2/parada-de-cunhos.avif
@@ -47,14 +49,15 @@ featured_photos:
   São Bento da Porta Aberta: /assets/viagem-2/sao-bento-da-porta-aberta.avif
   Covide: /assets/viagem-2/covide.avif
   Ponte da Barca: /assets/viagem-2/ponte-da-barca-1.avif
-  Arcos de Valdevez: /assets/viagem-2/arcos-de-valdevez.avif
+  Giela: /assets/viagem-2/giela.avif
   Soajo: /assets/viagem-2/soajo.avif
   Castro Laboreiro: /assets/viagem-2/castro-laboreiro.avif
   Nossa Senhora da Orada: /assets/viagem-2/nossa-senhora-da-orada.avif
   Melgaço: /assets/viagem-2/melgaco.avif
   Monção: /assets/viagem-2/moncao.avif
   Valença: /assets/viagem-2/valenca.avif
-  Rubiães: /assets/viagem-2/rubiaes-1.avif
+  Rubiães: /assets/viagem-2/rubiaes.avif
+  Romarigães: /assets/viagem-2/romarigaes.avif
   Ponte de Lima: /assets/viagem-2/ponte-de-lima.avif
   Abade de Neiva: /assets/viagem-2/abade-de-neiva.avif
   Barcelos: /assets/viagem-2/barcelos-1.avif
@@ -138,7 +141,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 
 ## Dia 2 — 4 de junho, domingo
 
-_Percurso do dia: Arouca, Vale de Cambra, Pedras Parideiras, Capela da Senhora da Lage, Tabuado, Amarante._
+_Percurso do dia: Arouca, Vale de Cambra, Pedras Parideiras, Capela da Senhora da Lage, Marco de Canaveses, Amarante._
 
 _⟨notas do dia — a escrever⟩_
 
@@ -169,15 +172,11 @@ _Fora da viagem de Saramago: a Capela de Nossa Senhora da Lage, na Serra da Frei
 
 _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 
-### Tabuado
-
-> «De súbito, aparece-lhe pela direita, como se o segurasse pela manga do casaco, a igreja matriz do século XII»
->
-> — José Saramago, *Viagem a Portugal*
+### Marco de Canaveses
 
 <figure>
-  <img src="{{ '/assets/viagem-2/tabuado.avif' | relative_url }}" alt="Tabuado" loading="lazy">
-  <figcaption>Tabuado</figcaption>
+  <img src="{{ '/assets/viagem-2/marco-de-canaveses.avif' | relative_url }}" alt="Marco de Canaveses" loading="lazy">
+  <figcaption>Marco de Canaveses</figcaption>
 </figure>
 
 _⟨o que ver / o que aconteceu aqui — a escrever⟩_
@@ -262,7 +261,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 
 ## Dia 4 — 6 de junho, terça-feira
 
-_Percurso do dia: Vilarinho de Samardã, Vila Pouca de Aguiar, Boticas, Pero de Lagarelhos, Chaves, Montalegre, Portela do Homem, Pitões das Júnias, Outeiro._
+_Percurso do dia: Vilarinho de Samardã, Vila Pouca de Aguiar, Boticas, Pero de Lagarelhos, Chaves, Montalegre, Pitões das Júnias, Outeiro._
 
 _⟨notas do dia — a escrever⟩_
 
@@ -359,7 +358,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 
 ## Dia 5 — 7 de junho, quarta-feira
 
-_Percurso do dia: Portela do Homem, São Bento da Porta Aberta, Covide, Ponte da Barca._
+_Percurso do dia: Vieira do Minho, São Bento da Porta Aberta, Covide, Ponte da Barca._
 
 _⟨notas do dia — a escrever⟩_
 
@@ -401,16 +400,20 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 
 ## Dia 6 — 8 de junho, quinta-feira
 
-_Percurso do dia: Arcos de Valdevez, Ermelo, Anta do Mezio, Soajo, Lindoso, Castro Laboreiro._
+_Percurso do dia: Giela, Arcos de Valdevez, Ermelo, Anta do Mezio, Soajo, Lindoso, Castro Laboreiro._
 
 _⟨notas do dia — a escrever⟩_
 
-### Arcos de Valdevez
+### Giela
 
 <figure>
-  <img src="{{ '/assets/viagem-2/arcos-de-valdevez.avif' | relative_url }}" alt="Arcos de Valdevez" loading="lazy">
-  <figcaption>Arcos de Valdevez</figcaption>
+  <img src="{{ '/assets/viagem-2/giela.avif' | relative_url }}" alt="Giela" loading="lazy">
+  <figcaption>Giela</figcaption>
 </figure>
+
+_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+
+### Arcos de Valdevez
 
 _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 
@@ -503,7 +506,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 
 ## Dia 8 — 10 de junho, sábado
 
-_Percurso do dia: Rubiães, Ponte de Lima, Balugães, Abade de Neiva, Barcelos._
+_Percurso do dia: Paredes de Coura, Rubiães, Romarigães, Ponte de Lima, Balugães, Abade de Neiva, Barcelos._
 
 _⟨notas do dia — a escrever⟩_
 
@@ -514,13 +517,17 @@ _⟨notas do dia — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/rubiaes-1.avif' | relative_url }}" alt="Rubiães" loading="lazy">
+  <img src="{{ '/assets/viagem-2/rubiaes.avif' | relative_url }}" alt="Rubiães" loading="lazy">
   <figcaption>Rubiães</figcaption>
 </figure>
 
+_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+
+### Romarigães
+
 <figure>
-  <img src="{{ '/assets/viagem-2/rubiaes-2.avif' | relative_url }}" alt="Rubiães" loading="lazy">
-  <figcaption>Rubiães</figcaption>
+  <img src="{{ '/assets/viagem-2/romarigaes.avif' | relative_url }}" alt="Romarigães" loading="lazy">
+  <figcaption>Romarigães</figcaption>
 </figure>
 
 _⟨o que ver / o que aconteceu aqui — a escrever⟩_
