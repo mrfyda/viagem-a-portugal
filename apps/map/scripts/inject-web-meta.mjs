@@ -1,0 +1,117 @@
+// Post-export SEO pass for the web build.
+//
+// The map is a client-rendered Expo (react-native-web) SPA, not Expo Router, so
+// the official head APIs (`app/+html.tsx`, `expo-router/head`) don't apply and
+// there's no build-time per-route HTML. This script rewrites the single
+// `dist/index.html` that `expo export --platform web` produces, giving the map
+// landing URL a complete, crawler-visible <head>: title, description, canonical,
+// Open Graph, Twitter card and JSON-LD. (Per-place rich previews would need
+// prerendering — see the runtime title/description in src/lib/head.web.ts for
+// the JS-rendered, Google-visible fallback.)
+//
+// Run automatically after export via the `export:web` package script.
+
+import {
+  copyFileSync,
+  existsSync,
+  readdirSync,
+  readFileSync,
+  writeFileSync,
+} from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const here = dirname(fileURLToPath(import.meta.url));
+const root = join(here, "..");
+const dist = join(root, "dist");
+const indexPath = join(dist, "index.html");
+
+// Canonical production origin. Update when the custom domain goes live (mirror
+// apps/blog/_config.yml `url`). The base path is the same EXPO_BASE_URL that
+// rebased the app's asset URLs at export time (CI sets it to "<pages>/map").
+const ORIGIN = process.env.SEO_SITE_ORIGIN || "https://mrfyda.github.io";
+const BASE = (process.env.EXPO_BASE_URL || "").replace(/\/+$/, "");
+const pageUrl = `${ORIGIN}${BASE}/`;
+const assetUrl = (file) => `${ORIGIN}${BASE}/${file}`;
+
+const TITLE = "Viagem a Portugal — mapa interativo";
+const DESCRIPTION =
+  "Mapa interativo de todos os lugares de Viagem a Portugal de José Saramago: " +
+  "centenas de vilas, aldeias e sítios, cada um ligado às suas páginas no " +
+  "livro, com as seis rotas traçadas entre paragens.";
+
+const esc = (s) =>
+  s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Viagem a Portugal",
+  url: pageUrl,
+  description: DESCRIPTION,
+  applicationCategory: "TravelApplication",
+  operatingSystem: "Web",
+  browserRequirements: "Requires JavaScript.",
+  inLanguage: "pt-PT",
+  isAccessibleForFree: true,
+  isBasedOn: {
+    "@type": "Book",
+    name: "Viagem a Portugal",
+    author: { "@type": "Person", name: "José Saramago" },
+  },
+};
+
+const headTags = `
+    <meta name="description" content="${esc(DESCRIPTION)}" />
+    <meta name="theme-color" content="#0a5a3a" />
+    <link rel="canonical" href="${pageUrl}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Viagem a Portugal" />
+    <meta property="og:title" content="${esc(TITLE)}" />
+    <meta property="og:description" content="${esc(DESCRIPTION)}" />
+    <meta property="og:url" content="${pageUrl}" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:image" content="${assetUrl("og-default.png")}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${esc(TITLE)}" />
+    <meta name="twitter:description" content="${esc(DESCRIPTION)}" />
+    <meta name="twitter:image" content="${assetUrl("og-default.png")}" />
+    <link rel="apple-touch-icon" href="${assetUrl("apple-touch-icon.png")}" />
+    <link rel="icon" href="${assetUrl("favicon.svg")}" type="image/svg+xml" />
+    <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
+    <!-- seo:injected -->`;
+
+if (!existsSync(indexPath)) {
+  console.error(`[inject-web-meta] ${indexPath} not found — run expo export first.`);
+  process.exit(1);
+}
+
+// Copy committed static SEO assets (share image, svg favicon, apple icon) into
+// the build so they ship next to index.html at the deployed base path.
+const seoAssets = join(root, "seo-assets");
+if (existsSync(seoAssets)) {
+  for (const file of readdirSync(seoAssets)) {
+    copyFileSync(join(seoAssets, file), join(dist, file));
+  }
+}
+
+let html = readFileSync(indexPath, "utf8");
+
+if (html.includes("<!-- seo:injected -->")) {
+  console.log("[inject-web-meta] already injected — skipping.");
+  process.exit(0);
+}
+
+html = html
+  .replace(/<html lang="[^"]*">/, '<html lang="pt-PT">')
+  .replace(/<title>[^<]*<\/title>/, `<title>${esc(TITLE)}</title>`)
+  .replace("</head>", `${headTags}\n  </head>`);
+
+writeFileSync(indexPath, html);
+console.log(`[inject-web-meta] injected SEO head (canonical ${pageUrl}).`);

@@ -1,27 +1,47 @@
 title: Viagem a Portugal
-author: José Saramago
-description: Minimal, responsive Jekyll theme for hackers.
-# baseurl: "/blog"
-url: "https://portugal.travel"
-lang: pt
+tagline: Mapa interativo e diário de viagem
+description: >-
+  Mapa interativo de todos os lugares de Viagem a Portugal de José Saramago
+  e o diário de quem refaz a viagem pelo país.
+# Canonical site origin. Update url (and drop/adjust baseurl) when the
+# custom domain goes live. Used by jekyll-seo-tag, jekyll-sitemap and the feed.
+url: "https://mrfyda.github.io"
+baseurl: "/viagem-a-portugal"
+lang: pt-PT
 timezone: UTC
 exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
 
-# Social media
-twitter_username:
-twitter_image:
-facebook_app_id:
-facebook_image:
-google_analytics:
+# SEO / social (jekyll-seo-tag). No personal byline: the site itself is the
+# publisher (an Organization named by `title`, with `logo`). Saramago is the
+# book's author/subject, not the blog's. The Twitter card type is set per-page
+# (in defaults below) rather than via a top-level `twitter:` key — the latter
+# makes seo-tag emit an empty `twitter:site` "@" because there is no handle.
+logo: /assets/logo.png
 comments: false
+
+# Site-wide defaults: a branded share image (posts may override with `image:`)
+# and a large-image Twitter card. jekyll-seo-tag resolves the path against
+# url+baseurl.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/og-default.png
+        width: 1200
+        height: 630
+      twitter:
+        card: summary_large_image
 
 # Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Build settings
 theme: jekyll-whiteglass

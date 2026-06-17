@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 
 import { detourBySlug } from "../lib/detours";
 import { towns } from "../lib/geo";
+import { applySelectionToHead } from "../lib/head";
 import {
   readDetourParam,
   readPlaceParam,
@@ -40,6 +41,10 @@ export function useSelection() {
   const [selection, setSelection] = useState<Selection>(fromUrl);
 
   useEffect(() => subscribeSelectionParams(() => setSelection(fromUrl())), []);
+
+  // Keep the document title and description/OG meta in step with the selection
+  // (web only; the native module is a no-op).
+  useEffect(() => applySelectionToHead(selection), [selection]);
 
   const selectPlace = useCallback((id: string | null) => {
     const valid = id && selectablePlaces.has(id) ? id : null;

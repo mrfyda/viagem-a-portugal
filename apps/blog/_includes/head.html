@@ -1,0 +1,31 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a5a3a">
+
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+  {% comment %}
+  Local override of jekyll-whiteglass 1.11.2 _includes/head.html. The theme
+  hand-rolls its own (incomplete) Open Graph / Twitter tags; we replace the
+  whole head so jekyll-seo-tag owns title, description, canonical, OG, Twitter
+  cards and JSON-LD (Organization publisher + WebSite/BlogPosting). Keep this
+  in sync with the theme's <body> structure in _layouts/default.html.
+  {% endcomment %}
+
+  <!-- Favicons (see assets/; generated from the brand mark) -->
+  <link rel="icon" href="{{ "/assets/favicon.svg" | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ "/assets/favicon-32.png" | relative_url }}" sizes="32x32" type="image/png">
+  <link rel="icon" href="{{ "/assets/favicon-16.png" | relative_url }}" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="{{ "/assets/apple-touch-icon.png" | relative_url }}">
+  <link rel="alternate icon" href="{{ "/assets/favicon.ico" | relative_url }}">
+
+  <!-- SEO: title, description, canonical, Open Graph, Twitter cards, JSON-LD -->
+  {% seo %}
+
+  <!-- Atom feed (jekyll-feed) -->
+  {% feed_meta %}
+
+  {% include fonts.html %}
+</head>
