@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Viagem a Portugal I — ⟨título a confirmar⟩"
+title: "Viagem a Portugal I — burros, laranjas e aldeias quase vazias"
 date: 2023-02-25 18:00:00 +0000
 visit_date: 2023-02-18
 lang: pt
 transport: car
-description: "⟨descrição curta para SEO — a escrever⟩"
+description: "Refazemos a primeira etapa da Viagem a Portugal de Saramago: oito dias pelo nordeste transmontano, de Coimbra a Bragança, por aldeias quase vazias, burros mirandeses e as laranjas de Mazouco."
 places:
   - Figueira de Castelo Rodrigo
   - Vila Nova de Foz Côa
@@ -51,30 +51,52 @@ detours:
   - name: Pedras Salgadas
     lat: 41.5467
     lon: -7.6062
-    note: "Estância termal de Pedras Salgadas — fora do percurso de Saramago."
+    note: "Estância termal de Pedras Salgadas, fora do percurso de Saramago."
     image: /assets/viagem-1/pedras-salgadas-1.avif
   - name: Atenor
     lat: 41.4166
     lon: -6.4856
-    note: "Centro de Valorização do Burro de Miranda (AEPGA), em Atenor — fora da viagem de Saramago."
+    note: "Centro de Valorização do Burro de Miranda (AEPGA), em Atenor, fora da viagem de Saramago."
     image: /assets/viagem-1/atenor.avif
 ---
 
-_⟨introdução: porquê refazer a Viagem a Portugal de Saramago, como nasceu esta primeira etapa — a escrever⟩_
+Esta viagem começou como uma desculpa. Queríamos conhecer melhor o interior do
+país, aquela parte de que pouco se fala e que quase não aparece na internet,
+porque toda a gente acaba por ir aos mesmos sítios. O livro de Saramago deu-nos
+o pretexto e o roteiro: um conjunto de terras que normalmente ninguém procura,
+algumas já meio desaparecidas, quase todas mudadas desde que ele por lá passou.
+Até pensámos em fazer a Nacional 2, mas a *Viagem a Portugal* levava-nos a
+sítios onde a estrada não chega. E tinha a sua graça poder ler hoje o que ele
+escreveu e ver o que ficou, o que mudou e o que desapareceu. Saramago andou
+quase sempre sozinho e ao volante. Nós fomos os dois, mas calhou a um de nós
+conduzir o caminho todo, o que, entre serras e estradas que nunca mais acabavam,
+nem sempre foi fácil.
 
-Oito dias, de 18 a 25 de fevereiro de 2023, do centro ao nordeste transmontano e de regresso. _⟨ajustar⟩_
+Oito dias, de 18 a 25 de fevereiro de 2023, do centro ao nordeste transmontano
+e de regresso.
 
 ## Dia 1 — 18 de fevereiro, sábado
 
 _Percurso do dia: Coimbra._
 
-_⟨notas do dia — a escrever⟩_
+Começámos por Coimbra, e num sábado, o que se revelou um pequeno erro de
+cálculo: estava quase tudo fechado. Bom para a cidade, se calhar, mas aborrecido
+para quem chega de fora a querer passear. Ficámos só uma noite. Deu para subir e
+descer as colinas todas (Coimbra não poupa as pernas a ninguém) e espreitar os
+jardins da Faculdade e o Jardim Botânico. Este foi a melhor surpresa do dia,
+maior e mais bonito do que esperávamos, ainda que um pouco ao abandono, e com
+uma vista bonita sobre a cidade. Apanhámos imensos autocarros a passar, coisa
+que, não sabemos bem porquê, nos surpreendeu, e até encontrámos algumas opções
+vegan. Não chegámos a entrar na biblioteca e ficou muita coisa por ver, mas era
+uma cidade simpática, e fica sempre uma desculpa para voltar. Pelas paredes,
+muita arte urbana: Coimbra está cheia dela.
 
 ## Dia 2 — 19 de fevereiro, domingo
 
 _Percurso do dia: Figueira de Castelo Rodrigo, Vila Nova de Foz Côa._
 
-_⟨notas do dia — a escrever⟩_
+O primeiro dia a sério de estrada, já com as primeiras amendoeiras em flor a
+aparecer pelo caminho.
 
 ### Figueira de Castelo Rodrigo
 
@@ -87,7 +109,12 @@ _⟨notas do dia — a escrever⟩_
   <figcaption>Figueira de Castelo Rodrigo</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Parámos para almoçar e demos com um restaurante enorme, cheio de uma excursão,
+com meia dúzia de pessoas a servir, e ainda assim fomos rápidos. À saída,
+passámos por um campo cheio de amendoeiras em flor. Fomos também a um pequeno
+museu sobre uma batalha que, ao que percebemos, ajudou a manter Portugal
+independente de Espanha. Ficou por ver o castelo de Castelo Rodrigo, que era um
+bocado fora de mão.
 
 ### Vila Nova de Foz Côa
 
@@ -96,13 +123,17 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
   <figcaption>Vila Nova de Foz Côa</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+De Foz Côa, na verdade, não chegámos a ver a vila: ficámos pelo museu do Côa, já
+ao fim do dia. As gravuras, lá em baixo no vale, ficaram para outra vez, porque
+eram longe e começava a fazer-se tarde, e não nos apetecia andar por ali pela
+noite dentro. Mas o vale do Côa, fundo e bonito, valeu bem a paragem.
 
 ## Dia 3 — 20 de fevereiro, segunda-feira
 
 _Percurso do dia: Torre de Moncorvo, Vila Flor, Mazouco._
 
-_⟨notas do dia — a escrever⟩_
+Foi um dia variado: uma vila que nos recebeu já de noite, uma igreja de que mal
+nos lembramos, e um desvio fora do mapa que quase nos deixou pelo caminho.
 
 ### Torre de Moncorvo
 
@@ -115,7 +146,17 @@ _⟨notas do dia — a escrever⟩_
   <figcaption>Torre de Moncorvo</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Saramago entrou em Moncorvo de noite fechada, e connosco foi quase igual. Ainda
+era dia quando chegámos, mas escureceu tão depressa que já parecia noite. A vila
+está muito lá no alto, um bocado fora de tudo, e a primeira impressão foi,
+sejamos sinceros, um nadinha assustadora. Ficámos numa casa senhorial enorme
+que, à noite e meio vazia, parecia saída de uma telenovela antiga. Mal chegámos,
+demos de caras com uma figura bem conhecida da terra, à conversa com as poucas
+pessoas que ainda andavam na rua. Andámos um bom bocado à procura de um
+restaurante (havia uns bares de ar duvidoso e pouco mais) e acabámos a jantar
+uma sopa e umas moelas que estavam bem boas. Na manhã seguinte, já
+com a vila a outra luz, demos uma volta pelo Largo da Igreja, onde alguém se
+tinha dado ao trabalho de entrelaçar, uma a uma, todas as árvores.
 
 ### Vila Flor
 
@@ -138,12 +179,15 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
   <figcaption>Vila Flor</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+De Vila Flor, confessamos, ficou-nos pouco. A igreja grande no seu largo, com
+aquele pórtico que Saramago manda reparar, o caminho à entrada e a volta que lhe
+demos. Lembramo-nos de lá ter estado, e seguimos viagem. Há paragens assim, em
+que não acontece grande coisa e de que fica só a fotografia.
 
 ### Mazouco
 
-_Fora da viagem de Saramago: as gravuras rupestres do Mazouco — o primeiro
-sítio de arte paleolítica ao ar livre identificado em Portugal — só foram
+_Fora da viagem de Saramago: as gravuras rupestres do Mazouco, o primeiro
+sítio de arte paleolítica ao ar livre identificado em Portugal, só foram
 descobertas em 1981, dois anos depois da sua passagem._
 
 <figure>
@@ -156,13 +200,27 @@ descobertas em 1981, dois anos depois da sua passagem._
   <figcaption>Mazouco</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Mazouco não estava no roteiro de Saramago, nem podia estar: as gravuras
+rupestres só foram descobertas em 1981, dois anos depois de ele ter passado por
+aqui. Como não tínhamos descido ao Côa para ver as do parque, achámos que ficava
+mais ou menos a meio caminho e que valia o desvio. «Mais ou menos» é maneira de
+dizer, porque foi preciso descer um vale enorme por estradas duvidosas. Deixámos
+o carro no centro da aldeia (só um largo, casas antigas lado a lado com casarões
+renovados, e quase só gente mais velha na rua) e fizemos o resto a pé. A descida
+até à gravura, virada para o rio, era curta mas íngreme. A subida, com um calor
+impróprio de fevereiro (havia incêndios à volta e uma trovoada a ameaçar) e sem
+uma gota de água connosco, quase nos liquidou. Lá em cima, uns senhores
+acharam-nos meio malucos por termos descido a pé, e despediram-se de nós com
+laranjas de Mazouco, «as mais doces, não há outra laranja igual a esta». Tinham
+toda a razão, sabiam mesmo a outra coisa. Só nos ficou a pena de não termos
+trazido mais.
 
 ## Dia 4 — 21 de fevereiro, terça-feira
 
 _Percurso do dia: Miranda do Douro, Sendim, Mogadouro, Vimioso._
 
-_⟨notas do dia — a escrever⟩_
+Um dos dias preferidos. Acordámos em Miranda do Douro e passámos a manhã com os
+burros de Atenor, antes de seguir por Sendim, Mogadouro e Vimioso.
 
 ### Miranda do Douro
 
@@ -180,7 +238,13 @@ _⟨notas do dia — a escrever⟩_
   <figcaption>Miranda do Douro</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Chegámos a Miranda já mais para o fim do dia, com frio. A cidade fica sobre o
+Douro, com a tal escarpa amarela que o Saramago descreve, hoje toda grafitada. O
+centro histórico é bonito e ainda tem alguma vida, embora os prédios de fora,
+mais novos, sejam uns quantos sem grande graça, como em tanta cidade portuguesa.
+Ficámos numa residencial com aquecimento no chão, um luxo inesperado para o frio
+que fazia. Foi também aqui que um de nós adoeceu, coisa que nos acompanhou nos
+dias seguintes.
 
 ### Sendim
 
@@ -198,7 +262,13 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
   <figcaption>Sendim</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Em Sendim fomos almoçar à Gabriela, um restaurante que descobrimos através do
+podcast [*Viagem a Portugal*, de Fernando Alves](https://open.spotify.com/show/3cUwgfQlqDnvUSJCWQP4WF),
+na TSF, que falava muito dele. A senhora que o tornou famoso já tinha falecido,
+mas a família manteve a casa e o espírito. Comemos uma posta mirandesa enorme,
+daquelas que nos deixam sem conseguir levantar da cadeira. Pesado, mas valeu cada
+garfada, e até assenta bem aqui aquilo que o Saramago diz sobre a felicidade do
+corpo.
 
 ### Atenor
 
@@ -208,6 +278,12 @@ _Fora da viagem de Saramago: o Centro de Valorização do Burro de Miranda (AEPG
   <img src="{{ '/assets/viagem-1/atenor.avif' | relative_url }}" alt="Atenor" loading="lazy">
   <figcaption>Atenor</figcaption>
 </figure>
+
+Foi aqui que tivemos o momento preferido da viagem. Marcámos uma visita à AEPGA,
+a associação que acolhe e protege os burros de Miranda, e passámos a manhã a
+fazer-lhes festas e a brincar com eles. Havia muitos, com nomes como o Dom
+Quixote e a Dulcineia, esta prenha, e até crias acabadas de nascer. São animais
+muito dóceis, e custou-nos vir embora.
 
 ### Mogadouro
 
@@ -225,7 +301,9 @@ _Fora da viagem de Saramago: o Centro de Valorização do Burro de Miranda (AEPG
   <figcaption>Mogadouro</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+De Mogadouro guardámos sobretudo o castelo, lá no alto, sozinho sobre as terras,
+com umas poucas casas mais abaixo. Andámos à procura dele, subimos, e pouco mais.
+Não encontrámos ninguém, e a verdade é que não nos ficou muito além disto.
 
 ### Vimioso
 
@@ -238,13 +316,16 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
   <figcaption>Vimioso</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Vimioso era um nome que nos dizia alguma coisa e que queríamos conhecer mas,
+sendo sinceros, quase nada nos ficou dele. Mais uma terra pequena, com a sua
+igreja, onde parámos e seguimos.
 
 ## Dia 5 — 22 de fevereiro, quarta-feira
 
 _Percurso do dia: Guadramil, Rio de Onor, Bragança._
 
-_⟨notas do dia — a escrever⟩_
+Outro dos dias preferidos, agora a caminho do canto mais a nordeste de tudo, lá
+em cima na raia, antes de descer a Bragança.
 
 ### Guadramil
 
@@ -258,7 +339,12 @@ _⟨notas do dia — a escrever⟩_
   <figcaption>Guadramil</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Guadramil deve ter umas dez pessoas e, nesse dia, pareciam estar todas na rua:
+uns senhores a tratar dos carros, umas senhoras sentadas à porta. É um sítio que
+parece mesmo fora da civilização, com aquelas estradinhas de calçada e um
+riozinho a passar. Ficou-nos uma imagem de que ainda temos pena: uma senhora
+sentada a olhar para a água, do outro lado. Quisemos tirar-lhe uma fotografia,
+mas tivemos vergonha e não tirámos.
 
 ### Rio de Onor
 
@@ -276,7 +362,13 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
   <figcaption>Rio de Onor</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Rio de Onor é uma aldeia partida em duas pela fronteira: passa-se de Portugal
+para Espanha sem dar por isso, ainda dentro da mesma vila. O lado português,
+mais velho, tem as casas encostadas ao rio e uma ponte de pedra, como na curva
+que o Saramago descreve. O lado espanhol, logo ali, é mais moderno, e tinha
+farmácia e tudo, coisas que do lado de cá não havia. Não se via quase ninguém, só
+um café e umas hortas, mas percebia-se que ainda ali vive gente. Dá que pensar
+que, deste lado, a cidade mais próxima é Bragança, longe e difícil de alcançar.
 
 ### Bragança
 
@@ -314,13 +406,24 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
   <figcaption>Bragança</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Bragança foi a maior cidade da viagem depois de Coimbra, e deu para sentir a
+diferença: tem universidade, passadiços ao longo do rio e, como Coimbra, colinas
+que não acabam. O Saramago também chegou aqui cansado, e percebemo-lo bem. Pela
+cidade demos com uma das esculturas de animais feitas de lixo do Bordalo II e com
+o Centro de Fotografia Georges Dussaud, onde ficámos a namorar o livro
+*Trás-os-Montes*, cheio de fotografias antigas da região (andámos depois à
+procura dele, mas está quase todo esgotado). Para jantar, encontrámos o Batoque,
+um restaurante pequeno e escondido especializado em cogumelos, com pratos que
+davam para comer vegano, coisa rara por estas bandas. É também a terra dos
+caretos, embora os mais conhecidos, cheios de palha e cor, sejam de Podence;
+estávamos perto do Carnaval, mas não chegámos a apanhá-los.
 
 ## Dia 6 — 23 de fevereiro, quinta-feira
 
 _Percurso do dia: Bragança, Vilaverdinho, Mirandela, Carrazedo de Montenegro, Chaves._
 
-_⟨notas do dia — a escrever⟩_
+Um dia de muitos quilómetros e muitas paragens, a atravessar Trás-os-Montes de
+nordeste a noroeste, até Chaves.
 
 ### Bragança
 
@@ -329,7 +432,12 @@ _⟨notas do dia — a escrever⟩_
   <figcaption>Bragança</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+De manhã, antes de seguir viagem, fomos ao museu ferroviário de Bragança, um dos
+núcleos do Museu Ferroviário Nacional, instalado na estação, hoje sem comboios.
+Surpreendeu-nos: é grande e bem feito, melhor do que esperávamos para um sítio
+onde já não chega uma linha. Boa parte dele é sobre a luta da cidade para não
+perder o comboio, e para o voltar a ter. Não teve final feliz: ganhou, como
+quase sempre, a autoestrada.
 
 ### Vilaverdinho
 
@@ -342,7 +450,10 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
   <figcaption>Vilaverdinho</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Vilaverdinho é fácil de alcançar, e confessamos que não percebemos logo porque é
+que o Saramago foi até lá, até nos lembrarmos de que andava à procura de uma
+capela. Nós chegámos, demos uma volta pela praça e saímos. Mais uma vez, não se
+via grande coisa nem ninguém.
 
 ### Mirandela
 
@@ -356,7 +467,10 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
   <figcaption>Mirandela</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+De Mirandela há que confessar um pecado: passámos por lá e não comemos uma única
+alheira, o que é quase um crime. É já uma cidade maior, mas ficou-nos com um ar
+de subúrbio, de construção nova sem grande encanto, e foi, sinceramente, das
+paragens de que menos gostámos.
 
 ### Carrazedo de Montenegro
 
@@ -384,7 +498,11 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
   <figcaption>Carrazedo de Montenegro</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Carrazedo de Montenegro foi uma surpresa. Conduzes quilómetros sem nada à volta
+e, de repente, chegas a uma terra bem maior do que esperavas, com prédios, casas
+novas, gente jovem e até indústria. Percebemos porquê: é uma espécie de capital
+da castanha. Não é propriamente bonita, mas tinha uma vida que não víamos havia
+vários sítios.
 
 ### Chaves
 
@@ -412,13 +530,21 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
   <figcaption>Chaves</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Chaves deixou-nos com vontade de voltar. Comemos pastéis de Chaves, claro, e uma
+bôla, aquele pão recheado de carnes. A cidade tem uma ponte romana e muitos
+vestígios romanos e, mesmo no centro, por baixo de um parque de estacionamento,
+escondem-se umas termas romanas enormes. Pareceu-nos uma cidade boa para se
+viver, com vida dos dois lados do rio. É também o quilómetro zero da Estrada
+Nacional 2, e o primeiro sítio onde vimos o nome da cidade escrito naquelas
+letras grandes que agora há por todo o lado. A Nacional 2 chegou a ser o nosso
+plano, antes de a Viagem a Portugal nos levar por caminhos que ela não faz.
 
 ## Dia 7 — 24 de fevereiro, sexta-feira
 
 _Percurso do dia: Chaves, Pedras Salgadas, Murça._
 
-_⟨notas do dia — a escrever⟩_
+Manhã ainda em Chaves e depois para sul, com paragem nas termas de Pedras
+Salgadas e na Murça da famosa porca.
 
 ### Pedras Salgadas
 
@@ -439,7 +565,17 @@ _Fora da viagem de Saramago: a estância termal de Pedras Salgadas e o seu parqu
   <figcaption>Pedras Salgadas</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Pedras Salgadas não estava na viagem do Saramago mas, ao contrário do Mazouco, já
+cá podia estar: a exploração das águas começou em 1871, muito antes de ele
+passar. Hoje é um parque com spa e museu, mas já foi uma estância de elite, com
+casino e tudo, no início do século XX. A particularidade são as nascentes de
+água naturalmente gaseificada, raras, e em Pedras há várias (chegaram a contar-se
+oito). Antigamente, cada fonte servia para tratar uma maleita diferente, e havia
+até uma senha que dizia a cada visitante de que água podia beber e quantas vezes
+por dia. No museu ficámos a saber que a água era levada de carroça de bois até ao
+Douro, e dali seguia de barco, e que de um dos fundadores não há uma única
+fotografia, o que dá um certo mistério à coisa. O parque pode visitar-se à borla;
+só se paga o museu, ou para dormir nas casas na árvore.
 
 ### Murça
 
@@ -452,13 +588,20 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
   <figcaption>Murça</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Em Murça está a famosa porca, uma grande estátua de pedra no largo principal, que
+dá nome até a um vinho, o da Porca de Murça. Qual é a história da porca?
+Sinceramente, não fazemos ideia, e já a esquecemos. Se ficaram curiosos, fica o
+desafio: procurem. A terra tem alguma vida, com as suas cooperativas e gente na
+rua, ainda que estivesse um bocadinho vazia.
 
 ## Dia 8 — 25 de fevereiro, sábado
 
 _Percurso do dia: Buçaco._
 
-_⟨notas do dia — a escrever⟩_
+O último dia, já de regresso ao centro. Na véspera tínhamos descido até ao Luso,
+à chuva e de noite, por estradas estreitas e cheias de trânsito, uma viagem que
+não recordamos com saudade. O Saramago passou pelo Buçaco, mas não pelo Luso,
+onde nós ficámos.
 
 ### Buçaco
 
@@ -476,8 +619,28 @@ _⟨notas do dia — a escrever⟩_
   <figcaption>Buçaco</figcaption>
 </figure>
 
-_⟨o que ver / o que aconteceu aqui — a escrever⟩_
+Antes de entrar na mata, fomos beber água do Luso à fonte, mesmo ao lado do
+hotel, onde estava muita gente a encher garrafas. Sabe melhor ali do que
+engarrafada, garantimos. Depois fomos passear aos jardins do Buçaco, e o Saramago
+tem razão: aquela mata pede todas as palavras. Mesmo em fevereiro estava tudo
+muito verde, cheio de água e de mil verdes diferentes, e ainda demos uma boa
+caminhada lá pelo meio. Vimos também o Palácio do Buçaco, impressionante, hoje um
+hotel (caro, espreitámos os preços).
 
 ## Epílogo
 
-_⟨fecho da primeira viagem — a escrever⟩_
+No fim, ficou-nos uma sensação agridoce. O Saramago, no livro, é recebido de
+braços abertos: mete conversa com toda a gente, e há sempre alguém para lhe
+contar uma história. Nós, passado todo este tempo, encontrámos sobretudo aldeias
+vazias. Muitos destes sítios estão hoje quase desertos, esvaziados pela
+emigração, e houve dias inteiros em que mal vimos uma alma na rua. As poucas
+vezes em que houve conversa a sério foram com os senhores do Mazouco e as suas
+laranjas, e talvez seja esse o nosso maior arrependimento: que não tenham
+aparecido mais histórias assim, daquelas que se contam depois. Se calhar a culpa
+também é nossa, que não somos os melhores a meter conversa com quem passa.
+
+Mas, no geral, gostámos muito. Os acessos eram bem melhores do que esperávamos, e
+há uma beleza particular nesta parte mais raiana de Trás-os-Montes, vazia, que
+por vezes nos lembrou o Alentejo. Ficam os momentos preferidos: os burros de
+Atenor, as laranjas de Mazouco, Guadramil, Chaves. E fica a vontade de voltar, e
+de continuar a viagem.
