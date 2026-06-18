@@ -36,11 +36,18 @@ def main():
 
     assets = C.REPO / f"apps/blog/assets/viagem-{args.journey}"
     assets.mkdir(parents=True, exist_ok=True)
-    jobs, manifest = [], []
+    # Swift writes a lossless PNG per photo (resize + orientation + EXIF strip) into
+    # a temp dir; ffmpeg then encodes each as a single-tile AVIF (Firefox-safe — the
+    # macOS AVIF writer would tile them into a grid Firefox can't decode).
+    pngs = jd / "png"
+    pngs.mkdir(exist_ok=True)
+    jobs, outputs, manifest = [], [], []
     for town, files in bytown.items():
         for i, f in enumerate(files, 1):
             name = f"{C.slug(town)}-{i}.avif" if len(files) > 1 else f"{C.slug(town)}.avif"
-            jobs.append(f"{args.photos / f}\t{assets / name}")
+            png = pngs / f"{name}.png"
+            jobs.append(f"{args.photos / f}\t{png}")
+            outputs.append((png, assets / name))
             r = meta[f]
             manifest.append({"webfile": name, "original": f, "town": town,
                              "date": (r["datetime_utc"] or "")[:10],
@@ -48,9 +55,12 @@ def main():
     tsv = jd / "avif_jobs.tsv"
     tsv.write_text("\n".join(jobs) + "\n", encoding="utf-8")
     subprocess.run(["swift", str(Path(__file__).parent / "export_avif.swift"), str(tsv)], check=True)
+    for png, avif in outputs:
+        C.png_to_avif(png, avif)
+        png.unlink(missing_ok=True)
     manifest.sort(key=lambda m: m["date"])
     (jd / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"exported {len(jobs)} AVIFs -> {assets}")
+    print(f"exported {len(outputs)} single-tile AVIFs -> {assets}")
 
 
 if __name__ == "__main__":

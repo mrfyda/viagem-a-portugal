@@ -6,9 +6,15 @@ exiftool / Swift Vision / CoreImage / sips). Outputs live in <photos>/_journey/.
 import json
 import math
 import re
+import subprocess
 import unicodedata
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+# Web AVIF encode quality (libsvtav1 CRF; lower = better/larger). A single-tile
+# encode at 28 is smaller than the old ImageIO grid output at comparable quality.
+AVIF_CRF = 28
+AVIF_MAX_PX = 1600
 
 REPO = Path(__file__).resolve().parents[2]
 BOOK_INDEX = REPO / "apps/map/src/data/book-index.json"
@@ -98,3 +104,16 @@ def iso(dt):
 
 def load_metadata(photos: Path):
     return json.loads((journey_dir(photos) / "metadata.json").read_text(encoding="utf-8"))
+
+
+def png_to_avif(png: Path, out: Path, crf: int = AVIF_CRF) -> None:
+    """Encode a PNG to a SINGLE-TILE AVIF via ffmpeg/libsvtav1 — never a grid, so
+    it decodes in Firefox. (ImageIO's AVIF writer tiles anything >512px into a grid
+    that Firefox can't decode; Chrome/Safari can.) Dimensions are cropped to even
+    (AV1 needs it; drops at most 1px/axis)."""
+    subprocess.run(
+        ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(png),
+         "-c:v", "libsvtav1", "-crf", str(crf), "-svtav1-params", "tune=0",
+         "-vf", "crop=trunc(iw/2)*2:trunc(ih/2)*2", "-frames:v", "1", str(out)],
+        check=True,
+    )
