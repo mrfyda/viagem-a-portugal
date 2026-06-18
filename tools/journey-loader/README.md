@@ -30,3 +30,20 @@ Requirements (all preinstalled on the dev Mac): `exiftool`, `swift` (Vision +
 ImageIO, macOS 12+), `sips`, `ffmpeg` (with `libsvtav1`), `python3`. No
 `pip`/`uv` packages needed — these scripts use only the standard library, so they
 work even when PyPI is unreachable. There is no local webp encoder, hence AVIF.
+
+## Voice memos → blog prose
+
+The photo pipeline leaves the post's prose as `⟨…⟩` placeholders; the
+travellers fill them with **voice memos**. The `draft-journey-from-memos` skill
+is the playbook; two scripts here do the mechanical work, **fully on-device**
+(audio never leaves the machine):
+
+| Command | Output |
+|---|---|
+| `uv run tools/journey-loader/transcribe_memos.py --memos DIR --places "…"` | one `.txt` per memo (whisper large-v3, mlx). Needs `ffmpeg`. |
+| `python3 tools/journey-loader/clean_transcripts.py --in DIR --out DIR/transcricao.md [--fixes DIR/fixes.json]` | combined markdown: repetition loops collapsed, toponyms fixed (every change logged) |
+
+Transcribe one file per call (the `mlx_whisper` CLI's multi-file mode clobbers
+outputs). Prime `--places` with the post's `places:` + `detours:` names so
+toponyms spell right. `--fixes` is a per-journey `[[regex, replacement], …]`
+list for the proper nouns whisper mis-hears.
