@@ -120,6 +120,25 @@ const fullyMovedPlaces = new Set(
   ),
 );
 
+/**
+ * The coordinate(s) a Place renders at — the single source of truth for both
+ * its marker(s) and the point a selection flies to. A fully-moved multi-referent
+ * Place renders one dot per journey referent at the route's coordinates; every
+ * other Place renders one dot at its home coordinate. buildTownsGeoJson maps
+ * over all of them and placeCenter takes the first, so the rendered marker and
+ * the fly-to target can never drift apart. Empty only for a Place with no
+ * coordinates (never the case for a member of `towns`).
+ */
+export function placeDots(indexName: string): [number, number][] {
+  if (fullyMovedPlaces.has(indexName)) {
+    return movedStopsByPlace
+      .get(indexName)!
+      .map((s) => [s.longitude, s.latitude] as [number, number]);
+  }
+  const home = byName.get(indexName);
+  return home ? [[home.longitude, home.latitude]] : [];
+}
+
 export function buildTownsGeoJson(
   visits: Visits = new Map(),
 ): FeatureCollection<Point, TownProperties> {
@@ -136,12 +155,7 @@ export function buildTownsGeoJson(
         visited: visits.has(town.name),
         visitedDate: visits.get(town.name) ?? null,
       };
-      const dots = fullyMovedPlaces.has(town.name)
-        ? movedStopsByPlace
-            .get(town.name)!
-            .map((s) => [s.longitude, s.latitude] as [number, number])
-        : [[town.longitude, town.latitude] as [number, number]];
-      return dots.map((coordinates) => ({
+      return placeDots(town.name).map((coordinates) => ({
         type: "Feature" as const,
         geometry: { type: "Point" as const, coordinates },
         properties,
@@ -154,19 +168,14 @@ export const townsGeoJson = buildTownsGeoJson();
 
 /**
  * Where to recentre the map when a Place is selected (map click, search, a
- * shared deep link, or browser back/forward). It must match the Place's
- * *rendered* marker: a fully-moved place renders at its route's moved-stop
- * coordinates, not at the Place's stale home coordinate — e.g. "Torre (serra
- * da Estrela)", whose only dot is the Torre de Belém stop in Lisbon. Centring
- * on the home coordinate would fly to the Serra da Estrela summit instead.
+ * shared deep link, or browser back/forward): the first of the Place's
+ * rendered dots, so the camera always lands on a real marker. placeDots
+ * explains why a fully-moved Place's home coordinate would be wrong — e.g.
+ * "Torre (serra da Estrela)", whose only dot is the Torre de Belém stop in
+ * Lisbon; centring on the home coordinate would fly to the summit instead.
  */
 export function placeCenter(indexName: string): [number, number] | undefined {
-  const moved = fullyMovedPlaces.has(indexName)
-    ? movedStopsByPlace.get(indexName)?.[0]
-    : undefined;
-  if (moved) return [moved.longitude, moved.latitude];
-  const home = byName.get(indexName);
-  return home ? [home.longitude, home.latitude] : undefined;
+  return placeDots(indexName)[0];
 }
 
 /**

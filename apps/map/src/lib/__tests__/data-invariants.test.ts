@@ -2,7 +2,14 @@ import { describe, expect, it } from "vitest";
 
 import { aliases, bookPlaceByName, bookPlaces, chapters } from "../book";
 import corrections from "../../data/corrections.json";
-import { routesGeoJson, stops, towns } from "../geo";
+import {
+  buildTownsGeoJson,
+  placeCenter,
+  placeDots,
+  routesGeoJson,
+  stops,
+  towns,
+} from "../geo";
 
 // Split homonym referents (e.g. "Lagoa de Óbidos") are real journey stops that
 // are NOT toponymic-index entries; they carry their coordinate in corrections.
@@ -76,6 +83,21 @@ describe("map data", () => {
     expect(towns.length).toBeGreaterThan(550);
     for (const t of towns) {
       expect(inRange(t.latitude, t.longitude), t.name).toBe(true);
+    }
+  });
+
+  it("renders every town at its placeDots and flies to the first of them", () => {
+    const features = buildTownsGeoJson().features;
+    for (const t of towns) {
+      const dots = placeDots(t.name);
+      // every town renders at least one marker, and the fly-to is the first dot
+      expect(dots.length, t.name).toBeGreaterThan(0);
+      expect(placeCenter(t.name), `${t.name} center`).toEqual(dots[0]);
+      // the rendered markers are exactly placeDots — marker and fly-to can't drift
+      const rendered = features
+        .filter((f) => f.properties.indexName === t.name)
+        .map((f) => f.geometry.coordinates);
+      expect(rendered, `${t.name} markers`).toEqual(dots);
     }
   });
 
