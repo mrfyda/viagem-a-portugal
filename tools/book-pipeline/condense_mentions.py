@@ -13,21 +13,16 @@ Aggregates classifications.json into the per-Place view the app needs
 Output: apps/map/src/data/mentions.json
 """
 
-import json
 from collections import defaultdict
-from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[2]
-CLASSIFICATIONS = REPO / "tools/book-pipeline/classifications.json"
-OVERRIDES = REPO / "tools/book-pipeline/journey-overrides.json"
-OUTPUT = REPO / "apps/map/src/data/mentions.json"
+import _store as S
 
 
 def main() -> None:
-    mentions = json.loads(CLASSIFICATIONS.read_text(encoding="utf-8"))["mentions"]
+    mentions = S.read_json(S.CLASSIFICATIONS)["mentions"]
     # reviewed splits re-label a homonym referent's mentions to its own name,
     # matching derive_stops.py (e.g. ch4 "Lagoa" -> "Lagoa de Óbidos").
-    ov = json.loads(OVERRIDES.read_text(encoding="utf-8"))
+    ov = S.load_overrides()
     renames = {(s["chapter"], s["place"]): s["name"] for s in ov.get("splits", [])}
     per_place: dict[str, list] = defaultdict(list)
     seen = set()
@@ -42,14 +37,10 @@ def main() -> None:
                 {"chapter": m["chapter"], "section": m["section"], "kind": m["kind"]}
             )
 
-    OUTPUT.write_text(
-        json.dumps(dict(sorted(per_place.items())), ensure_ascii=False, indent=1)
-        + "\n",
-        encoding="utf-8",
-    )
+    S.write_json(S.MENTIONS, dict(sorted(per_place.items())), indent=1)
     total = sum(len(v) for v in per_place.values())
-    print(f"{len(per_place)} places, {total} entries -> {OUTPUT} "
-          f"({OUTPUT.stat().st_size // 1024}KB)")
+    print(f"{len(per_place)} places, {total} entries -> {S.MENTIONS} "
+          f"({S.MENTIONS.stat().st_size // 1024}KB)")
 
 
 if __name__ == "__main__":

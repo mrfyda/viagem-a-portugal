@@ -17,16 +17,12 @@ Chapters are TOC entries whose file also contains sub-marker entries
 """
 
 import html
-import json
 import os
 import re
 import sys
 import zipfile
-from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-SECTIONS_JSON = REPO_ROOT / "apps/map/src/data/sections.json"
-OUTPUT_DIR = REPO_ROOT / "tools/book-pipeline/output/sections"
+import _store as S
 
 NAVPOINT_RE = re.compile(
     r"<navPoint[^>]*>\s*<navLabel>\s*<text>(?P<title>.*?)</text>\s*</navLabel>"
@@ -79,7 +75,7 @@ def main() -> None:
             if e["sectionMarker"] is None and e["file"] in files_with_sections
         ]
 
-        OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+        S.SECTIONS_DIR.mkdir(parents=True, exist_ok=True)
         chapters_out = []
         ordinal = 0
         problems = []
@@ -133,7 +129,7 @@ def main() -> None:
                     text = strip_html(raw[begin:end])
                     ordinal += 1
                     sections_out.append({"ordinal": ordinal, "title": title})
-                    path = OUTPUT_DIR / f"{number:02d}-{ordinal:03d}.txt"
+                    path = S.SECTIONS_DIR / f"{number:02d}-{ordinal:03d}.txt"
                     path.write_text(text + "\n", encoding="utf-8")
                     file_section_files.append(path)
 
@@ -152,13 +148,10 @@ def main() -> None:
                     f"({len(joined)} of {len(covered)} chars)"
                 )
 
-    SECTIONS_JSON.write_text(
-        json.dumps({"chapters": chapters_out}, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    S.write_json(S.SECTIONS, {"chapters": chapters_out})
 
     total_sections = sum(len(c["sections"]) for c in chapters_out)
-    print(f"{len(chapters_out)} chapters, {total_sections} sections -> {SECTIONS_JSON}")
+    print(f"{len(chapters_out)} chapters, {total_sections} sections -> {S.SECTIONS}")
     for chapter in chapters_out:
         print(f"  {chapter['number']}. {chapter['title']} ({len(chapter['sections'])} sections)")
     if len(chapters_out) != 6:

@@ -15,21 +15,14 @@ Low-confidence and unresolved results land in
 tools/book-pipeline/output/geocode-report.json for the review agent.
 """
 
-import json
 import math
 import re
 import time
 from collections import Counter, defaultdict
-from pathlib import Path
 
 import requests
 
-REPO = Path(__file__).resolve().parents[2]
-BOOK_INDEX = REPO / "apps/map/src/data/book-index.json"
-LOCATIONS = REPO / "apps/map/src/data/locations.json"
-CORRECTIONS = REPO / "apps/map/src/data/corrections.json"
-MENTIONS = REPO / "tools/book-pipeline/output/mentions.json"
-REPORT = REPO / "tools/book-pipeline/output/geocode-report.json"
+import _store as S
 
 PT_BBOX = (36.8, 42.3, -9.6, -6.0)  # continental Portugal
 NOMINATIM = "https://nominatim.openstreetmap.org/search"
@@ -55,13 +48,10 @@ def nominatim(query: str) -> list[dict]:
 
 
 def main() -> None:
-    index = json.loads(BOOK_INDEX.read_text(encoding="utf-8"))
-    places = index["places"]
-    old = {l["name"]: l for l in json.loads(LOCATIONS.read_text(encoding="utf-8"))}
-    corrections = {
-        c["name"]: c for c in json.loads(CORRECTIONS.read_text(encoding="utf-8"))
-    }
-    mentions = json.loads(MENTIONS.read_text(encoding="utf-8"))["mentions"]
+    places = S.load_places()
+    corrections = {c["name"]: c for c in S.load_corrections()}
+    known = S.load_coords()
+    mentions = S.read_json(S.RAW_MENTIONS)["mentions"]
 
     # dominant chapter per place (ambiguous mentions count for all candidates)
     place_chapters: dict[str, Counter] = defaultdict(Counter)
@@ -69,14 +59,8 @@ def main() -> None:
         for cand in m["candidates"]:
             place_chapters[cand][m["chapter"]] += 1
 
-    # chapter envelopes from already-known coordinates
-    known: dict[str, tuple[float, float]] = {}
-    for name, loc in old.items():
-        if loc["latitude"] or loc["longitude"]:
-            known[name] = (loc["latitude"], loc["longitude"])
-    for name, loc in corrections.items():
-        known[name] = (loc["latitude"], loc["longitude"])
-
+    # chapter envelopes from already-known coordinates (known = S.load_coords:
+    # locations + corrections merged, the (0,0) not-geocoded entries dropped)
     chapter_coords: dict[int, list[tuple[float, float]]] = defaultdict(list)
     for name, coord in known.items():
         chapters = place_chapters.get(name)
@@ -191,18 +175,14 @@ def main() -> None:
             )
         print(f"[{confidence}] {name} -> {best.get('display_name', '?')[:70]}")
 
-    LOCATIONS.write_text(
-        json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
-    REPORT.write_text(
-        json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
+    S.write_json(S.LOCATIONS, out)
+    S.write_json(S.GEOCODE_REPORT, report)
     unresolved = sum(1 for o in out if o["source"] == "unresolved")
     print(
         f"\nkept {kept}, newly resolved {resolved}, unresolved {unresolved} "
         f"of {len(places)} places"
     )
-    print(f"report entries: {len(report)} -> {REPORT}")
+    print(f"report entries: {len(report)} -> {S.GEOCODE_REPORT}")
 
 
 if __name__ == "__main__":

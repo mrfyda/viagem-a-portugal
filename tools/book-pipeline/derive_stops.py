@@ -19,18 +19,10 @@ Outputs:
   tools/book-pipeline/output/stops-report.json   review queue
 """
 
-import json
 import math
 from collections import defaultdict
-from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[2]
-CLASSIFICATIONS = REPO / "tools/book-pipeline/classifications.json"
-OVERRIDES = REPO / "tools/book-pipeline/journey-overrides.json"
-LOCATIONS = REPO / "apps/map/src/data/locations.json"
-CORRECTIONS = REPO / "apps/map/src/data/corrections.json"
-STOPS_JSON = REPO / "apps/map/src/data/stops.json"
-REPORT = REPO / "tools/book-pipeline/output/stops-report.json"
+import _store as S
 
 NEIGHBOR_FLAG_KM = 50.0
 
@@ -43,19 +35,14 @@ def km(a: tuple[float, float], b: tuple[float, float]) -> float:
 
 
 def main() -> None:
-    mentions = json.loads(CLASSIFICATIONS.read_text(encoding="utf-8"))["mentions"]
-    coords: dict[str, tuple[float, float]] = {}
-    for loc in json.loads(LOCATIONS.read_text(encoding="utf-8")):
-        if loc["latitude"] or loc["longitude"]:
-            coords[loc["name"]] = (loc["latitude"], loc["longitude"])
-    for c in json.loads(CORRECTIONS.read_text(encoding="utf-8")):
-        coords[c["name"]] = (c["latitude"], c["longitude"])
+    mentions = S.read_json(S.CLASSIFICATIONS)["mentions"]
+    coords = S.load_coords()
 
     # reviewed journey overrides: per-(place, chapter) exclusions for
     # misattributed mentions (chapel/tower common nouns, people, streets)
     # and coordinate overrides where the same index entry names a different
     # physical thing in this chapter
-    ov = json.loads(OVERRIDES.read_text(encoding="utf-8"))
+    ov = S.load_overrides()
     excluded = {(e["chapter"], e["place"]) for e in ov["exclusions"]}
     mention_excluded = {
         (e["chapter"], e["section"], e["place"])
@@ -236,18 +223,10 @@ def main() -> None:
                 }
             )
 
-    STOPS_JSON.write_text(
-        json.dumps({"stops": out}, ensure_ascii=False, indent=1) + "\n",
-        encoding="utf-8",
-    )
-    REPORT.write_text(
-        json.dumps(
-            {"continuityFlags": flags, "skippedNoCoords": sorted(set(skipped_no_coords))},
-            ensure_ascii=False,
-            indent=2,
-        )
-        + "\n",
-        encoding="utf-8",
+    S.write_json(S.STOPS, {"stops": out}, indent=1)
+    S.write_json(
+        S.STOPS_REPORT,
+        {"continuityFlags": flags, "skippedNoCoords": sorted(set(skipped_no_coords))},
     )
 
     stops_only = sum(1 for s in out if s["role"] == "stop")
@@ -256,7 +235,7 @@ def main() -> None:
         n = len(chapters[ch])
         print(f"  ch{ch}: {n} points")
     print(f"continuity flags: {len(flags)}; no-coords skips: {len(set(skipped_no_coords))}")
-    print(f"-> {STOPS_JSON}\n-> {REPORT}")
+    print(f"-> {S.STOPS}\n-> {S.STOPS_REPORT}")
 
 
 if __name__ == "__main__":

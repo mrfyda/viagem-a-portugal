@@ -4,19 +4,11 @@ WP13 — data invariants for committed pipeline artifacts.
 Run: uv run --with pytest -m pytest tools/book-pipeline/test_data.py
 """
 
-import json
-from pathlib import Path
-
-REPO = Path(__file__).resolve().parents[2]
-DATA = REPO / "apps/map/src/data"
-
-
-def load(name: str):
-    return json.loads((DATA / name).read_text(encoding="utf-8"))
+import _store as S
 
 
 def test_book_index():
-    index = load("book-index.json")
+    index = S.load_index()
     places = index["places"]
     assert len(places) == 578
     names = [p["indexName"] for p in places]
@@ -29,7 +21,7 @@ def test_book_index():
 
 
 def test_sections():
-    sections = load("sections.json")
+    sections = S.read_json(S.SECTIONS)
     chapters = sections["chapters"]
     assert len(chapters) == 6
     ordinals = [s["ordinal"] for c in chapters for s in c["sections"]]
@@ -37,12 +29,10 @@ def test_sections():
 
 
 def test_classifications():
-    cls = json.loads(
-        (REPO / "tools/book-pipeline/classifications.json").read_text(encoding="utf-8")
-    )
+    cls = S.read_json(S.CLASSIFICATIONS)
     mentions = cls["mentions"]
     assert len(mentions) == 1863
-    index_names = {p["indexName"] for p in load("book-index.json")["places"]}
+    index_names = S.index_names()
     kinds = {"stop", "passed-through", "referenced-only"}
     for m in mentions:
         assert m["kind"] in kinds
@@ -51,11 +41,11 @@ def test_classifications():
 
 
 def test_stops():
-    stops = load("stops.json")["stops"]
-    index_names = {p["indexName"] for p in load("book-index.json")["places"]}
+    stops = S.read_json(S.STOPS)["stops"]
+    index_names = S.index_names()
     # split homonym referents (e.g. "Lagoa de Óbidos") are real stops that are
     # NOT toponymic-index entries; their coordinate lives in corrections.json
-    corrected = {c["name"] for c in load("corrections.json")}
+    corrected = {c["name"] for c in S.load_corrections()}
     assert [s["ordinal"] for s in stops] == list(range(1, len(stops) + 1))
     chapters_seen = []
     for s in stops:
@@ -69,6 +59,6 @@ def test_stops():
 
 
 def test_locations_cover_index():
-    locations = {l["name"] for l in load("locations.json")}
-    index_names = {p["indexName"] for p in load("book-index.json")["places"]}
+    locations = {l["name"] for l in S.load_locations()}
+    index_names = S.index_names()
     assert index_names <= locations

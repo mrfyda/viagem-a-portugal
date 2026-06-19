@@ -14,25 +14,17 @@ Output: tools/book-pipeline/output/mentions.json (local-only; offsets point
 into local section text files).
 """
 
-import json
 import re
 import sys
 from collections import defaultdict
-from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-BOOK_INDEX = REPO_ROOT / "apps/map/src/data/book-index.json"
-SECTIONS_JSON = REPO_ROOT / "apps/map/src/data/sections.json"
-SECTIONS_DIR = REPO_ROOT / "tools/book-pipeline/output/sections"
-OUTPUT = REPO_ROOT / "tools/book-pipeline/output/mentions.json"
+import _store as S
 
 # common Portuguese toponym abbreviation variants (index ↔ prose)
 EXPANSIONS = [("S. ", "São "), ("Sta. ", "Santa "), ("D. ", "Dona ")]
 
 # book uses short forms for some index entries (see match-aliases.json)
-MATCH_ALIASES = json.loads(
-    (Path(__file__).parent / "match-aliases.json").read_text(encoding="utf-8")
-)
+MATCH_ALIASES = S.read_json(S.MATCH_ALIASES)
 
 # index places legitimately absent from the body text (kept in the index
 # for the printed edition's own reasons); zero mentions allowed
@@ -61,8 +53,8 @@ def variants(name: str) -> set[str]:
 
 
 def main() -> None:
-    index = json.loads(BOOK_INDEX.read_text(encoding="utf-8"))
-    sections = json.loads(SECTIONS_JSON.read_text(encoding="utf-8"))
+    index = S.load_index()
+    sections = S.read_json(S.SECTIONS)
 
     # search term -> candidate indexNames (homonyms share a display name)
     targets: dict[str, list[str]] = defaultdict(list)
@@ -89,7 +81,7 @@ def main() -> None:
     }
 
     mentions = []
-    for path in sorted(SECTIONS_DIR.glob("*.txt")):
+    for path in sorted(S.SECTIONS_DIR.glob("*.txt")):
         chapter_num, ordinal = (int(x) for x in path.stem.split("-"))
         text = path.read_text(encoding="utf-8")
         spans: list[tuple[int, int, str]] = []
@@ -112,10 +104,7 @@ def main() -> None:
                 }
             )
 
-    OUTPUT.write_text(
-        json.dumps({"mentions": mentions}, ensure_ascii=False, indent=1) + "\n",
-        encoding="utf-8",
-    )
+    S.write_json(S.RAW_MENTIONS, {"mentions": mentions}, indent=1)
 
     hit_places = {c for m in mentions for c in m["candidates"]}
     paged = [p["indexName"] for p in index["places"] if p["pages"]]
