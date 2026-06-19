@@ -41,6 +41,8 @@ const en = {
   cancel: "Cancel",
   navMap: "Map",
   navAbout: "About",
+  account: "Account",
+  noResults: "No matching places",
 };
 
 const pt: typeof en = {
@@ -81,6 +83,8 @@ const pt: typeof en = {
   cancel: "Cancelar",
   navMap: "Mapa",
   navAbout: "Sobre",
+  account: "Conta",
+  noResults: "Nenhum lugar encontrado",
 };
 
 export type MessageKey = keyof typeof en;

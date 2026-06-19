@@ -7,6 +7,8 @@ import { t } from "../lib/i18n";
 import { CHAPTER_COLORS } from "../lib/mapStyle";
 import DetourDetailPanel from "./DetourDetailPanel";
 import MapNav from "./MapNav";
+import MapTopBar from "./MapTopBar";
+import MobileTabBar, { type MobileTab } from "./MobileTabBar";
 import TownDetailPanel, { type TownDetailPanelProps } from "./TownDetailPanel";
 import TownSearch from "./TownSearch";
 
@@ -82,33 +84,32 @@ function ChapterList({
 }
 
 /**
- * Mobile-only journey bottom sheet: a slim tappable header that expands to the
- * compact chapter list, so it stays out of the map's way and can collapse to a
- * single bar.
+ * Mobile bottom sheet floated just above the {@link MobileTabBar}. Each tab /
+ * the search button opens one of these (journey, account, search) with a pinned
+ * header and a scrollable body, leaving the map visible behind the glass nav.
  */
-function MobileJourneySheet({
-  onFocusChapter,
+function MobileSheet({
+  title,
+  onClose,
+  children,
 }: {
-  onFocusChapter: (chapter: number) => void;
+  title: string;
+  onClose: () => void;
+  children: ReactNode;
 }) {
-  const [open, setOpen] = useState(true);
   return (
-    <aside className="absolute inset-x-3 bottom-3 flex flex-col rounded-lg border border-border bg-card/95 text-sm text-foreground shadow-sm">
-      <button
-        onClick={() => setOpen((o) => !o)}
-        aria-expanded={open}
-        className="flex items-center justify-between gap-2 rounded-lg px-4 py-2.5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-      >
-        <span className="text-base font-bold">{t("theJourney")}</span>
-        <span className="text-xs text-muted-foreground" aria-hidden>
-          {open ? "▾" : "▸"}
-        </span>
-      </button>
-      {open && (
-        <div className="flex max-h-[40vh] flex-col gap-0.5 overflow-y-auto border-t border-border px-2 py-2">
-          <ChapterList compact onFocusChapter={onFocusChapter} />
-        </div>
-      )}
+    <aside className="absolute inset-x-3 bottom-20 z-10 flex max-h-[55vh] flex-col rounded-2xl border border-border bg-card/95 text-sm text-foreground shadow-lg backdrop-blur-sm">
+      <div className="flex items-center justify-between gap-2 border-b border-border px-4 py-2.5">
+        <span className="text-base font-bold">{title}</span>
+        <button
+          onClick={onClose}
+          aria-label={t("close")}
+          className="rounded px-1 text-muted-foreground hover:text-foreground"
+        >
+          ✕
+        </button>
+      </div>
+      <div className="flex flex-col gap-0.5 overflow-y-auto p-2">{children}</div>
     </aside>
   );
 }
@@ -123,20 +124,50 @@ export default function MapSidebar({
   selectedDetour,
   onCloseDetour,
 }: MapSidebarProps) {
-  // Mobile: a narrow top-left card carries only the brand, progress and search
-  // so the map and its top-right controls stay visible; the journey rides in a
-  // bottom sheet. A selected Place/Detour renders its own bottom sheet (via
-  // TravelMap), so the journey sheet steps aside to avoid stacking two sheets.
+  // Which bottom sheet the glass tab bar has open ("map" = none). Search is a
+  // separate toggle so it can overlay whichever tab view is underneath.
+  const [mobileView, setMobileView] = useState<MobileTab>("map");
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  // Mobile: a slim top-left brand card, and a floating Liquid Glass tab bar that
+  // owns the journey / account / search, each opening as a bottom sheet above
+  // it. A selected Place/Detour renders a full-screen sheet (via TravelMap) that
+  // covers the nav, so the bottom chrome only shows while browsing the map.
   if (!isDesktop) {
-    const showJourney = selectedPlace == null && selectedDetour == null;
+    const selectionActive = selectedPlace != null || selectedDetour != null;
     return (
       <>
-        <aside className="absolute left-3 top-3 flex w-60 max-w-[70%] flex-col gap-1.5 rounded-lg border border-border bg-card/95 p-3 text-sm text-foreground shadow-sm max-[359px]:w-52">
-          <MapNav />
-          {header}
-          <TownSearch onSelect={onSelectPlace} />
-        </aside>
-        {showJourney && <MobileJourneySheet onFocusChapter={onFocusChapter} />}
+        <MapTopBar />
+
+        {!selectionActive && (
+          <>
+            {/* The tab view sheet (journey / account). Search isn't a sheet:
+                it expands the glass nav itself into a search field (iOS 26). */}
+            {searchOpen ? null : mobileView === "journey" ? (
+              <MobileSheet title={t("theJourney")} onClose={() => setMobileView("map")}>
+                <ChapterList compact onFocusChapter={onFocusChapter} />
+              </MobileSheet>
+            ) : mobileView === "profile" && header ? (
+              <MobileSheet title={t("account")} onClose={() => setMobileView("map")}>
+                <div className="flex flex-col gap-2 px-2 py-1">{header}</div>
+              </MobileSheet>
+            ) : null}
+            <MobileTabBar
+              active={mobileView}
+              searchOpen={searchOpen}
+              hasProfile={Boolean(header)}
+              onSelect={(tab) => {
+                setSearchOpen(false);
+                setMobileView((cur) => (cur === tab && tab !== "map" ? "map" : tab));
+              }}
+              onToggleSearch={() => setSearchOpen((o) => !o)}
+              onSelectPlace={(p) => {
+                onSelectPlace(p);
+                setSearchOpen(false);
+              }}
+            />
+          </>
+        )}
       </>
     );
   }

@@ -55,6 +55,15 @@
     }
 }
 
+/* Mobile: the full-width brand bar (MapTopBar) owns the top edge, so push the
+   map's top-right zoom/locate controls down below it. Desktop keeps its controls
+   bottom-right, so this only affects the mobile layout. */
+@media (max-width: 767px) {
+    .maplibregl-ctrl-top-right {
+        margin-top: calc(env(safe-area-inset-top, 0px) + 3.25rem);
+    }
+}
+
 /* WCAG 2.5.8 / HIG: comfortable targets on touch devices */
 @media (pointer: coarse) {
     button,
@@ -62,6 +71,18 @@
     [role="button"] {
         min-height: 44px;
         min-width: 44px;
+    }
+}
+
+/* iOS 26 search: the glass nav morphs into a full-width search field. */
+@keyframes searchIn {
+    from {
+        opacity: 0;
+        transform: translateX(10px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
     }
 }
 
