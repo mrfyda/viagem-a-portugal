@@ -1,14 +1,7 @@
-import {
-  aliases,
-  bookPlaceByName,
-  mentionsByPlace,
-  sectionTitle,
-} from "../lib/book";
-import { featuredVisitFor } from "../lib/featured";
-import { adjacentPlace, stops } from "../lib/geo";
+import { sectionTitle } from "../lib/book";
 import { CHAPTER_COLORS } from "../lib/mapStyle";
 import { t } from "../lib/i18n";
-import { quoteFor } from "../lib/quotes";
+import { placeDetail } from "../lib/place";
 import PanelShell from "./PanelShell";
 import PostPhotoLink from "./PostPhotoLink";
 
@@ -49,20 +42,12 @@ export default function TownDetailPanel({
   onClose,
   onNavigate,
 }: TownDetailPanelProps) {
-  const book = bookPlaceByName.get(place);
-  const placeMentions = mentionsByPlace[place] ?? [];
-  const journeyStops = stops.filter((s) => s.place === place);
-  const alsoIndexedAs = Object.entries(aliases)
-    .filter(([, to]) => to === place)
-    .map(([from]) => from);
-  const quote = quoteFor(place);
-  const featured = featuredVisitFor(place);
-  const prev = adjacentPlace(place, -1);
-  const next = adjacentPlace(place, 1);
+  const { book, name, mentions, journeyStops, alsoIndexedAs, quote, featured, prev, next } =
+    placeDetail(place);
 
   return (
     <PanelShell
-      title={book?.name ?? place}
+      title={name}
       embedded={embedded}
       onClose={onClose}
       onPrev={prev ? () => onNavigate(prev) : null}
@@ -103,9 +88,9 @@ export default function TownDetailPanel({
         </span>
       ))}
 
-      {placeMentions.length > 0 && (
+      {mentions.length > 0 && (
         <div className="text-xs text-muted-foreground">
-          {placeMentions.map((m, i) => (
+          {mentions.map((m, i) => (
             <div key={i}>
               {t("chapterAbbrev", { chapter: m.chapter })}, “{sectionTitle(m.section)}” ({KIND_LABEL[m.kind]})
             </div>
@@ -119,12 +104,12 @@ export default function TownDetailPanel({
           postUrl={featured.postUrl}
           postTitle={featured.postTitle}
           date={featured.date}
-          alt={book?.name ?? place}
+          alt={name}
         />
       )}
 
       <a
-        href={`https://pt.wikipedia.org/wiki/${encodeURIComponent((book?.name ?? place).replaceAll(" ", "_"))}`}
+        href={`https://pt.wikipedia.org/wiki/${encodeURIComponent(name.replaceAll(" ", "_"))}`}
         target="_blank"
         rel="noreferrer"
         className="text-xs text-primary underline"

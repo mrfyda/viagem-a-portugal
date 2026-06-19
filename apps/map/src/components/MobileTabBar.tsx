@@ -1,8 +1,8 @@
 import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
 
 import { useKeyboardInset } from "../hooks/useKeyboardInset";
-import { bookPlaces } from "../lib/book";
 import { t } from "../lib/i18n";
+import { searchPlaces } from "../lib/search";
 
 /**
  * Mobile-only floating bottom navigation — an iOS 26 "Liquid Glass" tab bar.
@@ -85,10 +85,7 @@ export default function MobileTabBar({
   // iOS 26: tapping the separated search button morphs the tab bar into a
   // full-width search field; matches list in a panel above it; Cancel reverts.
   if (searchOpen) {
-    const q = query.trim().toLowerCase();
-    const matches = (q ? bookPlaces.filter((p) => p.name.toLowerCase().includes(q)) : bookPlaces)
-      .slice()
-      .sort((a, b) => a.name.localeCompare(b.name, "pt"));
+    const matches = searchPlaces(query);
     const grow: CSSProperties = {
       animation: "searchIn 240ms cubic-bezier(.32,.72,0,1)",
     };
