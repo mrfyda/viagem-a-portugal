@@ -75,11 +75,16 @@ to a `canvas.maplibregl-canvas`, so wait for that selector before screenshotting
   gitignored `tools/book-pipeline/output/`.
 - Visits belong to a signed-in Traveler (CONTEXT.md) and sync via Supabase
   (`supabase/README.md` for setup; docs/adr/0007–0009 for the decisions).
-  Anonymous visitors browse read-only. `useProgress(userId)` overlays the
-  server's visit log with a local offline outbox (`src/lib/sync.ts`):
-  actions queue per Place and replay when the network allows — whichever
-  device syncs last wins. The log and outbox are cached per account in
-  localStorage/AsyncStorage so an offline cold start still shows the
+  Anonymous visitors browse read-only. A `VisitStore`
+  (`src/lib/visitStore.ts`) owns the lifecycle — it overlays the server's
+  visit log with a local offline outbox (the pure overlay/serialize fns stay
+  in `src/lib/sync.ts`): actions queue per Place and replay when the network
+  allows — whichever device syncs last wins. The store owns *how* (hydrate,
+  coalesce, flush, retry, teardown) behind a `VisitTransport`/`VisitStorage`
+  port pair (Supabase + keyed-storage adapters in prod, in-memory fakes in
+  tests); `useProgress(userId)` is a thin `useSyncExternalStore` hook that owns
+  *when* to sync (mount, network returning). The log and outbox are cached per
+  account in localStorage/AsyncStorage so an offline cold start still shows the
   journey. Visit dates are user-entered, never defaulted. Builds without
   `EXPO_PUBLIC_SUPABASE_URL`/`EXPO_PUBLIC_SUPABASE_ANON_KEY` are read-only
   with sign-in hidden (CI fork PRs build fine). Native is read-only until
