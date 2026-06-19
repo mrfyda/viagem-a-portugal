@@ -60,20 +60,38 @@ detours:
     image: /assets/viagem-1/atenor.avif
 ---
 
-Esta viagem começou como uma desculpa. Queríamos conhecer melhor o interior do
-país, aquela parte de que pouco se fala e que quase não aparece na internet,
-porque toda a gente acaba por ir aos mesmos sítios. O livro de Saramago deu-nos
-o pretexto e o roteiro: um conjunto de terras que normalmente ninguém procura,
-algumas já meio desaparecidas, quase todas mudadas desde que ele por lá passou.
-Até pensámos em fazer a Nacional 2, mas a *Viagem a Portugal* levava-nos a
-sítios onde a estrada não chega. E tinha a sua graça poder ler hoje o que ele
-escreveu e ver o que ficou, o que mudou e o que desapareceu. Saramago andou
-quase sempre sozinho e ao volante. Nós fomos os dois, mas calhou a um de nós
-conduzir o caminho todo, o que, entre serras e estradas que nunca mais acabavam,
-nem sempre foi fácil.
+## A pré-viagem
 
-Oito dias, de 18 a 25 de fevereiro de 2023, do centro ao nordeste transmontano
-e de regresso.
+Descobrimos por acaso o livro de José Saramago, *Viagem a Portugal*, na RTP,
+através da [série com o mesmo nome](https://www.rtp.pt/play/p10829/viagem-a-portugal) apresentada por Fábio Porchat. A primeira
+edição do livro foi publicada em 1981, depois de, entre outubro de 1979 e julho
+de 1980, José Saramago ter percorrido o país a convite do Círculo de Leitores.
+Gostamos bastante de Saramago, mas desconhecíamos por completo este livro,
+ficámos curiosos e resolvemos ver o primeiro episódio, no qual Fábio Porchat visita, entre
+outros locais, Torre de Moncorvo, Amarante e Chaves. Ao ver esse episódio,
+achámos que seria interessante fazermos também nós uma viagem a Portugal,
+seguindo os passos de Saramago, 42 anos depois. Entretanto ofereceram-nos o livro, metemos a série em pausa e começámos a tirar notas sobre
+todos os lugares mencionados e… são muitos! Saramago vai visitando todas as
+capelinhas que lhe aparecem pelo caminho, e com isso aproveita para conhecer um
+pouco mais das gentes e das terras por onde passa. Esse é um dos pontos mais
+curiosos do livro: o interesse e o conhecimento que Saramago, um ateu convicto,
+demonstra em relação à arte sacra, e como aproveita esse interesse para se
+conectar àqueles que vai encontrando pelo caminho.
+
+Começar a preparar a viagem e a adicionar todos os pontos no mapa fez-nos
+perceber que ia mesmo ser preciso alguma organização, e fazer algumas concessões
+em relação ao roteiro de Saramago que nos permitissem também incluir alguns
+locais que queríamos visitar e onde Saramago não parou ou esteve pouco tempo,
+assim como ter algum tempo extra para passeios pela Natureza. Também deu para
+perceber que esta não é uma viagem para fazermos num fim-de-semana ou num Verão,
+por isso vamos fazendo-a aos poucos. Esta primeira etapa foram oito dias, de 18 a
+25 de fevereiro de 2023, do centro ao nordeste transmontano e de regresso. E foi
+um de nós que conduziu o caminho quase todo, o que, entre serras e estradas que
+nunca mais acabavam, nem sempre foi fácil.
+
+> «É preciso recomeçar a viagem. Sempre.»
+>
+> — José Saramago, *Viagem a Portugal*
 
 ## Dia 1 — 18 de fevereiro, sábado
 
@@ -88,8 +106,10 @@ maior e mais bonito do que esperávamos, ainda que um pouco ao abandono, e com
 uma vista bonita sobre a cidade. Apanhámos imensos autocarros a passar, coisa
 que, não sabemos bem porquê, nos surpreendeu, e até encontrámos algumas opções
 vegan. Não chegámos a entrar na biblioteca e ficou muita coisa por ver, mas era
-uma cidade simpática, e fica sempre uma desculpa para voltar. Pelas paredes,
-muita arte urbana: Coimbra está cheia dela.
+uma cidade simpática, e fica sempre uma desculpa para voltar. E, pelas paredes,
+muita arte urbana, que Coimbra tem aos montes. Ficámos com uma peça da Ninas, um
+coletor menstrual, e com uma frase pintada que merece ser levada por aí: «deixa
+a xoxota respirar».
 
 ## Dia 2 — 19 de fevereiro, domingo
 
@@ -246,6 +266,20 @@ Ficámos numa residencial com aquecimento no chão, um luxo inesperado para o fr
 que fazia. Foi também aqui que um de nós adoeceu, coisa que nos acompanhou nos
 dias seguintes.
 
+### Atenor
+
+_Fora da viagem de Saramago: o Centro de Valorização do Burro de Miranda (AEPGA), em Atenor, que acolhe e protege a raça asinina mirandesa._
+
+<figure>
+  <img src="{{ '/assets/viagem-1/atenor.avif' | relative_url }}" alt="Atenor" loading="lazy">
+  <figcaption>Atenor</figcaption>
+</figure>
+
+Foi aqui que tivemos o momento preferido da viagem. Marcámos uma visita à AEPGA e
+passámos a manhã a fazer-lhes festas e a brincar com eles. Havia muitos, com
+nomes como o Dom Quixote e a Dulcineia, esta prenha, e até crias acabadas de
+nascer. São animais muito dóceis, e custou-nos vir embora.
+
 ### Sendim
 
 > «este molho de vinagre que faz transpirar as maçãs do rosto e é cabal demonstração de que há uma felicidade do corpo»
@@ -269,21 +303,6 @@ mas a família manteve a casa e o espírito. Comemos uma posta mirandesa enorme,
 daquelas que nos deixam sem conseguir levantar da cadeira. Pesado, mas valeu cada
 garfada, e até assenta bem aqui aquilo que o Saramago diz sobre a felicidade do
 corpo.
-
-### Atenor
-
-_Fora da viagem de Saramago: o Centro de Valorização do Burro de Miranda (AEPGA), em Atenor, que acolhe e protege a raça asinina mirandesa._
-
-<figure>
-  <img src="{{ '/assets/viagem-1/atenor.avif' | relative_url }}" alt="Atenor" loading="lazy">
-  <figcaption>Atenor</figcaption>
-</figure>
-
-Foi aqui que tivemos o momento preferido da viagem. Marcámos uma visita à AEPGA,
-a associação que acolhe e protege os burros de Miranda, e passámos a manhã a
-fazer-lhes festas e a brincar com eles. Havia muitos, com nomes como o Dom
-Quixote e a Dulcineia, esta prenha, e até crias acabadas de nascer. São animais
-muito dóceis, e custou-nos vir embora.
 
 ### Mogadouro
 
@@ -409,8 +428,8 @@ que, deste lado, a cidade mais próxima é Bragança, longe e difícil de alcan�
 Bragança foi a maior cidade da viagem depois de Coimbra, e deu para sentir a
 diferença: tem universidade, passadiços ao longo do rio e, como Coimbra, colinas
 que não acabam. O Saramago também chegou aqui cansado, e percebemo-lo bem. Pela
-cidade demos com uma das esculturas de animais feitas de lixo do Bordalo II e com
-o Centro de Fotografia Georges Dussaud, onde ficámos a namorar o livro
+cidade demos com uma gineta, uma das esculturas de animais feitas de lixo do
+Bordalo II, e com o Centro de Fotografia Georges Dussaud, onde ficámos a namorar o livro
 *Trás-os-Montes*, cheio de fotografias antigas da região (andámos depois à
 procura dele, mas está quase todo esgotado). Para jantar, encontrámos o Batoque,
 um restaurante pequeno e escondido especializado em cogumelos, com pratos que
