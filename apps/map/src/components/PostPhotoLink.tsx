@@ -25,7 +25,7 @@ export default function PostPhotoLink({
           src={withSiteBase(image)}
           alt={alt}
           loading="lazy"
-          className="block h-36 w-full object-cover"
+          className="block aspect-[4/3] w-full object-cover"
         />
       )}
       <div className="p-2">
