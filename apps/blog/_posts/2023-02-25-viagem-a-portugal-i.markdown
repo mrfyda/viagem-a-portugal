@@ -60,7 +60,7 @@ detours:
     image: /assets/viagem-1/atenor.avif
 ---
 
-## A pré-viagem
+## A viagem antes da viagem
 
 Descobrimos por acaso o livro de José Saramago, *Viagem a Portugal*, na RTP,
 através da [série com o mesmo nome](https://www.rtp.pt/play/p10829/viagem-a-portugal) apresentada por Fábio Porchat. A primeira

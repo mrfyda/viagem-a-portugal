@@ -42,6 +42,8 @@ is the playbook; two scripts here do the mechanical work, **fully on-device**
 |---|---|
 | `uv run tools/journey-loader/transcribe_memos.py --memos DIR --places "…"` | one `.txt` per memo (whisper large-v3, mlx). Needs `ffmpeg`. |
 | `python3 tools/journey-loader/clean_transcripts.py --in DIR --out DIR/transcricao.md [--fixes DIR/fixes.json]` | combined markdown: repetition loops collapsed, toponyms fixed (every change logged) |
+| `python3 tools/journey-loader/build_caption_helper.py --post POST --out captions.html` | a local page (one caption box per photo) so the author captions each image; Export → `captions.json` |
+| `python3 tools/journey-loader/apply_captions.py --post POST --captions captions.json` | writes each `<figcaption>` from the map (leaves `alt` = place name) |
 
 Transcribe one file per call (the `mlx_whisper` CLI's multi-file mode clobbers
 outputs). Prime `--places` with the post's `places:` + `detours:` names so

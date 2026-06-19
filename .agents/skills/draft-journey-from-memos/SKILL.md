@@ -76,6 +76,20 @@ Ask for the **memo folder** and the **journey number N**.
    (intro + one full day spanning a rich place, a thin place, and a detour) and
    get sign-off on register BEFORE writing all eight days. Then complete it.
 
+5. **Captions.** The scaffold's `<figcaption>`s default to the place name, which
+   repeats when a place has several photos. To make them describe what's shown
+   *without the agent opening the images* (same local-only rule), generate the
+   caption helper, have the author fill it, and apply:
+   ```sh
+   python3 tools/journey-loader/build_caption_helper.py --post POST --out ~/Desktop/viagem-N-captions.html
+   # author opens it (needs the dev server running for the images), captions each
+   # photo, hits Export -> captions.json, hands it back
+   python3 tools/journey-loader/apply_captions.py --post POST --captions captions.json
+   ```
+   It rewrites each `<figcaption>` and leaves the `alt` as the place name (good
+   for SEO). Don't infer captions from the memos — the author must look at the
+   actual photos.
+
 ## Register (the judgement that matters)
 
 Confirm these with the user, but the Journey I defaults were:
