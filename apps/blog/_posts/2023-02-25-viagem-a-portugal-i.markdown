@@ -126,7 +126,7 @@ aparecer pelo caminho.
 
 <figure>
   <img src="{{ '/assets/viagem-1/figueira-de-castelo-rodrigo.avif' | relative_url }}" alt="Figueira de Castelo Rodrigo" loading="lazy">
-  <figcaption>Figueira de Castelo Rodrigo</figcaption>
+  <figcaption>A igreja matriz</figcaption>
 </figure>
 
 Parámos para almoçar e demos com um restaurante enorme, cheio de uma excursão,
@@ -140,7 +140,7 @@ bocado fora de mão.
 
 <figure>
   <img src="{{ '/assets/viagem-1/vila-nova-de-foz-coa.avif' | relative_url }}" alt="Vila Nova de Foz Côa" loading="lazy">
-  <figcaption>Vila Nova de Foz Côa</figcaption>
+  <figcaption>O vale do rio Côa</figcaption>
 </figure>
 
 De Foz Côa, na verdade, não chegámos a ver a vila: ficámos pelo museu do Côa, já
@@ -163,7 +163,7 @@ nos lembramos, e um desvio fora do mapa que quase nos deixou pelo caminho.
 
 <figure>
   <img src="{{ '/assets/viagem-1/torre-de-moncorvo.avif' | relative_url }}" alt="Torre de Moncorvo" loading="lazy">
-  <figcaption>Torre de Moncorvo</figcaption>
+  <figcaption>A antiga estação de comboios</figcaption>
 </figure>
 
 Saramago entrou em Moncorvo de noite fechada, e connosco foi quase igual. Ainda
@@ -186,17 +186,17 @@ tinha dado ao trabalho de entrelaçar, uma a uma, todas as árvores.
 
 <figure>
   <img src="{{ '/assets/viagem-1/vila-flor-1.avif' | relative_url }}" alt="Vila Flor" loading="lazy">
-  <figcaption>Vila Flor</figcaption>
+  <figcaption>Um arco de pedra antigo</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/vila-flor-3.avif' | relative_url }}" alt="Vila Flor" loading="lazy">
-  <figcaption>Vila Flor</figcaption>
+  <figcaption>A margem da albufeira</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/vila-flor-2.avif' | relative_url }}" alt="Vila Flor" loading="lazy">
-  <figcaption>Vila Flor</figcaption>
+  <figcaption>A vila, com a igreja</figcaption>
 </figure>
 
 De Vila Flor, confessamos, ficou-nos pouco. A igreja grande no seu largo, com
@@ -212,12 +212,12 @@ descobertas em 1981, dois anos depois da sua passagem._
 
 <figure>
   <img src="{{ '/assets/viagem-1/mazouco-2.avif' | relative_url }}" alt="Mazouco" loading="lazy">
-  <figcaption>Mazouco</figcaption>
+  <figcaption>A gravura rupestre, no fundo do vale, junto ao rio</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/mazouco-1.avif' | relative_url }}" alt="Mazouco" loading="lazy">
-  <figcaption>Mazouco</figcaption>
+  <figcaption>O vale, sobre o rio</figcaption>
 </figure>
 
 Mazouco não estava no roteiro de Saramago, nem podia estar: as gravuras
@@ -250,12 +250,12 @@ burros de Atenor, antes de seguir por Sendim, Mogadouro e Vimioso.
 
 <figure>
   <img src="{{ '/assets/viagem-1/miranda-do-douro-2.avif' | relative_url }}" alt="Miranda do Douro" loading="lazy">
-  <figcaption>Miranda do Douro</figcaption>
+  <figcaption>A igreja</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/miranda-do-douro-1.avif' | relative_url }}" alt="Miranda do Douro" loading="lazy">
-  <figcaption>Miranda do Douro</figcaption>
+  <figcaption>O canhão do Douro, com a igreja no alto</figcaption>
 </figure>
 
 Chegámos a Miranda já mais para o fim do dia, com frio. A cidade fica sobre o
@@ -272,7 +272,7 @@ _Fora da viagem de Saramago: o Centro de Valorização do Burro de Miranda (AEPG
 
 <figure>
   <img src="{{ '/assets/viagem-1/atenor.avif' | relative_url }}" alt="Atenor" loading="lazy">
-  <figcaption>Atenor</figcaption>
+  <figcaption>Os burros, no curral da AEPGA</figcaption>
 </figure>
 
 Foi aqui que tivemos o momento preferido da viagem. Marcámos uma visita à AEPGA e
@@ -288,12 +288,12 @@ nascer. São animais muito dóceis, e custou-nos vir embora.
 
 <figure>
   <img src="{{ '/assets/viagem-1/sendim-1.avif' | relative_url }}" alt="Sendim" loading="lazy">
-  <figcaption>Sendim</figcaption>
+  <figcaption>A igreja</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/sendim-2.avif' | relative_url }}" alt="Sendim" loading="lazy">
-  <figcaption>Sendim</figcaption>
+  <figcaption>A antiga estação de comboios</figcaption>
 </figure>
 
 Em Sendim fomos almoçar à Gabriela, um restaurante que descobrimos através do
@@ -312,12 +312,12 @@ corpo.
 
 <figure>
   <img src="{{ '/assets/viagem-1/mogadouro-2.avif' | relative_url }}" alt="Mogadouro" loading="lazy">
-  <figcaption>Mogadouro</figcaption>
+  <figcaption>As ruínas do castelo</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/mogadouro-1.avif' | relative_url }}" alt="Mogadouro" loading="lazy">
-  <figcaption>Mogadouro</figcaption>
+  <figcaption>Vista da vila</figcaption>
 </figure>
 
 De Mogadouro guardámos sobretudo o castelo, lá no alto, sozinho sobre as terras,
@@ -332,7 +332,7 @@ Não encontrámos ninguém, e a verdade é que não nos ficou muito além disto.
 
 <figure>
   <img src="{{ '/assets/viagem-1/vimioso.avif' | relative_url }}" alt="Vimioso" loading="lazy">
-  <figcaption>Vimioso</figcaption>
+  <figcaption>Os campos em redor</figcaption>
 </figure>
 
 Vimioso era um nome que nos dizia alguma coisa e que queríamos conhecer mas,
@@ -350,12 +350,12 @@ em cima na raia, antes de descer a Bragança.
 
 <figure>
   <img src="{{ '/assets/viagem-1/guadramil-2.avif' | relative_url }}" alt="Guadramil" loading="lazy">
-  <figcaption>Guadramil</figcaption>
+  <figcaption>As terras de cultivo</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/guadramil-1.avif' | relative_url }}" alt="Guadramil" loading="lazy">
-  <figcaption>Guadramil</figcaption>
+  <figcaption>Uma rua de calçada, entre casas de pedra e hortas</figcaption>
 </figure>
 
 Guadramil deve ter umas dez pessoas e, nesse dia, pareciam estar todas na rua:
@@ -373,12 +373,12 @@ mas tivemos vergonha e não tirámos.
 
 <figure>
   <img src="{{ '/assets/viagem-1/rio-de-onor-1.avif' | relative_url }}" alt="Rio de Onor" loading="lazy">
-  <figcaption>Rio de Onor</figcaption>
+  <figcaption>A placa com o nome da aldeia</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/rio-de-onor-2.avif' | relative_url }}" alt="Rio de Onor" loading="lazy">
-  <figcaption>Rio de Onor</figcaption>
+  <figcaption>O ribeiro</figcaption>
 </figure>
 
 Rio de Onor é uma aldeia partida em duas pela fronteira: passa-se de Portugal
@@ -397,32 +397,32 @@ que, deste lado, a cidade mais próxima é Bragança, longe e difícil de alcan�
 
 <figure>
   <img src="{{ '/assets/viagem-1/braganca-1.avif' | relative_url }}" alt="Bragança" loading="lazy">
-  <figcaption>Bragança</figcaption>
+  <figcaption>A igreja</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/braganca-6.avif' | relative_url }}" alt="Bragança" loading="lazy">
-  <figcaption>Bragança</figcaption>
+  <figcaption>A gineta de sucata do Bordalo II</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/braganca-3.avif' | relative_url }}" alt="Bragança" loading="lazy">
-  <figcaption>Bragança</figcaption>
+  <figcaption>Um edifício de pedra coberto de hera</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/braganca-5.avif' | relative_url }}" alt="Bragança" loading="lazy">
-  <figcaption>Bragança</figcaption>
+  <figcaption>Os passadiços junto ao rio</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/braganca-4.avif' | relative_url }}" alt="Bragança" loading="lazy">
-  <figcaption>Bragança</figcaption>
+  <figcaption>A cidade, vista do alto</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/braganca-2.avif' | relative_url }}" alt="Bragança" loading="lazy">
-  <figcaption>Bragança</figcaption>
+  <figcaption>O castelo</figcaption>
 </figure>
 
 Bragança foi a maior cidade da viagem depois de Coimbra, e deu para sentir a
@@ -448,7 +448,7 @@ nordeste a noroeste, até Chaves.
 
 <figure>
   <img src="{{ '/assets/viagem-1/braganca-7.avif' | relative_url }}" alt="Bragança" loading="lazy">
-  <figcaption>Bragança</figcaption>
+  <figcaption>Bancos sobre os antigos carris</figcaption>
 </figure>
 
 De manhã, antes de seguir viagem, fomos ao museu ferroviário de Bragança, um dos
@@ -466,7 +466,7 @@ quase sempre, a autoestrada.
 
 <figure>
   <img src="{{ '/assets/viagem-1/vilaverdinho.avif' | relative_url }}" alt="Vilaverdinho" loading="lazy">
-  <figcaption>Vilaverdinho</figcaption>
+  <figcaption>A capela</figcaption>
 </figure>
 
 Vilaverdinho é fácil de alcançar, e confessamos que não percebemos logo porque é
@@ -478,12 +478,12 @@ via grande coisa nem ninguém.
 
 <figure>
   <img src="{{ '/assets/viagem-1/mirandela-2.avif' | relative_url }}" alt="Mirandela" loading="lazy">
-  <figcaption>Mirandela</figcaption>
+  <figcaption>A cidade, vista da ponte</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/mirandela-1.avif' | relative_url }}" alt="Mirandela" loading="lazy">
-  <figcaption>Mirandela</figcaption>
+  <figcaption>Um edifício antigo, no centro</figcaption>
 </figure>
 
 De Mirandela há que confessar um pecado: passámos por lá e não comemos uma única
@@ -499,22 +499,22 @@ paragens de que menos gostámos.
 
 <figure>
   <img src="{{ '/assets/viagem-1/carrazedo-de-montenegro-4.avif' | relative_url }}" alt="Carrazedo de Montenegro" loading="lazy">
-  <figcaption>Carrazedo de Montenegro</figcaption>
+  <figcaption>A igreja matriz</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/carrazedo-de-montenegro-2.avif' | relative_url }}" alt="Carrazedo de Montenegro" loading="lazy">
-  <figcaption>Carrazedo de Montenegro</figcaption>
+  <figcaption>Um chafariz</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/carrazedo-de-montenegro-1.avif' | relative_url }}" alt="Carrazedo de Montenegro" loading="lazy">
-  <figcaption>Carrazedo de Montenegro</figcaption>
+  <figcaption>Uma capela mais pequena</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/carrazedo-de-montenegro-3.avif' | relative_url }}" alt="Carrazedo de Montenegro" loading="lazy">
-  <figcaption>Carrazedo de Montenegro</figcaption>
+  <figcaption>Um café abandonado, numa esquina</figcaption>
 </figure>
 
 Carrazedo de Montenegro foi uma surpresa. Conduzes quilómetros sem nada à volta
@@ -531,22 +531,22 @@ vários sítios.
 
 <figure>
   <img src="{{ '/assets/viagem-1/chaves-4.avif' | relative_url }}" alt="Chaves" loading="lazy">
-  <figcaption>Chaves</figcaption>
+  <figcaption>Vagões de mercadorias</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/chaves-1.avif' | relative_url }}" alt="Chaves" loading="lazy">
-  <figcaption>Chaves</figcaption>
+  <figcaption>O castelo</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/chaves-3.avif' | relative_url }}" alt="Chaves" loading="lazy">
-  <figcaption>Chaves</figcaption>
+  <figcaption>As termas romanas</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/chaves-2.avif' | relative_url }}" alt="Chaves" loading="lazy">
-  <figcaption>Chaves</figcaption>
+  <figcaption>A ponte romana</figcaption>
 </figure>
 
 Chaves deixou-nos com vontade de voltar. Comemos pastéis de Chaves, claro, e uma
@@ -571,17 +571,17 @@ _Fora da viagem de Saramago: a estância termal de Pedras Salgadas e o seu parqu
 
 <figure>
   <img src="{{ '/assets/viagem-1/pedras-salgadas-1.avif' | relative_url }}" alt="Pedras Salgadas" loading="lazy">
-  <figcaption>Pedras Salgadas</figcaption>
+  <figcaption>O casino</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/pedras-salgadas-2.avif' | relative_url }}" alt="Pedras Salgadas" loading="lazy">
-  <figcaption>Pedras Salgadas</figcaption>
+  <figcaption>O portão de entrada do parque</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/pedras-salgadas-3.avif' | relative_url }}" alt="Pedras Salgadas" loading="lazy">
-  <figcaption>Pedras Salgadas</figcaption>
+  <figcaption>Uma das nascentes</figcaption>
 </figure>
 
 Pedras Salgadas não estava na viagem do Saramago mas, ao contrário do Mazouco, já
@@ -604,7 +604,7 @@ só se paga o museu, ou para dormir nas casas na árvore.
 
 <figure>
   <img src="{{ '/assets/viagem-1/murca.avif' | relative_url }}" alt="Murça" loading="lazy">
-  <figcaption>Murça</figcaption>
+  <figcaption>A porca, no largo principal</figcaption>
 </figure>
 
 Em Murça está a famosa porca, uma grande estátua de pedra no largo principal, que
@@ -630,12 +630,12 @@ onde nós ficámos.
 
 <figure>
   <img src="{{ '/assets/viagem-1/bucaco-2.avif' | relative_url }}" alt="Buçaco" loading="lazy">
-  <figcaption>Buçaco</figcaption>
+  <figcaption>Um ribeiro, junto a um trilho na mata</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/viagem-1/bucaco-1.avif' | relative_url }}" alt="Buçaco" loading="lazy">
-  <figcaption>Buçaco</figcaption>
+  <figcaption>O Palácio do Buçaco, visto dos jardins</figcaption>
 </figure>
 
 Antes de entrar na mata, fomos beber água do Luso à fonte, mesmo ao lado do
