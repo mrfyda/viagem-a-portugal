@@ -7,6 +7,7 @@ lang: pt
 transport: car
 description: "Refazemos a primeira etapa da Viagem a Portugal de Saramago: oito dias pelo nordeste transmontano, de Coimbra a Bragança, por aldeias quase vazias, burros mirandeses e as laranjas de Mazouco."
 places:
+  - Coimbra
   - Figueira de Castelo Rodrigo
   - Vila Nova de Foz Côa
   - Torre de Moncorvo
@@ -25,6 +26,7 @@ places:
   - Murça
   - Buçaco
 featured_photos:
+  Coimbra: /assets/viagem-1/coimbra-2.avif
   Figueira de Castelo Rodrigo: /assets/viagem-1/figueira-de-castelo-rodrigo.avif
   Vila Nova de Foz Côa: /assets/viagem-1/vila-nova-de-foz-coa.avif
   Torre de Moncorvo: /assets/viagem-1/torre-de-moncorvo.avif
@@ -96,6 +98,16 @@ nunca mais acabavam, nem sempre foi fácil.
 ## Dia 1 — 18 de fevereiro, sábado
 
 _Percurso do dia: Coimbra._
+
+<figure>
+  <img src="{{ '/assets/viagem-1/coimbra-1.avif' | relative_url }}" alt="Coimbra" loading="lazy">
+  <figcaption>«deixa a xoxota respirar»</figcaption>
+</figure>
+
+<figure>
+  <img src="{{ '/assets/viagem-1/coimbra-2.avif' | relative_url }}" alt="Coimbra" loading="lazy">
+  <figcaption>A universidade</figcaption>
+</figure>
 
 Começámos por Coimbra, e num sábado, o que se revelou um pequeno erro de
 cálculo: estava quase tudo fechado. Bom para a cidade, se calhar, mas aborrecido
