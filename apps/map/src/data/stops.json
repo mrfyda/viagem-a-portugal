@@ -3422,15 +3422,6 @@
   },
   {
    "ordinal": 381,
-   "place": "Luz (de Tavira)",
-   "chapter": 5,
-   "section": 48,
-   "role": "stop",
-   "latitude": 39.122,
-   "longitude": -7.286
-  },
-  {
-   "ordinal": 382,
    "place": "Arronches",
    "chapter": 5,
    "section": 48,
@@ -3439,7 +3430,7 @@
    "longitude": -7.285336
   },
   {
-   "ordinal": 383,
+   "ordinal": 382,
    "place": "Nossa Senhora dos Degolados",
    "chapter": 5,
    "section": 48,
@@ -3448,7 +3439,7 @@
    "longitude": -7.121433
   },
   {
-   "ordinal": 384,
+   "ordinal": 383,
    "place": "Campo Maior",
    "chapter": 5,
    "section": 48,
@@ -3457,7 +3448,7 @@
    "longitude": -7.069282
   },
   {
-   "ordinal": 385,
+   "ordinal": 384,
    "place": "Elvas",
    "chapter": 5,
    "section": 48,
@@ -3466,7 +3457,7 @@
    "longitude": -7.166667
   },
   {
-   "ordinal": 386,
+   "ordinal": 385,
    "place": "Juromenha",
    "chapter": 5,
    "section": 49,
@@ -3475,7 +3466,7 @@
    "longitude": -7.255799
   },
   {
-   "ordinal": 387,
+   "ordinal": 386,
    "place": "Ciladas de S. Romão",
    "chapter": 5,
    "section": 49,
@@ -3484,7 +3475,7 @@
    "longitude": -7.318233
   },
   {
-   "ordinal": 388,
+   "ordinal": 387,
    "place": "Terena",
    "chapter": 5,
    "section": 49,
@@ -3493,7 +3484,7 @@
    "longitude": -7.411767
   },
   {
-   "ordinal": 389,
+   "ordinal": 388,
    "place": "Alandroal",
    "chapter": 5,
    "section": 49,
@@ -3502,7 +3493,7 @@
    "longitude": -7.403831
   },
   {
-   "ordinal": 390,
+   "ordinal": 389,
    "place": "Vila Viçosa",
    "chapter": 5,
    "section": 49,
@@ -3511,7 +3502,7 @@
    "longitude": -7.416691
   },
   {
-   "ordinal": 391,
+   "ordinal": 390,
    "place": "Borba",
    "chapter": 5,
    "section": 49,
@@ -3520,7 +3511,7 @@
    "longitude": -7.458696
   },
   {
-   "ordinal": 392,
+   "ordinal": 391,
    "place": "Estremoz",
    "chapter": 5,
    "section": 49,
@@ -3529,7 +3520,7 @@
    "longitude": -7.592258
   },
   {
-   "ordinal": 393,
+   "ordinal": 392,
    "place": "Évora Monte",
    "chapter": 5,
    "section": 49,
@@ -3538,7 +3529,7 @@
    "longitude": -7.716389
   },
   {
-   "ordinal": 394,
+   "ordinal": 393,
    "place": "Redondo",
    "chapter": 5,
    "section": 49,
@@ -3547,7 +3538,7 @@
    "longitude": -7.601076
   },
   {
-   "ordinal": 395,
+   "ordinal": 394,
    "place": "Évora",
    "chapter": 5,
    "section": 50,
@@ -3556,7 +3547,7 @@
    "longitude": -7.909444
   },
   {
-   "ordinal": 396,
+   "ordinal": 395,
    "place": "Reguengos de Monsaraz",
    "chapter": 5,
    "section": 50,
@@ -3565,7 +3556,7 @@
    "longitude": -7.538998
   },
   {
-   "ordinal": 397,
+   "ordinal": 396,
    "place": "Monsaraz",
    "chapter": 5,
    "section": 50,
@@ -3574,7 +3565,7 @@
    "longitude": -7.383333
   },
   {
-   "ordinal": 398,
+   "ordinal": 397,
    "place": "Mourão",
    "chapter": 5,
    "section": 50,
@@ -3583,7 +3574,7 @@
    "longitude": -7.346723
   },
   {
-   "ordinal": 399,
+   "ordinal": 398,
    "place": "Póvoa (povoação do Baixo Alentejo)",
    "chapter": 5,
    "section": 50,
@@ -3592,7 +3583,7 @@
    "longitude": -7.333134
   },
   {
-   "ordinal": 400,
+   "ordinal": 399,
    "place": "Moura",
    "chapter": 5,
    "section": 50,
@@ -3601,7 +3592,7 @@
    "longitude": -7.45007
   },
   {
-   "ordinal": 401,
+   "ordinal": 400,
    "place": "Pias",
    "chapter": 5,
    "section": 50,
@@ -3610,7 +3601,7 @@
    "longitude": -7.474651
   },
   {
-   "ordinal": 402,
+   "ordinal": 401,
    "place": "São Gens",
    "chapter": 5,
    "section": 50,
@@ -3619,7 +3610,7 @@
    "longitude": -7.59398
   },
   {
-   "ordinal": 403,
+   "ordinal": 402,
    "place": "Serpa",
    "chapter": 5,
    "section": 51,
@@ -3628,7 +3619,7 @@
    "longitude": -7.59669
   },
   {
-   "ordinal": 404,
+   "ordinal": 403,
    "place": "Baleizão",
    "chapter": 5,
    "section": 51,
@@ -3637,7 +3628,7 @@
    "longitude": -7.714444
   },
   {
-   "ordinal": 405,
+   "ordinal": 404,
    "place": "Portel",
    "chapter": 5,
    "section": 51,
@@ -3646,7 +3637,7 @@
    "longitude": -7.702656
   },
   {
-   "ordinal": 406,
+   "ordinal": 405,
    "place": "Oriola",
    "chapter": 5,
    "section": 51,
@@ -3655,7 +3646,7 @@
    "longitude": -7.863565
   },
   {
-   "ordinal": 407,
+   "ordinal": 406,
    "place": "Viana do Alentejo",
    "chapter": 5,
    "section": 51,
@@ -3664,7 +3655,7 @@
    "longitude": -8.004397
   },
   {
-   "ordinal": 408,
+   "ordinal": 407,
    "place": "Alvito",
    "chapter": 5,
    "section": 51,
@@ -3673,7 +3664,7 @@
    "longitude": -7.991803
   },
   {
-   "ordinal": 409,
+   "ordinal": 408,
    "place": "Vila Ruiva",
    "chapter": 5,
    "section": 51,
@@ -3682,7 +3673,7 @@
    "longitude": -7.935612
   },
   {
-   "ordinal": 410,
+   "ordinal": 409,
    "place": "Vila Alva",
    "chapter": 5,
    "section": 51,
@@ -3691,7 +3682,7 @@
    "longitude": -7.9
   },
   {
-   "ordinal": 411,
+   "ordinal": 410,
    "place": "São Cucufate",
    "chapter": 5,
    "section": 51,
@@ -3700,7 +3691,7 @@
    "longitude": -7.845042
   },
   {
-   "ordinal": 412,
+   "ordinal": 411,
    "place": "Vila de Frades",
    "chapter": 5,
    "section": 51,
@@ -3709,7 +3700,7 @@
    "longitude": -7.82295
   },
   {
-   "ordinal": 413,
+   "ordinal": 412,
    "place": "Vidigueira",
    "chapter": 5,
    "section": 51,
@@ -3718,7 +3709,7 @@
    "longitude": -7.801452
   },
   {
-   "ordinal": 414,
+   "ordinal": 413,
    "place": "Beja",
    "chapter": 5,
    "section": 51,
@@ -3727,7 +3718,7 @@
    "longitude": -7.883333
   },
   {
-   "ordinal": 415,
+   "ordinal": 414,
    "place": "São Brás",
    "chapter": 5,
    "section": 51,
@@ -3736,7 +3727,7 @@
    "longitude": -7.613998
   },
   {
-   "ordinal": 416,
+   "ordinal": 415,
    "place": "Mértola",
    "chapter": 5,
    "section": 52,
@@ -3745,7 +3736,7 @@
    "longitude": -7.666667
   },
   {
-   "ordinal": 417,
+   "ordinal": 416,
    "place": "São Marcos da Ataboeira",
    "chapter": 5,
    "section": 52,
@@ -3754,7 +3745,7 @@
    "longitude": -7.940278
   },
   {
-   "ordinal": 418,
+   "ordinal": 417,
    "place": "Castro Verde",
    "chapter": 5,
    "section": 52,
@@ -3763,7 +3754,7 @@
    "longitude": -8.082275
   },
   {
-   "ordinal": 419,
+   "ordinal": 418,
    "place": "Albernoa",
    "chapter": 5,
    "section": 52,
@@ -3772,7 +3763,7 @@
    "longitude": -7.958723
   },
   {
-   "ordinal": 420,
+   "ordinal": 419,
    "place": "Trindade",
    "chapter": 5,
    "section": 52,
@@ -3781,7 +3772,7 @@
    "longitude": -7.894444
   },
   {
-   "ordinal": 421,
+   "ordinal": 420,
    "place": "Pisões",
    "chapter": 5,
    "section": 52,
@@ -3790,7 +3781,7 @@
    "longitude": -7.948941
   },
   {
-   "ordinal": 422,
+   "ordinal": 421,
    "place": "Alcoutim",
    "chapter": 6,
    "section": 53,
@@ -3799,7 +3790,7 @@
    "longitude": -7.66905
   },
   {
-   "ordinal": 423,
+   "ordinal": 422,
    "place": "Faro",
    "chapter": 6,
    "section": 53,
@@ -3808,7 +3799,7 @@
    "longitude": -8.150756
   },
   {
-   "ordinal": 424,
+   "ordinal": 423,
    "place": "Milreu",
    "chapter": 6,
    "section": 53,
@@ -3817,7 +3808,7 @@
    "longitude": -7.904026
   },
   {
-   "ordinal": 425,
+   "ordinal": 424,
    "place": "Estói",
    "chapter": 6,
    "section": 53,
@@ -3826,7 +3817,7 @@
    "longitude": -7.894959
   },
   {
-   "ordinal": 426,
+   "ordinal": 425,
    "place": "Olhão",
    "chapter": 6,
    "section": 53,
@@ -3835,7 +3826,7 @@
    "longitude": -7.841129
   },
   {
-   "ordinal": 427,
+   "ordinal": 426,
    "place": "Luz (de Tavira)",
    "chapter": 6,
    "section": 53,
@@ -3844,7 +3835,7 @@
    "longitude": -7.699996
   },
   {
-   "ordinal": 428,
+   "ordinal": 427,
    "place": "Tavira",
    "chapter": 6,
    "section": 53,
@@ -3853,7 +3844,7 @@
    "longitude": -7.65
   },
   {
-   "ordinal": 429,
+   "ordinal": 428,
    "place": "Castro Marim",
    "chapter": 6,
    "section": 53,
@@ -3862,7 +3853,7 @@
    "longitude": -7.474716
   },
   {
-   "ordinal": 430,
+   "ordinal": 429,
    "place": "Vila Real de Santo António",
    "chapter": 6,
    "section": 53,
@@ -3871,7 +3862,7 @@
    "longitude": -7.424216
   },
   {
-   "ordinal": 431,
+   "ordinal": 430,
    "place": "Monte Gordo",
    "chapter": 6,
    "section": 54,
@@ -3880,7 +3871,7 @@
    "longitude": -7.449167
   },
   {
-   "ordinal": 432,
+   "ordinal": 431,
    "place": "São Lourenço de Almansil",
    "chapter": 6,
    "section": 54,
@@ -3889,7 +3880,7 @@
    "longitude": -8.010079
   },
   {
-   "ordinal": 433,
+   "ordinal": 432,
    "place": "Loulé",
    "chapter": 6,
    "section": 54,
@@ -3898,7 +3889,7 @@
    "longitude": -8.068336
   },
   {
-   "ordinal": 434,
+   "ordinal": 433,
    "place": "Aldeia da Tôr",
    "chapter": 6,
    "section": 54,
@@ -3907,7 +3898,7 @@
    "longitude": -8.0358
   },
   {
-   "ordinal": 435,
+   "ordinal": 434,
    "place": "Salir (Algarve)",
    "chapter": 6,
    "section": 54,
@@ -3916,7 +3907,7 @@
    "longitude": -8.045106
   },
   {
-   "ordinal": 436,
+   "ordinal": 435,
    "place": "Alte",
    "chapter": 6,
    "section": 54,
@@ -3925,7 +3916,7 @@
    "longitude": -8.175
   },
   {
-   "ordinal": 437,
+   "ordinal": 436,
    "place": "São Bartolomeu de Messines",
    "chapter": 6,
    "section": 54,
@@ -3934,7 +3925,7 @@
    "longitude": -8.290556
   },
   {
-   "ordinal": 438,
+   "ordinal": 437,
    "place": "Silves",
    "chapter": 6,
    "section": 54,
@@ -3943,7 +3934,7 @@
    "longitude": -8.348731
   },
   {
-   "ordinal": 439,
+   "ordinal": 438,
    "place": "Olhos de Água",
    "chapter": 6,
    "section": 54,
@@ -3952,7 +3943,7 @@
    "longitude": -8.186724
   },
   {
-   "ordinal": 440,
+   "ordinal": 439,
    "place": "Armação de Pêra",
    "chapter": 6,
    "section": 54,
@@ -3961,7 +3952,7 @@
    "longitude": -8.362778
   },
   {
-   "ordinal": 441,
+   "ordinal": 440,
    "place": "Senhora da Rocha",
    "chapter": 6,
    "section": 54,
@@ -3970,7 +3961,7 @@
    "longitude": -8.38833
   },
   {
-   "ordinal": 442,
+   "ordinal": 441,
    "place": "Lagoa",
    "chapter": 6,
    "section": 54,
@@ -3979,7 +3970,7 @@
    "longitude": -8.454084
   },
   {
-   "ordinal": 443,
+   "ordinal": 442,
    "place": "Estômbar",
    "chapter": 6,
    "section": 54,
@@ -3988,7 +3979,7 @@
    "longitude": -8.484596
   },
   {
-   "ordinal": 444,
+   "ordinal": 443,
    "place": "Portimão",
    "chapter": 6,
    "section": 54,
@@ -3997,7 +3988,7 @@
    "longitude": -8.538333
   },
   {
-   "ordinal": 445,
+   "ordinal": 444,
    "place": "Ponta João de Arães",
    "chapter": 6,
    "section": 54,
@@ -4006,7 +3997,7 @@
    "longitude": -8.557781
   },
   {
-   "ordinal": 446,
+   "ordinal": 445,
    "place": "Lagos",
    "chapter": 6,
    "section": 54,
@@ -4015,7 +4006,7 @@
    "longitude": -8.672869
   },
   {
-   "ordinal": 447,
+   "ordinal": 446,
    "place": "Espiche",
    "chapter": 6,
    "section": 54,
@@ -4024,7 +4015,7 @@
    "longitude": -8.737004
   },
   {
-   "ordinal": 448,
+   "ordinal": 447,
    "place": "Almadena",
    "chapter": 6,
    "section": 54,
@@ -4033,7 +4024,7 @@
    "longitude": -8.76652
   },
   {
-   "ordinal": 449,
+   "ordinal": 448,
    "place": "Budens",
    "chapter": 6,
    "section": 54,
@@ -4042,7 +4033,7 @@
    "longitude": -8.830249
   },
   {
-   "ordinal": 450,
+   "ordinal": 449,
    "place": "Ermida",
    "chapter": 6,
    "section": 54,
@@ -4051,7 +4042,7 @@
    "longitude": -8.865
   },
   {
-   "ordinal": 451,
+   "ordinal": 450,
    "place": "Raposeira",
    "chapter": 6,
    "section": 54,
@@ -4060,7 +4051,7 @@
    "longitude": -8.889599
   },
   {
-   "ordinal": 452,
+   "ordinal": 451,
    "place": "Vila do Bispo",
    "chapter": 6,
    "section": 54,
@@ -4069,7 +4060,7 @@
    "longitude": -8.909612
   },
   {
-   "ordinal": 453,
+   "ordinal": 452,
    "place": "Aljezur",
    "chapter": 6,
    "section": 54,
@@ -4078,7 +4069,7 @@
    "longitude": -8.8
   },
   {
-   "ordinal": 454,
+   "ordinal": 453,
    "place": "Odemira",
    "chapter": 6,
    "section": 54,
@@ -4087,7 +4078,7 @@
    "longitude": -8.642
   },
   {
-   "ordinal": 455,
+   "ordinal": 454,
    "place": "Vila Nova de Milfontes",
    "chapter": 6,
    "section": 54,
@@ -4096,7 +4087,7 @@
    "longitude": -8.785278
   },
   {
-   "ordinal": 456,
+   "ordinal": 455,
    "place": "Sines",
    "chapter": 6,
    "section": 54,
@@ -4105,7 +4096,7 @@
    "longitude": -8.868964
   },
   {
-   "ordinal": 457,
+   "ordinal": 456,
    "place": "Santiago do Cacém",
    "chapter": 6,
    "section": 54,

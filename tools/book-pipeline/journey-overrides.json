@@ -86,6 +86,11 @@
    "note": "Largo do Marques de Marialva, a square in Evora, not Marialva village"
   },
   {
+   "place": "Luz (de Tavira)",
+   "chapter": 5,
+   "note": "Igreja de Nossa Senhora da Luz inside Arronches (sec 48), not the Algarve village"
+  },
+  {
    "place": "Mira",
    "chapter": 6,
    "note": "Rio Mira river mouth at Milfontes, not Mira town near Aveiro"
@@ -263,13 +268,6 @@
    "latitude": 38.4926,
    "longitude": -9.1037,
    "note": "Santana village above Sesimbra; valley descends to Sesimbra"
-  },
-  {
-   "place": "Luz (de Tavira)",
-   "chapter": 5,
-   "latitude": 39.122,
-   "longitude": -7.286,
-   "note": "Igreja de Nossa Senhora da Luz in Arronches, not Luz de Tavira"
   },
   {
    "place": "Ermida",
