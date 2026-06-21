@@ -41,7 +41,6 @@ const en = {
   cancel: "Cancel",
   clearSearch: "Clear search",
   navMap: "Map",
-  navAbout: "About",
   account: "Account",
   noResults: "No matching places",
 };
@@ -84,7 +83,6 @@ const pt: typeof en = {
   cancel: "Cancelar",
   clearSearch: "Limpar pesquisa",
   navMap: "Mapa",
-  navAbout: "Sobre",
   account: "Conta",
   noResults: "Nenhum lugar encontrado",
 };
