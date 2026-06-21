@@ -1,4 +1,4 @@
-import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 import { useKeyboardInset } from "../hooks/useKeyboardInset";
 import { t } from "../lib/i18n";
@@ -75,6 +75,7 @@ export default function MobileTabBar({
   onSelectPlace: (indexName: string) => void;
 }) {
   const [query, setQuery] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null);
   // Forget the query whenever search closes (Cancel, tab switch, place picked).
   useEffect(() => {
     if (!searchOpen) setQuery("");
@@ -133,7 +134,8 @@ export default function MobileTabBar({
           >
             <span className="shrink-0 text-muted-foreground">{searchIcon}</span>
             <input
-              type="search"
+              ref={inputRef}
+              type="text"
               // eslint-disable-next-line jsx-a11y/no-autofocus -- opened by an
               // explicit tap, so focusing the field is the expected result
               autoFocus
@@ -147,6 +149,21 @@ export default function MobileTabBar({
               aria-label={t("searchTown")}
               className="h-full min-w-0 flex-1 bg-transparent text-base text-foreground placeholder:text-muted-foreground focus-visible:outline-none"
             />
+            {query && (
+              // iOS-style inline clear: wipe the query but keep the keyboard up.
+              <button
+                onClick={() => {
+                  setQuery("");
+                  inputRef.current?.focus();
+                }}
+                aria-label={t("clearSearch")}
+                className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-muted-foreground/30 text-card transition-colors hover:bg-muted-foreground/50"
+              >
+                <svg viewBox="0 0 24 24" width={12} height={12} {...stroke} strokeWidth={2.6}>
+                  <path d="M6 6l12 12M18 6 6 18" />
+                </svg>
+              </button>
+            )}
             <button
               onClick={onToggleSearch}
               className="shrink-0 rounded-full px-1 text-sm font-medium text-primary"
