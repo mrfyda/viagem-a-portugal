@@ -39,7 +39,7 @@ export default function TownSearch({
         onKeyDown={(e) => {
           if (e.key === "Enter") trySelect(value);
         }}
-        className="h-9 w-full rounded-md border border-input bg-card px-3 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="h-9 w-full shrink-0 rounded-md border border-input bg-card px-3 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       />
       <datalist id={listId}>
         {bookPlaces.map((p) => (

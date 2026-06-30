@@ -172,7 +172,7 @@ export default function MapSidebar({
     );
   }
 
-  const shell = "absolute left-3 top-3 bottom-3 w-[360px] gap-2 overflow-y-auto";
+  const shell = "absolute left-3 top-3 bottom-3 w-[360px] gap-2";
 
   // On desktop the detail panel embeds in place of the chapter list.
   const body =
@@ -204,10 +204,12 @@ export default function MapSidebar({
     <aside
       className={`${shell} flex flex-col rounded-lg border border-border bg-card/95 p-4 text-sm text-foreground shadow-sm`}
     >
-      <MapNav />
-      {header}
+      <div className="shrink-0">
+        <MapNav />
+      </div>
+      <div className="shrink-0">{header}</div>
       <TownSearch onSelect={onSelectPlace} />
-      {body}
+      <div className="flex min-h-0 flex-1 flex-col gap-2 overflow-y-auto">{body}</div>
     </aside>
   );
 }
