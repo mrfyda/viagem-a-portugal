@@ -5,6 +5,8 @@ Algarve — and turned the journey into *Viagem a Portugal* (1981), part
 travelogue, part love letter to the country. This project lets you follow
 in his footsteps.
 
+**Live at [mrfyda.github.io/viagem-a-portugal](https://mrfyda.github.io/viagem-a-portugal/)** — the blog, with the interactive map at [/map](https://mrfyda.github.io/viagem-a-portugal/map).
+
 ## The map
 
 An interactive map of every place Saramago mentions in the book — hundreds
@@ -19,8 +21,7 @@ plus the routes he drove between them.
 
 ## The blog
 
-Travel notes from retracing the route, at the site root — with the map at
-[/map](./map).
+Travel notes from retracing the route, at [the site root](https://mrfyda.github.io/viagem-a-portugal/) — with the map at [/map](https://mrfyda.github.io/viagem-a-portugal/map).
 
 ## Development
 
