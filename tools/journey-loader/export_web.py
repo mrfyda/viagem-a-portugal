@@ -55,8 +55,10 @@ def main():
     tsv = jd / "avif_jobs.tsv"
     tsv.write_text("\n".join(jobs) + "\n", encoding="utf-8")
     subprocess.run(["swift", str(Path(__file__).parent / "export_avif.swift"), str(tsv)], check=True)
-    for png, avif in outputs:
+    # outputs and manifest are appended in lockstep above, so they align by index.
+    for (png, avif), m in zip(outputs, manifest):
         C.png_to_avif(png, avif)
+        m["w"], m["h"] = C.avif_dims(avif)
         png.unlink(missing_ok=True)
     manifest.sort(key=lambda m: m["date"])
     (jd / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")

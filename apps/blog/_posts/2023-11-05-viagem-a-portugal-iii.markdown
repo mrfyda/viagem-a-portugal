@@ -42,12 +42,12 @@ _⟨notas do dia — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-3/abrantes-1.avif' | relative_url }}" alt="Abrantes" loading="lazy">
+  <img src="{{ '/assets/viagem-3/abrantes-1.avif' | relative_url }}" alt="Abrantes" width="1600" height="900" decoding="async" loading="lazy">
   <figcaption>Abrantes</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-3/abrantes-2.avif' | relative_url }}" alt="Abrantes" loading="lazy">
+  <img src="{{ '/assets/viagem-3/abrantes-2.avif' | relative_url }}" alt="Abrantes" width="1600" height="900" decoding="async" loading="lazy">
   <figcaption>Abrantes</figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ _⟨notas do dia — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-3/castelo-de-vide.avif' | relative_url }}" alt="Castelo de Vide" loading="lazy">
+  <img src="{{ '/assets/viagem-3/castelo-de-vide.avif' | relative_url }}" alt="Castelo de Vide" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Castelo de Vide</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ _⟨notas do dia — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-3/portalegre.avif' | relative_url }}" alt="Portalegre" loading="lazy">
+  <img src="{{ '/assets/viagem-3/portalegre.avif' | relative_url }}" alt="Portalegre" width="1600" height="900" decoding="async" loading="lazy">
   <figcaption>Portalegre</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ _⟨notas do dia — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-3/campo-maior.avif' | relative_url }}" alt="Campo Maior" loading="lazy">
+  <img src="{{ '/assets/viagem-3/campo-maior.avif' | relative_url }}" alt="Campo Maior" width="1600" height="900" decoding="async" loading="lazy">
   <figcaption>Campo Maior</figcaption>
 </figure>
 

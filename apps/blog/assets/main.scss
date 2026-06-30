@@ -8,6 +8,15 @@ $brand-color: #0a5a3a;
 
 @import "whiteglass";
 
+// Posts now carry explicit width/height on every <img> (reserves space → no
+// layout shift). The theme only sets `max-width: 100%`, so without this the
+// presentational height attribute would stretch images once the column is
+// narrower than their intrinsic width — which it always is. `height: auto`
+// lets the browser scale height from the width/height aspect ratio instead.
+img {
+  height: auto;
+}
+
 .site-title {
   &,
   &:visited {

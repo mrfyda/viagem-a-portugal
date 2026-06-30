@@ -120,7 +120,7 @@ _⟨notas do dia — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/fatima.avif' | relative_url }}" alt="Fátima" loading="lazy">
+  <img src="{{ '/assets/viagem-2/fatima.avif' | relative_url }}" alt="Fátima" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Fátima</figcaption>
 </figure>
 
@@ -133,7 +133,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/arouca.avif' | relative_url }}" alt="Arouca" loading="lazy">
+  <img src="{{ '/assets/viagem-2/arouca.avif' | relative_url }}" alt="Arouca" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Arouca</figcaption>
 </figure>
 
@@ -150,12 +150,12 @@ _⟨notas do dia — a escrever⟩_
 _Fora da viagem de Saramago: o Centro de Interpretação das Pedras Parideiras, na Castanheira — geossítio da Serra da Freita (Arouca Geopark) onde o granito vai libertando nódulos de biotite._
 
 <figure>
-  <img src="{{ '/assets/viagem-2/pedras-parideiras-1.avif' | relative_url }}" alt="Pedras Parideiras" loading="lazy">
+  <img src="{{ '/assets/viagem-2/pedras-parideiras-1.avif' | relative_url }}" alt="Pedras Parideiras" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Pedras Parideiras</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/pedras-parideiras-2.avif' | relative_url }}" alt="Pedras Parideiras" loading="lazy">
+  <img src="{{ '/assets/viagem-2/pedras-parideiras-2.avif' | relative_url }}" alt="Pedras Parideiras" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Pedras Parideiras</figcaption>
 </figure>
 
@@ -166,7 +166,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 _Fora da viagem de Saramago: a Capela de Nossa Senhora da Lage, na Serra da Freita (Arouca)._
 
 <figure>
-  <img src="{{ '/assets/viagem-2/capela-da-senhora-da-lage.avif' | relative_url }}" alt="Capela da Senhora da Lage" loading="lazy">
+  <img src="{{ '/assets/viagem-2/capela-da-senhora-da-lage.avif' | relative_url }}" alt="Capela da Senhora da Lage" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Capela da Senhora da Lage</figcaption>
 </figure>
 
@@ -175,7 +175,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 ### Marco de Canaveses
 
 <figure>
-  <img src="{{ '/assets/viagem-2/marco-de-canaveses.avif' | relative_url }}" alt="Marco de Canaveses" loading="lazy">
+  <img src="{{ '/assets/viagem-2/marco-de-canaveses.avif' | relative_url }}" alt="Marco de Canaveses" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Marco de Canaveses</figcaption>
 </figure>
 
@@ -194,12 +194,12 @@ _⟨notas do dia — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/amarante-1.avif' | relative_url }}" alt="Amarante" loading="lazy">
+  <img src="{{ '/assets/viagem-2/amarante-1.avif' | relative_url }}" alt="Amarante" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Amarante</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/amarante-2.avif' | relative_url }}" alt="Amarante" loading="lazy">
+  <img src="{{ '/assets/viagem-2/amarante-2.avif' | relative_url }}" alt="Amarante" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Amarante</figcaption>
 </figure>
 
@@ -212,7 +212,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/sao-joao-de-gatao.avif' | relative_url }}" alt="São João de Gatão" loading="lazy">
+  <img src="{{ '/assets/viagem-2/sao-joao-de-gatao.avif' | relative_url }}" alt="São João de Gatão" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>São João de Gatão</figcaption>
 </figure>
 
@@ -225,7 +225,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/parada-de-cunhos.avif' | relative_url }}" alt="Parada de Cunhos" loading="lazy">
+  <img src="{{ '/assets/viagem-2/parada-de-cunhos.avif' | relative_url }}" alt="Parada de Cunhos" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Parada de Cunhos</figcaption>
 </figure>
 
@@ -238,22 +238,22 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/vila-real-1.avif' | relative_url }}" alt="Vila Real" loading="lazy">
+  <img src="{{ '/assets/viagem-2/vila-real-1.avif' | relative_url }}" alt="Vila Real" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Vila Real</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/vila-real-2.avif' | relative_url }}" alt="Vila Real" loading="lazy">
+  <img src="{{ '/assets/viagem-2/vila-real-2.avif' | relative_url }}" alt="Vila Real" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Vila Real</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/vila-real-3.avif' | relative_url }}" alt="Vila Real" loading="lazy">
+  <img src="{{ '/assets/viagem-2/vila-real-3.avif' | relative_url }}" alt="Vila Real" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Vila Real</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/vila-real-4.avif' | relative_url }}" alt="Vila Real" loading="lazy">
+  <img src="{{ '/assets/viagem-2/vila-real-4.avif' | relative_url }}" alt="Vila Real" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Vila Real</figcaption>
 </figure>
 
@@ -272,12 +272,12 @@ _⟨notas do dia — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/vilarinho-de-samarda-1.avif' | relative_url }}" alt="Vilarinho de Samardã" loading="lazy">
+  <img src="{{ '/assets/viagem-2/vilarinho-de-samarda-1.avif' | relative_url }}" alt="Vilarinho de Samardã" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Vilarinho de Samardã</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/vilarinho-de-samarda-2.avif' | relative_url }}" alt="Vilarinho de Samardã" loading="lazy">
+  <img src="{{ '/assets/viagem-2/vilarinho-de-samarda-2.avif' | relative_url }}" alt="Vilarinho de Samardã" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Vilarinho de Samardã</figcaption>
 </figure>
 
@@ -286,17 +286,17 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 ### Vila Pouca de Aguiar
 
 <figure>
-  <img src="{{ '/assets/viagem-2/vila-pouca-de-aguiar-1.avif' | relative_url }}" alt="Vila Pouca de Aguiar" loading="lazy">
+  <img src="{{ '/assets/viagem-2/vila-pouca-de-aguiar-1.avif' | relative_url }}" alt="Vila Pouca de Aguiar" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Vila Pouca de Aguiar</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/vila-pouca-de-aguiar-2.avif' | relative_url }}" alt="Vila Pouca de Aguiar" loading="lazy">
+  <img src="{{ '/assets/viagem-2/vila-pouca-de-aguiar-2.avif' | relative_url }}" alt="Vila Pouca de Aguiar" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Vila Pouca de Aguiar</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/vila-pouca-de-aguiar-3.avif' | relative_url }}" alt="Vila Pouca de Aguiar" loading="lazy">
+  <img src="{{ '/assets/viagem-2/vila-pouca-de-aguiar-3.avif' | relative_url }}" alt="Vila Pouca de Aguiar" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Vila Pouca de Aguiar</figcaption>
 </figure>
 
@@ -307,7 +307,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 _Fora da viagem de Saramago: a vila de Boticas, nas Terras de Barroso._
 
 <figure>
-  <img src="{{ '/assets/viagem-2/boticas.avif' | relative_url }}" alt="Boticas" loading="lazy">
+  <img src="{{ '/assets/viagem-2/boticas.avif' | relative_url }}" alt="Boticas" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Boticas</figcaption>
 </figure>
 
@@ -318,12 +318,12 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 _Fora da viagem de Saramago: a vila de Montalegre e o seu castelo medieval, no planalto do Barroso._
 
 <figure>
-  <img src="{{ '/assets/viagem-2/montalegre-1.avif' | relative_url }}" alt="Montalegre" loading="lazy">
+  <img src="{{ '/assets/viagem-2/montalegre-1.avif' | relative_url }}" alt="Montalegre" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Montalegre</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/montalegre-2.avif' | relative_url }}" alt="Montalegre" loading="lazy">
+  <img src="{{ '/assets/viagem-2/montalegre-2.avif' | relative_url }}" alt="Montalegre" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Montalegre</figcaption>
 </figure>
 
@@ -334,7 +334,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 _Fora da viagem de Saramago: a aldeia de Pitões das Júnias e o Mosteiro de Santa Maria das Júnias, no Parque Nacional da Peneda-Gerês._
 
 <figure>
-  <img src="{{ '/assets/viagem-2/pitoes-das-junias.avif' | relative_url }}" alt="Pitões das Júnias" loading="lazy">
+  <img src="{{ '/assets/viagem-2/pitoes-das-junias.avif' | relative_url }}" alt="Pitões das Júnias" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Pitões das Júnias</figcaption>
 </figure>
 
@@ -345,12 +345,12 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 _Fora da viagem de Saramago: a aldeia de Outeiro, no planalto da Mourela (Montalegre), dentro do Parque Nacional da Peneda-Gerês._
 
 <figure>
-  <img src="{{ '/assets/viagem-2/outeiro-1.avif' | relative_url }}" alt="Outeiro" loading="lazy">
+  <img src="{{ '/assets/viagem-2/outeiro-1.avif' | relative_url }}" alt="Outeiro" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Outeiro</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/outeiro-2.avif' | relative_url }}" alt="Outeiro" loading="lazy">
+  <img src="{{ '/assets/viagem-2/outeiro-2.avif' | relative_url }}" alt="Outeiro" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Outeiro</figcaption>
 </figure>
 
@@ -365,7 +365,7 @@ _⟨notas do dia — a escrever⟩_
 ### São Bento da Porta Aberta
 
 <figure>
-  <img src="{{ '/assets/viagem-2/sao-bento-da-porta-aberta.avif' | relative_url }}" alt="São Bento da Porta Aberta" loading="lazy">
+  <img src="{{ '/assets/viagem-2/sao-bento-da-porta-aberta.avif' | relative_url }}" alt="São Bento da Porta Aberta" width="1200" height="1600" decoding="async" loading="lazy">
   <figcaption>São Bento da Porta Aberta</figcaption>
 </figure>
 
@@ -374,7 +374,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 ### Covide
 
 <figure>
-  <img src="{{ '/assets/viagem-2/covide.avif' | relative_url }}" alt="Covide" loading="lazy">
+  <img src="{{ '/assets/viagem-2/covide.avif' | relative_url }}" alt="Covide" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Covide</figcaption>
 </figure>
 
@@ -387,12 +387,12 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/ponte-da-barca-1.avif' | relative_url }}" alt="Ponte da Barca" loading="lazy">
+  <img src="{{ '/assets/viagem-2/ponte-da-barca-1.avif' | relative_url }}" alt="Ponte da Barca" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Ponte da Barca</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/ponte-da-barca-2.avif' | relative_url }}" alt="Ponte da Barca" loading="lazy">
+  <img src="{{ '/assets/viagem-2/ponte-da-barca-2.avif' | relative_url }}" alt="Ponte da Barca" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Ponte da Barca</figcaption>
 </figure>
 
@@ -407,7 +407,7 @@ _⟨notas do dia — a escrever⟩_
 ### Giela
 
 <figure>
-  <img src="{{ '/assets/viagem-2/giela.avif' | relative_url }}" alt="Giela" loading="lazy">
+  <img src="{{ '/assets/viagem-2/giela.avif' | relative_url }}" alt="Giela" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Giela</figcaption>
 </figure>
 
@@ -422,7 +422,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 _Fora da viagem de Saramago: a Anta do Mezio, monumento megalítico (c. 3000 a.C.) junto à Porta do Mezio, entrada do Parque Nacional da Peneda-Gerês em Arcos de Valdevez._
 
 <figure>
-  <img src="{{ '/assets/viagem-2/anta-do-mezio.avif' | relative_url }}" alt="Anta do Mezio" loading="lazy">
+  <img src="{{ '/assets/viagem-2/anta-do-mezio.avif' | relative_url }}" alt="Anta do Mezio" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Anta do Mezio</figcaption>
 </figure>
 
@@ -431,7 +431,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 ### Soajo
 
 <figure>
-  <img src="{{ '/assets/viagem-2/soajo.avif' | relative_url }}" alt="Soajo" loading="lazy">
+  <img src="{{ '/assets/viagem-2/soajo.avif' | relative_url }}" alt="Soajo" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Soajo</figcaption>
 </figure>
 
@@ -444,7 +444,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/castro-laboreiro.avif' | relative_url }}" alt="Castro Laboreiro" loading="lazy">
+  <img src="{{ '/assets/viagem-2/castro-laboreiro.avif' | relative_url }}" alt="Castro Laboreiro" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Castro Laboreiro</figcaption>
 </figure>
 
@@ -463,7 +463,7 @@ _⟨notas do dia — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/nossa-senhora-da-orada.avif' | relative_url }}" alt="Nossa Senhora da Orada" loading="lazy">
+  <img src="{{ '/assets/viagem-2/nossa-senhora-da-orada.avif' | relative_url }}" alt="Nossa Senhora da Orada" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Nossa Senhora da Orada</figcaption>
 </figure>
 
@@ -476,7 +476,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/melgaco.avif' | relative_url }}" alt="Melgaço" loading="lazy">
+  <img src="{{ '/assets/viagem-2/melgaco.avif' | relative_url }}" alt="Melgaço" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Melgaço</figcaption>
 </figure>
 
@@ -489,7 +489,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/moncao.avif' | relative_url }}" alt="Monção" loading="lazy">
+  <img src="{{ '/assets/viagem-2/moncao.avif' | relative_url }}" alt="Monção" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Monção</figcaption>
 </figure>
 
@@ -498,7 +498,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 ### Valença
 
 <figure>
-  <img src="{{ '/assets/viagem-2/valenca.avif' | relative_url }}" alt="Valença" loading="lazy">
+  <img src="{{ '/assets/viagem-2/valenca.avif' | relative_url }}" alt="Valença" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Valença</figcaption>
 </figure>
 
@@ -517,7 +517,7 @@ _⟨notas do dia — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/rubiaes.avif' | relative_url }}" alt="Rubiães" loading="lazy">
+  <img src="{{ '/assets/viagem-2/rubiaes.avif' | relative_url }}" alt="Rubiães" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Rubiães</figcaption>
 </figure>
 
@@ -526,7 +526,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 ### Romarigães
 
 <figure>
-  <img src="{{ '/assets/viagem-2/romarigaes.avif' | relative_url }}" alt="Romarigães" loading="lazy">
+  <img src="{{ '/assets/viagem-2/romarigaes.avif' | relative_url }}" alt="Romarigães" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Romarigães</figcaption>
 </figure>
 
@@ -535,7 +535,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 ### Ponte de Lima
 
 <figure>
-  <img src="{{ '/assets/viagem-2/ponte-de-lima.avif' | relative_url }}" alt="Ponte de Lima" loading="lazy">
+  <img src="{{ '/assets/viagem-2/ponte-de-lima.avif' | relative_url }}" alt="Ponte de Lima" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Ponte de Lima</figcaption>
 </figure>
 
@@ -548,7 +548,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/abade-de-neiva.avif' | relative_url }}" alt="Abade de Neiva" loading="lazy">
+  <img src="{{ '/assets/viagem-2/abade-de-neiva.avif' | relative_url }}" alt="Abade de Neiva" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Abade de Neiva</figcaption>
 </figure>
 
@@ -561,12 +561,12 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/barcelos-1.avif' | relative_url }}" alt="Barcelos" loading="lazy">
+  <img src="{{ '/assets/viagem-2/barcelos-1.avif' | relative_url }}" alt="Barcelos" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Barcelos</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ '/assets/viagem-2/barcelos-2.avif' | relative_url }}" alt="Barcelos" loading="lazy">
+  <img src="{{ '/assets/viagem-2/barcelos-2.avif' | relative_url }}" alt="Barcelos" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Barcelos</figcaption>
 </figure>
 
@@ -581,7 +581,7 @@ _⟨notas do dia — a escrever⟩_
 ### Vila Nova de Famalicão
 
 <figure>
-  <img src="{{ '/assets/viagem-2/vila-nova-de-famalicao.avif' | relative_url }}" alt="Vila Nova de Famalicão" loading="lazy">
+  <img src="{{ '/assets/viagem-2/vila-nova-de-famalicao.avif' | relative_url }}" alt="Vila Nova de Famalicão" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Vila Nova de Famalicão</figcaption>
 </figure>
 
@@ -594,7 +594,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/sao-miguel-de-ceide.avif' | relative_url }}" alt="São Miguel de Ceide" loading="lazy">
+  <img src="{{ '/assets/viagem-2/sao-miguel-de-ceide.avif' | relative_url }}" alt="São Miguel de Ceide" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>São Miguel de Ceide</figcaption>
 </figure>
 
@@ -607,7 +607,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/santa-eulalia-2.avif' | relative_url }}" alt="Santa Eulália" loading="lazy">
+  <img src="{{ '/assets/viagem-2/santa-eulalia-2.avif' | relative_url }}" alt="Santa Eulália" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Santa Eulália</figcaption>
 </figure>
 
@@ -620,7 +620,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-2/agueda.avif' | relative_url }}" alt="Águeda" loading="lazy">
+  <img src="{{ '/assets/viagem-2/agueda.avif' | relative_url }}" alt="Águeda" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Águeda</figcaption>
 </figure>
 
@@ -635,7 +635,7 @@ _⟨notas do dia — a escrever⟩_
 ### Santa Eulália
 
 <figure>
-  <img src="{{ '/assets/viagem-2/santa-eulalia-1.avif' | relative_url }}" alt="Santa Eulália" loading="lazy">
+  <img src="{{ '/assets/viagem-2/santa-eulalia-1.avif' | relative_url }}" alt="Santa Eulália" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Santa Eulália</figcaption>
 </figure>
 

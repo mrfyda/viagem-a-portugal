@@ -65,6 +65,15 @@ const jsonLd = {
   },
 };
 
+// Open early connections to the cross-origin hosts the first paint depends on:
+// the OpenFreeMap tile server (the map canvas is the LCP element) and Google
+// Fonts (stylesheet on googleapis, font file on gstatic — gstatic needs the
+// crossorigin form to match the CORS font fetch). Saves a TLS round-trip each.
+const preconnects = `
+    <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />`;
+
 const headTags = `
     <meta name="description" content="${esc(DESCRIPTION)}" />
     <meta name="theme-color" content="#0a5a3a" />
@@ -111,7 +120,24 @@ if (html.includes("<!-- seo:injected -->")) {
 html = html
   .replace(/<html lang="[^"]*">/, '<html lang="pt-PT">')
   .replace(/<title>[^<]*<\/title>/, `<title>${esc(TITLE)}</title>`)
+  // Preconnects go right after the charset meta (which must stay first in head).
+  .replace(/(<meta charset="utf-8"\s*\/?>)/, `$1${preconnects}`)
+  // Expo hoists the global.css `@import` of the Cardo font into a render-blocking
+  // <link rel="stylesheet">. Load it without blocking first paint: swap media
+  // print→all on load, with a <noscript> fallback. `display=swap` already lets
+  // text show in the fallback serif until Cardo arrives.
+  .replace(
+    /<link rel="stylesheet" href="(https:\/\/fonts\.googleapis\.com\/css2\?family=Cardo(?:&|&amp;)display=swap)">/,
+    `<link rel="stylesheet" href="$1" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="$1"></noscript>`,
+  )
   .replace("</head>", `${headTags}\n  </head>`);
 
+if (!html.includes('media="print"')) {
+  console.warn(
+    "[inject-web-meta] WARNING: Cardo font <link> not found to defer — " +
+      "Expo may have changed its CSS @import handling; check render-blocking.",
+  );
+}
+
 writeFileSync(indexPath, html);
-console.log(`[inject-web-meta] injected SEO head (canonical ${pageUrl}).`);
+console.log(`[inject-web-meta] injected SEO head + preconnects (canonical ${pageUrl}).`);

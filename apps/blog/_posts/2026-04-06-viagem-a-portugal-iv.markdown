@@ -42,7 +42,7 @@ _⟨notas do dia — a escrever⟩_
 ### Viana do Castelo
 
 <figure>
-  <img src="{{ '/assets/viagem-4/viana-do-castelo.avif' | relative_url }}" alt="Viana do Castelo" loading="lazy">
+  <img src="{{ '/assets/viagem-4/viana-do-castelo.avif' | relative_url }}" alt="Viana do Castelo" width="1600" height="900" decoding="async" fetchpriority="high">
   <figcaption>Viana do Castelo</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ _⟨notas do dia — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-4/caminha.avif' | relative_url }}" alt="Caminha" loading="lazy">
+  <img src="{{ '/assets/viagem-4/caminha.avif' | relative_url }}" alt="Caminha" width="1600" height="900" decoding="async" loading="lazy">
   <figcaption>Caminha</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ _⟨notas do dia — a escrever⟩_
 ### Vila Nova de Cerveira
 
 <figure>
-  <img src="{{ '/assets/viagem-4/vila-nova-de-cerveira.avif' | relative_url }}" alt="Vila Nova de Cerveira" loading="lazy">
+  <img src="{{ '/assets/viagem-4/vila-nova-de-cerveira.avif' | relative_url }}" alt="Vila Nova de Cerveira" width="1600" height="1200" decoding="async" loading="lazy">
   <figcaption>Vila Nova de Cerveira</figcaption>
 </figure>
 

@@ -83,6 +83,7 @@ def main():
 
     b = ["_⟨introdução — a escrever⟩_", "", f"_{len(all_days)} dias. _⟨ajustar⟩_", ""]
     seen = set()
+    hero_done = False  # the first image in document order is the LCP element
     for i, day in enumerate(all_days, 1):
         dt = datetime.strptime(day, "%Y-%m-%d")
         b += [f"## Dia {i} — {dt.day} de {MON[dt.month]}, {WD[dt.weekday()]}", "",
@@ -95,8 +96,15 @@ def main():
                 b += [f"> «{q}»", ">", "> — José Saramago, *Viagem a Portugal*", ""]
             seen.add(town)
             for p in photos:
+                # Reserve layout space with intrinsic dimensions (no layout shift).
+                dim = f' width="{p["w"]}" height="{p["h"]}"' if p.get("w") else ""
+                # Load the first image eagerly at high priority (it's the LCP),
+                # lazy-load the rest so a long post doesn't fetch every photo.
+                load = ' fetchpriority="high"' if not hero_done else ' loading="lazy"'
+                hero_done = True
                 b += ["<figure>",
-                      f"  <img src=\"{{{{ '/assets/{pre}/{p['webfile']}' | relative_url }}}}\" alt=\"{town}\" loading=\"lazy\">",
+                      f"  <img src=\"{{{{ '/assets/{pre}/{p['webfile']}' | relative_url }}}}\""
+                      f" alt=\"{town}\"{dim} decoding=\"async\"{load}>",
                       f"  <figcaption>{town}</figcaption>", "</figure>", ""]
             b += ["_⟨o que ver / o que aconteceu aqui — a escrever⟩_", ""]
     b += ["## Epílogo", "", "_⟨fecho — a escrever⟩_"]

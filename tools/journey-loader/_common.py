@@ -106,6 +106,18 @@ def load_metadata(photos: Path):
     return json.loads((journey_dir(photos) / "metadata.json").read_text(encoding="utf-8"))
 
 
+def avif_dims(path: Path) -> tuple[int, int]:
+    """(width, height) in px of an encoded image, via ffprobe — so posts can carry
+    explicit <img width/height> and reserve layout space (no layout shift)."""
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0",
+         "-show_entries", "stream=width,height", "-of", "csv=p=0:s=x", str(path)],
+        check=True, capture_output=True, text=True,
+    ).stdout.strip()
+    w, h = out.split("x")
+    return int(w), int(h)
+
+
 def png_to_avif(png: Path, out: Path, crf: int = AVIF_CRF) -> None:
     """Encode a PNG to a SINGLE-TILE AVIF via ffmpeg/libsvtav1 — never a grid, so
     it decodes in Firefox. (ImageIO's AVIF writer tiles anything >512px into a grid

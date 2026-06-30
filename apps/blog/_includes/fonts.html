@@ -1,3 +1,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+{%- comment -%}
+Load Cardo without blocking first paint: the stylesheet applies as `print` (so it
+isn't render-blocking), then swaps to `all` once it has loaded. `display=swap`
+already lets text render in the fallback serif until Cardo arrives. The
+<noscript> copy keeps the font for clients with JS disabled.
+{%- endcomment -%}
+<link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet"></noscript>
