@@ -9,5 +9,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   experiments: {
     ...config.experiments,
     baseUrl: process.env.EXPO_BASE_URL || undefined,
+    // React Compiler auto-memoizes components (fewer re-renders → less
+    // main-thread work). babel-preset-expo wires up babel-plugin-react-compiler
+    // when this is on; React 19 needs no separate compiler runtime.
+    reactCompiler: true,
   },
 });
