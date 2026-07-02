@@ -268,18 +268,17 @@ export default function TravelMap() {
     };
   }, [attempt]);
 
-  // Place the zoom + geolocate controls clear of the open chrome so they never
-  // sit under a panel. On desktop the tall left sidebar owns the left edge, so
-  // both controls go bottom-right. On mobile the chrome is a narrow top-left
-  // card plus a bottom-sheet panel, leaving the top-right corner free — both
-  // controls live there so the bottom sheet never buries them. Re-runs when the
-  // breakpoint flips. The geolocate button drops the standard blue location dot
-  // + accuracy ring and recentres on the visitor — pure browser geolocation, no
-  // Visit data.
+  // Zoom + geolocate live bottom-right on both breakpoints: on desktop the
+  // sidebar owns the left edge; on mobile bottom-right is the one-handed
+  // thumb zone (the CSS raises the corner stack above the glass tab bar, and
+  // the half-height place sheet covers it only while an entry is open).
+  // Re-runs when the breakpoint flips. The geolocate button drops the
+  // standard blue location dot + accuracy ring and recentres on the visitor —
+  // pure browser geolocation, no Visit data.
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !mapReady) return;
-    const corner = isDesktop ? "bottom-right" : "top-right";
+    const corner = "bottom-right";
     const nav = new maplibregl.NavigationControl();
     const geolocate = new maplibregl.GeolocateControl({
       positionOptions: { enableHighAccuracy: true },
@@ -297,7 +296,7 @@ export default function TravelMap() {
         // map removed
       }
     };
-  }, [mapReady, isDesktop]);
+  }, [mapReady]);
 
   useEffect(() => {
     if (!mapReady) return;
@@ -351,8 +350,8 @@ export default function TravelMap() {
   // came from a map click, the search box, a shared deep link, or back/forward.
   // From country zoom the camera also glides closer, so picking a place shows
   // its surroundings (and its disclosure-tier neighbours) instead of a lone
-  // ring on the national map. Desktop pads for the sidebar so the selection
-  // centres in the visible map, not under the chrome.
+  // ring on the national map. Desktop pads for the sidebar, mobile for the
+  // half-height place sheet, so the selection centres in the visible map.
   useEffect(() => {
     if (!mapReady) return;
     const map = mapRef.current;
@@ -376,7 +375,14 @@ export default function TravelMap() {
       map.easeTo({
         center,
         zoom: Math.max(map.getZoom(), 8.6),
-        padding: isDesktop ? { top: 0, right: 0, bottom: 0, left: 396 } : 0,
+        padding: isDesktop
+          ? { top: 0, right: 0, bottom: 0, left: 396 }
+          : {
+              top: 0,
+              right: 0,
+              bottom: Math.round(map.getContainer().clientHeight * 0.4),
+              left: 0,
+            },
         duration: reduce ? 0 : 700,
       });
     }

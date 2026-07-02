@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from "react";
 
+import { useSheetDrag } from "../hooks/useSheetDrag";
 import { bookPlaceByName, chapters } from "../lib/book";
 import type { Detour } from "../lib/detours";
 import { stops } from "../lib/geo";
@@ -159,10 +160,20 @@ function MobileSheet({
   onClose: () => void;
   children: ReactNode;
 }) {
+  const { handleProps, sheetStyle } = useSheetDrag(onClose);
   return (
-    <aside className="animate-sheet-in absolute inset-x-3 bottom-20 z-10 flex max-h-[55vh] flex-col rounded-2xl border border-border bg-card/95 text-sm text-foreground shadow-lg backdrop-blur-sm">
-      <div className="flex items-center justify-between gap-2 border-b border-border px-4 py-2.5">
-        <span className="text-lg font-bold">{title}</span>
+    <aside
+      style={sheetStyle}
+      className="animate-sheet-in absolute inset-x-3 bottom-20 z-10 flex max-h-[55vh] flex-col rounded-2xl border border-border bg-card/95 text-sm text-foreground shadow-lg backdrop-blur-sm"
+    >
+      <div
+        {...handleProps}
+        className="flex cursor-grab items-center justify-between gap-2 border-b border-border px-4 pb-2.5 pt-1.5"
+      >
+        <div className="min-w-0 flex-1">
+          <div aria-hidden className="mx-auto mb-1.5 h-1 w-9 rounded-full bg-border" />
+          <span className="text-lg font-bold">{title}</span>
+        </div>
         <button
           onClick={onClose}
           aria-label={t("close")}

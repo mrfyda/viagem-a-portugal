@@ -17,14 +17,9 @@ by choice — no issue tracker for this project.)
   the end of the post (PT/EN via `page.lang`, like `transport.html`);
   optionally a playlist URL surfaced later in the map's featured block.
   Needs the actual lists/playlists per trip.
-- **Blog language suggestion** — the map auto-detects PT/EN at runtime; the
-  blog is prerendered per language, so the equivalent is a small client-side
-  hint: on a paired PT post, if `navigator.language` is English (and no
-  stored preference), show a quiet dismissible "This diary entry is also
-  available in English →" bar. Deliberately a suggestion, not an
-  auto-redirect: hreflang already routes search traffic, and forced
-  Accept-Language redirects hurt indexing and annoy bilingual readers.
-  Remember the choice in localStorage.
+- ~~Blog language suggestion~~ — decided against (2026-07): hreflang routes
+  search traffic and the per-post switcher covers the rest; no client-side
+  detection bar.
 
 ## Content
 

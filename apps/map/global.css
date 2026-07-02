@@ -72,11 +72,9 @@
    map's top-right zoom/locate controls down below it. Desktop keeps its controls
    bottom-right, so this only affects the mobile layout. */
 @media (max-width: 767px) {
-    .maplibregl-ctrl-top-right {
-        /* clear the h-14 top bar plus a small gap */
-        margin-top: calc(env(safe-area-inset-top, 0px) + 4.25rem);
-    }
-    /* Keep the OSM attribution readable above the floating glass tab bar. */
+    /* Keep the bottom-right corner stack — zoom/locate controls (the
+       one-handed thumb zone) and the OSM attribution — above the floating
+       glass tab bar. */
     .maplibregl-ctrl-bottom-right {
         margin-bottom: calc(max(0.75rem, env(safe-area-inset-bottom, 0px)) + 3.75rem);
     }

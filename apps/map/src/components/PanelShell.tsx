@@ -1,5 +1,6 @@
 import { useEffect, useRef, type ReactNode } from "react";
 
+import { useSheetDrag } from "../hooks/useSheetDrag";
 import { t } from "../lib/i18n";
 
 /**
@@ -7,8 +8,10 @@ import { t } from "../lib/i18n";
  * Used by both TownDetailPanel (book Places) and DetourDetailPanel (off-book
  * Detours) so the shell markup lives in one place. Two layouts:
  *   - embedded (desktop sidebar): flows inline, scrolls with the sidebar.
- *   - mobile: a full-screen modal with a pinned header over a scrollable body,
- *     so the close/prev/next controls stay reachable however long the entry.
+ *   - mobile: a half-height bottom sheet — pinned header over a scrollable
+ *     body, the map (and the selection halo) staying visible above it, so
+ *     "where is this?" never needs closing the entry. Swipe down on the
+ *     grabber/header to dismiss.
  */
 export default function PanelShell({
   title,
@@ -39,6 +42,8 @@ export default function PanelShell({
   useEffect(() => {
     headingRef.current?.focus({ preventScroll: true });
   }, []);
+
+  const { handleProps, sheetStyle } = useSheetDrag(onClose);
 
   const header = (
     <div className="flex items-center justify-between gap-2">
@@ -91,11 +96,17 @@ export default function PanelShell({
     );
   }
 
-  // Mobile: full-screen modal — pinned header, scrollable body. Covers the
-  // map chrome (top card + controls) so the entry has the whole screen.
+  // Mobile: a half-height bottom sheet — the map keeps the upper half, so the
+  // selection halo stays in view and tapping another dot switches the entry.
   return (
-    <div className="animate-sheet-in absolute inset-0 z-20 flex flex-col bg-card text-sm text-foreground">
-      <div className="shrink-0 border-b border-border p-4">{header}</div>
+    <div
+      style={sheetStyle}
+      className="animate-sheet-in absolute inset-x-0 bottom-0 z-20 flex max-h-[60vh] flex-col rounded-t-2xl border-t border-border bg-card text-sm text-foreground shadow-[0_-8px_30px_rgba(28,25,23,0.18)]"
+    >
+      <div {...handleProps} className="shrink-0 cursor-grab border-b border-border px-4 pb-3 pt-2">
+        <div aria-hidden className="mx-auto mb-2 h-1 w-9 rounded-full bg-border" />
+        {header}
+      </div>
       <div className="flex flex-1 flex-col gap-2 overflow-y-auto p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
         {children}
       </div>
