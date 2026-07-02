@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { withSiteBase } from "../lib/assets";
 import { t } from "../lib/i18n";
 
@@ -18,13 +20,17 @@ export default function PostPhotoLink({
   date?: string | null;
   alt: string;
 }) {
+  // A broken hero (asset renamed, dev server without the blog) collapses to
+  // the text link instead of a giant empty 4:3 box.
+  const [broken, setBroken] = useState(false);
   return (
     <div className="overflow-hidden rounded-md bg-accent text-[13px] text-accent-foreground">
-      {image && (
+      {image && !broken && (
         <img
           src={withSiteBase(image)}
           alt={alt}
           loading="lazy"
+          onError={() => setBroken(true)}
           className="block aspect-[4/3] w-full object-cover"
         />
       )}

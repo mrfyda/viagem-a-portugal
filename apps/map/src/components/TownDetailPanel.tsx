@@ -1,4 +1,5 @@
 import { sectionTitle } from "../lib/book";
+import { formatPages } from "../lib/format";
 import { CHAPTER_COLORS } from "../lib/mapStyle";
 import { t } from "../lib/i18n";
 import { placeDetail } from "../lib/place";
@@ -71,7 +72,7 @@ export default function TownDetailPanel({
 
       {book && (
         <span className="text-xs text-muted-foreground">
-          {t("pages", { pages: book.pages.join(", ") })}
+          {t("pages", { pages: formatPages(book.pages) })}
         </span>
       )}
 

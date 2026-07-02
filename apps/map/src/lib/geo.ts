@@ -4,6 +4,7 @@ import corrections from "../data/corrections.json";
 import generatedLocations from "../data/locations.json";
 import stopsData from "../data/stops.json";
 import { bookPlaceByName } from "./book";
+import { formatPages } from "./format";
 import type { Visits } from "./progress";
 
 export interface Stop {
@@ -190,7 +191,7 @@ export function buildTownsGeoJson(
         indexName: town.name,
         name: place?.name ?? town.name,
         firstPage: place?.pages[0] ?? null,
-        pagesLabel: place?.pages.join(", ") ?? null,
+        pagesLabel: place ? formatPages(place.pages) : null,
         mentions,
         visited,
         visitedDate: visits.get(town.name) ?? null,

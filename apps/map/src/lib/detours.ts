@@ -1,6 +1,7 @@
 import type { FeatureCollection, Point } from "geojson";
 
 import detoursData from "../data/detours.json";
+import { stripDraftMarkers } from "./format";
 
 /**
  * A Detour (ADR 0010): a real place visited on the retracing that has no entry
@@ -19,7 +20,11 @@ export interface Detour {
   postTitle: string;
 }
 
-export const detours: Detour[] = detoursData as Detour[];
+export const detours: Detour[] = (detoursData as Detour[]).map((d) => ({
+  ...d,
+  postTitle: stripDraftMarkers(d.postTitle),
+  note: d.note && stripDraftMarkers(d.note),
+}));
 
 /** URL-safe slug for the `?detour=` param, e.g. "Mazouco" -> "mazouco". */
 export function detourSlug(name: string): string {

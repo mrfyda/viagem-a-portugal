@@ -55,6 +55,19 @@
     }
 }
 
+/* maplibre's hover popup was the one unbranded piece of chrome: give it the
+   site's serif, ink and radius so a tooltip reads as part of the book. */
+.maplibregl-popup-content {
+    font-family: "Cardo", serif;
+    color: hsl(24 10% 10%);
+    font-size: 13px;
+    line-height: 1.45;
+    padding: 5px 10px;
+    border-radius: calc(0.5rem - 2px);
+    border: 1px solid hsl(20 6% 90%);
+    box-shadow: 0 2px 8px rgba(28, 25, 23, 0.12);
+}
+
 /* Mobile: the full-width brand bar (MapTopBar) owns the top edge, so push the
    map's top-right zoom/locate controls down below it. Desktop keeps its controls
    bottom-right, so this only affects the mobile layout. */
