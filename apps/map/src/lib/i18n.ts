@@ -43,6 +43,11 @@ const en = {
   navMap: "Map",
   account: "Account",
   noResults: "No matching places",
+  exploreHint: "Click a town to see where it appears in the book.",
+  legendPlace: "place from the book",
+  legendVisited: "visited",
+  legendDetour: "detour — off the book",
+  legendRoute: "route (one colour per chapter)",
 };
 
 const pt: typeof en = {
@@ -85,6 +90,11 @@ const pt: typeof en = {
   navMap: "Mapa",
   account: "Conta",
   noResults: "Nenhum lugar encontrado",
+  exploreHint: "Clique numa terra para ver onde aparece no livro.",
+  legendPlace: "lugar do livro",
+  legendVisited: "visitada",
+  legendDetour: "desvio — fora do livro",
+  legendRoute: "percurso (uma cor por capítulo)",
 };
 
 export type MessageKey = keyof typeof en;

@@ -1,11 +1,12 @@
 import { useState, type ReactNode } from "react";
 
-import { chapters } from "../lib/book";
+import { bookPlaceByName, chapters } from "../lib/book";
 import type { Detour } from "../lib/detours";
 import { stops } from "../lib/geo";
 import { t } from "../lib/i18n";
 import { CHAPTER_COLORS } from "../lib/mapStyle";
 import DetourDetailPanel from "./DetourDetailPanel";
+import MapLegend from "./MapLegend";
 import MapNav from "./MapNav";
 import MapTopBar from "./MapTopBar";
 import MobileTabBar, { type MobileTab } from "./MobileTabBar";
@@ -16,7 +17,9 @@ export interface MapSidebarProps {
   isDesktop: boolean;
   /** The auth/progress block, owned by TravelMap (keeps session types out of here). */
   header: ReactNode;
+  focusedChapter: number | null;
   onFocusChapter: (chapter: number) => void;
+  onClearFocus: () => void;
   onSelectPlace: (indexName: string) => void;
   selectedPlace: string | null;
   detailProps: Omit<TownDetailPanelProps, "place" | "embedded"> | null;
@@ -84,6 +87,62 @@ function ChapterList({
 }
 
 /**
+ * One chapter in focus: its Stops in narrative order, tap to open the Place.
+ * The map meanwhile dims everything outside the chapter (TravelMap owns that),
+ * so the list and the territory point at the same thing.
+ */
+function ChapterStops({
+  chapter,
+  onSelectPlace,
+  onBack,
+}: {
+  chapter: number;
+  onSelectPlace: (indexName: string) => void;
+  onBack: () => void;
+}) {
+  const meta = chapters.find((c) => c.number === chapter);
+  const chapterStops = stops.filter(
+    (s) => s.chapter === chapter && s.role === "stop",
+  );
+  return (
+    <>
+      <button
+        onClick={onBack}
+        className="self-start text-[13px] text-muted-foreground transition-colors hover:text-foreground"
+      >
+        {t("backToChapters")}
+      </button>
+      <h2 className="flex items-baseline gap-2 text-base font-bold leading-snug">
+        <span
+          className="h-3 w-3 shrink-0 self-center rounded-full"
+          style={{ background: CHAPTER_COLORS[chapter] }}
+        />
+        <span>
+          {chapter}. {meta?.title}
+        </span>
+      </h2>
+      <ol className="flex flex-col">
+        {chapterStops.map((s, i) => (
+          <li key={s.ordinal}>
+            <button
+              onClick={() => onSelectPlace(s.place)}
+              className="flex w-full items-baseline gap-2 rounded-md px-2 py-1 text-left transition-colors hover:bg-secondary focus-visible:bg-secondary focus-visible:outline-none"
+            >
+              <span className="w-6 shrink-0 text-right text-xs tabular-nums text-muted-foreground">
+                {i + 1}.
+              </span>
+              <span className="text-[13px]">
+                {bookPlaceByName.get(s.place)?.name ?? s.place}
+              </span>
+            </button>
+          </li>
+        ))}
+      </ol>
+    </>
+  );
+}
+
+/**
  * Mobile bottom sheet floated just above the {@link MobileTabBar}. Each tab /
  * the search button opens one of these (journey, account, search) with a pinned
  * header and a scrollable body, leaving the map visible behind the glass nav.
@@ -117,7 +176,9 @@ function MobileSheet({
 export default function MapSidebar({
   isDesktop,
   header,
+  focusedChapter,
   onFocusChapter,
+  onClearFocus,
   onSelectPlace,
   selectedPlace,
   detailProps,
@@ -145,7 +206,18 @@ export default function MapSidebar({
                 it expands the glass nav itself into a search field (iOS 26). */}
             {searchOpen ? null : mobileView === "journey" ? (
               <MobileSheet title={t("theJourney")} onClose={() => setMobileView("map")}>
-                <ChapterList compact onFocusChapter={onFocusChapter} />
+                {focusedChapter != null ? (
+                  <ChapterStops
+                    chapter={focusedChapter}
+                    onSelectPlace={onSelectPlace}
+                    onBack={onClearFocus}
+                  />
+                ) : (
+                  <>
+                    <ChapterList compact onFocusChapter={onFocusChapter} />
+                    <MapLegend />
+                  </>
+                )}
               </MobileSheet>
             ) : mobileView === "profile" && header ? (
               <MobileSheet title={t("account")} onClose={() => setMobileView("map")}>
@@ -196,8 +268,17 @@ export default function MapSidebar({
         </button>
         <DetourDetailPanel detour={selectedDetour} embedded onClose={onCloseDetour} />
       </>
+    ) : focusedChapter != null ? (
+      <ChapterStops
+        chapter={focusedChapter}
+        onSelectPlace={onSelectPlace}
+        onBack={onClearFocus}
+      />
     ) : (
-      <ChapterList onFocusChapter={onFocusChapter} />
+      <>
+        <ChapterList onFocusChapter={onFocusChapter} />
+        <MapLegend />
+      </>
     );
 
   return (
@@ -212,7 +293,11 @@ export default function MapSidebar({
       <div
         // Remount on every view change so the entrance animation replays —
         // chapters ↔ place ↔ detour each read as "something opened".
-        key={selectedPlace ?? selectedDetour?.name ?? "chapters"}
+        key={
+          selectedPlace ??
+          selectedDetour?.name ??
+          (focusedChapter != null ? `chapter-${focusedChapter}` : "chapters")
+        }
         className="animate-panel-in flex min-h-0 flex-1 flex-col gap-2 overflow-y-auto"
       >
         {body}

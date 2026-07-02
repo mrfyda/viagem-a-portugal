@@ -17,10 +17,12 @@ import {
 } from "../lib/geo";
 import { detourBySlug, detourCenter, detoursGeoJson } from "../lib/detours";
 import {
+  chapterDim,
   DETOUR_COLOR,
   fetchMapStyle,
   MARKER_MIN_RADIUS,
   ROUTE_COLOR,
+  routeOpacity,
   SELECTED_DOT_RADIUS,
   SELECTED_HALO_RADIUS,
   SELECTION_RING_COLOR,
@@ -56,6 +58,8 @@ export default function TravelMap() {
   const selectedPlace = selection?.kind === "place" ? selection.id : null;
   const selectedDetour =
     selection?.kind === "detour" ? detourBySlug(selection.slug) ?? null : null;
+  // Chapter focus: one Route holds the stage (sidebar stop list + map dim).
+  const [focusedChapter, setFocusedChapter] = useState<number | null>(null);
 
   const isDesktop = useIsDesktop();
   const { session, loading: authLoading, configured, signIn, signUp, signOut } =
@@ -220,6 +224,21 @@ export default function TravelMap() {
         if (feature) selectPlace(feature.properties.indexName);
       });
 
+      // Clicking open water/land backs out of the current selection — the
+      // map is an exit, not a dead surface. (Layer clicks above also reach
+      // this handler; a visible hit means it wasn't a background click.)
+      map.on("click", (event) => {
+        const features = map.queryRenderedFeatures(event.point, {
+          layers: ["towns", "detours"],
+        });
+        const hit = features.some(
+          (f) =>
+            f.layer.id === "detours" ||
+            map.getZoom() >= TIER_INTERACTIVE_ZOOM[f.properties.tier as number],
+        );
+        if (!hit) clear();
+      });
+
       map.on("click", "detours", (event) => {
         const feature = event.features?.[0];
         if (feature) selectDetour(feature.properties.slug as string);
@@ -286,9 +305,10 @@ export default function TravelMap() {
     source?.setData(buildTownsGeoJson(visits));
   }, [visits, mapReady]);
 
-  // Mirror the selection onto the canvas: halo + full-strength dot on the
-  // selected Place, everything else stepped back — the panel and the map
-  // point at the same thing.
+  // Mirror the selection / chapter focus onto the canvas: halo +
+  // full-strength dot on the selected Place, or the focused chapter's dots
+  // and route at full strength — everything else stepped back, so the panel
+  // and the map always point at the same thing.
   useEffect(() => {
     if (!mapReady) return;
     const map = mapRef.current;
@@ -298,11 +318,34 @@ export default function TravelMap() {
       : NO_SELECTION;
     map.setFilter("towns-selected-halo", filter);
     map.setFilter("towns-selected", filter);
-    const dim = selectedPlace ? 0.45 : 1;
+    const dim = selectedPlace
+      ? 0.45
+      : focusedChapter != null
+        ? chapterDim(focusedChapter)
+        : 1;
     map.setPaintProperty("towns", "circle-opacity", townOpacity(dim));
     map.setPaintProperty("towns", "circle-stroke-opacity", townStrokeOpacity(dim));
-    map.setPaintProperty("routes", "line-opacity", selectedPlace ? 0.35 : 0.75);
-  }, [selectedPlace, mapReady]);
+    map.setPaintProperty(
+      "routes",
+      "line-opacity",
+      selectedPlace ? 0.35 : routeOpacity(focusedChapter),
+    );
+  }, [selectedPlace, focusedChapter, mapReady]);
+
+  // Escape backs out one level — place/detour first, then chapter focus —
+  // unless an input owns the keyboard (the search field handles its own).
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      const target = event.target as HTMLElement | null;
+      if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement)
+        return;
+      if (selection) clear();
+      else setFocusedChapter(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [selection, clear]);
 
   // Bring the current selection into view — a Place or a Detour — whether it
   // came from a map click, the search box, a shared deep link, or back/forward.
@@ -340,15 +383,29 @@ export default function TravelMap() {
   }, [selection, mapReady, isDesktop]);
 
   const focusChapter = (n: number) => {
+    setFocusedChapter(n);
+    const map = mapRef.current;
+    if (!map) return;
     const chapterStops = stops.filter((s) => s.chapter === n);
     const lats = chapterStops.map((s) => s.latitude);
     const lons = chapterStops.map((s) => s.longitude);
-    mapRef.current?.fitBounds(
+    // Fit around the open chrome: the sidebar on desktop; the top bar and the
+    // journey bottom sheet (max 55vh, floated above the tab bar) on mobile —
+    // otherwise half the chapter lands underneath the sheet.
+    const padding = isDesktop
+      ? { top: 48, right: 48, bottom: 48, left: 396 + 48 }
+      : {
+          top: 72,
+          right: 24,
+          bottom: Math.round(map.getContainer().clientHeight * 0.55) + 24,
+          left: 24,
+        };
+    map.fitBounds(
       [
         [Math.min(...lons), Math.min(...lats)],
         [Math.max(...lons), Math.max(...lats)],
       ],
-      { padding: 60, maxZoom: 9 },
+      { padding, maxZoom: 9 },
     );
   };
 
@@ -409,24 +466,29 @@ export default function TravelMap() {
             }}
           />
         ) : (
-          configured &&
-          !authLoading && (
-            <>
-              <span className="text-xs text-muted-foreground">{t("trackPitch")}</span>
-              <button
-                onClick={() => setAuthOpen(true)}
-                className="h-8 self-start rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground hover:bg-primary/90"
-              >
-                {t("signIn")}
-              </button>
-            </>
-          )
+          <>
+            {/* The one orientation line an anonymous reader gets. */}
+            <span className="text-xs text-muted-foreground">{t("exploreHint")}</span>
+            {configured && !authLoading && (
+              <>
+                <span className="text-xs text-muted-foreground">{t("trackPitch")}</span>
+                <button
+                  onClick={() => setAuthOpen(true)}
+                  className="h-8 self-start rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+                >
+                  {t("signIn")}
+                </button>
+              </>
+            )}
+          </>
         );
         return (
           <MapSidebar
             isDesktop={isDesktop}
             header={header}
+            focusedChapter={focusedChapter}
             onFocusChapter={focusChapter}
+            onClearFocus={() => setFocusedChapter(null)}
             onSelectPlace={selectPlace}
             selectedPlace={selectedPlace}
             detailProps={detailProps}

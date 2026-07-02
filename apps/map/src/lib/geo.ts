@@ -39,6 +39,9 @@ export interface TownProperties {
   /** Zoom-disclosure tier (mapStyle.ts): 0 anchor Stop / visited, 1 Stop,
    * 2 passed-through, 3 referenced-only. */
   tier: 0 | 1 | 2 | 3;
+  /** Chapter of the Place's first Stop; null for referenced-only places.
+   * Drives chapter-focus dimming. */
+  chapter: number | null;
 }
 
 // Overridable so a dev box or CI whose network can't reach the tile host can
@@ -156,10 +159,12 @@ export function placeDots(indexName: string): [number, number][] {
 // A Place's role on the journey, for disclosure tiers: "stop" wins over
 // "passed-through"; a Place with no Stop at all is referenced-only.
 const journeyRole = new Map<string, "stop" | "passed-through">();
+const firstChapter = new Map<string, number>();
 for (const stop of stops) {
   if (stop.role === "stop" || !journeyRole.has(stop.place)) {
     journeyRole.set(stop.place, stop.role);
   }
+  if (!firstChapter.has(stop.place)) firstChapter.set(stop.place, stop.chapter);
 }
 
 /** Disclosure tier (TOWN_RADIUS/TOWN_OPACITY in mapStyle.ts). Anchor Stops —
@@ -190,6 +195,7 @@ export function buildTownsGeoJson(
         visited,
         visitedDate: visits.get(town.name) ?? null,
         tier: dotTier(journeyRole.get(town.name), mentions, visited),
+        chapter: firstChapter.get(town.name) ?? null,
       };
       return placeDots(town.name).map((coordinates) => ({
         type: "Feature" as const,

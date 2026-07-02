@@ -105,10 +105,13 @@ export const TOWN_RADIUS: ExpressionSpecification = disclosureEnvelope(
 
 /**
  * Referenced-only places stay slightly quieter even once revealed; `dim`
- * fades the whole layer while a selection holds the stage (the selected dot
- * lives on its own always-on layers, so it keeps full strength).
+ * fades dots while something else holds the stage — a plain number while a
+ * selection is active (the selected dot lives on its own always-on layers),
+ * or a per-feature expression while a chapter is focused.
  */
-export const townOpacity = (dim = 1): ExpressionSpecification =>
+export const townOpacity = (
+  dim: number | ExpressionSpecification = 1,
+): ExpressionSpecification =>
   disclosureEnvelope((tiers) => [
     "*",
     dim,
@@ -116,8 +119,27 @@ export const townOpacity = (dim = 1): ExpressionSpecification =>
     revealed(tiers),
   ]);
 
-export const townStrokeOpacity = (dim = 1): ExpressionSpecification =>
+export const townStrokeOpacity = (
+  dim: number | ExpressionSpecification = 1,
+): ExpressionSpecification =>
   disclosureEnvelope((tiers) => ["*", dim, revealed(tiers)]);
+
+/** Chapter focus: the focused chapter's dots at full strength, the rest
+ * stepped well back (referenced-only places carry chapter null → dimmed). */
+export const chapterDim = (chapter: number): ExpressionSpecification => [
+  "case",
+  ["==", ["get", "chapter"], chapter],
+  1,
+  0.2,
+];
+
+/** Route opacity, focused variant emphasising one chapter's line. */
+export const routeOpacity = (
+  focusedChapter: number | null,
+): number | ExpressionSpecification =>
+  focusedChapter == null
+    ? 0.75
+    : ["case", ["==", ["get", "chapter"], focusedChapter], 0.9, 0.15];
 
 export const TOWN_OPACITY = townOpacity();
 export const TOWN_STROKE_OPACITY = townStrokeOpacity();
