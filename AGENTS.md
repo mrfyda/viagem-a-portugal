@@ -32,12 +32,15 @@ Always use **pnpm** (never npm/yarn). Workspace root is the repo root.
 ```sh
 pnpm install                   # install all JS deps
 pnpm --filter map typecheck    # tsc --noEmit
+pnpm --filter map test         # vitest (src/lib/__tests__)
 pnpm --filter map start        # Expo dev server
 pnpm --filter map export:web   # static web build -> apps/map/dist
 cd apps/blog && bundle exec jekyll serve   # blog dev server
 ```
 
-There is no JS test suite yet; `typecheck` + `export:web` are the CI gates.
+CI gates every push: `typecheck`, `test` (vitest), `export:web`, plus the
+Python suites (`tools/book-pipeline/test_data.py`, `tools/blog-sync/test_sync.py`
+via `uv run --with pytest`). Run the map tests before pushing map changes.
 
 To drive the running web app in a browser (verification, screenshots, clicking
 through the map), use the **`agent-browser`** CLI — not Playwright/Puppeteer.
