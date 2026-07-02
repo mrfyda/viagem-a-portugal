@@ -24,6 +24,20 @@
   <!-- SEO: title, description, canonical, Open Graph, Twitter cards, JSON-LD -->
   {% seo %}
 
+  {% comment %}
+  Paired translations (translation_key front matter) announce each other to
+  crawlers. The PT original is x-default: it is the canonical journey diary.
+  {% endcomment %}
+  {% if page.translation_key %}
+    {% assign pt_alternate = site.posts | where: "translation_key", page.translation_key | first %}
+    {% assign en_alternate = site.en | where: "translation_key", page.translation_key | first %}
+    {% if pt_alternate and en_alternate %}
+      <link rel="alternate" hreflang="pt-PT" href="{{ pt_alternate.url | absolute_url }}">
+      <link rel="alternate" hreflang="en" href="{{ en_alternate.url | absolute_url }}">
+      <link rel="alternate" hreflang="x-default" href="{{ pt_alternate.url | absolute_url }}">
+    {% endif %}
+  {% endif %}
+
   <!-- Atom feed (jekyll-feed) -->
   {% feed_meta %}
 

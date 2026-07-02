@@ -1,10 +1,19 @@
 {%- comment -%}
-Renders a journey's mode of transport as a small inline meta label (PT).
+Renders a journey's mode of transport as a small inline meta label, in the
+page's language (English for _en collection docs, Portuguese otherwise).
 Usage: {% include transport.html transport=page.transport %}
 Known modes: car, train. The icon is attached in CSS via [data-mode].
 {%- endcomment -%}
-{%- case include.transport -%}
-{%- when "car" -%}<span class="post-transport" data-mode="car">de carro</span>
-{%- when "train" -%}<span class="post-transport" data-mode="train">de comboio</span>
-{%- else -%}<span class="post-transport">{{ include.transport }}</span>
-{%- endcase -%}
+{%- if page.lang == "en" -%}
+  {%- case include.transport -%}
+  {%- when "car" -%}<span class="post-transport" data-mode="car">by car</span>
+  {%- when "train" -%}<span class="post-transport" data-mode="train">by train</span>
+  {%- else -%}<span class="post-transport">{{ include.transport }}</span>
+  {%- endcase -%}
+{%- else -%}
+  {%- case include.transport -%}
+  {%- when "car" -%}<span class="post-transport" data-mode="car">de carro</span>
+  {%- when "train" -%}<span class="post-transport" data-mode="train">de comboio</span>
+  {%- else -%}<span class="post-transport">{{ include.transport }}</span>
+  {%- endcase -%}
+{%- endif -%}

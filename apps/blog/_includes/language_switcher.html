@@ -1,0 +1,17 @@
+{% comment %}
+A quiet one-line link between a post and its translation. `translation_key`
+front matter pairs a PT original (_posts) with its English version (the _en
+collection); posts without the key render nothing.
+{% endcomment %}
+{% if page.translation_key %}
+  {% if page.lang == "en" %}
+    {% assign switch_target = site.posts | where: "translation_key", page.translation_key | first %}
+    {% assign switch_label = "Também disponível em português" %}
+  {% else %}
+    {% assign switch_target = site.en | where: "translation_key", page.translation_key | first %}
+    {% assign switch_label = "Also available in English" %}
+  {% endif %}
+  {% if switch_target %}
+    <p class="post-lang"><a href="{{ switch_target.url | relative_url }}" lang="{{ switch_target.lang }}">{{ switch_label }} &rarr;</a></p>
+  {% endif %}
+{% endif %}

@@ -1,0 +1,45 @@
+---
+layout: default
+title: "Journey to Portugal — travel notes"
+description: >-
+  English editions of the travel diary retracing José Saramago's Journey to
+  Portugal — with the interactive map of every place in the book.
+lang: en
+permalink: /en/
+---
+<div class="home">
+
+  <p>
+    English editions of the travel diary retracing José Saramago's
+    <em lang="pt">Viagem a Portugal</em>. The
+    <a href="{{ "/map/" | relative_url }}">interactive map</a> of every place
+    in the book speaks both languages; the
+    <a href="{{ "/" | relative_url }}" lang="pt">Portuguese diary</a> is the
+    original.
+  </p>
+
+  <ul class="post-list">
+    {% assign en_posts = site.en | sort: "date" | reverse %}
+    {% for post in en_posts %}
+      <li>
+        <header class="post-header">
+          <h1 class="post-title">
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h1>
+          <p class="post-meta">
+            {% include date.html date=post.date lang="en" %}
+          </p>
+        </header>
+        <div class="post-content">
+          {{ post.excerpt }}
+        </div>
+        {% if post.content contains site.excerpt_separator %}
+          <p class="post-continue">
+            <a href="{{ post.url | relative_url }}">Read on &rarr;</a>
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

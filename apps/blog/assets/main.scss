@@ -30,6 +30,12 @@ img {
   }
 }
 
+// The one-line link between a post and its translation (language_switcher).
+.post-lang {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
 // Journey transport mode (car | train) shown in the post meta line.
 .post-transport {
   color: $brand-color;

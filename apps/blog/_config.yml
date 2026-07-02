@@ -35,6 +35,22 @@ defaults:
         height: 630
       twitter:
         card: summary_large_image
+  - scope:
+      path: ""
+      type: en
+    values:
+      layout: post
+      lang: en
+
+# English translations live in a collection, not _posts: they render pages but
+# stay out of the PT home/paginator, the Atom feed, and blog-sync's
+# featured-journey scan (which globs _posts only). A `translation_key` in the
+# front matter pairs each translation with its PT original — see
+# _includes/language_switcher.html and the hreflang block in head.html.
+collections:
+  en:
+    output: true
+    permalink: /en/:year/:month/:day/:title/
 
 # Plugins
 plugins:

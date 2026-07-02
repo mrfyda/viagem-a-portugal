@@ -15,6 +15,7 @@ as a small label in the post meta. See _includes/transport.html for the mapping.
       <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     {% endif %}
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{% include date.html date=page.date %}</time>{% if page.transport %} • {% include transport.html transport=page.transport %}{% endif %}{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}{% if page.categories != empty or page.tags != empty %}{% include category_links.html categories=page.categories tags=page.tags %}{% endif %}</p>
+    {% include language_switcher.html %}
   </header>
 
   <div class="post-content" itemprop="articleBody">
