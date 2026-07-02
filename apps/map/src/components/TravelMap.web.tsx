@@ -27,7 +27,6 @@ import {
   SELECTED_HALO_RADIUS,
   SELECTION_RING_COLOR,
   TIER_INTERACTIVE_ZOOM,
-  VISITED_INTERACTIVE_ZOOM,
   TOWN_COLOR,
   TOWN_OPACITY,
   TOWN_RADIUS,
@@ -199,12 +198,9 @@ export default function TravelMap() {
       });
 
       // Dots below their disclosure tier render at radius 0 but still
-      // hit-test — only interact with the ones actually visible. Visited
-      // dots outlive their tier's fade, so they get their own gate.
+      // hit-test — only interact with the ones actually visible.
       const townInteractive = (f: maplibregl.MapGeoJSONFeature) =>
-        f.properties.visited === true
-          ? map.getZoom() >= VISITED_INTERACTIVE_ZOOM
-          : map.getZoom() >= TIER_INTERACTIVE_ZOOM[f.properties.tier as number];
+        map.getZoom() >= TIER_INTERACTIVE_ZOOM[f.properties.tier as number];
       const visibleTown = (features?: maplibregl.MapGeoJSONFeature[]) =>
         features?.find(townInteractive);
 

@@ -69,38 +69,32 @@ const TOWN_BASE_RADIUS: ExpressionSpecification = [
 ];
 
 /**
- * 1 for dots whose disclosure tier (geo.ts) is revealed, else 0. The
- * "visited" rung reveals only a Traveler's own marks — visited places carry
- * `visited: true` whatever their tier; the "none" rung reveals nothing.
+ * 1 for dots whose disclosure tier (geo.ts) is revealed, else 0; the "none"
+ * rung reveals nothing.
  */
 const revealed = (
-  tiers: number[] | "visited" | "none",
+  tiers: number[] | "none",
 ): ExpressionSpecification | number =>
-  tiers === "none"
-    ? 0
-    : tiers === "visited"
-      ? ["case", ["get", "visited"], 1, 0]
-      : ["match", ["get", "tier"], tiers, 1, 0];
+  tiers === "none" ? 0 : ["match", ["get", "tier"], tiers, 1, 0];
 
 /**
  * Zoom-graduated disclosure ("the map is the document", not pin-soup): at
- * country zoom only the anchor Stops draw the journey; the remaining Stops,
- * the passed-through places and finally the referenced-only places grow in
- * over one zoom level each as the reader moves closer. Pulled back past the
- * country view the anchors fade away too — a Traveler's visited dots hold on
- * one rung longer (their own marks over the route lines), and past Iberia
- * width everything is gone: the six routes as pure line-work. The zoom
- * envelope multiplies the base value per rung, so a dot fades/scales
- * smoothly and, at radius 0, is not hit-testable.
+ * country zoom only the anchor Stops (and a Traveler's visited places, which
+ * geo.ts promotes to tier 0) draw the journey; the remaining Stops, the
+ * passed-through places and finally the referenced-only places grow in over
+ * one zoom level each as the reader moves closer. Pulled back past the
+ * country view, everything fades — below z4.8 the six routes carry the map
+ * alone, as pure line-work. The zoom envelope multiplies the base value per
+ * rung, so a dot fades/scales smoothly and, at radius 0, is not
+ * hit-testable.
  */
 const disclosureEnvelope = (
-  value: (tiers: number[] | "visited" | "none") => ExpressionSpecification | number,
+  value: (tiers: number[] | "none") => ExpressionSpecification | number,
 ): ExpressionSpecification => [
   "interpolate",
   ["linear"],
   ["zoom"],
-  4.2, value("none"),
-  4.8, value("visited"),
+  4.8, value("none"),
   5.5, value([0]),
   6.8, value([0]),
   7.5, value([0, 1]),
@@ -177,8 +171,7 @@ export const SELECTED_HALO_RADIUS: ExpressionSpecification = [
  * The zoom at which a tier's dots become interactive — the midpoint of the
  * disclosure fade above. A radius-0 circle still hit-tests at its centre, so
  * click/hover handlers must drop features below their tier's zoom or hidden
- * dots ghost-click. Visited dots never fade, so handlers let them through
- * regardless of tier.
+ * dots ghost-click.
  */
 export const TIER_INTERACTIVE_ZOOM: Record<number, number> = {
   0: 5.15,
@@ -186,10 +179,6 @@ export const TIER_INTERACTIVE_ZOOM: Record<number, number> = {
   2: 8.4,
   3: 9.55,
 };
-
-/** Visited dots outlive their tier's fade but vanish past Iberia width —
- * the midpoint of the visited→none rung above. */
-export const VISITED_INTERACTIVE_ZOOM = 4.5;
 
 export const TOWN_COLOR: ExpressionSpecification = [
   "case",
