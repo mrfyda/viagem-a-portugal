@@ -27,6 +27,7 @@ import {
   SELECTED_HALO_RADIUS,
   SELECTION_RING_COLOR,
   TIER_INTERACTIVE_ZOOM,
+  VISITED_INTERACTIVE_ZOOM,
   TOWN_COLOR,
   TOWN_OPACITY,
   TOWN_RADIUS,
@@ -199,13 +200,13 @@ export default function TravelMap() {
 
       // Dots below their disclosure tier render at radius 0 but still
       // hit-test — only interact with the ones actually visible. Visited
-      // dots persist through every fade, so they stay clickable too.
+      // dots outlive their tier's fade, so they get their own gate.
+      const townInteractive = (f: maplibregl.MapGeoJSONFeature) =>
+        f.properties.visited === true
+          ? map.getZoom() >= VISITED_INTERACTIVE_ZOOM
+          : map.getZoom() >= TIER_INTERACTIVE_ZOOM[f.properties.tier as number];
       const visibleTown = (features?: maplibregl.MapGeoJSONFeature[]) =>
-        features?.find(
-          (f) =>
-            f.properties.visited === true ||
-            map.getZoom() >= TIER_INTERACTIVE_ZOOM[f.properties.tier as number],
-        );
+        features?.find(townInteractive);
 
       const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
       map.on("mouseenter", "towns", (event) => {
@@ -235,10 +236,7 @@ export default function TravelMap() {
           layers: ["towns", "detours"],
         });
         const hit = features.some(
-          (f) =>
-            f.layer.id === "detours" ||
-            f.properties.visited === true ||
-            map.getZoom() >= TIER_INTERACTIVE_ZOOM[f.properties.tier as number],
+          (f) => f.layer.id === "detours" || townInteractive(f),
         );
         if (!hit) clear();
       });

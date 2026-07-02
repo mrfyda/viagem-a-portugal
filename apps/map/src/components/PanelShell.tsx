@@ -101,13 +101,15 @@ export default function PanelShell({
   return (
     <div
       style={sheetStyle}
-      className="animate-sheet-in absolute inset-x-0 bottom-0 z-20 flex max-h-[60vh] flex-col rounded-t-2xl border-t border-border bg-card text-sm text-foreground shadow-[0_-8px_30px_rgba(28,25,23,0.18)]"
+      className="animate-sheet-in absolute inset-x-0 bottom-0 z-20 flex max-h-[60vh] flex-col overflow-hidden rounded-t-2xl border-t border-border bg-card text-sm text-foreground shadow-[0_-8px_30px_rgba(28,25,23,0.18)]"
     >
       <div {...handleProps} className="shrink-0 cursor-grab border-b border-border px-4 pb-3 pt-2">
         <div aria-hidden className="mx-auto mb-2 h-1 w-9 rounded-full bg-border" />
         {header}
       </div>
-      <div className="flex flex-1 flex-col gap-2 overflow-y-auto p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+      {/* min-h-0 lets this flex child shrink inside the max-h sheet — without
+          it the body grows past the sheet and its own scroll never engages. */}
+      <div className="flex min-h-0 flex-1 flex-col gap-2 overflow-y-auto p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
         {children}
       </div>
     </div>

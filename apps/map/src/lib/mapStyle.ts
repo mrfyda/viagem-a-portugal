@@ -71,31 +71,35 @@ const TOWN_BASE_RADIUS: ExpressionSpecification = [
 /**
  * 1 for dots whose disclosure tier (geo.ts) is revealed, else 0. The
  * "visited" rung reveals only a Traveler's own marks — visited places carry
- * `visited: true` whatever their tier.
+ * `visited: true` whatever their tier; the "none" rung reveals nothing.
  */
 const revealed = (
-  tiers: number[] | "visited",
-): ExpressionSpecification =>
-  tiers === "visited"
-    ? ["case", ["get", "visited"], 1, 0]
-    : ["match", ["get", "tier"], tiers, 1, 0];
+  tiers: number[] | "visited" | "none",
+): ExpressionSpecification | number =>
+  tiers === "none"
+    ? 0
+    : tiers === "visited"
+      ? ["case", ["get", "visited"], 1, 0]
+      : ["match", ["get", "tier"], tiers, 1, 0];
 
 /**
  * Zoom-graduated disclosure ("the map is the document", not pin-soup): at
  * country zoom only the anchor Stops draw the journey; the remaining Stops,
  * the passed-through places and finally the referenced-only places grow in
  * over one zoom level each as the reader moves closer. Pulled back past the
- * country view, even the anchors fade away — the six route lines carry the
- * map alone, except a Traveler's visited dots, which persist: the log is
- * theirs. The zoom envelope multiplies the base value per rung, so a dot
- * fades/scales smoothly and, at radius 0, is not hit-testable.
+ * country view the anchors fade away too — a Traveler's visited dots hold on
+ * one rung longer (their own marks over the route lines), and past Iberia
+ * width everything is gone: the six routes as pure line-work. The zoom
+ * envelope multiplies the base value per rung, so a dot fades/scales
+ * smoothly and, at radius 0, is not hit-testable.
  */
 const disclosureEnvelope = (
-  value: (tiers: number[] | "visited") => ExpressionSpecification | number,
+  value: (tiers: number[] | "visited" | "none") => ExpressionSpecification | number,
 ): ExpressionSpecification => [
   "interpolate",
   ["linear"],
   ["zoom"],
+  4.2, value("none"),
   4.8, value("visited"),
   5.5, value([0]),
   6.8, value([0]),
@@ -182,6 +186,10 @@ export const TIER_INTERACTIVE_ZOOM: Record<number, number> = {
   2: 8.4,
   3: 9.55,
 };
+
+/** Visited dots outlive their tier's fade but vanish past Iberia width —
+ * the midpoint of the visited→none rung above. */
+export const VISITED_INTERACTIVE_ZOOM = 4.5;
 
 export const TOWN_COLOR: ExpressionSpecification = [
   "case",

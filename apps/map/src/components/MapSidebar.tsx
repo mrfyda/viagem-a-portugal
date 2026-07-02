@@ -182,7 +182,7 @@ function MobileSheet({
           ✕
         </button>
       </div>
-      <div className="flex flex-col gap-0.5 overflow-y-auto p-2">{children}</div>
+      <div className="flex min-h-0 flex-col gap-0.5 overflow-y-auto p-2">{children}</div>
     </aside>
   );
 }
