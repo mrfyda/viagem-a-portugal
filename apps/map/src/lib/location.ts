@@ -16,6 +16,8 @@ export function writePlaceParam(_place: string | null): void {}
 
 export function writeDetourParam(_detour: string | null): void {}
 
+export function replaceSelectionParams(): void {}
+
 export function subscribeSelectionParams(_onChange: () => void): () => void {
   return () => {};
 }

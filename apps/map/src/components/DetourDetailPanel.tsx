@@ -23,7 +23,7 @@ export default function DetourDetailPanel({
 }: DetourDetailPanelProps) {
   return (
     <PanelShell title={detour.name} embedded={embedded} onClose={onClose}>
-      <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+      <span className="text-[13px] italic text-muted-foreground">
         {t("notInJourney")}
       </span>
       {detour.note && (

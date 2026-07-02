@@ -75,6 +75,10 @@
     .maplibregl-ctrl-top-right {
         margin-top: calc(env(safe-area-inset-top, 0px) + 3.25rem);
     }
+    /* Keep the OSM attribution readable above the floating glass tab bar. */
+    .maplibregl-ctrl-bottom-right {
+        margin-bottom: calc(max(0.75rem, env(safe-area-inset-bottom, 0px)) + 3.75rem);
+    }
 }
 
 /* WCAG 2.5.8 / HIG: comfortable targets on touch devices */

@@ -486,6 +486,7 @@ export default function TravelMap() {
           <MapSidebar
             isDesktop={isDesktop}
             header={header}
+            hasAccount={configured}
             focusedChapter={focusedChapter}
             onFocusChapter={focusChapter}
             onClearFocus={() => setFocusedChapter(null)}

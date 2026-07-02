@@ -17,6 +17,9 @@ export interface MapSidebarProps {
   isDesktop: boolean;
   /** The auth/progress block, owned by TravelMap (keeps session types out of here). */
   header: ReactNode;
+  /** Whether sign-in exists at all (Supabase configured) — gates the mobile
+   * account tab; the header alone can't tell, it always carries the hint. */
+  hasAccount: boolean;
   focusedChapter: number | null;
   onFocusChapter: (chapter: number) => void;
   onClearFocus: () => void;
@@ -48,7 +51,7 @@ function ChapterList({
 }) {
   return (
     <>
-      {!compact && <h2 className="text-base font-bold">{t("theJourney")}</h2>}
+      {!compact && <h2 className="text-lg font-bold">{t("theJourney")}</h2>}
       {chapters.map((c) => (
         <button
           key={c.number}
@@ -112,7 +115,7 @@ function ChapterStops({
       >
         {t("backToChapters")}
       </button>
-      <h2 className="flex items-baseline gap-2 text-base font-bold leading-snug">
+      <h2 className="flex items-baseline gap-2 text-lg font-bold leading-snug">
         <span
           className="h-3 w-3 shrink-0 self-center rounded-full"
           style={{ background: CHAPTER_COLORS[chapter] }}
@@ -159,7 +162,7 @@ function MobileSheet({
   return (
     <aside className="animate-sheet-in absolute inset-x-3 bottom-20 z-10 flex max-h-[55vh] flex-col rounded-2xl border border-border bg-card/95 text-sm text-foreground shadow-lg backdrop-blur-sm">
       <div className="flex items-center justify-between gap-2 border-b border-border px-4 py-2.5">
-        <span className="text-base font-bold">{title}</span>
+        <span className="text-lg font-bold">{title}</span>
         <button
           onClick={onClose}
           aria-label={t("close")}
@@ -176,6 +179,7 @@ function MobileSheet({
 export default function MapSidebar({
   isDesktop,
   header,
+  hasAccount,
   focusedChapter,
   onFocusChapter,
   onClearFocus,
@@ -219,7 +223,7 @@ export default function MapSidebar({
                   </>
                 )}
               </MobileSheet>
-            ) : mobileView === "profile" && header ? (
+            ) : mobileView === "profile" && hasAccount ? (
               <MobileSheet title={t("account")} onClose={() => setMobileView("map")}>
                 <div className="flex flex-col gap-2 px-2 py-1">{header}</div>
               </MobileSheet>
@@ -227,7 +231,7 @@ export default function MapSidebar({
             <MobileTabBar
               active={mobileView}
               searchOpen={searchOpen}
-              hasProfile={Boolean(header)}
+              hasProfile={hasAccount}
               onSelect={(tab) => {
                 setSearchOpen(false);
                 setMobileView((cur) => (cur === tab && tab !== "map" ? "map" : tab));

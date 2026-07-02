@@ -40,6 +40,24 @@ export const writePlaceParam = (place: string | null): void =>
 export const writeDetourParam = (detour: string | null): void =>
   writeSelection(detour ? DETOUR : null, detour);
 
+/**
+ * Drop stale selection params without adding a history entry — for deep
+ * links whose Place/Detour no longer exists, so copying the URL doesn't
+ * propagate a dead selection.
+ */
+export function replaceSelectionParams(): void {
+  try {
+    const url = new URL(window.location.href);
+    url.searchParams.delete(PLACE);
+    url.searchParams.delete(DETOUR);
+    if (url.href !== window.location.href) {
+      window.history.replaceState(null, "", url);
+    }
+  } catch {
+    // history API unavailable
+  }
+}
+
 /** Fires on back/forward (popstate); the caller re-reads both params. */
 export function subscribeSelectionParams(onChange: () => void): () => void {
   window.addEventListener("popstate", onChange);

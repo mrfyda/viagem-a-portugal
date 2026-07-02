@@ -6,6 +6,7 @@ import { applySelectionToHead } from "../lib/head";
 import {
   readDetourParam,
   readPlaceParam,
+  replaceSelectionParams,
   subscribeSelectionParams,
   writeDetourParam,
   writePlaceParam,
@@ -41,6 +42,15 @@ export function useSelection() {
   const [selection, setSelection] = useState<Selection>(fromUrl);
 
   useEffect(() => subscribeSelectionParams(() => setSelection(fromUrl())), []);
+
+  // A stale deep link (?place= that no longer names a dot) resolves to no
+  // selection in fromUrl; scrub the dead param so copying the URL doesn't
+  // propagate it.
+  useEffect(() => {
+    if (fromUrl() == null && (readPlaceParam() || readDetourParam())) {
+      replaceSelectionParams();
+    }
+  }, []);
 
   // Keep the document title and description/OG meta in step with the selection
   // (web only; the native module is a no-op).

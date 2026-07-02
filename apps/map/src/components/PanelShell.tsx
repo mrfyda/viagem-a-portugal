@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 
 import { t } from "../lib/i18n";
 
@@ -32,9 +32,23 @@ export default function PanelShell({
 }) {
   const hasStepper = onPrev !== undefined || onNext !== undefined;
 
+  // Move focus to the entry's name when a panel opens (each selection
+  // remounts the shell), so keyboard and screen-reader users land on the
+  // context change instead of staying on a dot-less canvas.
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    headingRef.current?.focus({ preventScroll: true });
+  }, []);
+
   const header = (
     <div className="flex items-center justify-between gap-2">
-      <h2 className="min-w-0 flex-1 text-base font-bold">{title}</h2>
+      <h2
+        ref={headingRef}
+        tabIndex={-1}
+        className="min-w-0 flex-1 text-lg font-bold leading-snug focus:outline-none"
+      >
+        {title}
+      </h2>
       <div className="flex shrink-0 items-center gap-0.5">
         {hasStepper && (
           <>
