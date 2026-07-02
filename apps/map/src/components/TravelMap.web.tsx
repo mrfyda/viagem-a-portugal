@@ -198,10 +198,13 @@ export default function TravelMap() {
       });
 
       // Dots below their disclosure tier render at radius 0 but still
-      // hit-test — only interact with the ones actually visible.
+      // hit-test — only interact with the ones actually visible. Visited
+      // dots persist through every fade, so they stay clickable too.
       const visibleTown = (features?: maplibregl.MapGeoJSONFeature[]) =>
         features?.find(
-          (f) => map.getZoom() >= TIER_INTERACTIVE_ZOOM[f.properties.tier as number],
+          (f) =>
+            f.properties.visited === true ||
+            map.getZoom() >= TIER_INTERACTIVE_ZOOM[f.properties.tier as number],
         );
 
       const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
@@ -234,6 +237,7 @@ export default function TravelMap() {
         const hit = features.some(
           (f) =>
             f.layer.id === "detours" ||
+            f.properties.visited === true ||
             map.getZoom() >= TIER_INTERACTIVE_ZOOM[f.properties.tier as number],
         );
         if (!hit) clear();

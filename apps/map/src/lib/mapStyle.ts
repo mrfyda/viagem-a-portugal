@@ -68,29 +68,36 @@ const TOWN_BASE_RADIUS: ExpressionSpecification = [
   ["case", ["get", "visited"], 1, 0],
 ];
 
-/** 1 for dots whose disclosure tier (geo.ts) is revealed, else 0. */
-const revealed = (tiers: number[]): ExpressionSpecification => [
-  "match",
-  ["get", "tier"],
-  tiers,
-  1,
-  0,
-];
+/**
+ * 1 for dots whose disclosure tier (geo.ts) is revealed, else 0. The
+ * "visited" rung reveals only a Traveler's own marks — visited places carry
+ * `visited: true` whatever their tier.
+ */
+const revealed = (
+  tiers: number[] | "visited",
+): ExpressionSpecification =>
+  tiers === "visited"
+    ? ["case", ["get", "visited"], 1, 0]
+    : ["match", ["get", "tier"], tiers, 1, 0];
 
 /**
  * Zoom-graduated disclosure ("the map is the document", not pin-soup): at
  * country zoom only the anchor Stops draw the journey; the remaining Stops,
  * the passed-through places and finally the referenced-only places grow in
- * over one zoom level each as the reader moves closer. The zoom envelope
- * multiplies the base value per tier, so a dot fades/scales in smoothly and,
- * at radius 0, is not hit-testable.
+ * over one zoom level each as the reader moves closer. Pulled back past the
+ * country view, even the anchors fade away — the six route lines carry the
+ * map alone, except a Traveler's visited dots, which persist: the log is
+ * theirs. The zoom envelope multiplies the base value per rung, so a dot
+ * fades/scales smoothly and, at radius 0, is not hit-testable.
  */
 const disclosureEnvelope = (
-  value: (tiers: number[]) => ExpressionSpecification | number,
+  value: (tiers: number[] | "visited") => ExpressionSpecification | number,
 ): ExpressionSpecification => [
   "interpolate",
   ["linear"],
   ["zoom"],
+  4.8, value("visited"),
+  5.5, value([0]),
   6.8, value([0]),
   7.5, value([0, 1]),
   8.0, value([0, 1]),
@@ -166,10 +173,11 @@ export const SELECTED_HALO_RADIUS: ExpressionSpecification = [
  * The zoom at which a tier's dots become interactive — the midpoint of the
  * disclosure fade above. A radius-0 circle still hit-tests at its centre, so
  * click/hover handlers must drop features below their tier's zoom or hidden
- * dots ghost-click.
+ * dots ghost-click. Visited dots never fade, so handlers let them through
+ * regardless of tier.
  */
 export const TIER_INTERACTIVE_ZOOM: Record<number, number> = {
-  0: 0,
+  0: 5.15,
   1: 7.15,
   2: 8.4,
   3: 9.55,
