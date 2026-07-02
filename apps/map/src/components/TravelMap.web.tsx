@@ -306,21 +306,38 @@ export default function TravelMap() {
 
   // Bring the current selection into view — a Place or a Detour — whether it
   // came from a map click, the search box, a shared deep link, or back/forward.
+  // From country zoom the camera also glides closer, so picking a place shows
+  // its surroundings (and its disclosure-tier neighbours) instead of a lone
+  // ring on the national map. Desktop pads for the sidebar so the selection
+  // centres in the visible map, not under the chrome.
   useEffect(() => {
-    if (!mapReady || !selection) return;
+    if (!mapReady) return;
+    const map = mapRef.current;
+    if (!map) return;
+    if (!selection) {
+      // easeTo padding persists on the camera; drop it so later camera moves
+      // (chapter fits, manual pans) aren't offset by a ghost sidebar.
+      map.easeTo({ padding: { top: 0, right: 0, bottom: 0, left: 0 }, duration: 0 });
+      return;
+    }
     const center =
       selection.kind === "place"
         ? placeCenter(selection.id)
         : detourCenter(selection.slug);
     if (center) {
       // CSS prefers-reduced-motion can't reach maplibre's JS pan, so honour it
-      // here: jump instantly instead of a 600ms ease.
+      // here: jump instantly instead of an eased flight.
       const reduce = window.matchMedia?.(
         "(prefers-reduced-motion: reduce)",
       ).matches;
-      mapRef.current?.easeTo({ center, duration: reduce ? 0 : 600 });
+      map.easeTo({
+        center,
+        zoom: Math.max(map.getZoom(), 8.6),
+        padding: isDesktop ? { top: 0, right: 0, bottom: 0, left: 396 } : 0,
+        duration: reduce ? 0 : 700,
+      });
     }
-  }, [selection, mapReady]);
+  }, [selection, mapReady, isDesktop]);
 
   const focusChapter = (n: number) => {
     const chapterStops = stops.filter((s) => s.chapter === n);

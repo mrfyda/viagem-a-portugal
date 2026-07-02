@@ -80,7 +80,7 @@ export default function PanelShell({
   // Mobile: full-screen modal — pinned header, scrollable body. Covers the
   // map chrome (top card + controls) so the entry has the whole screen.
   return (
-    <div className="absolute inset-0 z-20 flex flex-col bg-card text-sm text-foreground">
+    <div className="animate-sheet-in absolute inset-0 z-20 flex flex-col bg-card text-sm text-foreground">
       <div className="shrink-0 border-b border-border p-4">{header}</div>
       <div className="flex flex-1 flex-col gap-2 overflow-y-auto p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
         {children}

@@ -189,7 +189,7 @@ export default function MobileTabBar({
         {activeIndex >= 0 && (
           <span
             aria-hidden
-            className="pointer-events-none absolute bottom-1.5 left-1.5 top-1.5 z-0 rounded-full bg-card/85 shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_4px_12px_rgba(0,0,0,0.12)] transition-transform duration-500 [transition-timing-function:cubic-bezier(.34,1.42,.5,1)]"
+            className="pointer-events-none absolute bottom-1.5 left-1.5 top-1.5 z-0 rounded-full bg-card/85 shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_4px_12px_rgba(0,0,0,0.12)] transition-transform duration-300 [transition-timing-function:cubic-bezier(.22,1,.36,1)]"
             style={{
               width: `calc((100% - 0.75rem) / ${tabs.length})`,
               transform: `translateX(${activeIndex * 100}%)`,

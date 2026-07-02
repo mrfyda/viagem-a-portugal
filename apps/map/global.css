@@ -86,6 +86,36 @@
     }
 }
 
+/* Panels and sheets enter with one quiet ease-out (motion conveys state:
+   something opened). Exits stay instant — the map underneath is the point.
+   The prefers-reduced-motion rule below zeroes these. */
+@keyframes panelIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes sheetIn {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+.animate-panel-in {
+    animation: panelIn 200ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+.animate-sheet-in {
+    animation: sheetIn 220ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
 @media (prefers-reduced-motion: reduce) {
     * {
         transition-duration: 0.01ms !important;

@@ -98,7 +98,7 @@ function MobileSheet({
   children: ReactNode;
 }) {
   return (
-    <aside className="absolute inset-x-3 bottom-20 z-10 flex max-h-[55vh] flex-col rounded-2xl border border-border bg-card/95 text-sm text-foreground shadow-lg backdrop-blur-sm">
+    <aside className="animate-sheet-in absolute inset-x-3 bottom-20 z-10 flex max-h-[55vh] flex-col rounded-2xl border border-border bg-card/95 text-sm text-foreground shadow-lg backdrop-blur-sm">
       <div className="flex items-center justify-between gap-2 border-b border-border px-4 py-2.5">
         <span className="text-base font-bold">{title}</span>
         <button
@@ -209,7 +209,14 @@ export default function MapSidebar({
       </div>
       <div className="shrink-0">{header}</div>
       <TownSearch onSelect={onSelectPlace} />
-      <div className="flex min-h-0 flex-1 flex-col gap-2 overflow-y-auto">{body}</div>
+      <div
+        // Remount on every view change so the entrance animation replays —
+        // chapters ↔ place ↔ detour each read as "something opened".
+        key={selectedPlace ?? selectedDetour?.name ?? "chapters"}
+        className="animate-panel-in flex min-h-0 flex-1 flex-col gap-2 overflow-y-auto"
+      >
+        {body}
+      </div>
     </aside>
   );
 }
