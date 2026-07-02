@@ -76,7 +76,6 @@ const preconnects = `
 
 const headTags = `
     <meta name="description" content="${esc(DESCRIPTION)}" />
-    <meta name="theme-color" content="#0a5a3a" />
     <link rel="canonical" href="${pageUrl}" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Viagem a Portugal" />
@@ -121,6 +120,15 @@ if (html.includes("<!-- seo:injected -->")) {
 html = html
   .replace(/<html lang="[^"]*">/, '<html lang="pt-PT">')
   .replace(/<title>[^<]*<\/title>/, `<title>${esc(TITLE)}</title>`)
+  // Edge-to-edge on iOS: the map draws under Safari's translucent bars
+  // (the chrome floats over the territory instead of a solid band). The
+  // app's own chrome already pads with env(safe-area-inset-*). No
+  // theme-color meta for the same reason — a solid tint would beat the
+  // translucency.
+  .replace(
+    /<meta name="viewport" content="[^"]*"/,
+    '<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"',
+  )
   // Preconnects go right after the charset meta (which must stay first in head).
   .replace(/(<meta charset="utf-8"\s*\/?>)/, `$1${preconnects}`)
   // Expo hoists the global.css `@import` of the Cardo font into a render-blocking
