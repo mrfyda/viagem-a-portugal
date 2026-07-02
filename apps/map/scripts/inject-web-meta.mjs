@@ -93,6 +93,7 @@ const headTags = `
     <meta name="twitter:image" content="${assetUrl("og-default.png")}" />
     <link rel="apple-touch-icon" href="${assetUrl("apple-touch-icon.png")}" />
     <link rel="icon" href="${assetUrl("favicon.svg")}" type="image/svg+xml" />
+    <link rel="manifest" href="${assetUrl("manifest.webmanifest")}" />
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
     <!-- seo:injected -->`;
 
