@@ -20,6 +20,13 @@ by choice — no issue tracker for this project.)
 - ~~Blog language suggestion~~ — decided against (2026-07): hreflang routes
   search traffic and the per-post switcher covers the rest; no client-side
   detection bar.
+- **Full pin fade-out when zoomed far out** — extend the zoom-graduated
+  disclosure so that below the country view (roughly z < 5–5.5, Iberia and
+  wider) even the anchor Stops fade away, leaving only the six route lines
+  on the basemap — the journey as pure line-work. One more low-zoom rung in
+  `disclosureEnvelope` (mapStyle.ts) fading tier 0 (and possibly the routes'
+  opacity up) as the camera pulls back; keep visited dots' behaviour a
+  deliberate choice (a Traveler's own marks may deserve to persist).
 
 ## Content
 
