@@ -21,11 +21,16 @@ import {
   fetchMapStyle,
   MARKER_MIN_RADIUS,
   ROUTE_COLOR,
+  SELECTED_DOT_RADIUS,
+  SELECTED_HALO_RADIUS,
+  SELECTION_RING_COLOR,
   TIER_INTERACTIVE_ZOOM,
   TOWN_COLOR,
   TOWN_OPACITY,
   TOWN_RADIUS,
   TOWN_STROKE_OPACITY,
+  townOpacity,
+  townStrokeOpacity,
 } from "../lib/mapStyle";
 import { t } from "../lib/i18n";
 import { useIsDesktop } from "../hooks/useIsDesktop";
@@ -33,6 +38,13 @@ import AuthPanel from "./AuthPanel";
 import DetourDetailPanel from "./DetourDetailPanel";
 import MapSidebar from "./MapSidebar";
 import TownDetailPanel from "./TownDetailPanel";
+
+// Filter matching no Place — the selected-dot layers' resting state.
+const NO_SELECTION: maplibregl.FilterSpecification = [
+  "==",
+  ["get", "indexName"],
+  "\u0000",
+];
 
 export default function TravelMap() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -151,6 +163,36 @@ export default function TravelMap() {
         },
       });
 
+      // The selected Place, above everything: an ink halo ring plus the dot
+      // itself re-drawn at full strength (the base layer dims while a
+      // selection is active). Filters start matching nothing; the selection
+      // effect below swaps them as ?place= changes.
+      map.addLayer({
+        id: "towns-selected-halo",
+        type: "circle",
+        source: "towns",
+        filter: NO_SELECTION,
+        paint: {
+          "circle-radius": SELECTED_HALO_RADIUS,
+          "circle-color": "rgba(0,0,0,0)",
+          "circle-stroke-color": SELECTION_RING_COLOR,
+          "circle-stroke-width": 2,
+          "circle-stroke-opacity": 0.85,
+        },
+      });
+      map.addLayer({
+        id: "towns-selected",
+        type: "circle",
+        source: "towns",
+        filter: NO_SELECTION,
+        paint: {
+          "circle-radius": SELECTED_DOT_RADIUS,
+          "circle-color": TOWN_COLOR,
+          "circle-stroke-color": "#ffffff",
+          "circle-stroke-width": 2,
+        },
+      });
+
       // Dots below their disclosure tier render at radius 0 but still
       // hit-test — only interact with the ones actually visible.
       const visibleTown = (features?: maplibregl.MapGeoJSONFeature[]) =>
@@ -243,6 +285,24 @@ export default function TravelMap() {
     const source = mapRef.current?.getSource<maplibregl.GeoJSONSource>("towns");
     source?.setData(buildTownsGeoJson(visits));
   }, [visits, mapReady]);
+
+  // Mirror the selection onto the canvas: halo + full-strength dot on the
+  // selected Place, everything else stepped back — the panel and the map
+  // point at the same thing.
+  useEffect(() => {
+    if (!mapReady) return;
+    const map = mapRef.current;
+    if (!map) return;
+    const filter: maplibregl.FilterSpecification = selectedPlace
+      ? ["==", ["get", "indexName"], selectedPlace]
+      : NO_SELECTION;
+    map.setFilter("towns-selected-halo", filter);
+    map.setFilter("towns-selected", filter);
+    const dim = selectedPlace ? 0.45 : 1;
+    map.setPaintProperty("towns", "circle-opacity", townOpacity(dim));
+    map.setPaintProperty("towns", "circle-stroke-opacity", townStrokeOpacity(dim));
+    map.setPaintProperty("routes", "line-opacity", selectedPlace ? 0.35 : 0.75);
+  }, [selectedPlace, mapReady]);
 
   // Bring the current selection into view — a Place or a Detour — whether it
   // came from a map click, the search box, a shared deep link, or back/forward.

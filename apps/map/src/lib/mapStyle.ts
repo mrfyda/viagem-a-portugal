@@ -103,17 +103,42 @@ export const TOWN_RADIUS: ExpressionSpecification = disclosureEnvelope(
   (tiers) => ["*", TOWN_BASE_RADIUS, revealed(tiers)],
 );
 
-/** Referenced-only places stay slightly quieter even once revealed. */
-export const TOWN_OPACITY: ExpressionSpecification = disclosureEnvelope(
-  (tiers) => [
+/**
+ * Referenced-only places stay slightly quieter even once revealed; `dim`
+ * fades the whole layer while a selection holds the stage (the selected dot
+ * lives on its own always-on layers, so it keeps full strength).
+ */
+export const townOpacity = (dim = 1): ExpressionSpecification =>
+  disclosureEnvelope((tiers) => [
     "*",
+    dim,
     ["match", ["get", "tier"], 3, 0.8, 1],
     revealed(tiers),
-  ],
-);
+  ]);
 
-export const TOWN_STROKE_OPACITY: ExpressionSpecification =
-  disclosureEnvelope(revealed);
+export const townStrokeOpacity = (dim = 1): ExpressionSpecification =>
+  disclosureEnvelope((tiers) => ["*", dim, revealed(tiers)]);
+
+export const TOWN_OPACITY = townOpacity();
+export const TOWN_STROKE_OPACITY = townStrokeOpacity();
+
+/**
+ * The selected Place on the canvas: the dot itself, slightly bumped, plus an
+ * ink ring around it. Ink (not the visited green) so selection never reads
+ * as "visited". Independent of disclosure — a Place picked via search or a
+ * deep link shows even below its tier's zoom.
+ */
+export const SELECTION_RING_COLOR = "#1c1917"; // --color-foreground
+export const SELECTED_DOT_RADIUS: ExpressionSpecification = [
+  "+",
+  TOWN_BASE_RADIUS,
+  1.5,
+];
+export const SELECTED_HALO_RADIUS: ExpressionSpecification = [
+  "+",
+  TOWN_BASE_RADIUS,
+  7,
+];
 
 /**
  * The zoom at which a tier's dots become interactive — the midpoint of the
