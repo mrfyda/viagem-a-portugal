@@ -73,7 +73,8 @@
    bottom-right, so this only affects the mobile layout. */
 @media (max-width: 767px) {
     .maplibregl-ctrl-top-right {
-        margin-top: calc(env(safe-area-inset-top, 0px) + 3.25rem);
+        /* clear the h-14 top bar plus a small gap */
+        margin-top: calc(env(safe-area-inset-top, 0px) + 4.25rem);
     }
     /* Keep the OSM attribution readable above the floating glass tab bar. */
     .maplibregl-ctrl-bottom-right {

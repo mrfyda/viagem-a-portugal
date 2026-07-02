@@ -9,13 +9,16 @@ import { withSiteBase } from "../lib/assets";
  */
 export default function MapTopBar() {
   return (
-    <header className="absolute inset-x-0 top-0 z-10 flex items-center gap-3 bg-primary px-4 pb-3 pt-[max(0.75rem,env(safe-area-inset-top))] text-primary-foreground shadow-sm">
-      <a
-        href={withSiteBase("/")}
-        className="font-serif text-lg font-normal leading-none tracking-wide text-primary-foreground no-underline transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
-      >
-        Viagem a Portugal
-      </a>
+    <header className="absolute inset-x-0 top-0 z-10 bg-primary pt-[env(safe-area-inset-top)] text-primary-foreground shadow-sm">
+      {/* h-14 matches the bottom glass nav, so the two bars weigh the same. */}
+      <div className="flex h-14 items-center gap-3 px-4">
+        <a
+          href={withSiteBase("/")}
+          className="font-serif text-xl font-normal leading-none tracking-wide text-primary-foreground no-underline transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+        >
+          Viagem a Portugal
+        </a>
+      </div>
     </header>
   );
 }
