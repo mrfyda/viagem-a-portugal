@@ -10,9 +10,8 @@ import { useSelection } from "../hooks/useSelection";
 import { useSession } from "../hooks/useSession";
 import {
   buildTownsGeoJson,
-  INITIAL_ZOOM,
-  MAP_CENTER,
   placeCenter,
+  PORTUGAL_BOUNDS,
   routesGeoJson,
   stops,
 } from "../lib/geo";
@@ -22,8 +21,11 @@ import {
   fetchMapStyle,
   MARKER_MIN_RADIUS,
   ROUTE_COLOR,
+  TIER_INTERACTIVE_ZOOM,
   TOWN_COLOR,
+  TOWN_OPACITY,
   TOWN_RADIUS,
+  TOWN_STROKE_OPACITY,
 } from "../lib/mapStyle";
 import { t } from "../lib/i18n";
 import { useIsDesktop } from "../hooks/useIsDesktop";
@@ -82,11 +84,18 @@ export default function TravelMap() {
     fetchMapStyle()
       .then((style) => {
         if (cancelled) return;
+        // Open on the whole country, padded so the sidebar (desktop) or the
+        // top bar + tab bar (mobile) never eat into Portugal itself.
+        const desktop = window.matchMedia?.("(min-width: 768px)").matches;
         map = new maplibregl.Map({
           container: containerRef.current!,
           style,
-          center: MAP_CENTER,
-          zoom: INITIAL_ZOOM,
+          bounds: PORTUGAL_BOUNDS,
+          fitBoundsOptions: {
+            padding: desktop
+              ? { top: 24, right: 24, bottom: 24, left: 396 }
+              : { top: 72, right: 16, bottom: 96, left: 16 },
+          },
           attributionControl: { compact: true },
         });
         mapRef.current = map;
@@ -118,8 +127,10 @@ export default function TravelMap() {
         paint: {
           "circle-radius": TOWN_RADIUS,
           "circle-color": TOWN_COLOR,
+          "circle-opacity": TOWN_OPACITY,
           "circle-stroke-color": "#ffffff",
           "circle-stroke-width": 1.5,
+          "circle-stroke-opacity": TOWN_STROKE_OPACITY,
         },
       });
 
@@ -130,6 +141,8 @@ export default function TravelMap() {
         id: "detours",
         type: "circle",
         source: "detours",
+        // Off-book context: keep Detours out of the country-zoom picture.
+        minzoom: 8,
         paint: {
           "circle-radius": MARKER_MIN_RADIUS,
           "circle-color": DETOUR_COLOR,
@@ -138,9 +151,16 @@ export default function TravelMap() {
         },
       });
 
+      // Dots below their disclosure tier render at radius 0 but still
+      // hit-test — only interact with the ones actually visible.
+      const visibleTown = (features?: maplibregl.MapGeoJSONFeature[]) =>
+        features?.find(
+          (f) => map.getZoom() >= TIER_INTERACTIVE_ZOOM[f.properties.tier as number],
+        );
+
       const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
       map.on("mouseenter", "towns", (event) => {
-        const feature = event.features?.[0];
+        const feature = visibleTown(event.features);
         if (!feature) return;
         map.getCanvas().style.cursor = "pointer";
         const [lon, lat] = (feature.geometry as Point).coordinates;
@@ -154,7 +174,7 @@ export default function TravelMap() {
         popup.remove();
       });
       map.on("click", "towns", (event) => {
-        const feature = event.features?.[0];
+        const feature = visibleTown(event.features);
         if (feature) selectPlace(feature.properties.indexName);
       });
 

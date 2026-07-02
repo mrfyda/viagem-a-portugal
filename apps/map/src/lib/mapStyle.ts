@@ -54,7 +54,7 @@ export const MARKER_MIN_RADIUS = 7;
  * villages stay at the minimum, Lisboa/Peniche-grade stops stand out. Visited
  * towns get a small extra bump.
  */
-export const TOWN_RADIUS: ExpressionSpecification = [
+const TOWN_BASE_RADIUS: ExpressionSpecification = [
   "+",
   [
     "interpolate",
@@ -67,6 +67,66 @@ export const TOWN_RADIUS: ExpressionSpecification = [
   ],
   ["case", ["get", "visited"], 1, 0],
 ];
+
+/** 1 for dots whose disclosure tier (geo.ts) is revealed, else 0. */
+const revealed = (tiers: number[]): ExpressionSpecification => [
+  "match",
+  ["get", "tier"],
+  tiers,
+  1,
+  0,
+];
+
+/**
+ * Zoom-graduated disclosure ("the map is the document", not pin-soup): at
+ * country zoom only the anchor Stops draw the journey; the remaining Stops,
+ * the passed-through places and finally the referenced-only places grow in
+ * over one zoom level each as the reader moves closer. The zoom envelope
+ * multiplies the base value per tier, so a dot fades/scales in smoothly and,
+ * at radius 0, is not hit-testable.
+ */
+const disclosureEnvelope = (
+  value: (tiers: number[]) => ExpressionSpecification | number,
+): ExpressionSpecification => [
+  "interpolate",
+  ["linear"],
+  ["zoom"],
+  6.8, value([0]),
+  7.5, value([0, 1]),
+  8.0, value([0, 1]),
+  8.8, value([0, 1, 2]),
+  9.2, value([0, 1, 2]),
+  9.9, value([0, 1, 2, 3]),
+];
+
+export const TOWN_RADIUS: ExpressionSpecification = disclosureEnvelope(
+  (tiers) => ["*", TOWN_BASE_RADIUS, revealed(tiers)],
+);
+
+/** Referenced-only places stay slightly quieter even once revealed. */
+export const TOWN_OPACITY: ExpressionSpecification = disclosureEnvelope(
+  (tiers) => [
+    "*",
+    ["match", ["get", "tier"], 3, 0.8, 1],
+    revealed(tiers),
+  ],
+);
+
+export const TOWN_STROKE_OPACITY: ExpressionSpecification =
+  disclosureEnvelope(revealed);
+
+/**
+ * The zoom at which a tier's dots become interactive — the midpoint of the
+ * disclosure fade above. A radius-0 circle still hit-tests at its centre, so
+ * click/hover handlers must drop features below their tier's zoom or hidden
+ * dots ghost-click.
+ */
+export const TIER_INTERACTIVE_ZOOM: Record<number, number> = {
+  0: 0,
+  1: 7.15,
+  2: 8.4,
+  3: 9.55,
+};
 
 export const TOWN_COLOR: ExpressionSpecification = [
   "case",

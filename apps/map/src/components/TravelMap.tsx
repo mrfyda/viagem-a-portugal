@@ -18,7 +18,9 @@ import {
   fetchMapStyle,
   ROUTE_COLOR,
   TOWN_COLOR,
+  TOWN_OPACITY,
   TOWN_RADIUS,
+  TOWN_STROKE_OPACITY,
 } from "../lib/mapStyle";
 
 type MapStyleProp = React.ComponentProps<typeof MapLibreMap>["mapStyle"];
@@ -68,8 +70,10 @@ export default function TravelMap() {
             paint={{
               "circle-radius": TOWN_RADIUS,
               "circle-color": TOWN_COLOR,
+              "circle-opacity": TOWN_OPACITY,
               "circle-stroke-color": "#ffffff",
               "circle-stroke-width": 1.5,
+              "circle-stroke-opacity": TOWN_STROKE_OPACITY,
             }}
           />
         </GeoJSONSource>
