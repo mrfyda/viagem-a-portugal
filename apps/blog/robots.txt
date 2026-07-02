@@ -5,3 +5,4 @@ User-agent: *
 Disallow:
 
 Sitemap: {{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}
+Sitemap: {{ "/map/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}
