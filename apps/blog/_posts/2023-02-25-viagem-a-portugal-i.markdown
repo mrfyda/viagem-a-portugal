@@ -5,6 +5,7 @@ date: 2023-02-25 18:00:00 +0000
 visit_date: 2023-02-18
 lang: pt
 transport: car
+translation_key: viagem-a-portugal-i
 description: "Refazemos a primeira etapa da Viagem a Portugal de Saramago: oito dias pelo nordeste transmontano, de Coimbra a Bragança, por aldeias quase vazias, burros mirandeses e as laranjas de Mazouco."
 places:
   - Coimbra
