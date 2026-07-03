@@ -184,7 +184,9 @@ function MobileSheet({
           ✕
         </button>
       </div>
-      <div className="flex touch-pan-y flex-col gap-0.5 overflow-y-auto overscroll-contain p-2">
+      {/* Own max-height besides the grid row — see the PanelShell body:
+          iOS 26.0/.1 mis-sizes grid/flex min-sizes (fixed in 26.2). */}
+      <div className="flex max-h-[calc(55dvh_-_4rem)] touch-pan-y flex-col gap-0.5 overflow-y-auto overscroll-contain p-2">
         {children}
       </div>
     </aside>

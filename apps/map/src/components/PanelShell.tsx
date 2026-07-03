@@ -112,8 +112,12 @@ export default function PanelShell({
         {header}
       </div>
       {/* touch-pan-y declares the body's gesture to iOS up front;
-          overscroll-contain keeps the swipe from rubber-banding the page. */}
-      <div className="flex touch-pan-y flex-col gap-2 overflow-y-auto overscroll-contain p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+          overscroll-contain keeps the swipe from rubber-banding the page.
+          The body carries its own max-height (sheet cap minus the ~4.5rem
+          header) besides the grid row: iOS 26.0/.1 resolves grid/flex
+          automatic min-sizes wrong (fixed in Safari 26.2), and a scroller
+          whose constraint lives on itself can't be mis-sized by either. */}
+      <div className="flex max-h-[calc(60dvh_-_4.5rem)] touch-pan-y flex-col gap-2 overflow-y-auto overscroll-contain p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
         {children}
       </div>
     </div>

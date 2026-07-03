@@ -15,9 +15,17 @@ strike through here; if either still fails, the next angles are noted.
   (Chromium tolerates it, which is why it kept "passing" here). Also
   `dvh` for the caps (iOS 26 pins `vh` to the large viewport),
   `overscroll-contain` and `touch-action: pan-y` on the scroll bodies.
-  If still stuck: suspect react-native-web's document-level responder
-  system eating touchmove — test by porting the sheet outside the RN root
-  via a portal.
+  Survived the first device retest; second round of findings (2026-07-03):
+  layout verified correct in Linux WebKit (body clamps, wheel +
+  programmatic scroll work) and a CDP touch-swipe scrolls fine in Chromium
+  against the production build with react-native-web's document responder
+  listeners attached — so the responder theory is cleared, and the failure
+  is device-WebKit-specific. Prime suspect: Safari 26.2's changelog fixes
+  "automatic min-size handling for flex and grid items", i.e. the
+  minmax(0,1fr) row resolves wrong on iOS 26.0/.1. Shipped: the scroll
+  bodies now carry their own max-height (sheet cap minus header) so no
+  flex/grid min-size resolution is involved. If even that fails on device,
+  it's time for remote Safari devtools (Mac + cable) — guessing is done.
 - **Edge-to-edge under Safari's bars** (2026-07): Safari 26 ignores
   `theme-color` and tints its liquid-glass chrome by sampling the page;
   transparent/unset roots fall back to solid white bands. `html`/`body` now
