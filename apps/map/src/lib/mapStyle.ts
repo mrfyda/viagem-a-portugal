@@ -78,15 +78,16 @@ const revealed = (
   tiers === "none" ? 0 : ["match", ["get", "tier"], tiers, 1, 0];
 
 /**
- * Zoom-graduated disclosure ("the map is the document", not pin-soup): at
- * country zoom only the anchor Stops (and a Traveler's visited places, which
- * geo.ts promotes to tier 0) draw the journey; the remaining Stops, the
- * passed-through places and finally the referenced-only places grow in over
- * one zoom level each as the reader moves closer. Pulled back past the
- * country view, everything fades — below z4.8 the six routes carry the map
- * alone, as pure line-work. The zoom envelope multiplies the base value per
- * rung, so a dot fades/scales smoothly and, at radius 0, is not
- * hit-testable.
+ * Zoom-graduated disclosure ("the map is the document", not pin-soup): the
+ * opening country view — and anything wider — is pure line-work, the six
+ * routes alone. Zooming in past it, the anchor Stops (and a Traveler's
+ * visited places, which geo.ts promotes to tier 0) fade in first; the
+ * remaining Stops, the passed-through places and finally the referenced-only
+ * places grow in over roughly one zoom level each as the reader moves
+ * closer. The country fit lands at z6.1–6.45 depending on viewport (phone to
+ * desktop), so the first rung starts safely above it at z6.6. The zoom
+ * envelope multiplies the base value per rung, so a dot fades/scales
+ * smoothly and, at radius 0, is not hit-testable.
  */
 const disclosureEnvelope = (
   value: (tiers: number[] | "none") => ExpressionSpecification | number,
@@ -94,11 +95,11 @@ const disclosureEnvelope = (
   "interpolate",
   ["linear"],
   ["zoom"],
-  4.8, value("none"),
-  5.5, value([0]),
-  6.8, value([0]),
-  7.5, value([0, 1]),
+  6.6, value("none"),
+  7.2, value([0]),
+  7.4, value([0]),
   8.0, value([0, 1]),
+  8.2, value([0, 1]),
   8.8, value([0, 1, 2]),
   9.2, value([0, 1, 2]),
   9.9, value([0, 1, 2, 3]),
@@ -174,9 +175,9 @@ export const SELECTED_HALO_RADIUS: ExpressionSpecification = [
  * dots ghost-click.
  */
 export const TIER_INTERACTIVE_ZOOM: Record<number, number> = {
-  0: 5.15,
-  1: 7.15,
-  2: 8.4,
+  0: 6.9,
+  1: 7.7,
+  2: 8.5,
   3: 9.55,
 };
 

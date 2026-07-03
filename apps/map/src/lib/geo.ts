@@ -169,8 +169,9 @@ for (const stop of stops) {
 }
 
 /** Disclosure tier (TOWN_RADIUS/TOWN_OPACITY in mapStyle.ts). Anchor Stops —
- * the ones the book dwells on for 3+ pages — draw the journey at country
- * zoom; a Traveler's visited places always show (it is their journey). */
+ * the ones the book dwells on for 3+ pages — fade in first past the
+ * lines-only country view; a Traveler's visited places share that first rung
+ * (it is their journey). */
 function dotTier(role: "stop" | "passed-through" | undefined, mentions: number, visited: boolean): 0 | 1 | 2 | 3 {
   if (visited) return 0;
   if (role === "stop") return mentions >= 3 ? 0 : 1;

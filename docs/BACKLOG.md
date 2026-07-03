@@ -22,9 +22,11 @@ by choice — no issue tracker for this project.)
 - ~~Blog language suggestion~~ — decided against (2026-07): hreflang routes
   search traffic and the per-post switcher covers the rest; no client-side
   detection bar.
-- ~~Full pin fade-out when zoomed far out~~ — built (2026-07): every dot,
-  visited included, fades z5.5→4.8; below that the six routes carry the map
-  alone as line-work.
+- ~~Full pin fade-out when zoomed far out~~ — built (2026-07), then extended:
+  the opening country view itself is now lines-only. Every dot, visited
+  included, fades in only past z6.6 (the country fit tops out ~z6.45 on
+  desktop); at the default view and wider the six routes carry the map alone
+  as line-work.
 
 ## Content
 
