@@ -3,6 +3,30 @@
 Parked ideas and agreed next steps, in rough priority order. (Kept as a note
 by choice — no issue tracker for this project.)
 
+## Needs a device session
+
+Two iOS Safari fixes shipped on research + Chromium checks only — this
+container has no iOS. Verify on a real iPhone (live site, hard refresh) and
+strike through here; if either still fails, the next angles are noted.
+
+- **Place-sheet scrolling** (2026-07): sheets went from column flex to grid
+  `auto minmax(0,1fr)` rows — Safari never gives a flex child a definite size
+  inside a `max-height` parent, so its `overflow-y` scroll never engages
+  (Chromium tolerates it, which is why it kept "passing" here). Also
+  `dvh` for the caps (iOS 26 pins `vh` to the large viewport),
+  `overscroll-contain` and `touch-action: pan-y` on the scroll bodies.
+  If still stuck: suspect react-native-web's document-level responder
+  system eating touchmove — test by porting the sheet outside the RN root
+  via a portal.
+- **Edge-to-edge under Safari's bars** (2026-07): Safari 26 ignores
+  `theme-color` and tints its liquid-glass chrome by sampling the page;
+  transparent/unset roots fall back to solid white bands. `html`/`body` now
+  carry the map's paper colour (`#f8f4f0`) alongside the existing
+  `viewport-fit=cover`. If bands persist: the "runway" family of tricks
+  (document taller than the viewport + auto-scroll offset) was tried and
+  reverted in June — see `stripearmy.medium.com` iOS 26 viewport write-up
+  (window.outerHeight overlays) before going back down that road.
+
 ## Features
 
 - **Aggregate footsteps** — anonymous visit counts per Place; a "forgotten

@@ -164,7 +164,9 @@ function MobileSheet({
   return (
     <aside
       style={sheetStyle}
-      className="animate-sheet-in absolute inset-x-3 bottom-20 z-10 flex max-h-[55vh] flex-col rounded-2xl border border-border bg-card/95 text-sm text-foreground shadow-lg backdrop-blur-sm"
+      // Grid rows + dvh, not column flex + vh: see the PanelShell mobile
+      // sheet — Safari needs the minmax(0,1fr) row for the body to scroll.
+      className="animate-sheet-in absolute inset-x-3 bottom-20 z-10 grid max-h-[55dvh] grid-rows-[auto_minmax(0,1fr)] rounded-2xl border border-border bg-card/95 text-sm text-foreground shadow-lg backdrop-blur-sm"
     >
       <div
         {...handleProps}
@@ -182,7 +184,9 @@ function MobileSheet({
           ✕
         </button>
       </div>
-      <div className="flex min-h-0 flex-col gap-0.5 overflow-y-auto p-2">{children}</div>
+      <div className="flex touch-pan-y flex-col gap-0.5 overflow-y-auto overscroll-contain p-2">
+        {children}
+      </div>
     </aside>
   );
 }

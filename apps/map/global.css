@@ -47,11 +47,18 @@
     --font-serif: "Cardo", serif;
 }
 
-/* The plain-DOM web chrome and RN-web <Text> inherit the document font. */
+/* The plain-DOM web chrome and RN-web <Text> inherit the document font.
+   The background matters on iOS: Safari 26's liquid-glass bars tint by
+   sampling the page (theme-color is ignored), and a transparent/unset root
+   falls back to solid white bands — the exact opposite of the map-app
+   edge-to-edge look. Paint the roots the map's own paper colour (Liberty's
+   `background` layer) so the chrome blends with the territory;
+   viewport-fit=cover (injected post-export) lets the canvas draw beneath. */
 @layer base {
     html,
     body {
         font-family: "Cardo", serif;
+        background-color: #f8f4f0;
     }
 }
 

@@ -98,18 +98,22 @@ export default function PanelShell({
 
   // Mobile: a half-height bottom sheet — the map keeps the upper half, so the
   // selection halo stays in view and tapping another dot switches the entry.
+  // Grid (not column flex): Safari doesn't give a flex child a definite size
+  // inside a max-height parent, so its overflow scroll never engages on iOS —
+  // a minmax(0,1fr) row does. dvh, not vh: iOS 26 pins vh to the large
+  // viewport, which would hide the sheet's tail behind Safari's bottom bar.
   return (
     <div
       style={sheetStyle}
-      className="animate-sheet-in absolute inset-x-0 bottom-0 z-20 flex max-h-[60vh] flex-col overflow-hidden rounded-t-2xl border-t border-border bg-card text-sm text-foreground shadow-[0_-8px_30px_rgba(28,25,23,0.18)]"
+      className="animate-sheet-in absolute inset-x-0 bottom-0 z-20 grid max-h-[60dvh] grid-rows-[auto_minmax(0,1fr)] overflow-hidden rounded-t-2xl border-t border-border bg-card text-sm text-foreground shadow-[0_-8px_30px_rgba(28,25,23,0.18)]"
     >
-      <div {...handleProps} className="shrink-0 cursor-grab border-b border-border px-4 pb-3 pt-2">
+      <div {...handleProps} className="cursor-grab border-b border-border px-4 pb-3 pt-2">
         <div aria-hidden className="mx-auto mb-2 h-1 w-9 rounded-full bg-border" />
         {header}
       </div>
-      {/* min-h-0 lets this flex child shrink inside the max-h sheet — without
-          it the body grows past the sheet and its own scroll never engages. */}
-      <div className="flex min-h-0 flex-1 flex-col gap-2 overflow-y-auto p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+      {/* touch-pan-y declares the body's gesture to iOS up front;
+          overscroll-contain keeps the swipe from rubber-banding the page. */}
+      <div className="flex touch-pan-y flex-col gap-2 overflow-y-auto overscroll-contain p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
         {children}
       </div>
     </div>
