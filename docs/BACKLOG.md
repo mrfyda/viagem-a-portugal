@@ -3,11 +3,29 @@
 Parked ideas and agreed next steps, in rough priority order. (Kept as a note
 by choice — no issue tracker for this project.)
 
-## Needs a device session
+## Needs the owner to verify
 
-Two iOS Safari fixes shipped on research + Chromium checks only — this
-container has no iOS. Verify on a real iPhone (live site, hard refresh) and
-strike through here; if either still fails, the next angles are noted.
+Fixes shipped on research + what an agent can check remotely; the last step
+needs the owner (a real iPhone, or the Search Console account). Verify and
+strike through here; if anything still fails, the next angles are noted.
+
+- **Search Console won't read the sitemap** (2026-07): "Não foi possível ler
+  o mapa do site" persisted 48h past submission, while manually-submitted
+  pages indexed fine. Everything measurable from outside checks out: all
+  three sitemap URLs (`sitemap_index.xml`, `sitemap.xml`,
+  `map/sitemap.xml`) serve 200 `application/xml` to a Googlebot UA, XML
+  validates byte-clean (579 map URLs, no raw `&`, no non-ASCII, all
+  in-scope), domain-root `mrfyda.github.io/robots.txt` is 404 (= crawling
+  allowed). Shipped so far: a sitemap index (one URL to submit), the
+  verification file out of the sitemap, and the index renamed
+  `sitemap-index` → `sitemap_index` to dodge a documented GSC bug where
+  dash-plus filenames stick at "could not be read" (jcchouinard.com
+  write-up). Owner's diagnostic: delete all GSC sitemap entries, submit
+  `sitemap_index.xml` AND both children directly — the per-row outcome
+  isolates the fault (children green + index red = index handling; map
+  child red = map sitemap; all red = property-level). If a row still
+  fails, click it: the itemized error under the header (type/count/example
+  URL) is the answer — bring that string back before any more changes.
 
 - **Place-sheet scrolling** (2026-07): sheets went from column flex to grid
   `auto minmax(0,1fr)` rows — Safari never gives a flex child a definite size
