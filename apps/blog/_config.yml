@@ -41,6 +41,12 @@ defaults:
     values:
       layout: post
       lang: en
+  # The Search Console verification file is plumbing, not content — keep it
+  # out of the sitemap (Google only needs to fetch it, not index it).
+  - scope:
+      path: "google139eb38e40a50649.html"
+    values:
+      sitemap: false
 
 # English translations live in a collection, not _posts: they render pages but
 # stay out of the PT home/paginator, the Atom feed, and blog-sync's
