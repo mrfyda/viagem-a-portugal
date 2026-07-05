@@ -87,11 +87,15 @@
     }
 }
 
-/* WCAG 2.5.8 / HIG: comfortable targets on touch devices */
+/* WCAG 2.5.8 / HIG: comfortable targets on touch devices. maplibre DOM
+   markers are exempt: Marker.addTo() stamps role="button" on them, and the
+   geolocate control's location dot (15px) and accuracy circle (sized in px
+   from GPS accuracy) are markers — inflating them to 44px breaks the
+   indicator. */
 @media (pointer: coarse) {
     button,
     input,
-    [role="button"] {
+    [role="button"]:not(.maplibregl-marker) {
         min-height: 44px;
         min-width: 44px;
     }
