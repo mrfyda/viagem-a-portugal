@@ -109,9 +109,31 @@ describe("map data", () => {
     // one segment per consecutive same-chapter stop pair
     expect(routesGeoJson.features.length).toBe(stops.length - 6);
     for (const f of routesGeoJson.features) {
-      expect(f.geometry.coordinates).toHaveLength(2);
+      expect(f.geometry.coordinates.length).toBeGreaterThanOrEqual(2);
       expect(f.properties.ordinal).toBeGreaterThan(1);
       expect(f.properties.ordinal).toBeLessThanOrEqual(stops.length);
+    }
+  });
+
+  it("route segments start and end on their stops", () => {
+    // snapped polylines are closed onto the stop coordinates by the
+    // snapper (5-decimal rounding => within ~1 m); a drifting endpoint
+    // means routes.json is stale relative to stops.json
+    const byOrdinal = new Map(stops.map((s) => [s.ordinal, s]));
+    for (const f of routesGeoJson.features) {
+      const stop = byOrdinal.get(f.properties.ordinal)!;
+      const prev = byOrdinal.get(f.properties.ordinal - 1)!;
+      const [first, last] = [
+        f.geometry.coordinates[0],
+        f.geometry.coordinates[f.geometry.coordinates.length - 1],
+      ];
+      expect(Math.abs(first[0] - prev.longitude)).toBeLessThan(1e-4);
+      expect(Math.abs(first[1] - prev.latitude)).toBeLessThan(1e-4);
+      expect(Math.abs(last[0] - stop.longitude)).toBeLessThan(1e-4);
+      expect(Math.abs(last[1] - stop.latitude)).toBeLessThan(1e-4);
+      for (const [lon, lat] of f.geometry.coordinates) {
+        expect(inRange(lat, lon), `ordinal ${f.properties.ordinal}`).toBe(true);
+      }
     }
   });
 });

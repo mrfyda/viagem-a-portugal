@@ -17,6 +17,10 @@ See README.md for the human-facing overview.
   the decisions). `journey-overrides.json` and
   `classifications.json` hold reviewed pipeline decisions — regenerate data
   through the scripts, never hand-edit generated files.
+- `tools/route-snapper` — snaps each Route segment in `stops.json` to the
+  1979 road network (motorways/expressways/tolls forbidden) via the public
+  BRouter server, producing `apps/map/src/data/routes.json`. Re-run after
+  `stops.json` changes (responses are cached; only new pairs hit the network).
 - `tools/blog-sync` — turns blog post `places:` front matter into
   `featured-journey.json`; CI fails if the committed file drifts.
 - Python tooling runs via `uv run` / `uvx` (PEP 723 inline deps) — never
