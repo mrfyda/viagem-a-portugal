@@ -17,6 +17,7 @@ import {
 import {
   fetchMapStyle,
   ROUTE_COLOR,
+  ROUTE_OFFSET,
   TOWN_COLOR,
   TOWN_OPACITY,
   TOWN_RADIUS,
@@ -53,6 +54,7 @@ export default function TravelMap() {
               "line-color": ROUTE_COLOR,
               "line-width": 2.5,
               "line-opacity": 0.75,
+              "line-offset": ROUTE_OFFSET,
             }}
           />
         </GeoJSONSource>
