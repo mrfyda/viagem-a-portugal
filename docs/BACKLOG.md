@@ -87,6 +87,17 @@ strike through here; if anything still fails, the next angles are noted.
 
 ## Map UI (deferred from the 2026-07 critique)
 
+- **Distinguish Routes sharing a road** (2026-07): the road-snapped Routes
+  legitimately overlap where two chapters drive the same road (chapter 4
+  and 5 both take the EN 253 between Alcácer do Sal and Montemor-o-Novo),
+  and the topmost colour hides the other. A per-chapter `line-offset` was
+  tried and reverted (aa5a8cb): with each chapter offset to its own side,
+  single-chapter stretches visibly hug one side of the road and
+  out-and-backs split into odd double lines — strange artifacts at most
+  zooms. Next angles: offset only *shared* segments (precompute overlap in
+  the snapper, so lone lines stay centred); dash-pattern or width
+  alternation on the shared stretches; or accept topmost-wins and rely on
+  chapter focus (the sidebar already isolates one Route).
 - **Mobile ergonomics** — half-height place sheet so the map stays visible in
   the field; swipe-to-dismiss on sheets; zoom/locate controls' reach zone.
 - **Chapter-1 route orange vs. dot amber** — optional recolor; heavily

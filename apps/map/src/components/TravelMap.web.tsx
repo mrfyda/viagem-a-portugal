@@ -22,7 +22,6 @@ import {
   fetchMapStyle,
   MARKER_MIN_RADIUS,
   ROUTE_COLOR,
-  ROUTE_OFFSET,
   routeOpacity,
   SELECTED_DOT_RADIUS,
   SELECTED_HALO_RADIUS,
@@ -130,12 +129,7 @@ export default function TravelMap() {
         id: "routes",
         type: "line",
         source: "routes",
-        paint: {
-          "line-color": ROUTE_COLOR,
-          "line-width": 2.5,
-          "line-opacity": 0.75,
-          "line-offset": ROUTE_OFFSET,
-        },
+        paint: { "line-color": ROUTE_COLOR, "line-width": 2.5, "line-opacity": 0.75 },
       });
 
       map.addSource("towns", {

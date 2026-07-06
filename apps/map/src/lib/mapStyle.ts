@@ -147,24 +147,6 @@ export const routeOpacity = (
     ? 0.75
     : ["case", ["==", ["get", "chapter"], focusedChapter], 0.9, 0.15];
 
-/**
- * Road-snapped Routes can legitimately share a road (chapter 4 and 5 both
- * drive Alcácer do Sal–Montemor-o-Novo), where same-position lines would
- * hide all but the topmost colour. A per-chapter perpendicular offset draws
- * shared corridors as parallel strands, transit-map style — and an
- * out-and-back inside one chapter splits into its two directions too.
- * Zoom-scaled: a whisper at the country view (lines there are route-shaped
- * anyway), a full line-width apart once roads are legible.
- */
-export const ROUTE_OFFSET: ExpressionSpecification = [
-  "interpolate",
-  ["linear"],
-  ["zoom"],
-  6, ["*", ["-", ["get", "chapter"], 3.5], 0.5],
-  9, ["*", ["-", ["get", "chapter"], 3.5], 2.2],
-  12, ["*", ["-", ["get", "chapter"], 3.5], 3],
-];
-
 export const TOWN_OPACITY = townOpacity();
 export const TOWN_STROKE_OPACITY = townStrokeOpacity();
 
