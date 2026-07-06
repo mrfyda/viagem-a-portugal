@@ -1,315 +1,315 @@
 {
- "exclusions": [
-  {
-   "place": "Torre (serra da Estrela)",
-   "chapter": 1,
-   "note": "Mentions are Torre do Relogio (Caminha) and Torre dos Azevedos"
-  },
-  {
-   "place": "São Jorge",
-   "chapter": 1,
-   "note": "S. Jorge is a statue in Se de Braga, not a place"
-  },
-  {
-   "place": "Salvador",
-   "chapter": 1,
-   "note": "Sao Salvador is the monastery church in Paco de Sousa, not a place"
-  },
-  {
-   "place": "Marialva",
-   "chapter": 2,
-   "note": "Marquis title and restaurant name in Cantanhede, not the village"
-  },
-  {
-   "place": "Azambuja",
-   "chapter": 2,
-   "note": "Diogo de Azambuja is a person; tomb in Montemor-o-Velho"
-  },
-  {
-   "place": "Torre (serra da Estrela)",
-   "chapter": 2,
-   "note": "Mentions are Torre dos Sinos and Torre de Anto, not Serra da Estrela"
-  },
-  {
-   "place": "Lisboa",
-   "chapter": 2,
-   "note": "Couraca de Lisboa is a street in Coimbra, not Lisbon"
-  },
-  {
-   "place": "Torre (serra da Estrela)",
-   "chapter": 3,
-   "note": "Torre dos Ferreiros is a tower in Guarda, not Serra da Estrela"
-  },
-  {
-   "place": "Ermida",
-   "chapter": 3,
-   "note": "Common-noun chapel names (Sabugal, Cidadelhe), not a settlement on the route"
-  },
-  {
-   "place": "Luz (de Tavira)",
-   "chapter": 3,
-   "note": "Chapel name Nossa Senhora da Luz near Fundao, not Algarve village"
-  },
-  {
-   "place": "Ermida",
-   "chapter": 4,
-   "note": "Chapel names in Tomar, Aljubarrota, Azinhaga; not a settlement"
-  },
-  {
-   "place": "Santa Rita (praia de)",
-   "chapter": 4,
-   "note": "Positioning mention is a statue in Vieira de Leiria; real visit follows Lourinha"
-  },
-  {
-   "place": "Ermida",
-   "chapter": 5,
-   "note": "Ermida is chapel noun: Sao Dinis in Pavia, Sao Sebastiao in Serpa"
-  },
-  {
-   "place": "Salvador",
-   "chapter": 5,
-   "note": "Capela do Salvador do Mundo inside Castelo de Vide, not a town"
-  },
-  {
-   "place": "Torre (serra da Estrela)",
-   "chapter": 5,
-   "note": "Torre das Tres Coroas, castle keep in Estremoz, not a place"
-  },
-  {
-   "place": "Castelo Novo",
-   "chapter": 5,
-   "note": "Castelo Novo is Vila Vicosa castle name, not Fundao village"
-  },
-  {
-   "place": "Marialva",
-   "chapter": 5,
-   "note": "Largo do Marques de Marialva, a square in Evora, not Marialva village"
-  },
-  {
-   "place": "Luz (de Tavira)",
-   "chapter": 5,
-   "note": "Igreja de Nossa Senhora da Luz inside Arronches (sec 48), not the Algarve village"
-  },
-  {
-   "place": "Mira",
-   "chapter": 6,
-   "note": "Rio Mira river mouth at Milfontes, not Mira town near Aveiro"
-  },
-  {
-   "place": "Celorico de Basto",
-   "chapter": 3,
-   "note": "bare \"Celorico\" in ch3 is Celorico da Beira (already its own stop)"
-  },
-  {
-   "place": "São Vicente",
-   "chapter": 1,
-   "note": "Igreja de São Vicente in Bragança — index entry (p. 325) is the Spanish town seen from Marvão"
-  },
-  {
-   "place": "São Vicente",
-   "chapter": 3,
-   "note": "Igreja de São Vicente in Guarda — index entry (p. 325) is the Spanish town seen from Marvão"
-  },
-  {
-   "place": "São Vicente",
-   "chapter": 4,
-   "note": "São Vicente de Fora monastery, Lisboa — index entry (p. 325) is the Spanish town seen from Marvão"
-  },
-  {
-   "place": "São Vicente",
-   "chapter": 6,
-   "note": "Cabo de São Vicente — index entry (p. 325) is the Spanish town seen from Marvão"
-  }
- ],
- "coords": [
-  {
-   "place": "Varge",
-   "chapter": 1,
-   "latitude": 41.8715,
-   "longitude": -6.68037,
-   "note": "Homonym; book means Varge village near Bacal, Aveleda, Braganca"
-  },
-  {
-   "place": "Arões",
-   "chapter": 1,
-   "latitude": 41.4562,
-   "longitude": -8.2175,
-   "note": "Aroes (Sao Romao), Fafe, near Guimaraes; not Vale de Cambra"
-  },
-  {
-   "place": "Alvite",
-   "chapter": 1,
-   "latitude": 41.4991,
-   "longitude": -8.0011,
-   "note": "Alvite, Cabeceiras de Basto (Casa da Torre); not Moimenta da Beira"
-  },
-  {
-   "place": "Antas",
-   "chapter": 1,
-   "latitude": 41.40247,
-   "longitude": -8.50968,
-   "note": "Antas near Vila Nova de Famalicao (Santiago de Antas church)"
-  },
-  {
-   "place": "São Brás",
-   "chapter": 1,
-   "latitude": 41.2196,
-   "longitude": -8.66182,
-   "note": "Monte de Sao Bras, Santa Cruz do Bispo, Matosinhos; not Alentejo"
-  },
-  {
-   "place": "Ermida",
-   "chapter": 1,
-   "latitude": 41.3527,
-   "longitude": -8.7426,
-   "note": "Ermida do Senhor do Socorro chapel inside Vila do Conde"
-  },
-  {
-   "place": "Vila Seca",
-   "chapter": 1,
-   "latitude": 41.513,
-   "longitude": -8.684,
-   "note": "Vila Seca, Barcelos, by Cavado near Gilmonde; not Armamar"
-  },
-  {
-   "place": "Pias",
-   "chapter": 1,
-   "latitude": 42.0211,
-   "longitude": -8.5079,
-   "note": "Pias freguesia, Moncao, along Minho; not Serpa, Alentejo"
-  },
-  {
-   "place": "Pinheiros",
-   "chapter": 1,
-   "latitude": 42.0427,
-   "longitude": -8.4956,
-   "note": "Pinheiros, Moncao (Palacio da Brejoeira); not Douro homonym"
-  },
-  {
-   "place": "Fonte Arcada",
-   "chapter": 1,
-   "latitude": 41.5794,
-   "longitude": -8.2456,
-   "note": "Homonym; correct is Fontarcada, Povoa de Lanhoso, with 1067 Romanesque church"
-  },
-  {
-   "place": "Sande",
-   "chapter": 1,
-   "latitude": 41.487,
-   "longitude": -8.35,
-   "note": "Homonym; route Sande-Brito-Ronfe near Guimaraes, not Sande Lamego"
-  },
-  {
-   "place": "Roriz",
-   "chapter": 1,
-   "latitude": 41.3444,
-   "longitude": -8.381,
-   "note": "Homonym; Roriz Santo Tirso, monastery church by rio Vizela"
-  },
-  {
-   "place": "Paredes",
-   "chapter": 1,
-   "latitude": 41.2052,
-   "longitude": -8.3303,
-   "note": "Homonym; Paredes city (Porto district) near Cete and Paco de Sousa"
-  },
-  {
-   "place": "Rebordosa",
-   "chapter": 2,
-   "latitude": 40.2431,
-   "longitude": -8.2819,
-   "note": "Homonym; Rebordosa village on Mondego near Penacova, not Paredes"
-  },
-  {
-   "place": "Escarigo",
-   "chapter": 3,
-   "latitude": 40.8427,
-   "longitude": -6.8321,
-   "note": "Border village in Figueira de Castelo Rodrigo near La Bouza, not Fundao"
-  },
-  {
-   "place": "Serra",
-   "chapter": 4,
-   "latitude": 39.6,
-   "longitude": -8.3,
-   "note": "Serra parish of Tomar on Zezere/Castelo do Bode, matching text"
-  },
-  {
-   "place": "Sítio",
-   "chapter": 4,
-   "latitude": 39.6053,
-   "longitude": -9.0765,
-   "note": "Sitio da Nazare promontory overlooking the beach, not Alentejo"
-  },
-  {
-   "place": "Lagoa",
-   "chapter": 4,
-   "latitude": 39.405,
-   "longitude": -9.22,
-   "note": "Lagoa de Obidos lagoon near Peniche, not Algarve town"
-  },
-  {
-   "place": "Carvalhal",
-   "chapter": 4,
-   "latitude": 39.29,
-   "longitude": -9.13056,
-   "note": "Same Bombarral village as Carvalhal de Obidos (Lafeta tower), not Grandola"
-  },
-  {
-   "place": "Torre (serra da Estrela)",
-   "chapter": 4,
-   "latitude": 38.6916,
-   "longitude": -9.216,
-   "note": "Text is Torre de Belem in Lisbon, not Serra da Estrela summit"
-  },
-  {
-   "place": "Santana",
-   "chapter": 4,
-   "latitude": 38.4926,
-   "longitude": -9.1037,
-   "note": "Santana village above Sesimbra; valley descends to Sesimbra"
-  },
-  {
-   "place": "Ermida",
-   "chapter": 6,
-   "latitude": 37.0836,
-   "longitude": -8.865,
-   "note": "Ermida de Nossa Senhora de Guadalupe near Raposeira, Vila do Bispo"
-  }
- ],
- "mentionExclusions": [
-  {
-   "place": "Pena (Sintra)",
-   "chapter": 4,
-   "section": 36,
-   "note": "Nossa Senhora da Pena ruins by Leiria castle, not the Sintra palace"
-  }
- ],
- "acceptedFlags": [
-  {
-   "place": "Monte Gordo",
-   "chapter": 6,
-   "note": "beach-bathing recap spans the Algarve; he did stop there"
-  }
- ],
- "splits": [
-  {
-   "place": "Lagoa",
-   "chapter": 4,
-   "name": "Lagoa de Óbidos",
-   "note": "ch4 Lagoa de Óbidos lagoon (the quote), a distinct place from the Algarve town indexed as 'Lagoa' (p381)"
-  },
-  {
-   "place": "Pias",
-   "chapter": 1,
-   "name": "Pias (Monção)",
-   "note": "ch1 Pias by the Minho near Monção, distinct from Pias de Serpa indexed as 'Pias' (p352)"
-  },
-  {
-   "place": "São Brás",
-   "chapter": 1,
-   "name": "Monte de São Brás",
-   "note": "ch1 Monte de São Brás, Matosinhos, distinct from São Brás do Alentejo indexed as 'São Brás' (p353)"
-  }
- ]
+  "exclusions": [
+    {
+      "place": "Torre (serra da Estrela)",
+      "chapter": 1,
+      "note": "Mentions are Torre do Relogio (Caminha) and Torre dos Azevedos"
+    },
+    {
+      "place": "São Jorge",
+      "chapter": 1,
+      "note": "S. Jorge is a statue in Se de Braga, not a place"
+    },
+    {
+      "place": "Salvador",
+      "chapter": 1,
+      "note": "Sao Salvador is the monastery church in Paco de Sousa, not a place"
+    },
+    {
+      "place": "Marialva",
+      "chapter": 2,
+      "note": "Marquis title and restaurant name in Cantanhede, not the village"
+    },
+    {
+      "place": "Azambuja",
+      "chapter": 2,
+      "note": "Diogo de Azambuja is a person; tomb in Montemor-o-Velho"
+    },
+    {
+      "place": "Torre (serra da Estrela)",
+      "chapter": 2,
+      "note": "Mentions are Torre dos Sinos and Torre de Anto, not Serra da Estrela"
+    },
+    {
+      "place": "Lisboa",
+      "chapter": 2,
+      "note": "Couraca de Lisboa is a street in Coimbra, not Lisbon"
+    },
+    {
+      "place": "Torre (serra da Estrela)",
+      "chapter": 3,
+      "note": "Torre dos Ferreiros is a tower in Guarda, not Serra da Estrela"
+    },
+    {
+      "place": "Ermida",
+      "chapter": 3,
+      "note": "Common-noun chapel names (Sabugal, Cidadelhe), not a settlement on the route"
+    },
+    {
+      "place": "Luz (de Tavira)",
+      "chapter": 3,
+      "note": "Chapel name Nossa Senhora da Luz near Fundao, not Algarve village"
+    },
+    {
+      "place": "Ermida",
+      "chapter": 4,
+      "note": "Chapel names in Tomar, Aljubarrota, Azinhaga; not a settlement"
+    },
+    {
+      "place": "Santa Rita (praia de)",
+      "chapter": 4,
+      "note": "Positioning mention is a statue in Vieira de Leiria; real visit follows Lourinha"
+    },
+    {
+      "place": "Ermida",
+      "chapter": 5,
+      "note": "Ermida is chapel noun: Sao Dinis in Pavia, Sao Sebastiao in Serpa"
+    },
+    {
+      "place": "Salvador",
+      "chapter": 5,
+      "note": "Capela do Salvador do Mundo inside Castelo de Vide, not a town"
+    },
+    {
+      "place": "Torre (serra da Estrela)",
+      "chapter": 5,
+      "note": "Torre das Tres Coroas, castle keep in Estremoz, not a place"
+    },
+    {
+      "place": "Castelo Novo",
+      "chapter": 5,
+      "note": "Castelo Novo is Vila Vicosa castle name, not Fundao village"
+    },
+    {
+      "place": "Marialva",
+      "chapter": 5,
+      "note": "Largo do Marques de Marialva, a square in Evora, not Marialva village"
+    },
+    {
+      "place": "Luz (de Tavira)",
+      "chapter": 5,
+      "note": "Igreja de Nossa Senhora da Luz inside Arronches (sec 48), not the Algarve village"
+    },
+    {
+      "place": "Mira",
+      "chapter": 6,
+      "note": "Rio Mira river mouth at Milfontes, not Mira town near Aveiro"
+    },
+    {
+      "place": "Celorico de Basto",
+      "chapter": 3,
+      "note": "bare \"Celorico\" in ch3 is Celorico da Beira (already its own stop)"
+    },
+    {
+      "place": "São Vicente",
+      "chapter": 1,
+      "note": "Igreja de São Vicente in Bragança — index entry (p. 325) is the Spanish town seen from Marvão"
+    },
+    {
+      "place": "São Vicente",
+      "chapter": 3,
+      "note": "Igreja de São Vicente in Guarda — index entry (p. 325) is the Spanish town seen from Marvão"
+    },
+    {
+      "place": "São Vicente",
+      "chapter": 4,
+      "note": "São Vicente de Fora monastery, Lisboa — index entry (p. 325) is the Spanish town seen from Marvão"
+    },
+    {
+      "place": "São Vicente",
+      "chapter": 6,
+      "note": "Cabo de São Vicente — index entry (p. 325) is the Spanish town seen from Marvão"
+    }
+  ],
+  "coords": [
+    {
+      "place": "Varge",
+      "chapter": 1,
+      "latitude": 41.8715,
+      "longitude": -6.68037,
+      "note": "Homonym; book means Varge village near Bacal, Aveleda, Braganca"
+    },
+    {
+      "place": "Arões",
+      "chapter": 1,
+      "latitude": 41.4562,
+      "longitude": -8.2175,
+      "note": "Aroes (Sao Romao), Fafe, near Guimaraes; not Vale de Cambra"
+    },
+    {
+      "place": "Alvite",
+      "chapter": 1,
+      "latitude": 41.4991,
+      "longitude": -8.0011,
+      "note": "Alvite, Cabeceiras de Basto (Casa da Torre); not Moimenta da Beira"
+    },
+    {
+      "place": "Antas",
+      "chapter": 1,
+      "latitude": 41.40247,
+      "longitude": -8.50968,
+      "note": "Antas near Vila Nova de Famalicao (Santiago de Antas church)"
+    },
+    {
+      "place": "São Brás",
+      "chapter": 1,
+      "latitude": 41.2196,
+      "longitude": -8.66182,
+      "note": "Monte de Sao Bras, Santa Cruz do Bispo, Matosinhos; not Alentejo"
+    },
+    {
+      "place": "Ermida",
+      "chapter": 1,
+      "latitude": 41.3527,
+      "longitude": -8.7426,
+      "note": "Ermida do Senhor do Socorro chapel inside Vila do Conde"
+    },
+    {
+      "place": "Vila Seca",
+      "chapter": 1,
+      "latitude": 41.513,
+      "longitude": -8.684,
+      "note": "Vila Seca, Barcelos, by Cavado near Gilmonde; not Armamar"
+    },
+    {
+      "place": "Pias",
+      "chapter": 1,
+      "latitude": 42.0211,
+      "longitude": -8.5079,
+      "note": "Pias freguesia, Moncao, along Minho; not Serpa, Alentejo"
+    },
+    {
+      "place": "Pinheiros",
+      "chapter": 1,
+      "latitude": 42.0427,
+      "longitude": -8.4956,
+      "note": "Pinheiros, Moncao (Palacio da Brejoeira); not Douro homonym"
+    },
+    {
+      "place": "Fonte Arcada",
+      "chapter": 1,
+      "latitude": 41.5794,
+      "longitude": -8.2456,
+      "note": "Homonym; correct is Fontarcada, Povoa de Lanhoso, with 1067 Romanesque church"
+    },
+    {
+      "place": "Sande",
+      "chapter": 1,
+      "latitude": 41.487,
+      "longitude": -8.35,
+      "note": "Homonym; route Sande-Brito-Ronfe near Guimaraes, not Sande Lamego"
+    },
+    {
+      "place": "Roriz",
+      "chapter": 1,
+      "latitude": 41.3444,
+      "longitude": -8.381,
+      "note": "Homonym; Roriz Santo Tirso, monastery church by rio Vizela"
+    },
+    {
+      "place": "Paredes",
+      "chapter": 1,
+      "latitude": 41.2052,
+      "longitude": -8.3303,
+      "note": "Homonym; Paredes city (Porto district) near Cete and Paco de Sousa"
+    },
+    {
+      "place": "Rebordosa",
+      "chapter": 2,
+      "latitude": 40.2431,
+      "longitude": -8.2819,
+      "note": "Homonym; Rebordosa village on Mondego near Penacova, not Paredes"
+    },
+    {
+      "place": "Escarigo",
+      "chapter": 3,
+      "latitude": 40.8427,
+      "longitude": -6.8321,
+      "note": "Border village in Figueira de Castelo Rodrigo near La Bouza, not Fundao"
+    },
+    {
+      "place": "Serra",
+      "chapter": 4,
+      "latitude": 39.6,
+      "longitude": -8.3,
+      "note": "Serra parish of Tomar on Zezere/Castelo do Bode, matching text"
+    },
+    {
+      "place": "Sítio",
+      "chapter": 4,
+      "latitude": 39.6053,
+      "longitude": -9.0765,
+      "note": "Sitio da Nazare promontory overlooking the beach, not Alentejo"
+    },
+    {
+      "place": "Lagoa",
+      "chapter": 4,
+      "latitude": 39.405,
+      "longitude": -9.22,
+      "note": "Lagoa de Obidos lagoon near Peniche, not Algarve town"
+    },
+    {
+      "place": "Carvalhal",
+      "chapter": 4,
+      "latitude": 39.29,
+      "longitude": -9.13056,
+      "note": "Same Bombarral village as Carvalhal de Obidos (Lafeta tower), not Grandola"
+    },
+    {
+      "place": "Torre (serra da Estrela)",
+      "chapter": 4,
+      "latitude": 38.6916,
+      "longitude": -9.216,
+      "note": "Text is Torre de Belem in Lisbon, not Serra da Estrela summit"
+    },
+    {
+      "place": "Santana",
+      "chapter": 4,
+      "latitude": 38.461377,
+      "longitude": -9.103049,
+      "note": "Santana village above Sesimbra; valley descends to Sesimbra"
+    },
+    {
+      "place": "Ermida",
+      "chapter": 6,
+      "latitude": 37.0836,
+      "longitude": -8.865,
+      "note": "Ermida de Nossa Senhora de Guadalupe near Raposeira, Vila do Bispo"
+    }
+  ],
+  "mentionExclusions": [
+    {
+      "place": "Pena (Sintra)",
+      "chapter": 4,
+      "section": 36,
+      "note": "Nossa Senhora da Pena ruins by Leiria castle, not the Sintra palace"
+    }
+  ],
+  "acceptedFlags": [
+    {
+      "place": "Monte Gordo",
+      "chapter": 6,
+      "note": "beach-bathing recap spans the Algarve; he did stop there"
+    }
+  ],
+  "splits": [
+    {
+      "place": "Lagoa",
+      "chapter": 4,
+      "name": "Lagoa de Óbidos",
+      "note": "ch4 Lagoa de Óbidos lagoon (the quote), a distinct place from the Algarve town indexed as 'Lagoa' (p381)"
+    },
+    {
+      "place": "Pias",
+      "chapter": 1,
+      "name": "Pias (Monção)",
+      "note": "ch1 Pias by the Minho near Monção, distinct from Pias de Serpa indexed as 'Pias' (p352)"
+    },
+    {
+      "place": "São Brás",
+      "chapter": 1,
+      "name": "Monte de São Brás",
+      "note": "ch1 Monte de São Brás, Matosinhos, distinct from São Brás do Alentejo indexed as 'São Brás' (p353)"
+    }
+  ]
 }

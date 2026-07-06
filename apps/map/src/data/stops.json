@@ -339,8 +339,8 @@
    "chapter": 1,
    "section": 6,
    "role": "stop",
-   "latitude": 41.163704,
-   "longitude": -7.787582
+   "latitude": 41.161,
+   "longitude": -7.785
   },
   {
    "ordinal": 39,
@@ -375,8 +375,8 @@
    "chapter": 1,
    "section": 6,
    "role": "stop",
-   "latitude": 41.371023,
-   "longitude": -7.732751
+   "latitude": 41.408488,
+   "longitude": -7.71508
   },
   {
    "ordinal": 43,
@@ -398,21 +398,21 @@
   },
   {
    "ordinal": 45,
+   "place": "Marco de Canaveses",
+   "chapter": 1,
+   "section": 7,
+   "role": "passed-through",
+   "latitude": 41.183535,
+   "longitude": -8.14938
+  },
+  {
+   "ordinal": 46,
    "place": "Tabuado",
    "chapter": 1,
    "section": 7,
    "role": "stop",
    "latitude": 41.184722,
    "longitude": -8.125833
-  },
-  {
-   "ordinal": 46,
-   "place": "Marco de Canaveses",
-   "chapter": 1,
-   "section": 7,
-   "role": "passed-through",
-   "latitude": 41.161655,
-   "longitude": -8.127792
   },
   {
    "ordinal": 47,
@@ -569,21 +569,21 @@
   },
   {
    "ordinal": 64,
+   "place": "Matosinhos",
+   "chapter": 1,
+   "section": 10,
+   "role": "stop",
+   "latitude": 41.180672,
+   "longitude": -8.682188
+  },
+  {
+   "ordinal": 65,
    "place": "Santa Cruz do Bispo",
    "chapter": 1,
    "section": 10,
    "role": "stop",
    "latitude": 41.215849,
    "longitude": -8.675506
-  },
-  {
-   "ordinal": 65,
-   "place": "Matosinhos",
-   "chapter": 1,
-   "section": 10,
-   "role": "stop",
-   "latitude": 41.183333,
-   "longitude": -8.7
   },
   {
    "ordinal": 66,
@@ -758,21 +758,21 @@
   },
   {
    "ordinal": 85,
+   "place": "Paredes de Coura",
+   "chapter": 1,
+   "section": 12,
+   "role": "passed-through",
+   "latitude": 41.911138,
+   "longitude": -8.559648
+  },
+  {
+   "ordinal": 86,
    "place": "Rubiães",
    "chapter": 1,
    "section": 12,
    "role": "stop",
    "latitude": 41.896389,
    "longitude": -8.625278
-  },
-  {
-   "ordinal": 86,
-   "place": "Paredes de Coura",
-   "chapter": 1,
-   "section": 12,
-   "role": "passed-through",
-   "latitude": 41.881667,
-   "longitude": -8.666389
   },
   {
    "ordinal": 87,
@@ -1077,8 +1077,8 @@
    "chapter": 1,
    "section": 16,
    "role": "passed-through",
-   "latitude": 41.620847,
-   "longitude": -8.153529
+   "latitude": 41.634675,
+   "longitude": -8.142566
   },
   {
    "ordinal": 121,
@@ -1203,8 +1203,8 @@
    "chapter": 1,
    "section": 16,
    "role": "stop",
-   "latitude": 41.1775,
-   "longitude": -8.323889
+   "latitude": 41.166262,
+   "longitude": -8.346021
   },
   {
    "ordinal": 135,
@@ -1262,21 +1262,21 @@
   },
   {
    "ordinal": 141,
+   "place": "Ovar",
+   "chapter": 2,
+   "section": 18,
+   "role": "stop",
+   "latitude": 40.859485,
+   "longitude": -8.625186
+  },
+  {
+   "ordinal": 142,
    "place": "Furadouro",
    "chapter": 2,
    "section": 18,
    "role": "stop",
    "latitude": 40.87365,
    "longitude": -8.677635
-  },
-  {
-   "ordinal": 142,
-   "place": "Ovar",
-   "chapter": 2,
-   "section": 18,
-   "role": "stop",
-   "latitude": 40.845668,
-   "longitude": -8.648478
   },
   {
    "ordinal": 143,
@@ -1347,8 +1347,8 @@
    "chapter": 2,
    "section": 18,
    "role": "passed-through",
-   "latitude": 40.5535,
-   "longitude": -8.698917
+   "latitude": 40.553907,
+   "longitude": -8.680884
   },
   {
    "ordinal": 151,
@@ -1590,8 +1590,8 @@
    "chapter": 2,
    "section": 22,
    "role": "stop",
-   "latitude": 40.140189,
-   "longitude": -8.124442
+   "latitude": 40.154555,
+   "longitude": -8.10994
   },
   {
    "ordinal": 178,
@@ -1689,8 +1689,8 @@
    "chapter": 3,
    "section": 24,
    "role": "stop",
-   "latitude": 40.533333,
-   "longitude": -7.333333
+   "latitude": 40.537755,
+   "longitude": -7.266311
   },
   {
    "ordinal": 189,
@@ -1734,8 +1734,8 @@
    "chapter": 3,
    "section": 25,
    "role": "passed-through",
-   "latitude": 40.779428,
-   "longitude": -7.103199
+   "latitude": 40.774818,
+   "longitude": -7.06501
   },
   {
    "ordinal": 194,
@@ -1779,8 +1779,8 @@
    "chapter": 3,
    "section": 26,
    "role": "passed-through",
-   "latitude": 40.930394,
-   "longitude": -7.251758
+   "latitude": 40.966281,
+   "longitude": -7.263748
   },
   {
    "ordinal": 199,
@@ -1964,21 +1964,21 @@
   },
   {
    "ordinal": 219,
-   "place": "Fornos de Algodres",
-   "chapter": 3,
-   "section": 28,
-   "role": "passed-through",
-   "latitude": 40.657968,
-   "longitude": -7.488089
-  },
-  {
-   "ordinal": 220,
    "place": "Pinheiro",
    "chapter": 3,
    "section": 28,
    "role": "stop",
    "latitude": 40.803878,
    "longitude": -7.601738
+  },
+  {
+   "ordinal": 220,
+   "place": "Fornos de Algodres",
+   "chapter": 3,
+   "section": 28,
+   "role": "passed-through",
+   "latitude": 40.622533,
+   "longitude": -7.537495
   },
   {
    "ordinal": 221,
@@ -2067,8 +2067,8 @@
    "chapter": 3,
    "section": 29,
    "role": "stop",
-   "latitude": 40.989863,
-   "longitude": -7.600615
+   "latitude": 40.984647,
+   "longitude": -7.618648
   },
   {
    "ordinal": 231,
@@ -2189,21 +2189,21 @@
   },
   {
    "ordinal": 244,
+   "place": "Salvador",
+   "chapter": 3,
+   "section": 31,
+   "role": "passed-through",
+   "latitude": 40.088831,
+   "longitude": -7.090754
+  },
+  {
+   "ordinal": 245,
    "place": "Monsanto",
    "chapter": 3,
    "section": 31,
    "role": "stop",
    "latitude": 40.038751,
    "longitude": -7.115113
-  },
-  {
-   "ordinal": 245,
-   "place": "Salvador",
-   "chapter": 3,
-   "section": 31,
-   "role": "passed-through",
-   "latitude": 40.0606,
-   "longitude": -7.1761
   },
   {
    "ordinal": 246,
@@ -2261,15 +2261,6 @@
   },
   {
    "ordinal": 252,
-   "place": "Alpedrinha",
-   "chapter": 3,
-   "section": 32,
-   "role": "stop",
-   "latitude": 40.099444,
-   "longitude": -7.45
-  },
-  {
-   "ordinal": 253,
    "place": "Alcaide",
    "chapter": 3,
    "section": 32,
@@ -2278,7 +2269,7 @@
    "longitude": -7.440082
   },
   {
-   "ordinal": 254,
+   "ordinal": 253,
    "place": "Donas",
    "chapter": 3,
    "section": 32,
@@ -2287,7 +2278,7 @@
    "longitude": -7.474722
   },
   {
-   "ordinal": 255,
+   "ordinal": 254,
    "place": "Fundão",
    "chapter": 3,
    "section": 32,
@@ -2296,7 +2287,7 @@
    "longitude": -7.501752
   },
   {
-   "ordinal": 256,
+   "ordinal": 255,
    "place": "Paul",
    "chapter": 3,
    "section": 32,
@@ -2305,7 +2296,7 @@
    "longitude": -7.638012
   },
   {
-   "ordinal": 257,
+   "ordinal": 256,
    "place": "Panasqueira",
    "chapter": 3,
    "section": 32,
@@ -2314,7 +2305,7 @@
    "longitude": -7.759336
   },
   {
-   "ordinal": 258,
+   "ordinal": 257,
    "place": "São Jorge da Beira",
    "chapter": 3,
    "section": 32,
@@ -2323,13 +2314,22 @@
    "longitude": -7.781667
   },
   {
-   "ordinal": 259,
+   "ordinal": 258,
    "place": "Ourondo",
    "chapter": 3,
    "section": 32,
    "role": "stop",
    "latitude": 40.147299,
    "longitude": -7.681867
+  },
+  {
+   "ordinal": 259,
+   "place": "Alpedrinha",
+   "chapter": 3,
+   "section": 32,
+   "role": "stop",
+   "latitude": 40.098905,
+   "longitude": -7.467911
   },
   {
    "ordinal": 260,
@@ -2373,8 +2373,8 @@
    "chapter": 3,
    "section": 33,
    "role": "passed-through",
-   "latitude": 39.824359,
-   "longitude": -8.082821
+   "latitude": 39.805174,
+   "longitude": -8.096435
   },
   {
    "ordinal": 265,
@@ -2706,8 +2706,8 @@
    "chapter": 4,
    "section": 38,
    "role": "stop",
-   "latitude": 38.991199,
-   "longitude": -9.062929
+   "latitude": 38.983022,
+   "longitude": -9.077634
   },
   {
    "ordinal": 302,
@@ -2958,8 +2958,8 @@
    "chapter": 4,
    "section": 41,
    "role": "stop",
-   "latitude": 39.253484,
-   "longitude": -9.290494
+   "latitude": 39.243385,
+   "longitude": -9.311918
   },
   {
    "ordinal": 330,
@@ -3084,8 +3084,8 @@
    "chapter": 4,
    "section": 44,
    "role": "stop",
-   "latitude": 38.725278,
-   "longitude": -9.15
+   "latitude": 38.707751,
+   "longitude": -9.136592
   },
   {
    "ordinal": 344,
@@ -3138,11 +3138,20 @@
    "chapter": 4,
    "section": 45,
    "role": "passed-through",
-   "latitude": 38.640264,
-   "longitude": -8.972056
+   "latitude": 38.652439,
+   "longitude": -8.993537
   },
   {
    "ordinal": 350,
+   "place": "Palmela",
+   "chapter": 4,
+   "section": 45,
+   "role": "stop",
+   "latitude": 38.569587,
+   "longitude": -8.901179
+  },
+  {
+   "ordinal": 351,
    "place": "Vila Fresca de Azeitão",
    "chapter": 4,
    "section": 45,
@@ -3151,16 +3160,16 @@
    "longitude": -8.99656
   },
   {
-   "ordinal": 351,
+   "ordinal": 352,
    "place": "Santana",
    "chapter": 4,
    "section": 45,
    "role": "passed-through",
-   "latitude": 38.4926,
-   "longitude": -9.1037
+   "latitude": 38.461377,
+   "longitude": -9.103049
   },
   {
-   "ordinal": 352,
+   "ordinal": 353,
    "place": "Sesimbra",
    "chapter": 4,
    "section": 45,
@@ -3169,7 +3178,7 @@
    "longitude": -9.099627
   },
   {
-   "ordinal": 353,
+   "ordinal": 354,
    "place": "Portinho da Arrábida",
    "chapter": 4,
    "section": 45,
@@ -3178,22 +3187,13 @@
    "longitude": -8.985
   },
   {
-   "ordinal": 354,
+   "ordinal": 355,
    "place": "Setúbal",
    "chapter": 4,
    "section": 45,
    "role": "stop",
    "latitude": 38.524306,
    "longitude": -8.8925
-  },
-  {
-   "ordinal": 355,
-   "place": "Palmela",
-   "chapter": 4,
-   "section": 45,
-   "role": "stop",
-   "latitude": 38.576045,
-   "longitude": -8.865312
   },
   {
    "ordinal": 356,
@@ -3318,8 +3318,8 @@
    "chapter": 5,
    "section": 46,
    "role": "passed-through",
-   "latitude": 38.950655,
-   "longitude": -8.185014
+   "latitude": 38.944229,
+   "longitude": -8.165556
   },
   {
    "ordinal": 370,
@@ -3453,8 +3453,8 @@
    "chapter": 5,
    "section": 48,
    "role": "stop",
-   "latitude": 38.866667,
-   "longitude": -7.166667
+   "latitude": 38.880613,
+   "longitude": -7.163701
   },
   {
    "ordinal": 385,
@@ -3476,15 +3476,6 @@
   },
   {
    "ordinal": 387,
-   "place": "Terena",
-   "chapter": 5,
-   "section": 49,
-   "role": "stop",
-   "latitude": 38.618891,
-   "longitude": -7.411767
-  },
-  {
-   "ordinal": 388,
    "place": "Alandroal",
    "chapter": 5,
    "section": 49,
@@ -3493,7 +3484,25 @@
    "longitude": -7.403831
   },
   {
+   "ordinal": 388,
+   "place": "Terena",
+   "chapter": 5,
+   "section": 49,
+   "role": "stop",
+   "latitude": 38.618891,
+   "longitude": -7.411767
+  },
+  {
    "ordinal": 389,
+   "place": "Redondo",
+   "chapter": 5,
+   "section": 49,
+   "role": "stop",
+   "latitude": 38.646672,
+   "longitude": -7.546776
+  },
+  {
+   "ordinal": 390,
    "place": "Vila Viçosa",
    "chapter": 5,
    "section": 49,
@@ -3502,7 +3511,7 @@
    "longitude": -7.416691
   },
   {
-   "ordinal": 390,
+   "ordinal": 391,
    "place": "Borba",
    "chapter": 5,
    "section": 49,
@@ -3511,7 +3520,7 @@
    "longitude": -7.458696
   },
   {
-   "ordinal": 391,
+   "ordinal": 392,
    "place": "Estremoz",
    "chapter": 5,
    "section": 49,
@@ -3520,22 +3529,13 @@
    "longitude": -7.592258
   },
   {
-   "ordinal": 392,
+   "ordinal": 393,
    "place": "Évora Monte",
    "chapter": 5,
    "section": 49,
    "role": "stop",
    "latitude": 38.765278,
    "longitude": -7.716389
-  },
-  {
-   "ordinal": 393,
-   "place": "Redondo",
-   "chapter": 5,
-   "section": 49,
-   "role": "stop",
-   "latitude": 38.646062,
-   "longitude": -7.601076
   },
   {
    "ordinal": 394,
@@ -3642,8 +3642,8 @@
    "chapter": 5,
    "section": 51,
    "role": "passed-through",
-   "latitude": 38.299861,
-   "longitude": -7.863565
+   "latitude": 38.319338,
+   "longitude": -7.86544
   },
   {
    "ordinal": 406,
@@ -3714,8 +3714,8 @@
    "chapter": 5,
    "section": 51,
    "role": "stop",
-   "latitude": 38.033333,
-   "longitude": -7.883333
+   "latitude": 38.01543,
+   "longitude": -7.865049
   },
   {
    "ordinal": 414,
@@ -3786,17 +3786,17 @@
    "chapter": 6,
    "section": 53,
    "role": "stop",
-   "latitude": 37.402329,
-   "longitude": -7.66905
+   "latitude": 37.470032,
+   "longitude": -7.472643
   },
   {
    "ordinal": 422,
-   "place": "Faro",
+   "place": "Estói",
    "chapter": 6,
    "section": 53,
    "role": "stop",
-   "latitude": 37.244809,
-   "longitude": -8.150756
+   "latitude": 37.094624,
+   "longitude": -7.894959
   },
   {
    "ordinal": 423,
@@ -3809,12 +3809,12 @@
   },
   {
    "ordinal": 424,
-   "place": "Estói",
+   "place": "Faro",
    "chapter": 6,
    "section": 53,
    "role": "stop",
-   "latitude": 37.094624,
-   "longitude": -7.894959
+   "latitude": 37.016327,
+   "longitude": -7.93522
   },
   {
    "ordinal": 425,
@@ -3849,8 +3849,8 @@
    "chapter": 6,
    "section": 53,
    "role": "stop",
-   "latitude": 37.225549,
-   "longitude": -7.474716
+   "latitude": 37.217888,
+   "longitude": -7.445708
   },
   {
    "ordinal": 429,
@@ -3885,8 +3885,8 @@
    "chapter": 6,
    "section": 54,
    "role": "stop",
-   "latitude": 37.145504,
-   "longitude": -8.068336
+   "latitude": 37.139953,
+   "longitude": -8.023324
   },
   {
    "ordinal": 433,
@@ -3926,15 +3926,6 @@
   },
   {
    "ordinal": 437,
-   "place": "Silves",
-   "chapter": 6,
-   "section": 54,
-   "role": "stop",
-   "latitude": 37.263983,
-   "longitude": -8.348731
-  },
-  {
-   "ordinal": 438,
    "place": "Olhos de Água",
    "chapter": 6,
    "section": 54,
@@ -3943,7 +3934,7 @@
    "longitude": -8.186724
   },
   {
-   "ordinal": 439,
+   "ordinal": 438,
    "place": "Armação de Pêra",
    "chapter": 6,
    "section": 54,
@@ -3952,7 +3943,7 @@
    "longitude": -8.362778
   },
   {
-   "ordinal": 440,
+   "ordinal": 439,
    "place": "Senhora da Rocha",
    "chapter": 6,
    "section": 54,
@@ -3961,13 +3952,22 @@
    "longitude": -8.38833
   },
   {
-   "ordinal": 441,
+   "ordinal": 440,
    "place": "Lagoa",
    "chapter": 6,
    "section": 54,
    "role": "passed-through",
    "latitude": 37.136291,
    "longitude": -8.454084
+  },
+  {
+   "ordinal": 441,
+   "place": "Silves",
+   "chapter": 6,
+   "section": 54,
+   "role": "stop",
+   "latitude": 37.189383,
+   "longitude": -8.439594
   },
   {
    "ordinal": 442,
@@ -4020,8 +4020,8 @@
    "chapter": 6,
    "section": 54,
    "role": "passed-through",
-   "latitude": 37.135506,
-   "longitude": -8.76652
+   "latitude": 37.096296,
+   "longitude": -8.769043
   },
   {
    "ordinal": 448,

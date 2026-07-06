@@ -198,5 +198,195 @@
     "name": "Monte de São Brás",
     "latitude": 41.2196,
     "longitude": -8.66182
+  },
+  {
+    "name": "Faro",
+    "latitude": 37.016327,
+    "longitude": -7.93522
+  },
+  {
+    "name": "Silves",
+    "latitude": 37.189383,
+    "longitude": -8.439594
+  },
+  {
+    "name": "Alcoutim",
+    "latitude": 37.470032,
+    "longitude": -7.472643
+  },
+  {
+    "name": "Paredes de Coura",
+    "latitude": 41.911138,
+    "longitude": -8.559648
+  },
+  {
+    "name": "Guarda",
+    "latitude": 40.537755,
+    "longitude": -7.266311
+  },
+  {
+    "name": "Fornos de Algodres",
+    "latitude": 40.622533,
+    "longitude": -7.537495
+  },
+  {
+    "name": "Redondo",
+    "latitude": 38.646672,
+    "longitude": -7.546776
+  },
+  {
+    "name": "Meda",
+    "latitude": 40.966281,
+    "longitude": -7.263748
+  },
+  {
+    "name": "Loulé",
+    "latitude": 37.139953,
+    "longitude": -8.023324
+  },
+  {
+    "name": "Avis",
+    "latitude": 39.055953,
+    "longitude": -7.889712
+  },
+  {
+    "name": "Pinhel",
+    "latitude": 40.774818,
+    "longitude": -7.06501
+  },
+  {
+    "name": "Palmela",
+    "latitude": 38.569587,
+    "longitude": -8.901179
+  },
+  {
+    "name": "Marco de Canaveses",
+    "latitude": 41.183535,
+    "longitude": -8.14938
+  },
+  {
+    "name": "Castro Marim",
+    "latitude": 37.217888,
+    "longitude": -7.445708
+  },
+  {
+    "name": "Ovar",
+    "latitude": 40.859485,
+    "longitude": -8.625186
+  },
+  {
+    "name": "Beja",
+    "latitude": 38.01543,
+    "longitude": -7.865049
+  },
+  {
+    "name": "Sertã",
+    "latitude": 39.805174,
+    "longitude": -8.096435
+  },
+  {
+    "name": "Moita",
+    "latitude": 38.652439,
+    "longitude": -8.993537
+  },
+  {
+    "name": "Lisboa",
+    "latitude": 38.707751,
+    "longitude": -9.136592
+  },
+  {
+    "name": "Paço de Sousa",
+    "latitude": 41.166262,
+    "longitude": -8.346021
+  },
+  {
+    "name": "Lourinhã",
+    "latitude": 39.243385,
+    "longitude": -9.311918
+  },
+  {
+    "name": "Góis",
+    "latitude": 40.154555,
+    "longitude": -8.10994
+  },
+  {
+    "name": "Vieira do Minho",
+    "latitude": 41.634675,
+    "longitude": -8.142566
+  },
+  {
+    "name": "Mora",
+    "latitude": 38.944229,
+    "longitude": -8.165556
+  },
+  {
+    "name": "Moimenta da Beira",
+    "latitude": 40.984647,
+    "longitude": -7.618648
+  },
+  {
+    "name": "Elvas",
+    "latitude": 38.880613,
+    "longitude": -7.163701
+  },
+  {
+    "name": "Arruda dos Vinhos",
+    "latitude": 38.983022,
+    "longitude": -9.077634
+  },
+  {
+    "name": "Vagos",
+    "latitude": 40.553907,
+    "longitude": -8.680884
+  },
+  {
+    "name": "Matosinhos",
+    "latitude": 41.180672,
+    "longitude": -8.682188
+  },
+  {
+    "name": "Boliqueime",
+    "latitude": 37.133774,
+    "longitude": -8.157906
+  },
+  {
+    "name": "Oriola",
+    "latitude": 38.319338,
+    "longitude": -7.86544
+  },
+  {
+    "name": "Alpedrinha",
+    "latitude": 40.098905,
+    "longitude": -7.467911
+  },
+  {
+    "name": "Samardã",
+    "latitude": 41.408488,
+    "longitude": -7.71508
+  },
+  {
+    "name": "Almadena",
+    "latitude": 37.096296,
+    "longitude": -8.769043
+  },
+  {
+    "name": "Salvador",
+    "latitude": 40.088831,
+    "longitude": -7.090754
+  },
+  {
+    "name": "Santana",
+    "latitude": 38.461377,
+    "longitude": -9.103049
+  },
+  {
+    "name": "Pousafoles do Bispo",
+    "latitude": 40.41211,
+    "longitude": -7.178631
+  },
+  {
+    "name": "Peso da Régua",
+    "latitude": 41.161,
+    "longitude": -7.785
   }
 ]
