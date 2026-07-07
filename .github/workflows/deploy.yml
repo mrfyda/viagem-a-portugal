@@ -62,6 +62,9 @@ jobs:
       - name: Test blog-sync
         run: uv run --with pytest --with pyyaml -m pytest tools/blog-sync/test_sync.py -q
 
+      - name: Test soundtrack-miner
+        run: uv run --with pytest --with pyyaml --with tzdata -m pytest tools/soundtrack-miner/test_mine.py -q
+
       - name: Sync blog featured journey
         run: uv run tools/blog-sync/sync.py
 

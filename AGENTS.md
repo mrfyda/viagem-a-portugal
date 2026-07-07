@@ -23,6 +23,10 @@ See README.md for the human-facing overview.
   `stops.json` changes (responses are cached; only new pairs hit the network).
 - `tools/blog-sync` — turns blog post `places:` front matter into
   `featured-journey.json`; CI fails if the committed file drifts.
+- `tools/soundtrack-miner` — reduces the (large, private, never-committed)
+  Spotify Extended Streaming History export to per-journey soundtrack
+  curation reports in its gitignored `output/`. Reads the export via
+  `SPOTIFY_HISTORY_PATH` (ZIP or extracted folder); car journeys only.
 - Python tooling runs via `uv run` / `uvx` (PEP 723 inline deps) — never
   install packages globally. The book EPUBs are NOT in the repo
   (copyright); scripts that need them read `BOOK_EPUB_PATH`. See

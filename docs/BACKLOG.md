@@ -68,7 +68,11 @@ strike through here; if anything still fails, the next angles are noted.
   Car journeys only — train trips are headphone listening, not a shared
   soundtrack (so Viagem IV is out by design). Data: the author's scrobble
   export has a gap from 2012 to 29 Nov 2023, which swallows Viagens I–III —
-  needs memory or Spotify's extended streaming history export.
+  Spotify's extended streaming history export covers it, and
+  `tools/soundtrack-miner` (2026-07) reduces that export (too large and too
+  private to ingest directly) to per-journey curation reports with a
+  ready-to-paste `soundtrack:` block. Remaining: run it on the real export,
+  curate, and build the "banda sonora" section in the post layout.
 - ~~Blog language suggestion~~ — decided against (2026-07): hreflang routes
   search traffic and the per-post switcher covers the rest; no client-side
   detection bar.
