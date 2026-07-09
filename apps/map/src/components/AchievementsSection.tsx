@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import { achievements, type Achievement } from "../lib/achievements";
 import { t } from "../lib/i18n";
 import { CHAPTER_COLORS } from "../lib/mapStyle";
+import type { Visits } from "../lib/progress";
 
 /** A chapter achievement wears its Route's colour; the rest wear their emoji. */
 function Badge({ achievement }: { achievement: Achievement }) {
@@ -36,13 +37,9 @@ function Badge({ achievement }: { achievement: Achievement }) {
  * fly (src/lib/achievements.ts) — locked rows show how far along they are, so
  * the section doubles as a "what's next" list.
  */
-export default function AchievementsSection({
-  visited,
-}: {
-  visited: ReadonlySet<string>;
-}) {
+export default function AchievementsSection({ visits }: { visits: Visits }) {
   const [open, setOpen] = useState(false);
-  const list = useMemo(() => achievements(visited), [visited]);
+  const list = useMemo(() => achievements(visits), [visits]);
   const unlocked = list.filter((a) => a.unlocked).length;
 
   return (

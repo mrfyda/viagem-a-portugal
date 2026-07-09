@@ -65,7 +65,7 @@ export default function TravelMap() {
   const isDesktop = useIsDesktop();
   const { session, loading: authLoading, configured, signIn, signUp, signOut } =
     useSession();
-  const { visits, visited, toggle, setVisitDate, metrics } = useProgress(
+  const { visits, toggle, setVisitDate, metrics } = useProgress(
     session?.user.id ?? null,
   );
   const visitsRef = useRef(visits);
@@ -451,7 +451,7 @@ export default function TravelMap() {
               })}
             </span>
             <span className="text-xs text-muted-foreground">{t("clickHint")}</span>
-            <AchievementsSection visited={visited} />
+            <AchievementsSection visits={visits} />
             <span className="flex items-center gap-2 text-xs text-muted-foreground">
               <span className="truncate">{session.user.email}</span>
               <button
