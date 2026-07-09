@@ -61,6 +61,15 @@ strike through here; if anything still fails, the next angles are noted.
 - **Shared journeys** — two Travelers sharing one visit log (or read-only
   views of each other's). Mostly a Supabase RLS design question; the
   VisitStore transport split keeps the client side tractable.
+- **More book-moment achievements** — a second batch of quirky achievements
+  mined from the full book text (the first batch — best meal, birthplace,
+  ninhos de Borba, Rio de Onor, four corners… — only drew on `quotes.json`
+  and the index). Candidate veins: the recurring closed-church gag, museums
+  the traveler couldn't enter, rain-soaked days, nights described in detail.
+  Needs `BOOK_EPUB_PATH` (the EPUB isn't in the repo), so it's an
+  owner-machine session: grep the text via tools/book-pipeline's extraction
+  output, verify each scene's place against the toponymic index, then extend
+  `apps/map/src/lib/achievements.ts` the same way.
 - **Trip soundtracks** — the music shared in the car on each retracing,
   alongside `transport:` in the post front matter (e.g. a `soundtrack:` list
   of title/artist/url). Render as a quiet "banda sonora" liner-note section
