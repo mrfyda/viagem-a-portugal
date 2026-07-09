@@ -36,7 +36,6 @@ import {
 } from "../lib/mapStyle";
 import { t } from "../lib/i18n";
 import { useIsDesktop } from "../hooks/useIsDesktop";
-import AchievementsSection from "./AchievementsSection";
 import AuthPanel from "./AuthPanel";
 import DetourDetailPanel from "./DetourDetailPanel";
 import MapSidebar from "./MapSidebar";
@@ -451,7 +450,6 @@ export default function TravelMap() {
               })}
             </span>
             <span className="text-xs text-muted-foreground">{t("clickHint")}</span>
-            <AchievementsSection visits={visits} />
             <span className="flex items-center gap-2 text-xs text-muted-foreground">
               <span className="truncate">{session.user.email}</span>
               <button
@@ -493,6 +491,7 @@ export default function TravelMap() {
             isDesktop={isDesktop}
             header={header}
             hasAccount={configured}
+            visits={session ? visits : null}
             focusedChapter={focusedChapter}
             onFocusChapter={focusChapter}
             onClearFocus={() => setFocusedChapter(null)}

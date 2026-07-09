@@ -11,7 +11,7 @@ import { searchPlaces } from "../lib/search";
  * search field (iOS 26), with matches listed in a panel above it. Web-only DOM
  * chrome styled with the project's tokens over `backdrop-blur`.
  */
-export type MobileTab = "map" | "journey" | "profile";
+export type MobileTab = "map" | "journey" | "achievements" | "profile";
 
 const stroke = {
   fill: "none",
@@ -33,6 +33,13 @@ const ICON: Record<MobileTab, ReactNode> = {
       <circle cx="6" cy="18.5" r="2.2" />
       <circle cx="18" cy="5.5" r="2.2" />
       <path d="M8 18h6a3.5 3.5 0 0 0 0-7H10a3.5 3.5 0 0 1 0-7h6" />
+    </svg>
+  ),
+  achievements: (
+    <svg viewBox="0 0 24 24" width={24} height={24} {...stroke}>
+      <path d="M7 4h10v5a5 5 0 0 1-10 0V4Z" />
+      <path d="M7 5H4.5a2.5 2.5 0 0 0 2.7 4M17 5h2.5a2.5 2.5 0 0 1-2.7 4" />
+      <path d="M12 14v3.5M8.5 20.5h7M12 17.5c-1.2 0-2 .9-2 3M12 17.5c1.2 0 2 .9 2 3" />
     </svg>
   ),
   profile: (
@@ -61,6 +68,7 @@ export default function MobileTabBar({
   active,
   searchOpen,
   hasProfile,
+  hasAchievements,
   onSelect,
   onToggleSearch,
   onSelectPlace,
@@ -69,6 +77,9 @@ export default function MobileTabBar({
   searchOpen: boolean;
   /** Hide the account tab on builds without sign-in (no Supabase config). */
   hasProfile: boolean;
+  /** The achievements tab appears once a Traveler is signed in — anonymous
+   * visitors have no visit log for it to reflect. */
+  hasAchievements: boolean;
   onSelect: (tab: MobileTab) => void;
   onToggleSearch: () => void;
   /** Pick a Place from the search results (also closes search, in the parent). */
@@ -179,6 +190,9 @@ export default function MobileTabBar({
   const tabs: { key: MobileTab; label: string }[] = [
     { key: "map", label: t("navMap") },
     { key: "journey", label: t("theJourney") },
+    ...(hasAchievements
+      ? [{ key: "achievements" as const, label: t("achievements") }]
+      : []),
     ...(hasProfile ? [{ key: "profile" as const, label: t("account") }] : []),
   ];
   const activeIndex = tabs.findIndex((tab) => tab.key === active);

@@ -6,6 +6,8 @@ import type { Detour } from "../lib/detours";
 import { stops } from "../lib/geo";
 import { t } from "../lib/i18n";
 import { CHAPTER_COLORS } from "../lib/mapStyle";
+import type { Visits } from "../lib/progress";
+import AchievementsSection from "./AchievementsSection";
 import DetourDetailPanel from "./DetourDetailPanel";
 import MapLegend from "./MapLegend";
 import MapNav from "./MapNav";
@@ -21,6 +23,10 @@ export interface MapSidebarProps {
   /** Whether sign-in exists at all (Supabase configured) — gates the mobile
    * account tab; the header alone can't tell, it always carries the hint. */
   hasAccount: boolean;
+  /** The signed-in Traveler's visit log, or null when signed out. Drives the
+   * achievements: a trophy tab + sheet on mobile, a fold-out under the
+   * header on desktop. */
+  visits: Visits | null;
   focusedChapter: number | null;
   onFocusChapter: (chapter: number) => void;
   onClearFocus: () => void;
@@ -197,6 +203,7 @@ export default function MapSidebar({
   isDesktop,
   header,
   hasAccount,
+  visits,
   focusedChapter,
   onFocusChapter,
   onClearFocus,
@@ -240,6 +247,13 @@ export default function MapSidebar({
                   </>
                 )}
               </MobileSheet>
+            ) : mobileView === "achievements" && visits ? (
+              <MobileSheet
+                title={t("achievements")}
+                onClose={() => setMobileView("map")}
+              >
+                <AchievementsSection visits={visits} expanded />
+              </MobileSheet>
             ) : mobileView === "profile" && hasAccount ? (
               <MobileSheet title={t("account")} onClose={() => setMobileView("map")}>
                 <div className="flex flex-col gap-2 px-2 py-1">{header}</div>
@@ -249,6 +263,7 @@ export default function MapSidebar({
               active={mobileView}
               searchOpen={searchOpen}
               hasProfile={hasAccount}
+              hasAchievements={visits != null}
               onSelect={(tab) => {
                 setSearchOpen(false);
                 setMobileView((cur) => (cur === tab && tab !== "map" ? "map" : tab));
@@ -310,6 +325,11 @@ export default function MapSidebar({
         <MapNav />
       </div>
       <div className="shrink-0">{header}</div>
+      {visits && (
+        <div className="shrink-0">
+          <AchievementsSection visits={visits} />
+        </div>
+      )}
       <TownSearch onSelect={onSelectPlace} />
       <div
         // Remount on every view change so the entrance animation replays —

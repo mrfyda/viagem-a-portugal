@@ -32,35 +32,49 @@ function Badge({ achievement }: { achievement: Achievement }) {
 }
 
 /**
- * The signed-in Traveler's milestones, folded under a one-line toggle so the
- * sidebar header stays slim. Everything derives from the visited set on the
- * fly (src/lib/achievements.ts) — locked rows show how far along they are, so
- * the section doubles as a "what's next" list.
+ * The signed-in Traveler's milestones. In the desktop sidebar they fold under
+ * a one-line toggle so the header stays slim; on mobile the tab bar's trophy
+ * tab opens them as their own sheet, `expanded` (the sheet already carries
+ * the title, so no toggle). Everything derives from the visit log on the fly
+ * (src/lib/achievements.ts) — locked rows show how far along they are, so the
+ * section doubles as a "what's next" list.
  */
-export default function AchievementsSection({ visits }: { visits: Visits }) {
+export default function AchievementsSection({
+  visits,
+  expanded = false,
+}: {
+  visits: Visits;
+  expanded?: boolean;
+}) {
   const [open, setOpen] = useState(false);
   const list = useMemo(() => achievements(visits), [visits]);
   const unlocked = list.filter((a) => a.unlocked).length;
 
   return (
     <div className="flex flex-col">
-      <button
-        onClick={() => setOpen((o) => !o)}
-        aria-expanded={open}
-        className="flex items-center gap-2 rounded-md py-1 text-left transition-colors hover:text-foreground"
-      >
-        <span aria-hidden className="text-sm">
-          🏆
-        </span>
-        <span className="text-[13px] font-semibold">{t("achievements")}</span>
-        <span className="text-xs tabular-nums text-muted-foreground">
+      {expanded ? (
+        <span className="px-1 pb-1 text-xs text-muted-foreground">
           {t("achievementsSummary", { unlocked, total: list.length })}
         </span>
-        <span aria-hidden className="text-xs text-muted-foreground">
-          {open ? "▾" : "▸"}
-        </span>
-      </button>
-      {open && (
+      ) : (
+        <button
+          onClick={() => setOpen((o) => !o)}
+          aria-expanded={open}
+          className="flex items-center gap-2 rounded-md py-1 text-left transition-colors hover:text-foreground"
+        >
+          <span aria-hidden className="text-sm">
+            🏆
+          </span>
+          <span className="text-[13px] font-semibold">{t("achievements")}</span>
+          <span className="text-xs tabular-nums text-muted-foreground">
+            {t("achievementsSummary", { unlocked, total: list.length })}
+          </span>
+          <span aria-hidden className="text-xs text-muted-foreground">
+            {open ? "▾" : "▸"}
+          </span>
+        </button>
+      )}
+      {(open || expanded) && (
         <ul className="flex flex-col">
           {list.map((a) => (
             <li
