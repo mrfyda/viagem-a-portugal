@@ -36,6 +36,7 @@ import {
 } from "../lib/mapStyle";
 import { t } from "../lib/i18n";
 import { useIsDesktop } from "../hooks/useIsDesktop";
+import AchievementsSection from "./AchievementsSection";
 import AuthPanel from "./AuthPanel";
 import DetourDetailPanel from "./DetourDetailPanel";
 import MapSidebar from "./MapSidebar";
@@ -64,7 +65,7 @@ export default function TravelMap() {
   const isDesktop = useIsDesktop();
   const { session, loading: authLoading, configured, signIn, signUp, signOut } =
     useSession();
-  const { visits, toggle, setVisitDate, metrics } = useProgress(
+  const { visits, visited, toggle, setVisitDate, metrics } = useProgress(
     session?.user.id ?? null,
   );
   const visitsRef = useRef(visits);
@@ -450,6 +451,7 @@ export default function TravelMap() {
               })}
             </span>
             <span className="text-xs text-muted-foreground">{t("clickHint")}</span>
+            <AchievementsSection visited={visited} />
             <span className="flex items-center gap-2 text-xs text-muted-foreground">
               <span className="truncate">{session.user.email}</span>
               <button

@@ -48,6 +48,21 @@ const en = {
   legendVisited: "visited",
   legendDetour: "detour — off the book",
   legendRoute: "route (one colour per chapter)",
+  achievements: "Achievements",
+  achievementsSummary: "{unlocked} / {total}",
+  achFirstStopTitle: "First stop",
+  achFirstStopDesc: "Mark your first town as visited",
+  achTowns10Title: "Traveler",
+  achTowns50Title: "Wayfarer",
+  achTownsDesc: "Visit {target} towns from the book",
+  achPages100Title: "Page by page",
+  achPagesDesc: "Travel {target} pages of the book",
+  achHalfBookTitle: "Half the book",
+  achHalfBookDesc: "Travel half of the book's pages",
+  achChapterTitle: "Route {chapter} complete",
+  achChapterDesc: "Visit every stop of “{title}”",
+  achFullJourneyTitle: "The whole journey",
+  achFullJourneyDesc: "Visit every stop of Saramago's journey",
 };
 
 const pt: typeof en = {
@@ -95,6 +110,21 @@ const pt: typeof en = {
   legendVisited: "visitada",
   legendDetour: "desvio — fora do livro",
   legendRoute: "percurso (uma cor por capítulo)",
+  achievements: "Conquistas",
+  achievementsSummary: "{unlocked} / {total}",
+  achFirstStopTitle: "Primeira paragem",
+  achFirstStopDesc: "Marque a primeira terra como visitada",
+  achTowns10Title: "Viajante",
+  achTowns50Title: "Andarilho",
+  achTownsDesc: "Visite {target} terras do livro",
+  achPages100Title: "Página a página",
+  achPagesDesc: "Percorra {target} páginas do livro",
+  achHalfBookTitle: "Meio livro",
+  achHalfBookDesc: "Percorra metade das páginas do livro",
+  achChapterTitle: "Percurso {chapter} completo",
+  achChapterDesc: "Visite todas as paragens de «{title}»",
+  achFullJourneyTitle: "A viagem inteira",
+  achFullJourneyDesc: "Visite todas as paragens da viagem de Saramago",
 };
 
 export type MessageKey = keyof typeof en;
