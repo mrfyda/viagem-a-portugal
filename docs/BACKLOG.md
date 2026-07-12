@@ -69,14 +69,6 @@ strike through here; if anything still fails, the next angles are noted.
   closed-church gag. Mined from the Caminho EPUB text, quotes verified
   verbatim, places checked against the index. See
   `apps/map/src/lib/achievements.ts`.
-- **Trip soundtracks** — the music shared in the car on each retracing,
-  alongside `transport:` in the post front matter (e.g. a `soundtrack:` list
-  of title/artist/url). Render as a quiet "banda sonora" liner-note section
-  at the end of the post (PT/EN via `page.lang`, like `transport.html`).
-  Car journeys only — train trips are headphone listening, not a shared
-  soundtrack (so Viagem IV is out by design). Data: the author's scrobble
-  export has a gap from 2012 to 29 Nov 2023, which swallows Viagens I–III —
-  needs memory or Spotify's extended streaming history export.
 - ~~Blog language suggestion~~ — decided against (2026-07): hreflang routes
   search traffic and the per-post switcher covers the rest; no client-side
   detection bar.
