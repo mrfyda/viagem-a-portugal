@@ -36,6 +36,15 @@
   "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
  },
  {
+  "name": "Colmeal da Torre",
+  "lat": 40.377972,
+  "lon": -7.341825,
+  "note": "⟨a confirmar⟩ Colmeal da Torre não consta do roteiro de Saramago em Viagem a Portugal.",
+  "image": "/assets/viagem-5/colmeal-da-torre.avif",
+  "postUrl": "/2026/07/12/viagem-a-portugal-v/",
+  "postTitle": "Viagem a Portugal V — ⟨título a confirmar⟩"
+ },
+ {
   "name": "Mazouco",
   "lat": 41.1402,
   "lon": -6.763,
@@ -88,5 +97,41 @@
   "image": "/assets/viagem-2/pitoes-das-junias.avif",
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
   "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+ },
+ {
+  "name": "Ruínas Romanas de Sendim",
+  "lat": 41.386,
+  "lon": -8.1829,
+  "note": "⟨a confirmar⟩ igreja em frente às ruínas romanas de Sendim (Felgueiras) — fora do roteiro de Saramago.",
+  "image": "/assets/viagem-5/agrelo-sendim.avif",
+  "postUrl": "/2026/07/12/viagem-a-portugal-v/",
+  "postTitle": "Viagem a Portugal V — ⟨título a confirmar⟩"
+ },
+ {
+  "name": "Sernancelhe",
+  "lat": 40.900008,
+  "lon": -7.494,
+  "note": "⟨a confirmar⟩ Sernancelhe não consta do roteiro de Saramago em Viagem a Portugal.",
+  "image": "/assets/viagem-5/sernancelhe-1.avif",
+  "postUrl": "/2026/07/12/viagem-a-portugal-v/",
+  "postTitle": "Viagem a Portugal V — ⟨título a confirmar⟩"
+ },
+ {
+  "name": "Videmonte",
+  "lat": 40.485414,
+  "lon": -7.414894,
+  "note": "⟨a confirmar⟩ Saramago não visitou Videmonte — fora do roteiro de Viagem a Portugal.",
+  "image": "/assets/viagem-5/videmonte.avif",
+  "postUrl": "/2026/07/12/viagem-a-portugal-v/",
+  "postTitle": "Viagem a Portugal V — ⟨título a confirmar⟩"
+ },
+ {
+  "name": "Vila da Ponte",
+  "lat": 40.92035,
+  "lon": -7.514317,
+  "note": "⟨a confirmar⟩ Vila da Ponte não consta do roteiro de Saramago em Viagem a Portugal.",
+  "image": "/assets/viagem-5/vila-da-ponte.avif",
+  "postUrl": "/2026/07/12/viagem-a-portugal-v/",
+  "postTitle": "Viagem a Portugal V — ⟨título a confirmar⟩"
  }
 ]
