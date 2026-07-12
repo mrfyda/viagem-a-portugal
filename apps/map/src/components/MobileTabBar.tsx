@@ -68,7 +68,6 @@ export default function MobileTabBar({
   active,
   searchOpen,
   hasProfile,
-  hasAchievements,
   onSelect,
   onToggleSearch,
   onSelectPlace,
@@ -77,9 +76,6 @@ export default function MobileTabBar({
   searchOpen: boolean;
   /** Hide the account tab on builds without sign-in (no Supabase config). */
   hasProfile: boolean;
-  /** The achievements tab appears once a Traveler is signed in — anonymous
-   * visitors have no visit log for it to reflect. */
-  hasAchievements: boolean;
   onSelect: (tab: MobileTab) => void;
   onToggleSearch: () => void;
   /** Pick a Place from the search results (also closes search, in the parent). */
@@ -190,9 +186,9 @@ export default function MobileTabBar({
   const tabs: { key: MobileTab; label: string }[] = [
     { key: "map", label: t("navMap") },
     { key: "journey", label: t("theJourney") },
-    ...(hasAchievements
-      ? [{ key: "achievements" as const, label: t("achievements") }]
-      : []),
+    // Achievements read from the book, not the log, so anonymous visitors get
+    // the tab too — the roster shows locked, as a preview of what's earnable.
+    { key: "achievements", label: t("achievements") },
     ...(hasProfile ? [{ key: "profile" as const, label: t("account") }] : []),
   ];
   const activeIndex = tabs.findIndex((tab) => tab.key === active);

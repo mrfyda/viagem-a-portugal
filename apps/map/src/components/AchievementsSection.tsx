@@ -31,23 +31,32 @@ function Badge({ achievement }: { achievement: Achievement }) {
   );
 }
 
+/** Stable empty log for anonymous visitors — a fresh Map each render would
+ * make useMemo recompute the (constant) all-locked list every time. */
+const EMPTY_VISITS: Visits = new Map();
+
 /**
- * The signed-in Traveler's milestones. In the desktop sidebar they fold under
- * a one-line toggle so the header stays slim; on mobile the tab bar's trophy
- * tab opens them as their own sheet, `expanded` (the sheet already carries
- * the title, so no toggle). Everything derives from the visit log on the fly
+ * The Traveler's milestones. In the desktop sidebar they fold under a one-line
+ * toggle so the header stays slim; on mobile the tab bar's trophy tab opens
+ * them as their own sheet, `expanded` (the sheet already carries the title, so
+ * no toggle). Everything derives from the visit log on the fly
  * (src/lib/achievements.ts) — locked rows show how far along they are, so the
- * section doubles as a "what's next" list.
+ * section doubles as a "what's next" list. Anonymous visitors (a null log) see
+ * the whole roster locked, as a preview of what's there to earn.
  */
 export default function AchievementsSection({
   visits,
+  signedOut = false,
   expanded = false,
 }: {
-  visits: Visits;
+  /** The Traveler's visit log, or null for an anonymous visitor. */
+  visits: Visits | null;
+  /** Anonymous on a build where signing in is possible — adds a sign-in nudge. */
+  signedOut?: boolean;
   expanded?: boolean;
 }) {
   const [open, setOpen] = useState(false);
-  const list = useMemo(() => achievements(visits), [visits]);
+  const list = useMemo(() => achievements(visits ?? EMPTY_VISITS), [visits]);
   const unlocked = list.filter((a) => a.unlocked).length;
 
   return (
@@ -76,6 +85,11 @@ export default function AchievementsSection({
       )}
       {(open || expanded) && (
         <ul className="flex flex-col">
+          {signedOut && (
+            <li className="px-1 pb-1 text-xs text-muted-foreground">
+              {t("achievementsSignedOut")}
+            </li>
+          )}
           {list.map((a) => (
             <li
               key={a.id}

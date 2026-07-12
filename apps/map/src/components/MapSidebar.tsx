@@ -247,12 +247,16 @@ export default function MapSidebar({
                   </>
                 )}
               </MobileSheet>
-            ) : mobileView === "achievements" && visits ? (
+            ) : mobileView === "achievements" ? (
               <MobileSheet
                 title={t("achievements")}
                 onClose={() => setMobileView("map")}
               >
-                <AchievementsSection visits={visits} expanded />
+                <AchievementsSection
+                  visits={visits}
+                  signedOut={hasAccount && visits == null}
+                  expanded
+                />
               </MobileSheet>
             ) : mobileView === "profile" && hasAccount ? (
               <MobileSheet title={t("account")} onClose={() => setMobileView("map")}>
@@ -263,7 +267,6 @@ export default function MapSidebar({
               active={mobileView}
               searchOpen={searchOpen}
               hasProfile={hasAccount}
-              hasAchievements={visits != null}
               onSelect={(tab) => {
                 setSearchOpen(false);
                 setMobileView((cur) => (cur === tab && tab !== "map" ? "map" : tab));
@@ -325,11 +328,9 @@ export default function MapSidebar({
         <MapNav />
       </div>
       <div className="shrink-0">{header}</div>
-      {visits && (
-        <div className="shrink-0">
-          <AchievementsSection visits={visits} />
-        </div>
-      )}
+      <div className="shrink-0">
+        <AchievementsSection visits={visits} signedOut={hasAccount && visits == null} />
+      </div>
       <TownSearch onSelect={onSelectPlace} />
       <div
         // Remount on every view change so the entrance animation replays —
