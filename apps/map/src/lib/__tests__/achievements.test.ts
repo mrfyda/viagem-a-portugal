@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { achievements, chapterStopPlaces, fourCorners } from "../achievements";
+import { achievements, chapterStopPlaces, fourCorners, lockedChurches } from "../achievements";
 import { bookPlaceByName, chapters } from "../book";
 import { towns } from "../geo";
 
@@ -73,7 +73,15 @@ describe("achievements", () => {
 describe("quirky achievements", () => {
   it("includes every storied place — each still has a marker", () => {
     const all = byId(new Map());
-    for (const id of ["best-meal", "birthplace", "highest-village", "nests", "rio-de-onor"]) {
+    const storiedIds = [
+      // First batch.
+      "best-meal", "birthplace", "highest-village", "nests", "rio-de-onor",
+      // Second batch, mined from the full text.
+      "saint-of-rats", "devil-by-horn", "granite-sow", "sky-cataract",
+      "ring-and-wait", "flickering-light", "night-in-the-car", "ban-the-weddings",
+      "leave-your-id", "sparrows-pardon", "director-and-museum", "journeys-end",
+    ];
+    for (const id of storiedIds) {
       expect(all.get(id), id).toBeDefined();
       expect(all.get(id)!.target, id).toBe(1);
     }
@@ -81,6 +89,20 @@ describe("quirky achievements", () => {
 
   it("unlocks the best meal in Barcelos", () => {
     expect(byId(visitMap(["Barcelos"])).get("best-meal")!.unlocked).toBe(true);
+  });
+
+  it("requires every locked-church town for the collection", () => {
+    expect(lockedChurches.size).toBeGreaterThan(1);
+    // Every town in the roster still has a marker to visit.
+    for (const place of lockedChurches) {
+      expect(towns.some((t) => t.name === place), place).toBe(true);
+    }
+    const partial = byId(visitMap([[...lockedChurches][0]])).get("locked-churches")!;
+    expect(partial.current).toBe(1);
+    expect(partial.unlocked).toBe(false);
+    const full = byId(visitMap(lockedChurches)).get("locked-churches")!;
+    expect(full.current).toBe(lockedChurches.size);
+    expect(full.unlocked).toBe(true);
   });
 
   it("requires all four compass extremes for the four corners", () => {

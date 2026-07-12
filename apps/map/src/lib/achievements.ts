@@ -61,6 +61,19 @@ export const fourCorners: ReadonlySet<string> = new Set(
   ).map((axis) => towns.reduce((a, b) => (axis(b) > axis(a) ? b : a)).name),
 );
 
+/** The towns where the traveler found the church locked — the book's running
+ * gag, from the fortress-matriz of Azurara to the priest who had "just left"
+ * Vila do Bispo at the very edge of the country. A collector's achievement:
+ * retrace every one. A Set so tests and the UI can see the roster. */
+export const lockedChurches: ReadonlySet<string> = new Set([
+  "Azurara",
+  "Escarigo",
+  "Ferreirim",
+  "Dois Portos",
+  "Évora Monte",
+  "Vila do Bispo",
+]);
+
 // Places the book grants a single page — the journey's footnotes.
 const onePagePlaces = new Set(
   bookPlaces
@@ -143,6 +156,20 @@ export function achievements(visits: Visits): Achievement[] {
     storied("highest-village", "⛰️", "achHighestTitle", "achHighestDesc", "Sabugueiro", visited),
     storied("nests", "🐦", "achNestsTitle", "achNestsDesc", "Borba", visited),
     storied("rio-de-onor", "🤝", "achRioDeOnorTitle", "achRioDeOnorDesc", "Rio de Onor", visited),
+    // Second batch — quirky moments mined from the full book text, in rough
+    // narrative order from the Nordeste down to the Algarve.
+    storied("saint-of-rats", "🐀", "achRatsTitle", "achRatsDesc", "Braga", visited),
+    storied("devil-by-horn", "😈", "achDevilTitle", "achDevilDesc", "Carrazedo de Montenegro", visited),
+    storied("granite-sow", "🐖", "achSowTitle", "achSowDesc", "Murça", visited),
+    storied("sky-cataract", "🌧️", "achCataractTitle", "achCataractDesc", "Abadim", visited),
+    storied("ring-and-wait", "🔔", "achBellTitle", "achBellDesc", "Aveiro", visited),
+    storied("flickering-light", "💡", "achFlickerTitle", "achFlickerDesc", "Viseu", visited),
+    storied("night-in-the-car", "🚗", "achFrozenCarTitle", "achFrozenCarDesc", "Guarda", visited),
+    storied("ban-the-weddings", "💒", "achWeddingsTitle", "achWeddingsDesc", "Tomar", visited),
+    storied("leave-your-id", "🪪", "achLeaveIdTitle", "achLeaveIdDesc", "Alcáçovas", visited),
+    storied("sparrows-pardon", "🕊️", "achSparrowTitle", "achSparrowDesc", "Torre de Palma", visited),
+    storied("director-and-museum", "🏛️", "achDirectorTitle", "achDirectorDesc", "Faro", visited),
+    storied("journeys-end", "🌅", "achJourneysEndTitle", "achJourneysEndDesc", "Finisterra do Sul", visited),
     {
       id: "four-corners",
       icon: "🧭",
@@ -150,6 +177,14 @@ export function achievements(visits: Visits): Achievement[] {
       descriptionKey: "achFourCornersDesc" as const,
       vars: {},
       ...completion(fourCorners, visited),
+    },
+    {
+      id: "locked-churches",
+      icon: "🗝️",
+      titleKey: "achLockedChurchesTitle" as const,
+      descriptionKey: "achLockedChurchesDesc" as const,
+      vars: {},
+      ...completion(lockedChurches, visited),
     },
     tally(
       "footnote",
