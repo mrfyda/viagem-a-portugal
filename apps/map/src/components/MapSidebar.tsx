@@ -13,6 +13,7 @@ import MapLegend from "./MapLegend";
 import MapNav from "./MapNav";
 import MapTopBar from "./MapTopBar";
 import MobileTabBar, { type MobileTab } from "./MobileTabBar";
+import { SheetCloseButton } from "./PanelShell";
 import TownDetailPanel, { type TownDetailPanelProps } from "./TownDetailPanel";
 import TownSearch from "./TownSearch";
 
@@ -182,17 +183,12 @@ function MobileSheet({
           <div aria-hidden className="mx-auto mb-1.5 h-1 w-9 rounded-full bg-border" />
           <span className="text-lg font-bold">{title}</span>
         </div>
-        <button
-          onClick={onClose}
-          aria-label={t("close")}
-          className="rounded px-1 text-muted-foreground hover:text-foreground"
-        >
-          ✕
-        </button>
+        <SheetCloseButton onClose={onClose} />
       </div>
-      {/* Own max-height besides the grid row — see the PanelShell body:
-          iOS 26.0/.1 mis-sizes grid/flex min-sizes (fixed in 26.2). */}
-      <div className="flex max-h-[calc(55dvh_-_4rem)] touch-pan-y flex-col gap-0.5 overflow-y-auto overscroll-contain p-2">
+      {/* Own max-height besides the grid row, and *:shrink-0 so children
+          overflow into scrolling instead of compressing to fit the cap —
+          see the PanelShell body for the full story. */}
+      <div className="flex max-h-[calc(55dvh_-_4rem)] touch-pan-y flex-col gap-0.5 overflow-y-auto overscroll-contain p-2 *:shrink-0">
         {children}
       </div>
     </aside>
@@ -340,7 +336,10 @@ export default function MapSidebar({
           selectedDetour?.name ??
           (focusedChapter != null ? `chapter-${focusedChapter}` : "chapters")
         }
-        className="animate-panel-in flex min-h-0 flex-1 flex-col gap-2 overflow-y-auto"
+        // *:shrink-0: a scroll container's children must overflow, never
+        // compress — overflow-hidden items (the post photo card) otherwise
+        // shrink to fit and eat the very overflow that makes it scroll.
+        className="animate-panel-in flex min-h-0 flex-1 flex-col gap-2 overflow-y-auto *:shrink-0"
       >
         {body}
       </div>

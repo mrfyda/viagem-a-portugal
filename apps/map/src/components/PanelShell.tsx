@@ -3,6 +3,31 @@ import { useEffect, useRef, type ReactNode } from "react";
 import { useSheetDrag } from "../hooks/useSheetDrag";
 import { t } from "../lib/i18n";
 
+// Header controls are drawn as SVGs in equal-sized buttons — text glyphs
+// (‹ › ✕) carry different metrics per font/size, so they never align.
+const stroke = {
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 1.8,
+  strokeLinecap: "round" as const,
+  strokeLinejoin: "round" as const,
+};
+
+const headerButton =
+  "flex h-8 w-8 items-center justify-center rounded text-muted-foreground " +
+  "hover:text-foreground disabled:opacity-30 disabled:hover:text-muted-foreground";
+
+/** The sheets' shared close control — also used by MapSidebar's tab sheet. */
+export function SheetCloseButton({ onClose }: { onClose: () => void }) {
+  return (
+    <button onClick={onClose} aria-label={t("close")} className={headerButton}>
+      <svg viewBox="0 0 24 24" width={18} height={18} {...stroke}>
+        <path d="M6 6l12 12M18 6 6 18" />
+      </svg>
+    </button>
+  );
+}
+
 /**
  * Shared chrome for the map's detail panels plus the title/close/step header.
  * Used by both TownDetailPanel (book Places) and DetourDetailPanel (off-book
@@ -61,27 +86,25 @@ export default function PanelShell({
               onClick={onPrev ?? undefined}
               disabled={!onPrev}
               aria-label={t("prevPlace")}
-              className="rounded px-1.5 text-lg leading-none text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:hover:text-muted-foreground"
+              className={headerButton}
             >
-              ‹
+              <svg viewBox="0 0 24 24" width={18} height={18} {...stroke}>
+                <path d="m14 6-6 6 6 6" />
+              </svg>
             </button>
             <button
               onClick={onNext ?? undefined}
               disabled={!onNext}
               aria-label={t("nextPlace")}
-              className="rounded px-1.5 text-lg leading-none text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:hover:text-muted-foreground"
+              className={headerButton}
             >
-              ›
+              <svg viewBox="0 0 24 24" width={18} height={18} {...stroke}>
+                <path d="m10 6 6 6-6 6" />
+              </svg>
             </button>
           </>
         )}
-        <button
-          onClick={onClose}
-          aria-label={t("close")}
-          className="rounded px-1 text-muted-foreground hover:text-foreground"
-        >
-          ✕
-        </button>
+        <SheetCloseButton onClose={onClose} />
       </div>
     </div>
   );
@@ -114,10 +137,13 @@ export default function PanelShell({
       {/* touch-pan-y declares the body's gesture to iOS up front;
           overscroll-contain keeps the swipe from rubber-banding the page.
           The body carries its own max-height (sheet cap minus the ~4.5rem
-          header) besides the grid row: iOS 26.0/.1 resolves grid/flex
-          automatic min-sizes wrong (fixed in Safari 26.2), and a scroller
-          whose constraint lives on itself can't be mis-sized by either. */}
-      <div className="flex max-h-[calc(60dvh_-_4.5rem)] touch-pan-y flex-col gap-2 overflow-y-auto overscroll-contain p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+          header) besides the grid row, so no grid/flex min-size resolution
+          is involved. *:shrink-0 because the on-device failure was the
+          content, not the scroller: a flex item with overflow-hidden (the
+          post photo card) has a zero automatic min-size, so the column
+          compressed it to fit the cap — the body never overflowed, which
+          left nothing to scroll and the photo squashed to a sliver. */}
+      <div className="flex max-h-[calc(60dvh_-_4.5rem)] touch-pan-y flex-col gap-2 overflow-y-auto overscroll-contain p-4 pb-[max(1rem,env(safe-area-inset-bottom))] *:shrink-0">
         {children}
       </div>
     </div>

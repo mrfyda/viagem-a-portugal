@@ -55,6 +55,19 @@ strike through here; if anything still fails, the next angles are noted.
   bodies now carry their own max-height (sheet cap minus header) so no
   flex/grid min-size resolution is involved. If even that fails on device,
   it's time for remote Safari devtools (Mac + cable) — guessing is done.
+  **Root cause found (2026-07-13)** via a temporary on-device
+  `?debug=scroll` overlay (removed after use): the scroller was fine —
+  the *content* was collapsing. The PostPhotoLink card is a flex item with
+  `overflow-hidden`, which zeroes its automatic min-size, so under the
+  body's max-height cap it compressed to a sliver instead of forcing
+  overflow; `scrollHeight == clientHeight`, nothing to scroll, swipes just
+  rubber-banded. Not device-specific at all — production Chromium at a
+  phone viewport shows the same squash. Every prior test missed it because
+  dev servers have no blog photos (broken hero collapses to the text link)
+  and the probed places' text happened to fit. Fix: `*:shrink-0` on all
+  three scroll bodies — a scroll container's children must overflow, never
+  compress. Verified in Chromium (injected photo card keeps its 4:3
+  height, body overflows); pending one device retest to strike this.
 - **Edge-to-edge under Safari's bars** (2026-07): Safari 26 ignores
   `theme-color` and tints its liquid-glass chrome by sampling the page;
   transparent/unset roots fall back to solid white bands. `html`/`body` now
