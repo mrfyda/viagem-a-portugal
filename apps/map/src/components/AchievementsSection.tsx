@@ -84,7 +84,14 @@ export default function AchievementsSection({
         </button>
       )}
       {(open || expanded) && (
-        <ul className="flex flex-col">
+        // The desktop fold-out sits in a fixed-height sidebar above the
+        // chapter list, so it scrolls itself; the mobile sheet body already
+        // scrolls, so `expanded` stays uncapped.
+        <ul
+          className={`flex flex-col ${
+            expanded ? "" : "max-h-[40dvh] overflow-y-auto overscroll-contain"
+          }`}
+        >
           {signedOut && (
             <li className="px-1 pb-1 text-xs text-muted-foreground">
               {t("achievementsSignedOut")}

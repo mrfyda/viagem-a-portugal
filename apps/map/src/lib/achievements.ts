@@ -161,7 +161,6 @@ export function achievements(visits: Visits): Achievement[] {
     storied("saint-of-rats", "🐀", "achRatsTitle", "achRatsDesc", "Braga", visited),
     storied("devil-by-horn", "😈", "achDevilTitle", "achDevilDesc", "Carrazedo de Montenegro", visited),
     storied("granite-sow", "🐖", "achSowTitle", "achSowDesc", "Murça", visited),
-    storied("sky-cataract", "🌧️", "achCataractTitle", "achCataractDesc", "Abadim", visited),
     storied("ring-and-wait", "🔔", "achBellTitle", "achBellDesc", "Aveiro", visited),
     storied("flickering-light", "💡", "achFlickerTitle", "achFlickerDesc", "Viseu", visited),
     storied("night-in-the-car", "🚗", "achFrozenCarTitle", "achFrozenCarDesc", "Guarda", visited),

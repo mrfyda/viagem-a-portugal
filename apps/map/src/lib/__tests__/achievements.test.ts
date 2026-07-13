@@ -77,7 +77,7 @@ describe("quirky achievements", () => {
       // First batch.
       "best-meal", "birthplace", "highest-village", "nests", "rio-de-onor",
       // Second batch, mined from the full text.
-      "saint-of-rats", "devil-by-horn", "granite-sow", "sky-cataract",
+      "saint-of-rats", "devil-by-horn", "granite-sow",
       "ring-and-wait", "flickering-light", "night-in-the-car", "ban-the-weddings",
       "leave-your-id", "sparrows-pardon", "director-and-museum", "journeys-end",
     ];
