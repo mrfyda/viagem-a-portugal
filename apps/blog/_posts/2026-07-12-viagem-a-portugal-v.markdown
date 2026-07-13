@@ -185,7 +185,7 @@ _⟨o que ver / o que aconteceu aqui — a escrever⟩_
 > — José Saramago, *Viagem a Portugal*
 
 <figure>
-  <img src="{{ '/assets/viagem-5/sao-martinho-de-mouros.avif' | relative_url }}" alt="São Martinho de Mouros" width="1600" height="900" decoding="async" loading="lazy">
+  <img src="{{ '/assets/viagem-5/sao-martinho-de-mouros.avif' | relative_url }}" alt="São Martinho de Mouros" width="1200" height="900" decoding="async" loading="lazy">
   <figcaption>São Martinho de Mouros</figcaption>
 </figure>
 
