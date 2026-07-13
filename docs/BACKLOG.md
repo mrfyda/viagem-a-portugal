@@ -26,6 +26,17 @@ strike through here; if anything still fails, the next angles are noted.
   child red = map sitemap; all red = property-level). If a row still
   fails, click it: the itemized error under the header (type/count/example
   URL) is the answer — bring that string back before any more changes.
+  **Root cause found (2026-07-13):** web research shows this is a known,
+  unresolved platform-wide GSC failure for `*.github.io` sitemaps — worst
+  for project pages (`name.github.io/slug`, our shape) — not a defect in
+  our files (re-verified: all three URLs still 200 `application/xml`, no
+  BOM, no redirect; Bing reads the same sitemaps instantly). GitHub
+  community discussion 149884 (Jan 2025 → Apr 2026): the same sitemap
+  processes fine on a custom domain; Google experts note sitemaps are
+  only crawl hints regardless. Durable fix: serve the site on the custom
+  domain (GitHub Pages supports it) + a new GSC property there; until
+  then, manual URL submission is the only lever and the sitemap row's red
+  status can be ignored.
 
 - **Place-sheet scrolling** (2026-07): sheets went from column flex to grid
   `auto minmax(0,1fr)` rows — Safari never gives a flex child a definite size
