@@ -6,6 +6,8 @@
 const en = {
   progress: "{towns} / {townsTotal} towns · {pages} / {pagesTotal} pages traveled",
   clickHint: "Click a town to mark it visited",
+  visited: "Visited",
+  visitedOn: "Visited {date}",
   alsoIndexedAs: "also indexed as: {names}",
   pages: "pp. {pages}",
   stopOnRoute: "Stop #{ordinal} of the journey — Route {chapter}",
@@ -109,6 +111,8 @@ const en = {
 const pt: typeof en = {
   progress: "{towns} / {townsTotal} terras · {pages} / {pagesTotal} páginas percorridas",
   clickHint: "Clique numa terra para a marcar como visitada",
+  visited: "Visitado",
+  visitedOn: "Visitado a {date}",
   alsoIndexedAs: "também no índice como: {names}",
   pages: "pp. {pages}",
   stopOnRoute: "Paragem n.º {ordinal} da viagem — Percurso {chapter}",

@@ -60,19 +60,18 @@
         font-family: "Cardo", serif;
         background-color: #f8f4f0;
     }
-}
 
-/* maplibre's hover popup was the one unbranded piece of chrome: give it the
-   site's serif, ink and radius so a tooltip reads as part of the book. */
-.maplibregl-popup-content {
-    font-family: "Cardo", serif;
-    color: hsl(24 10% 10%);
-    font-size: 13px;
-    line-height: 1.45;
-    padding: 5px 10px;
-    border-radius: calc(0.5rem - 2px);
-    border: 1px solid hsl(20 6% 90%);
-    box-shadow: 0 2px 8px rgba(28, 25, 23, 0.12);
+    /* iOS tap feel: no grey flash on tap (dots, cards and buttons carry
+       their own feedback), and `manipulation` drops the ~350ms double-tap-
+       zoom delay WebKit otherwise inserts before every click. The map canvas
+       is untouched — maplibre manages its own touch-action. */
+    a,
+    button,
+    input,
+    [role="button"] {
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+    }
 }
 
 /* Mobile: the full-width brand bar (MapTopBar) owns the top edge, so push the
@@ -81,9 +80,10 @@
 @media (max-width: 767px) {
     /* Keep the bottom-right corner stack — zoom/locate controls (the
        one-handed thumb zone) and the OSM attribution — above the floating
-       glass tab bar. */
+       glass tab bar, and clear of the curved corner in landscape. */
     .maplibregl-ctrl-bottom-right {
         margin-bottom: calc(max(0.75rem, env(safe-area-inset-bottom, 0px)) + 3.75rem);
+        margin-right: env(safe-area-inset-right, 0px);
     }
 }
 

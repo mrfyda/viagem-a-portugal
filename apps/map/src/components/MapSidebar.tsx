@@ -173,7 +173,7 @@ function MobileSheet({
       style={sheetStyle}
       // Grid rows + dvh, not column flex + vh: see the PanelShell mobile
       // sheet — Safari needs the minmax(0,1fr) row for the body to scroll.
-      className="animate-sheet-in absolute inset-x-3 bottom-20 z-10 grid max-h-[55dvh] grid-rows-[auto_minmax(0,1fr)] rounded-2xl border border-border bg-card/95 text-sm text-foreground shadow-lg backdrop-blur-sm"
+      className="animate-sheet-in absolute left-[calc(0.75rem+env(safe-area-inset-left))] right-[calc(0.75rem+env(safe-area-inset-right))] bottom-20 z-10 grid max-h-[55dvh] grid-rows-[auto_minmax(0,1fr)] rounded-2xl border border-border bg-card/95 text-sm text-foreground shadow-lg backdrop-blur-sm"
     >
       <div
         {...handleProps}

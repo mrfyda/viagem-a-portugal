@@ -61,8 +61,10 @@ const glass =
   "border border-white/50 bg-card/70 backdrop-blur-xl backdrop-saturate-150 " +
   "shadow-[0_10px_30px_-8px_rgba(15,18,40,0.35),inset_0_1px_0_rgba(255,255,255,0.7)]";
 
+// Safe-area left/right matter in landscape: viewport-fit=cover lets the bar
+// slide under the notch / curved corners without them.
 const dock =
-  "absolute inset-x-3 bottom-[max(0.75rem,env(safe-area-inset-bottom))] z-10 flex items-stretch gap-2.5";
+  "absolute left-[calc(0.75rem+env(safe-area-inset-left))] right-[calc(0.75rem+env(safe-area-inset-right))] bottom-[max(0.75rem,env(safe-area-inset-bottom))] z-10 flex items-stretch gap-2.5";
 
 export default function MobileTabBar({
   active,
@@ -106,7 +108,7 @@ export default function MobileTabBar({
             ...ease,
             ...(keyboardInset > 0 ? { bottom: keyboardInset + 68 } : {}),
           }}
-          className="absolute inset-x-3 bottom-[calc(max(0.75rem,env(safe-area-inset-bottom))+3.75rem)] z-10 max-h-[45vh] overflow-y-auto overscroll-contain rounded-2xl border border-border bg-card/95 shadow-lg backdrop-blur-md"
+          className="absolute left-[calc(0.75rem+env(safe-area-inset-left))] right-[calc(0.75rem+env(safe-area-inset-right))] bottom-[calc(max(0.75rem,env(safe-area-inset-bottom))+3.75rem)] z-10 max-h-[45vh] overflow-y-auto overscroll-contain rounded-2xl border border-border bg-card/95 shadow-lg backdrop-blur-md"
         >
           {matches.length ? (
             <ul className="py-1">

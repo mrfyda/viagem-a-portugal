@@ -1,8 +1,13 @@
 import "maplibre-gl/dist/maplibre-gl.css";
 
-import type { Point } from "geojson";
 import maplibregl from "maplibre-gl";
-import { useEffect, useRef, useState } from "react";
+import {
+  useEffect,
+  useReducer,
+  useRef,
+  useState,
+  type CSSProperties,
+} from "react";
 
 import { useCountUp } from "../hooks/useCountUp";
 import { useProgress } from "../hooks/useProgress";
@@ -19,6 +24,7 @@ import { detourBySlug, detourCenter, detoursGeoJson } from "../lib/detours";
 import {
   chapterDim,
   DETOUR_COLOR,
+  DETOUR_HIT_RADIUS,
   fetchMapStyle,
   MARKER_MIN_RADIUS,
   ROUTE_COLOR,
@@ -28,6 +34,7 @@ import {
   SELECTION_RING_COLOR,
   TIER_INTERACTIVE_ZOOM,
   TOWN_COLOR,
+  TOWN_HIT_RADIUS,
   TOWN_OPACITY,
   TOWN_RADIUS,
   TOWN_STROKE_OPACITY,
@@ -38,6 +45,8 @@ import { t } from "../lib/i18n";
 import { useIsDesktop } from "../hooks/useIsDesktop";
 import AuthPanel from "./AuthPanel";
 import DetourDetailPanel from "./DetourDetailPanel";
+import JourneyRevealOverlay from "./JourneyRevealOverlay";
+import MapHoverCard, { type HoverTarget } from "./MapHoverCard";
 import MapSidebar from "./MapSidebar";
 import TownDetailPanel from "./TownDetailPanel";
 
@@ -47,6 +56,37 @@ const NO_SELECTION: maplibregl.FilterSpecification = [
   ["get", "indexName"],
   "\u0000",
 ];
+
+/** A hovered feature plus the dot's coordinates, for anchoring the card. */
+type Hover = HoverTarget & { lngLat: [number, number] };
+
+// Hover-preview card geometry: fixed width, clamped into the container,
+// flipped above/below the dot by whichever half of the map it sits in —
+// max-height is whatever room that side leaves.
+const HOVER_CARD_WIDTH = 288;
+const HOVER_CARD_MARGIN = 12;
+const HOVER_CARD_GAP = 14;
+
+function hoverCardStyle(
+  point: { x: number; y: number },
+  container: HTMLElement,
+): CSSProperties {
+  const half = HOVER_CARD_WIDTH / 2;
+  const left = Math.min(
+    Math.max(point.x, half + HOVER_CARD_MARGIN),
+    container.clientWidth - half - HOVER_CARD_MARGIN,
+  );
+  const below = point.y < container.clientHeight / 2;
+  return {
+    left,
+    top: point.y,
+    width: HOVER_CARD_WIDTH,
+    maxHeight: (below ? container.clientHeight - point.y : point.y) - 30,
+    transform: below
+      ? `translate(-50%, ${HOVER_CARD_GAP}px)`
+      : `translate(-50%, calc(-100% - ${HOVER_CARD_GAP}px))`,
+  };
+}
 
 export default function TravelMap() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -60,6 +100,54 @@ export default function TravelMap() {
     selection?.kind === "detour" ? detourBySlug(selection.slug) ?? null : null;
   // Chapter focus: one Route holds the stage (sidebar stop list + map dim).
   const [focusedChapter, setFocusedChapter] = useState<number | null>(null);
+
+  // The journey-reveal loading choreography (JourneyRevealOverlay): the
+  // routes layer stays at opacity 0 until the overlay's ring has morphed
+  // into the route shapes — `revealed` flips it on (maplibre's default
+  // 300ms paint transition is the crossfade), `overlayDone` unmounts the
+  // overlay. A deep link at mount skips the morph: someone following a
+  // shared ?place= link is owed their destination, not a show.
+  const [revealed, setRevealed] = useState(false);
+  const [overlayDone, setOverlayDone] = useState(false);
+  const skipRevealRef = useRef(selection != null);
+
+  // Desktop hover preview (touches never reach it — see the touchstart
+  // guard). Closing runs on a short grace timer so the cursor can travel
+  // from the dot into the card without it vanishing en route.
+  const [hover, setHover] = useState<Hover | null>(null);
+  const hoverKeyRef = useRef<string | null>(null);
+  const hoverTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const cancelHoverClose = () => {
+    if (hoverTimerRef.current == null) return;
+    clearTimeout(hoverTimerRef.current);
+    hoverTimerRef.current = null;
+  };
+  const scheduleHoverClose = () => {
+    cancelHoverClose();
+    hoverTimerRef.current = setTimeout(() => {
+      hoverTimerRef.current = null;
+      setHover(null);
+    }, 320);
+  };
+  const closeHover = () => {
+    cancelHoverClose();
+    hoverKeyRef.current = null;
+    setHover(null);
+  };
+
+  // The card anchors to the dot's projected screen position; while the
+  // camera moves (drag, wheel, easeTo) re-render so it stays glued to the
+  // dot — the maplibre Popup used to do this tracking internally.
+  const [, bumpHoverAnchor] = useReducer((n: number) => n + 1, 0);
+  useEffect(() => {
+    if (!hover || !mapReady) return;
+    const map = mapRef.current;
+    if (!map) return;
+    map.on("move", bumpHoverAnchor);
+    return () => {
+      map.off("move", bumpHoverAnchor);
+    };
+  }, [hover, mapReady]);
 
   const isDesktop = useIsDesktop();
   const { session, loading: authLoading, configured, signIn, signUp, signOut } =
@@ -129,7 +217,9 @@ export default function TravelMap() {
         id: "routes",
         type: "line",
         source: "routes",
-        paint: { "line-color": ROUTE_COLOR, "line-width": 2.5, "line-opacity": 0.75 },
+        // Hidden until the loading overlay reveals the journey (the dim
+        // effect below owns line-opacity from then on).
+        paint: { "line-color": ROUTE_COLOR, "line-width": 2.5, "line-opacity": 0 },
       });
 
       map.addSource("towns", {
@@ -197,63 +287,136 @@ export default function TravelMap() {
         },
       });
 
-      // Dots below their disclosure tier render at radius 0 but still
-      // hit-test — only interact with the ones actually visible.
+      // Interaction happens on invisible fat hit layers, not the visible
+      // dots: every place gets a finger-sized target even when its dot is
+      // tiny. Rendered (near-transparent, top of the stack) because
+      // queryRenderedFeatures only sees painted circles.
+      map.addLayer({
+        id: "towns-hit",
+        type: "circle",
+        source: "towns",
+        paint: {
+          "circle-color": "#000000",
+          "circle-opacity": 0.001,
+          "circle-radius": TOWN_HIT_RADIUS,
+        },
+      });
+      map.addLayer({
+        id: "detours-hit",
+        type: "circle",
+        source: "detours",
+        minzoom: 8,
+        paint: {
+          "circle-color": "#000000",
+          "circle-opacity": 0.001,
+          "circle-radius": DETOUR_HIT_RADIUS,
+        },
+      });
+
+      // Dots below their disclosure tier render at radius 0 but their hit
+      // circles still paint — only interact with the ones actually visible.
       const townInteractive = (f: maplibregl.MapGeoJSONFeature) =>
         map.getZoom() >= TIER_INTERACTIVE_ZOOM[f.properties.tier as number];
-      const visibleTown = (features?: maplibregl.MapGeoJSONFeature[]) =>
-        features?.find(townInteractive);
 
-      const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
-      map.on("mouseenter", "towns", (event) => {
-        const feature = visibleTown(event.features);
-        if (!feature) return;
-        map.getCanvas().style.cursor = "pointer";
-        const [lon, lat] = (feature.geometry as Point).coordinates;
-        const { name, pagesLabel, visitedDate } = feature.properties;
-        const parts = [pagesLabel ? `${name} — pp. ${pagesLabel}` : name];
-        if (visitedDate) parts.push(`visited ${visitedDate}`);
-        popup.setLngLat([lon, lat]).setText(parts.join(" · ")).addTo(map);
-      });
-      map.on("mouseleave", "towns", () => {
-        map.getCanvas().style.cursor = "";
-        popup.remove();
-      });
-      map.on("click", "towns", (event) => {
-        const feature = visibleTown(event.features);
-        if (feature) selectPlace(feature.properties.indexName);
-      });
-
-      // Clicking open water/land backs out of the current selection — the
-      // map is an exit, not a dead surface. (Layer clicks above also reach
-      // this handler; a visible hit means it wasn't a background click.)
-      map.on("click", (event) => {
-        const features = map.queryRenderedFeatures(event.point, {
-          layers: ["towns", "detours"],
-        });
-        const hit = features.some(
-          (f) => f.layer.id === "detours" || townInteractive(f),
+      // Query a small box around the pointer and take the nearest candidate,
+      // so near-misses land and overlapping dots resolve predictably.
+      const pickFeature = (point: { x: number; y: number }) => {
+        const features = map.queryRenderedFeatures(
+          [
+            [point.x - 6, point.y - 6],
+            [point.x + 6, point.y + 6],
+          ],
+          { layers: ["towns-hit", "detours-hit"] },
         );
-        if (!hit) clear();
+        let best: maplibregl.MapGeoJSONFeature | undefined;
+        let bestDistance = Infinity;
+        for (const feature of features) {
+          if (feature.layer.id === "towns-hit" && !townInteractive(feature))
+            continue;
+          if (feature.geometry.type !== "Point") continue;
+          const p = map.project(
+            feature.geometry.coordinates as [number, number],
+          );
+          const d = (p.x - point.x) ** 2 + (p.y - point.y) ** 2;
+          if (d < bestDistance) {
+            bestDistance = d;
+            best = feature;
+          }
+        }
+        return best;
+      };
+
+      const applyHover = (
+        feature: maplibregl.MapGeoJSONFeature | undefined,
+      ) => {
+        const key =
+          feature == null
+            ? null
+            : feature.layer.id === "detours-hit"
+              ? `detour:${feature.properties.slug}`
+              : `place:${feature.properties.indexName}`;
+        map.getCanvas().style.cursor = key ? "pointer" : "";
+        if (feature == null || feature.geometry.type !== "Point") {
+          // Only the transition off a dot arms the close timer — further
+          // empty-map moves must not keep postponing it.
+          if (hoverKeyRef.current != null) {
+            hoverKeyRef.current = null;
+            scheduleHoverClose();
+          }
+          return;
+        }
+        cancelHoverClose();
+        if (key === hoverKeyRef.current) return;
+        hoverKeyRef.current = key;
+        const [lon, lat] = feature.geometry.coordinates as [number, number];
+        setHover(
+          feature.layer.id === "detours-hit"
+            ? {
+                kind: "detour",
+                slug: feature.properties.slug as string,
+                lngLat: [lon, lat],
+              }
+            : {
+                kind: "place",
+                id: feature.properties.indexName as string,
+                lngLat: [lon, lat],
+              },
+        );
+      };
+
+      // iOS WebKit synthesizes mouse events after a tap; treat any "hover"
+      // within 600ms of a touch as the tap it really was (the click handler
+      // owns it) — otherwise the hover card opens on tap and sticks, since
+      // no mouseleave ever comes.
+      let lastTouch = 0;
+      map.on("touchstart", () => {
+        lastTouch = Date.now();
+      });
+      map.on("mousemove", (event) => {
+        if (Date.now() - lastTouch < 600) return;
+        applyHover(pickFeature(event.point));
+      });
+      map.on("mouseout", () => {
+        // Off the canvas — possibly onto the hover card itself, whose
+        // mouseenter cancels the grace timer.
+        hoverKeyRef.current = null;
+        map.getCanvas().style.cursor = "";
+        scheduleHoverClose();
       });
 
-      map.on("click", "detours", (event) => {
-        const feature = event.features?.[0];
-        if (feature) selectDetour(feature.properties.slug as string);
-      });
-      map.on("mouseenter", "detours", (event) => {
-        const feature = event.features?.[0];
-        if (!feature) return;
-        map.getCanvas().style.cursor = "pointer";
-        const [lon, lat] = (feature.geometry as Point).coordinates;
-        popup
-          .setLngLat([lon, lat])
-          .setText(feature.properties.name as string)
-          .addTo(map);
-      });
-      map.on("mouseleave", "detours", () => {
-        map.getCanvas().style.cursor = "";
-        popup.remove();
+      // One click handler for everything: the nearest hit opens the entry;
+      // open water/land backs out of the current selection — the map is an
+      // exit, not a dead surface.
+      map.on("click", (event) => {
+        closeHover();
+        const feature = pickFeature(event.point);
+        if (!feature) {
+          clear();
+          return;
+        }
+        if (feature.layer.id === "detours-hit")
+          selectDetour(feature.properties.slug as string);
+        else selectPlace(feature.properties.indexName as string);
       });
 
       setMapReady(true);
@@ -261,6 +424,7 @@ export default function TravelMap() {
 
     return () => {
       cancelled = true;
+      closeHover();
       mapRef.current = null;
       map?.remove();
     };
@@ -325,9 +489,9 @@ export default function TravelMap() {
     map.setPaintProperty(
       "routes",
       "line-opacity",
-      selectedPlace ? 0.35 : routeOpacity(focusedChapter),
+      !revealed ? 0 : selectedPlace ? 0.35 : routeOpacity(focusedChapter),
     );
-  }, [selectedPlace, focusedChapter, mapReady]);
+  }, [selectedPlace, focusedChapter, mapReady, revealed]);
 
   // Escape backs out one level — place/detour first, then chapter focus —
   // unless an input owns the keyboard (the search field handles its own).
@@ -504,11 +668,43 @@ export default function TravelMap() {
         );
       })()}
 
+      {hover && mapReady && mapRef.current && containerRef.current && (
+        <MapHoverCard
+          key={hover.kind === "place" ? hover.id : hover.slug}
+          target={hover}
+          visited={hover.kind === "place" && visits.has(hover.id)}
+          visitDate={
+            hover.kind === "place" ? visits.get(hover.id) ?? null : null
+          }
+          style={hoverCardStyle(
+            mapRef.current.project(hover.lngLat),
+            containerRef.current,
+          )}
+          onMouseEnter={cancelHoverClose}
+          onMouseLeave={scheduleHoverClose}
+          onClick={() => {
+            closeHover();
+            if (hover.kind === "place") selectPlace(hover.id);
+            else selectDetour(hover.slug);
+          }}
+        />
+      )}
+
       {!isDesktop && selectedPlace != null && detailProps && (
         <TownDetailPanel place={selectedPlace} {...detailProps} />
       )}
       {!isDesktop && selectedDetour && (
         <DetourDetailPanel detour={selectedDetour} onClose={clear} />
+      )}
+
+      {!overlayDone && !loadFailed && (
+        <JourneyRevealOverlay
+          mapRef={mapRef}
+          mapReady={mapReady}
+          skipMorph={skipRevealRef.current}
+          onRevealRoutes={() => setRevealed(true)}
+          onDone={() => setOverlayDone(true)}
+        />
       )}
 
       {loadFailed && (

@@ -181,6 +181,33 @@ export const TIER_INTERACTIVE_ZOOM: Record<number, number> = {
   3: 9.55,
 };
 
+/**
+ * Invisible hit-target layers (web): a near-transparent circle drawn over
+ * each dot, larger than the visible marker, so hover/tap targets stay
+ * comfortable even for 1-page villages — queryRenderedFeatures only sees
+ * painted circles, so the target must actually render. Flat by zoom (not
+ * mention-scaled): every place deserves the same finger. Disclosure still
+ * applies — handlers must filter by TIER_INTERACTIVE_ZOOM, exactly as with
+ * the visible dots.
+ */
+export const TOWN_HIT_RADIUS: ExpressionSpecification = [
+  "interpolate",
+  ["linear"],
+  ["zoom"],
+  6.6, 10,
+  9, 14,
+  12, 18,
+];
+
+/** Same idea for Detour rings (fixed MARKER_MIN_RADIUS dots, minzoom 8). */
+export const DETOUR_HIT_RADIUS: ExpressionSpecification = [
+  "interpolate",
+  ["linear"],
+  ["zoom"],
+  8, 12,
+  12, 16,
+];
+
 export const TOWN_COLOR: ExpressionSpecification = [
   "case",
   ["get", "visited"],
@@ -213,7 +240,14 @@ function boostRailVisibility(style: StyleSpecification): StyleSpecification {
 }
 
 export async function fetchMapStyle(): Promise<StyleSpecification> {
-  const response = await fetch(MAP_STYLE_URL);
+  // Time-bound so a hung request becomes the retry screen, not an eternal
+  // loading spinner. (Guarded: AbortSignal.timeout is missing on some
+  // native JS engines.)
+  const signal =
+    typeof AbortSignal !== "undefined" && "timeout" in AbortSignal
+      ? AbortSignal.timeout(15000)
+      : undefined;
+  const response = await fetch(MAP_STYLE_URL, { signal });
   if (!response.ok) throw new Error(`Map style request failed: ${response.status}`);
   return boostRailVisibility((await response.json()) as StyleSpecification);
 }

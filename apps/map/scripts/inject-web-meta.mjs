@@ -74,6 +74,48 @@ const preconnects = `
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />`;
 
+// The boot-phase loading ring: the same six-arc chapter-colored spinner that
+// JourneyRevealOverlay renders, as static HTML+CSS, so the ring is there from
+// the first paint — covering the JS download before React mounts. On mount
+// the overlay reads #boot-reveal-ring's current rotation, continues the spin
+// from that angle, and removes this node before its own first paint, so the
+// hand-off is invisible. Geometry and colors mirror JourneyRevealOverlay.tsx
+// and CHAPTER_COLORS in src/lib/mapStyle.ts — keep them in sync.
+const RING_COLORS = [
+  "#ea580c", // chapter 1
+  "#0d9488", // chapter 2
+  "#7c3aed", // chapter 3
+  "#dc2626", // chapter 4
+  "#2563eb", // chapter 5
+  "#db2777", // chapter 6
+];
+const RING_RADIUS = 26;
+const RING_STROKE = 5;
+const ARC_SWEEP = 60; // 6 arcs × 60° = a solid ring, colors butted together
+const SPIN_MS = 1600;
+
+const bootArc = (i) => {
+  const point = (deg) => {
+    const a = (deg * Math.PI) / 180;
+    return `${(40 + RING_RADIUS * Math.cos(a)).toFixed(2)} ${(40 + RING_RADIUS * Math.sin(a)).toFixed(2)}`;
+  };
+  const start = -90 + i * 60;
+  return (
+    `<path d="M ${point(start)} A ${RING_RADIUS} ${RING_RADIUS} 0 0 1 ${point(start + ARC_SWEEP)}" ` +
+    `stroke="${RING_COLORS[i]}" stroke-width="${RING_STROKE}" fill="none" stroke-linecap="butt"/>`
+  );
+};
+
+const bootLoader = `
+    <div id="boot-reveal" aria-hidden="true"><svg width="80" height="80" viewBox="0 0 80 80"><g id="boot-reveal-ring">${RING_COLORS.map((_, i) => bootArc(i)).join("")}</g></svg></div>
+    <style>
+      #boot-reveal{position:fixed;inset:0;z-index:40;display:grid;place-items:center;background:#f8f4f0}
+      #boot-reveal-ring{transform-origin:40px 40px;animation:boot-reveal-spin ${SPIN_MS}ms linear infinite}
+      @keyframes boot-reveal-spin{to{transform:rotate(360deg)}}
+      @media (prefers-reduced-motion: reduce){#boot-reveal-ring{animation:none}}
+    </style>
+    <noscript><style>#boot-reveal{display:none}</style></noscript>`;
+
 const headTags = `
     <meta name="description" content="${esc(DESCRIPTION)}" />
     <link rel="canonical" href="${pageUrl}" />
@@ -139,7 +181,9 @@ html = html
     /<link rel="stylesheet" href="(https:\/\/fonts\.googleapis\.com\/css2\?family=Cardo(?:&|&amp;)display=swap)">/,
     `<link rel="stylesheet" href="$1" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="$1"></noscript>`,
   )
-  .replace("</head>", `${headTags}\n  </head>`);
+  .replace("</head>", `${headTags}\n  </head>`)
+  // Boot loading ring, right after the app root so React never touches it.
+  .replace(/(<div id="root"><\/div>)/, `$1${bootLoader}`);
 
 if (!html.includes('media="print"')) {
   console.warn(
