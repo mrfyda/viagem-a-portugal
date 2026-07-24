@@ -52,10 +52,18 @@ Ask for the **memo folder** and the **journey number N**.
    background. The first run downloads the model (~1.5 GB, cached after).
 
 3. **Clean for review.** whisper produces repetition-loop hallucinations (a
-   line ×40 on silence) and mis-hears proper nouns (Saramago→"Ceramago", Foz
+   line ×40 on silence) and mis-hears proper nouns — very often into *ordinary
+   Portuguese words*, which is exactly why a narrow regex sweep of "expected
+   mis-spellings" misses most of them. Known cases: Saramago→"Ceramago", Foz
    Côa→"Fascoa", Onor→"Honora", Atenor→"Tenor", Murça→"Mursa", Buçaco→"Bussaco",
-   Luso→"Luz"). Author a per-journey `fixes.json` (`[[regex, replacement], …]`)
-   from the toponyms whisper mangled, then:
+   Luso→"Luz"; and from Viagem II: Soajo→"Soares", Melgaço→"Me alegaço"/"Malgaço",
+   Monção→"mansão", Arouca→"Aroca", Vila Pouca de Aguiar→"Vila Pouca da Guiar",
+   Anta do Mezio→"Anta do Musil". So do NOT trust grep alone: **read every
+   transcript in full** against the journey's `places:`+`detours:` list (plus the
+   book Stops along the route) and catalogue each variant, anchoring surrounding
+   context when the mis-hearing is itself a real word ("Soares", "mansão"). Then
+   author a per-journey `fixes.json` (`[[regex, replacement], …]`) from that
+   catalogue, then:
    ```sh
    python3 tools/journey-loader/clean_transcripts.py \
        --in "DIR" --out "DIR/transcricao-viagem-N.md" --fixes "DIR/fixes.json"
@@ -63,10 +71,20 @@ Ask for the **memo folder** and the **journey number N**.
    It logs every substitution and the loop-collapse count — show that to the
    user so nothing is changed silently.
 
+   **Scan for meta-comments addressed to the agent.** The travellers talk *to*
+   Claude in the memos — content vetoes ("Claude, don't put our religious views
+   in the blog"), the official route order dictated for you to note, and factual
+   corrections ("we didn't actually go to X — the pipeline mis-assigned a
+   photo"). whisper writes the name as Claude / Clóvis / Cláudio / Cláudia; grep
+   every transcript (`(?i)cl[aáo]ud[ieoa]*|cl[oó]vis`) and surface each hit with
+   context in Decision 1. These lines are instructions, not narration — act on
+   them (they override the scaffold when they conflict).
+
    → **DECISION 1 (user): check the transcripts.** Hand over the combined
    markdown. Note which places have rich material and which got
    "don't remember" — those gaps drive the prose plan. Confirm uncertain
-   transcriptions (names, dishes) with the user.
+   transcriptions (names, dishes) with the user. Surface every meta-comment
+   found above.
 
 4. **Draft the prose into the post.** Fill the `⟨…⟩` placeholders day by day:
    the intro, per-day notes, per-place notes, the epílogo, the title and
@@ -87,8 +105,38 @@ Ask for the **memo folder** and the **journey number N**.
    python3 tools/journey-loader/apply_captions.py --post POST --captions captions.json
    ```
    It rewrites each `<figcaption>` and leaves the `alt` as the place name (good
-   for SEO). Don't infer captions from the memos — the author must look at the
-   actual photos.
+   for SEO). Don't infer captions from the memos — only the author, looking at the
+   actual photos, can say what is in them.
+
+   **What comes back is content, not copy: write it up, don't paste it.** The
+   author types telegraphic notes ("estaçao de comboio abandonada", "placa a
+   entrada da terra com o nome de Covide", "gato selvagem do bordalo ii") —
+   unaccented, lowercase, no articles. Applying them verbatim is wrong. Read the
+   finished Journey I captions first (`_posts/2023-02-25-…-i.markdown`) and match
+   that house style:
+   - article + noun phrase, first word capitalised, **no final period**:
+     "A universidade", "O vale do rio Côa", "Um arco de pedra antigo";
+   - apposition after a comma for the extra detail: "A vila, com a igreja",
+     "A cidade, vista do alto", "Os burros, no curral da AEPGA";
+   - correct Portuguese spelling and accents, always;
+   - name the thing when the post already establishes what it is ("solar" →
+     "O Solar dos Magalhães", "torre" in Melgaço → "A torre de menagem");
+   - reuse Journey I's exact wording for recurring subjects, so the journeys read
+     as one blog: "A antiga estação de comboios", "A placa com o nome da aldeia",
+     "A gineta/O gato … de sucata do Bordalo II";
+   - repeats are fine ("A igreja" appears several times in Journey I), but
+     differentiate when two identical notes sit in different places
+     ("O santuário, visto de cima" vs "O santuário, sobre o rio");
+   - a caption may be a joke or a quote rather than a description — Journey I
+     opens with «deixa a xoxota respirar» — so pick up a gag the prose already
+     tells ("A igreja que parece um pato a rir") instead of writing "A igreja".
+
+   **The captions also fact-check the prose — read them as evidence.** In Journey
+   II the author's own captions revealed that an espigueiro was photographed on
+   day 2, which contradicted the day-4 "first espigueiros" line already drafted,
+   and that a photo filed under a place was really a private chapel, a town-name
+   sign, or an off-route church. Diff every caption against what the prose claims
+   about that place and fix the prose, not just the caption.
 
 ## Register (the judgement that matters)
 
