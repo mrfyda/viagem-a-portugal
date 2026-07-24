@@ -6,7 +6,7 @@
   "note": "Anta do Mezio, monumento megalítico (c. 3000 a.C.) junto à Porta do Mezio, entrada do Parque Nacional da Peneda-Gerês em Arcos de Valdevez — fora do percurso de Saramago.",
   "image": "/assets/viagem-2/anta-do-mezio.avif",
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
-  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+  "postTitle": "Viagem a Portugal II — espigueiros, vacas na estrada e serras com chuva"
  },
  {
   "name": "Atenor",
@@ -24,7 +24,7 @@
   "note": "Vila de Boticas, nas Terras de Barroso — fora da viagem de Saramago.",
   "image": "/assets/viagem-2/boticas.avif",
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
-  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+  "postTitle": "Viagem a Portugal II — espigueiros, vacas na estrada e serras com chuva"
  },
  {
   "name": "Capela da Senhora da Lage",
@@ -33,7 +33,16 @@
   "note": "Capela de Nossa Senhora da Lage, na Serra da Freita (Arouca) — fora do percurso de Saramago.",
   "image": "/assets/viagem-2/capela-da-senhora-da-lage.avif",
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
-  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+  "postTitle": "Viagem a Portugal II — espigueiros, vacas na estrada e serras com chuva"
+ },
+ {
+  "name": "Cevide",
+  "lat": 42.15376,
+  "lon": -8.19921,
+  "note": "Cevide (Cristoval, Melgaço), junto ao Marco de Fronteira nº 1, na foz do rio Trancoso no Minho, o ponto mais a norte de Portugal: passadiço de acesso e homenagem ao contrabandista, numa das antigas rotas do contrabando — fora do percurso de Saramago.",
+  "image": "/assets/viagem-2/cevide.avif",
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — espigueiros, vacas na estrada e serras com chuva"
  },
  {
   "name": "Colmeal da Torre",
@@ -60,7 +69,7 @@
   "note": "Vila de Montalegre, dominada pelo castelo medieval, no planalto do Barroso — fora do percurso de Saramago.",
   "image": "/assets/viagem-2/montalegre-1.avif",
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
-  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+  "postTitle": "Viagem a Portugal II — espigueiros, vacas na estrada e serras com chuva"
  },
  {
   "name": "Outeiro",
@@ -69,7 +78,7 @@
   "note": "Aldeia de Outeiro, no planalto da Mourela (Montalegre), dentro do Parque Nacional da Peneda-Gerês — fora da viagem de Saramago.",
   "image": "/assets/viagem-2/outeiro-1.avif",
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
-  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+  "postTitle": "Viagem a Portugal II — espigueiros, vacas na estrada e serras com chuva"
  },
  {
   "name": "Pedras Parideiras",
@@ -78,7 +87,7 @@
   "note": "Centro de Interpretação das Pedras Parideiras, na Castanheira (Serra da Freita, Arouca Geopark) — fora do percurso de Saramago.",
   "image": "/assets/viagem-2/pedras-parideiras-1.avif",
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
-  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+  "postTitle": "Viagem a Portugal II — espigueiros, vacas na estrada e serras com chuva"
  },
  {
   "name": "Pedras Salgadas",
@@ -96,7 +105,16 @@
   "note": "Aldeia de Pitões das Júnias, no Parque Nacional da Peneda-Gerês, junto ao Mosteiro de Santa Maria das Júnias — fora do percurso de Saramago.",
   "image": "/assets/viagem-2/pitoes-das-junias.avif",
   "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
-  "postTitle": "Viagem a Portugal II — ⟨título a confirmar⟩"
+  "postTitle": "Viagem a Portugal II — espigueiros, vacas na estrada e serras com chuva"
+ },
+ {
+  "name": "Ruivães",
+  "lat": 41.39856,
+  "lon": -8.44012,
+  "note": "A igreja de Ruivães, em Vila Nova de Famalicão, a poucos quilómetros da casa de Camilo Castelo Branco em São Miguel de Seide — fora do percurso de Saramago.",
+  "image": "/assets/viagem-2/ruivaes.avif",
+  "postUrl": "/2023/06/12/viagem-a-portugal-ii/",
+  "postTitle": "Viagem a Portugal II — espigueiros, vacas na estrada e serras com chuva"
  },
  {
   "name": "Ruínas Romanas de Sendim",
