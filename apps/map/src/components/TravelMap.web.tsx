@@ -83,9 +83,14 @@ function hoverCardStyle(
     top: point.y,
     width: HOVER_CARD_WIDTH,
     maxHeight: (below ? container.clientHeight - point.y : point.y) - 30,
-    transform: below
-      ? `translate(-50%, ${HOVER_CARD_GAP}px)`
-      : `translate(-50%, calc(-100% - ${HOVER_CARD_GAP}px))`,
+    // The offset rides the standalone `translate` property, not `transform`:
+    // the card's entry animation (animate-panel-in) animates `transform`, and
+    // a running animation outranks inline style — sharing the property made
+    // the card open at the dot's corner and snap into place 200ms later.
+    // `translate` composes with the animation instead.
+    translate: below
+      ? `-50% ${HOVER_CARD_GAP}px`
+      : `-50% calc(-100% - ${HOVER_CARD_GAP}px)`,
   };
 }
 
