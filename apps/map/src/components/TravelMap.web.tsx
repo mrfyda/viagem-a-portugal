@@ -570,6 +570,27 @@ export default function TravelMap() {
     }
   }, [selection, mapReady, isDesktop]);
 
+  /**
+   * Leave a chapter focus: un-dim the other five routes *and* pull the camera
+   * back out to the whole country. Clearing the focus alone left the camera
+   * parked on the chapter you had been reading, so "show me the whole journey
+   * again" still needed a manual zoom out — the list said everything was back
+   * while the view said otherwise. Same padding as the opening fit.
+   */
+  const clearFocus = () => {
+    setFocusedChapter(null);
+    const map = mapRef.current;
+    if (!map) return;
+    map.fitBounds(PORTUGAL_BOUNDS, {
+      padding: isDesktop
+        ? { top: 24, right: 24, bottom: 24, left: DESKTOP_CHROME_WIDTH + 24 }
+        : { top: 72, right: 16, bottom: 96, left: 16 },
+      duration: window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
+        ? 0
+        : 700,
+    });
+  };
+
   const focusChapter = (n: number) => {
     setFocusedChapter(n);
     const map = mapRef.current;
@@ -666,7 +687,7 @@ export default function TravelMap() {
             metrics={animatedMetrics}
             focusedChapter={focusedChapter}
             onFocusChapter={focusChapter}
-            onClearFocus={() => setFocusedChapter(null)}
+            onClearFocus={clearFocus}
             onSelectPlace={selectPlace}
             selectedPlace={selectedPlace}
             detailProps={detailProps}
