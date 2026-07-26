@@ -33,10 +33,12 @@ import {
   SELECTED_HALO_RADIUS,
   SELECTION_RING_COLOR,
   TIER_INTERACTIVE_ZOOM,
-  TOWN_COLOR,
+  TOWN_FILL_COLOR,
   TOWN_HIT_RADIUS,
   TOWN_OPACITY,
   TOWN_RADIUS,
+  TOWN_RING_COLOR,
+  TOWN_RING_WIDTH,
   TOWN_STROKE_OPACITY,
   townOpacity,
   townStrokeOpacity,
@@ -246,10 +248,12 @@ export default function TravelMap() {
         source: "towns",
         paint: {
           "circle-radius": TOWN_RADIUS,
-          "circle-color": TOWN_COLOR,
+          // Hollow dot = drove through without stopping (mapStyle.ts) — the mark
+          // the journey list's key names.
+          "circle-color": TOWN_FILL_COLOR,
           "circle-opacity": TOWN_OPACITY,
-          "circle-stroke-color": "#ffffff",
-          "circle-stroke-width": 1.5,
+          "circle-stroke-color": TOWN_RING_COLOR,
+          "circle-stroke-width": TOWN_RING_WIDTH,
           "circle-stroke-opacity": TOWN_STROKE_OPACITY,
         },
       });
@@ -295,8 +299,10 @@ export default function TravelMap() {
         filter: NO_SELECTION,
         paint: {
           "circle-radius": SELECTED_DOT_RADIUS,
-          "circle-color": TOWN_COLOR,
-          "circle-stroke-color": "#ffffff",
+          // Selecting a drive-through must not silently promote it to a Stop:
+          // the hollow mark stays under the selection ring.
+          "circle-color": TOWN_FILL_COLOR,
+          "circle-stroke-color": TOWN_RING_COLOR,
           "circle-stroke-width": 2,
         },
       });

@@ -216,6 +216,44 @@ export const TOWN_COLOR: ExpressionSpecification = [
 ];
 
 /**
+ * A place the traveler only drove through (tier 2) is drawn hollow — paper fill,
+ * coloured ring — where a Stop is a solid dot. It is the one mark the map shares
+ * with the journey list, so the list's key is true of both.
+ *
+ * Before this, the canvas could not express the difference at all: fill meant
+ * visited, radius meant mentions, and "he only passed through here" showed up
+ * solely as *when* a dot faded in while zooming (the disclosure envelope above).
+ *
+ * Only tier 2 flips. A visited Place is promoted to tier 0 by geo.ts and stays
+ * solid — it is the Traveler's own journey being drawn, which outranks the
+ * book's classification — and referenced-only places (tier 3) keep the solid dot
+ * rather than borrowing a meaning that is not theirs.
+ */
+const PASSED_THROUGH: ExpressionSpecification = ["==", ["get", "tier"], 2];
+
+/** Liberty's paper, so a hollow dot reads as empty rather than white-on-white. */
+const PAPER = "#f8f4f0";
+
+export const TOWN_FILL_COLOR: ExpressionSpecification = [
+  "case",
+  PASSED_THROUGH,
+  PAPER,
+  TOWN_COLOR,
+];
+export const TOWN_RING_COLOR: ExpressionSpecification = [
+  "case",
+  PASSED_THROUGH,
+  TOWN_COLOR,
+  "#ffffff",
+];
+export const TOWN_RING_WIDTH: ExpressionSpecification = [
+  "case",
+  PASSED_THROUGH,
+  2,
+  1.5,
+];
+
+/**
  * Liberty only gives railways line-width from zoom 14, so they are invisible
  * at travel-planning zooms. Widen and start them much earlier.
  */

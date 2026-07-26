@@ -17,9 +17,11 @@ import {
 import {
   fetchMapStyle,
   ROUTE_COLOR,
-  TOWN_COLOR,
+  TOWN_FILL_COLOR,
   TOWN_OPACITY,
   TOWN_RADIUS,
+  TOWN_RING_COLOR,
+  TOWN_RING_WIDTH,
   TOWN_STROKE_OPACITY,
 } from "../lib/mapStyle";
 
@@ -69,10 +71,12 @@ export default function TravelMap() {
             type="circle"
             paint={{
               "circle-radius": TOWN_RADIUS,
-              "circle-color": TOWN_COLOR,
+              // Hollow dot = drove through without stopping (mapStyle.ts), the
+              // same mark the journey list uses. Kept in step with the web map.
+              "circle-color": TOWN_FILL_COLOR,
               "circle-opacity": TOWN_OPACITY,
-              "circle-stroke-color": "#ffffff",
-              "circle-stroke-width": 1.5,
+              "circle-stroke-color": TOWN_RING_COLOR,
+              "circle-stroke-width": TOWN_RING_WIDTH,
               "circle-stroke-opacity": TOWN_STROKE_OPACITY,
             }}
           />
