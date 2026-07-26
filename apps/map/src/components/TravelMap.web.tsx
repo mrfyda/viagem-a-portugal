@@ -46,6 +46,7 @@ import { useIsDesktop } from "../hooks/useIsDesktop";
 import AuthPanel from "./AuthPanel";
 import DetourDetailPanel from "./DetourDetailPanel";
 import JourneyRevealOverlay from "./JourneyRevealOverlay";
+import { DESKTOP_CHROME_WIDTH } from "./MapDesktopPanel";
 import MapHoverCard, { type HoverTarget } from "./MapHoverCard";
 import MapSidebar from "./MapSidebar";
 import TownDetailPanel from "./TownDetailPanel";
@@ -160,6 +161,14 @@ export default function TravelMap() {
   // Quiet count-up when a Visit lands — the "pages travelled" tally ticks up.
   const townsCount = useCountUp(metrics.townsVisited);
   const pagesCount = useCountUp(metrics.pagesVisited);
+  // The tweened counts drive the achievements view's progress bars — labels and
+  // fills both, so the "pages travelled" tick-up survives the move off the
+  // old header line.
+  const animatedMetrics = {
+    ...metrics,
+    townsVisited: townsCount,
+    pagesVisited: pagesCount,
+  };
 
   const [authOpen, setAuthOpen] = useState(false);
   // a gated action: the place whose visited-toggle opened sign-in, applied
@@ -197,7 +206,7 @@ export default function TravelMap() {
           bounds: PORTUGAL_BOUNDS,
           fitBoundsOptions: {
             padding: desktop
-              ? { top: 24, right: 24, bottom: 24, left: 396 }
+              ? { top: 24, right: 24, bottom: 24, left: DESKTOP_CHROME_WIDTH + 24 }
               : { top: 72, right: 16, bottom: 96, left: 16 },
           },
           attributionControl: { compact: true },
@@ -538,7 +547,7 @@ export default function TravelMap() {
         center,
         zoom: Math.max(map.getZoom(), 8.6),
         padding: isDesktop
-          ? { top: 0, right: 0, bottom: 0, left: 396 }
+          ? { top: 0, right: 0, bottom: 0, left: DESKTOP_CHROME_WIDTH + 24 }
           : {
               top: 0,
               right: 0,
@@ -561,7 +570,7 @@ export default function TravelMap() {
     // journey bottom sheet (max 55vh, floated above the tab bar) on mobile —
     // otherwise half the chapter lands underneath the sheet.
     const padding = isDesktop
-      ? { top: 48, right: 48, bottom: 48, left: 396 + 48 }
+      ? { top: 48, right: 48, bottom: 48, left: DESKTOP_CHROME_WIDTH + 48 }
       : {
           top: 72,
           right: 24,
@@ -604,26 +613,15 @@ export default function TravelMap() {
 
       {(() => {
         const header = session ? (
-          <>
-            <span>
-              {t("progress", {
-                towns: townsCount,
-                townsTotal: metrics.townsTotal,
-                pages: pagesCount,
-                pagesTotal: metrics.pagesTotal,
-              })}
-            </span>
-            <span className="text-xs text-muted-foreground">{t("clickHint")}</span>
-            <span className="flex items-center gap-2 text-xs text-muted-foreground">
-              <span className="truncate">{session.user.email}</span>
-              <button
-                onClick={() => void signOut()}
-                className="shrink-0 underline hover:text-foreground"
-              >
-                {t("signOut")}
-              </button>
-            </span>
-          </>
+          <span className="flex items-center gap-2 text-xs text-muted-foreground">
+            <span className="truncate">{session.user.email}</span>
+            <button
+              onClick={() => void signOut()}
+              className="shrink-0 underline hover:text-foreground"
+            >
+              {t("signOut")}
+            </button>
+          </span>
         ) : authOpen ? (
           <AuthPanel
             onSignIn={signIn}
@@ -635,8 +633,6 @@ export default function TravelMap() {
           />
         ) : (
           <>
-            {/* The one orientation line an anonymous reader gets. */}
-            <span className="text-xs text-muted-foreground">{t("exploreHint")}</span>
             {configured && !authLoading && (
               <>
                 <span className="text-xs text-muted-foreground">{t("trackPitch")}</span>
@@ -656,6 +652,7 @@ export default function TravelMap() {
             header={header}
             hasAccount={configured}
             visits={session ? visits : null}
+            metrics={animatedMetrics}
             focusedChapter={focusedChapter}
             onFocusChapter={focusChapter}
             onClearFocus={() => setFocusedChapter(null)}

@@ -4,7 +4,6 @@
  */
 
 const en = {
-  progress: "{towns} / {townsTotal} towns · {pages} / {pagesTotal} pages traveled",
   clickHint: "Click a town to mark it visited",
   visited: "Visited",
   visitedOn: "Visited {date}",
@@ -18,7 +17,9 @@ const en = {
   chapterAbbrev: "ch. {chapter}",
   fromTheBlog: "From the blog:",
   notInJourney: "Not part of Saramago's journey",
-  wikipedia: "Wikipedia (PT)",
+  inTheBook: "In the book",
+  mentionsCount: "{count} mentions",
+  mentionsCountOne: "1 mention",
   markVisited: "Mark as visited",
   visitDate: "Visit date",
   unmarkVisited: "Unmark visited",
@@ -53,6 +54,8 @@ const en = {
   achievements: "Achievements",
   achievementsSummary: "{unlocked} / {total}",
   achievementsSignedOut: "Sign in to start earning these.",
+  progressTowns: "Places",
+  progressPages: "Pages",
   achFirstStopTitle: "First stop",
   achFirstStopDesc: "Mark your first town as visited",
   achTowns10Title: "Traveler",
@@ -109,7 +112,6 @@ const en = {
 };
 
 const pt: typeof en = {
-  progress: "{towns} / {townsTotal} terras · {pages} / {pagesTotal} páginas percorridas",
   clickHint: "Clique numa terra para a marcar como visitada",
   visited: "Visitado",
   visitedOn: "Visitado a {date}",
@@ -123,7 +125,9 @@ const pt: typeof en = {
   chapterAbbrev: "cap. {chapter}",
   fromTheBlog: "Do blog:",
   notInJourney: "Não fazia parte da viagem de Saramago",
-  wikipedia: "Wikipédia (PT)",
+  inTheBook: "No livro",
+  mentionsCount: "{count} menções",
+  mentionsCountOne: "1 menção",
   markVisited: "Marcar como visitada",
   visitDate: "Data da visita",
   unmarkVisited: "Desmarcar visita",
@@ -158,6 +162,8 @@ const pt: typeof en = {
   achievements: "Conquistas",
   achievementsSummary: "{unlocked} / {total}",
   achievementsSignedOut: "Inicie sessão para começar a conquistá-las.",
+  progressTowns: "Localidades",
+  progressPages: "Páginas",
   achFirstStopTitle: "Primeira paragem",
   achFirstStopDesc: "Marque a primeira terra como visitada",
   achTowns10Title: "Viajante",

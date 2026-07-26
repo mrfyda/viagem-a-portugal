@@ -143,7 +143,16 @@ export default function PanelShell({
           post photo card) has a zero automatic min-size, so the column
           compressed it to fit the cap — the body never overflowed, which
           left nothing to scroll and the photo squashed to a sliver. */}
-      <div className="flex max-h-[calc(60dvh_-_4.5rem)] touch-pan-y flex-col gap-2 overflow-y-auto overscroll-contain pt-4 pl-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))] pb-[max(1rem,env(safe-area-inset-bottom))] *:shrink-0">
+      <div
+        // --panel-pad-*: what a full-bleed child must cancel to reach the sheet's
+        // edges (PostHero). Left and right are separate because the safe-area
+        // insets diverge in landscape.
+        style={{
+          ["--panel-pad-l" as string]: "max(1rem, env(safe-area-inset-left))",
+          ["--panel-pad-r" as string]: "max(1rem, env(safe-area-inset-right))",
+        }}
+        className="flex max-h-[calc(60dvh_-_4.5rem)] touch-pan-y flex-col gap-2 overflow-y-auto overscroll-contain pt-4 pl-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))] pb-[max(1rem,env(safe-area-inset-bottom))] *:shrink-0"
+      >
         {children}
       </div>
     </div>

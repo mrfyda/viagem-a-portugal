@@ -56,7 +56,7 @@ export default function MapHoverCard({
 }
 
 /** Hover-card hero: fixed ratio so the card never reflows when the photo
- * streams in; a broken asset collapses the block (same as PostPhotoLink). */
+ * streams in; a broken asset collapses the block (same as PostHero). */
 function Photo({ image, alt }: { image: string; alt: string }) {
   const [broken, setBroken] = useState(false);
   if (broken) return null;

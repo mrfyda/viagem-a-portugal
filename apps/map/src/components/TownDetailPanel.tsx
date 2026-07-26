@@ -1,16 +1,8 @@
-import { sectionTitle } from "../lib/book";
-import { formatPages } from "../lib/format";
-import { CHAPTER_COLORS } from "../lib/mapStyle";
 import { t } from "../lib/i18n";
 import { placeDetail } from "../lib/place";
+import BookSection from "./BookSection";
 import PanelShell from "./PanelShell";
-import PostPhotoLink from "./PostPhotoLink";
-
-const KIND_LABEL: Record<string, string> = {
-  stop: t("kindStop"),
-  "passed-through": t("kindPassed"),
-  "referenced-only": t("kindReferenced"),
-};
+import PostHero from "./PostHero";
 
 export interface TownDetailPanelProps {
   place: string;
@@ -31,6 +23,16 @@ export interface TownDetailPanelProps {
   onNavigate: (indexName: string) => void;
 }
 
+/**
+ * One Place, in reading order: the post's photo, then Saramago on it, then what
+ * the book records, then the Traveler's own visit.
+ *
+ * The order is the design. The panel used to open on metadata and bury the
+ * photograph below a twelve-line list of mentions — on a mobile sheet that put
+ * it off-screen entirely. Now {@link PostHero} leads, the quote follows as the
+ * reason the Place is worth opening, and {@link BookSection} gathers the pages,
+ * Stops and Mentions into one labelled block instead of loose grey lines.
+ */
 export default function TownDetailPanel({
   place,
   embedded = false,
@@ -43,8 +45,8 @@ export default function TownDetailPanel({
   onClose,
   onNavigate,
 }: TownDetailPanelProps) {
-  const { book, name, mentions, journeyStops, alsoIndexedAs, quote, featured, prev, next } =
-    placeDetail(place);
+  const detail = placeDetail(place);
+  const { book, name, alsoIndexedAs, quote, featured, prev, next } = detail;
 
   return (
     <PanelShell
@@ -54,53 +56,8 @@ export default function TownDetailPanel({
       onPrev={prev ? () => onNavigate(prev) : null}
       onNext={next ? () => onNavigate(next) : null}
     >
-      {book?.qualifier && <span className="text-muted-foreground">{book.qualifier}</span>}
-      {alsoIndexedAs.length > 0 && (
-        <span className="text-xs text-muted-foreground">
-          {t("alsoIndexedAs", { names: alsoIndexedAs.join(", ") })}
-        </span>
-      )}
-
-      {quote && (
-        <blockquote className="m-0 rounded-md bg-secondary p-3 italic leading-relaxed">
-          «{quote}»<br />
-          <span className="text-[11px] not-italic text-muted-foreground">
-            — Viagem a Portugal
-          </span>
-        </blockquote>
-      )}
-
-      {book && (
-        <span className="text-xs text-muted-foreground">
-          {t("pages", { pages: formatPages(book.pages) })}
-        </span>
-      )}
-
-      {journeyStops.map((s) => (
-        <span key={s.ordinal} className="text-[13px]">
-          <span
-            className="mr-1.5 inline-block h-2.5 w-2.5 rounded-full"
-            style={{ background: CHAPTER_COLORS[s.chapter] }}
-          />
-          {t(s.role === "stop" ? "stopOnRoute" : "passedOnRoute", {
-            ordinal: s.ordinal,
-            chapter: s.chapter,
-          })}
-        </span>
-      ))}
-
-      {mentions.length > 0 && (
-        <div className="text-xs text-muted-foreground">
-          {mentions.map((m, i) => (
-            <div key={i}>
-              {t("chapterAbbrev", { chapter: m.chapter })}, “{sectionTitle(m.section)}” ({KIND_LABEL[m.kind]})
-            </div>
-          ))}
-        </div>
-      )}
-
       {featured && (
-        <PostPhotoLink
+        <PostHero
           image={featured.image}
           postUrl={featured.postUrl}
           postTitle={featured.postTitle}
@@ -109,14 +66,32 @@ export default function TownDetailPanel({
         />
       )}
 
-      <a
-        href={`https://pt.wikipedia.org/wiki/${encodeURIComponent(name.replaceAll(" ", "_"))}`}
-        target="_blank"
-        rel="noreferrer"
-        className="text-xs text-primary underline"
-      >
-        {t("wikipedia")}
-      </a>
+      {(book?.qualifier || alsoIndexedAs.length > 0) && (
+        <div className="flex flex-col gap-0.5">
+          {book?.qualifier && (
+            <span className="text-xs text-muted-foreground">{book.qualifier}</span>
+          )}
+          {alsoIndexedAs.length > 0 && (
+            <span className="text-[11px] text-muted-foreground">
+              {t("alsoIndexedAs", { names: alsoIndexedAs.join(", ") })}
+            </span>
+          )}
+        </div>
+      )}
+
+      {quote && (
+        // A left rule rather than a filled box: the line is Saramago's voice,
+        // not a piece of UI, and it has to read differently from the Detour
+        // note directly below the same hero.
+        <blockquote className="m-0 border-l-2 border-primary/30 pl-3 font-serif text-[15px] italic leading-relaxed text-foreground">
+          «{quote}»
+          <span className="mt-1 block text-[11px] not-italic text-muted-foreground">
+            — Viagem a Portugal
+          </span>
+        </blockquote>
+      )}
+
+      <BookSection detail={detail} />
 
       {(canAct || onRequestSignIn != null) && (
         <div className="flex flex-wrap items-center gap-2 border-t border-border pt-2">
