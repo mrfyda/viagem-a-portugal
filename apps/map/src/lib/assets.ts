@@ -11,6 +11,23 @@
  * the single-host preview), "/viagem-a-portugal" in production.
  */
 function siteBase(): string {
+  // Local development escape hatch. The blog's images live in apps/blog/assets
+  // and are served by Jekyll, not by the map's dev server — so on
+  // localhost:8081 every "/assets/viagem-*" hero 404s and PostHero
+  // collapses to its text-only fallback, which makes the featured-post block
+  // impossible to work on. Point this at a real blog and every blog-bound URL
+  // (hero images, post links, the rail's brand link) resolves against it:
+  //
+  //   EXPO_PUBLIC_BLOG_BASE=http://localhost:4000            # local Jekyll
+  //   EXPO_PUBLIC_BLOG_BASE=https://mrfyda.github.io/viagem-a-portugal
+  //
+  // Put it in apps/map/.env.local (gitignored, and Expo loads it automatically).
+  // Unset in CI, so production behaviour is unchanged. Note this can't be solved
+  // by dropping the images into the map's own public/ directory: Metro reserves
+  // public/assets, which is exactly the path the blog uses.
+  const blog = process.env.EXPO_PUBLIC_BLOG_BASE;
+  if (blog) return blog.replace(/\/$/, "");
+
   // Build-time value when Expo inlines it; otherwise derive from the URL.
   const env = process.env.EXPO_BASE_URL;
   if (env) return env.replace(/\/map\/?$/, "");
