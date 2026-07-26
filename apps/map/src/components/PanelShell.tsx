@@ -17,6 +17,19 @@ const headerButton =
   "flex h-8 w-8 items-center justify-center rounded text-muted-foreground " +
   "hover:text-foreground disabled:opacity-30 disabled:hover:text-muted-foreground";
 
+/**
+ * The height every desktop panel view reserves for its header, so switching
+ * views changes what is in the header and nothing else. The journey list's top
+ * row was 52px and a Place's back-row + title 67px, which nudged the whole body
+ * down on opening a Place and back up on closing it. Both now centre their
+ * header content in this.
+ *
+ * Desktop only: the mobile sheets are height-capped (55–60dvh), so reserving a
+ * fixed block for a one-line title would cost content the map is already
+ * covering.
+ */
+export const PANEL_HEADER_HEIGHT = "4.25rem";
+
 /** The sheets' shared close control — also used by MapSidebar's tab sheet. */
 export function SheetCloseButton({ onClose }: { onClose: () => void }) {
   return (
@@ -41,6 +54,7 @@ export function SheetCloseButton({ onClose }: { onClose: () => void }) {
 export default function PanelShell({
   title,
   embedded = false,
+  back,
   onClose,
   onPrev,
   onNext,
@@ -48,6 +62,14 @@ export default function PanelShell({
 }: {
   title: string;
   embedded?: boolean;
+  /**
+   * The desktop panel's back control, drawn inside the header block above the
+   * title. It belongs to the header rather than floating above the panel as a
+   * sibling — that is what lets every view reserve one
+   * {@link PANEL_HEADER_HEIGHT}. Omitted on mobile, where the sheet closes
+   * instead of going back.
+   */
+  back?: ReactNode;
   onClose: () => void;
   /**
    * Step to the previous/next entry. Passing either (even as null) shows the
@@ -113,7 +135,13 @@ export default function PanelShell({
   if (embedded) {
     return (
       <div className="flex flex-col gap-2 text-sm text-foreground">
-        {header}
+        <div
+          style={{ height: PANEL_HEADER_HEIGHT }}
+          className="flex shrink-0 flex-col justify-center gap-0.5"
+        >
+          {back}
+          {header}
+        </div>
         {children}
       </div>
     );

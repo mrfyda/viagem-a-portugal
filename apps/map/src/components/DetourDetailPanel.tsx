@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import type { Detour } from "../lib/detours";
 import { t } from "../lib/i18n";
 import PanelShell from "./PanelShell";
@@ -7,6 +9,8 @@ export interface DetourDetailPanelProps {
   detour: Detour;
   /** Embedded panels (in the desktop sidebar) skip their own positioning. */
   embedded?: boolean;
+  /** Back control for the desktop panel header — see PanelShell. */
+  back?: ReactNode;
   onClose: () => void;
 }
 
@@ -26,10 +30,16 @@ export interface DetourDetailPanelProps {
 export default function DetourDetailPanel({
   detour,
   embedded = false,
+  back,
   onClose,
 }: DetourDetailPanelProps) {
   return (
-    <PanelShell title={detour.name} embedded={embedded} onClose={onClose}>
+    <PanelShell
+      title={detour.name}
+      embedded={embedded}
+      back={back}
+      onClose={onClose}
+    >
       <PostHero
         image={detour.image}
         postUrl={detour.postUrl}

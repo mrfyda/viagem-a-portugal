@@ -130,19 +130,26 @@ export default function MapDesktopPanel({
       ? `${focusedChapter}. ${t("theJourney")}`
       : t("theJourney");
 
+  // The back control is handed to the panel, which draws it inside its header
+  // block — that is what keeps the header one height across every view.
+  const backRow = <BackRow label={backToJourneyLabel} onBack={clearSelection} />;
+
   const body = selectionActive ? (
-    <>
-      <BackRow label={backToJourneyLabel} onBack={clearSelection} />
-      {selectedPlace != null && detailProps ? (
-        <TownDetailPanel place={selectedPlace} embedded {...detailProps} />
-      ) : selectedDetour ? (
-        <DetourDetailPanel
-          detour={selectedDetour}
-          embedded
-          onClose={onCloseDetour}
-        />
-      ) : null}
-    </>
+    selectedPlace != null && detailProps ? (
+      <TownDetailPanel
+        place={selectedPlace}
+        embedded
+        back={backRow}
+        {...detailProps}
+      />
+    ) : selectedDetour ? (
+      <DetourDetailPanel
+        detour={selectedDetour}
+        embedded
+        back={backRow}
+        onClose={onCloseDetour}
+      />
+    ) : null
   ) : view === "achievements" ? (
     <>
       <ViewHeading>{t("achievements")}</ViewHeading>

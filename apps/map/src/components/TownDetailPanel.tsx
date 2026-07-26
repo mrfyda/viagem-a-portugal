@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import { t } from "../lib/i18n";
 import { placeDetail } from "../lib/place";
 import BookSection from "./BookSection";
@@ -8,6 +10,8 @@ export interface TownDetailPanelProps {
   place: string;
   /** Embedded panels (in the desktop sidebar) skip their own positioning. */
   embedded?: boolean;
+  /** Back control for the desktop panel header — see PanelShell. */
+  back?: ReactNode;
   visitDate: string | null;
   isVisited: boolean;
   /** Actions require a signed-in Traveler; when false the visited button
@@ -36,6 +40,7 @@ export interface TownDetailPanelProps {
 export default function TownDetailPanel({
   place,
   embedded = false,
+  back,
   visitDate,
   isVisited,
   canAct,
@@ -52,6 +57,7 @@ export default function TownDetailPanel({
     <PanelShell
       title={name}
       embedded={embedded}
+      back={back}
       onClose={onClose}
       onPrev={prev ? () => onNavigate(prev) : null}
       onNext={next ? () => onNavigate(next) : null}
