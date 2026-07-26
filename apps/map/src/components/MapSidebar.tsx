@@ -5,9 +5,8 @@ import type { Detour } from "../lib/detours";
 import { t } from "../lib/i18n";
 import type { JourneyMetrics, Visits } from "../lib/progress";
 import AchievementsSection from "./AchievementsSection";
-import { ChapterList, ChapterStops } from "./JourneyList";
+import JourneyList from "./JourneyList";
 import MapDesktopPanel from "./MapDesktopPanel";
-import MapLegend from "./MapLegend";
 import MapTopBar from "./MapTopBar";
 import MobileTabBar, { type MobileTab } from "./MobileTabBar";
 import { SheetCloseButton } from "./PanelShell";
@@ -120,30 +119,14 @@ export default function MapSidebar({
                 title={t("theJourney")}
                 onClose={() => setMobileView("map")}
               >
-                {focusedChapter != null ? (
-                  <>
-                    {/* ChapterStops is shared with the desktop panel, which has
-                        its own back control — so the sheet renders its own. */}
-                    <button
-                      onClick={onClearFocus}
-                      className="self-start text-[13px] text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      {t("backToChapters")}
-                    </button>
-                    <ChapterStops
-                      chapter={focusedChapter}
-                      onSelectPlace={onSelectPlace}
-                    />
-                  </>
-                ) : (
-                  <>
-                    <p className="m-0 px-2 pb-1 text-xs text-muted-foreground">
-                      {visits != null ? t("clickHint") : t("exploreHint")}
-                    </p>
-                    <ChapterList compact onFocusChapter={onFocusChapter} />
-                    <MapLegend />
-                  </>
-                )}
+                <JourneyList
+                  compact
+                  focusedChapter={focusedChapter}
+                  onFocusChapter={onFocusChapter}
+                  onClearFocus={onClearFocus}
+                  onSelectPlace={onSelectPlace}
+                  visits={visits}
+                />
               </MobileSheet>
             ) : mobileView === "achievements" ? (
               <MobileSheet

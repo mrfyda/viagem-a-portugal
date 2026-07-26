@@ -6,8 +6,7 @@ import { t } from "../lib/i18n";
 import type { JourneyMetrics, Visits } from "../lib/progress";
 import AchievementsSection from "./AchievementsSection";
 import DetourDetailPanel from "./DetourDetailPanel";
-import { ChapterList, ChapterStops } from "./JourneyList";
-import MapLegend from "./MapLegend";
+import JourneyList from "./JourneyList";
 import MapRail, { type PanelView } from "./MapRail";
 import TownDetailPanel, { type TownDetailPanelProps } from "./TownDetailPanel";
 import TownSearch from "./TownSearch";
@@ -164,20 +163,16 @@ export default function MapDesktopPanel({
       <ViewHeading>{t("account")}</ViewHeading>
       <div className="flex flex-col gap-2 px-1">{header}</div>
     </>
-  ) : focusedChapter != null ? (
-    <>
-      <BackRow label={t("theJourney")} onBack={onClearFocus} />
-      <ChapterStops chapter={focusedChapter} onSelectPlace={onSelectPlace} />
-    </>
   ) : (
-    <>
-      <ViewHeading>{t("theJourney")}</ViewHeading>
-      <p className="m-0 px-1 text-xs text-muted-foreground">
-        {visits != null ? t("clickHint") : t("exploreHint")}
-      </p>
-      <ChapterList onFocusChapter={onFocusChapter} />
-      <MapLegend />
-    </>
+    // The journey view owns both levels itself: a focused chapter expands in
+    // place rather than replacing the list.
+    <JourneyList
+      focusedChapter={focusedChapter}
+      onFocusChapter={onFocusChapter}
+      onClearFocus={onClearFocus}
+      onSelectPlace={onSelectPlace}
+      visits={visits}
+    />
   );
 
   return (
@@ -203,12 +198,10 @@ export default function MapDesktopPanel({
         </div>
         <div
           // Remount on every view change so the entrance animation replays —
-          // each of chapters ↔ place ↔ detour ↔ view reads as "something opened".
-          key={
-            selectedPlace ??
-            selectedDetour?.name ??
-            `${view}-${focusedChapter ?? "root"}`
-          }
+          // each of journey ↔ place ↔ detour ↔ view reads as "something opened".
+          // Focusing a chapter is deliberately *not* a view change: the journey
+          // list expands in place and must keep its scroll position.
+          key={selectedPlace ?? selectedDetour?.name ?? view}
           // *:shrink-0: a scroll container's children must overflow, never
           // compress — overflow-hidden items (the post photo card) otherwise
           // shrink to fit and eat the very overflow that makes it scroll.
