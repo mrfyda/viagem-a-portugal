@@ -85,29 +85,14 @@ strike through here; if anything still fails, the next angles are noted.
 - **Shared journeys** — two Travelers sharing one visit log (or read-only
   views of each other's). Mostly a Supabase RLS design question; the
   VisitStore transport split keeps the client side tractable.
-- ~~More book-moment achievements~~ — built (2026-07): a second batch of 12
-  quirky moments (the São Jorge rats at Braga, the devil in the choir at
-  Carrazedo, Grão-Vasco by flickering light at Viseu, "ban the weddings" at
-  Tomar, the sparrow's pardon at Torre de Palma, "A viagem acabou" at the
-  Finisterra do Sul…) plus a "locked churches" collection for the recurring
-  closed-church gag. Mined from the Caminho EPUB text, quotes verified
-  verbatim, places checked against the index. See
-  `apps/map/src/lib/achievements.ts`.
-- ~~Blog language suggestion~~ — decided against (2026-07): hreflang routes
-  search traffic and the per-post switcher covers the rest; no client-side
-  detection bar.
-- ~~Full pin fade-out when zoomed far out~~ — built (2026-07), then extended:
-  the opening country view itself is now lines-only. Every dot, visited
-  included, fades in only past z6.6 (the country fit tops out ~z6.45 on
-  desktop); at the default view and wider the six routes carry the map alone
-  as line-work.
 
 ## Content
 
-- **Viagem II, III, IV prose** — the posts are scaffolds with photos and
+- **Viagem III, IV, V prose** — the posts are scaffolds with photos and
   front matter done; day-by-day text, titles and descriptions pending the
-  author's voice memos/notes. Unblocks the EN editions too (drop a file in
-  `_en/` with a `translation_key`).
+  author's voice memos/notes (III and IV each have ~13-15 unfilled `⟨…⟩`
+  placeholders, V has 51). Viagem II's prose shipped 2026-07-24 from voice
+  memos, so it's no longer part of this item — see below.
 
 ## Map UI (deferred from the 2026-07 critique)
 
